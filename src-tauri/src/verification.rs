@@ -197,7 +197,7 @@ pub fn structural(job: &Job) -> Result<Outcome, String> {
     // makeps3iso puede producir directamente game.iso.0, game.iso.1, etc.
     // cuando esta activa la compatibilidad FAT32; en ese caso no existe el
     // nombre base que figura como salida del trabajo.
-    if job.mode == "ps3build" && !output.is_file() {
+    if crate::ps3::is_build_mode(&job.mode) && !output.is_file() {
         let parts = split_parts(output);
         if parts.is_empty() {
             return Err("No aparecio el ISO ni sus fragmentos de salida".into());

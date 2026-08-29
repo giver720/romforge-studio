@@ -186,31 +186,33 @@ comprobar que el ISO es válido antes de una conversión larga.
 
 ## PlayStation 3
 
-Adelgaza juegos quitando lo que no usas. Con `ps3iso-utils` (las utilidades de Estwald).
+Incluye dos perfiles que **no borran contenido del juego**:
 
-| Paso | Herramienta |
-|---|---|
-| ISO → carpeta | `extractps3iso` |
-| Analizar y borrar | interno |
-| Carpeta → ISO | `makeps3iso` |
-| Partir para FAT32 | `splitps3iso` |
+| Perfil | Entrada | Resultado | Uso |
+|---|---|---|---|
+| PS3 real + RPCS3 | ISO o carpeta | ISO estándar compacto | CFW/HEN + Cobra/webMAN y RPCS3 |
+| Máxima reducción RPCS3 | ISO descifrado o carpeta | Misma entrada, comprimida por el sistema de archivos | RPCS3 en PC |
 
-**Qué detecta.** `PS3_UPDATE` (el actualizador de firmware del disco, entre 200 y 300 MB, que solo
-sirve para instalar el sistema desde el juego) se marca solo. Los packs de idioma se reconocen por
-el nombre de archivo (`_ES`, `SPA`, `spanish`, `_FR`, `GER`…) y se agrupan por idioma con su tamaño,
-para que puedas quitar de golpe los que no vayas a jugar. Los vídeos y bancos de audio (`.pam`,
-`.bik`, `.at3`, `.msf`…) se etiquetan aparte.
+### PS3 real + RPCS3
 
-**Salvaguardas.** `EBOOT.BIN`, `PARAM.SFO`, `PS3_DISC.SFB` y `LICDIR` están bloqueados: no se
-proponen y el backend se niega a borrarlos aunque se los pidan. Tampoco acepta rutas que salgan de
-la carpeta del juego. Nada se borra sin una confirmación que dice cuántos archivos y cuánto espacio.
+Con `extractps3iso` y `makeps3iso`, CHD Studio extrae el juego y vuelve a construir el ISO sin el
+relleno físico del disco. No quita `PS3_UPDATE`, idiomas, vídeos ni ningún otro archivo. Después
+reabre el ISO generado y compara la ruta y el tamaño de todos los archivos con el inventario
+original antes de publicar el resultado. Opcionalmente puede producir fragmentos de 4 GB para
+unidades FAT32.
 
-> ⚠️ **Haz copia antes.** Hay juegos que llevan un índice de sus propios archivos y se cuelgan si
-> falta uno, aunque sea un vídeo en un idioma que no usas. La detección por nombre acierta casi
-> siempre, pero no es infalible. Prueba el juego después de adelgazarlo.
+La salida sigue siendo un ISO de PS3 normal. Para montarlo en una consola real hacen falta CFW o
+HEN y soporte Cobra; una PS3 con firmware de fábrica no monta ISOs.
 
-Si juegas en formato carpeta (webMAN, Iris Manager), no hace falta reconstruir el ISO: ya has
-terminado tras borrar.
+### Máxima reducción para RPCS3
+
+Aplica compresión transparente sin cambiar el formato lógico: NTFS LZX en Windows o Btrfs zstd en
+Linux. RPCS3 sigue abriendo el ISO descifrado o la carpeta normalmente y el sistema operativo
+descomprime los bloques al leerlos. En Linux la unidad tiene que ser Btrfs y debe estar disponible
+la utilidad `btrfs`.
+
+Esta segunda compresión pertenece al disco del PC: no se conserva al copiar el archivo a otra
+unidad y no sirve como formato para cargar directamente desde una PS3 real.
 
 ## Desarrollo
 

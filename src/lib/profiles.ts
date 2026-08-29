@@ -378,6 +378,8 @@ export const MODE_LABELS: Record<string, string> = {
   ps3extract: "ISO → carpeta",
   ps3build: "Carpeta → ISO",
   ps3split: "Partir para FAT32",
+  ps3compact: "ISO compacto universal",
+  ps3rpcs3: "Compresión transparente RPCS3",
   iso2cso: "ISO → CSO",
   iso2zso: "ISO → ZSO",
   iso2dax: "ISO → DAX",
