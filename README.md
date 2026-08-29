@@ -238,10 +238,11 @@ npm run release
 ```
 
 Descarga las herramientas, compila el instalador firmado, arma el `.zip` portable y genera el
-`latest.json` que lee el actualizador. Todo queda en `release/`. Después:
+`latest.json` que lee el actualizador. Todo queda en `release/vX.Y.Z/`, separado de las versiones
+anteriores. Después:
 
 ```bash
-gh release create vX.Y.Z release/* --repo giver720/chd-studio
+gh release create vX.Y.Z release/vX.Y.Z/* --repo giver720/chd-studio
 ```
 
 Hace falta la clave privada de firma en `%USERPROFILE%\.tauri\chd-studio.key`. **Si la pierdes, no

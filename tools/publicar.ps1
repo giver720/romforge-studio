@@ -48,7 +48,7 @@ if (-not $setup) { throw "No se genero el instalador" }
 
 # --- 3. Portable -----------------------------------------------------------
 Write-Host "  Armando la version portable..." -ForegroundColor Cyan
-$out = Join-Path $root "release"
+$out = Join-Path $root "release\v$version"
 New-Item -ItemType Directory -Force $out | Out-Null
 
 # Se monta en la carpeta temporal y solo el .zip acaba en release/
@@ -106,7 +106,7 @@ $json = $manifest | ConvertTo-Json -Depth 6
 Copy-Item $setup.FullName $out -Force
 
 Write-Host ""
-Write-Host "  Listo. En la carpeta 'release':" -ForegroundColor Green
+Write-Host "  Listo. En la carpeta 'release\v$version':" -ForegroundColor Green
 Get-ChildItem $out | Select-Object Name, @{N = "MB"; E = { [math]::Round($_.Length / 1MB, 2) } } | Format-Table -AutoSize
 Write-Host "  Para publicarla:" -ForegroundColor Cyan
-Write-Host "    gh release create v$version release\* --repo giver720/chd-studio --title `"CHD Studio $version`""
+Write-Host "    gh release create v$version release\v$version\* --repo giver720/chd-studio --title `"CHD Studio $version`""
