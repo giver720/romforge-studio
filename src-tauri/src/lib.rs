@@ -19,7 +19,9 @@ use tauri::{AppHandle, Emitter, Manager, State};
 const CD_EXT: &[&str] = &["cue", "gdi", "toc", "nrg", "cdr"];
 const HD_EXT: &[&str] = &["img", "hdi", "vhd", "hdd", "raw"];
 /// Formatos habituales que chdman NO sabe leer; los avisamos en vez de fallar en silencio.
-const UNSUPPORTED_EXT: &[&str] = &["cdi", "mdf", "mds", "ccd", "rvz", "wbfs", "nkit", "7z", "zip", "rar"];
+const UNSUPPORTED_EXT: &[&str] = &[
+    "cdi", "mdf", "mds", "ccd", "rvz", "wbfs", "nkit", "7z", "zip", "rar",
+];
 
 #[derive(Debug, Clone, Serialize)]
 pub struct InputInfo {
@@ -165,13 +167,23 @@ fn inspect_paths(paths: Vec<String>) -> Vec<InputInfo> {
     let cue_stems: std::collections::HashSet<String> = infos
         .iter()
         .filter(|i| CD_EXT.contains(&i.ext.as_str()))
-        .map(|i| Path::new(&i.path).with_extension("").to_string_lossy().to_string())
+        .map(|i| {
+            Path::new(&i.path)
+                .with_extension("")
+                .to_string_lossy()
+                .to_string()
+        })
         .collect();
     infos.retain(|i| {
         if i.ext != "bin" {
             return true;
         }
-        !cue_stems.contains(&Path::new(&i.path).with_extension("").to_string_lossy().to_string())
+        !cue_stems.contains(
+            &Path::new(&i.path)
+                .with_extension("")
+                .to_string_lossy()
+                .to_string(),
+        )
     });
 
     infos.retain(|i| i.state != "unsupported" || !i.ext.is_empty());
@@ -212,7 +224,9 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
     if xbox360::is_mode(&spec.mode) {
         if spec.mode == "folder2iso" {
             return (
-                dir.join(format!("{stem}.iso")).to_string_lossy().to_string(),
+                dir.join(format!("{stem}.iso"))
+                    .to_string_lossy()
+                    .to_string(),
                 None,
             );
         }
@@ -225,14 +239,18 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
             return (spec.input.clone(), None);
         }
         return (
-            dir.join(format!("{stem}.{e}")).to_string_lossy().to_string(),
+            dir.join(format!("{stem}.{e}"))
+                .to_string_lossy()
+                .to_string(),
             None,
         );
     }
 
     if let Some(e) = psp::output_ext(&spec.mode) {
         return (
-            dir.join(format!("{stem}.{e}")).to_string_lossy().to_string(),
+            dir.join(format!("{stem}.{e}"))
+                .to_string_lossy()
+                .to_string(),
             None,
         );
     }
@@ -241,7 +259,9 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
     if ps3::is_mode(&spec.mode) {
         return match spec.mode.as_str() {
             "ps3build" => (
-                dir.join(format!("{stem}.iso")).to_string_lossy().to_string(),
+                dir.join(format!("{stem}.iso"))
+                    .to_string_lossy()
+                    .to_string(),
                 None,
             ),
             "ps3split" => (spec.input.clone(), None),
@@ -257,7 +277,9 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
             .unwrap_or_default();
         let ext = threeds::output_ext(&spec.mode, &in_ext).unwrap_or("cci");
         return (
-            dir.join(format!("{stem}.{ext}")).to_string_lossy().to_string(),
+            dir.join(format!("{stem}.{ext}"))
+                .to_string_lossy()
+                .to_string(),
             None,
         );
     }
@@ -266,7 +288,9 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
     if let Some(e) = switch::output_ext(&spec.mode) {
         let ext = if e.is_empty() { "log" } else { e };
         return (
-            dir.join(format!("{stem}.{ext}")).to_string_lossy().to_string(),
+            dir.join(format!("{stem}.{ext}"))
+                .to_string_lossy()
+                .to_string(),
             None,
         );
     }
@@ -275,7 +299,10 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
         "extractcd" => {
             // El .cue/.gdi describe las pistas y el .bin lleva los datos
             let f = spec.format.clone().unwrap_or_else(|| "cue".into());
-            let bin = dir.join(format!("{stem}.bin")).to_string_lossy().to_string();
+            let bin = dir
+                .join(format!("{stem}.bin"))
+                .to_string_lossy()
+                .to_string();
             (f, Some(bin))
         }
         "extractdvd" => ("iso".into(), None),
@@ -285,7 +312,9 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
     };
 
     (
-        dir.join(format!("{stem}.{ext}")).to_string_lossy().to_string(),
+        dir.join(format!("{stem}.{ext}"))
+            .to_string_lossy()
+            .to_string(),
         extra,
     )
 }
@@ -447,12 +476,7 @@ async fn chd_info(state: State<'_, AppState>, path: String) -> Result<String, St
     let exe = chdman::locate(manual.as_deref())
         .map(|(p, _)| p)
         .ok_or("No se encontro chdman")?;
-    let args = vec![
-        "info".to_string(),
-        "-i".to_string(),
-        path,
-        "-v".to_string(),
-    ];
+    let args = vec!["info".to_string(), "-i".to_string(), path, "-v".to_string()];
     let (_, text) = chdman::run_capture(&exe, &args)
         .await
         .map_err(|e| e.to_string())?;
@@ -554,13 +578,42 @@ pub struct AppPaths {
     pub portable: bool,
     /// Donde se guardan ajustes, herramientas y el entorno de Python
     pub config_dir: String,
+    /// true si esta copia se puede actualizar sola.
+    pub can_update: bool,
+    /// Como actualizarla cuando no puede hacerlo sola.
+    pub update_hint: Option<String>,
+}
+
+/// El actualizador de Tauri solo sabe reemplazarse a si mismo en Windows y, en
+/// Linux, dentro de un AppImage. Si la app se instalo con .deb o .rpm es el
+/// gestor de paquetes el que manda, y lo honesto es decirlo en vez de dejar que
+/// el boton falle.
+fn updater_disponible() -> (bool, Option<String>) {
+    if cfg!(windows) {
+        return (true, None);
+    }
+    if std::env::var_os("APPIMAGE").is_some() {
+        (true, None)
+    } else {
+        (
+            false,
+            Some(
+                "Esta copia se instalo con el paquete del sistema, asi que se actualiza desde ahi \
+                 o descargando la nueva version de las releases de GitHub."
+                    .into(),
+            ),
+        )
+    }
 }
 
 #[tauri::command]
 fn app_paths() -> AppPaths {
+    let (can_update, update_hint) = updater_disponible();
     AppPaths {
         portable: settings::is_portable(),
         config_dir: settings::config_dir().to_string_lossy().to_string(),
+        can_update,
+        update_hint,
     }
 }
 
@@ -586,7 +639,27 @@ fn reveal(path: String) {
     }
     #[cfg(not(windows))]
     {
-        let _ = std::process::Command::new("xdg-open").arg(target).spawn();
+        // El equivalente a «mostrar en la carpeta» en Linux es pedirselo al
+        // gestor de archivos por D-Bus; asi queda el archivo seleccionado igual
+        // que en Windows. Si no hay nadie escuchando se abre la carpeta y ya.
+        let seleccionado = p.is_file()
+            && std::process::Command::new("dbus-send")
+                .args([
+                    "--session",
+                    "--dest=org.freedesktop.FileManager1",
+                    "--type=method_call",
+                    "/org/freedesktop/FileManager1",
+                    "org.freedesktop.FileManager1.ShowItems",
+                    &format!("array:string:file://{}", p.display()),
+                    "string:",
+                ])
+                .status()
+                .map(|s| s.success())
+                .unwrap_or(false);
+
+        if !seleccionado {
+            let _ = std::process::Command::new("xdg-open").arg(target).spawn();
+        }
     }
 }
 

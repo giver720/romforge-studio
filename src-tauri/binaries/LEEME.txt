@@ -1,11 +1,13 @@
-Esta carpeta viaja dentro del instalador de CHD Studio.
+CHD Studio - carpeta de binarios
 
+Windows
+-------
 Si colocas aqui chdman.exe, la aplicacion lo encontrara sola y el usuario final
-no tendra que instalar nada. Para obtenerlo desde la version oficial de MAME:
+no tendra que instalar MAME ni configurar ninguna ruta. Puedes descargarlo con:
 
     npm run chdman
 
-(equivale a: powershell -ExecutionPolicy Bypass -File tools\obtener-chdman.ps1)
-
-Sin chdman.exe la aplicacion sigue funcionando: lo buscara en el PATH o en una
-instalacion de MAME, y si no aparece te dejara elegirlo desde Ajustes.
+Linux
+-----
+El paquete .deb depende de mame-tools, que instala chdman en el PATH. Los
+binarios .exe de esta carpeta no se incluyen en el paquete de Linux.

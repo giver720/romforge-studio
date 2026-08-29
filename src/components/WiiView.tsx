@@ -14,6 +14,7 @@ import {
 import { useEffect } from "react";
 import { api } from "../lib/api";
 import { bytes } from "../lib/format";
+import { EXECUTABLE_FILTERS, executableName } from "../lib/platform";
 import { WII_EXT, WII_OPS, opsFor } from "../lib/wii";
 import { useStore } from "../store";
 import { DropZone } from "./DropZone";
@@ -65,7 +66,7 @@ export function WiiView({ dragging }: { dragging: boolean }) {
   async function browse(id: string, nombre: string) {
     const res = await open({
       multiple: false,
-      filters: [{ name: nombre, extensions: ["exe"] }],
+      filters: EXECUTABLE_FILTERS?.map((filter) => ({ ...filter, name: nombre })),
     });
     if (!res) return;
     setTools(await api.setToolPath(id, res as string));
@@ -133,7 +134,8 @@ export function WiiView({ dragging }: { dragging: boolean }) {
                   className="btn btn-ghost px-2.5 py-1 text-xs"
                   onClick={() => browse(t.id, esWit ? "wit" : "DolphinTool")}
                 >
-                  <FolderSearch size={13} /> Señalar {esWit ? "wit.exe" : "DolphinTool.exe"}
+                  <FolderSearch size={13} /> Señalar{" "}
+                  {esWit ? executableName("wit") : executableName("DolphinTool")}
                 </button>
                 {!esWit && (
                   <button

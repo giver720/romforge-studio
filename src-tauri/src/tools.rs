@@ -41,6 +41,39 @@ pub enum ToolKind {
         /// Fragmento que debe contener el enlace
         contains: &'static str,
     },
+    /// No hay binario publicado para este sistema, asi que la app clona el
+    /// repositorio y lo compila. Es lo que pasa en Linux con los proyectos que
+    /// solo publican .exe.
+    Source {
+        /// Repositorio git que se clona, con sus submodulos.
+        repo: &'static str,
+        /// Ordenes que lo construyen, tal cual se escribirian en una terminal.
+        build: &'static str,
+        /// Ruta del binario resultante dentro del arbol recien compilado.
+        output: &'static str,
+        /// Paquetes de Debian/Ubuntu que hacen falta, para poder decirlo si
+        /// la compilacion se cae por una dependencia que no esta.
+        packages: &'static str,
+    },
+    /// Un script de Python suelto. No se puede instalar con pip aunque el
+    /// repositorio traiga un `setup.py`: 3dsconv declara un comando que apunta
+    /// a una funcion que no existe, asi que pip deja un lanzador roto. Se clona
+    /// el repositorio, se instalan sus dependencias en el entorno de la app y
+    /// se deja un lanzador escrito por nosotros.
+    PythonScript {
+        /// Repositorio git que se clona.
+        repo: &'static str,
+        /// Ruta del script dentro del repositorio.
+        script: &'static str,
+        /// Paquetes de pip que necesita, separados por espacios.
+        requires: &'static str,
+    },
+    /// La reparte el gestor de paquetes de la distribucion. La app no la puede
+    /// instalar sola, pero sabe decir que paquete pedir.
+    System {
+        /// Como conseguirla, en una linea.
+        hint: &'static str,
+    },
 }
 
 #[derive(Debug, Clone, Copy, Serialize)]
@@ -56,6 +89,32 @@ pub struct ToolSpec {
     pub family: &'static str,
     /// Licencia, para dejarlo claro en la interfaz.
     pub license: &'static str,
+    /// En Linux casi ninguna se consigue igual que en Windows: unas publican
+    /// otro archivo en la misma release, otras no publican nada y hay que
+    /// compilarlas. Cuando es `None` sirve lo mismo en los dos sistemas.
+    pub linux_kind: Option<ToolKind>,
+    /// Y alguna cambia hasta de nombre (DolphinTool -> dolphin-tool).
+    pub linux_exe: Option<&'static str>,
+}
+
+impl ToolSpec {
+    /// Como se consigue esta herramienta en el sistema donde corre la app.
+    pub fn kind(&self) -> ToolKind {
+        if cfg!(target_os = "linux") {
+            self.linux_kind.unwrap_or(self.kind)
+        } else {
+            self.kind
+        }
+    }
+
+    /// Nombre del ejecutable en este sistema, todavia sin extension.
+    pub fn exe(&self) -> &'static str {
+        if cfg!(target_os = "linux") {
+            self.linux_exe.unwrap_or(self.exe)
+        } else {
+            self.exe
+        }
+    }
 }
 
 pub const TOOLS: &[ToolSpec] = &[
@@ -64,6 +123,12 @@ pub const TOOLS: &[ToolSpec] = &[
         name: "chdman",
         exe: "chdman",
         kind: ToolKind::Bundled,
+        // MAME no publica un chdman suelto para Linux, pero todas las distros
+        // lo reparten dentro de mame-tools, asi que ahi se coge de ahi.
+        linux_kind: Some(ToolKind::System {
+            hint: "Debian/Ubuntu: sudo apt install mame-tools · Fedora: sudo dnf install mame-tools · Arch: sudo pacman -S mame-tools",
+        }),
+        linux_exe: None,
         purpose: "Crea y extrae archivos CHD",
         family: "chd",
         license: "GPL-2.0-or-later (MAME)",
@@ -73,6 +138,8 @@ pub const TOOLS: &[ToolSpec] = &[
         name: "nsz",
         exe: "nsz",
         kind: ToolKind::Python { package: "nsz" },
+        linux_kind: None,
+        linux_exe: None,
         purpose: "Comprime y descomprime NSP/NSZ y XCI/XCZ",
         family: "switch",
         license: "MIT",
@@ -87,6 +154,15 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: ".exe",
             tag: "",
         },
+        // Solo publica el .exe; en Linux se compila, que es cosa de segundos
+        // porque el mbedtls que necesita viene en el propio repositorio.
+        linux_kind: Some(ToolKind::Source {
+            repo: "https://github.com/tetj/4NXCI-2026",
+            build: "[ -f config.mk ] || cp config.mk.template config.mk; make",
+            output: "4nxci",
+            packages: "build-essential",
+        }),
+        linux_exe: None,
         purpose: "Convierte cartuchos XCI a NSP",
         family: "switch",
         license: "ISC",
@@ -100,6 +176,12 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: "windows",
             tag: "",
         },
+        linux_kind: Some(ToolKind::Github {
+            repo: "energeticokay/z3ds_compress",
+            asset: "linux",
+            tag: "",
+        }),
+        linux_exe: None,
         purpose: "Comprime ROMs al formato Z3DS que lee Azahar",
         family: "3ds",
         license: "GPL-2.0",
@@ -113,6 +195,13 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: ".exe",
             tag: "",
         },
+        // El .exe no es mas que el script de Python empaquetado con PyInstaller
+        linux_kind: Some(ToolKind::PythonScript {
+            repo: "https://github.com/ihaveamac/3dsconv",
+            script: "3dsconv/3dsconv.py",
+            requires: "pyaes",
+        }),
+        linux_exe: None,
         purpose: "Convierte CCI/.3ds a CIA instalable",
         family: "3ds",
         license: "MIT",
@@ -126,6 +215,12 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: "3dstool.zip",
             tag: "",
         },
+        linux_kind: Some(ToolKind::Github {
+            repo: "dnasdw/3dstool",
+            asset: "linux_x86_64",
+            tag: "",
+        }),
+        linux_exe: None,
         purpose: "Reconstruye el contenido de 3DS ya descifrado",
         family: "3ds",
         license: "MIT",
@@ -139,6 +234,12 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: "win_x64",
             tag: "ctrtool",
         },
+        linux_kind: Some(ToolKind::Github {
+            repo: "3DSGuy/Project_CTR",
+            asset: "ubuntu_x86_64",
+            tag: "ctrtool",
+        }),
+        linux_exe: None,
         purpose: "Extrae el contenido de un CIA (paso 1 de CIA → CCI)",
         family: "3ds",
         license: "MIT",
@@ -152,6 +253,12 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: "win_x86_64",
             tag: "makerom",
         },
+        linux_kind: Some(ToolKind::Github {
+            repo: "3DSGuy/Project_CTR",
+            asset: "ubuntu_x86_64",
+            tag: "makerom",
+        }),
+        linux_exe: None,
         purpose: "Reconstruye el CCI desde el contenido (paso 2 de CIA → CCI)",
         family: "3ds",
         license: "MIT",
@@ -165,6 +272,12 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: "windows",
             tag: "",
         },
+        linux_kind: Some(ToolKind::Github {
+            repo: "iliazeus/iso2god-rs",
+            asset: "x86_64-linux",
+            tag: "",
+        }),
+        linux_exe: None,
         purpose: "Convierte ISOs de Xbox 360 y Xbox al formato GOD",
         family: "xbox360",
         license: "MIT",
@@ -178,6 +291,12 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: "Win64_Release",
             tag: "",
         },
+        linux_kind: Some(ToolKind::Github {
+            repo: "XboxDev/extract-xiso",
+            asset: "_linux",
+            tag: "",
+        }),
+        linux_exe: None,
         purpose: "Extrae ISOs de Xbox 360 a carpeta con default.xex",
         family: "xbox360",
         license: "Ver repositorio",
@@ -191,6 +310,12 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: "Win64",
             tag: "",
         },
+        linux_kind: Some(ToolKind::Github {
+            repo: "bucanero/ps3iso-utils",
+            asset: "ubuntu",
+            tag: "",
+        }),
+        linux_exe: None,
         purpose: "Extrae, reconstruye y parte ISOs de PS3",
         family: "ps3",
         license: "GPL-3.0",
@@ -205,6 +330,14 @@ pub const TOOLS: &[ToolSpec] = &[
             asset: "windows.7z",
             tag: "",
         },
+        // La unica que necesita bibliotecas del sistema para compilarse.
+        linux_kind: Some(ToolKind::Source {
+            repo: "https://github.com/unknownbrackets/maxcso",
+            build: "make -j",
+            output: "maxcso",
+            packages: "build-essential pkg-config libuv1-dev liblz4-dev zlib1g-dev",
+        }),
+        linux_exe: None,
         purpose: "Comprime ISOs de PSP a CSO, ZSO o DAX",
         family: "psp",
         license: "ISC",
@@ -216,6 +349,9 @@ pub const TOOLS: &[ToolSpec] = &[
         kind: ToolKind::External {
             site: "https://dolphin-emu.org/download/",
         },
+        linux_kind: None,
+        // En Linux el mismo programa se llama en minusculas y con guion
+        linux_exe: Some("dolphin-tool"),
         purpose: "Convierte discos de Wii y GameCube a RVZ",
         family: "wii",
         license: "GPL-2.0 (Dolphin)",
@@ -230,6 +366,12 @@ pub const TOOLS: &[ToolSpec] = &[
             // La pagina lista las versiones de la mas nueva a la mas vieja
             contains: "cygwin64.zip",
         },
+        linux_kind: Some(ToolKind::Web {
+            page: "https://wit.wiimm.de/download.html",
+            base: "https://wit.wiimm.de",
+            contains: "x86_64.tar.gz",
+        }),
+        linux_exe: None,
         purpose: "Crea WBFS para cargadores USB de Wii",
         family: "wii",
         license: "GPL-2.0",
@@ -299,7 +441,7 @@ pub fn locate(id: &str, s: &Settings) -> Option<(PathBuf, String)> {
         }
     }
 
-    let name = exe_name(spec.exe);
+    let name = exe_name(spec.exe());
 
     let venv = venv_bin().join(&name);
     if venv.is_file() {
@@ -323,12 +465,12 @@ pub fn locate(id: &str, s: &Settings) -> Option<(PathBuf, String)> {
         return Some((found, "tools".into()));
     }
 
-    if let Ok(p) = which::which(spec.exe) {
+    if let Ok(p) = which::which(spec.exe()) {
         return Some((p, "path".into()));
     }
 
     // Las externas se buscan donde suele instalarlas su propio programa
-    if matches!(spec.kind, ToolKind::External { .. }) {
+    if matches!(spec.kind(), ToolKind::External { .. }) {
         for d in external_dirs(id) {
             let c = d.join(&name);
             if c.is_file() {
@@ -377,6 +519,40 @@ fn external_dirs(id: &str) -> Vec<PathBuf> {
         }
     }
 
+    // En Linux el binario suele estar ya en el PATH (paquete de la distro), que
+    // `locate` mira antes que esto. Lo que no lo esta es el de Flatpak, que vive
+    // dentro de su propio arbol, ni el de un AppImage descomprimido a mano.
+    #[cfg(not(windows))]
+    {
+        for d in [
+            "/var/lib/flatpak/app/org.DolphinEmu.dolphin-emu/current/active/files/bin",
+            "/usr/lib/dolphin-emu",
+            "/opt",
+        ] {
+            let p = PathBuf::from(d);
+            if p.is_dir() {
+                dirs.push(p.clone());
+                raices.push(p);
+            }
+        }
+        if let Some(home) = dirs::home_dir() {
+            raices.push(home.join("Descargas"));
+            raices.push(home.join("Downloads"));
+            raices.push(
+                home.join(".local")
+                    .join("share")
+                    .join("flatpak")
+                    .join("app"),
+            );
+            let f = home.join(
+                ".local/share/flatpak/app/org.DolphinEmu.dolphin-emu/current/active/files/bin",
+            );
+            if f.is_dir() {
+                dirs.push(f);
+            }
+        }
+    }
+
     for raiz in raices {
         let Ok(rd) = std::fs::read_dir(&raiz) else {
             continue;
@@ -407,7 +583,10 @@ fn find_in(dir: &std::path::Path, name: &str, depth: usize) -> Option<PathBuf> {
     for e in rd.flatten() {
         let p = e.path();
         if p.is_file() {
-            if p.file_name().map(|f| f.eq_ignore_ascii_case(name)).unwrap_or(false) {
+            if p.file_name()
+                .map(|f| f.eq_ignore_ascii_case(name))
+                .unwrap_or(false)
+            {
                 return Some(p);
             }
         } else if p.is_dir() {
@@ -457,14 +636,14 @@ pub async fn status_of(id: &str, s: &Settings) -> ToolStatus {
         purpose: spec.purpose,
         family: spec.family,
         license: spec.license,
-        kind: spec.kind,
+        kind: spec.kind(),
         found,
         path,
         source,
         version,
         installable: !matches!(
-            spec.kind,
-            ToolKind::Bundled | ToolKind::External { .. }
+            spec.kind(),
+            ToolKind::Bundled | ToolKind::External { .. } | ToolKind::System { .. }
         ),
     }
 }
@@ -525,7 +704,12 @@ async fn ensure_venv() -> anyhow::Result<PathBuf> {
     }
 
     let python = find_python().ok_or_else(|| {
-        anyhow::anyhow!("No hay Python instalado. Instalalo desde python.org y vuelve a intentarlo.")
+        let ayuda = if cfg!(target_os = "linux") {
+            "sudo apt install python3 python3-venv"
+        } else {
+            "instalalo desde python.org"
+        };
+        anyhow::anyhow!("No hay Python instalado. {ayuda} y vuelve a intentarlo.")
     })?;
 
     std::fs::create_dir_all(settings::config_dir())?;
@@ -561,7 +745,10 @@ pub async fn install_python_package(package: &str) -> anyhow::Result<String> {
 
     if !ok {
         let tail: Vec<&str> = out.lines().rev().take(4).collect();
-        anyhow::bail!("pip fallo: {}", tail.into_iter().rev().collect::<Vec<_>>().join(" "));
+        anyhow::bail!(
+            "pip fallo: {}",
+            tail.into_iter().rev().collect::<Vec<_>>().join(" ")
+        );
     }
     Ok(out)
 }
@@ -596,7 +783,9 @@ pub async fn install_github_tool(
 
     let rel: GhRelease = if tag_prefix.is_empty() {
         client
-            .get(format!("https://api.github.com/repos/{repo}/releases/latest"))
+            .get(format!(
+                "https://api.github.com/repos/{repo}/releases/latest"
+            ))
             .send()
             .await?
             .error_for_status()?
@@ -661,45 +850,72 @@ pub async fn install_github_tool(
         // pegado (iso2god-x86_64-windows.exe); los dejamos con el nombre que
         // luego busca `locate`.
         let name = spec(id)
-            .map(|s| exe_name(s.exe))
+            .map(|s| exe_name(s.exe()))
             .unwrap_or_else(|| asset.name.clone());
         std::fs::write(dest.join(name), &bytes)?;
     }
 
+    make_tree_executable(&dest, 0);
     Ok(rel.tag_name)
 }
 
-/// Extrae un .7z apoyandose en el `tar` del sistema.
+/// Extrae un .7z con lo que haya en el sistema.
 ///
-/// El tar que trae Windows 10 en adelante es libarchive, que sabe leer 7-Zip,
-/// asi que no hace falta que el usuario instale nada ni meter un descompresor
-/// entero en la aplicacion.
+/// En Windows el `tar` que viene de serie desde Windows 10 es libarchive, que
+/// sabe leer 7-Zip, asi que no hace falta que el usuario instale nada. En Linux
+/// el `tar` es el de GNU y no puede, asi que ahi se busca un 7-Zip de verdad,
+/// que es lo que reparten las distribuciones.
 async fn extract_7z(bytes: &[u8], name: &str, dest: &std::path::Path) -> anyhow::Result<()> {
     let tmp = std::env::temp_dir().join(format!("chd-studio-{name}"));
     std::fs::write(&tmp, bytes)?;
 
     // El tar de Git Bash confunde "C:" con un host remoto; usamos el del sistema
-    let tar_exe = if cfg!(windows) {
-        std::path::PathBuf::from(std::env::var("SystemRoot").unwrap_or_else(|_| "C:\\Windows".into()))
-            .join("System32")
-            .join("tar.exe")
-    } else {
-        std::path::PathBuf::from("tar")
+    #[cfg(windows)]
+    let (exe, args) = {
+        let tar = std::path::PathBuf::from(
+            std::env::var("SystemRoot").unwrap_or_else(|_| "C:\\Windows".into()),
+        )
+        .join("System32")
+        .join("tar.exe");
+        (
+            tar,
+            vec![
+                "-xf".to_string(),
+                tmp.to_string_lossy().to_string(),
+                "-C".to_string(),
+                dest.to_string_lossy().to_string(),
+            ],
+        )
     };
 
-    let args = vec![
-        "-xf".to_string(),
-        tmp.to_string_lossy().to_string(),
-        "-C".to_string(),
-        dest.to_string_lossy().to_string(),
-    ];
-    let res = chdman::run_capture(&tar_exe, &args).await;
+    // 7zz es el oficial, 7z y 7za los de p7zip que reparten las distros
+    #[cfg(not(windows))]
+    let (exe, args) = {
+        let encontrado = ["7zz", "7z", "7za"]
+            .iter()
+            .find_map(|c| which::which(c).ok())
+            .ok_or_else(|| {
+                let _ = std::fs::remove_file(&tmp);
+                anyhow::anyhow!("Para abrir un .7z hace falta 7-Zip: sudo apt install p7zip-full")
+            })?;
+        (
+            encontrado,
+            vec![
+                "x".to_string(),
+                "-y".to_string(),
+                tmp.to_string_lossy().to_string(),
+                format!("-o{}", dest.to_string_lossy()),
+            ],
+        )
+    };
+
+    let res = chdman::run_capture(&exe, &args).await;
     let _ = std::fs::remove_file(&tmp);
 
     match res {
         Ok((true, _)) => Ok(()),
         Ok((false, out)) => anyhow::bail!("No se pudo descomprimir el .7z: {}", out.trim()),
-        Err(e) => anyhow::bail!("No se encontro tar para abrir el .7z: {e}"),
+        Err(e) => anyhow::bail!("No se encontro con que abrir el .7z: {e}"),
     }
 }
 
@@ -764,7 +980,9 @@ pub async fn install_web_tool(
     base: &str,
     contains: &str,
 ) -> anyhow::Result<String> {
-    let client = reqwest::Client::builder().user_agent("chd-studio").build()?;
+    let client = reqwest::Client::builder()
+        .user_agent("chd-studio")
+        .build()?;
     let html = client
         .get(page)
         .send()
@@ -820,19 +1038,257 @@ pub async fn install_web_tool(
         std::fs::write(dest.join(nombre), &bytes)?;
     }
 
+    make_tree_executable(&dest, 0);
+
     // El nombre del archivo lleva la version, que es lo que se muestra
     Ok(url.rsplit('/').next().unwrap_or("descargado").to_string())
+}
+
+// ---------------------------------------------------------------- Compilar
+
+/// Carpeta donde se clonan los proyectos que hay que compilar.
+fn build_dir() -> PathBuf {
+    settings::config_dir().join("build")
+}
+
+/// Clona un repositorio y lo compila, para las herramientas que no publican
+/// binario del sistema donde estamos.
+///
+/// El arbol clonado se queda ahi a proposito: la proxima vez basta con un `git
+/// pull` y recompilar lo que haya cambiado, que es mucho mas rapido.
+async fn build_from_source(
+    id: &str,
+    repo: &str,
+    build: &str,
+    output: &str,
+    packages: &str,
+) -> anyhow::Result<String> {
+    let falta = |p: &str| which::which(p).is_err();
+    if falta("git") {
+        anyhow::bail!("Hace falta git para bajar el codigo de {id}: sudo apt install git");
+    }
+    if build.contains("cargo") && falta("cargo") {
+        anyhow::bail!("Hace falta Rust para compilar {id}: instalalo desde https://rustup.rs");
+    }
+    if build.contains("make") && falta("make") {
+        anyhow::bail!("Hace falta un compilador para {id}: sudo apt install {packages}");
+    }
+
+    let src = clone_or_update(id, repo).await?;
+
+    let (ok, out) = run_shell(&src, build).await?;
+    if !ok {
+        anyhow::bail!(
+            "No se pudo compilar {id}. Comprueba que tienes: {packages}\n{}",
+            cola(&out)
+        );
+    }
+
+    let binario = src.join(output);
+    anyhow::ensure!(
+        binario.is_file(),
+        "{id} compilo pero no aparecio {output}. Salida:\n{}",
+        cola(&out)
+    );
+
+    let dest = tools_dir().join(id);
+    std::fs::create_dir_all(&dest)?;
+    let final_path = dest.join(exe_name(spec(id).map(|s| s.exe()).unwrap_or(id)));
+    std::fs::copy(&binario, &final_path)?;
+    make_executable(&final_path)?;
+
+    // La version util aqui es el commit del que salio
+    let commit = run_shell(&src, "git rev-parse --short HEAD")
+        .await
+        .ok()
+        .filter(|(ok, _)| *ok)
+        .map(|(_, t)| t.trim().to_string())
+        .unwrap_or_else(|| "desde el codigo".into());
+    Ok(commit)
+}
+
+/// Trae el codigo de un repositorio, o actualiza el que ya estaba clonado.
+async fn clone_or_update(id: &str, repo: &str) -> anyhow::Result<PathBuf> {
+    let src = build_dir().join(id);
+    std::fs::create_dir_all(build_dir())?;
+
+    if src.join(".git").is_dir() {
+        // Ya estaba clonado: solo traemos lo nuevo. Si el pull falla (por
+        // ejemplo sin red) seguimos con lo que haya, que sirve igual.
+        let _ = run_shell(&src, "git pull --recurse-submodules").await;
+    } else {
+        let _ = std::fs::remove_dir_all(&src);
+        let (ok, out) = run_shell(
+            &build_dir(),
+            &format!("git clone --depth 1 --recursive {repo} {id}"),
+        )
+        .await?;
+        if !ok {
+            anyhow::bail!("No se pudo descargar el codigo de {id}: {}", cola(&out));
+        }
+    }
+    Ok(src)
+}
+
+/// Deja listo un script de Python: el codigo, sus dependencias dentro del
+/// entorno de la app y un lanzador que une las dos cosas.
+async fn install_python_script(
+    id: &str,
+    repo: &str,
+    script: &str,
+    requires: &str,
+) -> anyhow::Result<String> {
+    if which::which("git").is_err() {
+        anyhow::bail!("Hace falta git para bajar el codigo de {id}: sudo apt install git");
+    }
+
+    // Las dependencias van al mismo entorno privado que usa nsz
+    for paquete in requires.split_whitespace() {
+        install_python_package(paquete).await?;
+    }
+
+    let src = clone_or_update(id, repo).await?;
+    let destino_script = src.join(script);
+    anyhow::ensure!(
+        destino_script.is_file(),
+        "{repo} ya no trae {script}; habra cambiado de sitio"
+    );
+
+    let python = venv_bin().join(exe_name("python"));
+    let dest = tools_dir().join(id);
+    std::fs::create_dir_all(&dest)?;
+    let lanzador = dest.join(exe_name(spec(id).map(|s| s.exe()).unwrap_or(id)));
+
+    if cfg!(windows) {
+        std::fs::write(
+            &lanzador,
+            format!(
+                "@echo off\r\n\"{}\" \"{}\" %*\r\n",
+                python.display(),
+                destino_script.display()
+            ),
+        )?;
+    } else {
+        std::fs::write(
+            &lanzador,
+            format!(
+                "#!/bin/sh\nexec \"{}\" \"{}\" \"$@\"\n",
+                python.display(),
+                destino_script.display()
+            ),
+        )?;
+    }
+    make_executable(&lanzador)?;
+
+    Ok(script.to_string())
+}
+
+/// Ejecuta una linea de terminal en una carpeta y devuelve toda su salida.
+async fn run_shell(cwd: &std::path::Path, linea: &str) -> anyhow::Result<(bool, String)> {
+    let (shell, flag) = if cfg!(windows) {
+        ("cmd", "/C")
+    } else {
+        ("sh", "-c")
+    };
+    chdman::run_capture_in(
+        &PathBuf::from(shell),
+        &[flag.to_string(), linea.to_string()],
+        &[],
+        Some(cwd),
+    )
+    .await
+}
+
+/// Se queda con el final de una salida larga, que es donde esta el error.
+fn cola(salida: &str) -> String {
+    let lineas: Vec<&str> = salida.lines().filter(|l| !l.trim().is_empty()).collect();
+    lineas
+        .iter()
+        .rev()
+        .take(8)
+        .rev()
+        .copied()
+        .collect::<Vec<_>>()
+        .join("\n")
+}
+
+/// En Linux lo que se descarga o se compila no siempre trae el permiso puesto.
+fn make_executable(path: &std::path::Path) -> anyhow::Result<()> {
+    #[cfg(unix)]
+    {
+        use std::os::unix::fs::PermissionsExt;
+        let mut p = std::fs::metadata(path)?.permissions();
+        p.set_mode(p.mode() | 0o755);
+        std::fs::set_permissions(path, p)?;
+    }
+    #[cfg(not(unix))]
+    {
+        let _ = path;
+    }
+    Ok(())
+}
+
+/// Pone el permiso de ejecucion a todo lo que parezca un programa dentro de una
+/// carpeta recien descomprimida. Los zip y tar de estos proyectos a veces lo
+/// traen y a veces no, y en Linux sin el permiso no se puede lanzar nada.
+fn make_tree_executable(dir: &std::path::Path, depth: usize) {
+    if depth > 3 {
+        return;
+    }
+    let Ok(rd) = std::fs::read_dir(dir) else {
+        return;
+    };
+    for e in rd.flatten() {
+        let p = e.path();
+        if p.is_dir() {
+            make_tree_executable(&p, depth + 1);
+        } else if p.is_file() {
+            let n = p
+                .file_name()
+                .unwrap_or_default()
+                .to_string_lossy()
+                .to_lowercase();
+            // Los que claramente no son programas se dejan como estan
+            let datos = [
+                ".txt", ".md", ".json", ".xml", ".png", ".ini", ".conf", ".html", ".1",
+            ];
+            if !datos.iter().any(|s| n.ends_with(s)) {
+                let _ = make_executable(&p);
+            }
+        }
+    }
 }
 
 /// Punto de entrada unico que usa la interfaz para el boton «Instalar».
 pub async fn install(id: &str) -> anyhow::Result<String> {
     let spec = spec(id).ok_or_else(|| anyhow::anyhow!("Herramienta desconocida: {id}"))?;
-    match spec.kind {
+    match spec.kind() {
         ToolKind::Bundled => anyhow::bail!("{} ya viene incluida con CHD Studio", spec.name),
         ToolKind::External { site } => anyhow::bail!(
             "{} viene dentro de otro programa y hay que instalarlo aparte: {site}",
             spec.name
         ),
+        ToolKind::System { hint } => anyhow::bail!(
+            "{} la reparte tu distribucion y hay que instalarla desde ahi. {hint}",
+            spec.name
+        ),
+        ToolKind::Source {
+            repo,
+            build,
+            output,
+            packages,
+        } => {
+            let version = build_from_source(id, repo, build, output, packages).await?;
+            Ok(format!("{} compilado ({version})", spec.name))
+        }
+        ToolKind::PythonScript {
+            repo,
+            script,
+            requires,
+        } => {
+            install_python_script(id, repo, script, requires).await?;
+            Ok(format!("{} preparado desde su codigo", spec.name))
+        }
         ToolKind::Python { package } => {
             install_python_package(package).await?;
             Ok(format!("{} instalado con pip", spec.name))
@@ -849,5 +1305,64 @@ pub async fn install(id: &str) -> anyhow::Result<String> {
             let archivo = install_web_tool(id, page, base, contains).await?;
             Ok(format!("{} descargado ({archivo})", spec.name))
         }
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[cfg(target_os = "linux")]
+    #[test]
+    fn linux_uses_native_tool_variants() {
+        assert!(matches!(
+            spec("chdman").unwrap().kind(),
+            ToolKind::System { .. }
+        ));
+        assert!(matches!(
+            spec("iso2god").unwrap().kind(),
+            ToolKind::Github {
+                asset: "x86_64-linux",
+                ..
+            }
+        ));
+        assert_eq!(spec("dolphintool").unwrap().exe(), "dolphin-tool");
+    }
+
+    /// Prueba manual de integracion: descarga los assets nativos reales y
+    /// verifica que el ejecutable esperado aparece y conserva permiso de uso.
+    #[cfg(target_os = "linux")]
+    #[tokio::test]
+    #[ignore = "usa la red y las releases de proyectos externos"]
+    async fn linux_release_assets_install() {
+        use std::os::unix::fs::PermissionsExt;
+
+        let root = std::env::temp_dir().join(format!("chd-studio-tools-{}", std::process::id()));
+        std::fs::create_dir_all(&root).unwrap();
+        std::env::set_var("XDG_CONFIG_HOME", &root);
+        let settings = Settings::default();
+
+        for id in [
+            "z3ds", "3dstool", "ctrtool", "makerom", "iso2god", "xiso", "ps3iso", "wit",
+        ] {
+            install(id).await.unwrap_or_else(|e| panic!("{id}: {e}"));
+            let (path, _) = locate(id, &settings).unwrap_or_else(|| panic!("{id}: no localizado"));
+            assert!(path.is_file(), "{} no es un archivo", path.display());
+            assert_ne!(
+                std::fs::metadata(&path).unwrap().permissions().mode() & 0o111,
+                0,
+                "{} no es ejecutable",
+                path.display()
+            );
+        }
+
+        std::fs::remove_dir_all(root).unwrap();
+    }
+
+    #[cfg(windows)]
+    #[test]
+    fn windows_keeps_original_tool_variants() {
+        assert!(matches!(spec("chdman").unwrap().kind(), ToolKind::Bundled));
+        assert_eq!(spec("dolphintool").unwrap().exe(), "DolphinTool");
     }
 }

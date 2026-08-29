@@ -46,7 +46,13 @@ export const api = {
   switchKeysStatus: () => invoke<KeysStatus>("switch_keys_status"),
   threeDsKeysStatus: () => invoke<ThreeDsKeys>("threeds_keys_status"),
   xboxProbe: (path: string) => invoke<string>("xbox_probe", { path }),
-  appPaths: () => invoke<{ portable: boolean; config_dir: string }>("app_paths"),
+  appPaths: () =>
+    invoke<{
+      portable: boolean;
+      config_dir: string;
+      can_update: boolean;
+      update_hint: string | null;
+    }>("app_paths"),
   ps3Scan: (dir: string) => invoke<Ps3Scan>("ps3_scan", { dir }),
   ps3Trim: (dir: string, paths: string[]) => invoke<TrimResult>("ps3_trim", { dir, paths }),
 };

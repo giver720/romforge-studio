@@ -3,8 +3,14 @@ import { Minus, Square, X } from "lucide-react";
 
 export function TitleBar() {
   const win = getCurrentWindow();
+  // `-webkit-app-region` (la clase .drag) solo lo entienden los motores de
+  // Windows y macOS; en Linux WebKitGTK lo ignora y la ventana se quedaría
+  // clavada. `data-tauri-drag-region` funciona en los tres.
   return (
-    <header className="drag relative z-30 flex h-11 shrink-0 items-center justify-between border-b border-[var(--color-edge)] pl-4 pr-0">
+    <header
+      data-tauri-drag-region
+      className="drag relative z-30 flex h-11 shrink-0 items-center justify-between border-b border-[var(--color-edge)] pl-4 pr-0"
+    >
       <div className="flex items-center gap-2.5">
         <div
           className="grid h-[22px] w-[22px] place-items-center rounded-[7px] text-[11px] font-black text-[#0a0c12]"

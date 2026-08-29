@@ -3,6 +3,7 @@ import { openUrl } from "@tauri-apps/plugin-opener";
 import { CheckCircle2, Circle, Download, FolderSearch, Loader2, RefreshCw } from "lucide-react";
 import { useEffect, useState } from "react";
 import { api } from "../lib/api";
+import { EXECUTABLE_FILTERS } from "../lib/platform";
 import { useStore } from "../store";
 import type { PythonStatus, ToolStatus } from "../lib/types";
 import { Card } from "./ui";
@@ -31,15 +32,27 @@ function kindLabel(t: ToolStatus): string {
   if (t.kind.type === "python") return `Paquete de Python · ${t.kind.package}`;
   if (t.kind.type === "external") return "Hay que instalarla aparte";
   if (t.kind.type === "web") return `Se descarga de ${t.kind.base.replace(/^https?:\/\//, "")}`;
+  if (t.kind.type === "system") return t.kind.hint;
+  if (t.kind.type === "pythonscript") return "Script de Python · lo prepara CHD Studio";
+  if (t.kind.type === "source")
+    return `No hay binario para Linux · CHD Studio la compila de ${t.kind.repo.replace(
+      /^https?:\/\/(www\.)?github\.com\//,
+      "",
+    )}`;
   return `GitHub · ${t.kind.repo}`;
 }
 
 function ToolRow({ tool }: { tool: ToolStatus }) {
   const { installTool, installingTool, setTools, notify } = useStore();
   const busy = installingTool === tool.id;
+  // Compilar lleva minutos y descargar segundos: conviene que el botón lo diga.
+  const compila = tool.kind.type === "source";
 
   async function browse() {
-    const res = await open({ multiple: false, filters: [{ name: "Ejecutable", extensions: ["exe", ""] }] });
+    const res = await open({
+      multiple: false,
+      filters: EXECUTABLE_FILTERS,
+    });
     if (!res) return;
     setTools(await api.setToolPath(tool.id, res as string));
     notify("ok", `${tool.name} configurada`);
@@ -72,7 +85,7 @@ function ToolRow({ tool }: { tool: ToolStatus }) {
         {!tool.found && tool.installable && (
           <button className="btn btn-ghost px-2.5 py-1 text-xs" onClick={() => installTool(tool.id)} disabled={busy}>
             {busy ? <Loader2 size={14} className="animate-spin" /> : <Download size={14} />}
-            {busy ? "Instalando…" : "Instalar"}
+            {busy ? (compila ? "Compilando…" : "Instalando…") : compila ? "Compilar" : "Instalar"}
           </button>
         )}
         {!tool.found && (
@@ -103,7 +116,9 @@ export function ToolsCard() {
   }
 
   const families = [...new Set(tools.map((t) => t.family))];
-  const needsPython = tools.some((t) => t.kind.type === "python" && !t.found);
+  const needsPython = tools.some(
+    (t) => (t.kind.type === "python" || t.kind.type === "pythonscript") && !t.found,
+  );
 
   return (
     <Card

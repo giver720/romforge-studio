@@ -58,7 +58,12 @@ export type ToolKind =
   | { type: "python"; package: string }
   | { type: "github"; repo: string; asset: string }
   | { type: "external"; site: string }
-  | { type: "web"; page: string; base: string; contains: string };
+  | { type: "web"; page: string; base: string; contains: string }
+  // Solo en Linux: proyectos que no publican binario y hay que compilar, y
+  // herramientas que reparte el gestor de paquetes de la distribución.
+  | { type: "source"; repo: string; build: string; output: string; packages: string }
+  | { type: "pythonscript"; repo: string; script: string; requires: string }
+  | { type: "system"; hint: string };
 
 export interface ToolStatus {
   id: string;

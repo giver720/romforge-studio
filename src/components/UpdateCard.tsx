@@ -17,7 +17,16 @@ export function UpdateCard() {
   const [message, setMessage] = useState("");
   const [progress, setProgress] = useState(0);
 
-  const [paths, setPaths] = useState<{ portable: boolean; config_dir: string } | null>(null);
+  const [paths, setPaths] = useState<{
+    portable: boolean;
+    config_dir: string;
+    can_update: boolean;
+    update_hint: string | null;
+  } | null>(null);
+
+  // Instalada con .deb o .rpm no puede reemplazarse a sí misma: manda el gestor
+  // de paquetes. Se comprueba igual, pero no se ofrece instalar.
+  const autoinstala = paths?.can_update ?? true;
 
   useEffect(() => {
     getVersion().then(setVersion).catch(() => {});
@@ -91,9 +100,15 @@ export function UpdateCard() {
               {update.body}
             </p>
           )}
-          <button className="btn btn-primary mt-2.5" onClick={install}>
-            <Download size={15} /> Descargar e instalar
-          </button>
+          {autoinstala ? (
+            <button className="btn btn-primary mt-2.5" onClick={install}>
+              <Download size={15} /> Descargar e instalar
+            </button>
+          ) : (
+            <p className="mt-2 text-[0.66rem] leading-relaxed text-[var(--color-faint)]">
+              {paths?.update_hint}
+            </p>
+          )}
         </div>
       )}
 

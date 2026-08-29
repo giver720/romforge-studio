@@ -6,7 +6,11 @@ use std::process::Stdio;
 #[cfg(windows)]
 pub const CREATE_NO_WINDOW: u32 = 0x0800_0000;
 
-pub const EXE_NAME: &str = if cfg!(windows) { "chdman.exe" } else { "chdman" };
+pub const EXE_NAME: &str = if cfg!(windows) {
+    "chdman.exe"
+} else {
+    "chdman"
+};
 
 /// Aplica la bandera que evita que se abra una consola negra en Windows.
 pub fn hide_console(cmd: &mut tokio::process::Command) {
@@ -82,6 +86,27 @@ fn candidate_dirs() -> Vec<PathBuf> {
             dirs.push(home.join("mame"));
             dirs.push(home.join("Downloads"));
             dirs.push(home.join("Documents").join("mame"));
+        }
+    }
+
+    // En Linux chdman llega dentro del paquete mame-tools. `which` ya cubre lo
+    // que este en el PATH; esto es para los sitios donde queda fuera de el.
+    #[cfg(not(windows))]
+    {
+        for d in [
+            "/usr/games",
+            "/usr/local/bin",
+            "/usr/lib/mame",
+            "/opt/mame",
+            "/var/lib/flatpak/exports/bin",
+        ] {
+            dirs.push(PathBuf::from(d));
+        }
+        if let Some(home) = dirs::home_dir() {
+            dirs.push(home.join(".local").join("bin"));
+            dirs.push(home.join("mame"));
+            dirs.push(home.join("Descargas"));
+            dirs.push(home.join("Downloads"));
         }
     }
 
@@ -166,7 +191,11 @@ pub async fn probe(path: &Path) -> ChdmanStatus {
 fn mame_has_zstd(banner: &str) -> bool {
     banner
         .split_whitespace()
-        .filter_map(|t| t.trim_matches(|c: char| !c.is_ascii_digit() && c != '.').parse::<f32>().ok())
+        .filter_map(|t| {
+            t.trim_matches(|c: char| !c.is_ascii_digit() && c != '.')
+                .parse::<f32>()
+                .ok()
+        })
         .find(|v| *v > 0.0 && *v < 100.0)
         .map(|v| v >= 0.255)
         .unwrap_or(false)
@@ -225,7 +254,11 @@ pub async fn run_capture_timeout(
     let child = cmd.spawn()?;
     let pid = child.id();
 
-    match tokio::time::timeout(std::time::Duration::from_secs(secs), child.wait_with_output()).await
+    match tokio::time::timeout(
+        std::time::Duration::from_secs(secs),
+        child.wait_with_output(),
+    )
+    .await
     {
         Ok(Ok(out)) => Ok((
             out.status.success(),

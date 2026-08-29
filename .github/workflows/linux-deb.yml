@@ -1,0 +1,90 @@
+name: Linux .deb
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: linux-deb-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-smoke-test:
+    name: Ubuntu 22.04 amd64
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Obtener el codigo
+        uses: actions/checkout@v5
+
+      - name: Preparar Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias de Tauri y de la prueba grafica
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libwebkit2gtk-4.1-dev \
+            libgtk-3-dev \
+            libssl-dev \
+            libayatana-appindicator3-dev \
+            librsvg2-dev \
+            libxdo-dev \
+            file \
+            xvfb \
+            dbus-x11
+
+      - name: Compilar y probar
+        run: |
+          npm ci
+          rustfmt --check --edition 2021 --config skip_children=true \
+            src-tauri/src/chdman.rs \
+            src-tauri/src/lib.rs \
+            src-tauri/src/tools.rs
+          cargo test --manifest-path src-tauri/Cargo.toml
+          npm run dist:linux
+
+      - name: Validar e instalar el paquete
+        run: |
+          bundle_dir="src-tauri/target/release/bundle/deb"
+          built_deb="$(find "$bundle_dir" -maxdepth 1 -name '*.deb' -print -quit)"
+          test -n "$built_deb"
+          version="$(dpkg-deb -f "$built_deb" Version)"
+          deb="$bundle_dir/chd-studio_${version}_amd64.deb"
+          mv "$built_deb" "$deb"
+          (cd "$bundle_dir" && sha256sum "$(basename "$deb")" > SHA256SUMS)
+          dpkg-deb --info "$deb"
+          dpkg-deb --contents "$deb"
+          (cd "$bundle_dir" && sha256sum --check SHA256SUMS)
+          sudo apt-get install -y "./$deb"
+          command -v chd-studio
+          command -v chdman
+          chdman --help 2>&1 | grep -qi chdman
+
+      - name: Prueba de arranque de la interfaz
+        run: |
+          set +e
+          xvfb-run -a timeout 12s chd-studio >chd-studio-smoke.log 2>&1
+          status=$?
+          set -e
+          cat chd-studio-smoke.log
+          test "$status" -eq 124
+
+      - name: Guardar el .deb
+        uses: actions/upload-artifact@v4
+        with:
+          name: chd-studio-linux-amd64-${{ github.sha }}
+          path: |
+            src-tauri/target/release/bundle/deb/*.deb
+            src-tauri/target/release/bundle/deb/SHA256SUMS
+          if-no-files-found: error
+          retention-days: 30

@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "bundle": {
+    "category": "Utility",
+    "targets": ["deb"],
+    "createUpdaterArtifacts": false,
+    "resources": ["binaries/LEEME.txt"],
+    "longDescription": "CHD Studio convierte imagenes de disco de PS1, PS2, PS3, PSP, Dreamcast, Saturn, Xbox 360, Wii, GameCube, 3DS y Switch al formato que espera cada emulador, con chdman y las herramientas de cada plataforma. Las descarga e instala solo.",
+    "linux": {
+      "deb": {
+        "depends": ["mame-tools"],
+        "recommends": [
+          "python3",
+          "python3-venv",
+          "git",
+          "build-essential",
+          "pkg-config",
+          "libuv1-dev",
+          "liblz4-dev",
+          "zlib1g-dev"
+        ],
+        "section": "utils",
+        "priority": "optional"
+      }
+    }
+  }
+}

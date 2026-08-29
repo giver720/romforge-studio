@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import { api } from "../lib/api";
+import { EXECUTABLE_FILTERS, IS_WINDOWS, executableName } from "../lib/platform";
 import { useStore } from "../store";
 import { ToolsCard } from "./ToolsCard";
 import { UpdateCard } from "./UpdateCard";
@@ -45,7 +46,7 @@ export function SettingsView() {
   async function browseChdman() {
     const res = await open({
       multiple: false,
-      filters: [{ name: "Ejecutable", extensions: ["exe", ""] }],
+      filters: EXECUTABLE_FILTERS,
     });
     if (!res) return;
     await patchSettings({ chdman_path: res as string });
@@ -56,7 +57,7 @@ export function SettingsView() {
   async function importChdman() {
     const res = await open({
       multiple: false,
-      filters: [{ name: "Ejecutable", extensions: ["exe", ""] }],
+      filters: EXECUTABLE_FILTERS,
     });
     if (!res) return;
     try {
@@ -116,8 +117,17 @@ export function SettingsView() {
                 <>
                   <p className="text-[0.8rem] font-medium">No se encontró chdman</p>
                   <p className="mt-1 text-[0.7rem] leading-relaxed text-[var(--color-muted)]">
-                    Viene dentro del paquete de binarios de MAME. Descárgalo, descomprime{" "}
-                    <span className="mono">chdman.exe</span> y tráelo aquí con «Importar».
+                    {IS_WINDOWS ? (
+                      <>
+                        Viene dentro del paquete de binarios de MAME. Descárgalo, descomprime{" "}
+                        <span className="mono">chdman.exe</span> y tráelo aquí con «Importar».
+                      </>
+                    ) : (
+                      <>
+                        Instala el paquete del sistema con{" "}
+                        <span className="mono">sudo apt install mame-tools</span> y vuelve a buscar.
+                      </>
+                    )}
                   </p>
                 </>
               )}
@@ -126,7 +136,7 @@ export function SettingsView() {
 
           <div className="mt-3 flex flex-wrap gap-2">
             <button className="btn btn-ghost" onClick={importChdman}>
-              <Upload size={15} /> Importar chdman.exe
+              <Upload size={15} /> Importar {executableName("chdman")}
             </button>
             <button className="btn btn-quiet" onClick={browseChdman}>
               <FolderSearch size={15} /> Usar uno del disco

@@ -4,6 +4,8 @@ Aplicación de escritorio para convertir imágenes de disco a **CHD** (Compresse
 `chdman`, la herramienta oficial de MAME. Interfaz en español, arrastrar y soltar, cola por lotes y
 progreso en tiempo real.
 
+Disponible para **Windows 10/11** y **Ubuntu 22.04 o posterior (amd64)**.
+
 ## Qué cubre
 
 | Familia | Comando de chdman | Sistemas |
@@ -23,11 +25,25 @@ También hace el camino inverso (`extractcd`, `extractdvd`, `extracthd`, `extrac
 - **No:** `.cdi`, `.mdf/.mds`, `.ccd`, `.rvz/.wbfs/.nkit`, comprimidos. La app los detecta y avisa en
   vez de fallar en silencio.
 
+## Instalar en Ubuntu
+
+Descarga el archivo `.deb` desde la [última release](https://github.com/giver720/chd-studio/releases/latest)
+e instálalo con APT para que también resuelva `mame-tools` y el resto de dependencias:
+
+```bash
+sudo apt install ./*.deb
+```
+
+El paquete crea la entrada **CHD Studio** en el menú de aplicaciones. `mame-tools` aporta `chdman`;
+las demás herramientas se descargan o compilan desde **Ajustes → Herramientas** cuando una
+conversión las necesita. El paquete recomienda Python, Git y las bibliotecas de compilación para
+que esos botones funcionen sin preparación adicional.
+
 ## El motor: chdman
 
-CHD Studio es la ventana; el trabajo lo hace `chdman.exe`, la herramienta oficial de MAME.
+CHD Studio es la ventana; el trabajo lo hace `chdman`, la herramienta oficial de MAME.
 
-### Incluirlo en el instalador (recomendado)
+### Incluirlo en el instalador de Windows
 
 Ejecuta una vez:
 
@@ -48,13 +64,13 @@ programa independiente, así que son obras separadas distribuidas juntas por com
 La app sigue funcionando y busca `chdman` por orden en:
 
 1. La ruta que hayas elegido en Ajustes
-2. Su carpeta interna (`%APPDATA%\chd-studio\bin`)
+2. Su carpeta interna (`%APPDATA%\chd-studio\bin` en Windows, `~/.config/chd-studio/bin` en Linux)
 3. La copia empaquetada (`resources/binaries`)
 4. El `PATH` del sistema
 5. Instalaciones típicas de MAME
 
-Si no aparece, en **Ajustes → Motor chdman** tienes «Importar chdman.exe», que copia el ejecutable
-dentro de la app para no depender de dónde lo dejaste.
+Si no aparece, en **Ajustes → Motor chdman** puedes importarlo. En Ubuntu, la instalación normal del
+`.deb` ya instala `mame-tools`, así que no hace falta configurarlo a mano.
 
 Con MAME 0.255 o superior se habilita el códec **zstd**, que el preset «Máxima» aprovecha.
 
@@ -78,12 +94,12 @@ Sin soporte de zstd se usan los equivalentes clásicos.
 | XCZ → XCI | `nsz` | Reconstrucción bit a bit |
 | XCI → NSP | `4NXCI` | Cartucho a instalable; puede generar varios NSP |
 
-**Requiere tus propias `prod.keys`** en `%USERPROFILE%\.switch\prod.keys`. CHD Studio no las incluye
-ni ayuda a obtenerlas: solo comprueba si el archivo existe y avisa si falta.
+**Requiere tus propias `prod.keys`** en `~/.switch/prod.keys`. CHD Studio no las incluye ni ayuda a
+obtenerlas: solo comprueba si el archivo existe y avisa si falta.
 
-`nsz` se instala con pip dentro de un entorno de Python privado de la app (`%APPDATA%\chd-studio\pyenv`),
-sin tocar el Python del sistema. `4NXCI` se descarga de su última release de GitHub. Ambas cosas se
-hacen desde **Ajustes → Herramientas** con un botón.
+`nsz` se instala con pip dentro de un entorno de Python privado de la app, sin tocar el Python del
+sistema. En Linux, `4NXCI` se compila automáticamente desde su código fuente. Ambas cosas se hacen
+desde **Ajustes → Herramientas** con un botón.
 
 ## Nintendo 3DS
 
@@ -181,12 +197,29 @@ terminado tras borrar.
 
 ## Desarrollo
 
+### Windows
+
 ```bash
 npm install
 npm run tools:fetch   # descarga las herramientas nativas a src-tauri/binaries
 npm run chdman        # descarga chdman del paquete oficial de MAME
 npm run app           # tauri dev
 ```
+
+### Ubuntu/Debian
+
+Instala primero las [dependencias de Tauri para Linux](https://v2.tauri.app/start/prerequisites/).
+Después:
+
+```bash
+npm ci
+npm run app           # desarrollo
+./CREAR_LINUX.sh       # genera src-tauri/target/release/bundle/deb/*.deb
+```
+
+El workflow `Linux .deb` repite la compilación en Ubuntu 22.04, instala el paquete resultante y hace
+una prueba de arranque bajo Xvfb. Construir sobre 22.04 mantiene compatibilidad con versiones nuevas
+de Ubuntu sin exigir una glibc reciente.
 
 Los binarios de terceros **no se guardan en el repositorio**: se descargan al preparar una versión.
 Así el repo queda limpio y cada compilación coge la última versión de cada proyecto.
@@ -198,17 +231,18 @@ npm run check:tools   # comprueba que los assets de GitHub sigan existiendo
 Ese último conviene ejecutarlo antes de publicar: los proyectos renombran sus archivos de una
 release a otra, y cuando pasa, el botón «Instalar» falla sin decir gran cosa.
 
-## Publicar una versión
+## Publicar una versión de Windows
 
 ```bash
 npm run release
 ```
 
 Descarga las herramientas, compila el instalador firmado, arma el `.zip` portable y genera el
-`latest.json` que lee el actualizador. Todo queda en `release/`. Después:
+`latest.json` que lee el actualizador. Todo queda en `release/vX.Y.Z/`, separado de las versiones
+anteriores. Después:
 
 ```bash
-gh release create v1.0.0 release/* --repo giver720/chd-studio
+gh release create vX.Y.Z release/vX.Y.Z/* --repo giver720/chd-studio
 ```
 
 Hace falta la clave privada de firma en `%USERPROFILE%\.tauri\chd-studio.key`. **Si la pierdes, no
@@ -223,16 +257,14 @@ clave. No está en el repositorio y no debe estarlo.
 - **portable.zip** — el ejecutable con sus herramientas y un `portable.txt` al lado. Mientras ese
   archivo exista, los ajustes, las herramientas descargadas y el entorno de Python se guardan en la
   subcarpeta `datos`, no en `%APPDATA%`. Sirve para llevarlo en un USB.
+- **amd64.deb** — paquete para Ubuntu 22.04 o posterior. Declara `mame-tools` como dependencia y se
+  actualiza instalando el `.deb` de la siguiente release con APT.
 
 ### Actualizaciones automáticas
 
-La app consulta las releases de GitHub y puede descargar e instalar la nueva versión sola, desde
-**Ajustes → Actualizaciones**.
-
-> ⚠️ **Mientras el repositorio sea privado esto no funcionará.** GitHub exige autenticación para
-> descargar los archivos de una release privada, y meter un token dentro del ejecutable sería un
-> agujero de seguridad. El actualizador empezará a funcionar solo en cuanto hagas el repo público;
-> no hay que cambiar nada en el código.
+La app consulta las releases de GitHub. En Windows puede descargar e instalar la nueva versión desde
+**Ajustes → Actualizaciones**. En Linux avisa de la versión nueva, pero el `.deb` se actualiza con APT
+o instalando el paquete de la release, para no saltarse el gestor de paquetes del sistema.
 
 ## Estructura
 
