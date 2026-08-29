@@ -37,7 +37,7 @@ const SECTIONS: { title: string; items: NavItem[] }[] = [
       { id: "switch", label: "Switch", icon: Gamepad2, desc: "NSP, NSZ, XCI, XCZ" },
       { id: "threeds", label: "3DS", icon: Layers, desc: "CIA, CCI y Z3DS" },
       { id: "xbox360", label: "Xbox 360", icon: Disc3, desc: "ISO → GOD o carpeta" },
-      { id: "ps3", label: "PlayStation 3", icon: Scissors, desc: "Adelgazar juegos" },
+      { id: "ps3", label: "PlayStation 3", icon: Scissors, desc: "ISO compacto · RPCS3" },
       { id: "psp", label: "PSP", icon: Gauge, desc: "ISO ↔ CSO y ZSO" },
       { id: "wii", label: "Wii y GameCube", icon: Sparkles, desc: "ISO → RVZ" },
     ],

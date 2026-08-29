@@ -58,7 +58,15 @@ impl Job {
             .file_name()
             .map(|s| s.to_string_lossy().to_string())
             .unwrap_or_else(|| input.clone());
-        let input_size = std::fs::metadata(&input).map(|m| m.len()).unwrap_or(0);
+        let input_size = std::fs::metadata(&input)
+            .map(|m| {
+                if m.is_dir() {
+                    dir_size(Path::new(&input))
+                } else {
+                    m.len()
+                }
+            })
+            .unwrap_or(0);
         Self {
             id: format!("{}-{}", now_ms(), fastrand_hex()),
             input,
@@ -159,7 +167,9 @@ fn build_args(job: &Job, s: &Settings) -> Vec<String> {
             }
         }
         "ps3iso" => match job.mode.as_str() {
-            "ps3build" => crate::ps3::build_args(&job.input, &job.output, s.ps3_split_fat32),
+            "ps3build" | "ps3compact" => {
+                crate::ps3::build_args(&job.input, &job.output, s.ps3_split_fat32)
+            }
             "ps3split" => crate::ps3::split_args(&job.input),
             // Al extraer no se parte nada: si luego se reconstruye el ISO, los
             // trozos sueltos confundirian a makeps3iso.
@@ -262,7 +272,7 @@ impl OutputTransaction {
     }
 
     fn begin(job: &Job, overwrite: bool) -> Result<Self, String> {
-        if is_verify(&job.mode) || job.mode == "ps3split" {
+        if is_verify(&job.mode) || matches!(job.mode.as_str(), "ps3split" | "ps3rpcs3") {
             return Ok(Self::default());
         }
 
@@ -310,7 +320,7 @@ struct StagedOutput {
 
 impl StagedOutput {
     fn new(job: &Job, overwrite: bool) -> Result<Self, String> {
-        if is_verify(&job.mode) || job.mode == "ps3split" {
+        if is_verify(&job.mode) || matches!(job.mode.as_str(), "ps3split" | "ps3rpcs3") {
             return Ok(Self {
                 execution_job: job.clone(),
                 root: None,
@@ -526,7 +536,7 @@ fn output_size_of(job: &Job) -> u64 {
     let p = Path::new(&job.output);
     if mode_writes_directory(job) {
         dir_size(p)
-    } else if job.mode == "ps3build" && !p.is_file() {
+    } else if crate::ps3::is_build_mode(&job.mode) && !p.is_file() {
         split_output_parts(p)
             .iter()
             .filter_map(|part| std::fs::metadata(part).ok())
@@ -1085,23 +1095,374 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings, cancel: 
     }
 }
 
+fn custom_phase(app: &AppHandle, id: &str, text: &str, progress: f32) {
+    let state = app.state::<AppState>();
+    if let Some(job) = state.update(id, |job| {
+        job.phase = text.into();
+        job.progress = progress;
+    }) {
+        emit_job(app, &job);
+    }
+}
+
+fn custom_error(app: &AppHandle, id: &str, message: String) {
+    let state = app.state::<AppState>();
+    if let Some(job) = state.update(id, |job| {
+        job.status = "error".into();
+        job.phase = "Error".into();
+        job.message = Some(message.clone());
+        job.verification = "not_applicable".into();
+        job.verification_message = Some("El trabajo no pudo completarse".into());
+        job.finished_at = Some(now_ms());
+    }) {
+        emit_job(app, &job);
+    }
+}
+
+fn custom_canceled(app: &AppHandle, id: &str) {
+    let state = app.state::<AppState>();
+    if let Some(job) = state.update(id, |job| {
+        job.status = "canceled".into();
+        job.phase = "Cancelado".into();
+        job.message = Some("Cancelado por el usuario".into());
+        job.verification = "not_applicable".into();
+        job.verification_message = Some("El trabajo fue cancelado".into());
+        job.finished_at = Some(now_ms());
+    }) {
+        emit_job(app, &job);
+    }
+}
+
+fn capture_failure(
+    result: anyhow::Result<chdman::CaptureResult>,
+    name: &str,
+) -> Result<String, String> {
+    match result {
+        Ok(chdman::CaptureResult::Canceled) => Err("__canceled__".into()),
+        Ok(chdman::CaptureResult::Finished(true, output)) => Ok(output),
+        Ok(chdman::CaptureResult::Finished(false, output)) => {
+            let detail = output
+                .lines()
+                .rev()
+                .find(|line| !line.trim().is_empty())
+                .unwrap_or("");
+            Err(if detail.is_empty() {
+                format!("{name} termino con error")
+            } else {
+                format!("{name}: {detail}")
+            })
+        }
+        Err(error) => Err(format!("No se pudo ejecutar {name}: {error}")),
+    }
+}
+
+/// Extrae y reconstruye un ISO estandar. No elimina idiomas, actualizaciones ni
+/// ningun otro archivo: el ahorro procede del relleno que desaparece al montar
+/// de nuevo el sistema de archivos del disco.
+async fn run_ps3_compact(
+    app: AppHandle,
+    id: String,
+    job: Job,
+    settings: Settings,
+    cancel: Arc<AtomicBool>,
+) {
+    let staged = match StagedOutput::new(&job, settings.overwrite) {
+        Ok(value) => value,
+        Err(message) => return custom_error(&app, &id, message),
+    };
+    let execution = &staged.execution_job;
+    let fail = |message: String| {
+        staged.cleanup();
+        custom_error(&app, &id, message);
+    };
+    let canceled = || {
+        staged.cleanup();
+        custom_canceled(&app, &id);
+    };
+
+    let Some(extractor) = crate::tools::locate_sibling("ps3iso", "extractps3iso") else {
+        return fail(
+            "Falta extractps3iso. Instala ps3iso-utils desde Ajustes -> Herramientas.".into(),
+        );
+    };
+    let Some(builder) = crate::tools::locate_sibling("ps3iso", "makeps3iso") else {
+        return fail(
+            "Falta makeps3iso. Instala ps3iso-utils desde Ajustes -> Herramientas.".into(),
+        );
+    };
+
+    let work = std::env::temp_dir().join(format!("chd-studio-ps3-{id}"));
+    let _ = std::fs::remove_dir_all(&work);
+    if let Err(error) = std::fs::create_dir_all(&work) {
+        return fail(format!("No se pudo crear el area temporal: {error}"));
+    }
+    let extracted = work.join("source");
+    let source_owned = Path::new(&job.input).is_file();
+    let source = if source_owned {
+        custom_phase(&app, &id, "Extrayendo el ISO sin quitar contenido", 8.0);
+        let args = crate::ps3::extract_args(&job.input, &extracted.to_string_lossy(), false);
+        match capture_failure(
+            chdman::run_capture_cancelable(&extractor, &args, cancel.as_ref()).await,
+            "extractps3iso",
+        ) {
+            Ok(_) => extracted.clone(),
+            Err(message) if message == "__canceled__" => {
+                let _ = std::fs::remove_dir_all(&work);
+                return canceled();
+            }
+            Err(message) => {
+                let _ = std::fs::remove_dir_all(&work);
+                return fail(message);
+            }
+        }
+    } else {
+        PathBuf::from(&job.input)
+    };
+
+    if !crate::ps3::scan(&source.to_string_lossy()).valid {
+        let _ = std::fs::remove_dir_all(&work);
+        return fail("La entrada no contiene la estructura de un juego de PS3".into());
+    }
+    let expected = match crate::ps3::manifest(&source) {
+        Ok(value) if !value.is_empty() => value,
+        Ok(_) => {
+            let _ = std::fs::remove_dir_all(&work);
+            return fail("La entrada no contiene archivos para reconstruir".into());
+        }
+        Err(error) => {
+            let _ = std::fs::remove_dir_all(&work);
+            return fail(format!("No se pudo inventariar el juego: {error}"));
+        }
+    };
+    let mut update_guard = match crate::ps3::preserve_update_for_builder(&source) {
+        Ok(value) => value,
+        Err(error) => {
+            let _ = std::fs::remove_dir_all(&work);
+            return fail(format!(
+                "No se pudo preparar PS3_UPDATE sin modificarlo: {error}"
+            ));
+        }
+    };
+
+    custom_phase(&app, &id, "Reconstruyendo ISO compacto", 48.0);
+    let args = crate::ps3::build_args(
+        &source.to_string_lossy(),
+        &execution.output,
+        settings.ps3_split_fat32,
+    );
+    match capture_failure(
+        chdman::run_capture_cancelable(&builder, &args, cancel.as_ref()).await,
+        "makeps3iso",
+    ) {
+        Ok(_) => {}
+        Err(message) if message == "__canceled__" => {
+            let _ = std::fs::remove_dir_all(&work);
+            return canceled();
+        }
+        Err(message) => {
+            let _ = std::fs::remove_dir_all(&work);
+            return fail(message);
+        }
+    }
+    if let Some(guard) = &mut update_guard {
+        if let Err(error) = guard.restore() {
+            let _ = std::fs::remove_dir_all(&work);
+            return fail(format!(
+                "El ISO se creo, pero no se pudo restaurar PS3_UPDATE: {error}"
+            ));
+        }
+    }
+
+    if source_owned {
+        let _ = std::fs::remove_dir_all(&extracted);
+    }
+
+    let structural = match crate::verification::structural(execution) {
+        Ok(value) => value,
+        Err(message) => {
+            let _ = std::fs::remove_dir_all(&work);
+            return fail(message);
+        }
+    };
+
+    // Los fragmentos FAT32 se validan como conjunto. Para un ISO normal se
+    // vuelve a extraer y se compara el inventario completo con el original.
+    let verification_message = if Path::new(&execution.output).is_file() {
+        custom_phase(&app, &id, "Verificando todos los archivos", 88.0);
+        let verify_dir = work.join("verify");
+        let args =
+            crate::ps3::extract_args(&execution.output, &verify_dir.to_string_lossy(), false);
+        match capture_failure(
+            chdman::run_capture_cancelable(&extractor, &args, cancel.as_ref()).await,
+            "extractps3iso (verificacion)",
+        ) {
+            Ok(_) => {}
+            Err(message) if message == "__canceled__" => {
+                let _ = std::fs::remove_dir_all(&work);
+                return canceled();
+            }
+            Err(message) => {
+                let _ = std::fs::remove_dir_all(&work);
+                return fail(message);
+            }
+        }
+        let actual = match crate::ps3::manifest(&verify_dir) {
+            Ok(value) => value,
+            Err(error) => {
+                let _ = std::fs::remove_dir_all(&work);
+                return fail(format!(
+                    "No se pudo verificar el contenido reconstruido: {error}"
+                ));
+            }
+        };
+        if actual != expected {
+            let _ = std::fs::remove_dir_all(&work);
+            return fail(
+                "El ISO reconstruido no conserva exactamente los mismos archivos y tamanos".into(),
+            );
+        }
+        format!(
+            "Se conservaron los {} archivos y sus tamanos",
+            expected.len()
+        )
+    } else {
+        structural.message
+    };
+    let _ = std::fs::remove_dir_all(&work);
+
+    let published = match staged.publish(&job, settings.overwrite) {
+        Ok(paths) => paths,
+        Err(message) => return fail(message),
+    };
+    let output_size = published_size(&published, &job);
+    let visible_output = display_output(&published, &job);
+    let state = app.state::<AppState>();
+    if let Some(done) = state.update(&id, |done| {
+        done.status = "done".into();
+        done.phase = "Listo · contenido conservado".into();
+        done.progress = 100.0;
+        done.output_size = output_size;
+        done.output = visible_output.clone();
+        done.ratio =
+            (done.input_size > 0).then_some(output_size as f32 * 100.0 / done.input_size as f32);
+        done.verification = "basic".into();
+        done.verification_message = Some(verification_message.clone());
+        done.finished_at = Some(now_ms());
+    }) {
+        emit_job(&app, &done);
+    }
+}
+
+/// Aplica compresion transparente del sistema de archivos. RPCS3 sigue viendo
+/// una carpeta o ISO normal; no se crea un formato propietario.
+async fn run_ps3_rpcs3(app: AppHandle, id: String, job: Job, cancel: Arc<AtomicBool>) {
+    let input = PathBuf::from(&job.input);
+    if !input.exists() {
+        return custom_error(&app, &id, "La entrada ya no existe".into());
+    }
+    if input.is_dir() && !crate::ps3::scan(&job.input).valid {
+        return custom_error(
+            &app,
+            &id,
+            "La carpeta no parece un juego de PS3 para RPCS3".into(),
+        );
+    }
+
+    custom_phase(&app, &id, "Aplicando compresion transparente", 15.0);
+    #[cfg(windows)]
+    let command = {
+        let mut args = vec!["/C".into(), "/F".into(), "/Q".into(), "/EXE:LZX".into()];
+        if input.is_dir() {
+            args.push(format!("/S:{}", input.to_string_lossy()));
+            args.push("*".into());
+        } else {
+            args.push(job.input.clone());
+        }
+        Some((PathBuf::from("compact.exe"), args, "compact.exe"))
+    };
+    #[cfg(unix)]
+    let command = which::which("btrfs").ok().map(|exe| {
+        (
+            exe,
+            vec![
+                "filesystem".into(),
+                "defragment".into(),
+                "-r".into(),
+                "-czstd".into(),
+                job.input.clone(),
+            ],
+            "btrfs",
+        )
+    });
+    #[cfg(not(any(windows, unix)))]
+    let command: Option<(PathBuf, Vec<String>, &str)> = None;
+
+    let Some((exe, args, name)) = command else {
+        return custom_error(
+            &app,
+            &id,
+            "Este sistema no ofrece NTFS LZX ni Btrfs zstd para este perfil".into(),
+        );
+    };
+    let output = match capture_failure(
+        chdman::run_capture_cancelable(&exe, &args, cancel.as_ref()).await,
+        name,
+    ) {
+        Ok(output) => output,
+        Err(message) if message == "__canceled__" => return custom_canceled(&app, &id),
+        Err(message) => {
+            #[cfg(unix)]
+            let message = format!("{message}. En Linux este perfil necesita una unidad Btrfs.");
+            return custom_error(&app, &id, message);
+        }
+    };
+
+    #[cfg(unix)]
+    if input.is_dir() {
+        // Mantiene zstd activo para archivos que RPCS3 cree o reemplace despues.
+        let property_args = vec![
+            "property".into(),
+            "set".into(),
+            job.input.clone(),
+            "compression".into(),
+            "zstd".into(),
+        ];
+        let _ = chdman::run_capture_cancelable(&exe, &property_args, cancel.as_ref()).await;
+    }
+
+    let physical = crate::ps3::allocated_size(&input);
+    let state = app.state::<AppState>();
+    if let Some(done) = state.update(&id, |done| {
+        done.status = "done".into();
+        done.phase = "Listo · RPCS3 lo lee normalmente".into();
+        done.progress = 100.0;
+        done.output = job.input.clone();
+        done.output_size = physical;
+        done.ratio =
+            (done.input_size > 0).then_some(physical as f32 * 100.0 / done.input_size as f32);
+        done.verification = "basic".into();
+        done.verification_message =
+            Some("Compresion transparente aplicada; el contenido logico no se modifico".into());
+        if !output.trim().is_empty() {
+            done.log
+                .extend(output.lines().rev().take(40).map(str::to_string));
+        }
+        done.finished_at = Some(now_ms());
+    }) {
+        emit_job(&app, &done);
+    }
+}
+
 /// Ejecuta un trabajo de principio a fin, emitiendo progreso al frontend.
 async fn run_job(app: AppHandle, id: String) {
     let state = app.state::<AppState>();
-    let (job, settings, exe) = {
+    let (job, settings) = {
         let s = state.settings.lock().unwrap().clone();
         let job = match state.jobs.lock().unwrap().iter().find(|j| j.id == id) {
             Some(j) => j.clone(),
             None => return,
         };
-        // ps3iso-utils son cuatro programas en una sola descarga: hay que coger
-        // el que toque segun el modo.
-        let exe = if job.tool == "ps3iso" {
-            crate::tools::locate_sibling("ps3iso", crate::ps3::exe_for(&job.mode))
-        } else {
-            crate::tools::locate(&job.tool, &s).map(|(p, _)| p)
-        };
-        (job, s, exe)
+        (job, s)
     };
 
     // Este modo encadena dos herramientas, asi que sigue su propio camino
@@ -1126,6 +1487,40 @@ async fn run_job(app: AppHandle, id: String) {
         state.cancels.lock().unwrap().remove(&id);
         return;
     }
+
+    if matches!(job.mode.as_str(), "ps3compact" | "ps3rpcs3") {
+        let cancel = Arc::new(AtomicBool::new(false));
+        state
+            .cancels
+            .lock()
+            .unwrap()
+            .insert(id.clone(), cancel.clone());
+        if let Some(running) = state.update(&id, |running| {
+            running.status = "running".into();
+            running.phase = "Iniciando".into();
+            running.started_at = Some(now_ms());
+            running.progress = 0.0;
+            running.verification = "pending".into();
+            running.verification_message = None;
+        }) {
+            emit_job(&app, &running);
+        }
+        if job.mode == "ps3compact" {
+            run_ps3_compact(app.clone(), id.clone(), job, settings, cancel).await;
+        } else {
+            run_ps3_rpcs3(app.clone(), id.clone(), job, cancel).await;
+        }
+        state.cancels.lock().unwrap().remove(&id);
+        return;
+    }
+
+    // ps3iso-utils son cuatro programas en una sola descarga: hay que coger el
+    // ejecutable concreto que corresponde al modo.
+    let exe = if job.tool == "ps3iso" {
+        crate::tools::locate_sibling("ps3iso", crate::ps3::exe_for(&job.mode))
+    } else {
+        crate::tools::locate(&job.tool, &settings).map(|(path, _)| path)
+    };
 
     let Some(exe) = exe else {
         let tool = job.tool.clone();

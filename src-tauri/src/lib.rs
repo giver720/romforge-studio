@@ -265,6 +265,13 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
                     .to_string(),
                 None,
             ),
+            "ps3compact" => (
+                dir.join(format!("{stem}.compact.iso"))
+                    .to_string_lossy()
+                    .to_string(),
+                None,
+            ),
+            "ps3rpcs3" => (spec.input.clone(), None),
             "ps3split" => (spec.input.clone(), None),
             _ => (dir.join(&stem).to_string_lossy().to_string(), None),
         };

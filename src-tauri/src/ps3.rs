@@ -1,8 +1,8 @@
-//! Adelgazado de juegos de PlayStation 3.
+//! Optimizacion de juegos de PlayStation 3 sin cambiar su contenido.
 //!
-//! El flujo es: extraer el ISO a una carpeta, mirar que hay dentro, borrar lo
-//! que no interese (packs de idioma, el actualizador de firmware, videos que no
-//! se usan) y, si hace falta, volver a montar el ISO.
+//! El perfil universal extrae y reconstruye un ISO estandar para retirar el
+//! relleno del disco. El perfil RPCS3 conserva el archivo o carpeta tal cual y
+//! pide al sistema de archivos que lo comprima de forma transparente.
 //!
 //! Aqui esta la parte delicada del programa. Hay juegos que llevan un indice de
 //! sus propios archivos y se cuelgan si falta uno, asi que:
@@ -18,6 +18,8 @@ pub const MODES: &[(&str, &str)] = &[
     ("ps3extract", "ps3iso"),
     ("ps3build", "ps3iso"),
     ("ps3split", "ps3iso"),
+    ("ps3compact", "ps3iso"),
+    ("ps3rpcs3", "rpcs3fs"),
 ];
 
 pub fn is_mode(mode: &str) -> bool {
@@ -31,10 +33,156 @@ pub fn tool_for(mode: &str) -> Option<&'static str> {
 /// Ejecutable concreto que toca en cada modo.
 pub fn exe_for(mode: &str) -> &'static str {
     match mode {
-        "ps3build" => "makeps3iso",
+        "ps3build" | "ps3compact" => "makeps3iso",
         "ps3split" => "splitps3iso",
         _ => "extractps3iso",
     }
+}
+
+pub fn is_build_mode(mode: &str) -> bool {
+    matches!(mode, "ps3build" | "ps3compact")
+}
+
+/// Inventario estable para comprobar que reconstruir un ISO no ha perdido ni
+/// alterado el tamano de ningun archivo.
+pub fn manifest(dir: &Path) -> anyhow::Result<Vec<(String, u64)>> {
+    fn walk(base: &Path, dir: &Path, out: &mut Vec<(String, u64)>) -> anyhow::Result<()> {
+        for entry in std::fs::read_dir(dir)? {
+            let entry = entry?;
+            let path = entry.path();
+            let meta = entry.metadata()?;
+            if meta.is_dir() {
+                walk(base, &path, out)?;
+            } else if meta.is_file() {
+                let relative = path
+                    .strip_prefix(base)?
+                    .to_string_lossy()
+                    .replace('\\', "/")
+                    .to_lowercase();
+                out.push((relative, meta.len()));
+            }
+        }
+        Ok(())
+    }
+
+    let mut files = vec![];
+    walk(dir, dir, &mut files)?;
+    files.sort_unstable();
+    Ok(files)
+}
+
+/// `makeps3iso` se compila con una exclusion fija y sensible a mayusculas para
+/// `PS3_UPDATE`. Durante la construccion se cambia solo el uso de mayusculas
+/// para que la utilidad conserve esa carpeta; al escribir el ISO vuelve a
+/// normalizar el nombre a mayusculas.
+pub struct UpdateCaseGuard {
+    original: PathBuf,
+    temporary: PathBuf,
+    adjusted: Option<PathBuf>,
+}
+
+impl UpdateCaseGuard {
+    pub fn restore(&mut self) -> anyhow::Result<()> {
+        let Some(adjusted) = self.adjusted.take() else {
+            return Ok(());
+        };
+        std::fs::rename(&adjusted, &self.temporary)?;
+        std::fs::rename(&self.temporary, &self.original)?;
+        Ok(())
+    }
+}
+
+impl Drop for UpdateCaseGuard {
+    fn drop(&mut self) {
+        let _ = self.restore();
+    }
+}
+
+pub fn preserve_update_for_builder(dir: &Path) -> anyhow::Result<Option<UpdateCaseGuard>> {
+    let Some(update) = std::fs::read_dir(dir)?
+        .flatten()
+        .find(|entry| {
+            entry
+                .file_name()
+                .to_string_lossy()
+                .eq_ignore_ascii_case("PS3_UPDATE")
+        })
+        .map(|entry| entry.path())
+    else {
+        return Ok(None);
+    };
+    if update
+        .file_name()
+        .map(|name| name.to_string_lossy() != "PS3_UPDATE")
+        .unwrap_or(true)
+    {
+        return Ok(None);
+    }
+
+    let temporary = dir.join(".chd-studio-update-case");
+    let adjusted = dir.join("ps3_update");
+    let lowercase_conflict = std::fs::read_dir(dir)?
+        .flatten()
+        .any(|entry| entry.file_name().to_string_lossy() == "ps3_update" && entry.path() != update);
+    anyhow::ensure!(
+        !temporary.exists() && !lowercase_conflict,
+        "No se puede preservar PS3_UPDATE porque hay un nombre temporal en conflicto"
+    );
+    std::fs::rename(&update, &temporary)?;
+    if let Err(error) = std::fs::rename(&temporary, &adjusted) {
+        let _ = std::fs::rename(&temporary, &update);
+        return Err(error.into());
+    }
+    Ok(Some(UpdateCaseGuard {
+        original: update,
+        temporary,
+        adjusted: Some(adjusted),
+    }))
+}
+
+/// Tamano fisico ocupado tras aplicar compresion transparente. En Unix `blocks`
+/// ya expresa los bloques realmente asignados; en Windows se consulta la API que
+/// entiende archivos NTFS comprimidos.
+pub fn allocated_size(path: &Path) -> u64 {
+    if path.is_dir() {
+        return std::fs::read_dir(path)
+            .map(|entries| {
+                entries
+                    .flatten()
+                    .map(|entry| allocated_size(&entry.path()))
+                    .sum()
+            })
+            .unwrap_or(0);
+    }
+
+    #[cfg(unix)]
+    {
+        use std::os::unix::fs::MetadataExt;
+        return std::fs::metadata(path)
+            .map(|meta| meta.blocks() * 512)
+            .unwrap_or(0);
+    }
+
+    #[cfg(windows)]
+    {
+        use std::os::windows::ffi::OsStrExt;
+        type Dword = u32;
+        #[link(name = "kernel32")]
+        extern "system" {
+            fn GetCompressedFileSizeW(file_name: *const u16, high: *mut Dword) -> Dword;
+        }
+        let wide: Vec<u16> = path.as_os_str().encode_wide().chain(Some(0)).collect();
+        let mut high = 0u32;
+        // SAFETY: `wide` termina en NUL y `high` apunta a memoria valida.
+        let low = unsafe { GetCompressedFileSizeW(wide.as_ptr(), &mut high) };
+        if low == u32::MAX && high == 0 {
+            return std::fs::metadata(path).map(|meta| meta.len()).unwrap_or(0);
+        }
+        return ((high as u64) << 32) | low as u64;
+    }
+
+    #[cfg(not(any(unix, windows)))]
+    std::fs::metadata(path).map(|meta| meta.len()).unwrap_or(0)
 }
 
 /// `extractps3iso [-s] <ISO> <carpeta destino>`
@@ -80,7 +228,10 @@ const PROTEGIDOS: &[&str] = &[
 /// Codigos de idioma tal y como suelen aparecer en los nombres de archivo.
 const IDIOMAS: &[(&str, &[&str])] = &[
     ("Inglés", &["_en", "eng", "english", "_us", "_uk"]),
-    ("Español", &["_es", "spa", "spanish", "espanol", "castellano"]),
+    (
+        "Español",
+        &["_es", "spa", "spanish", "espanol", "castellano"],
+    ),
     ("Francés", &["_fr", "fre", "fra", "french", "francais"]),
     ("Alemán", &["_de", "ger", "deu", "german", "deutsch"]),
     ("Italiano", &["_it", "ita", "italian", "italiano"]),
@@ -94,7 +245,9 @@ const IDIOMAS: &[(&str, &[&str])] = &[
 ];
 
 /// Extensiones de video y audio, que es donde se va casi todo el espacio.
-const MEDIA_EXT: &[&str] = &["pam", "bik", "at3", "msf", "sgd", "mp4", "m2v", "wav", "ogg", "wmv"];
+const MEDIA_EXT: &[&str] = &[
+    "pam", "bik", "at3", "msf", "sgd", "mp4", "m2v", "wav", "ogg", "wmv",
+];
 
 #[derive(Debug, Clone, Serialize)]
 pub struct Ps3Entry {
@@ -117,7 +270,9 @@ pub struct Ps3Entry {
 
 fn es_protegido(rel: &str) -> bool {
     let r = rel.replace('\\', "/").to_lowercase();
-    PROTEGIDOS.iter().any(|p| r == *p || r.ends_with(&format!("/{p}")))
+    PROTEGIDOS
+        .iter()
+        .any(|p| r == *p || r.ends_with(&format!("/{p}")))
 }
 
 /// Intenta reconocer a que idioma pertenece un archivo por su nombre.
@@ -136,7 +291,11 @@ fn detectar_idioma(nombre: &str) -> Option<&'static str> {
     None
 }
 
-fn clasificar(rel: &str, nombre: &str, is_dir: bool) -> (String, Option<String>, bool, Option<String>) {
+fn clasificar(
+    rel: &str,
+    nombre: &str,
+    is_dir: bool,
+) -> (String, Option<String>, bool, Option<String>) {
     let r = rel.replace('\\', "/").to_lowercase();
 
     if r == "ps3_update" || r.starts_with("ps3_update/") {
@@ -191,7 +350,9 @@ fn recorrer(base: &Path, dir: &Path, out: &mut Vec<Ps3Entry>, depth: usize) {
 
     for e in rd.flatten() {
         let p = e.path();
-        let Ok(rel) = p.strip_prefix(base) else { continue };
+        let Ok(rel) = p.strip_prefix(base) else {
+            continue;
+        };
         let rel_s = rel.to_string_lossy().to_string();
         let nombre = e.file_name().to_string_lossy().to_string();
         let is_dir = p.is_dir();
@@ -287,7 +448,10 @@ pub struct TrimResult {
 /// salirse de la carpeta del juego.
 pub fn trim(dir: &str, paths: &[String]) -> anyhow::Result<TrimResult> {
     let base = std::fs::canonicalize(dir)?;
-    anyhow::ensure!(parece_juego(&base), "Esa carpeta no parece un juego de PS3 extraido");
+    anyhow::ensure!(
+        parece_juego(&base),
+        "Esa carpeta no parece un juego de PS3 extraido"
+    );
 
     let mut freed = 0u64;
     let mut removed = 0usize;
@@ -336,4 +500,61 @@ pub fn trim(dir: &str, paths: &[String]) -> anyhow::Result<TrimResult> {
         removed,
         skipped,
     })
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    fn test_dir(name: &str) -> PathBuf {
+        let dir =
+            std::env::temp_dir().join(format!("chd-studio-ps3-{name}-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir_all(&dir).unwrap();
+        dir
+    }
+
+    #[test]
+    fn manifest_is_sorted_and_compares_paths_case_insensitively() {
+        let dir = test_dir("manifest");
+        std::fs::create_dir_all(dir.join("PS3_GAME/USRDIR")).unwrap();
+        std::fs::write(dir.join("PS3_GAME/USRDIR/Z.BIN"), b"1234").unwrap();
+        std::fs::write(dir.join("PS3_GAME/PARAM.SFO"), b"123").unwrap();
+
+        let files = manifest(&dir).unwrap();
+        assert_eq!(
+            files,
+            vec![
+                ("ps3_game/param.sfo".into(), 3),
+                ("ps3_game/usrdir/z.bin".into(), 4),
+            ]
+        );
+        let _ = std::fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn compact_mode_is_treated_as_an_iso_build() {
+        assert!(is_build_mode("ps3compact"));
+        assert!(is_build_mode("ps3build"));
+        assert!(!is_build_mode("ps3rpcs3"));
+    }
+
+    #[test]
+    fn update_case_guard_restores_the_original_name() {
+        let dir = test_dir("update-case");
+        std::fs::create_dir(dir.join("PS3_UPDATE")).unwrap();
+        {
+            let mut guard = preserve_update_for_builder(&dir).unwrap().unwrap();
+            assert!(dir.join("ps3_update").is_dir());
+            guard.restore().unwrap();
+        }
+        assert!(dir.join("PS3_UPDATE").is_dir());
+        let names: Vec<String> = std::fs::read_dir(&dir)
+            .unwrap()
+            .flatten()
+            .map(|entry| entry.file_name().to_string_lossy().to_string())
+            .collect();
+        assert_eq!(names, vec!["PS3_UPDATE"]);
+        let _ = std::fs::remove_dir_all(dir);
+    }
 }
