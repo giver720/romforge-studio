@@ -43,12 +43,13 @@ npm run dist
 if ($LASTEXITCODE -ne 0) { throw "Fallo la compilacion" }
 
 $bundle = "src-tauri\target\release\bundle"
-$setup = Get-ChildItem "$bundle\nsis" -Filter "*-setup.exe" | Select-Object -First 1
+$setup = Get-ChildItem "$bundle\nsis" -Filter "*_${version}_x64-setup.exe" | Select-Object -First 1
 if (-not $setup) { throw "No se genero el instalador" }
 
 # --- 3. Portable -----------------------------------------------------------
 Write-Host "  Armando la version portable..." -ForegroundColor Cyan
 $out = Join-Path $root "release\v$version"
+if (Test-Path $out) { Remove-Item $out -Recurse -Force }
 New-Item -ItemType Directory -Force $out | Out-Null
 
 # Se monta en la carpeta temporal y solo el .zip acaba en release/
