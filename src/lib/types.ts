@@ -28,6 +28,8 @@ export interface Job {
   phase: string;
   ratio: number | null;
   message: string | null;
+  verification: "pending" | "running" | "passed" | "basic" | "failed" | "not_applicable";
+  verification_message: string | null;
   log: string[];
   input_size: number;
   output_size: number;
@@ -105,7 +107,6 @@ export interface Settings {
   output_dir: string | null;
   preset: "max" | "balanced" | "fast";
   delete_source: boolean;
-  verify_after: boolean;
   overwrite: boolean;
   parallel: number;
   threads: number;

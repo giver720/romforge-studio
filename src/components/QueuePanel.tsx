@@ -6,6 +6,8 @@ import {
   ListX,
   Loader2,
   RotateCcw,
+  ShieldCheck,
+  ShieldEllipsis,
   Trash2,
   X,
 } from "lucide-react";
@@ -139,16 +141,34 @@ function JobRow({ job }: { job: Job }) {
       )}
 
       {done && (
-        <p className="mt-2 flex items-center gap-1.5 text-[0.68rem] text-[var(--color-muted)]">
-          <span className="mono">{bytes(job.input_size)}</span>
-          <span className="text-[var(--color-faint)]">→</span>
-          <span className="mono">{bytes(job.output_size)}</span>
-          {saved && (
-            <span className="chip ml-auto border-emerald-400/25 bg-emerald-400/10 text-emerald-300">
-              {saved}
-            </span>
+        <div className="mt-2 space-y-1.5">
+          <p className="flex items-center gap-1.5 text-[0.68rem] text-[var(--color-muted)]">
+            <span className="mono">{bytes(job.input_size)}</span>
+            <span className="text-[var(--color-faint)]">→</span>
+            <span className="mono">{bytes(job.output_size)}</span>
+            {saved && (
+              <span className="chip ml-auto border-emerald-400/25 bg-emerald-400/10 text-emerald-300">
+                {saved}
+              </span>
+            )}
+          </p>
+          {job.verification === "passed" && (
+            <p
+              className="flex items-center gap-1.5 text-[0.66rem] text-emerald-300"
+              title={job.verification_message ?? undefined}
+            >
+              <ShieldCheck size={13} /> Verificación completa
+            </p>
           )}
-        </p>
+          {job.verification === "basic" && (
+            <p
+              className="flex items-center gap-1.5 text-[0.66rem] text-sky-300"
+              title={job.verification_message ?? undefined}
+            >
+              <ShieldEllipsis size={13} /> Validación estructural
+            </p>
+          )}
+        </div>
       )}
 
       {failed && job.message && (

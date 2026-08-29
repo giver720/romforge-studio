@@ -84,6 +84,23 @@ Con MAME 0.255 o superior se habilita el códec **zstd**, que el preset «Máxim
 
 Sin soporte de zstd se usan los equivalentes clásicos.
 
+## Verificación automática y salidas seguras
+
+Cada conversión se comprueba antes de aparecer como terminada. La cola distingue dos niveles:
+
+- **Verificación completa:** el formato se valida con su propia herramienta. Se usa `chdman verify`
+  para CHD, la comprobación de hashes de NSZ y DolphinTool para imágenes de Wii cuando está
+  disponible.
+- **Validación estructural:** para formatos sin verificador independiente se comprueban existencia,
+  tamaño, cabecera y estructura mínima. Esto incluye, entre otros, CSO/ZSO/DAX, juegos extraídos de
+  Xbox y PS3, CCI y los NSP que pueda producir 4NXCI.
+
+La conversión se escribe primero en una carpeta temporal situada junto al destino. Sólo después de
+superar la comprobación se publica con un renombrado local. Si la herramienta falla, la verificación
+rechaza el resultado o el usuario cancela, se retira la salida temporal y cualquier archivo anterior
+permanece intacto. La opción **Sobrescribir** tampoco elimina el resultado antiguo hasta que el nuevo
+ha sido validado.
+
 ## Nintendo Switch
 
 | Conversión | Herramienta | Notas |

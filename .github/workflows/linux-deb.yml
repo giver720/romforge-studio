@@ -48,8 +48,10 @@ jobs:
           npm ci
           rustfmt --check --edition 2021 --config skip_children=true \
             src-tauri/src/chdman.rs \
+            src-tauri/src/jobs.rs \
             src-tauri/src/lib.rs \
-            src-tauri/src/tools.rs
+            src-tauri/src/tools.rs \
+            src-tauri/src/verification.rs
           cargo test --manifest-path src-tauri/Cargo.toml
           npm run dist:linux
 
