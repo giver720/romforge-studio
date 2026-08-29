@@ -35,16 +35,19 @@ Write-Host "  Actualizando herramientas nativas..." -ForegroundColor Cyan
 
 # --- 2. Instalador ---------------------------------------------------------
 Write-Host "  Compilando (esto tarda)..." -ForegroundColor Cyan
-# Hay que pasar el CONTENIDO de la clave: si se le da la ruta, Tauri compila
-# igual pero se salta la firma y luego no hay .sig que publicar.
-$env:TAURI_SIGNING_PRIVATE_KEY = (Get-Content $key -Raw).Trim()
-$env:TAURI_SIGNING_PRIVATE_KEY_PASSWORD = ""
-npm run dist
+# La clave historica usa una contrasena vacia. PowerShell elimina una variable
+# de entorno cuando se le asigna "", asi que el bundler abriria un prompt
+# invisible al intentar descifrarla. Se genera el bundle sin firma y se firma
+# explicitamente con `--password=` en el paso siguiente.
+npx tauri build --no-sign
 if ($LASTEXITCODE -ne 0) { throw "Fallo la compilacion" }
 
 $bundle = "src-tauri\target\release\bundle"
 $setup = Get-ChildItem "$bundle\nsis" -Filter "*_${version}_x64-setup.exe" | Select-Object -First 1
 if (-not $setup) { throw "No se genero el instalador" }
+
+npx tauri signer sign --private-key-path $key --password= $setup.FullName
+if ($LASTEXITCODE -ne 0) { throw "No se pudo firmar el instalador" }
 
 # --- 3. Portable -----------------------------------------------------------
 Write-Host "  Armando la version portable..." -ForegroundColor Cyan
