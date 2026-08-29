@@ -113,10 +113,9 @@ pub fn nsz_args(mode: &str, input: &str, out_dir: &str, s: &Settings) -> Vec<Str
             a.push("-C".into());
             a.push("-l".into());
             a.push(s.nsz_level.clamp(1, 22).to_string());
-            // -V comprueba los hashes del resultado nada mas comprimirlo
-            if s.verify_after {
-                a.push("-V".into());
-            }
+            // La verificacion forma parte de la conversion: un trabajo no se
+            // marca como terminado hasta que NSZ comprueba sus hashes.
+            a.push("-V".into());
         }
         _ => a.push("-D".into()),
     }

@@ -6,6 +6,7 @@ mod settings;
 mod switch;
 mod threeds;
 mod tools;
+mod verification;
 mod wii;
 mod xbox360;
 
@@ -400,6 +401,8 @@ fn retry_job(app: AppHandle, state: State<AppState>, id: String) -> Vec<Job> {
         j.phase = "En cola".into();
         j.progress = 0.0;
         j.message = None;
+        j.verification = "pending".into();
+        j.verification_message = None;
         j.log.clear();
         j.started_at = None;
         j.finished_at = None;

@@ -114,7 +114,6 @@ const DEFAULT_SETTINGS: Settings = {
   output_dir: null,
   preset: "balanced",
   delete_source: false,
-  verify_after: false,
   overwrite: false,
   parallel: 1,
   threads: 0,

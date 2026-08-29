@@ -42,6 +42,9 @@ pub struct Job {
     pub phase: String,
     pub ratio: Option<f32>,
     pub message: Option<String>,
+    /// pending | running | passed | basic | failed | not_applicable
+    pub verification: String,
+    pub verification_message: Option<String>,
     pub log: Vec<String>,
     pub input_size: u64,
     pub output_size: u64,
@@ -73,6 +76,8 @@ impl Job {
             phase: "En cola".into(),
             ratio: None,
             message: None,
+            verification: "pending".into(),
+            verification_message: None,
             log: vec![],
             input_size,
             output_size: 0,
@@ -166,7 +171,7 @@ fn build_args(job: &Job, s: &Settings) -> Vec<String> {
 
 /// Los modos de comprobacion no generan archivo, asi que no hay nada que limpiar.
 fn is_verify(mode: &str) -> bool {
-    mode == "verify"
+    matches!(mode, "verify" | "wiiverify")
 }
 
 /// Algunos modos producen una carpeta en vez de un archivo suelto.
@@ -192,12 +197,327 @@ fn dir_size(path: &Path) -> u64 {
         .sum()
 }
 
-/// Borra el resultado a medias, sea archivo o carpeta.
-fn remove_output(job: &Job) {
-    if mode_writes_directory(job) {
-        let _ = std::fs::remove_dir_all(&job.output);
+fn remove_path(path: &Path) {
+    if path.is_dir() {
+        let _ = std::fs::remove_dir_all(path);
     } else {
-        let _ = std::fs::remove_file(&job.output);
+        let _ = std::fs::remove_file(path);
+    }
+}
+
+#[derive(Debug)]
+struct OutputEntry {
+    target: PathBuf,
+    backup: Option<PathBuf>,
+}
+
+/// Protege cualquier salida anterior hasta que la conversion y su verificacion
+/// terminen. Todos los respaldos se crean al lado del original para que el
+/// `rename` sea atomico y no cruce unidades.
+#[derive(Debug, Default)]
+struct OutputTransaction {
+    entries: Vec<OutputEntry>,
+}
+
+impl OutputTransaction {
+    fn protect(&mut self, target: PathBuf, overwrite: bool, job_id: &str) -> Result<(), String> {
+        if !target.exists() {
+            self.entries.push(OutputEntry {
+                target,
+                backup: None,
+            });
+            return Ok(());
+        }
+        if !overwrite {
+            return Err(format!(
+                "La salida ya existe: {}. Activa «Sobrescribir» o elige otra carpeta.",
+                target.display()
+            ));
+        }
+        let Some(parent) = target.parent() else {
+            return Err("No se pudo determinar la carpeta de la salida existente".into());
+        };
+        let name = target
+            .file_name()
+            .map(|value| value.to_string_lossy().to_string())
+            .unwrap_or_else(|| "salida".into());
+        let backup = parent.join(format!("{name}.chd-studio-backup-{job_id}"));
+        if backup.exists() {
+            return Err(format!(
+                "Ya existe un respaldo pendiente: {}",
+                backup.display()
+            ));
+        }
+        std::fs::rename(&target, &backup).map_err(|error| {
+            format!(
+                "No se pudo proteger la salida anterior {}: {error}",
+                target.display()
+            )
+        })?;
+        self.entries.push(OutputEntry {
+            target,
+            backup: Some(backup),
+        });
+        Ok(())
+    }
+
+    fn begin(job: &Job, overwrite: bool) -> Result<Self, String> {
+        if is_verify(&job.mode) || job.mode == "ps3split" {
+            return Ok(Self::default());
+        }
+
+        let mut targets = vec![PathBuf::from(&job.output)];
+        if let Some(extra) = &job.output_extra {
+            targets.push(PathBuf::from(extra));
+        }
+
+        let mut tx = Self::default();
+        for target in targets {
+            if let Err(error) = tx.protect(target, overwrite, &job.id) {
+                tx.rollback();
+                return Err(error);
+            }
+        }
+        Ok(tx)
+    }
+
+    fn rollback(&self) {
+        for entry in self.entries.iter().rev() {
+            if let Some(backup) = &entry.backup {
+                remove_path(&entry.target);
+                let _ = std::fs::rename(backup, &entry.target);
+            } else {
+                remove_path(&entry.target);
+            }
+        }
+    }
+
+    fn commit(&self) {
+        for entry in &self.entries {
+            if let Some(backup) = &entry.backup {
+                remove_path(backup);
+            }
+        }
+    }
+}
+
+#[derive(Debug)]
+struct StagedOutput {
+    execution_job: Job,
+    root: Option<PathBuf>,
+    final_parent: Option<PathBuf>,
+}
+
+impl StagedOutput {
+    fn new(job: &Job, overwrite: bool) -> Result<Self, String> {
+        if is_verify(&job.mode) || job.mode == "ps3split" {
+            return Ok(Self {
+                execution_job: job.clone(),
+                root: None,
+                final_parent: None,
+            });
+        }
+
+        for target in std::iter::once(&job.output).chain(job.output_extra.iter()) {
+            if Path::new(target).exists() && !overwrite {
+                return Err(format!(
+                    "La salida ya existe: {target}. Activa «Sobrescribir» o elige otra carpeta."
+                ));
+            }
+        }
+
+        let final_output = PathBuf::from(&job.output);
+        let final_parent = final_output
+            .parent()
+            .map(Path::to_path_buf)
+            .unwrap_or_else(|| PathBuf::from("."));
+        std::fs::create_dir_all(&final_parent)
+            .map_err(|e| format!("No se pudo crear la carpeta de destino: {e}"))?;
+        let root = final_parent.join(format!(".chd-studio-stage-{}", job.id));
+        if root.exists() {
+            return Err(format!(
+                "Ya existe una conversion temporal pendiente: {}",
+                root.display()
+            ));
+        }
+        std::fs::create_dir(&root)
+            .map_err(|e| format!("No se pudo crear la carpeta temporal: {e}"))?;
+
+        let mut execution_job = job.clone();
+        let output_name = final_output
+            .file_name()
+            .ok_or_else(|| "La salida no tiene un nombre de archivo valido".to_string())?;
+        execution_job.output = root.join(output_name).to_string_lossy().to_string();
+        if let Some(extra) = &job.output_extra {
+            let extra_name = Path::new(extra)
+                .file_name()
+                .ok_or_else(|| "La salida adicional no tiene un nombre valido".to_string())?;
+            execution_job.output_extra = Some(root.join(extra_name).to_string_lossy().to_string());
+        }
+
+        Ok(Self {
+            execution_job,
+            root: Some(root),
+            final_parent: Some(final_parent),
+        })
+    }
+
+    fn cleanup(&self) {
+        if let Some(root) = &self.root {
+            let _ = std::fs::remove_dir_all(root);
+        }
+    }
+
+    fn publish(&self, final_job: &Job, overwrite: bool) -> Result<Vec<PathBuf>, String> {
+        let Some(root) = &self.root else {
+            return Ok(vec![]);
+        };
+        let Some(final_parent) = &self.final_parent else {
+            return Err("No se conoce la carpeta final del resultado".into());
+        };
+        let entries: Vec<PathBuf> = std::fs::read_dir(root)
+            .map_err(|e| format!("No se pudo leer la salida temporal: {e}"))?
+            .filter_map(|entry| entry.ok().map(|value| value.path()))
+            .collect();
+        if entries.is_empty() {
+            return Err("La conversion temporal no produjo ningun resultado".into());
+        }
+
+        let mut transaction = OutputTransaction::begin(final_job, overwrite)?;
+        let expected: Vec<PathBuf> = std::iter::once(PathBuf::from(&final_job.output))
+            .chain(final_job.output_extra.iter().map(PathBuf::from))
+            .collect();
+
+        for source in &entries {
+            let Some(name) = source.file_name() else {
+                transaction.rollback();
+                return Err("Una salida temporal no tiene nombre valido".into());
+            };
+            let target = final_parent.join(name);
+            if !expected.iter().any(|path| path == &target) {
+                if let Err(error) = transaction.protect(target, overwrite, &final_job.id) {
+                    transaction.rollback();
+                    return Err(error);
+                }
+            }
+        }
+
+        let targets: Vec<PathBuf> = entries
+            .iter()
+            .map(|source| final_parent.join(source.file_name().unwrap()))
+            .collect();
+        for (source, target) in entries.iter().zip(&targets) {
+            if let Err(error) = std::fs::rename(source, target) {
+                transaction.rollback();
+                return Err(format!("No se pudo publicar {}: {error}", target.display()));
+            }
+        }
+
+        transaction.commit();
+        let _ = std::fs::remove_dir(root);
+        Ok(targets)
+    }
+}
+
+#[cfg(test)]
+#[allow(clippy::items_after_test_module)]
+mod output_transaction_tests {
+    use super::*;
+
+    fn fixture(name: &str) -> (PathBuf, Job) {
+        let dir = std::env::temp_dir().join(format!(
+            "chd-studio-output-transaction-{name}-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&dir);
+        std::fs::create_dir_all(&dir).unwrap();
+        let input = dir.join("input.iso");
+        let output = dir.join("output.chd");
+        std::fs::write(&input, b"source").unwrap();
+        let job = Job::new(
+            input.to_string_lossy().to_string(),
+            output.to_string_lossy().to_string(),
+            "chdman".into(),
+            "createdvd".into(),
+            "ps2".into(),
+        );
+        (dir, job)
+    }
+
+    #[test]
+    fn rollback_restores_previous_output() {
+        let (dir, job) = fixture("rollback");
+        std::fs::write(&job.output, b"previous").unwrap();
+        let tx = OutputTransaction::begin(&job, true).unwrap();
+        std::fs::write(&job.output, b"partial").unwrap();
+        tx.rollback();
+        assert_eq!(std::fs::read(&job.output).unwrap(), b"previous");
+        let _ = std::fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn commit_keeps_new_output() {
+        let (dir, job) = fixture("commit");
+        std::fs::write(&job.output, b"previous").unwrap();
+        let tx = OutputTransaction::begin(&job, true).unwrap();
+        std::fs::write(&job.output, b"verified").unwrap();
+        tx.commit();
+        assert_eq!(std::fs::read(&job.output).unwrap(), b"verified");
+        assert_eq!(std::fs::read_dir(&dir).unwrap().count(), 2);
+        let _ = std::fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn refusing_overwrite_never_touches_existing_output() {
+        let (dir, job) = fixture("no-overwrite");
+        std::fs::write(&job.output, b"previous").unwrap();
+        assert!(OutputTransaction::begin(&job, false).is_err());
+        assert_eq!(std::fs::read(&job.output).unwrap(), b"previous");
+        let _ = std::fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn staged_publish_replaces_only_after_success() {
+        let (dir, job) = fixture("staged-publish");
+        std::fs::write(&job.output, b"previous").unwrap();
+        let staged = StagedOutput::new(&job, true).unwrap();
+
+        assert_eq!(std::fs::read(&job.output).unwrap(), b"previous");
+        std::fs::write(&staged.execution_job.output, b"verified").unwrap();
+        assert_eq!(std::fs::read(&job.output).unwrap(), b"previous");
+
+        staged.publish(&job, true).unwrap();
+        assert_eq!(std::fs::read(&job.output).unwrap(), b"verified");
+        let _ = std::fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn staged_cleanup_preserves_existing_output() {
+        let (dir, job) = fixture("staged-cleanup");
+        std::fs::write(&job.output, b"previous").unwrap();
+        let staged = StagedOutput::new(&job, true).unwrap();
+        std::fs::write(&staged.execution_job.output, b"invalid").unwrap();
+
+        staged.cleanup();
+        assert_eq!(std::fs::read(&job.output).unwrap(), b"previous");
+        let _ = std::fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn publishes_additional_split_outputs() {
+        let (dir, mut job) = fixture("staged-parts");
+        job.output = dir.join("game.iso").to_string_lossy().to_string();
+        job.mode = "ps3build".into();
+        let staged = StagedOutput::new(&job, true).unwrap();
+        let stage_output = PathBuf::from(&staged.execution_job.output);
+        std::fs::write(stage_output.with_extension("iso.0"), b"part-zero").unwrap();
+        std::fs::write(stage_output.with_extension("iso.1"), b"part-one").unwrap();
+
+        staged.publish(&job, true).unwrap();
+        assert_eq!(std::fs::read(dir.join("game.iso.0")).unwrap(), b"part-zero");
+        assert_eq!(std::fs::read(dir.join("game.iso.1")).unwrap(), b"part-one");
+        assert_eq!(output_size_of(&job), 17);
+        let _ = std::fs::remove_dir_all(dir);
     }
 }
 
@@ -206,9 +526,67 @@ fn output_size_of(job: &Job) -> u64 {
     let p = Path::new(&job.output);
     if mode_writes_directory(job) {
         dir_size(p)
+    } else if job.mode == "ps3build" && !p.is_file() {
+        split_output_parts(p)
+            .iter()
+            .filter_map(|part| std::fs::metadata(part).ok())
+            .map(|meta| meta.len())
+            .sum()
     } else {
         std::fs::metadata(p).map(|m| m.len()).unwrap_or(0)
     }
+}
+
+fn split_output_parts(output: &Path) -> Vec<PathBuf> {
+    let (Some(parent), Some(name)) = (output.parent(), output.file_name()) else {
+        return vec![];
+    };
+    let prefix = format!("{}.", name.to_string_lossy());
+    let Ok(entries) = std::fs::read_dir(parent) else {
+        return vec![];
+    };
+    entries
+        .flatten()
+        .map(|entry| entry.path())
+        .filter(|path| {
+            path.file_name()
+                .map(|candidate| candidate.to_string_lossy())
+                .and_then(|candidate| candidate.strip_prefix(&prefix).map(str::to_string))
+                .map(|suffix| !suffix.is_empty() && suffix.chars().all(|c| c.is_ascii_digit()))
+                .unwrap_or(false)
+        })
+        .collect()
+}
+
+fn published_size(paths: &[PathBuf], fallback: &Job) -> u64 {
+    if paths.is_empty() {
+        return output_size_of(fallback);
+    }
+    paths
+        .iter()
+        .map(|path| {
+            if path.is_dir() {
+                dir_size(path)
+            } else {
+                std::fs::metadata(path).map(|meta| meta.len()).unwrap_or(0)
+            }
+        })
+        .sum()
+}
+
+fn display_output(paths: &[PathBuf], fallback: &Job) -> String {
+    let expected = Path::new(&fallback.output);
+    if expected.exists() || paths.is_empty() {
+        return fallback.output.clone();
+    }
+    if paths.len() == 1 {
+        return paths[0].to_string_lossy().to_string();
+    }
+    expected
+        .parent()
+        .unwrap_or(expected)
+        .to_string_lossy()
+        .to_string()
 }
 
 /// Varias herramientas escriben en una carpeta, no en un archivo concreto.
@@ -386,15 +764,36 @@ async fn kill_pid(pid: u32) {
 ///
 /// Los intermedios se van borrando segun dejan de hacer falta: un juego grande
 /// llegaria a ocupar cuatro veces su tamano si se guardaran todos a la vez.
-async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings) {
+async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings, cancel: Arc<AtomicBool>) {
     let state = app.state::<AppState>();
 
+    let staged = match StagedOutput::new(&job, s.overwrite) {
+        Ok(staged) => staged,
+        Err(message) => {
+            if let Some(j) = state.update(&id, |j| {
+                j.status = "error".into();
+                j.phase = "No iniciado".into();
+                j.message = Some(message.clone());
+                j.verification = "not_applicable".into();
+                j.verification_message = Some("La conversion no llego a ejecutarse".into());
+                j.finished_at = Some(now_ms());
+            }) {
+                emit_job(&app, &j);
+            }
+            return;
+        }
+    };
+    let execution_job = &staged.execution_job;
+
     let fail = |msg: String| {
+        staged.cleanup();
         let st = app.state::<AppState>();
         if let Some(j) = st.update(&id, |j| {
             j.status = "error".into();
             j.phase = "Error".into();
             j.message = Some(msg.clone());
+            j.verification = "not_applicable".into();
+            j.verification_message = Some("La conversion termino con error".into());
             j.finished_at = Some(now_ms());
         }) {
             emit_job(&app, &j);
@@ -406,6 +805,23 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings) {
         if let Some(j) = st.update(&id, |j| {
             j.phase = texto.to_string();
             j.progress = pct;
+        }) {
+            emit_job(&app, &j);
+        }
+    };
+
+    let canceled = || {
+        staged.cleanup();
+        let _ = std::fs::remove_dir_all(std::env::temp_dir().join(format!("chd-studio-cia-{id}")));
+        let st = app.state::<AppState>();
+        if let Some(j) = st.update(&id, |j| {
+            j.status = "canceled".into();
+            j.phase = "Cancelado".into();
+            j.message = Some("Cancelado por el usuario".into());
+            j.verification = "not_applicable".into();
+            j.verification_message = Some("La conversion o verificacion fue cancelada".into());
+            j.output_size = 0;
+            j.finished_at = Some(now_ms());
         }) {
             emit_job(&app, &j);
         }
@@ -436,17 +852,22 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings) {
 
     paso("Extrayendo el CIA", 5.0);
     let args = crate::threeds::ctrtool_args(&job.input, &work);
-    match chdman::run_capture_env(&ctrtool, &args, &env).await {
-        Ok((false, out)) => {
+    match chdman::run_capture_cancelable_in(&ctrtool, &args, &env, None, cancel.as_ref()).await {
+        Ok(chdman::CaptureResult::Canceled) => return canceled(),
+        Ok(chdman::CaptureResult::Finished(false, out)) => {
             let _ = std::fs::remove_dir_all(&work);
-            let tail = out.lines().rev().find(|l| !l.trim().is_empty()).unwrap_or("ctrtool fallo");
+            let tail = out
+                .lines()
+                .rev()
+                .find(|l| !l.trim().is_empty())
+                .unwrap_or("ctrtool fallo");
             return fail(format!("ctrtool: {tail}"));
         }
         Err(e) => {
             let _ = std::fs::remove_dir_all(&work);
             return fail(format!("No se pudo ejecutar ctrtool: {e}"));
         }
-        Ok((true, _)) => {}
+        Ok(chdman::CaptureResult::Finished(true, _)) => {}
     }
 
     let partes = crate::threeds::collect_contents(&work);
@@ -475,10 +896,22 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings) {
             &ncch.to_string_lossy(),
             &sec.join("ncch.bin").to_string_lossy(),
         );
-        if let Ok((false, out)) = chdman::run_capture(&tresdstool, &args).await {
-            let _ = std::fs::remove_dir_all(&work);
-            let tail = out.lines().rev().find(|l| !l.trim().is_empty()).unwrap_or("");
-            return fail(format!("3dstool no pudo leer la cabecera: {tail}"));
+        match chdman::run_capture_cancelable(&tresdstool, &args, cancel.as_ref()).await {
+            Ok(chdman::CaptureResult::Canceled) => return canceled(),
+            Ok(chdman::CaptureResult::Finished(false, out)) => {
+                let _ = std::fs::remove_dir_all(&work);
+                let tail = out
+                    .lines()
+                    .rev()
+                    .find(|l| !l.trim().is_empty())
+                    .unwrap_or("");
+                return fail(format!("3dstool no pudo leer la cabecera: {tail}"));
+            }
+            Err(e) => {
+                let _ = std::fs::remove_dir_all(&work);
+                return fail(format!("No se pudo ejecutar 3dstool: {e}"));
+            }
+            Ok(chdman::CaptureResult::Finished(true, _)) => {}
         }
 
         paso(
@@ -486,8 +919,12 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings) {
             base + 20.0 / total as f32,
         );
         let args = crate::threeds::split_args(&ncch.to_string_lossy(), &sec, &s);
-        match chdman::run_capture_env(&ctrtool, &args, &env).await {
-            Ok((_, out)) if out.to_lowercase().contains("unable to decrypt") => {
+        match chdman::run_capture_cancelable_in(&ctrtool, &args, &env, None, cancel.as_ref()).await
+        {
+            Ok(chdman::CaptureResult::Canceled) => return canceled(),
+            Ok(chdman::CaptureResult::Finished(_, out))
+                if out.to_lowercase().contains("unable to decrypt") =>
+            {
                 let _ = std::fs::remove_dir_all(&work);
                 let falta_seed = out.to_lowercase().contains("seed");
                 return fail(if falta_seed {
@@ -503,7 +940,16 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings) {
                 let _ = std::fs::remove_dir_all(&work);
                 return fail(format!("No se pudo descifrar: {e}"));
             }
-            Ok(_) => {}
+            Ok(chdman::CaptureResult::Finished(false, out)) => {
+                let _ = std::fs::remove_dir_all(&work);
+                let tail = out
+                    .lines()
+                    .rev()
+                    .find(|l| !l.trim().is_empty())
+                    .unwrap_or("");
+                return fail(format!("ctrtool no pudo descifrar: {tail}"));
+            }
+            Ok(chdman::CaptureResult::Finished(true, _)) => {}
         }
 
         // El NCCH cifrado ya no hace falta y ocupa lo mismo que el juego
@@ -515,17 +961,22 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings) {
         );
         let salida = work.join(format!("dec{idx}.{tipo}"));
         let args = crate::threeds::rebuild_args(tipo, &salida.to_string_lossy(), &sec);
-        match chdman::run_capture(&tresdstool, &args).await {
-            Ok((false, out)) => {
+        match chdman::run_capture_cancelable(&tresdstool, &args, cancel.as_ref()).await {
+            Ok(chdman::CaptureResult::Canceled) => return canceled(),
+            Ok(chdman::CaptureResult::Finished(false, out)) => {
                 let _ = std::fs::remove_dir_all(&work);
-                let tail = out.lines().rev().find(|l| !l.trim().is_empty()).unwrap_or("");
+                let tail = out
+                    .lines()
+                    .rev()
+                    .find(|l| !l.trim().is_empty())
+                    .unwrap_or("");
                 return fail(format!("3dstool no pudo rearmar la particion: {tail}"));
             }
             Err(e) => {
                 let _ = std::fs::remove_dir_all(&work);
                 return fail(format!("No se pudo rearmar la particion: {e}"));
             }
-            Ok((true, _)) => {}
+            Ok(chdman::CaptureResult::Finished(true, _)) => {}
         }
 
         let _ = std::fs::remove_dir_all(&sec);
@@ -536,17 +987,19 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings) {
     }
 
     paso("Montando el CCI", 88.0);
-    if let Some(parent) = Path::new(&job.output).parent() {
+    if let Some(parent) = Path::new(&execution_job.output).parent() {
         let _ = std::fs::create_dir_all(parent);
     }
 
-    let args = crate::threeds::makerom_args(&job.output, &descifradas);
-    let resultado = chdman::run_capture_in(&makerom, &args, &[], Some(&work)).await;
+    let args = crate::threeds::makerom_args(&execution_job.output, &descifradas);
+    let resultado =
+        chdman::run_capture_cancelable_in(&makerom, &args, &[], Some(&work), cancel.as_ref()).await;
     let _ = std::fs::remove_dir_all(&work);
 
     match resultado {
-        Ok((true, _)) => {}
-        Ok((false, out)) => {
+        Ok(chdman::CaptureResult::Canceled) => return canceled(),
+        Ok(chdman::CaptureResult::Finished(true, _)) => {}
+        Ok(chdman::CaptureResult::Finished(false, out)) => {
             let tail = out
                 .lines()
                 .rev()
@@ -557,22 +1010,80 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings) {
         Err(e) => return fail(format!("No se pudo ejecutar makerom: {e}")),
     }
 
-    let out_size = std::fs::metadata(&job.output).map(|m| m.len()).unwrap_or(0);
+    let out_size = std::fs::metadata(&execution_job.output)
+        .map(|m| m.len())
+        .unwrap_or(0);
     if out_size == 0 {
         return fail("makerom no genero ningun archivo".into());
     }
 
+    paso("Verificando", 99.0);
+    if let Some(j) = state.update(&id, |j| {
+        j.verification = "running".into();
+        j.verification_message = None;
+    }) {
+        emit_job(&app, &j);
+    }
+    let verification =
+        match crate::verification::verify(execution_job, &s, &makerom, cancel.as_ref()).await {
+            Ok(outcome) => outcome,
+            Err(crate::verification::VerifyError::Canceled) => return canceled(),
+            Err(crate::verification::VerifyError::Failed(message)) => {
+                staged.cleanup();
+                if let Some(j) = state.update(&id, |j| {
+                    j.status = "error".into();
+                    j.phase = "Verificacion fallida".into();
+                    j.message = Some(message.clone());
+                    j.verification = "failed".into();
+                    j.verification_message = Some(message.clone());
+                    j.output_size = 0;
+                    j.finished_at = Some(now_ms());
+                }) {
+                    emit_job(&app, &j);
+                }
+                return;
+            }
+        };
+
+    let published = match staged.publish(&job, s.overwrite) {
+        Ok(paths) => paths,
+        Err(message) => {
+            staged.cleanup();
+            if let Some(j) = state.update(&id, |j| {
+                j.status = "error".into();
+                j.phase = "No se pudo publicar".into();
+                j.message = Some(message.clone());
+                j.verification = verification.status.into();
+                j.verification_message = Some(verification.message.clone());
+                j.output_size = 0;
+                j.finished_at = Some(now_ms());
+            }) {
+                emit_job(&app, &j);
+            }
+            return;
+        }
+    };
+
+    let out_size = published_size(&published, &job);
+    let visible_output = display_output(&published, &job);
+
     if let Some(j) = state.update(&id, |j| {
         j.status = "done".into();
-        j.phase = "Listo".into();
+        j.phase = if verification.status == "passed" {
+            "Listo · verificado".into()
+        } else {
+            "Listo · validacion basica".into()
+        };
         j.progress = 100.0;
         j.output_size = out_size;
+        j.output = visible_output.clone();
+        j.verification = verification.status.into();
+        j.verification_message = Some(verification.message.clone());
         j.finished_at = Some(now_ms());
     }) {
         emit_job(&app, &j);
     }
 }
-
 
 /// Ejecuta un trabajo de principio a fin, emitiendo progreso al frontend.
 async fn run_job(app: AppHandle, id: String) {
@@ -595,14 +1106,25 @@ async fn run_job(app: AppHandle, id: String) {
 
     // Este modo encadena dos herramientas, asi que sigue su propio camino
     if job.mode == "cia2cci" {
+        let cancel = Arc::new(AtomicBool::new(false));
+        state
+            .cancels
+            .lock()
+            .unwrap()
+            .insert(id.clone(), cancel.clone());
         if let Some(j) = state.update(&id, |j| {
             j.status = "running".into();
             j.phase = "Iniciando".into();
             j.started_at = Some(now_ms());
+            j.progress = 0.0;
+            j.verification = "pending".into();
+            j.verification_message = None;
         }) {
             emit_job(&app, &j);
         }
-        return run_cia2cci(app.clone(), id, job, settings).await;
+        run_cia2cci(app.clone(), id.clone(), job, settings, cancel).await;
+        state.cancels.lock().unwrap().remove(&id);
+        return;
     }
 
     let Some(exe) = exe else {
@@ -612,6 +1134,8 @@ async fn run_job(app: AppHandle, id: String) {
             j.message = Some(format!(
                 "No se encontro «{tool}». Instalalo desde Ajustes → Herramientas."
             ));
+            j.verification = "not_applicable".into();
+            j.verification_message = Some("La conversion no llego a ejecutarse".into());
             j.finished_at = Some(now_ms());
         }) {
             emit_job(&app, &j);
@@ -631,19 +1155,40 @@ async fn run_job(app: AppHandle, id: String) {
         j.phase = "Iniciando".into();
         j.started_at = Some(now_ms());
         j.progress = 0.0;
+        j.verification = "pending".into();
+        j.verification_message = None;
     }) {
         emit_job(&app, &j);
     }
 
+    let staged = match StagedOutput::new(&job, settings.overwrite) {
+        Ok(staged) => staged,
+        Err(message) => {
+            if let Some(j) = state.update(&id, |j| {
+                j.status = "error".into();
+                j.phase = "No iniciado".into();
+                j.message = Some(message.clone());
+                j.verification = "not_applicable".into();
+                j.verification_message = Some("La conversion no llego a ejecutarse".into());
+                j.finished_at = Some(now_ms());
+            }) {
+                emit_job(&app, &j);
+            }
+            state.cancels.lock().unwrap().remove(&id);
+            return;
+        }
+    };
+
     // Asegura que exista la carpeta de destino. Si la salida es en si una
     // carpeta (GOD), hay que crearla entera y no solo la que la contiene.
-    if writes_directory(&job.tool) {
-        let _ = std::fs::create_dir_all(&job.output);
-    } else if let Some(parent) = Path::new(&job.output).parent() {
+    let execution_job = &staged.execution_job;
+    if writes_directory(&execution_job.tool) {
+        let _ = std::fs::create_dir_all(&execution_job.output);
+    } else if let Some(parent) = Path::new(&execution_job.output).parent() {
         let _ = std::fs::create_dir_all(parent);
     }
 
-    let args = build_args(&job, &settings);
+    let args = build_args(execution_job, &settings);
     let mut cmd = tokio::process::Command::new(&exe);
     cmd.args(&args)
         .stdin(Stdio::null())
@@ -654,9 +1199,12 @@ async fn run_job(app: AppHandle, id: String) {
     let mut child = match cmd.spawn() {
         Ok(c) => c,
         Err(e) => {
+            staged.cleanup();
             if let Some(j) = state.update(&id, |j| {
                 j.status = "error".into();
                 j.message = Some(format!("No se pudo iniciar chdman: {e}"));
+                j.verification = "not_applicable".into();
+                j.verification_message = Some("La conversion no llego a ejecutarse".into());
                 j.finished_at = Some(now_ms());
             }) {
                 emit_job(&app, &j);
@@ -688,8 +1236,8 @@ async fn run_job(app: AppHandle, id: String) {
     {
         let app = app.clone();
         let id = id.clone();
-        let job_out = job.output.clone();
-        let is_dir = mode_writes_directory(&job);
+        let job_out = execution_job.output.clone();
+        let is_dir = mode_writes_directory(execution_job);
         let saw = saw_progress.clone();
         let done = done_flag.clone();
         tauri::async_runtime::spawn(async move {
@@ -785,27 +1333,23 @@ async fn run_job(app: AppHandle, id: String) {
     };
 
     state.children.lock().unwrap().remove(&id);
-    state.cancels.lock().unwrap().remove(&id);
 
     let canceled = cancel.load(Ordering::Relaxed);
-    let out_size = output_size_of(&job);
 
     if canceled {
-        // Limpia lo que la herramienta dejo a medias
-        if !is_verify(&job.mode) {
-            remove_output(&job);
-            if let Some(e) = &job.output_extra {
-                let _ = std::fs::remove_file(e);
-            }
-        }
+        // La salida final nunca se toco: basta retirar el area temporal.
+        staged.cleanup();
         if let Some(j) = state.update(&id, |j| {
             j.status = "canceled".into();
             j.phase = "Cancelado".into();
             j.message = Some("Cancelado por el usuario".into());
+            j.verification = "not_applicable".into();
+            j.verification_message = Some("No se verifico un trabajo cancelado".into());
             j.finished_at = Some(now_ms());
         }) {
             emit_job(&app, &j);
         }
+        state.cancels.lock().unwrap().remove(&id);
         return;
     }
 
@@ -826,13 +1370,13 @@ async fn run_job(app: AppHandle, id: String) {
                 })
                 .unwrap_or_else(|| "chdman termino con error".into())
         };
-        if !is_verify(&job.mode) && out_size == 0 {
-            remove_output(&job);
-        }
+        staged.cleanup();
         if let Some(j) = state.update(&id, |j| {
             j.status = "error".into();
             j.phase = "Error".into();
             j.message = Some(msg.clone());
+            j.verification = "not_applicable".into();
+            j.verification_message = Some("La herramienta termino con error".into());
             j.finished_at = Some(now_ms());
         }) {
             emit_job(&app, &j);
@@ -840,37 +1384,75 @@ async fn run_job(app: AppHandle, id: String) {
         return;
     }
 
-    // Verificacion opcional despues de crear (solo aplica a chdman)
-    if settings.verify_after && job.tool == "chdman" && job.mode.starts_with("create") {
-        if let Some(j) = state.update(&id, |j| {
-            j.phase = "Verificando".into();
-            j.progress = 99.0;
-        }) {
-            emit_job(&app, &j);
-        }
-        let args = vec!["verify".to_string(), "-i".to_string(), job.output.clone()];
-        match chdman::run_capture(&exe, &args).await {
-            Ok((true, _)) => {}
-            Ok((false, text)) => {
+    // Un trabajo solo puede quedar como terminado despues de validar su salida.
+    if let Some(j) = state.update(&id, |j| {
+        j.phase = "Verificando".into();
+        j.progress = 99.0;
+        j.verification = "running".into();
+        j.verification_message = None;
+    }) {
+        emit_job(&app, &j);
+    }
+
+    let verification =
+        match crate::verification::verify(execution_job, &settings, &exe, cancel.as_ref()).await {
+            Ok(outcome) => outcome,
+            Err(crate::verification::VerifyError::Canceled) => {
+                staged.cleanup();
                 if let Some(j) = state.update(&id, |j| {
-                    j.status = "error".into();
-                    j.phase = "Verificacion fallida".into();
-                    j.message = Some(text.lines().last().unwrap_or("Verificacion fallida").into());
+                    j.status = "canceled".into();
+                    j.phase = "Cancelado".into();
+                    j.message = Some("Cancelado durante la verificacion".into());
+                    j.verification = "not_applicable".into();
+                    j.verification_message = Some("La verificacion fue cancelada".into());
+                    j.output_size = 0;
                     j.finished_at = Some(now_ms());
                 }) {
                     emit_job(&app, &j);
                 }
+                state.cancels.lock().unwrap().remove(&id);
                 return;
             }
-            Err(e) => {
+            Err(crate::verification::VerifyError::Failed(message)) => {
+                staged.cleanup();
                 if let Some(j) = state.update(&id, |j| {
-                    j.message = Some(format!("No se pudo verificar: {e}"));
+                    j.status = "error".into();
+                    j.phase = "Verificacion fallida".into();
+                    j.message = Some(message.clone());
+                    j.verification = "failed".into();
+                    j.verification_message = Some(message.clone());
+                    j.output_size = 0;
+                    j.finished_at = Some(now_ms());
                 }) {
                     emit_job(&app, &j);
                 }
+                state.cancels.lock().unwrap().remove(&id);
+                return;
             }
+        };
+
+    let published = match staged.publish(&job, settings.overwrite) {
+        Ok(paths) => paths,
+        Err(message) => {
+            staged.cleanup();
+            if let Some(j) = state.update(&id, |j| {
+                j.status = "error".into();
+                j.phase = "No se pudo publicar".into();
+                j.message = Some(message.clone());
+                j.verification = verification.status.into();
+                j.verification_message = Some(verification.message.clone());
+                j.output_size = 0;
+                j.finished_at = Some(now_ms());
+            }) {
+                emit_job(&app, &j);
+            }
+            state.cancels.lock().unwrap().remove(&id);
+            return;
         }
-    }
+    };
+
+    let out_size = published_size(&published, &job);
+    let visible_output = display_output(&published, &job);
 
     // Solo se borra el origen si de verdad se genero algo nuevo
     let produced = job.mode.starts_with("create")
@@ -884,13 +1466,21 @@ async fn run_job(app: AppHandle, id: String) {
 
     if let Some(j) = state.update(&id, |j| {
         j.status = "done".into();
-        j.phase = "Listo".into();
+        j.phase = if verification.status == "passed" {
+            "Listo · verificado".into()
+        } else {
+            "Listo · validacion basica".into()
+        };
         j.progress = 100.0;
         j.output_size = out_size;
+        j.output = visible_output.clone();
+        j.verification = verification.status.into();
+        j.verification_message = Some(verification.message.clone());
         j.finished_at = Some(now_ms());
     }) {
         emit_job(&app, &j);
     }
+    state.cancels.lock().unwrap().remove(&id);
 }
 
 /// Al borrar el origen de un .cue/.gdi hay que borrar tambien sus pistas.

@@ -178,12 +178,11 @@ export function SettingsView() {
               label="Sobrescribir si ya existe"
               hint="Sin esto, chdman se niega a pisar un archivo que ya está ahí."
             />
-            <Toggle
-              checked={settings.verify_after}
-              onChange={(v) => patchSettings({ verify_after: v })}
-              label="Verificar después de convertir"
-              hint="Comprueba el CHD recién creado. Tarda un poco más, pero da tranquilidad."
-            />
+            <div className="rounded-lg border border-emerald-400/20 bg-emerald-400/8 px-3 py-2 text-[0.68rem] leading-relaxed text-emerald-200">
+              La verificación posterior está siempre activa. CHD y NSZ se comprueban con su
+              herramienta; las imágenes de Wii también cuando DolphinTool está disponible. Los
+              demás formatos pasan una validación estructural.
+            </div>
             <Toggle
               checked={settings.delete_source}
               onChange={(v) => patchSettings({ delete_source: v })}

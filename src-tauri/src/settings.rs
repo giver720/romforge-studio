@@ -12,8 +12,6 @@ pub struct Settings {
     pub preset: String,
     /// Borrar el archivo de origen cuando el trabajo termina bien.
     pub delete_source: bool,
-    /// Ejecutar `chdman verify` automaticamente despues de crear un CHD.
-    pub verify_after: bool,
     /// Sobrescribir archivos de salida existentes (-f).
     pub overwrite: bool,
     /// Trabajos simultaneos (chdman ya usa varios hilos internamente).
@@ -57,7 +55,6 @@ impl Default for Settings {
             output_dir: None,
             preset: "balanced".into(),
             delete_source: false,
-            verify_after: false,
             overwrite: false,
             parallel: 1,
             threads: 0,
