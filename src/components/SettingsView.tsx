@@ -223,7 +223,13 @@ export function SettingsView() {
 
         <UpdateCard />
 
-        <Card title="Apariencia" desc="Color de acento de la interfaz.">
+        <Card title="Apariencia" desc="Portadas y color de acento de la interfaz.">
+          <Toggle
+            checked={settings.online_artwork}
+            onChange={(v) => patchSettings({ online_artwork: v })}
+            label="Buscar portadas en línea"
+            hint="Solo envía el nombre del juego a la biblioteca pública de Libretro. Las portadas locales y la caché siguen funcionando al desactivarlo."
+          />
           <div className="flex gap-2">
             {ACCENTS.map((a) => (
               <button

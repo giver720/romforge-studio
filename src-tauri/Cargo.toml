@@ -1,6 +1,6 @@
 [package]
 name = "chd-studio"
-version = "1.7.0"
+version = "1.8.0"
 description = "Conversor de imagenes de disco a CHD con chdman"
 authors = ["CHD Studio"]
 edition = "2021"
@@ -28,6 +28,7 @@ futures-util = "0.3"
 zip = { version = "6", default-features = false, features = ["deflate", "bzip2"] }
 tar = "0.4"
 flate2 = "1"
+base64 = "0.22"
 
 # El actualizador solo tiene sentido en escritorio
 [target.'cfg(not(any(target_os = "android", target_os = "ios")))'.dependencies]

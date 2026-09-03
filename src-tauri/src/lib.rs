@@ -1,3 +1,4 @@
+mod artwork;
 mod chdman;
 mod jobs;
 mod ps3;
@@ -598,6 +599,16 @@ fn ps5_scan(dir: String) -> ps5::Ps5Scan {
     ps5::scan(&dir)
 }
 
+#[tauri::command]
+async fn game_artwork(
+    input: String,
+    system: String,
+    state: State<'_, AppState>,
+) -> Result<artwork::GameArtwork, String> {
+    let online = state.settings.lock().unwrap().online_artwork;
+    Ok(artwork::resolve(&input, &system, online).await)
+}
+
 #[derive(Serialize)]
 pub struct AppPaths {
     /// true si se esta ejecutando la version portable
@@ -733,6 +744,7 @@ pub fn run() {
             ps3_scan,
             ps3_trim,
             ps5_scan,
+            game_artwork,
             app_paths,
             reveal
         ])

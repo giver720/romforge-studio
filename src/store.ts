@@ -119,6 +119,7 @@ const DEFAULT_SETTINGS: Settings = {
   parallel: 1,
   threads: 0,
   accent: "violet",
+  online_artwork: true,
   tool_paths: {},
   switch_keys_path: null,
   boot9_path: null,

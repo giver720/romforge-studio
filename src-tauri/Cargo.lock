@@ -490,9 +490,10 @@ dependencies = [
 
 [[package]]
 name = "chd-studio"
-version = "1.7.0"
+version = "1.8.0"
 dependencies = [
  "anyhow",
+ "base64 0.22.1",
  "dirs",
  "flate2",
  "futures-util",

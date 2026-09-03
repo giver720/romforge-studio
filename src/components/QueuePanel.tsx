@@ -11,12 +11,84 @@ import {
   Trash2,
   X,
 } from "lucide-react";
+import { useEffect, useState } from "react";
 import { api } from "../lib/api";
 import { bytes, duration, savings } from "../lib/format";
 import { MODE_LABELS, systemById } from "../lib/profiles";
 import { useStore } from "../store";
 import type { Job } from "../lib/types";
 import { Empty } from "./ui";
+
+function cleanGameName(name: string): string {
+  return name
+    .replace(/\.(cue|gdi|iso|chd|img|raw|nsp|nsz|xci|xcz|cia|cci|3ds|cxi|cso|zso|dax|rvz|wia|gcz|wbfs|exfat)$/i, "")
+    .replace(/\.compact$/i, "")
+    .trim();
+}
+
+function Artwork({
+  job,
+  color,
+  onTitle,
+}: {
+  job: Job;
+  color: string;
+  onTitle: (title: string | null) => void;
+}) {
+  const [image, setImage] = useState<string | null>(null);
+  const [loaded, setLoaded] = useState(false);
+  const initials = systemById(job.system).name
+    .split(/\s+/)
+    .map((part) => part[0])
+    .join("")
+    .slice(0, 3)
+    .toUpperCase();
+
+  useEffect(() => {
+    let active = true;
+    setLoaded(false);
+    api
+      .gameArtwork(job.input, job.system)
+      .then((artwork) => {
+        if (active) {
+          setImage(artwork.data_url);
+          onTitle(artwork.title);
+        }
+      })
+      .catch(() => {
+        if (active) setImage(null);
+      })
+      .finally(() => {
+        if (active) setLoaded(true);
+      });
+    return () => {
+      active = false;
+    };
+  }, [job.input, job.system, onTitle]);
+
+  return (
+    <div
+      className="relative h-[74px] w-[56px] shrink-0 overflow-hidden rounded-lg border border-white/10 shadow-lg"
+      style={{ background: `linear-gradient(145deg, ${color}66, #111827 72%)` }}
+    >
+      {image ? (
+        <img
+          src={image}
+          alt=""
+          className="h-full w-full object-cover"
+          onError={() => setImage(null)}
+        />
+      ) : (
+        <div className="grid h-full place-items-center">
+          <span className={`text-[0.7rem] font-black tracking-wider text-white/80 ${loaded ? "" : "animate-pulse"}`}>
+            {initials}
+          </span>
+        </div>
+      )}
+      <span className="absolute inset-x-0 bottom-0 h-5 bg-gradient-to-t from-black/55 to-transparent" />
+    </div>
+  );
+}
 
 function JobRow({ job }: { job: Job }) {
   const { setJobs } = useStore();
@@ -27,6 +99,7 @@ function JobRow({ job }: { job: Job }) {
   const saved = done ? savings(job.input_size, job.output_size) : null;
   const elapsed =
     job.started_at && job.finished_at ? duration(job.finished_at - job.started_at) : null;
+  const [detectedTitle, setDetectedTitle] = useState<string | null>(null);
 
   return (
     <motion.li
@@ -36,9 +109,31 @@ function JobRow({ job }: { job: Job }) {
       exit={{ opacity: 0, height: 0, marginBottom: 0, transition: { duration: 0.16 } }}
       transition={{ type: "spring", stiffness: 420, damping: 34 }}
       className="glass overflow-hidden rounded-xl p-3"
+      style={running ? { borderColor: `${sys.color}66`, boxShadow: `0 12px 32px -24px ${sys.color}` } : undefined}
     >
-      <div className="flex items-start gap-2.5">
-        <span className="mt-0.5 shrink-0">
+      <div className="flex items-start gap-3">
+        <Artwork job={job} color={sys.color} onTitle={setDetectedTitle} />
+
+        <div className="min-w-0 flex-1 pt-0.5">
+          <div className="flex items-start gap-2">
+            <div className="min-w-0 flex-1">
+              <p className="truncate text-[0.8rem] font-semibold" title={job.input}>
+                {detectedTitle ?? cleanGameName(job.input_name)}
+              </p>
+              <p className="mt-0.5 flex flex-wrap items-center gap-x-1.5 text-[0.64rem] text-[var(--color-faint)]">
+                <span style={{ color: sys.color }}>{sys.name}</span>
+                <span>·</span>
+                <span>{MODE_LABELS[job.mode] ?? job.mode}</span>
+                {elapsed && (
+                  <>
+                    <span>·</span>
+                    <span>{elapsed}</span>
+                  </>
+                )}
+              </p>
+            </div>
+
+            <span className="mt-0.5 shrink-0">
           {running && <Loader2 size={15} className="animate-spin" style={{ color: "var(--accent)" }} />}
           {done && <CheckCircle2 size={15} className="text-emerald-400" />}
           {failed && <AlertCircle size={15} className="text-rose-400" />}
@@ -48,26 +143,10 @@ function JobRow({ job }: { job: Job }) {
               style={{ borderColor: job.status === "queued" ? "var(--color-faint)" : "#ffffff22" }}
             />
           )}
-        </span>
+            </span>
+          </div>
 
-        <div className="min-w-0 flex-1">
-          <p className="truncate text-[0.78rem] font-medium" title={job.input}>
-            {job.input_name}
-          </p>
-          <p className="mt-0.5 flex flex-wrap items-center gap-x-1.5 text-[0.66rem] text-[var(--color-faint)]">
-            <span style={{ color: sys.color }}>{sys.name}</span>
-            <span>·</span>
-            <span>{MODE_LABELS[job.mode] ?? job.mode}</span>
-            {elapsed && (
-              <>
-                <span>·</span>
-                <span>{elapsed}</span>
-              </>
-            )}
-          </p>
-        </div>
-
-        <div className="flex shrink-0 gap-0.5">
+          <div className="mt-2 flex gap-0.5">
           {done && (
             <button
               className="btn btn-quiet px-1.5 py-1"
@@ -104,6 +183,7 @@ function JobRow({ job }: { job: Job }) {
               <Trash2 size={14} />
             </button>
           )}
+          </div>
         </div>
       </div>
 
@@ -189,7 +269,7 @@ export function QueuePanel() {
     : 0;
 
   return (
-    <aside className="flex w-[330px] shrink-0 flex-col border-l border-[var(--color-edge)]">
+    <aside className="flex w-[360px] shrink-0 flex-col border-l border-[var(--color-edge)]">
       <header className="flex items-center justify-between gap-2 border-b border-[var(--color-edge)] px-4 py-3">
         <div>
           <h2 className="text-[0.82rem] font-semibold">Cola</h2>
