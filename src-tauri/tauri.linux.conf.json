@@ -5,10 +5,10 @@
     "targets": ["deb"],
     "createUpdaterArtifacts": false,
     "resources": ["binaries/LEEME.txt"],
-    "longDescription": "CHD Studio convierte imagenes de disco de PS1, PS2, PS3, PSP, Dreamcast, Saturn, Xbox 360, Wii, GameCube, 3DS y Switch al formato que espera cada emulador, con chdman y las herramientas de cada plataforma. Las descarga e instala solo.",
+    "longDescription": "CHD Studio convierte imagenes de disco de PS1, PS2, PS3, PS5, PSP, Dreamcast, Saturn, Xbox 360, Wii, GameCube, 3DS y Switch al formato que espera cada emulador o consola modificada, con chdman y las herramientas de cada plataforma.",
     "linux": {
       "deb": {
-        "depends": ["mame-tools"],
+        "depends": ["mame-tools", "exfatprogs", "exfat-fuse", "fuse3", "policykit-1"],
         "recommends": [
           "python3",
           "python3-venv",

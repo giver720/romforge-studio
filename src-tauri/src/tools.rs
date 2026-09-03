@@ -321,6 +321,21 @@ pub const TOOLS: &[ToolSpec] = &[
         license: "GPL-3.0",
     },
     ToolSpec {
+        id: "ps5exfat",
+        name: "OSFMount / soporte exFAT",
+        exe: "OSFMount",
+        kind: ToolKind::External {
+            site: "https://www.osforensics.com/tools/mount-disk-images.html",
+        },
+        linux_kind: Some(ToolKind::System {
+            hint: "Debian/Ubuntu: sudo apt install exfatprogs exfat-fuse fuse3",
+        }),
+        linux_exe: Some("mkfs.exfat"),
+        purpose: "Crea imagenes exFAT montables para dumps de PS5",
+        family: "ps5",
+        license: "OSFMount (Windows) / GPL-2.0 (Linux)",
+    },
+    ToolSpec {
         id: "maxcso",
         name: "maxcso",
         exe: "maxcso",
@@ -486,6 +501,7 @@ pub fn locate(id: &str, s: &Settings) -> Option<(PathBuf, String)> {
 fn external_dirs(id: &str) -> Vec<PathBuf> {
     let prefijo = match id {
         "dolphintool" => "dolphin",
+        "ps5exfat" => "osfmount",
         _ => return vec![],
     };
 
@@ -496,6 +512,18 @@ fn external_dirs(id: &str) -> Vec<PathBuf> {
 
     #[cfg(windows)]
     {
+        if id == "ps5exfat" {
+            for base in [
+                std::env::var_os("ProgramFiles"),
+                std::env::var_os("ProgramFiles(x86)"),
+            ]
+            .into_iter()
+            .flatten()
+            {
+                dirs.push(PathBuf::from(&base).join("OSFMount"));
+                dirs.push(PathBuf::from(base).join("PassMark").join("OSFMount"));
+            }
+        }
         for letra in ["C", "D", "E", "F"] {
             let raiz = PathBuf::from(format!("{letra}:\\"));
             if raiz.is_dir() {
@@ -598,6 +626,11 @@ fn find_in(dir: &std::path::Path, name: &str, depth: usize) -> Option<PathBuf> {
 
 /// Pregunta la version ejecutando la herramienta; si falla, deja el campo vacio.
 async fn probe_version(id: &str, path: &std::path::Path) -> Option<String> {
+    // OSFMount.exe es una aplicacion grafica y algunas versiones abren su
+    // ventana si reciben una bandera que no reconocen. Localizarla basta.
+    if id == "ps5exfat" && cfg!(windows) {
+        return None;
+    }
     // Las de PS3 entran en modo interactivo si no reconocen el argumento, asi
     // que hay que darles justo el que documentan
     let arg = match id {

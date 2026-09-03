@@ -7,6 +7,7 @@ import { ConvertView } from "./components/ConvertView";
 import { ExtractView } from "./components/ExtractView";
 import { InspectView } from "./components/InspectView";
 import { Ps3View } from "./components/Ps3View";
+import { Ps5View } from "./components/Ps5View";
 import { PspView } from "./components/PspView";
 import { QueuePanel } from "./components/QueuePanel";
 import { SettingsView } from "./components/SettingsView";
@@ -182,6 +183,7 @@ export default function App() {
               {view === "threeds" && <ThreeDsView dragging={dragging} />}
               {view === "xbox360" && <XboxView dragging={dragging} />}
               {view === "ps3" && <Ps3View />}
+              {view === "ps5" && <Ps5View />}
               {view === "psp" && <PspView dragging={dragging} />}
               {view === "wii" && <WiiView dragging={dragging} />}
               {view === "inspect" && <InspectView />}

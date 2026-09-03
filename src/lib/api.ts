@@ -1,5 +1,6 @@
 import { invoke } from "@tauri-apps/api/core";
 import type { Ps3Scan, TrimResult } from "./ps3";
+import type { Ps5Scan } from "./ps5";
 import type {
   ChdmanStatus,
   InputInfo,
@@ -55,4 +56,5 @@ export const api = {
     }>("app_paths"),
   ps3Scan: (dir: string) => invoke<Ps3Scan>("ps3_scan", { dir }),
   ps3Trim: (dir: string, paths: string[]) => invoke<TrimResult>("ps3_trim", { dir, paths }),
+  ps5Scan: (dir: string) => invoke<Ps5Scan>("ps5_scan", { dir }),
 };
