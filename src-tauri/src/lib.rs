@@ -1,6 +1,7 @@
 mod chdman;
 mod jobs;
 mod ps3;
+mod ps5;
 mod psp;
 mod settings;
 mod switch;
@@ -277,6 +278,15 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
         };
     }
 
+    if ps5::is_mode(&spec.mode) {
+        return (
+            dir.join(format!("{stem}.exfat"))
+                .to_string_lossy()
+                .to_string(),
+            None,
+        );
+    }
+
     // Los modos de 3DS necesitan saber la extension de entrada para elegir la de salida
     if threeds::is_mode(&spec.mode) {
         let in_ext = input
@@ -338,6 +348,7 @@ fn add_jobs(app: AppHandle, state: State<AppState>, specs: Vec<JobSpec>) -> Vec<
             .or_else(|| threeds::tool_for(&spec.mode))
             .or_else(|| xbox360::tool_for(&spec.mode))
             .or_else(|| ps3::tool_for(&spec.mode))
+            .or_else(|| ps5::is_mode(&spec.mode).then_some("ps5exfat"))
             .or_else(|| psp::is_mode(&spec.mode).then_some("maxcso"))
             .or_else(|| wii::is_mode(&spec.mode).then_some(wii::tool_for(&spec.mode)))
             .unwrap_or("chdman")
@@ -582,6 +593,11 @@ fn ps3_trim(dir: String, paths: Vec<String>) -> Result<ps3::TrimResult, String> 
     ps3::trim(&dir, &paths).map_err(|e| e.to_string())
 }
 
+#[tauri::command]
+fn ps5_scan(dir: String) -> ps5::Ps5Scan {
+    ps5::scan(&dir)
+}
+
 #[derive(Serialize)]
 pub struct AppPaths {
     /// true si se esta ejecutando la version portable
@@ -716,6 +732,7 @@ pub fn run() {
             xbox_probe,
             ps3_scan,
             ps3_trim,
+            ps5_scan,
             app_paths,
             reveal
         ])

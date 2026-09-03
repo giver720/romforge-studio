@@ -13,6 +13,7 @@ const FAMILY_LABEL: Record<string, string> = {
   switch: "Nintendo Switch",
   "3ds": "Nintendo 3DS",
   ps3: "PlayStation 3",
+  ps5: "PlayStation 5",
   xbox360: "Xbox 360",
   psp: "PSP",
   wii: "Wii y GameCube",
@@ -45,6 +46,7 @@ function kindLabel(t: ToolStatus): string {
 function ToolRow({ tool }: { tool: ToolStatus }) {
   const { installTool, installingTool, setTools, notify } = useStore();
   const busy = installingTool === tool.id;
+  const externalSite = tool.kind.type === "external" ? tool.kind.site : null;
   // Compilar lleva minutos y descargar segundos: conviene que el botón lo diga.
   const compila = tool.kind.type === "source";
 
@@ -82,6 +84,11 @@ function ToolRow({ tool }: { tool: ToolStatus }) {
       </div>
 
       <div className="flex shrink-0 gap-1">
+        {!tool.found && externalSite && (
+          <button className="btn btn-ghost px-2.5 py-1 text-xs" onClick={() => openUrl(externalSite)}>
+            <Download size={14} /> Obtener
+          </button>
+        )}
         {!tool.found && tool.installable && (
           <button className="btn btn-ghost px-2.5 py-1 text-xs" onClick={() => installTool(tool.id)} disabled={busy}>
             {busy ? <Loader2 size={14} className="animate-spin" /> : <Download size={14} />}

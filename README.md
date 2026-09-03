@@ -37,7 +37,8 @@ sudo apt install ./*.deb
 El paquete crea la entrada **CHD Studio** en el menú de aplicaciones. `mame-tools` aporta `chdman`;
 las demás herramientas se descargan o compilan desde **Ajustes → Herramientas** cuando una
 conversión las necesita. El paquete recomienda Python, Git y las bibliotecas de compilación para
-que esos botones funcionen sin preparación adicional.
+que esos botones funcionen sin preparación adicional. También instala el soporte exFAT que usa el
+módulo de PS5.
 
 ## El motor: chdman
 
@@ -214,6 +215,23 @@ la utilidad `btrfs`.
 Esta segunda compresión pertenece al disco del PC: no se conserva al copiar el archivo a otra
 unidad y no sirve como formato para cargar directamente desde una PS3 real.
 
+## PlayStation 5
+
+El apartado **PlayStation 5** toma la carpeta raíz de un dump propio y crea una imagen estándar
+`.exfat` con los archivos directamente en su raíz. La entrada debe contener `eboot.bin` y
+`sce_sys/param.json`; no se admite una carpeta contenedora adicional. La imagen usa clústeres de
+64 KiB, se vuelve a leer tras la copia y solo se publica si conserva todas las rutas y tamaños.
+
+Este proceso **empaqueta, no comprime**: permite transportar la carpeta como un único archivo, pero
+el resultado será algo mayor que los datos originales por el sistema de archivos y su margen de
+seguridad. Está pensado para PS5 modificadas con un montador compatible como ShadowMountPlus; una
+consola de fábrica no lo puede usar.
+
+En Windows requiere [OSFMount](https://www.osforensics.com/tools/mount-disk-images.html) y ejecutar
+CHD Studio como administrador durante la creación. En Ubuntu el `.deb` instala `exfatprogs`,
+`exfat-fuse`, `fuse3` y PolicyKit; el escritorio muestra una autorización del sistema para montar y
+desmontar temporalmente la imagen.
+
 ## Desarrollo
 
 ### Windows
@@ -276,8 +294,8 @@ clave. No está en el repositorio y no debe estarlo.
 - **portable.zip** — el ejecutable con sus herramientas y un `portable.txt` al lado. Mientras ese
   archivo exista, los ajustes, las herramientas descargadas y el entorno de Python se guardan en la
   subcarpeta `datos`, no en `%APPDATA%`. Sirve para llevarlo en un USB.
-- **amd64.deb** — paquete para Ubuntu 22.04 o posterior. Declara `mame-tools` como dependencia y se
-  actualiza instalando el `.deb` de la siguiente release con APT.
+- **amd64.deb** — paquete para Ubuntu 22.04 o posterior. Declara `mame-tools` y el soporte exFAT de
+  PS5 como dependencias, y se actualiza instalando el `.deb` de la siguiente release con APT.
 
 ### Actualizaciones automáticas
 

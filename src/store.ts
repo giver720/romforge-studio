@@ -23,6 +23,7 @@ export type View =
   | "threeds"
   | "xbox360"
   | "ps3"
+  | "ps5"
   | "psp"
   | "wii"
   | "settings";

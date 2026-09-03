@@ -71,7 +71,7 @@ export interface ToolStatus {
   id: string;
   name: string;
   purpose: string;
-  family: "chd" | "switch" | "3ds" | "ps3" | "xbox360" | "psp" | "wii";
+  family: "chd" | "switch" | "3ds" | "ps3" | "ps5" | "xbox360" | "psp" | "wii";
   license: string;
   kind: ToolKind;
   found: boolean;

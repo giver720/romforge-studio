@@ -50,6 +50,7 @@ jobs:
             src-tauri/src/chdman.rs \
             src-tauri/src/jobs.rs \
             src-tauri/src/lib.rs \
+            src-tauri/src/ps5.rs \
             src-tauri/src/tools.rs \
             src-tauri/src/verification.rs
           cargo test --manifest-path src-tauri/Cargo.toml
@@ -70,7 +71,26 @@ jobs:
           sudo apt-get install -y "./$deb"
           command -v chd-studio
           command -v chdman
+          command -v mkfs.exfat
+          command -v mount.exfat-fuse
+          command -v pkexec
           chdman --help 2>&1 | grep -qi chdman
+
+      - name: Probar una imagen exFAT de PS5
+        run: |
+          work="$(mktemp -d)"
+          trap 'sudo umount "$work/mnt" 2>/dev/null || true; rm -rf "$work"' EXIT
+          mkdir -p "$work/source/sce_sys" "$work/mnt"
+          printf 'synthetic eboot' > "$work/source/eboot.bin"
+          printf '{"titleId":"PPSA00000","titleName":"CI"}' > "$work/source/sce_sys/param.json"
+          truncate -s 96M "$work/game.exfat"
+          mkfs.exfat -c 64K -L PS5 "$work/game.exfat"
+          sudo mount -t exfat-fuse -o loop,uid="$(id -u)",gid="$(id -g)" "$work/game.exfat" "$work/mnt"
+          cp -a "$work/source/." "$work/mnt/"
+          cmp "$work/source/eboot.bin" "$work/mnt/eboot.bin"
+          cmp "$work/source/sce_sys/param.json" "$work/mnt/sce_sys/param.json"
+          sudo umount "$work/mnt"
+          fsck.exfat -n "$work/game.exfat"
 
       - name: Prueba de arranque de la interfaz
         run: |
