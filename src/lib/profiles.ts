@@ -291,6 +291,15 @@ const PS3_PROFILE: SystemProfile = {
   color: "#4a6cf7",
 };
 
+const PS5_PROFILE: SystemProfile = {
+  id: "ps5",
+  name: "PlayStation 5",
+  maker: "Sony · 2020",
+  mode: "createdvd",
+  accepts: [],
+  color: "#5b8cff",
+};
+
 const PSP_PROFILE: SystemProfile = {
   id: "psp",
   name: "PSP",
@@ -313,6 +322,7 @@ export function systemById(id: string): SystemProfile {
   if (id === "wii") return WII_PROFILE;
   if (id === "psp") return PSP_PROFILE;
   if (id === "ps3") return PS3_PROFILE;
+  if (id === "ps5") return PS5_PROFILE;
   if (id === "switch") return SWITCH_PROFILE;
   if (id === "3ds") return THREEDS_PROFILE;
   if (id === "xbox360") return XBOX_PROFILE;
@@ -380,6 +390,7 @@ export const MODE_LABELS: Record<string, string> = {
   ps3split: "Partir para FAT32",
   ps3compact: "ISO compacto universal",
   ps3rpcs3: "Compresión transparente RPCS3",
+  ps5exfat: "Carpeta → imagen exFAT",
   iso2cso: "ISO → CSO",
   iso2zso: "ISO → ZSO",
   iso2dax: "ISO → DAX",

@@ -20,6 +20,8 @@ pub struct Settings {
     pub threads: u32,
     /// Color de acento de la interfaz.
     pub accent: String,
+    /// Consultar la biblioteca publica de Libretro cuando no hay portada local.
+    pub online_artwork: bool,
     /// Rutas elegidas a mano para herramientas externas, por id.
     pub tool_paths: std::collections::HashMap<String, String>,
     /// Ruta elegida a mano para las prod.keys de Switch.
@@ -59,6 +61,7 @@ impl Default for Settings {
             parallel: 1,
             threads: 0,
             accent: "violet".into(),
+            online_artwork: true,
             tool_paths: Default::default(),
             switch_keys_path: None,
             boot9_path: None,

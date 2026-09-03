@@ -111,6 +111,7 @@ export interface Settings {
   parallel: number;
   threads: number;
   accent: string;
+  online_artwork: boolean;
   tool_paths: Record<string, string>;
   switch_keys_path: string | null;
   boot9_path: string | null;

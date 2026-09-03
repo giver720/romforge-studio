@@ -23,6 +23,12 @@ export interface JobSpec {
   output_dir?: string | null;
 }
 
+export interface GameArtwork {
+  data_url: string | null;
+  source: "local" | "cache" | "libretro" | null;
+  title: string | null;
+}
+
 export const api = {
   inspectPaths: (paths: string[]) => invoke<InputInfo[]>("inspect_paths", { paths }),
   addJobs: (specs: JobSpec[]) => invoke<Job[]>("add_jobs", { specs }),
@@ -57,4 +63,6 @@ export const api = {
   ps3Scan: (dir: string) => invoke<Ps3Scan>("ps3_scan", { dir }),
   ps3Trim: (dir: string, paths: string[]) => invoke<TrimResult>("ps3_trim", { dir, paths }),
   ps5Scan: (dir: string) => invoke<Ps5Scan>("ps5_scan", { dir }),
+  gameArtwork: (input: string, system: string) =>
+    invoke<GameArtwork>("game_artwork", { input, system }),
 };
