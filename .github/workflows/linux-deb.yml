@@ -90,6 +90,7 @@ jobs:
           site="$($work/venv/bin/python -c "import sysconfig; print(sysconfig.get_paths()['purelib'])")"
           "$work/venv/bin/python" -c "from pathlib import Path; Path('$site/sitecustomize.py').write_text(\"import enum\\ntry:\\n    from enum import StrEnum\\nexcept ImportError:\\n    from backports.strenum import StrEnum\\n    enum.StrEnum = StrEnum\\n\")"
           mkpfs="$work/venv/bin/mkpfs"
+          export PYTHONPATH="$site${PYTHONPATH:+:$PYTHONPATH}"
           "$mkpfs" pack exfat --cluster-size 65536 "$work/source" "$work/game.exfat"
           "$mkpfs" verify "$work/game.exfat" --source-dir "$work/source" --format exfat
           "$mkpfs" pack folder --version PS5 --inode-bits 32 --verify \
