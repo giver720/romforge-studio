@@ -190,7 +190,10 @@ fn writes_directory(tool: &str) -> bool {
 }
 
 fn mode_writes_directory(job: &Job) -> bool {
-    writes_directory(&job.tool) || job.mode == "ps3extract" || job.mode == "iso2folder"
+    writes_directory(&job.tool)
+        || job.mode == "ps3extract"
+        || job.mode == "iso2folder"
+        || crate::ps5::writes_directory(&job.mode)
 }
 
 /// Suma recursiva del contenido de una carpeta, para poder informar del tamaño.
@@ -1157,274 +1160,379 @@ fn capture_failure(
     }
 }
 
-#[cfg(windows)]
-fn free_drive_letter() -> Option<String> {
-    #[link(name = "kernel32")]
-    extern "system" {
-        fn GetLogicalDrives() -> u32;
-    }
-    // Cada bit representa A:..Z:. Incluye unidades sin medio insertado, que
-    // Path::exists no detecta y que OSFMount tampoco puede reutilizar.
-    let used = unsafe { GetLogicalDrives() };
-    (b'D'..=b'Z').find_map(|letter| {
-        let bit = 1u32 << (letter - b'A');
-        (used & bit == 0).then(|| format!("{}:", letter as char))
-    })
-}
+/// UFS2Tool declara `requireAdministrator` en su manifiesto de Windows incluso
+/// para operaciones que solo escriben archivos. Lo iniciamos con el dialogo
+/// normal de UAC y esperamos su codigo de salida; los demas motores conservan
+/// la ejecucion cancelable habitual.
+async fn run_ps5_capture(
+    tool_id: &str,
+    tool: &Path,
+    args: &[String],
+    cancel: &AtomicBool,
+) -> anyhow::Result<chdman::CaptureResult> {
+    #[cfg(windows)]
+    if tool_id == "ufs2tool" {
+        use base64::Engine;
 
-#[cfg(windows)]
-fn osfmount_path(settings: &Settings) -> Option<PathBuf> {
-    let path = crate::tools::locate("ps5exfat", settings)?.0;
-    if path
-        .extension()
-        .map(|value| value.eq_ignore_ascii_case("exe"))
-        .unwrap_or(false)
-    {
-        let cli = path.with_file_name("osfmount.com");
-        if cli.is_file() {
-            return Some(cli);
+        if cancel.load(Ordering::Relaxed) {
+            return Ok(chdman::CaptureResult::Canceled);
         }
+        let quote = |value: &str| format!("'\"{}\"'", value.replace('\'', "''"));
+        let argument_list = args
+            .iter()
+            .map(|value| quote(value))
+            .collect::<Vec<_>>()
+            .join(",");
+        let script = format!(
+            "$ErrorActionPreference='Stop'; try {{ $p=Start-Process -FilePath {} -ArgumentList @({argument_list}) -Verb RunAs -WindowStyle Hidden -Wait -PassThru; exit $p.ExitCode }} catch {{ Write-Error $_; exit 1 }}",
+            quote(&tool.to_string_lossy())
+        );
+        let bytes: Vec<u8> = script.encode_utf16().flat_map(u16::to_le_bytes).collect();
+        let encoded = base64::engine::general_purpose::STANDARD.encode(bytes);
+        let shell = which::which("powershell.exe").unwrap_or_else(|_| {
+            PathBuf::from(std::env::var("SystemRoot").unwrap_or_else(|_| "C:\\Windows".into()))
+                .join("System32")
+                .join("WindowsPowerShell")
+                .join("v1.0")
+                .join("powershell.exe")
+        });
+        let (ok, output) = chdman::run_capture(
+            &shell,
+            &[
+                "-NoProfile".into(),
+                "-NonInteractive".into(),
+                "-EncodedCommand".into(),
+                encoded,
+            ],
+        )
+        .await?;
+        return Ok(chdman::CaptureResult::Finished(ok, output));
     }
-    Some(path)
+
+    chdman::run_capture_cancelable(tool, args, cancel).await
 }
 
-async fn run_ps5_exfat(
+async fn run_ps5_workflow(
     app: AppHandle,
     id: String,
     job: Job,
     settings: Settings,
     cancel: Arc<AtomicBool>,
 ) {
-    let scan = crate::ps5::scan(&job.input);
-    if !scan.valid {
+    use crate::ps5::{MODE_COMPRESS, MODE_EXFAT, MODE_EXTRACT, MODE_FFPFSC, MODE_FFPKG};
+
+    let input = PathBuf::from(&job.input);
+    if !input.exists() {
+        return custom_error(&app, &id, "La entrada ya no existe".into());
+    }
+
+    let builds_from_folder = matches!(job.mode.as_str(), MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC);
+    let expected = if builds_from_folder {
+        let scan = crate::ps5::scan(&job.input);
+        if !scan.valid {
+            return custom_error(
+                &app,
+                &id,
+                scan.error
+                    .unwrap_or_else(|| "La carpeta no parece un dump de PS5".into()),
+            );
+        }
+        match crate::ps5::manifest(&input) {
+            Ok(value) => Some(value),
+            Err(error) => {
+                return custom_error(
+                    &app,
+                    &id,
+                    format!("No se pudo inventariar el dump: {error}"),
+                )
+            }
+        }
+    } else {
+        None
+    };
+
+    let extension = input
+        .extension()
+        .map(|value| value.to_string_lossy().to_lowercase())
+        .unwrap_or_default();
+    if job.mode == MODE_COMPRESS && !matches!(extension.as_str(), "exfat" | "ffpkg") {
         return custom_error(
             &app,
             &id,
-            scan.error
-                .unwrap_or_else(|| "La carpeta no parece un dump de PS5".into()),
+            "Para comprimir elige una imagen .exfat o .ffpkg".into(),
         );
     }
-    let source = PathBuf::from(&job.input);
-    let source_root = std::fs::canonicalize(&source).unwrap_or_else(|_| source.clone());
-    let output_parent = Path::new(&job.output)
-        .parent()
-        .and_then(|path| std::fs::canonicalize(path).ok());
-    if output_parent
-        .as_ref()
-        .map(|path| path.starts_with(&source_root))
-        .unwrap_or(false)
+    if job.mode == MODE_EXTRACT
+        && !matches!(extension.as_str(), "exfat" | "ffpkg" | "ffpfs" | "ffpfsc")
     {
         return custom_error(
             &app,
             &id,
-            "La salida no puede estar dentro de la carpeta del juego; elige otra carpeta de destino"
-                .into(),
+            "Se pueden extraer imagenes .exfat, .ffpkg, .ffpfs y .ffpfsc".into(),
         );
     }
-    let expected = match crate::ps5::manifest(&source) {
-        Ok(value) => value,
-        Err(error) => {
-            return custom_error(
-                &app,
-                &id,
-                format!("No se pudo inventariar el dump: {error}"),
-            )
-        }
-    };
+
     let staged = match StagedOutput::new(&job, settings.overwrite) {
         Ok(value) => value,
         Err(message) => return custom_error(&app, &id, message),
     };
-    let image = PathBuf::from(&staged.execution_job.output);
-    let mount_root = std::env::temp_dir().join(format!("romforge-studio-ps5-{id}"));
-    let _ = std::fs::remove_dir_all(&mount_root);
-    if let Err(error) = std::fs::create_dir(&mount_root) {
+    let execution = &staged.execution_job;
+    let tool_id = crate::ps5::tool_for_input(&job.mode, &job.input).unwrap_or(&job.tool);
+    let Some((tool, _)) = crate::tools::locate(tool_id, &settings) else {
         staged.cleanup();
         return custom_error(
             &app,
             &id,
-            format!("No se pudo crear el punto de montaje: {error}"),
+            format!("Falta {tool_id}. Instalalo desde Ajustes -> Herramientas."),
         );
-    }
+    };
 
-    custom_phase(&app, &id, "Creando imagen exFAT de 64 KiB", 8.0);
-
-    #[cfg(windows)]
-    let platform_result: Result<(PathBuf, String, PathBuf), String> = async {
-        let osf = osfmount_path(&settings).ok_or_else(|| {
-            "Falta OSFMount. Instalalo desde Ajustes -> Herramientas y abre ROMForge Studio como administrador.".to_string()
-        })?;
-        let drive = free_drive_letter().ok_or_else(|| "No hay una letra de unidad libre entre D: y Z:".to_string())?;
-        let args = vec![
-            "-a".into(), "-t".into(), "file".into(), "-f".into(), image.to_string_lossy().to_string(),
-            "-s".into(), scan.image_bytes.to_string(), "-m".into(), drive.clone(), "-o".into(), "rw,rem".into(),
-        ];
-        capture_failure(chdman::run_capture_cancelable(&osf, &args, cancel.as_ref()).await, "OSFMount")?;
-        let root = PathBuf::from(format!("{drive}\\"));
-        tokio::time::sleep(Duration::from_millis(900)).await;
-        let format_args = vec![
-            drive.clone(), "/FS:exFAT".into(), "/A:64K".into(), "/Q".into(),
-            "/V:PS5".into(), "/X".into(), "/Y".into(),
-        ];
-        if let Err(error) = capture_failure(
-            chdman::run_capture_cancelable(&PathBuf::from("format.com"), &format_args, cancel.as_ref()).await,
-            "format.com",
-        ) {
-            let _ = chdman::run_capture(&osf, &["-d".into(), "-m".into(), drive.clone()]).await;
-            return Err(if error == "__canceled__" {
-                error
-            } else {
-                format!("{error}. Ejecuta ROMForge Studio como administrador.")
-            });
-        }
-        let mut ready = false;
-        for _ in 0..40 {
-            if root.exists() { ready = true; break; }
-            tokio::time::sleep(Duration::from_millis(250)).await;
-        }
-        if !ready {
-            let _ = chdman::run_capture(&osf, &["-d".into(), "-m".into(), drive.clone()]).await;
-            return Err(format!("La unidad virtual {drive} no aparecio despues de formatearla"));
-        }
-        Ok((root, drive, osf))
-    }.await;
-
-    #[cfg(unix)]
-    let platform_result: Result<(PathBuf, String, PathBuf), String> = async {
-        use std::os::unix::fs::MetadataExt;
-
-        image
-            .parent()
-            .map(std::fs::create_dir_all)
-            .transpose()
-            .map_err(|e| e.to_string())?;
-        let file = std::fs::File::create(&image)
-            .map_err(|e| format!("No se pudo crear la imagen: {e}"))?;
-        file.set_len(scan.image_bytes)
-            .map_err(|e| format!("No se pudo reservar la imagen: {e}"))?;
-        let mkfs = crate::tools::locate("ps5exfat", &settings)
-            .map(|value| value.0)
-            .ok_or_else(|| {
-                "Falta mkfs.exfat. Instala: sudo apt install exfatprogs exfat-fuse fuse3"
-                    .to_string()
-            })?;
-        let mkfs_args = vec![
-            "-c".into(),
-            "64K".into(),
-            "-L".into(),
-            "PS5".into(),
-            image.to_string_lossy().to_string(),
-        ];
-        capture_failure(
-            chdman::run_capture_cancelable(&mkfs, &mkfs_args, cancel.as_ref()).await,
-            "mkfs.exfat",
-        )?;
-        which::which("mount.exfat-fuse").map_err(|_| {
-            "Falta mount.exfat-fuse. Instala: sudo apt install exfat-fuse fuse3".to_string()
-        })?;
-        let pkexec = which::which("pkexec").map_err(|_| {
-            "Falta pkexec para autorizar el montaje temporal de la imagen".to_string()
-        })?;
-        let mount = which::which("mount").map_err(|e| e.to_string())?;
-        let owner = std::fs::metadata(&mount_root).map_err(|e| e.to_string())?;
-        let options = format!("loop,rw,uid={},gid={},umask=022", owner.uid(), owner.gid());
-        let mount_args = vec![
-            mount.to_string_lossy().to_string(),
-            "-t".into(),
-            "exfat-fuse".into(),
-            "-o".into(),
-            options,
-            image.to_string_lossy().to_string(),
-            mount_root.to_string_lossy().to_string(),
-        ];
-        capture_failure(
-            chdman::run_capture_cancelable(&pkexec, &mount_args, cancel.as_ref()).await,
-            "montaje exFAT",
-        )?;
-        Ok((
-            mount_root.clone(),
-            mount_root.to_string_lossy().to_string(),
-            pkexec,
-        ))
-    }
-    .await;
-
-    #[cfg(not(any(windows, unix)))]
-    let platform_result: Result<(PathBuf, String, PathBuf), String> =
-        Err("La creacion de imagenes exFAT no esta disponible en este sistema".into());
-
-    let (mounted, mount_id, mount_tool) = match platform_result {
-        Ok(value) => value,
-        Err(message) => {
-            let _ = std::fs::remove_dir_all(&mount_root);
-            staged.cleanup();
-            if message == "__canceled__" {
-                return custom_canceled(&app, &id);
+    let (phase, args): (&str, Vec<String>) = match job.mode.as_str() {
+        MODE_EXFAT => (
+            "Creando exFAT de 64 KiB sin montar unidades",
+            vec![
+                "pack".into(),
+                "exfat".into(),
+                "--cluster-size".into(),
+                crate::ps5::CLUSTER_SIZE.to_string(),
+                job.input.clone(),
+                execution.output.clone(),
+            ],
+        ),
+        MODE_FFPKG => (
+            "Creando imagen UFS2 .ffpkg",
+            vec![
+                "newfs".into(),
+                "-D".into(),
+                job.input.clone(),
+                execution.output.clone(),
+            ],
+        ),
+        MODE_FFPFSC => (
+            "Comprimiendo el dump en FFPFSC",
+            vec![
+                "pack".into(),
+                "folder".into(),
+                "--version".into(),
+                "PS5".into(),
+                "--inode-bits".into(),
+                "32".into(),
+                "--require-game-files".into(),
+                "--verify".into(),
+                "--no-adjust-output-file-extension".into(),
+                job.input.clone(),
+                execution.output.clone(),
+            ],
+        ),
+        MODE_COMPRESS => (
+            "Comprimiendo la imagen dentro de FFPFSC",
+            vec![
+                "pack".into(),
+                "file".into(),
+                "--version".into(),
+                "PS5".into(),
+                "--inode-bits".into(),
+                "32".into(),
+                "--verify".into(),
+                "--no-adjust-output-file-extension".into(),
+                job.input.clone(),
+                execution.output.clone(),
+            ],
+        ),
+        MODE_EXTRACT if extension == "ffpkg" => (
+            "Extrayendo la imagen UFS2",
+            vec![
+                "extract".into(),
+                job.input.clone(),
+                execution.output.clone(),
+            ],
+        ),
+        MODE_EXTRACT => {
+            let mut args = vec!["unpack".into(), "--overwrite".into()];
+            if extension == "ffpfsc" {
+                args.push("--deep".into());
             }
+            if extension == "exfat" {
+                args.extend(["--format".into(), "exfat".into()]);
+            }
+            args.extend([job.input.clone(), execution.output.clone()]);
+            ("Extrayendo la imagen de PS5", args)
+        }
+        _ => {
+            staged.cleanup();
+            return custom_error(&app, &id, "Modo de PS5 desconocido".into());
+        }
+    };
+
+    custom_phase(&app, &id, phase, 12.0);
+    let output = match capture_failure(
+        run_ps5_capture(tool_id, &tool, &args, cancel.as_ref()).await,
+        tool_id,
+    ) {
+        Ok(value) => value,
+        Err(message) if message == "__canceled__" => {
+            staged.cleanup();
+            return custom_canceled(&app, &id);
+        }
+        Err(message) => {
+            staged.cleanup();
             return custom_error(&app, &id, message);
         }
     };
 
-    custom_phase(&app, &id, "Copiando el juego dentro de la imagen", 34.0);
-    let copy_result = crate::ps5::copy_tree(&source, &mounted, cancel.as_ref());
-    let mut result = match copy_result {
-        Ok(true) => Ok(()),
-        Ok(false) => Err("__canceled__".to_string()),
-        Err(error) => Err(format!("No se pudo copiar el dump: {error}")),
-    };
-    if result.is_ok() {
-        custom_phase(&app, &id, "Verificando rutas y tamanos", 88.0);
-        result = match crate::ps5::manifest(&mounted) {
-            Ok(actual) if actual == expected => Ok(()),
-            Ok(_) => Err(
-                "La imagen no contiene exactamente los mismos archivos y tamanos que el dump"
-                    .into(),
-            ),
-            Err(error) => Err(format!("No se pudo verificar la imagen: {error}")),
-        };
-    }
+    custom_phase(&app, &id, "Verificando el resultado", 88.0);
+    let verification_message = match job.mode.as_str() {
+        MODE_EXFAT => {
+            let verify_args = vec![
+                "verify".into(),
+                execution.output.clone(),
+                "--source-dir".into(),
+                job.input.clone(),
+                "--format".into(),
+                "exfat".into(),
+            ];
+            match capture_failure(
+                run_ps5_capture(tool_id, &tool, &verify_args, cancel.as_ref()).await,
+                "MkPFS verify",
+            ) {
+                Ok(_) => "exFAT comparado archivo por archivo con el dump original".to_string(),
+                Err(message) if message == "__canceled__" => {
+                    staged.cleanup();
+                    return custom_canceled(&app, &id);
+                }
+                Err(message) => {
+                    staged.cleanup();
+                    return custom_error(&app, &id, message);
+                }
+            }
+        }
+        MODE_FFPKG => {
+            let fsck_args = vec!["fsck_ufs".into(), "-n".into(), execution.output.clone()];
+            if let Err(message) = capture_failure(
+                run_ps5_capture(tool_id, &tool, &fsck_args, cancel.as_ref()).await,
+                "UFS2Tool fsck_ufs",
+            ) {
+                staged.cleanup();
+                if message == "__canceled__" {
+                    return custom_canceled(&app, &id);
+                }
+                return custom_error(&app, &id, message);
+            }
 
-    #[cfg(windows)]
-    let unmount =
-        chdman::run_capture(&mount_tool, &["-d".into(), "-m".into(), mount_id.clone()]).await;
-    #[cfg(unix)]
-    let unmount = match which::which("umount") {
-        Ok(tool) => {
-            chdman::run_capture(
-                &mount_tool,
-                &[tool.to_string_lossy().to_string(), mount_id.clone()],
+            let verify_root = std::env::temp_dir().join(format!("romforge-ps5-verify-{id}"));
+            let _ = std::fs::remove_dir_all(&verify_root);
+            let extract_args = vec![
+                "extract".into(),
+                execution.output.clone(),
+                verify_root.to_string_lossy().to_string(),
+            ];
+            let extracted = capture_failure(
+                run_ps5_capture(tool_id, &tool, &extract_args, cancel.as_ref()).await,
+                "UFS2Tool extract",
+            );
+            let actual = extracted
+                .and_then(|_| crate::ps5::compare_trees(&input, &verify_root, cancel.as_ref()))
+                .and_then(|identical| {
+                    if identical {
+                        Ok(())
+                    } else {
+                        Err("La imagen UFS2 no coincide con el dump original".into())
+                    }
+                });
+            let _ = std::fs::remove_dir_all(&verify_root);
+            if let Err(message) = actual {
+                staged.cleanup();
+                if message == "__canceled__" {
+                    return custom_canceled(&app, &id);
+                }
+                return custom_error(&app, &id, message);
+            }
+            format!(
+                "UFS2 consistente y {} archivos comparados con el dump",
+                expected.as_ref().map(|value| value.len()).unwrap_or(0)
             )
-            .await
         }
-        Err(error) => Err(anyhow::anyhow!(error)),
+        MODE_FFPFSC => {
+            // `pack folder` crea un exFAT dentro del PFS. `verify --source-dir`
+            // compararia el dump con ese unico archivo interior; para comprobar
+            // realmente cada juego hay que hacer una extraccion profunda.
+            let verify_root = std::env::temp_dir().join(format!("romforge-ps5-pfsc-{id}"));
+            let _ = std::fs::remove_dir_all(&verify_root);
+            let verify_args = vec![
+                "unpack".into(),
+                "--deep".into(),
+                "--overwrite".into(),
+                execution.output.clone(),
+                verify_root.to_string_lossy().to_string(),
+            ];
+            let extracted = capture_failure(
+                run_ps5_capture(tool_id, &tool, &verify_args, cancel.as_ref()).await,
+                "MkPFS unpack --deep",
+            );
+            let actual = extracted
+                .and_then(|_| crate::ps5::compare_trees(&input, &verify_root, cancel.as_ref()))
+                .and_then(|identical| {
+                    if identical {
+                        Ok(())
+                    } else {
+                        Err("La imagen FFPFSC no coincide con el dump original".into())
+                    }
+                });
+            let _ = std::fs::remove_dir_all(&verify_root);
+            if let Err(message) = actual {
+                staged.cleanup();
+                if message == "__canceled__" {
+                    return custom_canceled(&app, &id);
+                }
+                return custom_error(&app, &id, message);
+            }
+            format!(
+                "FFPFSC extraido y {} archivos comparados con el dump",
+                expected.as_ref().map(|value| value.len()).unwrap_or(0)
+            )
+        }
+        MODE_COMPRESS => {
+            let verify_args = vec![
+                "verify".into(),
+                execution.output.clone(),
+                "--source-file".into(),
+                job.input.clone(),
+            ];
+            match capture_failure(
+                run_ps5_capture(tool_id, &tool, &verify_args, cancel.as_ref()).await,
+                "MkPFS verify",
+            ) {
+                Ok(_) => "Contenedor FFPFSC verificado contra la imagen original".to_string(),
+                Err(message) if message == "__canceled__" => {
+                    staged.cleanup();
+                    return custom_canceled(&app, &id);
+                }
+                Err(message) => {
+                    staged.cleanup();
+                    return custom_error(&app, &id, message);
+                }
+            }
+        }
+        MODE_EXTRACT => {
+            let scan = crate::ps5::scan(&execution.output);
+            if !scan.valid {
+                staged.cleanup();
+                return custom_error(
+                    &app,
+                    &id,
+                    scan.error
+                        .unwrap_or_else(|| "La extraccion no produjo un dump valido".into()),
+                );
+            }
+            format!("Se extrajeron y comprobaron {} archivos", scan.file_count)
+        }
+        _ => unreachable!(),
     };
-    #[cfg(not(any(windows, unix)))]
-    let unmount: anyhow::Result<(bool, String)> = Ok((true, String::new()));
 
-    let unmount_error = match unmount {
-        Ok((true, _)) => None,
-        Ok((false, text)) => Some(format!("No se pudo desmontar la imagen: {text}")),
-        Err(error) => Some(format!("No se pudo desmontar la imagen: {error}")),
-    };
-    if result.is_ok() {
-        if let Some(error) = unmount_error {
-            result = Err(error);
-        }
-    }
-    let _ = std::fs::remove_dir_all(&mount_root);
-
-    if let Err(message) = result {
-        staged.cleanup();
-        if message == "__canceled__" {
-            return custom_canceled(&app, &id);
-        }
-        return custom_error(&app, &id, message);
-    }
     if cancel.load(Ordering::Relaxed) {
         staged.cleanup();
         return custom_canceled(&app, &id);
     }
-
     let published = match staged.publish(&job, settings.overwrite) {
         Ok(value) => value,
         Err(message) => {
@@ -1437,17 +1545,27 @@ async fn run_ps5_exfat(
     let state = app.state::<AppState>();
     if let Some(done) = state.update(&id, |done| {
         done.status = "done".into();
-        done.phase = "Listo · imagen PS5 verificada".into();
+        done.phase = match job.mode.as_str() {
+            MODE_EXFAT => "Listo · exFAT verificado",
+            MODE_FFPKG => "Listo · FFPKG verificado",
+            MODE_FFPFSC | MODE_COMPRESS => "Listo · FFPFSC verificado",
+            MODE_EXTRACT => "Listo · dump extraido y verificado",
+            _ => "Listo",
+        }
+        .into();
         done.progress = 100.0;
         done.output = visible_output.clone();
         done.output_size = output_size;
         done.ratio =
             (done.input_size > 0).then_some(output_size as f32 * 100.0 / done.input_size as f32);
         done.verification = "passed".into();
-        done.verification_message = Some(format!(
-            "Se conservaron los {} archivos en la raiz de la imagen exFAT",
-            expected.len()
-        ));
+        done.verification_message = Some(verification_message.clone());
+        if !output.trim().is_empty() {
+            let mut lines: Vec<String> =
+                output.lines().rev().take(60).map(str::to_string).collect();
+            lines.reverse();
+            done.log.extend(lines);
+        }
         done.finished_at = Some(now_ms());
     }) {
         emit_job(&app, &done);
@@ -1786,7 +1904,7 @@ async fn run_job(app: AppHandle, id: String) {
         return;
     }
 
-    if matches!(job.mode.as_str(), "ps3compact" | "ps3rpcs3" | "ps5exfat") {
+    if matches!(job.mode.as_str(), "ps3compact" | "ps3rpcs3") || crate::ps5::is_mode(&job.mode) {
         let cancel = Arc::new(AtomicBool::new(false));
         state
             .cancels
@@ -1806,7 +1924,7 @@ async fn run_job(app: AppHandle, id: String) {
         match job.mode.as_str() {
             "ps3compact" => run_ps3_compact(app.clone(), id.clone(), job, settings, cancel).await,
             "ps3rpcs3" => run_ps3_rpcs3(app.clone(), id.clone(), job, cancel).await,
-            _ => run_ps5_exfat(app.clone(), id.clone(), job, settings, cancel).await,
+            _ => run_ps5_workflow(app.clone(), id.clone(), job, settings, cancel).await,
         }
         state.cancels.lock().unwrap().remove(&id);
         return;

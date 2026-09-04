@@ -41,7 +41,9 @@ jobs:
             libxdo-dev \
             file \
             xvfb \
-            dbus-x11
+            dbus-x11 \
+            python3-venv \
+            unzip
 
       - name: Compilar y probar
         run: |
@@ -73,26 +75,36 @@ jobs:
           sudo apt-get install -y "./$deb"
           command -v romforge-studio
           command -v chdman
-          command -v mkfs.exfat
-          command -v mount.exfat-fuse
-          command -v pkexec
           chdman --help 2>&1 | grep -qi chdman
 
-      - name: Probar una imagen exFAT de PS5
+      - name: Probar los formatos de PS5
         run: |
           work="$(mktemp -d)"
-          trap 'sudo umount "$work/mnt" 2>/dev/null || true; rm -rf "$work"' EXIT
-          mkdir -p "$work/source/sce_sys" "$work/mnt"
+          trap 'rm -rf "$work"' EXIT
+          mkdir -p "$work/source/sce_sys"
           printf 'synthetic eboot' > "$work/source/eboot.bin"
           printf '{"titleId":"PPSA00000","titleName":"CI"}' > "$work/source/sce_sys/param.json"
-          truncate -s 96M "$work/game.exfat"
-          mkfs.exfat -c 64K -L PS5 "$work/game.exfat"
-          sudo mount -t exfat-fuse -o loop,uid="$(id -u)",gid="$(id -g)" "$work/game.exfat" "$work/mnt"
-          cp -a "$work/source/." "$work/mnt/"
-          cmp "$work/source/eboot.bin" "$work/mnt/eboot.bin"
-          cmp "$work/source/sce_sys/param.json" "$work/mnt/sce_sys/param.json"
-          sudo umount "$work/mnt"
-          fsck.exfat -n "$work/game.exfat"
+
+          python3 -m venv "$work/venv"
+          "$work/venv/bin/pip" install --disable-pip-version-check mkpfs==1.0.0
+          mkpfs="$work/venv/bin/mkpfs"
+          "$mkpfs" pack exfat --cluster-size 65536 "$work/source" "$work/game.exfat"
+          "$mkpfs" verify "$work/game.exfat" --source-dir "$work/source" --format exfat
+          "$mkpfs" pack folder --version PS5 --inode-bits 32 --verify \
+            --no-adjust-output-file-extension "$work/source" "$work/game.ffpfsc"
+          "$mkpfs" unpack --deep "$work/game.ffpfsc" "$work/pfsc-out"
+          diff -rq "$work/source" "$work/pfsc-out"
+
+          curl -fL -o "$work/ufs2tool.zip" \
+            https://github.com/SvenGDK/UFS2Tool/releases/download/v4.1/linux-x64-selfcontained.zip
+          unzip -q "$work/ufs2tool.zip" -d "$work/ufs"
+          ufs2tool="$(find "$work/ufs" -type f -name UFS2Tool -print -quit)"
+          test -n "$ufs2tool"
+          chmod +x "$ufs2tool"
+          "$ufs2tool" newfs -D "$work/source" "$work/game.ffpkg"
+          "$ufs2tool" fsck_ufs -n "$work/game.ffpkg"
+          "$ufs2tool" extract "$work/game.ffpkg" "$work/ufs-out"
+          diff -rq "$work/source" "$work/ufs-out"
 
       - name: Prueba de arranque de la interfaz
         run: |

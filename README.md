@@ -238,20 +238,28 @@ unidad y no sirve como formato para cargar directamente desde una PS3 real.
 
 ## PlayStation 5
 
-El apartado **PlayStation 5** toma la carpeta raíz de un dump propio y crea una imagen estándar
-`.exfat` con los archivos directamente en su raíz. La entrada debe contener `eboot.bin` y
-`sce_sys/param.json`; no se admite una carpeta contenedora adicional. La imagen usa clústeres de
-64 KiB, se vuelve a leer tras la copia y solo se publica si conserva todas las rutas y tamaños.
+El apartado **PlayStation 5** trabaja con la carpeta raíz de un dump propio. Antes de convertirlo
+lee `sce_sys/param.json`, muestra nombre, Title ID, versión, portada, cantidad de archivos y una
+estimación de tamaño y ahorro. La entrada debe contener `eboot.bin` y `sce_sys/param.json`; no se
+admite una carpeta contenedora adicional.
 
-Este proceso **empaqueta, no comprime**: permite transportar la carpeta como un único archivo, pero
-el resultado será algo mayor que los datos originales por el sistema de archivos y su margen de
-seguridad. Está pensado para PS5 modificadas con un montador compatible como ShadowMountPlus; una
-consola de fábrica no lo puede usar.
+Ofrece tres salidas compatibles con ShadowMountPlus:
 
-En Windows requiere [OSFMount](https://www.osforensics.com/tools/mount-disk-images.html) y ejecutar
-ROMForge Studio como administrador durante la creación. En Ubuntu el `.deb` instala `exfatprogs`,
-`exfat-fuse`, `fuse3` y PolicyKit; el escritorio muestra una autorización del sistema para montar y
-desmontar temporalmente la imagen.
+- **FFPKG/UFS2**: la opción recomendada para priorizar el rendimiento.
+- **exFAT de 64 KiB**: máxima compatibilidad con juegos que esperan contenido de una unidad externa.
+- **FFPFSC**: comprime el juego para ahorrar espacio; en títulos que transmiten datos continuamente
+  puede introducir tirones.
+
+También puede comprimir imágenes `.exfat` o `.ffpkg` existentes a `.ffpfsc` y recuperar `.exfat`,
+`.ffpkg`, `.ffpfs` o `.ffpfsc` a una carpeta. Cada salida se crea primero de forma temporal, se
+comprueba y solo entonces reemplaza el destino. exFAT y FFPFSC se validan archivo por archivo; FFPKG
+se revisa con `fsck_ufs` y una extracción completa.
+
+ROMForge usa [MkPFS](https://github.com/PSBrew/MkPFS) para exFAT/PFS y
+[UFS2Tool](https://github.com/SvenGDK/UFS2Tool) para UFS2. Se instalan desde **Ajustes → Herramientas**.
+MkPFS crea exFAT directamente y no necesita montar una unidad ni usar OSFMount. UFS2Tool solicita
+permisos de administrador en Windows por decisión de su proyecto; en Linux no los necesita para
+crear una imagen en un archivo. Una PS5 sin modificar no puede montar estas imágenes.
 
 ## Desarrollo
 
@@ -312,12 +320,14 @@ clave. No está en el repositorio y no debe estarlo.
 
 - **setup.exe** — instalador NSIS. Lleva dentro chdman, iso2god, 3dsconv, ctrtool, makerom,
   z3ds_compressor y 4NXCI (~23 MB), así que funciona sin descargar nada. La excepción es `nsz`
-  (Switch), que es un paquete de Python y se instala al vuelo desde Ajustes.
+  (Switch) y MkPFS (PS5), que son paquetes de Python y se instalan al vuelo desde Ajustes. UFS2Tool
+  también se descarga desde allí desde su release oficial.
 - **portable.zip** — el ejecutable con sus herramientas y un `portable.txt` al lado. Mientras ese
   archivo exista, los ajustes, las herramientas descargadas y el entorno de Python se guardan en la
   subcarpeta `datos`, no en `%APPDATA%`. Sirve para llevarlo en un USB.
-- **amd64.deb** — paquete para Ubuntu 22.04 o posterior. Declara `mame-tools` y el soporte exFAT de
-  PS5 como dependencias, y se actualiza instalando el `.deb` de la siguiente release con APT.
+- **amd64.deb** — paquete para Ubuntu 22.04 o posterior. Declara `mame-tools` como dependencia; las
+  herramientas opcionales de PS5 se instalan desde la propia app. Se actualiza instalando el `.deb`
+  de la siguiente release con APT.
 
 ### Actualizaciones automáticas
 

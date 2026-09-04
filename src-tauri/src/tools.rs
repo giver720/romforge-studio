@@ -321,19 +321,39 @@ pub const TOOLS: &[ToolSpec] = &[
         license: "GPL-3.0",
     },
     ToolSpec {
-        id: "ps5exfat",
-        name: "OSFMount / soporte exFAT",
-        exe: "OSFMount",
-        kind: ToolKind::External {
-            site: "https://www.osforensics.com/tools/mount-disk-images.html",
+        id: "mkpfs",
+        name: "MkPFS",
+        exe: "mkpfs",
+        // El ejecutable one-file de 1.0.0 abre la GUI en Windows y no sirve
+        // como motor automatizable. El paquete oficial de PyPI expone el CLI
+        // estable y se instala en el entorno privado de ROMForge.
+        kind: ToolKind::Python {
+            package: "mkpfs==1.0.0",
         },
-        linux_kind: Some(ToolKind::System {
-            hint: "Debian/Ubuntu: sudo apt install exfatprogs exfat-fuse fuse3",
-        }),
-        linux_exe: Some("mkfs.exfat"),
-        purpose: "Crea imagenes exFAT montables para dumps de PS5",
+        linux_kind: None,
+        linux_exe: None,
+        purpose: "Crea, comprime, verifica y extrae imagenes exFAT/PFS de PS5",
         family: "ps5",
-        license: "OSFMount (Windows) / GPL-2.0 (Linux)",
+        license: "GPL-3.0",
+    },
+    ToolSpec {
+        id: "ufs2tool",
+        name: "UFS2Tool",
+        exe: "UFS2Tool",
+        kind: ToolKind::Github {
+            repo: "SvenGDK/UFS2Tool",
+            asset: "win-x64-selfcontained.zip",
+            tag: "",
+        },
+        linux_kind: Some(ToolKind::Github {
+            repo: "SvenGDK/UFS2Tool",
+            asset: "linux-x64-selfcontained.zip",
+            tag: "",
+        }),
+        linux_exe: None,
+        purpose: "Crea, comprueba y extrae imagenes UFS2 .ffpkg de PS5",
+        family: "ps5",
+        license: "BSD-2-Clause",
     },
     ToolSpec {
         id: "maxcso",
@@ -501,7 +521,6 @@ pub fn locate(id: &str, s: &Settings) -> Option<(PathBuf, String)> {
 fn external_dirs(id: &str) -> Vec<PathBuf> {
     let prefijo = match id {
         "dolphintool" => "dolphin",
-        "ps5exfat" => "osfmount",
         _ => return vec![],
     };
 
@@ -512,18 +531,6 @@ fn external_dirs(id: &str) -> Vec<PathBuf> {
 
     #[cfg(windows)]
     {
-        if id == "ps5exfat" {
-            for base in [
-                std::env::var_os("ProgramFiles"),
-                std::env::var_os("ProgramFiles(x86)"),
-            ]
-            .into_iter()
-            .flatten()
-            {
-                dirs.push(PathBuf::from(&base).join("OSFMount"));
-                dirs.push(PathBuf::from(base).join("PassMark").join("OSFMount"));
-            }
-        }
         for letra in ["C", "D", "E", "F"] {
             let raiz = PathBuf::from(format!("{letra}:\\"));
             if raiz.is_dir() {
@@ -626,9 +633,9 @@ fn find_in(dir: &std::path::Path, name: &str, depth: usize) -> Option<PathBuf> {
 
 /// Pregunta la version ejecutando la herramienta; si falla, deja el campo vacio.
 async fn probe_version(id: &str, path: &std::path::Path) -> Option<String> {
-    // OSFMount.exe es una aplicacion grafica y algunas versiones abren su
-    // ventana si reciben una bandera que no reconocen. Localizarla basta.
-    if id == "ps5exfat" && cfg!(windows) {
+    // El apphost de UFS2Tool exige elevacion incluso para mostrar la version.
+    // No provocamos un dialogo UAC cada vez que se abre Ajustes.
+    if cfg!(windows) && id == "ufs2tool" {
         return None;
     }
     // Las de PS3 entran en modo interactivo si no reconocen el argumento, asi
@@ -636,6 +643,7 @@ async fn probe_version(id: &str, path: &std::path::Path) -> Option<String> {
     let arg = match id {
         "z3ds" | "4nxci" | "ps3iso" => "--help",
         "dolphintool" => "--help",
+        "mkpfs" => "-V",
         _ => "--version",
     };
     // Cinco segundos de sobra para que una herramienta diga su version

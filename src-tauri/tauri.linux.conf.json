@@ -5,10 +5,10 @@
     "targets": ["deb"],
     "createUpdaterArtifacts": false,
     "resources": ["binaries/LEEME.txt"],
-    "longDescription": "ROMForge Studio convierte imagenes de disco de PS1, PS2, PS3, PS5, PSP, Dreamcast, Saturn, Xbox 360, Wii, GameCube, 3DS y Switch al formato que espera cada emulador o consola modificada, con chdman y las herramientas de cada plataforma.",
+    "longDescription": "ROMForge Studio convierte imagenes de disco de PS1, PS2, PS3, PS5, PSP, Dreamcast, Saturn, Xbox 360, Wii, GameCube, 3DS y Switch. En PS5 crea, comprime, verifica y extrae imagenes exFAT, FFPKG y FFPFSC compatibles con ShadowMountPlus.",
     "linux": {
       "deb": {
-        "depends": ["mame-tools", "exfatprogs", "exfat-fuse", "fuse3", "policykit-1"],
+        "depends": ["mame-tools"],
         "provides": ["chd-studio"],
         "conflicts": ["chd-studio"],
         "replaces": ["chd-studio"],

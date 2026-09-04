@@ -21,7 +21,7 @@ import { Empty } from "./ui";
 
 function cleanGameName(name: string): string {
   return name
-    .replace(/\.(cue|gdi|iso|chd|img|raw|nsp|nsz|xci|xcz|cia|cci|3ds|cxi|cso|zso|dax|rvz|wia|gcz|wbfs|exfat)$/i, "")
+    .replace(/\.(cue|gdi|iso|chd|img|raw|nsp|nsz|xci|xcz|cia|cci|3ds|cxi|cso|zso|dax|rvz|wia|gcz|wbfs|exfat|ffpkg|ffpfs|ffpfsc)$/i, "")
     .replace(/\.compact$/i, "")
     .trim();
 }
