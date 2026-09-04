@@ -770,6 +770,30 @@ async fn ensure_venv() -> anyhow::Result<PathBuf> {
     Ok(pip)
 }
 
+async fn install_mkpfs_py310_compat() -> anyhow::Result<()> {
+    let python = venv_bin().join(exe_name("python"));
+    let (_, output) = chdman::run_capture(
+        &python,
+        &[
+            "-c".into(),
+            "import sysconfig; print(sysconfig.get_paths()['purelib'])".into(),
+        ],
+    )
+    .await?;
+    let site_packages = PathBuf::from(output.lines().last().unwrap_or_default().trim());
+    if site_packages.as_os_str().is_empty() {
+        anyhow::bail!("No se pudo localizar el entorno de Python de MkPFS");
+    }
+    std::fs::create_dir_all(&site_packages)?;
+    // MkPFS 1.0.0 importa enum.StrEnum aunque Ubuntu 22.04 usa Python 3.10.
+    // sitecustomize se carga antes del CLI y mantiene el parche aislado en pyenv.
+    std::fs::write(
+        site_packages.join("sitecustomize.py"),
+        "import enum\ntry:\n    from enum import StrEnum\nexcept ImportError:\n    from backports.strenum import StrEnum\n    enum.StrEnum = StrEnum\n",
+    )?;
+    Ok(())
+}
+
 /// Instala (o actualiza) un paquete de Python dentro del entorno de la app.
 pub async fn install_python_package(package: &str) -> anyhow::Result<String> {
     let pip = ensure_venv().await?;
@@ -1335,6 +1359,7 @@ pub async fn install(id: &str) -> anyhow::Result<String> {
             // pero su wheel no lo declara como dependencia.
             if id == "mkpfs" {
                 install_python_package("backports.strenum").await?;
+                install_mkpfs_py310_compat().await?;
             }
             install_python_package(package).await?;
             Ok(format!("{} instalado con pip", spec.name))
