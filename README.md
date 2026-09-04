@@ -14,8 +14,8 @@ la conversión. CHD Studio busca las imágenes en este orden:
 1. El icono incluido en dumps de PS3 (`PS3_GAME/ICON0.PNG`), PS5 (`sce_sys/icon0.png`) o PSP.
 2. Una imagen junto al juego con el mismo nombre, por ejemplo `Juego.iso` + `Juego.png`, o una
    `cover.jpg`, `folder.png`, `icon0.png` o `front.webp` dentro de una carpeta de juego.
-3. La biblioteca pública de miniaturas de Libretro, probando también variantes regionales cuando el
-   archivo solo contiene el nombre del juego.
+3. La biblioteca pública de miniaturas de Libretro, con coincidencia tolerante cuando el archivo
+   omite la región, el idioma o una parte del título oficial.
 
 Las portadas obtenidas de Internet quedan en la caché privada de la aplicación y se reutilizan sin
 volver a descargarlas. La opción **Ajustes → Apariencia → Buscar portadas en línea** se puede apagar;

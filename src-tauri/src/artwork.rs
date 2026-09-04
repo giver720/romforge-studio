@@ -6,6 +6,8 @@ use std::path::{Path, PathBuf};
 use std::time::Duration;
 
 const MAX_IMAGE_BYTES: usize = 8 * 1024 * 1024;
+const MAX_INDEX_BYTES: usize = 4 * 1024 * 1024;
+const COLLECTIONS: [&str; 3] = ["Named_Boxarts", "Named_Titles", "Named_Snaps"];
 
 #[derive(Clone, Debug, Serialize)]
 pub struct GameArtwork {
@@ -193,6 +195,79 @@ fn percent_encode(value: &str) -> String {
         .collect()
 }
 
+fn percent_decode(value: &str) -> Option<String> {
+    let bytes = value.as_bytes();
+    let mut decoded = Vec::with_capacity(bytes.len());
+    let mut index = 0;
+    while index < bytes.len() {
+        if bytes[index] == b'%' {
+            let hex = bytes.get(index + 1..index + 3)?;
+            let hex = std::str::from_utf8(hex).ok()?;
+            decoded.push(u8::from_str_radix(hex, 16).ok()?);
+            index += 3;
+        } else {
+            decoded.push(bytes[index]);
+            index += 1;
+        }
+    }
+    String::from_utf8(decoded).ok()
+}
+
+fn comparison_tokens(title: &str) -> Vec<String> {
+    let title = title.split(" (").next().unwrap_or(title);
+    let normalized: String = title
+        .chars()
+        .map(|character| {
+            if character.is_alphanumeric() {
+                character.to_ascii_lowercase()
+            } else {
+                ' '
+            }
+        })
+        .collect();
+    normalized.split_whitespace().map(str::to_string).collect()
+}
+
+fn fuzzy_score(query: &[String], candidate: &[String]) -> f32 {
+    if query.len() < 2 || candidate.is_empty() {
+        return 0.0;
+    }
+    let matches = query
+        .iter()
+        .filter(|token| candidate.contains(token))
+        .count();
+    let coverage = matches as f32 / query.len() as f32;
+    let precision = matches as f32 / candidate.len() as f32;
+    coverage * 0.75 + precision * 0.25
+}
+
+fn fuzzy_name_from_index(html: &str, title: &str) -> Option<String> {
+    let query = comparison_tokens(title);
+    let mut best: Option<(f32, String)> = None;
+    for fragment in html.split("href=\"").skip(1) {
+        let Some(href) = fragment.split('"').next() else {
+            continue;
+        };
+        if !href.to_ascii_lowercase().ends_with(".png") {
+            continue;
+        }
+        let Some(decoded) = percent_decode(href) else {
+            continue;
+        };
+        let name = decoded[..decoded.len() - 4].to_string();
+        let mut score = fuzzy_score(&query, &comparison_tokens(&name));
+        if name.contains("(Europe") {
+            score += 0.015;
+        } else if name.contains("(USA") {
+            score += 0.01;
+        }
+        if score >= 0.82 && best.as_ref().map_or(true, |current| score > current.0) {
+            best = Some((score, name));
+        }
+    }
+    best.map(|(_, name)| name)
+}
+
 fn cache_path(system: &str, url: &str) -> PathBuf {
     let mut hasher = DefaultHasher::new();
     system.hash(&mut hasher);
@@ -215,6 +290,20 @@ async fn download(client: &reqwest::Client, url: &str) -> Option<Vec<u8>> {
         return None;
     }
     Some(bytes.to_vec())
+}
+
+async fn download_index(client: &reqwest::Client, url: &str) -> Option<String> {
+    let response = client.get(url).send().await.ok()?;
+    if !response.status().is_success()
+        || response.content_length().unwrap_or(0) > MAX_INDEX_BYTES as u64
+    {
+        return None;
+    }
+    let bytes = response.bytes().await.ok()?;
+    if bytes.is_empty() || bytes.len() > MAX_INDEX_BYTES {
+        return None;
+    }
+    String::from_utf8(bytes.to_vec()).ok()
 }
 
 fn metadata_title(input: &Path, system: &str) -> Option<String> {
@@ -247,6 +336,14 @@ pub async fn resolve(input: &str, system: &str, online: bool) -> GameArtwork {
             title,
         };
     }
+    let query_cache = cache_path(system, &format!("query:{lookup_title}"));
+    if let Some(bytes) = read_image(&query_cache) {
+        return GameArtwork {
+            data_url: as_data_url(&bytes),
+            source: Some("cache".into()),
+            title,
+        };
+    }
     let client = if online {
         reqwest::Client::builder()
             .timeout(Duration::from_secs(7))
@@ -258,7 +355,7 @@ pub async fn resolve(input: &str, system: &str, online: bool) -> GameArtwork {
     };
     for playlist in playlists(system) {
         for name in candidate_names(&lookup_title) {
-            for collection in ["Named_Boxarts", "Named_Titles", "Named_Snaps"] {
+            for collection in COLLECTIONS {
                 let url = format!(
                     "https://thumbnails.libretro.com/{}/{}/{}.png",
                     percent_encode(playlist),
@@ -287,6 +384,46 @@ pub async fn resolve(input: &str, system: &str, online: bool) -> GameArtwork {
                         title,
                     };
                 }
+            }
+        }
+    }
+    if let Some(client) = client.as_ref() {
+        for playlist in playlists(system) {
+            for collection in COLLECTIONS {
+                let index_url = format!(
+                    "https://thumbnails.libretro.com/{}/{}/",
+                    percent_encode(playlist),
+                    collection
+                );
+                let Some(index) = download_index(client, &index_url).await else {
+                    continue;
+                };
+                let Some(name) = fuzzy_name_from_index(&index, &lookup_title) else {
+                    continue;
+                };
+                let url = format!("{index_url}{}.png", percent_encode(&name));
+                let cache = cache_path(system, &url);
+                if let Some(bytes) = read_image(&cache) {
+                    let _ = std::fs::write(&query_cache, &bytes);
+                    return GameArtwork {
+                        data_url: as_data_url(&bytes),
+                        source: Some("cache".into()),
+                        title,
+                    };
+                }
+                let Some(bytes) = download(client, &url).await else {
+                    continue;
+                };
+                if let Some(parent) = cache.parent() {
+                    let _ = std::fs::create_dir_all(parent);
+                }
+                let _ = std::fs::write(&cache, &bytes);
+                let _ = std::fs::write(&query_cache, &bytes);
+                return GameArtwork {
+                    data_url: as_data_url(&bytes),
+                    source: Some("libretro".into()),
+                    title,
+                };
             }
         }
     }
@@ -327,5 +464,35 @@ mod tests {
                 "Game (Japan)".to_string(),
             ]
         );
+    }
+
+    #[test]
+    fn finds_catalog_title_when_filename_omits_a_word_and_region() {
+        let html = r#"<a href="Dragon%20Ball%20Z%20-%20Shin%20Budokai%20(USA).png">other</a>
+            <a href="Dragon%20Ball%20Z%20-%20Tenkaichi%20Tag%20Team%20(Europe)%20(En%2CFr%2CDe%2CEs%2CIt).png">wanted</a>"#;
+        assert_eq!(
+            fuzzy_name_from_index(html, "Dragon Ball Z - Tag Team"),
+            Some("Dragon Ball Z - Tenkaichi Tag Team (Europe) (En,Fr,De,Es,It)".to_string())
+        );
+    }
+
+    #[test]
+    fn refuses_a_weak_catalog_match() {
+        let html = r#"<a href="Dragon%20Ball%20Z%20-%20Shin%20Budokai%20(USA).png">other</a>"#;
+        assert_eq!(
+            fuzzy_name_from_index(html, "Dragon Ball Z - Tag Team"),
+            None
+        );
+    }
+
+    #[tokio::test]
+    #[ignore = "usa la red publica de miniaturas de Libretro"]
+    async fn resolves_shortened_psp_title_online() {
+        let artwork = resolve("Dragon Ball Z - Tag Team.iso", "psp", true).await;
+        assert!(artwork.data_url.is_some());
+        assert!(matches!(
+            artwork.source.as_deref(),
+            Some("libretro" | "cache")
+        ));
     }
 }
