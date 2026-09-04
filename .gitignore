@@ -3,6 +3,7 @@ dist
 node_modules/.tmp
 src-tauri/target
 src-tauri/gen/schemas
+__pycache__/
 .DS_Store
 
 # Las herramientas de terceros se descargan al preparar una version.
