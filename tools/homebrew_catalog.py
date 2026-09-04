@@ -93,11 +93,15 @@ def hbas_repo(source: dict[str, Any]) -> list[dict[str, Any]]:
         binary = str(item.get("binary") or "")
         if not binary.startswith("/") or binary == "/none":
             continue
-        filename = Path(binary).name
-        fmt = filename_format(filename)
-        if not fmt:
+        package = str(item.get("name") or Path(binary).parent.name)
+        manifest_url = safe_url(f"{source['base'].rstrip('/')}/packages/{package}/manifest.install")
+        if not manifest_url:
             continue
-        url = safe_url(source["base"].rstrip("/") + binary)
+        # HBAS packages are assembled from manifest.install; the binary path is
+        # metadata, not a standalone download URL.
+        filename = f"{package}.hbas"
+        fmt = "hbas"
+        url = manifest_url
         if not url:
             continue
         upstream = item.get("url")
@@ -119,6 +123,7 @@ def hbas_repo(source: dict[str, Any]) -> list[dict[str, Any]]:
                 "size": int(item["extracted"]) if isinstance(item.get("extracted"), int) else None,
                 "sha256": item.get("sha256"),
             }],
+            "manifest_url": manifest_url,
             "source": source["name"],
             "source_url": source["homepage"],
             "license_url": None,
