@@ -65,4 +65,6 @@ export const api = {
   ps5Scan: (dir: string) => invoke<Ps5Scan>("ps5_scan", { dir }),
   gameArtwork: (input: string, system: string) =>
     invoke<GameArtwork>("game_artwork", { input, system }),
+  downloadHomebrew: (url: string, filename: string, destinationDir: string, sha256?: string | null) =>
+    invoke<string>("download_homebrew", { url, filename, destinationDir, sha256 }),
 };

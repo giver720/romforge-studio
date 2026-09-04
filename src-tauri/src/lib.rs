@@ -5,6 +5,7 @@ mod ps3;
 mod ps5;
 mod psp;
 mod settings;
+mod store;
 mod switch;
 mod threeds;
 mod tools;
@@ -740,6 +741,7 @@ pub fn run() {
             clear_finished,
             get_settings,
             set_settings,
+            store::download_homebrew,
             chdman_status,
             install_chdman,
             chd_info,
