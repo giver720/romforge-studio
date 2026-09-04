@@ -280,8 +280,17 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
     }
 
     if ps5::is_mode(&spec.mode) {
+        if ps5::writes_directory(&spec.mode) {
+            return (
+                dir.join(format!("{stem}-extraido"))
+                    .to_string_lossy()
+                    .to_string(),
+                None,
+            );
+        }
+        let ext = ps5::output_ext(&spec.mode).unwrap_or("exfat");
         return (
-            dir.join(format!("{stem}.exfat"))
+            dir.join(format!("{stem}.{ext}"))
                 .to_string_lossy()
                 .to_string(),
             None,
@@ -349,7 +358,7 @@ fn add_jobs(app: AppHandle, state: State<AppState>, specs: Vec<JobSpec>) -> Vec<
             .or_else(|| threeds::tool_for(&spec.mode))
             .or_else(|| xbox360::tool_for(&spec.mode))
             .or_else(|| ps3::tool_for(&spec.mode))
-            .or_else(|| ps5::is_mode(&spec.mode).then_some("ps5exfat"))
+            .or_else(|| ps5::tool_for_input(&spec.mode, &spec.input))
             .or_else(|| psp::is_mode(&spec.mode).then_some("maxcso"))
             .or_else(|| wii::is_mode(&spec.mode).then_some(wii::tool_for(&spec.mode)))
             .unwrap_or("chdman")
