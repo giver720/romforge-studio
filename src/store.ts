@@ -26,6 +26,7 @@ export type View =
   | "ps5"
   | "psp"
   | "wii"
+  | "store"
   | "settings";
 
 export type ConsoleFamily = "switch" | "threeds" | "xbox360" | "psp" | "wii";

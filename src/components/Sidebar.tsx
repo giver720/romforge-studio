@@ -12,6 +12,7 @@ import {
   Search,
   Sparkles,
   Settings,
+  Store,
   Wand2,
 } from "lucide-react";
 import { useStore, type View } from "../store";
@@ -43,6 +44,10 @@ const SECTIONS: { title: string; items: NavItem[] }[] = [
       { id: "psp", label: "PSP", icon: Gauge, desc: "ISO ↔ CSO y ZSO" },
       { id: "wii", label: "Wii y GameCube", icon: Sparkles, desc: "ISO → RVZ" },
     ],
+  },
+  {
+    title: "Comunidad",
+    items: [{ id: "store", label: "Homebrew Store", icon: Store, desc: "Apps, ports y utilidades" }],
   },
 ];
 

@@ -11,6 +11,7 @@ import { Ps5View } from "./components/Ps5View";
 import { PspView } from "./components/PspView";
 import { QueuePanel } from "./components/QueuePanel";
 import { SettingsView } from "./components/SettingsView";
+import { StoreView } from "./components/StoreView";
 import { Sidebar } from "./components/Sidebar";
 import { SwitchView } from "./components/SwitchView";
 import { ThreeDsView } from "./components/ThreeDsView";
@@ -186,6 +187,7 @@ export default function App() {
               {view === "ps5" && <Ps5View />}
               {view === "psp" && <PspView dragging={dragging} />}
               {view === "wii" && <WiiView dragging={dragging} />}
+              {view === "store" && <StoreView />}
               {view === "inspect" && <InspectView />}
               {view === "settings" && <SettingsView />}
             </motion.div>
