@@ -14,11 +14,11 @@ copias de juegos.
 | 3DS | [Universal-DB](https://db.universal-team.net/) / [full.json](https://db.universal-team.net/data/full.json) | Catálogo estructurado, iconos, versiones y descargas | Primaria |
 | Wii U | [Homebrew App Store](https://github.com/fortheusers/hb-appstore) | Repositorio `get`, paquetes y metadatos | Primaria |
 | Switch | [Homebrew App Store](https://github.com/fortheusers/hb-appstore) | Repositorio `get`, paquetes y metadatos | Primaria |
-| Wii | WiiBrew y repositorios GitHub de cada proyecto | Índice comunitario + releases | Secundaria |
+| Wii | [Open Shop Channel API](https://hbb1.oscwii.org/api/v3/contents) | Catálogo estructurado, ZIP, iconos y metadatos | Primaria |
 | PS Vita | [VitaDB](https://github.com/Rinnegatamante/VitaDB-Downloader) y [VitaDBtoo](https://github.com/DrDecki/VitaDBtoo-db) | Catálogo, iconos, VPK y archivos de datos | Primaria/complementaria |
 | PSP | VitaDB/VitaDBtoo y releases de GitHub | Homebrew, ports y utilidades | Complementaria |
-| PS4 | [PS4-Store](https://github.com/LightningMods/PS4-Store), OpenOrbis y releases de autores | Aplicaciones/payloads y metadatos | Curada |
-| PS5 | Releases de autores, OpenOrbis/SDK relacionados y catálogos de payloads | Payloads y utilidades compatibles | Curada |
+| PS4 | [PS4-Store](https://github.com/LightningMods/PS4-Store), GoldHEN y PS4HEN | Releases oficiales de payloads y aplicaciones | Curada |
+| PS5 | [PS5 Payloads Atlas](https://github.com/lucaszhongsj/ps5-payloads-atlas) y releases de autores | Catálogo de payloads ELF/BIN con checksums | Curada |
 
 Universal-DB indica que sus datos se actualizan automáticamente y que su
 `full.json` reúne la información obtenida de GitHub y otras fuentes. Homebrew
@@ -92,4 +92,3 @@ está disponible.
 3. Catálogo unificado firmado en GitHub Pages o Releases de ROMForge Studio.
 4. Vista Store con búsqueda, filtros, portada, licencia, descarga y verificación
    local.
-
