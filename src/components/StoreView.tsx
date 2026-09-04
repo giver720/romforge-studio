@@ -1,6 +1,7 @@
 import { Download, ExternalLink, Loader2, Search, Store as StoreIcon } from "lucide-react";
 import { openUrl } from "@tauri-apps/plugin-opener";
 import { open } from "@tauri-apps/plugin-dialog";
+import { listen } from "@tauri-apps/api/event";
 import { useEffect, useMemo, useState } from "react";
 import { api } from "../lib/api";
 import { useStore } from "../store";
@@ -39,6 +40,7 @@ export function StoreView() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [downloading, setDownloading] = useState<string | null>(null);
+  const [progress, setProgress] = useState(0);
   const notify = useStore((s) => s.notify);
 
   useEffect(() => {
@@ -47,6 +49,15 @@ export function StoreView() {
       .then((catalog) => setEntries(Array.isArray(catalog.entries) ? catalog.entries : []))
       .catch((e) => setError(String(e)))
       .finally(() => setLoading(false));
+  }, []);
+
+  useEffect(() => {
+    let stop: (() => void) | undefined;
+    listen<{ received: number; total?: number | null }>("store://download", (event) => {
+      const { received, total } = event.payload;
+      if (total) setProgress(Math.min(100, Math.round((received / total) * 100)));
+    }).then((unlisten) => { stop = unlisten; });
+    return () => { stop?.(); };
   }, []);
 
   const filtered = useMemo(() => {
@@ -63,13 +74,14 @@ export function StoreView() {
     const destination = await open({ directory: true, multiple: false });
     if (typeof destination !== "string") return;
     setDownloading(entry.id);
+    setProgress(0);
     try {
       if (item.format === "hbas") await api.downloadHbasPackage(item.url, destination, entry.name);
       else await api.downloadHomebrew(item.url, item.filename, destination, item.sha256);
       notify("ok", `${entry.name} descargado`);
     } catch (e) {
       notify("error", `No se pudo descargar: ${String(e)}`);
-    } finally { setDownloading(null); }
+    } finally { setDownloading(null); setProgress(0); }
   }
 
   return (
@@ -95,7 +107,7 @@ export function StoreView() {
             const artifact = entry.downloads[0];
             return <div key={entry.id} className="glass flex gap-3 rounded-xl p-3">
               <div className="h-16 w-16 shrink-0 overflow-hidden rounded-xl bg-white/[0.06]">{entry.icon_url ? <img src={entry.icon_url} alt="" className="h-full w-full object-cover" loading="lazy" /> : <div className="flex h-full items-center justify-center text-xs text-[var(--color-faint)]">HB</div>}</div>
-            <div className="min-w-0 flex-1"><div className="flex items-start justify-between gap-2"><h2 className="truncate text-sm font-semibold">{entry.name}</h2><span className="shrink-0 text-[0.65rem] text-[var(--color-faint)]">{entry.platforms.map((p) => LABELS[p] ?? p.toUpperCase()).join(" · ")}</span></div><p className="mt-0.5 line-clamp-2 text-xs text-[var(--color-muted)]">{entry.summary || "Sin descripción"}</p><p className="mt-1 text-[0.65rem] text-[var(--color-faint)]">{entry.author || "Autor desconocido"}{entry.version ? ` · ${entry.version}` : ""}{artifact?.size ? ` · ${size(artifact.size)}` : ""}</p><div className="mt-2 flex gap-2"><button disabled={!artifact || downloading === entry.id} onClick={() => void downloadEntry(entry)} className="btn btn-primary px-2.5 py-1 text-xs"><Download size={13} /> {downloading === entry.id ? "Descargando..." : `Descargar${artifact ? ` · ${artifact.format}` : ""}`}</button>{entry.release_url && <button onClick={() => openUrl(entry.release_url!)} className="btn btn-ghost px-2.5 py-1 text-xs"><ExternalLink size={13} /> Origen</button>}</div></div>
+            <div className="min-w-0 flex-1"><div className="flex items-start justify-between gap-2"><h2 className="truncate text-sm font-semibold">{entry.name}</h2><span className="shrink-0 text-[0.65rem] text-[var(--color-faint)]">{entry.platforms.map((p) => LABELS[p] ?? p.toUpperCase()).join(" · ")}</span></div><p className="mt-0.5 line-clamp-2 text-xs text-[var(--color-muted)]">{entry.summary || "Sin descripción"}</p><p className="mt-1 text-[0.65rem] text-[var(--color-faint)]">{entry.author || "Autor desconocido"}{entry.version ? ` · ${entry.version}` : ""}{artifact?.size ? ` · ${size(artifact.size)}` : ""}</p>{downloading === entry.id && <div className="mt-2 h-1 overflow-hidden rounded-full bg-white/[0.08]"><div className="h-full rounded-full bg-[var(--accent)] transition-all" style={{ width: `${progress}%` }} /></div>}<div className="mt-2 flex gap-2"><button disabled={!artifact || downloading === entry.id} onClick={() => void downloadEntry(entry)} className="btn btn-primary px-2.5 py-1 text-xs"><Download size={13} /> {downloading === entry.id ? `${progress ? `${progress}%` : "Descargando..."}` : `Descargar${artifact ? ` · ${artifact.format}` : ""}`}</button>{entry.release_url && <button onClick={() => openUrl(entry.release_url!)} className="btn btn-ghost px-2.5 py-1 text-xs"><ExternalLink size={13} /> Origen</button>}</div></div>
             </div>;
           })}
         </div>
