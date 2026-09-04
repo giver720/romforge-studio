@@ -1,13 +1,17 @@
 use base64::Engine;
 use serde::Serialize;
-use std::collections::hash_map::DefaultHasher;
+use std::collections::{hash_map::DefaultHasher, HashMap};
 use std::hash::{Hash, Hasher};
 use std::path::{Path, PathBuf};
-use std::time::Duration;
+use std::sync::OnceLock;
+use std::time::{Duration, SystemTime};
+use tokio::sync::Mutex;
 
 const MAX_IMAGE_BYTES: usize = 8 * 1024 * 1024;
 const MAX_INDEX_BYTES: usize = 4 * 1024 * 1024;
+const INDEX_MAX_AGE: Duration = Duration::from_secs(7 * 24 * 60 * 60);
 const COLLECTIONS: [&str; 3] = ["Named_Boxarts", "Named_Titles", "Named_Snaps"];
+static CATALOG_INDEXES: OnceLock<Mutex<HashMap<String, String>>> = OnceLock::new();
 
 #[derive(Clone, Debug, Serialize)]
 pub struct GameArtwork {
@@ -306,6 +310,40 @@ async fn download_index(client: &reqwest::Client, url: &str) -> Option<String> {
     String::from_utf8(bytes.to_vec()).ok()
 }
 
+fn fresh_index(path: &Path) -> Option<String> {
+    let metadata = std::fs::metadata(path).ok()?;
+    if metadata.len() == 0 || metadata.len() > MAX_INDEX_BYTES as u64 {
+        return None;
+    }
+    let modified = metadata.modified().ok()?;
+    if SystemTime::now().duration_since(modified).ok()? > INDEX_MAX_AGE {
+        return None;
+    }
+    std::fs::read_to_string(path).ok()
+}
+
+async fn catalog_index(client: &reqwest::Client, url: &str) -> Option<String> {
+    let indexes = CATALOG_INDEXES.get_or_init(|| Mutex::new(HashMap::new()));
+    let mut indexes = indexes.lock().await;
+    if let Some(index) = indexes.get(url) {
+        return Some(index.clone());
+    }
+
+    let cache = cache_path("catalog", url).with_extension("html");
+    if let Some(index) = fresh_index(&cache) {
+        indexes.insert(url.to_string(), index.clone());
+        return Some(index);
+    }
+
+    let index = download_index(client, url).await?;
+    if let Some(parent) = cache.parent() {
+        let _ = std::fs::create_dir_all(parent);
+    }
+    let _ = std::fs::write(cache, index.as_bytes());
+    indexes.insert(url.to_string(), index.clone());
+    Some(index)
+}
+
 fn metadata_title(input: &Path, system: &str) -> Option<String> {
     if !input.is_dir() {
         return None;
@@ -370,20 +408,6 @@ pub async fn resolve(input: &str, system: &str, online: bool) -> GameArtwork {
                         title,
                     };
                 }
-                if let Some(bytes) = match client.as_ref() {
-                    Some(client) => download(client, &url).await,
-                    _ => None,
-                } {
-                    if let Some(parent) = cache.parent() {
-                        let _ = std::fs::create_dir_all(parent);
-                    }
-                    let _ = std::fs::write(&cache, &bytes);
-                    return GameArtwork {
-                        data_url: as_data_url(&bytes),
-                        source: Some("libretro".into()),
-                        title,
-                    };
-                }
             }
         }
     }
@@ -395,7 +419,7 @@ pub async fn resolve(input: &str, system: &str, online: bool) -> GameArtwork {
                     percent_encode(playlist),
                     collection
                 );
-                let Some(index) = download_index(client, &index_url).await else {
+                let Some(index) = catalog_index(client, &index_url).await else {
                     continue;
                 };
                 let Some(name) = fuzzy_name_from_index(&index, &lookup_title) else {
@@ -424,6 +448,35 @@ pub async fn resolve(input: &str, system: &str, online: bool) -> GameArtwork {
                     source: Some("libretro".into()),
                     title,
                 };
+            }
+        }
+
+        // Si el servidor deja de publicar el índice, conserva la búsqueda
+        // directa como respaldo. Solo se ejecuta después del camino rápido.
+        for playlist in playlists(system) {
+            for name in candidate_names(&lookup_title) {
+                for collection in COLLECTIONS {
+                    let url = format!(
+                        "https://thumbnails.libretro.com/{}/{}/{}.png",
+                        percent_encode(playlist),
+                        collection,
+                        percent_encode(&name)
+                    );
+                    let cache = cache_path(system, &url);
+                    let Some(bytes) = download(client, &url).await else {
+                        continue;
+                    };
+                    if let Some(parent) = cache.parent() {
+                        let _ = std::fs::create_dir_all(parent);
+                    }
+                    let _ = std::fs::write(&cache, &bytes);
+                    let _ = std::fs::write(&query_cache, &bytes);
+                    return GameArtwork {
+                        data_url: as_data_url(&bytes),
+                        source: Some("libretro".into()),
+                        title,
+                    };
+                }
             }
         }
     }
@@ -494,5 +547,22 @@ mod tests {
             artwork.source.as_deref(),
             Some("libretro" | "cache")
         ));
+
+        let first = std::time::Instant::now();
+        assert!(resolve("Dragon Ball Z Tag Team.iso", "psp", true)
+            .await
+            .data_url
+            .is_some());
+        let first_elapsed = first.elapsed();
+        let second = std::time::Instant::now();
+        assert!(resolve("Dragon Ball Z Tag-Team.iso", "psp", true)
+            .await
+            .data_url
+            .is_some());
+        eprintln!(
+            "primer catálogo: {:?}; catálogo reutilizado: {:?}",
+            first_elapsed,
+            second.elapsed()
+        );
     }
 }

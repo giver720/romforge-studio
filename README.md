@@ -17,8 +17,9 @@ la conversión. CHD Studio busca las imágenes en este orden:
 3. La biblioteca pública de miniaturas de Libretro, con coincidencia tolerante cuando el archivo
    omite la región, el idioma o una parte del título oficial.
 
-Las portadas obtenidas de Internet quedan en la caché privada de la aplicación y se reutilizan sin
-volver a descargarlas. La opción **Ajustes → Apariencia → Buscar portadas en línea** se puede apagar;
+Las portadas y los índices de cada consola quedan en la caché privada de la aplicación. El primer
+juego carga el catálogo y los siguientes se resuelven localmente casi al instante. La opción
+**Ajustes → Apariencia → Buscar portadas en línea** se puede apagar;
 las imágenes locales y las que ya estén en caché siguen disponibles. Si no hay coincidencia, la cola
 muestra una tarjeta de color con las iniciales de la consola.
 
