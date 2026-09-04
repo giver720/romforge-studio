@@ -16,10 +16,10 @@ export function TitleBar() {
           className="grid h-[22px] w-[22px] place-items-center rounded-[7px] text-[11px] font-black text-[#0a0c12]"
           style={{ background: "linear-gradient(135deg, var(--accent), var(--accent-2))" }}
         >
-          C
+          R
         </div>
         <span className="text-[0.82rem] font-semibold tracking-tight">
-          CHD <span className="text-[var(--color-muted)] font-normal">Studio</span>
+          ROMForge <span className="text-[var(--color-muted)] font-normal">Studio</span>
         </span>
       </div>
 

@@ -29,14 +29,14 @@ const SOURCE_LABEL: Record<string, string> = {
 };
 
 function kindLabel(t: ToolStatus): string {
-  if (t.kind.type === "bundled") return "Viaja con CHD Studio";
+  if (t.kind.type === "bundled") return "Viaja con ROMForge Studio";
   if (t.kind.type === "python") return `Paquete de Python · ${t.kind.package}`;
   if (t.kind.type === "external") return "Hay que instalarla aparte";
   if (t.kind.type === "web") return `Se descarga de ${t.kind.base.replace(/^https?:\/\//, "")}`;
   if (t.kind.type === "system") return t.kind.hint;
-  if (t.kind.type === "pythonscript") return "Script de Python · lo prepara CHD Studio";
+  if (t.kind.type === "pythonscript") return "Script de Python · lo prepara ROMForge Studio";
   if (t.kind.type === "source")
-    return `No hay binario para Linux · CHD Studio la compila de ${t.kind.repo.replace(
+    return `No hay binario para Linux · ROMForge Studio la compila de ${t.kind.repo.replace(
       /^https?:\/\/(www\.)?github\.com\//,
       "",
     )}`;
@@ -130,7 +130,7 @@ export function ToolsCard() {
   return (
     <Card
       title="Herramientas"
-      desc="Cada consola necesita su propio motor. CHD Studio los detecta e instala por ti."
+      desc="Cada consola necesita su propio motor. ROMForge Studio los detecta e instala por ti."
       right={
         <button className="btn btn-quiet px-2 py-1" onClick={recheck} title="Volver a buscar">
           <RefreshCw size={15} className={busy ? "animate-spin" : ""} />
@@ -142,7 +142,7 @@ export function ToolsCard() {
           <div className="min-w-0 flex-1">
             <p className="text-[0.78rem] font-medium">Falta Python</p>
             <p className="mt-1 text-[0.68rem] leading-relaxed text-[var(--color-muted)]">
-              Algunas herramientas son paquetes de Python. Instálalo una vez y CHD Studio se encarga
+              Algunas herramientas son paquetes de Python. Instálalo una vez y ROMForge Studio se encarga
               del resto en un entorno propio, sin tocar el Python del sistema.
             </p>
           </div>

@@ -1,9 +1,9 @@
 @echo off
-title CHD Studio - crear instalador
+title ROMForge Studio - crear instalador
 cd /d "%~dp0"
 
 echo.
-echo  == CHD Studio ==
+echo  == ROMForge Studio ==
 echo  Generando el instalador. La primera vez tarda varios minutos.
 echo.
 

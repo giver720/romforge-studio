@@ -7,7 +7,7 @@
 //!   * `3dsconv`         - CCI/.3ds -> CIA instalable. Necesita `boot9.bin`.
 //!   * `cia-to-cci`      - CIA -> CCI descifrado. Necesita `aes_keys.txt`.
 //!
-//! Las claves son del usuario. CHD Studio comprueba si existen y avisa, pero no
+//! Las claves son del usuario. ROMForge Studio comprueba si existen y avisa, pero no
 //! las incluye ni ayuda a conseguirlas.
 
 use crate::settings::Settings;

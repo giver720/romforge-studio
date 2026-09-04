@@ -25,7 +25,7 @@ SPEC = re.compile(
 
 
 def api(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "chd-studio"})
+    req = urllib.request.Request(url, headers={"User-Agent": "romforge-studio"})
     return json.load(urllib.request.urlopen(req))
 
 

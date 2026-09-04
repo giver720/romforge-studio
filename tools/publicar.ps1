@@ -1,12 +1,13 @@
 <#
-    Prepara una version completa de CHD Studio:
+    Prepara una version completa de ROMForge Studio:
 
       1. Descarga las herramientas nativas que van dentro del instalador
       2. Compila el instalador (setup.exe) firmado para el actualizador
       3. Arma la version portable en un .zip
       4. Genera latest.json, que es lo que lee el actualizador
 
-    Requiere la clave privada de firma en %USERPROFILE%\.tauri\chd-studio.key
+    Conserva la clave historica en %USERPROFILE%\.tauri\chd-studio.key para que
+    las instalaciones de CHD Studio puedan validar la actualizacion a ROMForge.
 
     Uso:  npm run release
 #>
@@ -23,7 +24,7 @@ if (-not (Test-Path $key)) {
 
 $conf = Get-Content "src-tauri\tauri.conf.json" -Raw | ConvertFrom-Json
 $version = $conf.version
-Write-Host "  Preparando CHD Studio $version" -ForegroundColor Cyan
+Write-Host "  Preparando ROMForge Studio $version" -ForegroundColor Cyan
 
 # --- 1. Herramientas -------------------------------------------------------
 if (-not (Test-Path "src-tauri\binaries\chdman.exe")) {
@@ -56,16 +57,16 @@ if (Test-Path $out) { Remove-Item $out -Recurse -Force }
 New-Item -ItemType Directory -Force $out | Out-Null
 
 # Se monta en la carpeta temporal y solo el .zip acaba en release/
-$port = Join-Path $env:TEMP "CHD-Studio-$version-portable"
+$port = Join-Path $env:TEMP "ROMForge-Studio-$version-portable"
 if (Test-Path $port) { Remove-Item $port -Recurse -Force }
 New-Item -ItemType Directory -Force $port | Out-Null
 
-Copy-Item "src-tauri\target\release\chd-studio.exe" (Join-Path $port "CHD Studio.exe")
+Copy-Item "src-tauri\target\release\romforge-studio.exe" (Join-Path $port "ROMForge Studio.exe")
 Copy-Item "src-tauri\binaries" (Join-Path $port "binaries") -Recurse
 
 # Este archivo es lo que activa el modo portable: los datos se quedan al lado
 @"
-La presencia de este archivo hace que CHD Studio guarde sus ajustes, las
+La presencia de este archivo hace que ROMForge Studio guarde sus ajustes, las
 herramientas que descargue y el entorno de Python en la carpeta 'datos', junto
 al ejecutable, en vez de en %APPDATA%.
 
@@ -74,7 +75,7 @@ Borralo si prefieres que se comporte como la version instalada.
 
 Copy-Item "README.md" $port -ErrorAction SilentlyContinue
 
-$zip = Join-Path $out "CHD-Studio-$version-portable.zip"
+$zip = Join-Path $out "ROMForge-Studio-$version-portable.zip"
 Compress-Archive -Path "$port\*" -DestinationPath $zip -Force
 Remove-Item $port -Recurse -Force
 
@@ -94,7 +95,7 @@ $manifest = [ordered]@{
     platforms = [ordered]@{
         "windows-x86_64" = [ordered]@{
             signature = (Get-Content $sigFile -Raw).Trim()
-            url       = "https://github.com/giver720/chd-studio/releases/download/v$version/$assetName"
+            url       = "https://github.com/giver720/romforge-studio/releases/download/v$version/$assetName"
         }
     }
 }
@@ -113,4 +114,4 @@ Write-Host ""
 Write-Host "  Listo. En la carpeta 'release\v$version':" -ForegroundColor Green
 Get-ChildItem $out | Select-Object Name, @{N = "MB"; E = { [math]::Round($_.Length / 1MB, 2) } } | Format-Table -AutoSize
 Write-Host "  Para publicarla:" -ForegroundColor Cyan
-Write-Host "    gh release create v$version release\v$version\* --repo giver720/chd-studio --title `"CHD Studio $version`""
+Write-Host "    gh release create v$version release\v$version\* --repo giver720/romforge-studio --title `"ROMForge Studio $version`""

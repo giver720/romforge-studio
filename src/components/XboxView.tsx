@@ -121,7 +121,7 @@ export function XboxView({ dragging }: { dragging: boolean }) {
               Falta {missingTools.map((m) => m.name).join(" y ")}
             </p>
             <p className="mt-1 text-[0.7rem] leading-relaxed text-[var(--color-muted)]">
-              CHD Studio puede descargarlo por ti; son ejecutables de un par de MB.
+              ROMForge Studio puede descargarlo por ti; son ejecutables de un par de MB.
             </p>
           </div>
           <button

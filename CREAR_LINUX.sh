@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# CHD Studio - crea el paquete .deb para Ubuntu/Debian.
+# ROMForge Studio - crea el paquete .deb para Ubuntu/Debian.
 #
 # El equivalente de CREAR_EXE.bat en Linux. Comprueba antes las bibliotecas de
 # desarrollo que necesita Tauri, porque el error que da cuando faltan no se
@@ -8,7 +8,7 @@ set -euo pipefail
 cd "$(dirname "$0")"
 
 echo
-echo " == CHD Studio =="
+echo " == ROMForge Studio =="
 echo " Generando los paquetes de Linux. La primera vez tarda varios minutos."
 echo
 

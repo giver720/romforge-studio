@@ -260,7 +260,7 @@ mod tests {
 
     #[test]
     fn validates_game_root_and_sizes_image() {
-        let root = std::env::temp_dir().join(format!("chd-studio-ps5-{}", std::process::id()));
+        let root = std::env::temp_dir().join(format!("romforge-studio-ps5-{}", std::process::id()));
         let _ = std::fs::remove_dir_all(&root);
         std::fs::create_dir_all(root.join("sce_sys")).unwrap();
         std::fs::write(root.join("eboot.bin"), vec![0u8; 100]).unwrap();
@@ -279,7 +279,8 @@ mod tests {
 
     #[test]
     fn rejects_an_extra_parent_folder() {
-        let root = std::env::temp_dir().join(format!("chd-studio-ps5-bad-{}", std::process::id()));
+        let root =
+            std::env::temp_dir().join(format!("romforge-studio-ps5-bad-{}", std::process::id()));
         let _ = std::fs::remove_dir_all(&root);
         std::fs::create_dir_all(root.join("PPSA00000/sce_sys")).unwrap();
         std::fs::write(root.join("PPSA00000/eboot.bin"), b"x").unwrap();

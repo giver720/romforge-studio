@@ -4,7 +4,7 @@
 //!   * `nsz`   - comprime y descomprime NSP<->NSZ y XCI<->XCZ (zstd).
 //!   * `4nxci` - convierte cartuchos XCI a instalables NSP.
 //!
-//! Ambas necesitan que el usuario tenga sus propias `prod.keys`. CHD Studio
+//! Ambas necesitan que el usuario tenga sus propias `prod.keys`. ROMForge Studio
 //! solo comprueba si el archivo existe donde las herramientas lo esperan.
 
 use crate::settings::Settings;
@@ -104,7 +104,7 @@ pub fn keys_status(s: &Settings) -> KeysStatus {
 /// Argumentos de `nsz`. Trabaja siempre sobre una carpeta de salida (-o).
 ///
 /// nsz conserva el original salvo que se le pase `--rm-source`, asi que el
-/// borrado lo decide CHD Studio despues, igual que con el resto de motores.
+/// borrado lo decide ROMForge Studio despues, igual que con el resto de motores.
 pub fn nsz_args(mode: &str, input: &str, out_dir: &str, s: &Settings) -> Vec<String> {
     let mut a: Vec<String> = vec![];
 

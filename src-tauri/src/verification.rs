@@ -2,7 +2,7 @@
 //!
 //! Hay dos niveles deliberadamente distintos:
 //!   * `passed`: la herramienta del formato comprobo internamente el resultado;
-//!   * `basic`: CHD Studio comprobo existencia, tamano y estructura minima.
+//!   * `basic`: ROMForge Studio comprobo existencia, tamano y estructura minima.
 //!
 //! Nunca se presenta una comprobacion estructural como si fuera una verificacion
 //! criptografica. Los dos estados se muestran de forma separada en la interfaz.
@@ -359,7 +359,7 @@ mod tests {
 
     fn test_dir(name: &str) -> PathBuf {
         let path = std::env::temp_dir().join(format!(
-            "chd-studio-verification-{name}-{}",
+            "romforge-studio-verification-{name}-{}",
             std::process::id()
         ));
         let _ = std::fs::remove_dir_all(&path);
