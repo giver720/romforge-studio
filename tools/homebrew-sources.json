@@ -7,6 +7,24 @@
       "type": "universal_db",
       "index": "https://db.universal-team.net/data/full.json",
       "homepage": "https://db.universal-team.net/"
+    },
+    {
+      "id": "hbas-wiiu",
+      "name": "Homebrew App Store",
+      "platform": "wiiu",
+      "type": "hbas_repo",
+      "index": "https://wiiu.cdn.fortheusers.org/repo.json",
+      "base": "https://wiiu.cdn.fortheusers.org",
+      "homepage": "https://hb-app.store/wiiu"
+    },
+    {
+      "id": "hbas-switch",
+      "name": "Homebrew App Store",
+      "platform": "switch",
+      "type": "hbas_repo",
+      "index": "https://switch.cdn.fortheusers.org/repo.json",
+      "base": "https://switch.cdn.fortheusers.org",
+      "homepage": "https://hb-app.store/switch"
     }
   ]
 }

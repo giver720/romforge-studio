@@ -83,6 +83,50 @@ def universal_db(source: dict[str, Any]) -> list[dict[str, Any]]:
     return result
 
 
+def hbas_repo(source: dict[str, Any]) -> list[dict[str, Any]]:
+    payload = fetch_json(source["index"])
+    packages = payload.get("packages", []) if isinstance(payload, dict) else []
+    result: list[dict[str, Any]] = []
+    for item in packages:
+        if not isinstance(item, dict):
+            continue
+        binary = str(item.get("binary") or "")
+        if not binary.startswith("/") or binary == "/none":
+            continue
+        filename = Path(binary).name
+        fmt = filename_format(filename)
+        if not fmt:
+            continue
+        url = safe_url(source["base"].rstrip("/") + binary)
+        if not url:
+            continue
+        upstream = item.get("url")
+        app_name = item.get("title") or item.get("name") or "Sin nombre"
+        result.append({
+            "id": f"{source['id']}:{item.get('name', app_name)}",
+            "platforms": [source["platform"]],
+            "name": app_name,
+            "summary": item.get("description") or "",
+            "author": item.get("author") or "Desconocido",
+            "version": item.get("version"),
+            "license": item.get("license"),
+            "icon_url": None,
+            "release_url": safe_url(upstream),
+            "downloads": [{
+                "format": fmt,
+                "filename": filename,
+                "url": url,
+                "size": int(item["extracted"]) if isinstance(item.get("extracted"), int) else None,
+                "sha256": item.get("sha256"),
+            }],
+            "source": source["name"],
+            "source_url": source["homepage"],
+            "license_url": None,
+            "updated_at": item.get("updated"),
+        })
+    return result
+
+
 def build(config: dict[str, Any]) -> dict[str, Any]:
     entries: list[dict[str, Any]] = []
     errors: list[dict[str, str]] = []
@@ -90,6 +134,8 @@ def build(config: dict[str, Any]) -> dict[str, Any]:
         try:
             if source.get("type") == "universal_db":
                 entries.extend(universal_db(source))
+            elif source.get("type") == "hbas_repo":
+                entries.extend(hbas_repo(source))
             else:
                 errors.append({"source": source.get("id", "unknown"), "error": "unsupported source type"})
         except Exception as exc:  # Keep one broken source from hiding the others.
