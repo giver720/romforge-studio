@@ -64,7 +64,8 @@ export function StoreView() {
     if (typeof destination !== "string") return;
     setDownloading(entry.id);
     try {
-      await api.downloadHomebrew(item.url, item.filename, destination, item.sha256);
+      if (item.format === "hbas") await api.downloadHbasPackage(item.url, destination, entry.name);
+      else await api.downloadHomebrew(item.url, item.filename, destination, item.sha256);
       notify("ok", `${entry.name} descargado`);
     } catch (e) {
       notify("error", `No se pudo descargar: ${String(e)}`);

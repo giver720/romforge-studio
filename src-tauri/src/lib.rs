@@ -742,6 +742,7 @@ pub fn run() {
             get_settings,
             set_settings,
             store::download_homebrew,
+            store::download_hbas_package,
             chdman_status,
             install_chdman,
             chd_info,

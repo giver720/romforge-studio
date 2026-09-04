@@ -67,4 +67,6 @@ export const api = {
     invoke<GameArtwork>("game_artwork", { input, system }),
   downloadHomebrew: (url: string, filename: string, destinationDir: string, sha256?: string | null) =>
     invoke<string>("download_homebrew", { url, filename, destinationDir, sha256 }),
+  downloadHbasPackage: (manifestUrl: string, destinationDir: string, packageName: string) =>
+    invoke<string>("download_hbas_package", { manifestUrl, destinationDir, packageName }),
 };
