@@ -25,6 +25,24 @@
       "index": "https://switch.cdn.fortheusers.org/repo.json",
       "base": "https://switch.cdn.fortheusers.org",
       "homepage": "https://hb-app.store/switch"
+    },
+    {
+      "id": "vitadbtoo-vita",
+      "name": "VitaDBtoo",
+      "platform": "psvita",
+      "type": "vitadbtoo",
+      "index": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/apps.json",
+      "icon_base": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons",
+      "homepage": "https://github.com/DrDecki/VitaDBtoo-db"
+    },
+    {
+      "id": "vitadbtoo-psp",
+      "name": "VitaDBtoo",
+      "platform": "psp",
+      "type": "vitadbtoo",
+      "index": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/psp_apps.json",
+      "icon_base": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons",
+      "homepage": "https://github.com/DrDecki/VitaDBtoo-db"
     }
   ]
 }

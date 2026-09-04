@@ -132,6 +132,51 @@ def hbas_repo(source: dict[str, Any]) -> list[dict[str, Any]]:
     return result
 
 
+def vitadbtoo(source: dict[str, Any]) -> list[dict[str, Any]]:
+    payload = fetch_json(source["index"])
+    if not isinstance(payload, list):
+        raise ValueError("VitaDBtoo index is not an array")
+    result: list[dict[str, Any]] = []
+    for item in payload:
+        if not isinstance(item, dict):
+            continue
+        url = safe_url(item.get("url"))
+        if not url:
+            continue
+        filename = Path(url.split("?", 1)[0]).name or f"{item.get('id', 'app')}.zip"
+        fmt = filename_format(filename) or "zip"
+        icon = item.get("icon")
+        icon_url = safe_url(f"{source['icon_base'].rstrip('/')}/{icon}") if icon else None
+        downloads = [{
+            "format": fmt,
+            "filename": filename,
+            "url": url,
+            "size": int(item["size"]) if str(item.get("size", "")).isdigit() else None,
+            "md5": item.get("hash") or None,
+        }]
+        data_url = safe_url(item.get("data"))
+        if data_url:
+            downloads.append({"format": "data", "filename": Path(data_url).name, "url": data_url})
+        result.append({
+            "id": f"{source['id']}:{item.get('id', item.get('name', filename))}",
+            "platforms": [source["platform"]],
+            "name": item.get("name") or filename,
+            "summary": item.get("description") or "",
+            "author": item.get("author") or "Desconocido",
+            "version": item.get("version"),
+            "title_id": item.get("titleid") or None,
+            "license": None,
+            "icon_url": icon_url,
+            "release_url": safe_url(item.get("release_page") or item.get("source")),
+            "downloads": downloads,
+            "source": source["name"],
+            "source_url": source["homepage"],
+            "license_url": None,
+            "updated_at": item.get("date"),
+        })
+    return result
+
+
 def build(config: dict[str, Any]) -> dict[str, Any]:
     entries: list[dict[str, Any]] = []
     errors: list[dict[str, str]] = []
@@ -141,6 +186,8 @@ def build(config: dict[str, Any]) -> dict[str, Any]:
                 entries.extend(universal_db(source))
             elif source.get("type") == "hbas_repo":
                 entries.extend(hbas_repo(source))
+            elif source.get("type") == "vitadbtoo":
+                entries.extend(vitadbtoo(source))
             else:
                 errors.append({"source": source.get("id", "unknown"), "error": "unsupported source type"})
         except Exception as exc:  # Keep one broken source from hiding the others.
