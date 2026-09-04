@@ -43,6 +43,14 @@
       "index": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/psp_apps.json",
       "icon_base": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons",
       "homepage": "https://github.com/DrDecki/VitaDBtoo-db"
+    },
+    {
+      "id": "open-shop-channel-wii",
+      "name": "Open Shop Channel",
+      "platform": "wii",
+      "type": "osc_api",
+      "index": "https://hbb1.oscwii.org/api/v3/contents",
+      "homepage": "https://oscwii.org/"
     }
   ]
 }

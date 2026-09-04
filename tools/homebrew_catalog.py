@@ -177,6 +177,46 @@ def vitadbtoo(source: dict[str, Any]) -> list[dict[str, Any]]:
     return result
 
 
+def osc_api(source: dict[str, Any]) -> list[dict[str, Any]]:
+    payload = fetch_json(source["index"])
+    if not isinstance(payload, list):
+        raise ValueError("Open Shop Channel index is not an array")
+    result: list[dict[str, Any]] = []
+    for item in payload:
+        if not isinstance(item, dict) or not isinstance(item.get("url"), dict):
+            continue
+        zip_url = safe_url(item["url"].get("zip"))
+        if not zip_url:
+            continue
+        slug = str(item.get("slug") or item.get("name") or "app")
+        desc = item.get("description") if isinstance(item.get("description"), dict) else {}
+        sizes = item.get("file_size") if isinstance(item.get("file_size"), dict) else {}
+        result.append({
+            "id": f"{source['id']}:{slug}",
+            "platforms": [source["platform"]],
+            "name": item.get("name") or slug,
+            "summary": desc.get("short") or "",
+            "description": desc.get("long") or "",
+            "author": item.get("author") or "Desconocido",
+            "version": item.get("version"),
+            "title_id": (item.get("shop") or {}).get("title_id"),
+            "license": None,
+            "icon_url": safe_url(item["url"].get("icon")),
+            "release_url": None,
+            "downloads": [{
+                "format": "zip",
+                "filename": f"{slug}.zip",
+                "url": zip_url,
+                "size": sizes.get("zip_compressed"),
+            }],
+            "source": source["name"],
+            "source_url": source["homepage"],
+            "license_url": None,
+            "updated_at": item.get("release_date"),
+        })
+    return result
+
+
 def build(config: dict[str, Any]) -> dict[str, Any]:
     entries: list[dict[str, Any]] = []
     errors: list[dict[str, str]] = []
@@ -188,6 +228,8 @@ def build(config: dict[str, Any]) -> dict[str, Any]:
                 entries.extend(hbas_repo(source))
             elif source.get("type") == "vitadbtoo":
                 entries.extend(vitadbtoo(source))
+            elif source.get("type") == "osc_api":
+                entries.extend(osc_api(source))
             else:
                 errors.append({"source": source.get("id", "unknown"), "error": "unsupported source type"})
         except Exception as exc:  # Keep one broken source from hiding the others.
