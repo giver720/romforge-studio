@@ -14,6 +14,7 @@
     "dist:linux": "tauri build --bundles deb",
     "chdman": "powershell -ExecutionPolicy Bypass -File tools/obtener-chdman.ps1",
     "check:tools": "python tools/validar-herramientas.py",
+    "store:catalog": "python tools/homebrew_catalog.py",
     "tools:fetch": "powershell -ExecutionPolicy Bypass -File tools/obtener-herramientas.ps1",
     "release": "powershell -ExecutionPolicy Bypass -File tools/publicar.ps1"
   },

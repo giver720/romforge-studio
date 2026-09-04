@@ -1,0 +1,12 @@
+{
+  "sources": [
+    {
+      "id": "universal-db-3ds",
+      "name": "Universal-DB",
+      "platform": "3ds",
+      "type": "universal_db",
+      "index": "https://db.universal-team.net/data/full.json",
+      "homepage": "https://db.universal-team.net/"
+    }
+  ]
+}
