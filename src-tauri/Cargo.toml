@@ -1,6 +1,6 @@
 [package]
 name = "chd-studio"
-version = "1.8.0"
+version = "1.8.1"
 description = "Conversor de imagenes de disco a CHD con chdman"
 authors = ["CHD Studio"]
 edition = "2021"
