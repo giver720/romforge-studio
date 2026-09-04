@@ -1,4 +1,4 @@
-//! Registro de las herramientas externas que CHD Studio orquesta.
+//! Registro de las herramientas externas que ROMForge Studio orquesta.
 //!
 //! Cada consola necesita su propio ejecutable y cada uno se consigue de forma
 //! distinta: chdman viaja dentro del instalador, `nsz` es un paquete de Python
@@ -13,7 +13,7 @@ use std::path::PathBuf;
 #[derive(Debug, Clone, Copy, PartialEq, Serialize)]
 #[serde(tag = "type", rename_all = "lowercase")]
 pub enum ToolKind {
-    /// Viaja dentro del instalador de CHD Studio.
+    /// Viaja dentro del instalador de ROMForge Studio.
     Bundled,
     /// Se instala con pip dentro del entorno privado de la app.
     Python { package: &'static str },
@@ -436,7 +436,7 @@ pub struct ToolStatus {
     pub version: Option<String>,
     /// bundled | manual | app | venv | tools | path
     pub source: Option<String>,
-    /// true si CHD Studio puede instalarla sola
+    /// true si ROMForge Studio puede instalarla sola
     pub installable: bool,
 }
 
@@ -811,7 +811,7 @@ pub async fn install_github_tool(
     tag_prefix: &str,
 ) -> anyhow::Result<String> {
     let client = reqwest::Client::builder()
-        .user_agent("chd-studio")
+        .user_agent("romforge-studio")
         .build()?;
 
     let rel: GhRelease = if tag_prefix.is_empty() {
@@ -899,7 +899,7 @@ pub async fn install_github_tool(
 /// el `tar` es el de GNU y no puede, asi que ahi se busca un 7-Zip de verdad,
 /// que es lo que reparten las distribuciones.
 async fn extract_7z(bytes: &[u8], name: &str, dest: &std::path::Path) -> anyhow::Result<()> {
-    let tmp = std::env::temp_dir().join(format!("chd-studio-{name}"));
+    let tmp = std::env::temp_dir().join(format!("romforge-studio-{name}"));
     std::fs::write(&tmp, bytes)?;
 
     // El tar de Git Bash confunde "C:" con un host remoto; usamos el del sistema
@@ -1014,7 +1014,7 @@ pub async fn install_web_tool(
     contains: &str,
 ) -> anyhow::Result<String> {
     let client = reqwest::Client::builder()
-        .user_agent("chd-studio")
+        .user_agent("romforge-studio")
         .build()?;
     let html = client
         .get(page)
@@ -1296,7 +1296,7 @@ fn make_tree_executable(dir: &std::path::Path, depth: usize) {
 pub async fn install(id: &str) -> anyhow::Result<String> {
     let spec = spec(id).ok_or_else(|| anyhow::anyhow!("Herramienta desconocida: {id}"))?;
     match spec.kind() {
-        ToolKind::Bundled => anyhow::bail!("{} ya viene incluida con CHD Studio", spec.name),
+        ToolKind::Bundled => anyhow::bail!("{} ya viene incluida con ROMForge Studio", spec.name),
         ToolKind::External { site } => anyhow::bail!(
             "{} viene dentro de otro programa y hay que instalarlo aparte: {site}",
             spec.name
@@ -1370,7 +1370,8 @@ mod tests {
     async fn linux_release_assets_install() {
         use std::os::unix::fs::PermissionsExt;
 
-        let root = std::env::temp_dir().join(format!("chd-studio-tools-{}", std::process::id()));
+        let root =
+            std::env::temp_dir().join(format!("romforge-studio-tools-{}", std::process::id()));
         std::fs::create_dir_all(&root).unwrap();
         std::env::set_var("XDG_CONFIG_HOME", &root);
         let settings = Settings::default();

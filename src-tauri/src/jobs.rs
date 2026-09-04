@@ -251,7 +251,7 @@ impl OutputTransaction {
             .file_name()
             .map(|value| value.to_string_lossy().to_string())
             .unwrap_or_else(|| "salida".into());
-        let backup = parent.join(format!("{name}.chd-studio-backup-{job_id}"));
+        let backup = parent.join(format!("{name}.romforge-studio-backup-{job_id}"));
         if backup.exists() {
             return Err(format!(
                 "Ya existe un respaldo pendiente: {}",
@@ -343,7 +343,7 @@ impl StagedOutput {
             .unwrap_or_else(|| PathBuf::from("."));
         std::fs::create_dir_all(&final_parent)
             .map_err(|e| format!("No se pudo crear la carpeta de destino: {e}"))?;
-        let root = final_parent.join(format!(".chd-studio-stage-{}", job.id));
+        let root = final_parent.join(format!(".romforge-studio-stage-{}", job.id));
         if root.exists() {
             return Err(format!(
                 "Ya existe una conversion temporal pendiente: {}",
@@ -436,7 +436,7 @@ mod output_transaction_tests {
 
     fn fixture(name: &str) -> (PathBuf, Job) {
         let dir = std::env::temp_dir().join(format!(
-            "chd-studio-output-transaction-{name}-{}",
+            "romforge-studio-output-transaction-{name}-{}",
             std::process::id()
         ));
         let _ = std::fs::remove_dir_all(&dir);
@@ -822,7 +822,8 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings, cancel: 
 
     let canceled = || {
         staged.cleanup();
-        let _ = std::fs::remove_dir_all(std::env::temp_dir().join(format!("chd-studio-cia-{id}")));
+        let _ =
+            std::fs::remove_dir_all(std::env::temp_dir().join(format!("romforge-studio-cia-{id}")));
         let st = app.state::<AppState>();
         if let Some(j) = st.update(&id, |j| {
             j.status = "canceled".into();
@@ -847,7 +848,7 @@ async fn run_cia2cci(app: AppHandle, id: String, job: Job, s: Settings, cancel: 
         return fail("Falta makerom. Instalalo desde Ajustes -> Herramientas.".into());
     };
 
-    let work = std::env::temp_dir().join(format!("chd-studio-cia-{}", id));
+    let work = std::env::temp_dir().join(format!("romforge-studio-cia-{}", id));
     if let Err(e) = std::fs::create_dir_all(&work) {
         return fail(format!("No se pudo crear la carpeta temporal: {e}"));
     }
@@ -1235,7 +1236,7 @@ async fn run_ps5_exfat(
         Err(message) => return custom_error(&app, &id, message),
     };
     let image = PathBuf::from(&staged.execution_job.output);
-    let mount_root = std::env::temp_dir().join(format!("chd-studio-ps5-{id}"));
+    let mount_root = std::env::temp_dir().join(format!("romforge-studio-ps5-{id}"));
     let _ = std::fs::remove_dir_all(&mount_root);
     if let Err(error) = std::fs::create_dir(&mount_root) {
         staged.cleanup();
@@ -1251,7 +1252,7 @@ async fn run_ps5_exfat(
     #[cfg(windows)]
     let platform_result: Result<(PathBuf, String, PathBuf), String> = async {
         let osf = osfmount_path(&settings).ok_or_else(|| {
-            "Falta OSFMount. Instalalo desde Ajustes -> Herramientas y abre CHD Studio como administrador.".to_string()
+            "Falta OSFMount. Instalalo desde Ajustes -> Herramientas y abre ROMForge Studio como administrador.".to_string()
         })?;
         let drive = free_drive_letter().ok_or_else(|| "No hay una letra de unidad libre entre D: y Z:".to_string())?;
         let args = vec![
@@ -1273,7 +1274,7 @@ async fn run_ps5_exfat(
             return Err(if error == "__canceled__" {
                 error
             } else {
-                format!("{error}. Ejecuta CHD Studio como administrador.")
+                format!("{error}. Ejecuta ROMForge Studio como administrador.")
             });
         }
         let mut ready = false;
@@ -1488,7 +1489,7 @@ async fn run_ps3_compact(
         );
     };
 
-    let work = std::env::temp_dir().join(format!("chd-studio-ps3-{id}"));
+    let work = std::env::temp_dir().join(format!("romforge-studio-ps3-{id}"));
     let _ = std::fs::remove_dir_all(&work);
     if let Err(error) = std::fs::create_dir_all(&work) {
         return fail(format!("No se pudo crear el area temporal: {error}"));

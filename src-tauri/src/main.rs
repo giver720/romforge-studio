@@ -2,5 +2,5 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 fn main() {
-    chd_studio_lib::run()
+    romforge_studio_lib::run()
 }

@@ -78,7 +78,7 @@ export function PspView({ dragging }: { dragging: boolean }) {
           <div className="min-w-0 flex-1">
             <p className="text-[0.8rem] font-medium">Falta maxcso</p>
             <p className="mt-1 text-[0.7rem] leading-relaxed text-[var(--color-muted)]">
-              Es un único ejecutable de 500 KB. CHD Studio puede descargarlo por ti.
+              Es un único ejecutable de 500 KB. ROMForge Studio puede descargarlo por ti.
             </p>
           </div>
           <button

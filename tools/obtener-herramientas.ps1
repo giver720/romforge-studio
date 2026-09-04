@@ -1,5 +1,5 @@
 <#
-    Descarga todas las herramientas nativas que CHD Studio empaqueta dentro de
+    Descarga todas las herramientas nativas que ROMForge Studio empaqueta dentro de
     su instalador y las deja en src-tauri\binaries.
 
     Estos binarios NO se guardan en el repositorio: se bajan al preparar una
@@ -16,7 +16,7 @@ $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
 $dest = Join-Path $root "src-tauri\binaries"
-$tmp = Join-Path $env:TEMP "chd-studio-tools"
+$tmp = Join-Path $env:TEMP "romforge-studio-tools"
 
 New-Item -ItemType Directory -Force $dest | Out-Null
 New-Item -ItemType Directory -Force $tmp | Out-Null
@@ -40,7 +40,7 @@ $notas = @()
 foreach ($t in $tools) {
     Write-Host "  $($t.id)..." -ForegroundColor Cyan -NoNewline
 
-    $headers = @{ "User-Agent" = "chd-studio" }
+    $headers = @{ "User-Agent" = "romforge-studio" }
     if ($t.tag) {
         $rels = Invoke-RestMethod "https://api.github.com/repos/$($t.repo)/releases?per_page=100" -Headers $headers
         $rel = $rels | Where-Object { $_.tag_name.StartsWith($t.tag) } | Select-Object -First 1
@@ -104,7 +104,7 @@ foreach ($t in $tools) {
 
 # Aviso de procedencia y licencias, que algunas de estas herramientas son GPL
 $cabecera = @"
-Herramientas de terceros que CHD Studio distribuye sin modificar.
+Herramientas de terceros que ROMForge Studio distribuye sin modificar.
 Cada una conserva su licencia original; consulta su repositorio.
 
 "@

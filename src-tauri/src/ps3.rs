@@ -119,7 +119,7 @@ pub fn preserve_update_for_builder(dir: &Path) -> anyhow::Result<Option<UpdateCa
         return Ok(None);
     }
 
-    let temporary = dir.join(".chd-studio-update-case");
+    let temporary = dir.join(".romforge-studio-update-case");
     let adjusted = dir.join("ps3_update");
     let lowercase_conflict = std::fs::read_dir(dir)?
         .flatten()
@@ -260,7 +260,7 @@ pub struct Ps3Entry {
     pub kind: String,
     /// Idioma detectado, si lo hay
     pub lang: Option<String>,
-    /// true si CHD Studio lo propone para borrar
+    /// true si ROMForge Studio lo propone para borrar
     pub suggested: bool,
     /// true si esta protegido y no se puede borrar
     pub protected: bool,
@@ -508,7 +508,7 @@ mod tests {
 
     fn test_dir(name: &str) -> PathBuf {
         let dir =
-            std::env::temp_dir().join(format!("chd-studio-ps3-{name}-{}", std::process::id()));
+            std::env::temp_dir().join(format!("romforge-studio-ps3-{name}-{}", std::process::id()));
         let _ = std::fs::remove_dir_all(&dir);
         std::fs::create_dir_all(&dir).unwrap();
         dir

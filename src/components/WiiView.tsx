@@ -112,8 +112,8 @@ export function WiiView({ dragging }: { dragging: boolean }) {
               <p className="text-[0.8rem] font-medium">No se encontró {t.name}</p>
               <p className="mt-1 text-[0.7rem] leading-relaxed text-[var(--color-muted)]">
                 {esWit
-                  ? "Hace falta solo para crear WBFS. CHD Studio puede descargarlo de la web de su autor (GPL-2.0), o puedes señalarlo si ya lo tienes."
-                  : "Viene dentro de Dolphin, y su proyecto no publica en GitHub, así que CHD Studio no puede descargarlo solo. Si ya tienes Dolphin, señálale la carpeta; si no, bájalo de su web y vuelve aquí."}
+                  ? "Hace falta solo para crear WBFS. ROMForge Studio puede descargarlo de la web de su autor (GPL-2.0), o puedes señalarlo si ya lo tienes."
+                  : "Viene dentro de Dolphin, y su proyecto no publica en GitHub, así que ROMForge Studio no puede descargarlo solo. Si ya tienes Dolphin, señálale la carpeta; si no, bájalo de su web y vuelve aquí."}
               </p>
               <div className="mt-2 flex flex-wrap gap-2">
                 {esWit && (

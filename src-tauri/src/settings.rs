@@ -103,7 +103,25 @@ pub fn config_dir() -> PathBuf {
         return p;
     }
     let base = dirs::config_dir().unwrap_or_else(|| PathBuf::from("."));
-    base.join("chd-studio")
+    migrated_config_dir(&base)
+}
+
+/// Conserva los ajustes, herramientas y portadas de instalaciones anteriores.
+/// El cambio de nombre se hace dentro del mismo disco, por lo que `rename` es
+/// atomico. Si el sistema no permite mover la carpeta, seguimos usando la ruta
+/// antigua para no dejar al usuario sin sus datos.
+fn migrated_config_dir(base: &std::path::Path) -> PathBuf {
+    let current = base.join("romforge-studio");
+    if current.exists() {
+        return current;
+    }
+
+    let legacy = base.join("chd-studio");
+    if legacy.is_dir() && std::fs::rename(&legacy, &current).is_err() {
+        return legacy;
+    }
+
+    current
 }
 
 pub fn settings_file() -> PathBuf {
@@ -126,4 +144,28 @@ pub fn save(s: &Settings) -> anyhow::Result<()> {
     std::fs::create_dir_all(config_dir())?;
     std::fs::write(settings_file(), serde_json::to_string_pretty(s)?)?;
     Ok(())
+}
+
+#[cfg(test)]
+mod tests {
+    use super::migrated_config_dir;
+
+    #[test]
+    fn migrates_the_legacy_configuration_directory() {
+        let base = std::env::temp_dir().join(format!(
+            "romforge-settings-migration-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&base);
+        let legacy = base.join("chd-studio");
+        std::fs::create_dir_all(&legacy).unwrap();
+        std::fs::write(legacy.join("settings.json"), "{}").unwrap();
+
+        let migrated = migrated_config_dir(&base);
+
+        assert_eq!(migrated, base.join("romforge-studio"));
+        assert!(migrated.join("settings.json").is_file());
+        assert!(!legacy.exists());
+        let _ = std::fs::remove_dir_all(&base);
+    }
 }

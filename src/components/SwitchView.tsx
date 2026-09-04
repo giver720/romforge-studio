@@ -84,7 +84,7 @@ export function SwitchView({ dragging }: { dragging: boolean }) {
             file="prod.keys"
             found={keys.found}
             path={keys.path}
-            hint="Estas herramientas necesitan las claves de tu propia consola para leer el contenido. CHD Studio no las incluye ni te ayuda a obtenerlas: tienes que volcarlas tú desde tu Switch."
+            hint="Estas herramientas necesitan las claves de tu propia consola para leer el contenido. ROMForge Studio no las incluye ni te ayuda a obtenerlas: tienes que volcarlas tú desde tu Switch."
             fallback={keys.expected}
             settingKey="switch_keys_path"
             onChange={() => api.switchKeysStatus().then(setKeys)}
@@ -100,7 +100,7 @@ export function SwitchView({ dragging }: { dragging: boolean }) {
               Falta {missing.map((m) => m!.name).join(" y ")}
             </p>
             <p className="mt-1 text-[0.7rem] leading-relaxed text-[var(--color-muted)]">
-              CHD Studio puede instalarlo por ti desde Ajustes → Herramientas.
+              ROMForge Studio puede instalarlo por ti desde Ajustes → Herramientas.
             </p>
           </div>
           <button className="btn btn-ghost shrink-0" onClick={() => useStore.setState({ view: "settings" })}>

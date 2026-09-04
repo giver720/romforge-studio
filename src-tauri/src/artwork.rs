@@ -385,7 +385,7 @@ pub async fn resolve(input: &str, system: &str, online: bool) -> GameArtwork {
     let client = if online {
         reqwest::Client::builder()
             .timeout(Duration::from_secs(7))
-            .user_agent("CHD-Studio/1.8 artwork resolver")
+            .user_agent("ROMForge-Studio/2.0 artwork resolver")
             .build()
             .ok()
     } else {
@@ -493,7 +493,7 @@ mod tests {
 
     #[test]
     fn finds_ps5_icon_before_generic_cover() {
-        let root = std::env::temp_dir().join(format!("chd-studio-art-{}", std::process::id()));
+        let root = std::env::temp_dir().join(format!("romforge-studio-art-{}", std::process::id()));
         let _ = std::fs::remove_dir_all(&root);
         std::fs::create_dir_all(root.join("sce_sys")).unwrap();
         std::fs::write(root.join("sce_sys/icon0.png"), b"icon").unwrap();

@@ -112,7 +112,7 @@ export function ThreeDsView({ dragging }: { dragging: boolean }) {
               Falta {missingTools.map((m) => m!.name).join(" y ")}
             </p>
             <p className="mt-1 text-[0.7rem] leading-relaxed text-[var(--color-muted)]">
-              CHD Studio puede instalarlo por ti desde Ajustes → Herramientas.
+              ROMForge Studio puede instalarlo por ti desde Ajustes → Herramientas.
             </p>
           </div>
           <button

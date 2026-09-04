@@ -26,9 +26,9 @@ const ACCENTS = [
 ];
 
 const SOURCE_LABEL: Record<string, string> = {
-  bundled: "incluido con CHD Studio",
+  bundled: "incluido con ROMForge Studio",
   manual: "ruta elegida por ti",
-  app: "copia interna de CHD Studio",
+  app: "copia interna de ROMForge Studio",
   path: "encontrado en el PATH",
   mame: "encontrado en una instalación de MAME",
 };
@@ -63,7 +63,7 @@ export function SettingsView() {
     try {
       await api.installChdman(res as string);
       await refreshChdman();
-      notify("ok", "chdman copiado dentro de CHD Studio");
+      notify("ok", "chdman copiado dentro de ROMForge Studio");
     } catch (e) {
       notify("error", String(e));
     }
@@ -73,7 +73,7 @@ export function SettingsView() {
     <div className="scroll flex-1 p-5">
       <h1 className="text-lg font-semibold tracking-tight">Ajustes</h1>
       <p className="mb-4 mt-0.5 text-xs text-[var(--color-muted)]">
-        CHD Studio es la ventana; el trabajo pesado lo hace <span className="mono">chdman</span>, la
+        ROMForge Studio es la ventana; el trabajo pesado lo hace <span className="mono">chdman</span>, la
         herramienta oficial de MAME.
       </p>
 

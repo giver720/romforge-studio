@@ -1,6 +1,6 @@
 <#
     Descarga la version oficial de MAME desde GitHub, saca chdman.exe y lo deja
-    en src-tauri\binaries para que viaje dentro del instalador de CHD Studio.
+    en src-tauri\binaries para que viaje dentro del instalador de ROMForge Studio.
 
     MAME no publica chdman por separado: hay que bajar el paquete de binarios
     (un autoextraible de 7-Zip de ~85 MB) y quedarse solo con esa herramienta.
@@ -12,13 +12,13 @@ $ErrorActionPreference = "Stop"
 
 $root = Split-Path -Parent $PSScriptRoot
 $dest = Join-Path $root "src-tauri\binaries"
-$work = Join-Path $env:TEMP "chd-studio-mame"
+$work = Join-Path $env:TEMP "romforge-studio-mame"
 
 function Say($msg) { Write-Host "  $msg" -ForegroundColor Cyan }
 
 Say "Consultando la ultima version de MAME..."
 $rel = Invoke-RestMethod "https://api.github.com/repos/mamedev/mame/releases/latest" `
-    -Headers @{ "User-Agent" = "chd-studio" }
+    -Headers @{ "User-Agent" = "romforge-studio" }
 
 # El paquete de binarios se llama mame0XXXb_x64.exe (o _arm64 en ARM)
 $arch = if ($env:PROCESSOR_ARCHITECTURE -eq "ARM64") { "arm64" } else { "x64" }
@@ -80,7 +80,7 @@ Texto completo: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Codigo fuente de esta version exacta:
 https://github.com/mamedev/mame/releases/tag/$($rel.tag_name)
 
-CHD Studio se limita a ejecutar chdman como programa independiente; son obras
+ROMForge Studio se limita a ejecutar chdman como programa independiente; son obras
 separadas que solo se distribuyen juntas por comodidad.
 "@ | Out-File (Join-Path $dest "LICENCIA-chdman.txt") -Encoding utf8
 

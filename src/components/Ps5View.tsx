@@ -102,7 +102,7 @@ export function Ps5View() {
             <AlertTriangle size={15} className="mt-0.5 shrink-0 text-amber-400" />
             <div className="min-w-0 flex-1 text-[0.68rem] text-[var(--color-muted)]">
               {IS_WINDOWS
-                ? "Hace falta OSFMount. Después abre CHD Studio como administrador para crear y formatear la unidad virtual."
+                ? "Hace falta OSFMount. Después abre ROMForge Studio como administrador para crear y formatear la unidad virtual."
                 : "Hace falta exfatprogs, exfat-fuse y fuse3. En Ubuntu: sudo apt install exfatprogs exfat-fuse fuse3"}
             </div>
             <button className="btn btn-ghost shrink-0 px-2 py-1 text-xs" onClick={() => useStore.setState({ view: "settings" })}>

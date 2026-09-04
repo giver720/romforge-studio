@@ -1,15 +1,16 @@
-# CHD Studio
+# ROMForge Studio
 
-Aplicación de escritorio para convertir imágenes de disco a **CHD** (Compressed Hunks of Data) usando
-`chdman`, la herramienta oficial de MAME. Interfaz en español, arrastrar y soltar, cola por lotes y
-progreso en tiempo real.
+Suite de escritorio para convertir, comprimir y preparar juegos de **PlayStation, Nintendo, Xbox y
+sistemas clásicos** para consolas modificadas y emuladores. Incluye conversión CHD con `chdman`,
+formatos específicos de cada plataforma, arrastrar y soltar, cola visual con portadas y progreso en
+tiempo real.
 
 Disponible para **Windows 10/11** y **Ubuntu 22.04 o posterior (amd64)**.
 
 ## Portadas y cola visual
 
 Cada trabajo de la cola muestra la portada, el título limpio, la consola, la fase y el progreso de
-la conversión. CHD Studio busca las imágenes en este orden:
+la conversión. ROMForge Studio busca las imágenes en este orden:
 
 1. El icono incluido en dumps de PS3 (`PS3_GAME/ICON0.PNG`), PS5 (`sce_sys/icon0.png`) o PSP.
 2. Una imagen junto al juego con el mismo nombre, por ejemplo `Juego.iso` + `Juego.png`, o una
@@ -44,14 +45,14 @@ También hace el camino inverso (`extractcd`, `extractdvd`, `extracthd`, `extrac
 
 ## Instalar en Ubuntu
 
-Descarga el archivo `.deb` desde la [última release](https://github.com/giver720/chd-studio/releases/latest)
+Descarga el archivo `.deb` desde la [última release](https://github.com/giver720/romforge-studio/releases/latest)
 e instálalo con APT para que también resuelva `mame-tools` y el resto de dependencias:
 
 ```bash
 sudo apt install ./*.deb
 ```
 
-El paquete crea la entrada **CHD Studio** en el menú de aplicaciones. `mame-tools` aporta `chdman`;
+El paquete crea la entrada **ROMForge Studio** en el menú de aplicaciones. `mame-tools` aporta `chdman`;
 las demás herramientas se descargan o compilan desde **Ajustes → Herramientas** cuando una
 conversión las necesita. El paquete recomienda Python, Git y las bibliotecas de compilación para
 que esos botones funcionen sin preparación adicional. También instala el soporte exFAT que usa el
@@ -59,7 +60,7 @@ módulo de PS5.
 
 ## El motor: chdman
 
-CHD Studio es la ventana; el trabajo lo hace `chdman`, la herramienta oficial de MAME.
+ROMForge Studio es la ventana; el trabajo lo hace `chdman`, la herramienta oficial de MAME.
 
 ### Incluirlo en el instalador de Windows
 
@@ -74,7 +75,7 @@ Descarga el paquete oficial de binarios de MAME desde GitHub, comprueba su firma
 `npm run dist` lo empaqueta dentro del instalador y **el usuario final no tiene que instalar nada**.
 
 Junto al binario se genera `LICENCIA-chdman.txt` con el aviso de GPL-2.0-or-later y el enlace al
-código fuente de esa versión exacta, como exige la licencia de MAME. CHD Studio ejecuta chdman como
+código fuente de esa versión exacta, como exige la licencia de MAME. ROMForge Studio ejecuta chdman como
 programa independiente, así que son obras separadas distribuidas juntas por comodidad.
 
 ### Sin incluirlo
@@ -82,13 +83,16 @@ programa independiente, así que son obras separadas distribuidas juntas por com
 La app sigue funcionando y busca `chdman` por orden en:
 
 1. La ruta que hayas elegido en Ajustes
-2. Su carpeta interna (`%APPDATA%\chd-studio\bin` en Windows, `~/.config/chd-studio/bin` en Linux)
+2. Su carpeta interna (`%APPDATA%\romforge-studio\bin` en Windows, `~/.config/romforge-studio/bin` en Linux)
 3. La copia empaquetada (`resources/binaries`)
 4. El `PATH` del sistema
 5. Instalaciones típicas de MAME
 
 Si no aparece, en **Ajustes → Motor chdman** puedes importarlo. En Ubuntu, la instalación normal del
 `.deb` ya instala `mame-tools`, así que no hace falta configurarlo a mano.
+
+Al actualizar desde CHD Studio, ROMForge Studio migra automáticamente los ajustes, herramientas y
+portadas desde la carpeta anterior. La versión portable conserva su carpeta `datos` sin cambios.
 
 Con MAME 0.255 o superior se habilita el códec **zstd**, que el preset «Máxima» aprovecha.
 
@@ -129,7 +133,7 @@ ha sido validado.
 | XCZ → XCI | `nsz` | Reconstrucción bit a bit |
 | XCI → NSP | `4NXCI` | Cartucho a instalable; puede generar varios NSP |
 
-**Requiere tus propias `prod.keys`** en `~/.switch/prod.keys`. CHD Studio no las incluye ni ayuda a
+**Requiere tus propias `prod.keys`** en `~/.switch/prod.keys`. ROMForge Studio no las incluye ni ayuda a
 obtenerlas: solo comprueba si el archivo existe y avisa si falta.
 
 `nsz` se instala con pip dentro de un entorno de Python privado de la app, sin tocar el Python del
@@ -152,7 +156,7 @@ que el emulador lo reconozca.
 
 La compresión es de ida: no hay descompresor porque el emulador lee el archivo comprimido tal cual.
 
-Las claves son tuyas y salen de tu propia consola. CHD Studio comprueba si están y avisa, pero no las
+Las claves son tuyas y salen de tu propia consola. ROMForge Studio comprueba si están y avisa, pero no las
 incluye ni ayuda a obtenerlas.
 
 ## Dónde guardas tus claves
@@ -213,7 +217,7 @@ Incluye dos perfiles que **no borran contenido del juego**:
 
 ### PS3 real + RPCS3
 
-Con `extractps3iso` y `makeps3iso`, CHD Studio extrae el juego y vuelve a construir el ISO sin el
+Con `extractps3iso` y `makeps3iso`, ROMForge Studio extrae el juego y vuelve a construir el ISO sin el
 relleno físico del disco. No quita `PS3_UPDATE`, idiomas, vídeos ni ningún otro archivo. Después
 reabre el ISO generado y compara la ruta y el tamaño de todos los archivos con el inventario
 original antes de publicar el resultado. Opcionalmente puede producir fragmentos de 4 GB para
@@ -245,7 +249,7 @@ seguridad. Está pensado para PS5 modificadas con un montador compatible como Sh
 consola de fábrica no lo puede usar.
 
 En Windows requiere [OSFMount](https://www.osforensics.com/tools/mount-disk-images.html) y ejecutar
-CHD Studio como administrador durante la creación. En Ubuntu el `.deb` instala `exfatprogs`,
+ROMForge Studio como administrador durante la creación. En Ubuntu el `.deb` instala `exfatprogs`,
 `exfat-fuse`, `fuse3` y PolicyKit; el escritorio muestra una autorización del sistema para montar y
 desmontar temporalmente la imagen.
 
@@ -296,10 +300,11 @@ Descarga las herramientas, compila el instalador firmado, arma el `.zip` portabl
 anteriores. Después:
 
 ```bash
-gh release create vX.Y.Z release/vX.Y.Z/* --repo giver720/chd-studio
+gh release create vX.Y.Z release/vX.Y.Z/* --repo giver720/romforge-studio
 ```
 
-Hace falta la clave privada de firma en `%USERPROFILE%\.tauri\chd-studio.key`. **Si la pierdes, no
+Por compatibilidad con quienes actualizan desde CHD Studio, la clave privada conserva su ruta histórica
+`%USERPROFILE%\.tauri\chd-studio.key`. **Si la pierdes, no
 podrás volver a firmar actualizaciones** y habría que publicar una versión nueva a mano con otra
 clave. No está en el repositorio y no debe estarlo.
 

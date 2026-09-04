@@ -749,5 +749,5 @@ pub fn run() {
             reveal
         ])
         .run(tauri::generate_context!())
-        .expect("error al iniciar CHD Studio");
+        .expect("error al iniciar ROMForge Studio");
 }

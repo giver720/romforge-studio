@@ -1,4 +1,4 @@
-CHD Studio - carpeta de binarios
+ROMForge Studio - carpeta de binarios
 
 Windows
 -------

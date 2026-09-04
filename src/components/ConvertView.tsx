@@ -88,7 +88,7 @@ export function ConvertView({ dragging }: { dragging: boolean }) {
             Convertir a <span className="accent-text">CHD</span>
           </h1>
           <p className="mt-0.5 text-xs text-[var(--color-muted)]">
-            Arrastra tus imágenes de disco y elige a qué sistema pertenecen. CHD Studio se encarga del resto.
+            Arrastra tus imágenes de disco y elige a qué sistema pertenecen. ROMForge Studio se encarga del resto.
           </p>
         </div>
         {staged.length > 0 && (
