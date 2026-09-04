@@ -7,7 +7,6 @@ import json
 import re
 import sys
 import urllib.request
-from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -98,7 +97,6 @@ def build(config: dict[str, Any]) -> dict[str, Any]:
     deduped = {entry["id"]: entry for entry in entries}
     return {
         "schema_version": 1,
-        "generated_at": datetime.now(timezone.utc).isoformat(),
         "entries": sorted(deduped.values(), key=lambda entry: entry["name"].lower()),
         "sources": config.get("sources", []),
         "errors": errors,
