@@ -217,6 +217,75 @@ def osc_api(source: dict[str, Any]) -> list[dict[str, Any]]:
     return result
 
 
+def payloads_json(source: dict[str, Any]) -> list[dict[str, Any]]:
+    payload = fetch_json(source["index"])
+    items = payload.get("payloads", []) if isinstance(payload, dict) else []
+    result: list[dict[str, Any]] = []
+    for item in items:
+        if not isinstance(item, dict):
+            continue
+        url = safe_url(item.get("url"))
+        if not url:
+            continue
+        filename = str(item.get("filename") or Path(url).name)
+        result.append({
+            "id": f"{source['id']}:{filename}",
+            "platforms": [source["platform"]],
+            "name": item.get("name") or filename,
+            "summary": item.get("description") or "",
+            "author": "",
+            "version": item.get("version"),
+            "license": None,
+            "icon_url": None,
+            "release_url": safe_url(item.get("source")),
+            "downloads": [{"format": filename_format(filename) or "elf", "filename": filename,
+                           "url": url, "sha256": item.get("checksum") or None}],
+            "source": source["name"],
+            "source_url": source["homepage"],
+            "license_url": None,
+            "updated_at": item.get("last_update"),
+        })
+    return result
+
+
+def github_releases(source: dict[str, Any]) -> list[dict[str, Any]]:
+    releases = fetch_json(f"https://api.github.com/repos/{source['repo']}/releases?per_page=10")
+    if not isinstance(releases, list):
+        raise ValueError(f"GitHub releases for {source['repo']} are not an array")
+    result: list[dict[str, Any]] = []
+    for release in releases:
+        if not isinstance(release, dict) or release.get("draft"):
+            continue
+        for asset in release.get("assets", []):
+            if not isinstance(asset, dict):
+                continue
+            url = safe_url(asset.get("browser_download_url"))
+            filename = str(asset.get("name") or "")
+            if not url or not filename or not filename.lower().endswith((".elf", ".bin", ".pkg", ".zip")):
+                continue
+            digest = asset.get("digest") or ""
+            result.append({
+                "id": f"{source['id']}:{asset.get('id', filename)}",
+                "platforms": [source["platform"]],
+                "name": f"{source['name']} — {filename}",
+                "summary": release.get("body") or "",
+                "author": source["repo"].split("/", 1)[0],
+                "version": release.get("tag_name"),
+                "license": None,
+                "icon_url": None,
+                "release_url": safe_url(release.get("html_url")),
+                "downloads": [{"format": filename_format(filename) or "bin", "filename": filename,
+                               "url": url, "size": asset.get("size"), "sha256": digest.removeprefix("sha256:") or None}],
+                "source": source["name"],
+                "source_url": source["homepage"],
+                "license_url": None,
+                "updated_at": release.get("published_at"),
+            })
+        if result:
+            break
+    return result
+
+
 def build(config: dict[str, Any]) -> dict[str, Any]:
     entries: list[dict[str, Any]] = []
     errors: list[dict[str, str]] = []
@@ -230,6 +299,10 @@ def build(config: dict[str, Any]) -> dict[str, Any]:
                 entries.extend(vitadbtoo(source))
             elif source.get("type") == "osc_api":
                 entries.extend(osc_api(source))
+            elif source.get("type") == "payloads_json":
+                entries.extend(payloads_json(source))
+            elif source.get("type") == "github_releases":
+                entries.extend(github_releases(source))
             else:
                 errors.append({"source": source.get("id", "unknown"), "error": "unsupported source type"})
         except Exception as exc:  # Keep one broken source from hiding the others.

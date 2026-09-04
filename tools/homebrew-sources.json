@@ -51,6 +51,38 @@
       "type": "osc_api",
       "index": "https://hbb1.oscwii.org/api/v3/contents",
       "homepage": "https://oscwii.org/"
+    },
+    {
+      "id": "ps5-payloads-atlas",
+      "name": "PS5 Payloads Atlas",
+      "platform": "ps5",
+      "type": "payloads_json",
+      "index": "https://raw.githubusercontent.com/lucaszhongsj/ps5-payloads-atlas/main/payloads.json",
+      "homepage": "https://github.com/lucaszhongsj/ps5-payloads-atlas"
+    },
+    {
+      "id": "ps4-goldhen",
+      "name": "GoldHEN",
+      "platform": "ps4",
+      "type": "github_releases",
+      "repo": "GoldHEN/GoldHEN",
+      "homepage": "https://github.com/GoldHEN/GoldHEN"
+    },
+    {
+      "id": "ps4-store",
+      "name": "PS4 Homebrew Store",
+      "platform": "ps4",
+      "type": "github_releases",
+      "repo": "LightningMods/PS4-Store",
+      "homepage": "https://github.com/LightningMods/PS4-Store"
+    },
+    {
+      "id": "ps4-hen",
+      "name": "PS4HEN",
+      "platform": "ps4",
+      "type": "github_releases",
+      "repo": "Scene-Collective/ps4-hen",
+      "homepage": "https://github.com/Scene-Collective/ps4-hen"
     }
   ]
 }
