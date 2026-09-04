@@ -1331,6 +1331,11 @@ pub async fn install(id: &str) -> anyhow::Result<String> {
             Ok(format!("{} preparado desde su codigo", spec.name))
         }
         ToolKind::Python { package } => {
+            // MkPFS 1.0.0 usa este fallback con Python 3.10 (Ubuntu 22.04),
+            // pero su wheel no lo declara como dependencia.
+            if id == "mkpfs" {
+                install_python_package("backports.strenum").await?;
+            }
             install_python_package(package).await?;
             Ok(format!("{} instalado con pip", spec.name))
         }

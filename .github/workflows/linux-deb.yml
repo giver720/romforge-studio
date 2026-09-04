@@ -86,7 +86,7 @@ jobs:
           printf '{"titleId":"PPSA00000","titleName":"CI"}' > "$work/source/sce_sys/param.json"
 
           python3 -m venv "$work/venv"
-          "$work/venv/bin/pip" install --disable-pip-version-check mkpfs==1.0.0
+          "$work/venv/bin/pip" install --disable-pip-version-check backports.strenum mkpfs==1.0.0
           mkpfs="$work/venv/bin/mkpfs"
           "$mkpfs" pack exfat --cluster-size 65536 "$work/source" "$work/game.exfat"
           "$mkpfs" verify "$work/game.exfat" --source-dir "$work/source" --format exfat
