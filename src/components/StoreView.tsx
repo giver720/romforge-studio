@@ -132,6 +132,10 @@ export function StoreView() {
       (shelf !== "updates" || changedVersions.has(entry.id)) &&
       (!needle || `${entry.name} ${entry.author ?? ""} ${entry.summary ?? ""}`.toLowerCase().includes(needle)),
     ).sort((a, b) => {
+      if (order === "popular") {
+        const popularity = (entry: StoreEntry) => entry.popularity == null ? -1 : entry.popularity;
+        return popularity(b) - popularity(a) || a.name.localeCompare(b.name);
+      }
       const date = (entry: StoreEntry) => {
         const raw = order === "added" ? entry.added_at : entry.updated_at;
         return raw && /^\d{4}-\d{2}-\d{2}(T|$)/.test(raw) ? Date.parse(raw) || 0 : 0;
@@ -139,6 +143,10 @@ export function StoreView() {
       return (order === "name" ? 0 : date(b) - date(a)) || a.name.localeCompare(b.name);
     });
   }, [entries, platform, query, shelf, library.favorites, changedVersions, category, order]);
+  const platformHighlights = useMemo(() => entries
+    .filter(entry => platform !== "all" && entry.platforms.includes(platform) && (category === "all" || (category === "unknown" ? !entry.categories?.length : entry.categories?.includes(category))) && entry.popularity != null)
+    .sort((a, b) => (b.popularity ?? 0) - (a.popularity ?? 0) || a.name.localeCompare(b.name))
+    .slice(0, 4), [entries, platform, category]);
 
   useEffect(() => { setVisibleCount(48); }, [platform, query, shelf, category, order]);
 
@@ -187,7 +195,7 @@ export function StoreView() {
         {!downloading && retry && <div className="glass mb-4 flex items-center justify-between gap-3 rounded-xl p-4 text-sm"><span>Descarga incompleta: {retry.entry.name}</span><button className="btn btn-primary text-xs" onClick={() => void downloadEntry(retry.entry, retry.item)}>Reintentar</button></div>}
         <div className="mb-4 flex flex-wrap gap-2">{[["all", "Explorar"], ["trending", "Tendencias"], ["favorites", `Favoritos (${library.favorites.length})`], ["updates", `Versiones distintas (${changedVersions.size})`], ["history", `Historial (${library.history.length})`]].map(([id, label]) => <button key={id} aria-pressed={shelf === id} onClick={() => setShelf(id)} className={`btn text-xs ${shelf === id ? "btn-primary" : "btn-ghost"}`}>{label}</button>)}</div>
         {shelf === "updates" && <p className="mb-4 text-xs text-[var(--color-muted)]">La versión publicada difiere de tu última descarga. Consulta la ficha para comprobar los cambios.</p>}
-        {shelf === "trending" ? <Trending entries={entries} select={setSelected} /> : shelf === "history" ? <div className="space-y-3">
+        {shelf === "trending" ? <Trending entries={entries} platform={platform} category={category} select={setSelected} /> : shelf === "history" ? <div className="space-y-3">
           {!library.history.length && <p className="glass rounded-xl p-6 text-sm">Tus descargas completadas aparecerán aquí.</p>}
           {library.history.slice(0, visibleCount).map((item, index) => <div key={`${item.completedAt}-${index}`} className="glass flex items-center gap-3 rounded-xl p-4">
             <div className="min-w-0 flex-1"><p className="text-sm font-semibold">{item.name} · {item.version || "Sin versión"}</p><p className="mt-1 break-all text-xs text-[var(--color-muted)]">{item.filename} · {new Date(item.completedAt).toLocaleString()}</p></div>
@@ -210,11 +218,13 @@ export function StoreView() {
           <label>Categoría <select value={category} onChange={e => setCategory(e.target.value)} className="ml-2 rounded-lg bg-[#171923] p-2">
             {[["all", "Todas"], ["games", "Juegos"], ["emulators", "Emuladores"], ["utilities", "Utilidades"], ["multimedia", "Multimedia"], ["customization", "Personalización"], ["unknown", "Sin categoría"]].map(([id, name]) => <option key={id} value={id}>{name}</option>)}
           </select></label>
-          <label>Orden <select value={order} onChange={e => setOrder(e.target.value)} className="ml-2 rounded-lg bg-[#171923] p-2"><option value="name">Nombre</option><option value="updated">Actualizados recientemente</option><option value="added">Añadidos a la fuente recientemente</option></select></label>
-          {order !== "name" && <p className="self-center text-[var(--color-muted)]">Las entradas sin fecha confirmada aparecen al final.</p>}
+          <label>Orden <select value={order} onChange={e => setOrder(e.target.value)} className="ml-2 rounded-lg bg-[#171923] p-2"><option value="name">Nombre</option><option value="popular">Más descargados</option><option value="trend">Tendencia reciente</option><option value="updated">Actualizados recientemente</option><option value="added">Añadidos a la fuente recientemente</option></select></label>
+          {order === "popular" && <p className="self-center text-[var(--color-muted)]">Solo se usan contadores publicados por la fuente; sin métrica quedan al final.</p>}
+          {order !== "name" && order !== "popular" && <p className="self-center text-[var(--color-muted)]">Las entradas sin fecha confirmada aparecen al final.</p>}
         </div>
         {error && <div className="glass rounded-xl p-4 text-sm text-rose-300">No se pudo cargar el catálogo: {error}</div>}
         {!loading && !error && filtered.length === 0 && <div className="glass rounded-xl p-8 text-center text-sm text-[var(--color-muted)]">No hay resultados para esta búsqueda.</div>}
+        {shelf === "all" && !query && platform !== "all" && platformHighlights.length > 0 && <section className="glass mb-5 rounded-xl p-4"><div className="flex items-center justify-between gap-3"><div><h2 className="text-sm font-semibold">Popular en {LABELS[platform] ?? platform.toUpperCase()}</h2><p className="mt-1 text-xs text-[var(--color-muted)]">Atajo por descargas registradas en la fuente.</p></div><button className="btn btn-ghost text-xs" onClick={() => setOrder("popular")}>Ver todos</button></div><div className="mt-3 grid gap-2 sm:grid-cols-2 lg:grid-cols-4">{platformHighlights.map((entry, index) => <button key={entry.id} onClick={() => setSelected(entry)} className="flex min-w-0 items-center gap-2 rounded-lg p-2 text-left hover:bg-white/5"><span className="text-xs text-[var(--accent)]">{index + 1}</span><StoreImage url={entry.icon_url} name={entry.name} className="h-9 w-9" /><span className="min-w-0"><span className="block truncate text-xs font-medium">{entry.name}</span><span className="text-[0.65rem] text-[var(--color-muted)]">{new Intl.NumberFormat("es").format(entry.popularity ?? 0)} descargas</span></span></button>)}</div></section>}
         <div className="grid grid-cols-1 gap-3 xl:grid-cols-2">
           {filtered.slice(0, visibleCount).map((entry) => {
             const artifact = entry.downloads[0];
@@ -226,7 +236,7 @@ export function StoreView() {
               {changedVersions.has(entry.id) && <span className="ml-2 text-xs text-[var(--accent)]">Versión distinta disponible</span>}
               <p className="mt-1 text-[0.65rem] text-[var(--color-faint)]">{entry.platforms.map(p => LABELS[p] ?? p.toUpperCase()).join(" · ")}</p>
               <p className="mt-1 line-clamp-2 text-xs text-[var(--color-muted)]">{entry.summary || "Sin descripción"}</p>
-              <p className="mt-1 text-[0.65rem] text-[var(--color-faint)]">{entry.author || "Autor desconocido"}{entry.version ? ` · ${entry.version}` : ""}{artifact?.size ? ` · ${size(artifact.size)}` : ""}</p>
+              <p className="mt-1 text-[0.65rem] text-[var(--color-faint)]">{entry.author || "Autor desconocido"}{entry.version ? ` · ${entry.version}` : ""}{artifact?.size ? ` · ${size(artifact.size)}` : ""}{entry.popularity != null ? ` · ${new Intl.NumberFormat("es").format(entry.popularity)} descargas` : ""}</p>
               {downloading === entry.id && <div className="mt-2 h-1 overflow-hidden rounded-full bg-white/[0.08]"><div className="h-full rounded-full bg-[var(--accent)] transition-all" style={{ width: `${progress}%` }} /></div>}
               <div className="mt-2 flex gap-2">
                 <button onClick={() => setSelected(entry)} className="btn btn-primary px-2.5 py-1 text-xs"><Download size={13} /> Ver ficha y archivos</button>
