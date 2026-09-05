@@ -65,6 +65,8 @@ export const api = {
   ps5Scan: (dir: string) => invoke<Ps5Scan>("ps5_scan", { dir }),
   gameArtwork: (input: string, system: string) =>
     invoke<GameArtwork>("game_artwork", { input, system }),
+  fetchStoreCatalog: () => invoke<unknown>("fetch_store_catalog"),
+  cancelStoreDownload: () => invoke<void>("cancel_store_download"),
   downloadHomebrew: (url: string, filename: string, destinationDir: string, sha256?: string | null) =>
     invoke<string>("download_homebrew", { url, filename, destinationDir, sha256 }),
   downloadHbasPackage: (manifestUrl: string, destinationDir: string, packageName: string) =>

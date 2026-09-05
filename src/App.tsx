@@ -61,6 +61,8 @@ export default function App() {
     notify,
   } = useStore();
   const [dragging, setDragging] = useState(false);
+  const [storeVisited, setStoreVisited] = useState(view === "store");
+  useEffect(() => { if (view === "store") setStoreVisited(true); }, [view]);
 
   /**
    * Un archivo soltado va a la vista que le corresponde: un .cia no pinta nada
@@ -169,8 +171,9 @@ export default function App() {
       <div className="relative z-10 flex min-h-0 flex-1">
         <Sidebar />
         <main className="flex min-w-0 flex-1">
+          {(storeVisited || view === "store") && <div className="min-w-0 flex-1" style={{ display: view === "store" ? "flex" : "none" }}><StoreView /></div>}
           <AnimatePresence mode="wait">
-            <motion.div
+            {view !== "store" && <motion.div
               key={view}
               initial={{ opacity: 0, y: 8 }}
               animate={{ opacity: 1, y: 0 }}
@@ -187,12 +190,11 @@ export default function App() {
               {view === "ps5" && <Ps5View />}
               {view === "psp" && <PspView dragging={dragging} />}
               {view === "wii" && <WiiView dragging={dragging} />}
-              {view === "store" && <StoreView />}
               {view === "inspect" && <InspectView />}
               {view === "settings" && <SettingsView />}
-            </motion.div>
+            </motion.div>}
           </AnimatePresence>
-          {showQueue && <QueuePanel />}
+          {showQueue && view !== "store" && <QueuePanel />}
         </main>
       </div>
       <Toast />
