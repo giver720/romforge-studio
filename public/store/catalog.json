@@ -4991,10 +4991,10 @@
       "name": "aurorachat for Wii U",
       "categories": [],
       "description": "A chatting application originally for the Nintendo 3DS and 2DS systems, now on Wii U.\n\nTo use the app, create an account or log in to an existing one.\nUsers can send and receive real-time messages online. All messages are moderated, and users are expected to follow the rules. The Code of Conduct is available in the GitHub repository.",
-      "added_at": "2026-09-01",
+      "added_at": "2026-09-04",
       "summary": "A chatting application.",
       "author": "Unitendo",
-      "version": "7.0",
+      "version": "7.1",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/Unitendo/aurorachat-wiiu",
@@ -5003,8 +5003,8 @@
           "format": "hbas",
           "filename": "aurorachatforWiiU.hbas",
           "url": "https://wiiu.cdn.fortheusers.org/packages/aurorachatforWiiU/manifest.install",
-          "size": 10949,
-          "sha256": "2156790eb940c5b0d7e6683bae18dfae706a66d3297622b63807d75ce3430f69"
+          "size": 10983,
+          "sha256": "02aa7b58991d168a5520b99eac52f86350502c9775c67e5e5d709a33f5f72a0b"
         }
       ],
       "popularity": 1581,
@@ -5012,7 +5012,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
       "license_url": null,
-      "updated_at": "2026-09-02"
+      "updated_at": "2026-09-05"
     },
     {
       "id": "hbas-switch:Avatool",
@@ -11745,7 +11745,7 @@
           "format": "3dsx",
           "filename": "ClassiCube-3ds.3dsx",
           "url": "https://cdn.classicube.net/client/latest/ClassiCube-3ds.3dsx",
-          "size": 783424
+          "size": 783432
         },
         {
           "format": "cia",
@@ -19186,32 +19186,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2019-07-17"
-    },
-    {
-      "id": "ps5-payloads-atlas:elf-arsenal.elf",
-      "platforms": [
-        "ps5"
-      ],
-      "name": "elf-arsenal",
-      "summary": "etaHEN-oriented payload bundle combining ELF loading, resource management, FTP, trophy tools, ShadowMountPlus, kstuff-lite, Linux loading, controller tools, fake sign-in, and a web UI.",
-      "author": "",
-      "version": "v1.6.22",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://git.etawen.dev/soniciso/elf-arsenal",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "elf-arsenal.elf",
-          "url": "https://git.etawen.dev/soniciso/elf-arsenal/releases/download/v1.6.22/elf-arsenal.elf",
-          "sha256": null
-        }
-      ],
-      "source": "PS5 Payloads Atlas",
-      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
-      "license_url": null,
-      "popularity": null,
-      "updated_at": "2026-07-04 06:28:45 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:elfldr-ps5.elf",
@@ -33684,7 +33658,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": null
+      "updated_at": "1908-01-11T08:37:46+00:00"
     },
     {
       "id": "universal-db:Oreo639/LimePlayer3DS",
@@ -48656,7 +48630,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5618,
+      "popularity": 5619,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48710,7 +48684,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4587,
+      "popularity": 4588,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48764,7 +48738,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 35859,
+      "popularity": 35868,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48791,7 +48765,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1386,
+      "popularity": 1390,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -58900,32 +58874,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-01-05"
-    },
-    {
-      "id": "ps5-payloads-atlas:sonic-loader.elf",
-      "platforms": [
-        "ps5"
-      ],
-      "name": "Sonic Loader",
-      "summary": "Integrated web-based payload loader and management dashboard combining autoloading, cheat management, monitoring, file transfer, and file management.",
-      "author": "",
-      "version": "v1.6.0-elf-arsenal-rebrand",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://git.earthonion.com/soniciso/sonicloader",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "sonic-loader.elf",
-          "url": "https://git.earthonion.com/soniciso/sonicloader/releases/download/v1.6.0-elf-arsenal-rebrand/sonic-loader.elf",
-          "sha256": null
-        }
-      ],
-      "source": "PS5 Payloads Atlas",
-      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
-      "license_url": null,
-      "popularity": null,
-      "updated_at": "2026-05-22 21:05:50 UTC+8"
     },
     {
       "id": "universal-db:SaturnSH2x2/RSDKv5-Decompilation",
