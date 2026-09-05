@@ -1,6 +1,6 @@
 [package]
 name = "romforge-studio"
-version = "2.1.0"
+version = "2.2.0"
 description = "Suite para convertir, comprimir y preparar juegos para consolas y emuladores"
 authors = ["ROMForge Studio"]
 edition = "2021"
