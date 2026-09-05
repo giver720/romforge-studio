@@ -7,6 +7,7 @@ import json
 import re
 import sys
 import urllib.request
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
@@ -35,6 +36,36 @@ def safe_url(value: Any) -> str | None:
 def filename_format(filename: str) -> str | None:
     suffix = Path(filename).suffix.lower()
     return suffix[1:] if suffix in ALLOWED_FORMATS else None
+
+
+def categories(value: Any) -> list[str]:
+    aliases = {"game": "games", "games": "games", "emulator": "emulators", "emulators": "emulators",
+               "tool": "utilities", "tools": "utilities", "utility": "utilities", "utilities": "utilities",
+               "installer": "utilities", "media": "multimedia", "multimedia": "multimedia",
+               "theme": "customization", "themes": "customization"}
+    values = value if isinstance(value, list) else [value]
+    return sorted({aliases[v.lower()] for v in values if isinstance(v, str) and v.lower() in aliases})
+
+
+def source_date(value: Any, day_first: bool = False) -> str | None:
+    try:
+        if isinstance(value, (int, float)):
+            return datetime.fromtimestamp(value, timezone.utc).isoformat()
+        if not isinstance(value, str) or not value:
+            return None
+        if day_first:
+            return datetime.strptime(value, "%d/%m/%Y").date().isoformat()
+        return datetime.fromisoformat(value.replace("Z", "+00:00")).isoformat()
+    except (ValueError, OverflowError, OSError):
+        return None
+
+
+def count_value(value: Any) -> int | None:
+    try:
+        if isinstance(value, bool) or value is None: return None
+        number = int(str(value).replace(",", "").strip())
+        return number if number >= 0 else None
+    except (TypeError, ValueError): return None
 
 
 def universal_db(source: dict[str, Any]) -> list[dict[str, Any]]:
@@ -110,6 +141,9 @@ def hbas_repo(source: dict[str, Any]) -> list[dict[str, Any]]:
             "id": f"{source['id']}:{item.get('name', app_name)}",
             "platforms": [source["platform"]],
             "name": app_name,
+            "categories": categories(item.get("category")),
+            "description": str(item.get("details") or "").replace("\\n", "\n"),
+            "added_at": source_date(item.get("appCreated"), day_first=True),
             "summary": item.get("description") or "",
             "author": item.get("author") or "Desconocido",
             "version": item.get("version"),
@@ -123,11 +157,12 @@ def hbas_repo(source: dict[str, Any]) -> list[dict[str, Any]]:
                 "size": int(item["extracted"]) if isinstance(item.get("extracted"), int) else None,
                 "sha256": item.get("sha256"),
             }],
+            "popularity": count_value(item.get("app_dls")),
             "manifest_url": manifest_url,
             "source": source["name"],
             "source_url": source["homepage"],
             "license_url": None,
-            "updated_at": item.get("updated"),
+            "updated_at": source_date(item.get("updated"), day_first=True),
         })
     return result
 
@@ -147,6 +182,9 @@ def vitadbtoo(source: dict[str, Any]) -> list[dict[str, Any]]:
         fmt = filename_format(filename) or "zip"
         icon = item.get("icon")
         icon_url = safe_url(f"{source['icon_base'].rstrip('/')}/{icon}") if icon else None
+        screenshot_base = source['icon_base'].rsplit('/', 1)[0]
+        screenshots = [f"{screenshot_base}/{path}" for path in str(item.get("screenshots") or "").split(';')
+                       if re.fullmatch(r"screenshots/[a-zA-Z0-9_.-]+", path)]
         downloads = [{
             "format": fmt,
             "filename": filename,
@@ -165,13 +203,18 @@ def vitadbtoo(source: dict[str, Any]) -> list[dict[str, Any]]:
             "author": item.get("author") or "Desconocido",
             "version": item.get("version"),
             "title_id": item.get("titleid") or None,
+            "description": item.get("long_description") or "",
+            "requirements": item.get("requirements") if isinstance(item.get("requirements"), str) else "",
             "license": None,
             "icon_url": icon_url,
+            "screenshots": screenshots,
             "release_url": safe_url(item.get("release_page") or item.get("source")),
             "downloads": downloads,
+            "popularity": count_value(item.get("downloads")),
             "source": source["name"],
             "source_url": source["homepage"],
             "license_url": None,
+            "popularity": count_value(item.get("downloads")),
             "updated_at": item.get("date"),
         })
     return result
@@ -197,6 +240,8 @@ def osc_api(source: dict[str, Any]) -> list[dict[str, Any]]:
             "name": item.get("name") or slug,
             "summary": desc.get("short") or "",
             "description": desc.get("long") or "",
+            "categories": categories(item.get("category")),
+            "requirements": " · ".join(item.get("supported_platforms", []) + item.get("peripherals", [])),
             "author": item.get("author") or "Desconocido",
             "version": item.get("version"),
             "title_id": (item.get("shop") or {}).get("title_id"),
@@ -212,7 +257,8 @@ def osc_api(source: dict[str, Any]) -> list[dict[str, Any]]:
             "source": source["name"],
             "source_url": source["homepage"],
             "license_url": None,
-            "updated_at": item.get("release_date"),
+            "popularity": count_value(item.get("downloads")),
+            "updated_at": source_date(item.get("release_date")),
         })
     return result
 
@@ -243,6 +289,7 @@ def payloads_json(source: dict[str, Any]) -> list[dict[str, Any]]:
             "source": source["name"],
             "source_url": source["homepage"],
             "license_url": None,
+            "popularity": None,
             "updated_at": item.get("last_update"),
         })
     return result
@@ -276,6 +323,7 @@ def github_releases(source: dict[str, Any]) -> list[dict[str, Any]]:
                 "release_url": safe_url(release.get("html_url")),
                 "downloads": [{"format": filename_format(filename) or "bin", "filename": filename,
                                "url": url, "size": asset.get("size"), "sha256": digest.removeprefix("sha256:") or None}],
+                "popularity": count_value(asset.get("download_count")),
                 "source": source["name"],
                 "source_url": source["homepage"],
                 "license_url": None,
