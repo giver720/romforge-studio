@@ -33204,19 +33204,19 @@
           "format": "3dsx",
           "filename": "isle.3dsx",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.3dsx",
-          "size": 2991016
+          "size": 3006948
         },
         {
           "format": "cia",
           "filename": "isle.cia",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.cia",
-          "size": 2162112
+          "size": 2168768
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-31T19:02:51Z"
+      "updated_at": "2026-09-05T02:53:40Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -48630,7 +48630,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5619,
+      "popularity": 5625,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48657,7 +48657,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2316,
+      "popularity": 2318,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48684,7 +48684,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4588,
+      "popularity": 4592,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48711,7 +48711,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4305,
+      "popularity": 4306,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48738,7 +48738,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 35868,
+      "popularity": 35881,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48765,7 +48765,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1390,
+      "popularity": 1393,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -48968,7 +48968,7 @@
       "name": "ps5-linux-loader",
       "summary": "Linux payload implementing HV exploits to run a custom bootloader.",
       "author": "",
-      "version": "v2.4",
+      "version": "v2.5",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/ps5-linux/ps5-linux-loader",
@@ -48976,15 +48976,15 @@
         {
           "format": "elf",
           "filename": "ps5-linux-loader.elf",
-          "url": "https://github.com/ps5-linux/ps5-linux-loader/releases/download/v2.4/ps5-linux-loader.elf",
-          "sha256": "51382795b486f7c5a3681648d457d129088311fc3f9601aeaff78dc72fafcf1d"
+          "url": "https://github.com/ps5-linux/ps5-linux-loader/releases/download/v2.5/ps5-linux-loader.elf",
+          "sha256": "f2f2cc304ddcbacaf2981c974b8452b9dc3d1365ef93ada7846422cf67541605"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-07-06 16:03:05 UTC+8"
+      "updated_at": "2026-09-05 16:40:09 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:ps5-syslang-zh-Hans-v0.2.elf",
@@ -49039,30 +49039,30 @@
       "updated_at": "2026-06-21 15:37:35 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-5.15.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-5.16.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v5.15.0",
+      "version": "v5.16.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-5.15.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.15.0/ps5upload-5.15.0.elf",
-          "sha256": "b29550bd64d8a8e204ac8bf4b982e84d3d96db73976b156e3c7fddf8a77ea8db"
+          "filename": "ps5upload-5.16.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.16.0/ps5upload-5.16.0.elf",
+          "sha256": "f6b53f8ecfa7cbfa8105e6ccc56c7fb99b3567373a021991336d2e2b7d99747a"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-01 16:36:13 UTC+8"
+      "updated_at": "2026-09-05 13:48:59 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -75098,13 +75098,13 @@
       ],
       "name": "Wii64 | glN64 GFX",
       "summary": "N64 Emulator for Wii",
-      "description": "\n\nWii64 1.4.5 (Wii version with glN64 GFX Plugin)\nWii64 is a port of Mupen64 0.5.1 to the Wii/GameCube\n\nIt currently runs most games at full speed or close to it, there are some known graphical and/or core issues.\nPlease see the enclosed README and visit https://github.com/emukidid/Wii64 to report issues, or to check out the latest progress.\n\nSpecial Thanks to:\nExtrems - Not64/libogc2\ndrmr - Graphics\nmarshallh - Wii64 Demo ROM\nwiibrew - wiki & forums\nshagkur/WinterMute - libogc/devkitPPC\nTeam Twiizers for Wii homebrew\nGLideN64 gonetz and others\n\nWii64 and the Wii64 logo are trademarks of the Wii64 Team and should not be used in unofficial builds.\n   ",
+      "description": "\n\nWii64 1.4.7 (Wii version with glN64 GFX Plugin)\nWii64 is a port of Mupen64 0.5.1 to the Wii/GameCube\n\nIt currently runs most games at full speed or close to it, there are some known graphical and/or core issues.\nPlease see the enclosed README and visit https://github.com/emukidid/Wii64 to report issues, or to check out the latest progress.\n\nSpecial Thanks to:\nExtrems - Not64/libogc2\ndrmr - Graphics\nmarshallh - Wii64 Demo ROM\nwiibrew - wiki & forums\nshagkur/WinterMute - libogc/devkitPPC\nTeam Twiizers for Wii homebrew\nGLideN64 gonetz and others\n\nWii64 and the Wii64 logo are trademarks of the Wii64 Team and should not be used in unofficial builds.\n   ",
       "categories": [
         "emulators"
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "Wii64 Team",
-      "version": "1.4.5",
+      "version": "1.4.7",
       "title_id": "000100014E484B09",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/wii64/icon.png",
@@ -75114,14 +75114,14 @@
           "format": "zip",
           "filename": "wii64.zip",
           "url": "https://hbb1.oscwii.org/api/contents/wii64/wii64.zip",
-          "size": 14172827
+          "size": 14602009
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-27T18:46:00+00:00"
+      "updated_at": "2026-09-05T07:34:11+00:00"
     },
     {
       "id": "open-shop-channel-wii:wii7800",
