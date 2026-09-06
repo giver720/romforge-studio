@@ -13970,28 +13970,28 @@
       "name": "CSTimer-3DS",
       "summary": "Speed Cubing Timer for 3DS honouring Cstimer asethetic ",
       "author": "Menshion01",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "Apache License 2.0",
       "icon_url": "https://raw.githubusercontent.com/Menshion01/CSTimer-3DS/refs/heads/main/icon/icon.png",
       "release_url": "https://github.com/Menshion01/CSTimer-3DS/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "3dsdevah.3dsx",
-          "url": "https://github.com/Menshion01/CSTimer-3DS/releases/download/1.1.0/3dsdevah.3dsx",
-          "size": 1734500
+          "filename": "CSTimer-3DS.3dsx",
+          "url": "https://github.com/Menshion01/CSTimer-3DS/releases/download/1.2.0/CSTimer-3DS.3dsx",
+          "size": 1212872
         },
         {
           "format": "cia",
           "filename": "cstimer.cia",
-          "url": "https://github.com/Menshion01/CSTimer-3DS/releases/download/1.1.0/cstimer.cia",
-          "size": 2126784
+          "url": "https://github.com/Menshion01/CSTimer-3DS/releases/download/1.2.0/cstimer.cia",
+          "size": 1594304
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2025-09-04T11:41:18Z"
+      "updated_at": "2026-09-06T02:42:14Z"
     },
     {
       "id": "universal-db:CyberYoshi64/CTGP7-SaveTransfer",
@@ -33216,7 +33216,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-05T20:09:00Z"
+      "updated_at": "2026-09-06T03:36:44Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -48630,7 +48630,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5650,
+      "popularity": 5655,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48657,7 +48657,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2322,
+      "popularity": 2323,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48684,7 +48684,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4607,
+      "popularity": 4609,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48711,7 +48711,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4312,
+      "popularity": 4314,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48738,7 +48738,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 35982,
+      "popularity": 36008,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48765,7 +48765,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1403,
+      "popularity": 1406,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
