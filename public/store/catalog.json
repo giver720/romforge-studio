@@ -3255,7 +3255,7 @@
       "name": "Amnesia: The Dark Descent",
       "summary": "Port of Amnesia: The Dark Descent for PSVITA.",
       "author": "FridiNaTor1",
-      "version": "v.1.3",
+      "version": "v.1.5",
       "title_id": "AMNE00001",
       "description": "Port of Amnesia: The Dark Descent for PSVITA.",
       "requirements": "- Game Data Files: Amnesia: The Dark Descent",
@@ -3266,10 +3266,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Amnesia-Vita-01.00.vpk",
-          "url": "https://github.com/FridiNaTor1/HPL2-handyman/releases/download/1.3/Amnesia-Vita-01.00.vpk",
-          "size": 5756610,
-          "md5": "da59e2e1bdb5757d3d23ec01dfc39a5b"
+          "filename": "Amnesia-Vita-01.50.vpk",
+          "url": "https://github.com/FridiNaTor1/HPL2-handyman/releases/download/1.5/Amnesia-Vita-01.50.vpk",
+          "size": 5926144,
+          "md5": "e9c9dcffc1cc171382c10acec1dfe0fd"
         }
       ],
       "popularity": 0,
@@ -5926,7 +5926,7 @@
       "name": "BattleShip",
       "summary": "Port of Battleship for PSVITA.",
       "author": "robin994",
-      "version": "v.1.3",
+      "version": "v.1.4",
       "title_id": "SSB64VITA",
       "description": "Port of Battleship for PSVITA.",
       "requirements": "",
@@ -5938,9 +5938,9 @@
         {
           "format": "vpk",
           "filename": "battleship.vpk",
-          "url": "https://github.com/robin994/battleship-vita/releases/download/1.3/battleship.vpk",
-          "size": 7333617,
-          "md5": "90681f0aacd718416283125f08317ed6"
+          "url": "https://github.com/robin994/battleship-vita/releases/download/1.4/battleship.vpk",
+          "size": 7494939,
+          "md5": "6109ac91fd0bd7474d4028022fcfa0c5"
         }
       ],
       "popularity": 0,
@@ -14057,7 +14057,7 @@
       "name": "CTR: High Octane",
       "summary": "Advanced source port of Crash Team Racing for PSVITA.",
       "author": "Rinnegatamante",
-      "version": "v.1.1",
+      "version": "v.1.2",
       "title_id": "CTR000004",
       "description": "Advanced source port of Crash Team Racing for PSVITA.",
       "requirements": "- Game Data Files: Crash Team Racing",
@@ -14074,9 +14074,9 @@
         {
           "format": "vpk",
           "filename": "ctr.vpk",
-          "url": "https://github.com/Rinnegatamante/Crash-Team-Racing-High-Octane/releases/download/v.1.1/ctr.vpk",
-          "size": 2356895,
-          "md5": "a85e13356732f9222f45c933bd4a882e"
+          "url": "https://github.com/Rinnegatamante/Crash-Team-Racing-High-Octane/releases/download/v.1.2/ctr.vpk",
+          "size": 3412773,
+          "md5": "d54c5e9a679f1e1be81f75cdd23e61a5"
         }
       ],
       "popularity": 0,
@@ -15661,7 +15661,7 @@
       "name": "Deltarune Vita",
       "summary": "Port of Deltarune for PSVita.",
       "author": "ChatGPT AI",
-      "version": "v.0.71",
+      "version": "v.0.72",
       "title_id": "DLTVITA01",
       "description": "An unofficial port of DELTARUNE Chapters 1-5 for the PlayStation Vita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: Steam",
@@ -15677,10 +15677,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Deltarune-v0.71-33.vpk",
-          "url": "https://github.com/WolffsRoom/DeltaruneVita/releases/download/v0.71/Deltarune-v0.71-33.vpk",
-          "size": 4554722,
-          "md5": "e4b68d99b57bb03f681f3afc26c08f43"
+          "filename": "Deltarune-v0.72-49.vpk",
+          "url": "https://github.com/WolffsRoom/DeltaruneVita/releases/download/v0.72/Deltarune-v0.72-49.vpk",
+          "size": 5418427,
+          "md5": "1cc08336d4ff91e952fdb7e0c96fd6de"
         }
       ],
       "popularity": 2259,
@@ -17327,7 +17327,7 @@
       "name": "dRally Vita",
       "summary": "Port of Death Rally for PSVITA.",
       "author": "Enrique Somolinos Perez",
-      "version": "v.0.2.1",
+      "version": "v.0.3",
       "title_id": "DERA00002",
       "description": "Port of Death Rally, an arcade car simulation game released in 1996, for the PSVITA.",
       "requirements": "",
@@ -17339,9 +17339,9 @@
         {
           "format": "vpk",
           "filename": "Death_rally.vpk",
-          "url": "https://github.com/enriquesomolinos/dRally-vita/releases/download/v0.2.1-vita/Death_rally.vpk",
-          "size": 1830404,
-          "md5": "1d6d80a13cc505e07a3b3ce6384eec88"
+          "url": "https://github.com/enriquesomolinos/dRally-vita/releases/download/0.3/Death_rally.vpk",
+          "size": 2497567,
+          "md5": "d3566e291fe24dba4459622e8fa0c22a"
         }
       ],
       "popularity": 3026,
@@ -33216,7 +33216,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-05T18:12:40Z"
+      "updated_at": "2026-09-05T20:09:00Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -48208,7 +48208,7 @@
       "name": "Prince of Persia Classic",
       "summary": "Port of Prince of Persia Classic for PSVITA.",
       "author": "MetalSyntax",
-      "version": "v.01.20",
+      "version": "v.01.28",
       "title_id": "POPC00001",
       "description": "Port of Prince of Persia Classic for PSVITA.",
       "requirements": "",
@@ -48219,10 +48219,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "popclassic-v01.20.vpk",
-          "url": "https://github.com/MetalSyntax/prince-of-persia-classic-psvita-port/releases/download/v01.20/popclassic-v01.20.vpk",
-          "size": 1131979,
-          "md5": "7f6284032ae8743bbbd899b05e97b12e"
+          "filename": "popclassic-v01.28.vpk",
+          "url": "https://github.com/MetalSyntax/prince-of-persia-classic-psvita-port/releases/download/v01.28/popclassic-v01.28.vpk",
+          "size": 1368826,
+          "md5": "c0a1d48b6d5bd24db3b68f81397019c7"
         }
       ],
       "popularity": 0,
@@ -48630,7 +48630,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5639,
+      "popularity": 5650,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48657,7 +48657,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2321,
+      "popularity": 2322,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48684,7 +48684,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4602,
+      "popularity": 4607,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48711,7 +48711,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4310,
+      "popularity": 4312,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48738,7 +48738,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 35940,
+      "popularity": 35982,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48765,7 +48765,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1399,
+      "popularity": 1403,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -62948,7 +62948,7 @@
       "name": "Switchfin",
       "summary": "Jellyfin client for PSVITA.",
       "author": "dragonflylee",
-      "version": "v.0.8.3",
+      "version": "v.0.9.4",
       "title_id": "SWITCHFIN",
       "description": "Switchfin is a third-party client for Jellyfin that provides a native user interface to browse and play movies and series.",
       "requirements": "",
@@ -62965,9 +62965,9 @@
         {
           "format": "vpk",
           "filename": "Switchfin.vpk",
-          "url": "https://github.com/dragonflylee/switchfin/releases/download/0.8.3/Switchfin.vpk",
-          "size": 12608455,
-          "md5": "e63fd25adf776ad6ab778426c7716513"
+          "url": "https://github.com/dragonflylee/switchfin/releases/download/0.9.4/Switchfin.vpk",
+          "size": 41173888,
+          "md5": "08e3496fb45c5cac3c6e379c240a10a3"
         }
       ],
       "popularity": 26976,
@@ -72399,7 +72399,7 @@
       "name": "VitaMediaDeck",
       "summary": "Media client for PSVITA.",
       "author": "spyro-98",
-      "version": "v.1.0.1",
+      "version": "v.1.2.0",
       "title_id": "VMDK00001",
       "description": "Media client for PSVITA.",
       "requirements": "",
@@ -72411,9 +72411,9 @@
         {
           "format": "vpk",
           "filename": "VitaMediaDeck.vpk",
-          "url": "https://github.com/spyro-98/VitaMediaDeck/releases/download/v1.0.1/VitaMediaDeck.vpk",
-          "size": 4552659,
-          "md5": "c3920eef3eee30a1ed7f2d66ad926bb5"
+          "url": "https://github.com/spyro-98/VitaMediaDeck/releases/download/v.1.2.0/VitaMediaDeck.vpk",
+          "size": 4981316,
+          "md5": "f5e39b4f1c4a05e1b0ccb11d1476e79a"
         }
       ],
       "popularity": 0,
