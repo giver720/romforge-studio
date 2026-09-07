@@ -1709,28 +1709,28 @@
       "name": "3DSoundShell",
       "summary": "Un lecteur de musique pour 2/3DS avec eqaliser visuel, playlist, paramètre de vitesse et bien plus..",
       "author": "Adritrain09",
-      "version": "Alpha",
+      "version": "Latest",
       "license": "Apache License 2.0",
       "icon_url": "https://raw.githubusercontent.com/Adritrain09/3DSoundShell/main/3DSoundShell.png",
       "release_url": "https://github.com/Adritrain09/3DSoundShell/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "3DSoundShell-V0.97.3dsx",
-          "url": "https://github.com/Adritrain09/3DSoundShell/releases/download/Alpha/3DSoundShell-V0.97.3dsx",
-          "size": 2209700
+          "filename": "3DSoundShell-V0.98.3dsx",
+          "url": "https://github.com/Adritrain09/3DSoundShell/releases/download/Latest/3DSoundShell-V0.98.3dsx",
+          "size": 2860064
         },
         {
           "format": "cia",
-          "filename": "3DSoundShell-V0.97.cia",
-          "url": "https://github.com/Adritrain09/3DSoundShell/releases/download/Alpha/3DSoundShell-V0.97.cia",
-          "size": 2479040
+          "filename": "3DSoundShell-V0.98.cia",
+          "url": "https://github.com/Adritrain09/3DSoundShell/releases/download/Latest/3DSoundShell-V0.98.cia",
+          "size": 3101632
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-06-02T16:07:45Z"
+      "updated_at": "2026-09-07T19:12:21Z"
     },
     {
       "id": "universal-db:fthomys/3ds-playcoin-tool",
@@ -5696,7 +5696,7 @@
       "name": "Barony Vita",
       "summary": "Port of Barony for PSVita.",
       "author": "bren",
-      "version": "v.0.0.1-5.0.2",
+      "version": "v.0.0.2-5.0.2",
       "title_id": "BARO00001",
       "description": "Port of Barony by Turning Wheel for Playstation Vita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -5713,9 +5713,9 @@
         {
           "format": "vpk",
           "filename": "barony.vpk",
-          "url": "https://github.com/Brendonm17/Barony-Vita/releases/download/v0.0.1-5.0.2/barony.vpk",
-          "size": 9793795,
-          "md5": "905734f9af500fa2688a72d448a7cc78"
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/barony.vpk",
+          "size": 9976925,
+          "md5": "bfe05139f631374c89c13e9dea07672e"
         }
       ],
       "popularity": 215,
@@ -12019,7 +12019,7 @@
       "name": "COD: BOZ Vita",
       "summary": "Port of Call of Duty: Black Ops Zombies for PSVita.",
       "author": "devnoname120",
-      "version": "v.1.06",
+      "version": "v.2.02",
       "title_id": "BOZ000001",
       "description": "Port of Call of Duty: Black Ops Zombies for PSVita.\nCall of Duty: Black Ops Zombies is a mobile game that proposes the popular Zombies mode from Call of Duty: Black Ops.",
       "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
@@ -12034,8 +12034,8 @@
           "format": "vpk",
           "filename": "boz_vita.vpk",
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/boz_vita.vpk",
-          "size": 1863993,
-          "md5": "4f18105ce7ec6cacb477d33ae522f00a"
+          "size": 1936614,
+          "md5": "3b98f740a9e7c7c5d7d8bb74d7fef11f"
         },
         {
           "format": "data",
@@ -14057,7 +14057,7 @@
       "name": "CTR: High Octane",
       "summary": "Advanced source port of Crash Team Racing for PSVITA.",
       "author": "Rinnegatamante",
-      "version": "v.1.2",
+      "version": "v.1.3.1",
       "title_id": "CTR000004",
       "description": "Advanced source port of Crash Team Racing for PSVITA.",
       "requirements": "- Game Data Files: Crash Team Racing",
@@ -14074,9 +14074,9 @@
         {
           "format": "vpk",
           "filename": "ctr.vpk",
-          "url": "https://github.com/Rinnegatamante/Crash-Team-Racing-High-Octane/releases/download/v.1.2/ctr.vpk",
-          "size": 3412773,
-          "md5": "d54c5e9a679f1e1be81f75cdd23e61a5"
+          "url": "https://github.com/Rinnegatamante/Crash-Team-Racing-High-Octane/releases/download/v.1.3.1/ctr.vpk",
+          "size": 3572478,
+          "md5": "6d35452ceb14f54c0931b29ce94a1b6d"
         }
       ],
       "popularity": 0,
@@ -20983,7 +20983,7 @@
       "name": "Feather Park Vita",
       "summary": "Port of Feather Park for PSVITA.",
       "author": "AnasHalideen",
-      "version": "v.0.9",
+      "version": "v.1.0",
       "title_id": "FTPK07004",
       "description": "Port of Feather Park for PSVITA.\nExplore an autumn park and play minigames. make friends and enter the barn.\nOriginal game made by jon topielski & mellorine",
       "requirements": "",
@@ -20995,14 +20995,14 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/9c83bd148c86010656770209cdf8bc48c9583304ed24247794c7ca30846338ce.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/1173e6a17e2caf731a1894fe842672490c49d97d20513047a1b3d4c83afc8ad8.png"
       ],
-      "release_url": null,
+      "release_url": "https://github.com/Rocroverss/Feather-Park/releases",
       "downloads": [
         {
           "format": "vpk",
-          "filename": "1077-FeatherPark.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1077-FeatherPark.vpk",
-          "size": 34181808,
-          "md5": "10b506a18a53fecfc7987f3ab6998eff"
+          "filename": "Feather.Park.v1.0.vpk",
+          "url": "https://github.com/Rocroverss/Feather-Park/releases/download/v1.0/Feather.Park.v1.0.vpk",
+          "size": 30259310,
+          "md5": "350f66758fa2cef3aa45cd6a5aaafbd0"
         }
       ],
       "popularity": 1583,
@@ -32855,6 +32855,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-06-02 02:26:02 UTC+8"
+    },
+    {
+      "id": "vitadbtoo-vita:1548",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Last Train Home",
+      "summary": "Last Train Home for PSVITA.",
+      "author": "Rocroverss",
+      "version": "v.1.0",
+      "title_id": "LTRAIN001",
+      "description": "Last Train Home for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3867843da38b9f99468ff18e8dcb82dfdd6aa7dde57a17ec84eedaf7c8883d17.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Rocroverss/Last-Train-Home/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "last_train_home.vpk",
+          "url": "https://github.com/Rocroverss/Last-Train-Home/releases/download/v1.0/last_train_home.vpk",
+          "size": 5509047,
+          "md5": "f309b40ab2686480b8d9e20bca479c5a"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-07"
     },
     {
       "id": "vitadbtoo-vita:1121",
@@ -46816,7 +46847,7 @@
       "name": "PKSM",
       "summary": "Gen I to GenVIII save manager.",
       "author": "FlagBrew",
-      "version": "10.4.0",
+      "version": "10.4.1",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/FlagBrew/PKSM/master/assets/icon.png",
       "release_url": "https://github.com/FlagBrew/PKSM/releases",
@@ -46824,20 +46855,20 @@
         {
           "format": "3dsx",
           "filename": "PKSM.3dsx",
-          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.0/PKSM.3dsx",
-          "size": 7531376
+          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.1/PKSM.3dsx",
+          "size": 8162004
         },
         {
           "format": "cia",
           "filename": "PKSM.cia",
-          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.0/PKSM.cia",
-          "size": 6267840
+          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.1/PKSM.cia",
+          "size": 6828992
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-25T18:53:51Z"
+      "updated_at": "2026-09-07T18:59:01Z"
     },
     {
       "id": "hbas-switch:pkTeraRaidMapViewer",
@@ -48630,7 +48661,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5680,
+      "popularity": 5688,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48657,7 +48688,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2329,
+      "popularity": 2330,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48684,7 +48715,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4621,
+      "popularity": 4623,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48711,7 +48742,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4324,
+      "popularity": 4326,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48738,7 +48769,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36127,
+      "popularity": 36163,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48765,7 +48796,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1419,
+      "popularity": 1427,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -53616,7 +53647,7 @@
       "name": "RuneScape",
       "summary": "RuneScape Classic client for PSVITA.",
       "author": "Brendonm17",
-      "version": "v.1.0.0",
+      "version": "v.1.1.1",
       "title_id": "RSCC00001",
       "description": "RuneScape Classic client for PSVITA.",
       "requirements": "",
@@ -53628,9 +53659,9 @@
         {
           "format": "vpk",
           "filename": "rsc-c-vita.vpk",
-          "url": "https://github.com/Brendonm17/rsc-c-vita/releases/download/v1.0.0/rsc-c-vita.vpk",
-          "size": 12495832,
-          "md5": "8ca9417379b103c4c3adc5206ca981c4"
+          "url": "https://github.com/Brendonm17/rsc-c-vita/releases/download/v1.1.1/rsc-c-vita.vpk",
+          "size": 14297595,
+          "md5": "07d83f25a99116c07beed593bea7ad92"
         }
       ],
       "popularity": 0,
@@ -54749,10 +54780,10 @@
         "utilities"
       ],
       "description": "A custom Scratch runtime that allows you to run Scratch 3 projects on your Wii U! This is an official port of the original runtime for the 3DS.\n\nSee the GitHub README for more info on what features are supported.\n\nMouse\n3DS: Glide your finger/stylus on the bottom screen to move the mouse, and tap the bottom screen to click.\nWii U GamePad: You can use the touchscreen on the GamePad.\nWii Remote: You can use the Wii sensor bar to control the mouse.\nOther Controllers: Enter Mouse Mode by holding L. Use the D-pad to move the mouse, and press R to click.",
-      "added_at": "2026-07-26",
+      "added_at": "2026-09-07",
       "summary": "Play Scratch games on your Wii U!",
       "author": "NateXS and Grady Link",
-      "version": "1.0",
+      "version": "1.1",
       "license": "Lesser GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/ScratchEverywhere/ScratchEverywhere",
@@ -54761,8 +54792,8 @@
           "format": "hbas",
           "filename": "ScratchWiiU.hbas",
           "url": "https://wiiu.cdn.fortheusers.org/packages/ScratchWiiU/manifest.install",
-          "size": 25159,
-          "sha256": "e766cb54960a5af101e0f5351de0d011910290ad156714dd29545f085867a6f3"
+          "size": 25234,
+          "sha256": "001ae02dff8d27e2bdcf02035cf3d79975961ed8706987a09d92a4aeb5767a83"
         }
       ],
       "popularity": 8677,
@@ -54770,7 +54801,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
       "license_url": null,
-      "updated_at": "2026-07-31"
+      "updated_at": "2026-09-07"
     },
     {
       "id": "hbas-switch:ScratchEverywhere",
@@ -56933,7 +56964,7 @@
       "name": "Skyrift",
       "summary": "Sky-gliding adventure game for PSVita.",
       "author": "Claude AI",
-      "version": "v.1.2.0",
+      "version": "v.1.3.0",
       "title_id": "SKRF00001",
       "description": "An original sky-gliding pixel-art adventure for PSVita.",
       "requirements": "",
@@ -56947,9 +56978,9 @@
         {
           "format": "vpk",
           "filename": "skyrift.vpk",
-          "url": "https://github.com/onurkuru/skyrift/releases/download/v1.1.0/skyrift.vpk",
-          "size": 978581,
-          "md5": "595f796d878efa2424c7abb69f85aadc"
+          "url": "https://github.com/onurkuru/skyrift/releases/download/v1.3.0/skyrift.vpk",
+          "size": 981740,
+          "md5": "2f1a642f66fc6373f66884c5dd16de55"
         }
       ],
       "popularity": 1152,
@@ -70843,6 +70874,37 @@
       "updated_at": "2017-04-18"
     },
     {
+      "id": "vitadbtoo-vita:1549",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vita RomM",
+      "summary": "RomM client for PSVITA.",
+      "author": "denkacn",
+      "version": "v.0.8.0.s",
+      "title_id": "ROMM00001",
+      "description": "RomM client for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ef7389ac189769f1a5f9ab43058e1dc6459eb0bcd6869a221a2dc81c93434942.png",
+      "screenshots": [],
+      "release_url": "https://github.com/denkacn/vita-romm/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vita_romm.vpk",
+          "url": "https://github.com/denkacn/vita-romm/releases/download/v0.8.0.s/vita_romm.vpk",
+          "size": 2370075,
+          "md5": "7923f31d7633c0366b595968ac546d4b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-07"
+    },
+    {
       "id": "vitadbtoo-vita:1057",
       "platforms": [
         "psvita"
@@ -73592,6 +73654,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2020-05-25"
+    },
+    {
+      "id": "vitadbtoo-vita:1550",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ViTube",
+      "summary": "Native YouTube client for PSVITA.",
+      "author": "shorelight82",
+      "version": "v.1.0",
+      "title_id": "VTUB00001",
+      "description": "Native YouTube client for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/acfc846893f864b3eef31d57f4a15b1ecf43aaaec6c0bf8861830abcb5b45fde.png",
+      "screenshots": [],
+      "release_url": "https://github.com/shorelight82/vitube-vpk/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ViTube.vpk",
+          "url": "https://github.com/shorelight82/vitube-vpk/releases/download/v1.0/ViTube.vpk",
+          "size": 4206177,
+          "md5": "3f3f05f69ffdac03a104e972ebe96875"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-07"
     },
     {
       "id": "vitadbtoo-vita:304",
