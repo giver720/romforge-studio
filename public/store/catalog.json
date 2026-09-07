@@ -48630,7 +48630,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5676,
+      "popularity": 5680,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48657,7 +48657,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2327,
+      "popularity": 2329,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48684,7 +48684,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4616,
+      "popularity": 4621,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48711,7 +48711,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4321,
+      "popularity": 4324,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48738,7 +48738,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36104,
+      "popularity": 36127,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48765,7 +48765,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1418,
+      "popularity": 1419,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -54710,7 +54710,7 @@
       "name": "Scratch Everywhere!",
       "summary": "Play Scratch games on your 3DS!",
       "author": "NateXS",
-      "version": "1.0",
+      "version": "1.1",
       "license": "GNU Lesser General Public License v3.0",
       "icon_url": "https://github.com/ScratchEverywhere/ScratchEverywhere/raw/refs/heads/main/gfx/icon.png",
       "release_url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases",
@@ -54718,26 +54718,26 @@
         {
           "format": "3dsx",
           "filename": "scratch-3ds.3dsx",
-          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.0/scratch-3ds.3dsx",
-          "size": 10933032
+          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.1/scratch-3ds.3dsx",
+          "size": 10953068
         },
         {
           "format": "cia",
           "filename": "scratch-3ds.cia",
-          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.0/scratch-3ds.cia",
-          "size": 9257920
+          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.1/scratch-3ds.cia",
+          "size": 9282496
         },
         {
           "format": "nds",
           "filename": "scratch-ds.nds",
-          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.0/scratch-ds.nds",
-          "size": 5633536
+          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.1/scratch-ds.nds",
+          "size": 5669376
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-07-26T17:25:29Z"
+      "updated_at": "2026-09-07T05:22:27Z"
     },
     {
       "id": "hbas-wiiu:ScratchWiiU",
@@ -73856,11 +73856,11 @@
       "categories": [
         "utilities"
       ],
-      "description": "Install a channel to the vWii Menu from Wii U Mode. In its current state, it simply installs the Homebrew Channel.\n\nCredits to:\n\nDimok, smealum, others for iosuhax and Mocha CFW.\nFIX94, this repo is largely based off of wuphax.\n@Ingunar on GitHub, for the awesome icons\nTheLordScruffy/mkwcat, for the original Compat Title Installer",
-      "added_at": "2026-08-22",
-      "summary": "Install the Homebrew Channel to the vWii",
+      "description": "It features an express installer to quickly get your vWii ready with the Homebrew Channel, USB Loader GX, d2x cIOS, WAD installation, and the Open Shop Channel (Homebrew Browser / LibreShop).\n\nIt also doubles as an advanced maintenance and recovery tool featuring a vWii Region Change Wizard to switch your vWii region (EUR, USA, JPN) with selective asset downloading and cleanup, and a Decaf Menu (Reinstall & Wipe) that fully replaces vWii-Decaffeinator with direct NUS downloading (bypassing DNS and Aroma update blocks), granular system wipes, integrity scanning, and setting.txt management.",
+      "added_at": "2026-09-06",
+      "summary": "All-in-one homebrew setup tool that lets you fully softmod, configure, and unbrick your vWii.",
       "author": "DaThinkingChair",
-      "version": "2.1",
+      "version": "2.1.1",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/Xpl0itU/vwii-compat-installer",
@@ -73870,7 +73870,7 @@
           "filename": "CompatTitleInstaller.hbas",
           "url": "https://wiiu.cdn.fortheusers.org/packages/CompatTitleInstaller/manifest.install",
           "size": 7456,
-          "sha256": "60fd424313fd27c47596bb7ca3e3eba5b9af7b9b7f66945dc1e06ebc77c8b8e2"
+          "sha256": "9a508f58ed402e7ab87a911c70a669f71cb660a82ac085d98e7561e7730f3a62"
         }
       ],
       "popularity": 88577,
@@ -73878,7 +73878,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
       "license_url": null,
-      "updated_at": "2026-08-24"
+      "updated_at": "2026-09-07"
     },
     {
       "id": "hbas-wiiu:vWii_decaffeinator",
