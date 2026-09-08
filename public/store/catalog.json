@@ -19271,7 +19271,7 @@
           "filename": "Emu4VitaPlus_v0.79.vpk",
           "url": "https://github.com/noword/Emu4VitaPlus/releases/download/v0.79/Emu4VitaPlus_v0.79.vpk",
           "size": 197348129,
-          "md5": null
+          "md5": "ade0e532e2a6049eec4a0e4eaf3401a9"
         }
       ],
       "popularity": 44348,
@@ -20578,7 +20578,7 @@
           "filename": "FamilyFeud.vpk",
           "url": "https://github.com/alim395/FamilyFisticuffsVita/releases/download/v1.00/FamilyFeud.vpk",
           "size": 24806566,
-          "md5": null
+          "md5": "a2bafccde7dd770608762a3c4f7f0d8f"
         }
       ],
       "popularity": 627,
@@ -48661,7 +48661,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5688,
+      "popularity": 5694,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48688,7 +48688,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2330,
+      "popularity": 2331,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48715,7 +48715,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4623,
+      "popularity": 4628,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48742,7 +48742,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4326,
+      "popularity": 4327,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48769,7 +48769,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36163,
+      "popularity": 36188,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48796,7 +48796,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1427,
+      "popularity": 1435,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -49070,30 +49070,30 @@
       "updated_at": "2026-06-21 15:37:35 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-5.17.2.elf",
+      "id": "ps5-payloads-atlas:ps5upload-5.17.4.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v5.17.2",
+      "version": "v5.17.4",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-5.17.2.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.2/ps5upload-5.17.2.elf",
-          "sha256": "24761230d42f4662a6530ec17c705f1742c4b0652a2f7acf353b2051de9e2664"
+          "filename": "ps5upload-5.17.4.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.4/ps5upload-5.17.4.elf",
+          "sha256": "b8f8e415084523486145cffb8a79101d8d39a2df791ab9d1a498d0f627443697"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-07 12:02:53 UTC+8"
+      "updated_at": "2026-09-08 11:13:15 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
