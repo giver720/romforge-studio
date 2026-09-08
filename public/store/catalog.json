@@ -30558,6 +30558,37 @@
       "updated_at": "2026-08-06"
     },
     {
+      "id": "vitadbtoo-vita:1551",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Jazz² Resurrection",
+      "summary": "Port of Jazz Jackrabbit 2 for PSVITA.",
+      "author": "deathkiller",
+      "version": "Nightly",
+      "title_id": "JAZZ20000",
+      "description": "Port of Jazz Jackrabbit 2 for PSVITA.",
+      "requirements": "- Game Data Files: Jazz Jackrabbit 2",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/16ecdd2ef720a20c311dc809707dc1e7a655015fbb825e9c283ba514c3ddcc56.png",
+      "screenshots": [],
+      "release_url": "https://github.com/deathkiller/jazz2-native/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Jazz2.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/Jazz2.vpk",
+          "size": 5016746,
+          "md5": "a5cbeb7e7d41c8a6e7d249a62ad02b9b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-08"
+    },
+    {
       "id": "hbas-switch:JC-color-swapper",
       "platforms": [
         "switch"
@@ -38746,13 +38777,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64344723
+          "size": 64439310
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-04T12:05:43Z"
+      "updated_at": "2026-09-08T12:06:22Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -45037,7 +45068,7 @@
       "name": "Parkour Labs",
       "summary": "Port of Parkour Labs for PSVITA.",
       "author": "SoyKhaler",
-      "version": "v.1.2",
+      "version": "v.2.0",
       "title_id": "GDOT32494",
       "description": "A port of the Steam game Parkour Labs, a hard parkour videogame similar to CSGO: Surf.",
       "requirements": "",
@@ -45050,10 +45081,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "1099-Parkour_Labs.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1099-Parkour_Labs.vpk",
-          "size": 43264784,
-          "md5": "5c7d6d5bc7fb3bb5444d54317c32c825"
+          "filename": "ParkourLabs.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/ParkourLabs.vpk",
+          "size": 86834768,
+          "md5": "a5bab31ed4f86d242f72382cd8c76d2b"
         }
       ],
       "popularity": 14761,
@@ -48661,7 +48692,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5697,
+      "popularity": 5699,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48688,7 +48719,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2332,
+      "popularity": 2333,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48715,7 +48746,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4630,
+      "popularity": 4634,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48742,7 +48773,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4328,
+      "popularity": 4330,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48769,7 +48800,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36206,
+      "popularity": 36229,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48796,7 +48827,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1437,
+      "popularity": 1443,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -48914,30 +48945,30 @@
       "updated_at": "2026-08-16 21:35:51 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:web-file-mgr-v1.7.elf",
+      "id": "ps5-payloads-atlas:wfm-7zip-helper.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5 Web File Manager",
       "summary": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
       "author": "",
-      "version": "v1.7",
+      "version": "v1.8",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/owendswang/ps5-web-file-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "web-file-mgr-v1.7.elf",
-          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.7/web-file-mgr-v1.7.elf",
-          "sha256": "07c1f65d855fc4eb905b37ef990baf25a6a8b21da13590cd21b3e4b7d10ff4e1"
+          "filename": "wfm-7zip-helper.elf",
+          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.8/wfm-7zip-helper.elf",
+          "sha256": "63b39c35cc2fa236d4511cd1782d41cb87ec08dfdf57e15fdcfe97b414896972"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-29 14:36:49 UTC+8"
+      "updated_at": "2026-09-08 23:21:14 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:ps5-app-dumper.elf",
