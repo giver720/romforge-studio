@@ -4,10 +4,12 @@ import {
   ArchiveRestore,
   CheckCircle2,
   FileArchive,
+  FlaskConical,
   FolderOpen,
   Gauge,
   Gamepad2,
   HardDrive,
+  LockKeyhole,
   Package2,
   ShieldCheck,
   Sparkles,
@@ -15,7 +17,7 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { api, type GameArtwork } from "../lib/api";
 import { bytes } from "../lib/format";
-import type { Ps5Scan } from "../lib/ps5";
+import { PS5_LAB_FORMATS, type Ps5Scan } from "../lib/ps5";
 import { useStore } from "../store";
 
 type BuildMode = "ps5ffpkg" | "ps5exfat" | "ps5ffpfsc";
@@ -255,6 +257,76 @@ export function Ps5View() {
             Windows pedirá permiso de administrador al crear y verificar FFPKG; exFAT y FFPFSC no lo necesitan.
           </p>
         )}
+      </section>
+
+      <section className="glass mt-4 rounded-2xl p-5">
+        <div className="flex items-start gap-3">
+          <span className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-fuchsia-400/10 text-fuchsia-300">
+            <FlaskConical size={20} />
+          </span>
+          <div className="min-w-0 flex-1">
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="text-[0.9rem] font-semibold">Laboratorio PS5</p>
+              <span className="chip text-[0.58rem]">En preparación</span>
+            </div>
+            <p className="mt-1 max-w-3xl text-[0.68rem] leading-relaxed text-[var(--color-muted)]">
+              Integración preparada para FPKG nativo de PS5 y LZ4/Lizard. Los motores permanecen
+              bloqueados hasta poder generar y verificar resultados seguros.
+            </p>
+          </div>
+        </div>
+
+        <div
+          className={`mt-4 flex items-center gap-2 rounded-xl border p-3 text-[0.68rem] ${
+            scan?.valid
+              ? "border-emerald-400/20 bg-emerald-400/[0.05] text-emerald-300"
+              : "border-white/10 bg-white/[0.02] text-[var(--color-muted)]"
+          }`}
+        >
+          {scan?.valid ? <CheckCircle2 size={15} /> : <FolderOpen size={15} />}
+          <span className="min-w-0 truncate">
+            {scan?.valid
+              ? `Dump preparado: ${scan.title ?? scan.title_id ?? source}`
+              : "Selecciona y valida un dump en el apartado superior para preparar estos formatos."}
+          </span>
+        </div>
+
+        <div className="mt-3 grid gap-3 lg:grid-cols-2">
+          {PS5_LAB_FORMATS.map((format) => (
+            <article
+              key={format.id}
+              className="rounded-xl border border-[var(--color-edge)] bg-white/[0.02] p-4"
+            >
+              <div className="flex flex-wrap items-center justify-between gap-2">
+                <p className="text-[0.78rem] font-semibold">{format.name}</p>
+                <span className="chip text-[0.58rem]">{format.badge}</span>
+              </div>
+              <p className="mt-2 text-[0.66rem] leading-relaxed text-[var(--color-muted)]">
+                {format.description}
+              </p>
+              <ul className="mt-3 space-y-1.5 text-[0.63rem] text-[var(--color-muted)]">
+                {format.requirements.map((requirement) => (
+                  <li key={requirement} className="flex items-start gap-2">
+                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-fuchsia-300/70" />
+                    {requirement}
+                  </li>
+                ))}
+              </ul>
+              <button
+                className="btn btn-ghost mt-4 w-full justify-center opacity-70"
+                disabled
+                title="La creación se habilitará cuando el motor pueda verificarse de extremo a extremo"
+              >
+                <LockKeyhole size={14} /> {format.actionLabel}
+              </button>
+            </article>
+          ))}
+        </div>
+
+        <p className="mt-3 flex items-start gap-2 text-[0.64rem] leading-relaxed text-amber-300">
+          <ShieldCheck size={14} className="mt-0.5 shrink-0" />
+          ROMForge no ejecutará builds experimentales conocidas por producir paquetes defectuosos.
+        </p>
       </section>
 
       <section className="glass mt-4 rounded-2xl p-5">

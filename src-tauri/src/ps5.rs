@@ -10,6 +10,9 @@ pub const MODE_FFPKG: &str = "ps5ffpkg";
 pub const MODE_FFPFSC: &str = "ps5ffpfsc";
 pub const MODE_COMPRESS: &str = "ps5compress";
 pub const MODE_EXTRACT: &str = "ps5extract";
+/// Identificadores reservados para motores PS5 que todavía no son ejecutables.
+pub const MODE_NATIVE_FPKG: &str = "ps5fpkg";
+pub const MODE_LZ4: &str = "ps5lz4";
 pub const CLUSTER_SIZE: u64 = 64 * 1024;
 const SAMPLE_LIMIT: u64 = 32 * 1024 * 1024;
 const SAMPLE_PER_FILE: u64 = 2 * 1024 * 1024;
@@ -46,6 +49,18 @@ pub fn is_mode(mode: &str) -> bool {
         mode,
         MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT
     )
+}
+
+pub fn experimental_block_reason(mode: &str) -> Option<&'static str> {
+    match mode {
+        MODE_NATIVE_FPKG => Some(
+            "FPKG nativo de PS5 está bloqueado hasta disponer de una build corregida y verificable",
+        ),
+        MODE_LZ4 => Some(
+            "LZ4/Lizard está bloqueado hasta que exista un encoder o una especificación pública",
+        ),
+        _ => None,
+    }
 }
 
 pub fn tool_for(mode: &str) -> Option<&'static str> {
@@ -397,6 +412,20 @@ mod tests {
         assert_eq!(output_ext(MODE_FFPFSC), Some("ffpfsc"));
         assert_eq!(tool_for_input(MODE_EXTRACT, "game.ffpkg"), Some("ufs2tool"));
         assert_eq!(tool_for_input(MODE_EXTRACT, "game.ffpfsc"), Some("mkpfs"));
+    }
+
+    #[test]
+    fn keeps_experimental_ps5_modes_out_of_the_job_engine() {
+        assert!(!is_mode(MODE_NATIVE_FPKG));
+        assert!(!is_mode(MODE_LZ4));
+        assert!(experimental_block_reason(MODE_NATIVE_FPKG)
+            .unwrap()
+            .contains("build corregida"));
+        assert!(experimental_block_reason(MODE_LZ4)
+            .unwrap()
+            .contains("encoder"));
+        assert_eq!(tool_for(MODE_NATIVE_FPKG), None);
+        assert_eq!(output_ext(MODE_LZ4), None);
     }
 
     #[test]
