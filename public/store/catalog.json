@@ -2606,6 +2606,37 @@
       "updated_at": "2017-06-22"
     },
     {
+      "id": "vitadbtoo-vita:1552",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Advena",
+      "summary": "Port of Advena for PSVITA.",
+      "author": "MetalSyntax",
+      "version": "v.1.0.0",
+      "title_id": "ADVENA001",
+      "description": "Port of Advena for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a35186439f99cb28a14c90d12003250a2b17914d8ac7d6153be54c74571ec874.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/Advena-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "advena.vpk",
+          "url": "https://github.com/MetalSyntax/Advena-Vita/releases/download/v1.0.0/advena.vpk",
+          "size": 1085148,
+          "md5": "0301c50241b4e55412cfcd0c197136e3"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-09"
+    },
+    {
       "id": "vitadbtoo-vita:117",
       "platforms": [
         "psvita"
@@ -25414,58 +25445,6 @@
       "updated_at": "2022-10-11"
     },
     {
-      "id": "ps5-payloads-atlas:Ghostcontrol.elf",
-      "platforms": [
-        "ps5"
-      ],
-      "name": "Ghostcontrol",
-      "summary": "USB HID controller patcher that injects third-party controller input into a virtual DualSense device.",
-      "author": "",
-      "version": "1.0.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/stonedmodder/ghostcontrol-ps5-usb-controller-patcher",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "Ghostcontrol.elf",
-          "url": "https://github.com/StonedModder/Ghostcontrol-PS5-USB-Controller-Patcher/releases/download/1.0.5/Ghostcontrol.elf",
-          "sha256": "69271d91f27397c9ad42150129639ce452ecb405021108f42c6c87926123a6f1"
-        }
-      ],
-      "source": "PS5 Payloads Atlas",
-      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
-      "license_url": null,
-      "popularity": null,
-      "updated_at": "2026-07-06 10:19:27 UTC+8"
-    },
-    {
-      "id": "ps5-payloads-atlas:ghostpad.elf",
-      "platforms": [
-        "ps5"
-      ],
-      "name": "Ghostpad",
-      "summary": "Creates a virtual PS5 controller on the console and redirects input to it — useful for input automation, remote control, and accessibility setups.",
-      "author": "",
-      "version": "v1.0.0",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/stonedmodder/ghostpad",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "ghostpad.elf",
-          "url": "https://github.com/StonedModder/Ghostpad/releases/download/v1.0.0/ghostpad.elf",
-          "sha256": "94d43a8db7ec9df6e18f0a0da25aac0f60e1a0b14d35bfff261f6f5cdeabdba1"
-        }
-      ],
-      "source": "PS5 Payloads Atlas",
-      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
-      "license_url": null,
-      "popularity": null,
-      "updated_at": "2026-05-31 23:27:41 UTC+8"
-    },
-    {
       "id": "vitadbtoo-vita:1387",
       "platforms": [
         "psvita"
@@ -26013,6 +25992,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-12-12"
+    },
+    {
+      "id": "vitadbtoo-vita:1555",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "GoldenBalloon",
+      "summary": "Port of GoldenBalloon, a Diddy Kong Racing decompilation, for PSVITA.",
+      "author": "zm2283145",
+      "version": "v.0.2.0",
+      "title_id": null,
+      "description": "",
+      "requirements": "- Game Data Files: Diddy Kong Racing",
+      "license": null,
+      "icon_url": null,
+      "screenshots": [],
+      "release_url": "https://github.com/zm2283145/goldenballoon-vita-port/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "mdkr64.vpk",
+          "url": "https://github.com/zm2283145/goldenballoon-vita-port/releases/download/vita-v0.2.0/mdkr64.vpk",
+          "size": 2587581,
+          "md5": "8cb87b40b65ef51a23cc02996b195600"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-09"
     },
     {
       "id": "vitadbtoo-vita:1403",
@@ -29508,6 +29518,37 @@
       "updated_at": "2026-09-02"
     },
     {
+      "id": "vitadbtoo-vita:1553",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ILLUSIA 2",
+      "summary": "Port of Illusia 2 for PSVITA.",
+      "author": "MetalSyntax",
+      "version": "v.1.0.0",
+      "title_id": "ILLUSIA02",
+      "description": "Port of Illusia 2 for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/877db735516f9809e93c9de837be0e14054308530e6877854eac6fc3975e725c.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/ILLUSIA-2-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "illusia2.vpk",
+          "url": "https://github.com/MetalSyntax/ILLUSIA-2-Vita/releases/download/v1.0.0/illusia2.vpk",
+          "size": 1187154,
+          "md5": "26c69479ba799711bad118c6ec6e741c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-09"
+    },
+    {
       "id": "vitadbtoo-vita:1441",
       "platforms": [
         "psvita"
@@ -30314,6 +30355,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2025-11-24"
+    },
+    {
+      "id": "vitadbtoo-vita:1554",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Iron Coast: Scrap Tide",
+      "summary": "Iron Coast: Scrap Tide for PSVITA.",
+      "author": "Onur Kuru",
+      "version": "v.0.3.0",
+      "title_id": "KHYI00001",
+      "description": "Iron Coast: Scrap Tide for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9dd8b6fb629c200985ce1ab3bde7135e6deca9e0d353765a9b5f6303b4ebcc96.png",
+      "screenshots": [],
+      "release_url": "https://github.com/onurkuru/ironcoast/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Iron-Coast-PSVita-v0.3.0.vpk",
+          "url": "https://github.com/onurkuru/ironcoast/releases/download/v0.3.0/Iron-Coast-PSVita-v0.3.0.vpk",
+          "size": 33230388,
+          "md5": "d35c8efce201274766ef37e5e2ddadf5"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-09"
     },
     {
       "id": "vitadbtoo-vita:1208",
@@ -38836,13 +38908,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64439310
+          "size": 64441946
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-08T12:06:22Z"
+      "updated_at": "2026-09-09T12:18:16Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -45578,7 +45650,7 @@
       "name": "pegasus-dl",
       "summary": "PS5 payload that serves a local web interface for downloading and installing game or application package data.",
       "author": "",
-      "version": "v1.7.0",
+      "version": "v1.8.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/pegasus-ps5/pegasus-dl",
@@ -45586,15 +45658,15 @@
         {
           "format": "elf",
           "filename": "pegasus_dl.elf",
-          "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.7.0/pegasus_dl.elf",
-          "sha256": "cb2a4b3c248323f2432ce118cb1bf4975146035239ce9b571a9bdb51b3fee226"
+          "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.8.0/pegasus_dl.elf",
+          "sha256": "3665fa275a185e597ef364379a7f7ad5a9d58f30fda2af6bd04e43299ff2e669"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-06-25 00:10:11 UTC+8"
+      "updated_at": "2026-09-09 22:47:57 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:847",
@@ -48751,7 +48823,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5713,
+      "popularity": 5715,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48778,7 +48850,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2338,
+      "popularity": 2339,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48805,7 +48877,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4640,
+      "popularity": 4642,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48832,7 +48904,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4335,
+      "popularity": 4336,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48859,7 +48931,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36291,
+      "popularity": 36304,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48886,7 +48958,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1451,
+      "popularity": 1453,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -73753,7 +73825,7 @@
       "name": "ViTube",
       "summary": "Native YouTube client for PSVITA.",
       "author": "shorelight82",
-      "version": "v.1.0",
+      "version": "v.1.2",
       "title_id": "VTUB00001",
       "description": "Native YouTube client for PSVITA.",
       "requirements": "",
@@ -73765,9 +73837,9 @@
         {
           "format": "vpk",
           "filename": "ViTube.vpk",
-          "url": "https://github.com/shorelight82/vitube-vpk/releases/download/v1.0/ViTube.vpk",
-          "size": 4206177,
-          "md5": "3f3f05f69ffdac03a104e972ebe96875"
+          "url": "https://github.com/shorelight82/vitube-vpk/releases/download/v1.2/ViTube.vpk",
+          "size": 4214909,
+          "md5": "7d1d878ced465fe569fcbe6aab8ab0a6"
         }
       ],
       "popularity": 0,
