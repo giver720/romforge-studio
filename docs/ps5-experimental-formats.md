@@ -4,15 +4,16 @@ ROMForge Studio reserva dos integraciones nuevas sin tratarlas todavía como con
 
 ## FPKG nativo de PS5 (`ps5fpkg`)
 
-Estado: bloqueado en la interfaz y excluido del motor de trabajos.
+Estado: integrado mediante el proceso externo ROMForge Prospero Bridge y LibProsperoPKG v2.5.
 
-Antes de habilitarlo se requiere:
+Para habilitar el botón en un dump se requiere:
 
-- una build corregida que no produzca paquetes parcialmente corruptos;
-- una CLI o API no interactiva con contrato estable;
-- verificación estructural del paquete generado;
-- instalación y ejecución confirmadas en una PS5 modificada compatible;
-- licencia y canal de distribución claros para cualquier binario incluido.
+- `contentId` válido en `sce_sys/param.json`;
+- módulos ELF ya descifrados, en su ruta normal o reflejados bajo `decrypted/`;
+- que no quede ningún SELF cifrado sin su ELF correspondiente;
+- el motor autocontenido incluido en la instalación de ROMForge.
+
+El puente trabaja en una carpeta temporal, conserva intacto el dump original, rechaza módulos cifrados sin resolver y valida la imagen final mediante `ProsperoPkgValidator`. ROMForge repite esa validación antes de publicar el `.pkg` en la carpeta de salida.
 
 El anuncio inicial indica compatibilidad prevista hasta firmware 11.40, pero esto debe volver a validarse con la herramienta corregida y el soporte del lado de la consola.
 
@@ -32,4 +33,4 @@ Antes de habilitarlo se requiere:
 
 ## Contrato de integración
 
-Los identificadores están reservados en frontend y backend, pero `is_mode()` devuelve `false` para ambos. Cuando un motor sea seguro se añadirá de forma explícita a la cola, junto con detección de herramienta, extensión de salida, progreso, cancelación y verificación posterior.
+`ps5fpkg` es un modo ejecutable y produce `.pkg`; `ps5lz4` sigue reservado y `is_mode()` devuelve `false` únicamente para LZ4. La cola permite cancelar el proceso FPKG, limpia la salida temporal ante errores y solo publica un paquete aceptado.

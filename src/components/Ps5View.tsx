@@ -75,6 +75,7 @@ export function Ps5View() {
   );
   const selectedFormat = formats.find((format) => format.mode === mode)!;
   const selectedToolMissing = missingTools.has(selectedFormat.tool);
+  const prosperoMissing = missingTools.has("prospero");
   const imageExt = imageSource?.split(".").pop()?.toLowerCase();
   const canCompress = imageExt === "exfat" || imageExt === "ffpkg";
 
@@ -270,8 +271,8 @@ export function Ps5View() {
               <span className="chip text-[0.58rem]">En preparación</span>
             </div>
             <p className="mt-1 max-w-3xl text-[0.68rem] leading-relaxed text-[var(--color-muted)]">
-              Integración preparada para FPKG nativo de PS5 y LZ4/Lizard. Los motores permanecen
-              bloqueados hasta poder generar y verificar resultados seguros.
+              FPKG nativo usa LibProsperoPKG y valida el paquete antes de publicarlo. LZ4/Lizard
+              seguirá protegido hasta que su encoder y contenedor sean públicos.
             </p>
           </div>
         </div>
@@ -304,20 +305,55 @@ export function Ps5View() {
               <p className="mt-2 text-[0.66rem] leading-relaxed text-[var(--color-muted)]">
                 {format.description}
               </p>
+              {format.id === "fpkg" && scan?.valid && (
+                <p className={`mt-2 text-[0.64rem] ${scan.fpkg_ready ? "text-emerald-300" : "text-amber-300"}`}>
+                  {scan.fpkg_ready
+                    ? `Dump listo · ${scan.fpkg_module_count} módulo${scan.fpkg_module_count === 1 ? "" : "s"} · ${scan.content_id}`
+                    : "El dump necesita preparación antes de crear el FPKG."}
+                </p>
+              )}
               <ul className="mt-3 space-y-1.5 text-[0.63rem] text-[var(--color-muted)]">
-                {format.requirements.map((requirement) => (
+                {(format.id === "fpkg" && scan?.valid && scan.fpkg_blockers.length > 0
+                  ? scan.fpkg_blockers
+                  : format.requirements
+                ).map((requirement) => (
                   <li key={requirement} className="flex items-start gap-2">
-                    <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-fuchsia-300/70" />
+                    <span
+                      className={`mt-1 h-1.5 w-1.5 shrink-0 rounded-full ${
+                        format.id === "fpkg" && scan?.valid && !scan.fpkg_ready
+                          ? "bg-amber-300"
+                          : "bg-fuchsia-300/70"
+                      }`}
+                    />
                     {requirement}
                   </li>
                 ))}
               </ul>
               <button
-                className="btn btn-ghost mt-4 w-full justify-center opacity-70"
-                disabled
-                title="La creación se habilitará cuando el motor pueda verificarse de extremo a extremo"
+                className={`btn mt-4 w-full justify-center ${
+                  format.id === "fpkg" ? "btn-primary" : "btn-ghost opacity-70"
+                }`}
+                disabled={
+                  busy ||
+                  format.id === "lz4" ||
+                  prosperoMissing ||
+                  !source ||
+                  !scan?.valid ||
+                  !scan.fpkg_ready
+                }
+                title={
+                  format.id === "lz4"
+                    ? "Se habilitará cuando exista un encoder público verificable"
+                    : scan?.fpkg_blockers[0] ?? (prosperoMissing ? "Falta LibProsperoPKG" : "Crear FPKG PS5")
+                }
+                onClick={() =>
+                  format.id === "fpkg" &&
+                  source &&
+                  enqueue(source, format.mode, "FPKG nativo de PS5 añadido a la cola")
+                }
               >
-                <LockKeyhole size={14} /> {format.actionLabel}
+                {format.id === "lz4" ? <LockKeyhole size={14} /> : <Package2 size={14} />}
+                {format.id === "fpkg" && prosperoMissing ? "Motor FPKG no disponible" : format.actionLabel}
               </button>
             </article>
           ))}
@@ -325,7 +361,8 @@ export function Ps5View() {
 
         <p className="mt-3 flex items-start gap-2 text-[0.64rem] leading-relaxed text-amber-300">
           <ShieldCheck size={14} className="mt-0.5 shrink-0" />
-          ROMForge no ejecutará builds experimentales conocidas por producir paquetes defectuosos.
+          FPKG exige módulos descifrados y se somete a una segunda validación estructural en la cola.
+          La ejecución final también depende del firmware y los payloads instalados en la PS5.
         </p>
       </section>
 

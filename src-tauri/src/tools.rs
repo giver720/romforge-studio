@@ -356,6 +356,17 @@ pub const TOOLS: &[ToolSpec] = &[
         license: "BSD-2-Clause",
     },
     ToolSpec {
+        id: "prospero",
+        name: "LibProsperoPKG",
+        exe: "romforge-prospero-bridge",
+        kind: ToolKind::Bundled,
+        linux_kind: None,
+        linux_exe: None,
+        purpose: "Convierte dumps descifrados de PS5 en paquetes FPKG y valida su estructura",
+        family: "ps5",
+        license: "GPL-3.0-or-later",
+    },
+    ToolSpec {
         id: "maxcso",
         name: "maxcso",
         exe: "maxcso",

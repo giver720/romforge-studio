@@ -261,6 +261,18 @@ MkPFS crea exFAT directamente y no necesita montar una unidad ni usar OSFMount. 
 permisos de administrador en Windows por decisión de su proyecto; en Linux no los necesita para
 crear una imagen en un archivo. Una PS5 sin modificar no puede montar estas imágenes.
 
+### FPKG nativo de PS5
+
+El Laboratorio PS5 puede convertir un dump descifrado a `.pkg` mediante LibProsperoPKG 2.5. No es
+el formato FFPKG/UFS2 ni usa herramientas FPKG de PS4. El dump debe conservar un `contentId` válido
+en `sce_sys/param.json` y contener los ELF descifrados en su ruta normal o bajo `decrypted/`.
+
+ROMForge ejecuta el motor como un proceso externo GPL-3.0-or-later, trabaja sobre una copia temporal,
+rechaza cualquier módulo cifrado sin resolver y valida el contenedor final antes de publicarlo. Que
+el paquete se pueda ejecutar en hardware real depende además del firmware y los payloads de la PS5.
+LZ4/Lizard aparece como anunciado, pero permanece deshabilitado hasta que exista un encoder y una
+especificación pública verificables.
+
 ## Desarrollo
 
 ### Windows

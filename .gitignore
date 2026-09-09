@@ -17,3 +17,9 @@ src-tauri/binaries/*
 
 # Los artefactos de cada version van a GitHub Releases, no al repositorio
 release/
+
+# LibProsperoPKG y los binarios autocontenidos se descargan/compilan al empaquetar.
+tools/prospero-bridge/vendor/
+tools/prospero-bridge/publish/
+tools/prospero-bridge/bin/
+tools/prospero-bridge/obj/

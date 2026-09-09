@@ -10,4 +10,11 @@ no tendra que instalar MAME ni configurar ninguna ruta. Puedes descargarlo con:
 Linux
 -----
 El paquete .deb depende de mame-tools, que instala chdman en el PATH. Los
-binarios .exe de esta carpeta no se incluyen en el paquete de Linux.
+Los motores propios para Linux se generan antes de armar el paquete .deb.
+
+Prospero Bridge
+---------------
+romforge-prospero-bridge conecta como proceso separado con LibProsperoPKG v2.5
+para crear y validar FPKG nativo de PS5. Ambos se distribuyen bajo
+GPL-3.0-or-later; consulta LICENCIA-Prospero-Bridge.txt y el codigo fuente en
+tools/prospero-bridge dentro del repositorio.

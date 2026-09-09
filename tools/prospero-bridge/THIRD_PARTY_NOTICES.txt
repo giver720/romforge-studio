@@ -1,0 +1,14 @@
+ROMForge Prospero Bridge 1.0.0
+Copyright (C) 2026 ROMForge Studio contributors
+License: GNU General Public License v3.0 or later
+Source: https://github.com/giver720/romforge-studio/tree/main/tools/prospero-bridge
+
+LibProsperoPKG 2.5
+Copyright (C) 2026 SvenGDK
+License: GNU General Public License v3.0 or later
+Source: https://github.com/SvenGDK/LibProsperoPKG/tree/v2.5
+License text: https://github.com/SvenGDK/LibProsperoPKG/blob/v2.5/LICENSE
+
+Both programs are provided without warranty. ROMForge Studio invokes the bridge
+as a separate process. See the linked source repositories for complete source,
+copyright notices, license text, build instructions, and derived-code notices.

@@ -1219,14 +1219,19 @@ async fn run_ps5_workflow(
     settings: Settings,
     cancel: Arc<AtomicBool>,
 ) {
-    use crate::ps5::{MODE_COMPRESS, MODE_EXFAT, MODE_EXTRACT, MODE_FFPFSC, MODE_FFPKG};
+    use crate::ps5::{
+        MODE_COMPRESS, MODE_EXFAT, MODE_EXTRACT, MODE_FFPFSC, MODE_FFPKG, MODE_NATIVE_FPKG,
+    };
 
     let input = PathBuf::from(&job.input);
     if !input.exists() {
         return custom_error(&app, &id, "La entrada ya no existe".into());
     }
 
-    let builds_from_folder = matches!(job.mode.as_str(), MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC);
+    let builds_from_folder = matches!(
+        job.mode.as_str(),
+        MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_NATIVE_FPKG
+    );
     let expected = if builds_from_folder {
         let scan = crate::ps5::scan(&job.input);
         if !scan.valid {
@@ -1235,6 +1240,16 @@ async fn run_ps5_workflow(
                 &id,
                 scan.error
                     .unwrap_or_else(|| "La carpeta no parece un dump de PS5".into()),
+            );
+        }
+        if job.mode == MODE_NATIVE_FPKG && !scan.fpkg_ready {
+            return custom_error(
+                &app,
+                &id,
+                format!(
+                    "El dump no está preparado para FPKG: {}",
+                    scan.fpkg_blockers.join(" · ")
+                ),
             );
         }
         match crate::ps5::manifest(&input) {
@@ -1305,6 +1320,16 @@ async fn run_ps5_workflow(
                 "newfs".into(),
                 "-D".into(),
                 job.input.clone(),
+                execution.output.clone(),
+            ],
+        ),
+        MODE_NATIVE_FPKG => (
+            "Creando FPKG nativo de PS5",
+            vec![
+                "convert".into(),
+                "--input".into(),
+                job.input.clone(),
+                "--output".into(),
                 execution.output.clone(),
             ],
         ),
@@ -1452,6 +1477,33 @@ async fn run_ps5_workflow(
                 expected.as_ref().map(|value| value.len()).unwrap_or(0)
             )
         }
+        MODE_NATIVE_FPKG => {
+            let verify_args = vec![
+                "validate".into(),
+                "--input".into(),
+                execution.output.clone(),
+            ];
+            match capture_failure(
+                run_ps5_capture(tool_id, &tool, &verify_args, cancel.as_ref()).await,
+                "LibProsperoPKG validate",
+            ) {
+                Ok(report) => {
+                    let checks = report
+                        .lines()
+                        .filter(|line| line.starts_with("[Pass]"))
+                        .count();
+                    format!("FPKG aceptado por {checks} comprobaciones estructurales")
+                }
+                Err(message) if message == "__canceled__" => {
+                    staged.cleanup();
+                    return custom_canceled(&app, &id);
+                }
+                Err(message) => {
+                    staged.cleanup();
+                    return custom_error(&app, &id, message);
+                }
+            }
+        }
         MODE_FFPFSC => {
             // `pack folder` crea un exFAT dentro del PFS. `verify --source-dir`
             // compararia el dump con ese unico archivo interior; para comprobar
@@ -1548,6 +1600,7 @@ async fn run_ps5_workflow(
         done.phase = match job.mode.as_str() {
             MODE_EXFAT => "Listo · exFAT verificado",
             MODE_FFPKG => "Listo · FFPKG verificado",
+            MODE_NATIVE_FPKG => "Listo · FPKG PS5 verificado",
             MODE_FFPFSC | MODE_COMPRESS => "Listo · FFPFSC verificado",
             MODE_EXTRACT => "Listo · dump extraido y verificado",
             _ => "Listo",

@@ -10,8 +10,9 @@ pub const MODE_FFPKG: &str = "ps5ffpkg";
 pub const MODE_FFPFSC: &str = "ps5ffpfsc";
 pub const MODE_COMPRESS: &str = "ps5compress";
 pub const MODE_EXTRACT: &str = "ps5extract";
-/// Identificadores reservados para motores PS5 que todavía no son ejecutables.
+/// FPKG nativo ya usa un motor verificable; LZ4 queda reservado hasta que se publique su encoder.
 pub const MODE_NATIVE_FPKG: &str = "ps5fpkg";
+#[allow(dead_code)]
 pub const MODE_LZ4: &str = "ps5lz4";
 pub const CLUSTER_SIZE: u64 = 64 * 1024;
 const SAMPLE_LIMIT: u64 = 32 * 1024 * 1024;
@@ -23,6 +24,7 @@ pub struct Ps5Scan {
     pub title_id: Option<String>,
     pub title: Option<String>,
     pub version: Option<String>,
+    pub content_id: Option<String>,
     pub file_count: u64,
     pub directory_count: u64,
     pub raw_bytes: u64,
@@ -30,6 +32,9 @@ pub struct Ps5Scan {
     pub compressed_estimate_bytes: u64,
     pub estimated_savings_percent: f32,
     pub recommended_format: String,
+    pub fpkg_ready: bool,
+    pub fpkg_module_count: u64,
+    pub fpkg_blockers: Vec<String>,
     pub warnings: Vec<String>,
     pub error: Option<String>,
 }
@@ -47,15 +52,13 @@ struct Stats {
 pub fn is_mode(mode: &str) -> bool {
     matches!(
         mode,
-        MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT
+        MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT | MODE_NATIVE_FPKG
     )
 }
 
+#[allow(dead_code)]
 pub fn experimental_block_reason(mode: &str) -> Option<&'static str> {
     match mode {
-        MODE_NATIVE_FPKG => Some(
-            "FPKG nativo de PS5 está bloqueado hasta disponer de una build corregida y verificable",
-        ),
         MODE_LZ4 => Some(
             "LZ4/Lizard está bloqueado hasta que exista un encoder o una especificación pública",
         ),
@@ -66,6 +69,7 @@ pub fn experimental_block_reason(mode: &str) -> Option<&'static str> {
 pub fn tool_for(mode: &str) -> Option<&'static str> {
     match mode {
         MODE_FFPKG => Some("ufs2tool"),
+        MODE_NATIVE_FPKG => Some("prospero"),
         MODE_EXFAT | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT => Some("mkpfs"),
         _ => None,
     }
@@ -87,6 +91,7 @@ pub fn output_ext(mode: &str) -> Option<&'static str> {
     match mode {
         MODE_EXFAT => Some("exfat"),
         MODE_FFPKG => Some("ffpkg"),
+        MODE_NATIVE_FPKG => Some("pkg"),
         MODE_FFPFSC | MODE_COMPRESS => Some("ffpfsc"),
         _ => None,
     }
@@ -222,7 +227,17 @@ fn find_json_string(value: &serde_json::Value, keys: &[&str]) -> Option<String> 
     }
 }
 
-fn metadata(root: &Path) -> Result<(Option<String>, Option<String>, Option<String>), String> {
+fn metadata(
+    root: &Path,
+) -> Result<
+    (
+        Option<String>,
+        Option<String>,
+        Option<String>,
+        Option<String>,
+    ),
+    String,
+> {
     let path = root.join("sce_sys").join("param.json");
     let text = std::fs::read_to_string(&path)
         .map_err(|e| format!("No se pudo leer sce_sys/param.json: {e}"))?;
@@ -232,7 +247,79 @@ fn metadata(root: &Path) -> Result<(Option<String>, Option<String>, Option<Strin
         find_json_string(&value, &["titleId", "title_id"]),
         find_json_string(&value, &["titleName", "title_name", "name"]),
         find_json_string(&value, &["contentVersion", "content_version", "version"]),
+        find_json_string(&value, &["contentId", "content_id"]),
     ))
+}
+
+fn first_magic(path: &Path) -> Option<u32> {
+    let mut file = std::fs::File::open(path).ok()?;
+    let mut bytes = [0u8; 4];
+    file.read_exact(&mut bytes).ok()?;
+    Some(u32::from_le_bytes(bytes))
+}
+
+fn valid_content_id(value: &str) -> bool {
+    let bytes = value.as_bytes();
+    bytes.len() == 36
+        && bytes[6] == b'-'
+        && bytes[16] == b'_'
+        && bytes[19] == b'-'
+        && bytes.iter().enumerate().all(|(index, byte)| {
+            matches!(index, 6 | 16 | 19) || byte.is_ascii_uppercase() || byte.is_ascii_digit()
+        })
+}
+
+fn collect_fpkg_modules(
+    root: &Path,
+    current: &Path,
+    modules: &mut u64,
+    blockers: &mut Vec<String>,
+) {
+    let Ok(entries) = std::fs::read_dir(current) else {
+        return;
+    };
+    for entry in entries.flatten() {
+        let path = entry.path();
+        if path.is_dir() {
+            if path == root.join("decrypted") {
+                continue;
+            }
+            collect_fpkg_modules(root, &path, modules, blockers);
+            continue;
+        }
+        let name = path
+            .file_name()
+            .map(|value| value.to_string_lossy().to_lowercase())
+            .unwrap_or_default();
+        if name != "eboot.bin"
+            && !name.ends_with(".elf")
+            && !name.ends_with(".prx")
+            && !name.ends_with(".sprx")
+        {
+            continue;
+        }
+        *modules += 1;
+        let relative = path.strip_prefix(root).unwrap_or(&path);
+        match first_magic(&path) {
+            // ELF sin cifrar: el motor puede firmarlo directamente.
+            Some(0x464c_457f) => {}
+            // SELF: hace falta su copia ELF bajo decrypted/ con la misma ruta.
+            Some(0xeef5_1454) => {
+                let decrypted = root.join("decrypted").join(relative);
+                if first_magic(&decrypted) != Some(0x464c_457f) {
+                    blockers.push(format!(
+                        "Falta el ELF descifrado de {} en decrypted/{}",
+                        relative.display(),
+                        relative.display()
+                    ));
+                }
+            }
+            _ => blockers.push(format!(
+                "{} no es un módulo ELF/SELF reconocible",
+                relative.display()
+            )),
+        }
+    }
 }
 
 pub fn scan(dir: &str) -> Ps5Scan {
@@ -242,6 +329,7 @@ pub fn scan(dir: &str) -> Ps5Scan {
         title_id: None,
         title: None,
         version: None,
+        content_id: None,
         file_count: 0,
         directory_count: 0,
         raw_bytes: 0,
@@ -249,6 +337,9 @@ pub fn scan(dir: &str) -> Ps5Scan {
         compressed_estimate_bytes: 0,
         estimated_savings_percent: 0.0,
         recommended_format: "ffpkg".into(),
+        fpkg_ready: false,
+        fpkg_module_count: 0,
+        fpkg_blockers: vec![],
         warnings: vec![],
         error: Some(error),
     };
@@ -268,7 +359,7 @@ pub fn scan(dir: &str) -> Ps5Scan {
     if stats.files == 0 {
         return invalid("La carpeta del juego esta vacia".into());
     }
-    let (title_id, title, version) = match metadata(root) {
+    let (title_id, title, version, content_id) = match metadata(root) {
         Ok(value) => value,
         Err(error) => return invalid(error),
     };
@@ -288,11 +379,27 @@ pub fn scan(dir: &str) -> Ps5Scan {
     if estimated_savings_percent < 10.0 {
         warnings.push("El muestreo indica que FFPFSC ahorraría poco espacio".into());
     }
+    let mut fpkg_blockers = vec![];
+    let mut fpkg_module_count = 0;
+    collect_fpkg_modules(root, root, &mut fpkg_module_count, &mut fpkg_blockers);
+    if fpkg_module_count == 0 {
+        fpkg_blockers.push("No se encontró ningún módulo ejecutable de PS5".into());
+    }
+    if content_id
+        .as_deref()
+        .map(|value| !valid_content_id(value))
+        .unwrap_or(true)
+    {
+        fpkg_blockers
+            .push("sce_sys/param.json no contiene un contentId válido de 36 caracteres".into());
+    }
+    let fpkg_ready = fpkg_blockers.is_empty();
     Ps5Scan {
         valid: true,
         title_id,
         title,
         version,
+        content_id,
         file_count: stats.files,
         directory_count: stats.directories,
         raw_bytes: stats.raw_bytes,
@@ -300,6 +407,9 @@ pub fn scan(dir: &str) -> Ps5Scan {
         compressed_estimate_bytes,
         estimated_savings_percent,
         recommended_format: "ffpkg".into(),
+        fpkg_ready,
+        fpkg_module_count,
+        fpkg_blockers,
         warnings,
         error: None,
     }
@@ -377,6 +487,53 @@ mod tests {
         assert_eq!(result.title_id.as_deref(), Some("PPSA12345"));
         assert_eq!(result.file_count, 2);
         assert!(result.image_bytes > result.raw_bytes);
+        assert!(!result.fpkg_ready);
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn accepts_a_decrypted_dump_for_native_fpkg() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-fpkg-ready-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        std::fs::create_dir_all(root.join("sce_sys")).unwrap();
+        std::fs::write(root.join("eboot.bin"), [0x7f, b'E', b'L', b'F', 0, 0, 0, 0]).unwrap();
+        std::fs::write(
+            root.join("sce_sys/param.json"),
+            r#"{"titleId":"PPSA99099","titleName":"Prueba","contentId":"UP9000-PPSA99099_00-PROSPERO00000000"}"#,
+        )
+        .unwrap();
+        let result = scan(&root.to_string_lossy());
+        assert!(result.valid);
+        assert!(result.fpkg_ready, "{:?}", result.fpkg_blockers);
+        assert_eq!(result.fpkg_module_count, 1);
+        assert_eq!(
+            result.content_id.as_deref(),
+            Some("UP9000-PPSA99099_00-PROSPERO00000000")
+        );
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn blocks_native_fpkg_when_a_self_has_no_decrypted_elf() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-fpkg-encrypted-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        std::fs::create_dir_all(root.join("sce_sys")).unwrap();
+        std::fs::write(root.join("eboot.bin"), [0x54, 0x14, 0xf5, 0xee, 0, 0, 0, 0]).unwrap();
+        std::fs::write(
+            root.join("sce_sys/param.json"),
+            r#"{"contentId":"UP9000-PPSA99099_00-PROSPERO00000000"}"#,
+        )
+        .unwrap();
+        let result = scan(&root.to_string_lossy());
+        assert!(result.valid);
+        assert!(!result.fpkg_ready);
+        assert!(result.fpkg_blockers[0].contains("decrypted"));
         let _ = std::fs::remove_dir_all(root);
     }
 
@@ -416,15 +573,14 @@ mod tests {
 
     #[test]
     fn keeps_experimental_ps5_modes_out_of_the_job_engine() {
-        assert!(!is_mode(MODE_NATIVE_FPKG));
+        assert!(is_mode(MODE_NATIVE_FPKG));
         assert!(!is_mode(MODE_LZ4));
-        assert!(experimental_block_reason(MODE_NATIVE_FPKG)
-            .unwrap()
-            .contains("build corregida"));
+        assert_eq!(experimental_block_reason(MODE_NATIVE_FPKG), None);
         assert!(experimental_block_reason(MODE_LZ4)
             .unwrap()
             .contains("encoder"));
-        assert_eq!(tool_for(MODE_NATIVE_FPKG), None);
+        assert_eq!(tool_for(MODE_NATIVE_FPKG), Some("prospero"));
+        assert_eq!(output_ext(MODE_NATIVE_FPKG), Some("pkg"));
         assert_eq!(output_ext(MODE_LZ4), None);
     }
 

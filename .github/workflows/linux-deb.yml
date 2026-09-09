@@ -29,6 +29,11 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Preparar .NET para el motor FPKG de PS5
+        uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: 10.0.x
+
       - name: Instalar dependencias de Tauri y de la prueba grafica
         run: |
           sudo apt-get update
@@ -59,6 +64,7 @@ jobs:
             src-tauri/src/verification.rs
           cargo test --manifest-path src-tauri/Cargo.toml
           npm run dist:linux
+          src-tauri/binaries/romforge-prospero-bridge --version
 
       - name: Validar e instalar el paquete
         run: |
@@ -70,7 +76,9 @@ jobs:
           mv "$built_deb" "$deb"
           (cd "$bundle_dir" && sha256sum "$(basename "$deb")" > SHA256SUMS)
           dpkg-deb --info "$deb"
-          dpkg-deb --contents "$deb"
+          dpkg-deb --contents "$deb" | tee "$bundle_dir/CONTENTS"
+          grep -q romforge-prospero-bridge "$bundle_dir/CONTENTS"
+          grep -q GPL-3.0-LibProsperoPKG.txt "$bundle_dir/CONTENTS"
           (cd "$bundle_dir" && sha256sum --check SHA256SUMS)
           sudo apt-get install -y "./$deb"
           command -v romforge-studio
@@ -108,6 +116,19 @@ jobs:
           "$ufs2tool" fsck_ufs -n "$work/game.ffpkg"
           "$ufs2tool" extract "$work/game.ffpkg" "$work/ufs-out"
           diff -rq "$work/source" "$work/ufs-out"
+
+      - name: Probar FPKG nativo de PS5
+        run: |
+          work="$(mktemp -d)"
+          trap 'rm -rf "$work"' EXIT
+          git clone --depth 1 --branch v2.5 \
+            https://github.com/SvenGDK/LibProsperoPKG.git "$work/libprospero"
+          bridge="src-tauri/binaries/romforge-prospero-bridge"
+          "$bridge" convert \
+            --input "$work/libprospero/src/HomebrewTest" \
+            --output "$work/smoke.pkg"
+          test -s "$work/smoke.pkg"
+          "$bridge" validate --input "$work/smoke.pkg"
 
       - name: Prueba de arranque de la interfaz
         run: |
