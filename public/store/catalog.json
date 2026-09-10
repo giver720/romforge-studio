@@ -1100,7 +1100,7 @@
       "name": "3DS-CLI",
       "summary": "Run full RISCV Linux on many game consoles",
       "author": "cmdada",
-      "version": "5.0.1",
+      "version": "5.1",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/cmdada/3DS-CLI/main/icon.png",
       "release_url": "https://github.com/cmdada/3DS-CLI/releases",
@@ -1108,14 +1108,14 @@
         {
           "format": "zip",
           "filename": "3ds_cli.zip",
-          "url": "https://github.com/cmdada/3DS-CLI/releases/download/5.0.1/3ds_cli.zip",
-          "size": 63347209
+          "url": "https://github.com/cmdada/3DS-CLI/releases/download/5.1/3ds_cli.zip",
+          "size": 63052752
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-28T16:45:35Z"
+      "updated_at": "2026-09-10T13:42:07Z"
     },
     {
       "id": "universal-db:icicle1133/3ds-Controller",
@@ -48823,7 +48823,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5722,
+      "popularity": 5728,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48850,7 +48850,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2342,
+      "popularity": 2345,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48877,7 +48877,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4650,
+      "popularity": 4653,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48904,7 +48904,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4341,
+      "popularity": 4344,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48931,7 +48931,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36363,
+      "popularity": 36374,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49232,30 +49232,30 @@
       "updated_at": "2026-06-21 15:37:35 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-5.17.7.elf",
+      "id": "ps5-payloads-atlas:ps5upload-5.17.8.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v5.17.7",
+      "version": "v5.17.8",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-5.17.7.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.7/ps5upload-5.17.7.elf",
-          "sha256": "0fe96f274a9720aba66de8d6ea385f792cbca42e6cff7549685d34c9263c9b5d"
+          "filename": "ps5upload-5.17.8.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.8/ps5upload-5.17.8.elf",
+          "sha256": "89298249535d3f7c9be489ff2f7d8757093b6f4029dd7eb28caf85028f572e85"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-09 05:34:44 UTC+8"
+      "updated_at": "2026-09-10 23:42:03 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -74125,7 +74125,7 @@
           "filename": "CompatTitleInstaller.hbas",
           "url": "https://wiiu.cdn.fortheusers.org/packages/CompatTitleInstaller/manifest.install",
           "size": 7456,
-          "sha256": "9a508f58ed402e7ab87a911c70a669f71cb660a82ac085d98e7561e7730f3a62"
+          "sha256": "29e633a4a888ea208f467e9828e6e8f6f6fea27e186aea303c717b47a517cfbf"
         }
       ],
       "popularity": 88577,
@@ -74133,7 +74133,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
       "license_url": null,
-      "updated_at": "2026-09-07"
+      "updated_at": "2026-09-10"
     },
     {
       "id": "hbas-wiiu:vWii_decaffeinator",
