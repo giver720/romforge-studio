@@ -1820,37 +1820,6 @@
       "updated_at": "2024-08-29T04:28:13Z"
     },
     {
-      "id": "universal-db:SuperSaiyajinStackZ/3DZwei",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "3DZwei",
-      "summary": "A memory cardgame clone for Nintendo 3DS.",
-      "author": "Universal-Team",
-      "version": "v0.2.0",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/3DZwei/master/3ds/app/icon.png",
-      "release_url": "https://github.com/SuperSaiyajinStackZ/3DZwei/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "3DZwei.3dsx",
-          "url": "https://github.com/Universal-Team/3DZwei/releases/download/v0.2.0/3DZwei.3dsx",
-          "size": 1185672
-        },
-        {
-          "format": "cia",
-          "filename": "3DZwei.cia",
-          "url": "https://github.com/Universal-Team/3DZwei/releases/download/v0.2.0/3DZwei.cia",
-          "size": 934848
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2020-07-26T19:27:23Z"
-    },
-    {
       "id": "vitadbtoo-vita:65",
       "platforms": [
         "psvita"
@@ -38067,7 +38036,7 @@
       "name": "MSPA-3DS",
       "summary": "A Homestuck (and other MSPA's) reader for the 3DS",
       "author": "Lumi",
-      "version": "v1.0.0",
+      "version": "v1.1.0",
       "license": null,
       "icon_url": "https://db.universal-team.net/assets/images/icons/mspa-3ds.png",
       "release_url": "https://github.com/Animalino5/MSPA-3DS/releases",
@@ -38075,14 +38044,14 @@
         {
           "format": "3dsx",
           "filename": "MSPA-3DS.3dsx",
-          "url": "https://github.com/Animalino5/MSPA-3DS/releases/download/v1.0.0/MSPA-3DS.3dsx",
-          "size": 256032
+          "url": "https://github.com/Animalino5/MSPA-3DS/releases/download/v1.1.0/MSPA-3DS.3dsx",
+          "size": 256588
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-06-27T19:48:19Z"
+      "updated_at": "2026-09-10T17:37:52Z"
     },
     {
       "id": "vitadbtoo-vita:434",
@@ -48823,7 +48792,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5728,
+      "popularity": 5732,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48850,7 +48819,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2345,
+      "popularity": 2346,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48877,7 +48846,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4653,
+      "popularity": 4658,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48904,7 +48873,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4344,
+      "popularity": 4346,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48931,7 +48900,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36374,
+      "popularity": 36395,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48958,7 +48927,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1461,
+      "popularity": 1464,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
