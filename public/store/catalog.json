@@ -490,7 +490,7 @@
       "version": "v.1.2",
       "title_id": "2SHIP2HAR",
       "description": "2ship2harkinian is a sourceport of The Legend of Zelda: Majora's Mask based off the decompilation efforts of the game. It features several enhancements and mods support. The Vita port is based on version 1.1.2 (Satoko Charlie).",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: N64",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: N64 in ux0:data/2s2h",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1b2863429f4d3c3f88067fe62dfaa951a2a32c14948cf30ce10e1014d729d249.png",
       "screenshots": [
@@ -1818,6 +1818,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2024-08-29T04:28:13Z"
+    },
+    {
+      "id": "universal-db:SuperSaiyajinStackZ/3DZwei",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "3DZwei",
+      "summary": "A memory cardgame clone for Nintendo 3DS.",
+      "author": "Universal-Team",
+      "version": "v0.2.0",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/3DZwei/master/3ds/app/icon.png",
+      "release_url": "https://github.com/SuperSaiyajinStackZ/3DZwei/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "3DZwei.3dsx",
+          "url": "https://github.com/Universal-Team/3DZwei/releases/download/v0.2.0/3DZwei.3dsx",
+          "size": 1185672
+        },
+        {
+          "format": "cia",
+          "filename": "3DZwei.cia",
+          "url": "https://github.com/Universal-Team/3DZwei/releases/download/v0.2.0/3DZwei.cia",
+          "size": 934848
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2020-07-26T19:27:23Z"
     },
     {
       "id": "vitadbtoo-vita:65",
@@ -5084,7 +5115,7 @@
       "version": "v.0.8",
       "title_id": "AVPGOLD20",
       "description": "AvP Gold Vita is a port of AvP Classic 2000, an FPS made by Rebellion Developments set in Aliens vs Predator world. You can play as a Marine, as an Alien or as a Predator; the game features three different campaigns and a skirmish mode to play against bots in deatmatch games.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/AvP",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/998d65174f430c934982dab55eec46592e5b3de045142f9e61ae035b3c033b91.png",
       "screenshots": [
@@ -5188,7 +5219,7 @@
       "version": "v.1.4",
       "title_id": "BABAISYOU",
       "description": "Baba Is You is an award-winning puzzle game where you can change the rules by which you play. In every level, the rules themselves are present as blocks you can interact with; by manipulating them, you can change how the level works and cause surprising, unexpected interactions!",
-      "requirements": "- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android",
+      "requirements": "- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- libshacccg.suprx in ur0:data\n- Game Data Files: Android in ux0:data/baba",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/081bbddb49010095b45568c128dc3e2144efc2ca9672315ac57101d2563e1e1d.png",
       "screenshots": [
@@ -5822,7 +5853,7 @@
       "version": "v.0.33h",
       "title_id": "BASILISK0",
       "description": "Port of Basilisk II to the PSVita. Based off Chilly Willy's port to the PSP.\nBasilisk II is an Open Source 68k Macintosh emulator. That is, it allows you to run 68k MacOS software on your computer, even if you are using a different operating system. However, you still need a copy of MacOS and a Macintosh ROM image to use Basilisk II.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/BasiliskII",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/6e2ad381b988c6b03039c9f4da3f1d3016309997ff75533029b666b5db1b911b.png",
       "screenshots": [
@@ -6075,7 +6106,7 @@
       "version": "v.1.0",
       "title_id": "BC2000000",
       "description": "This is a wrapper/port of Battlefield: Bad Company 2 Android for the PS Vita.\nThe port works by loading the official Android ARMv6 executable in memory, resolving its imports with native functions and patching it in order to properly run.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/bc2",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/16fb69931aa9b7df1f2be0746e5cd278fda81640096fd886e1bc6f98b4825b62.png",
       "screenshots": [
@@ -9332,7 +9363,7 @@
       "version": "v.1.0",
       "title_id": "BULLY0000",
       "description": "This is a wrapper/port of Bully: Anniversary Edition for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/Bully",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/37ac44d302c68eeb7d35147b2cb43947eb6ad2492465da59776f86106aa02ba1.png",
       "screenshots": [
@@ -9959,7 +9990,7 @@
       "version": "v.1.05",
       "title_id": "CANNONBAL",
       "description": "PSVita port of Cannonball, an enhanced Outrun engine by djyt.",
-      "requirements": "- Game Data Files",
+      "requirements": "- Game Data Files in ux0:data/cannonball",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/6002bdb6fb89ac659fa21082463a9d80260da0f30d24a8584a32de64325b77da.png",
       "screenshots": [
@@ -11300,7 +11331,7 @@
       "version": "v.3.1",
       "title_id": "CHOC66666",
       "description": "Chocolate Doom is a sourceport of Doom allowing you to play Doom, Doom 2, Final Doom, Heretic, Sigil, Hexen and Strife.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/chocolate",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/72293e44bcc8aaad6a6e2f03fc77df6b06e879f958870292534c1b1503c4e1f2.png",
       "screenshots": [
@@ -11771,7 +11802,7 @@
           "format": "3dsx",
           "filename": "ClassiCube-3ds.3dsx",
           "url": "https://cdn.classicube.net/client/latest/ClassiCube-3ds.3dsx",
-          "size": 783432
+          "size": 783548
         },
         {
           "format": "cia",
@@ -12062,11 +12093,6 @@
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/boz_vita.vpk",
           "size": 1936614,
           "md5": "3b98f740a9e7c7c5d7d8bb74d7fef11f"
-        },
-        {
-          "format": "data",
-          "filename": "boz_vita-lgpl-relink-kit.zip",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/boz_vita-lgpl-relink-kit.zip"
         }
       ],
       "popularity": 12469,
@@ -13326,7 +13352,7 @@
       "version": "v.1.2",
       "title_id": "CRAZYTAXI",
       "description": "This is a wrapper/port of Craxy Taxi Classic Android for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/crazytaxi",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/7da8a8979887ace94b802e60a37d3033ab46a1345d0b30e8f36a13eb2f7f3325.png",
       "screenshots": [
@@ -13898,7 +13924,7 @@
       "version": "v.0.2.2",
       "title_id": "CSPOT0021",
       "description": "A Spotify player for PS Vita.\nOnly to be used with premium spotify accounts!\nRequires iTLS-Enso or newer firmware.",
-      "requirements": "- libshacccg.suprx\n- iTLS-Enso or latest firmware",
+      "requirements": "- libshacccg.suprx in ur0:data\n- iTLS-Enso or latest firmware",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f16b21c81f91cb5d5a156864a5a34365d4877558c7257248036b887cc3efe51f.png",
       "screenshots": [],
@@ -14887,7 +14913,7 @@
       "version": "v.Nightly",
       "title_id": "DEDALOX64",
       "description": "This download is updated every night, at midnight, PDT, to the latest nightly release. Daedalus X64 is a Nintendo 64 emulator originally for Linux and PSP ported to PSVITA thanks to vitaGL usage.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/DaedalusX64",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/932a2c421cd1217626c59ea726d5e6a16ba737f98ce86c193db75e9e633fcec9.png",
       "screenshots": [],
@@ -15442,7 +15468,7 @@
       "version": "v.1.3",
       "title_id": "DEADSPACE",
       "description": "Dead Space is a 2011 survival horror mobile game for iOS and Android devices. A spin-off within the Dead Space series, the game is set after the events of original Dead Space and prior to the events of Dead Space 2 and shows how the Necromorph outbreak began and spread through the Titan Sprawl.\nThis homebrew is a loader of the Xperia Play release of Dead Space, based on the Android SO Loader by TheFloW. The loader provides a tailored, minimalistic Android-like environment to run the official ARMv6 game executable on the PS Vita.\nPlease, read the installation instructions on GitHub.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx v.0.3 or higher\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx v.0.3 or higher in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/deadspace",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ec0c9eaf7a7645a700f8b6937ade5b7199b263ff469f2ec1d565f00b2bb04b6d.png",
       "screenshots": [
@@ -16391,7 +16417,7 @@
       "version": "v.0.5.0 Beta 1",
       "title_id": "DVLX00001",
       "description": "A port of Diablo for PSVita based on the devilutionX project.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/DVLX00001",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a90fb83f8ece2621b90a948e3f353a82d798cf4781dd69a1ca7c84fdc31232b7.png",
       "screenshots": [
@@ -17149,7 +17175,7 @@
       "version": "v.1.0.1",
       "title_id": "DOOM64EX1",
       "description": "Doom64EX Vita is a port of Doom64EX for the PSVITA/PSTV.\nDoom64EX is a reverse-engineering project aimed to recreate Doom64 as close as possible with additional modding features.",
-      "requirements": "- libshacccg.suprx.\n- Game Data Files: PC Steam or N64.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: PC Steam or N64 in ux0:data/Doom64EX",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f67ac4bb0c999845ef651fafca2a5f37528aef7d9c34975b2395585d05692b02.png",
       "screenshots": [
@@ -17353,7 +17379,7 @@
       "name": "dRally Vita",
       "summary": "Port of Death Rally for PSVITA.",
       "author": "Enrique Somolinos Perez",
-      "version": "v.0.3",
+      "version": "v.1.2",
       "title_id": "DERA00002",
       "description": "Port of Death Rally, an arcade car simulation game released in 1996, for the PSVITA.",
       "requirements": "",
@@ -17364,17 +17390,17 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Death_rally.vpk",
-          "url": "https://github.com/enriquesomolinos/dRally-vita/releases/download/0.3/Death_rally.vpk",
-          "size": 2497567,
-          "md5": "d3566e291fe24dba4459622e8fa0c22a"
+          "filename": "823-Death_rally.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/823-Death_rally.vpk",
+          "size": 2497551,
+          "md5": "2b7d4ff5f71b6925c4d60acc5e88ff83"
         }
       ],
       "popularity": 3026,
       "source": "VitaDBtoo",
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
-      "updated_at": "2022-05-18"
+      "updated_at": "2026-08-26"
     },
     {
       "id": "universal-db:Cruel/DrawAttack",
@@ -17863,7 +17889,7 @@
       "version": "v.0.9.4",
       "title_id": "DSVITA000",
       "description": "Experimental NDS Emulator for ARM32/PSVita.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b105b96326fa9e2549b569b7dd03c5e1626739214f2fe6dae43dd39a53b00993.png",
       "screenshots": [
@@ -18622,7 +18648,7 @@
       "version": "v.0.8.1.1",
       "title_id": "EASYRPG01",
       "description": "EasyRPG Player is a program that allows to play games created with RPG Maker 2000 and 2003.\n\nIt aims to be a free (as in freedom) cross-platform RPG Maker 2000/2003 interpreter. The main goal is to play all games created with them as the original game interpreter (RPG_RT) does.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/easyrpg-player",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/584da9ba55ab78caf10be0d8906cdfe6587d7017f1183865726991ec2d9da123.png",
       "screenshots": [],
@@ -18915,7 +18941,7 @@
       "version": "v.1.6",
       "title_id": "EDUKE0032",
       "description": "Port of EDuke32, a Duke Nukem 3D source port, for PSVITA. It supports also add-on packs, mods and all other EDuke32 regular features.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/EDuke32",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/2bcca2c99b4b309124370b139a4158a697f39db8dc709d9d42ddd17d291facb4.png",
       "screenshots": [
@@ -20270,7 +20296,7 @@
       "version": "v.0.9.1",
       "title_id": "FAHRENEIT",
       "description": "This is a wrapper/port of Fahrenheit: Indigo Prophecy Android for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.\nBy doing so, it's basically as if we emulate a minimalist Android environment in which we run natively the executable as is.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/fahrenheit",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b759f6ff9116321a5a7b4d6f27106ffee0ab2d8978715bbabc99d128649664fc.png",
       "screenshots": [
@@ -20521,7 +20547,7 @@
       "version": "v.1.3.0-vita.8",
       "title_id": "FOUT00002",
       "description": "Port of Fallout 2 for PSVITA based on a reverse engineering of the game called Fallout 2: Community Edition.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/fallout2",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f73714a204da618c0156eaad14ae1cad99ce5a7330cc6208fa4287395cbd1184.png",
       "screenshots": [
@@ -20557,7 +20583,7 @@
       "version": "v.1.1.0-vita.4",
       "title_id": "FOUT00001",
       "description": "Port of Fallout for PSVITA based on a reverse engineering of the game called Fallout: Community Edition.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/fallout",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/cf4599f4a7cc6554a5ef829fc32e9c71b8d0cd5d5fdf14c6f9a803cd646fbc71.png",
       "screenshots": [
@@ -21083,7 +21109,7 @@
       "version": "v.1.2.3",
       "title_id": "FF3000000",
       "description": "This is a wrapper/port of Final Fantasy 3 Android for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.\nDonation Link: https://ko-fi.com/frangar",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/ff3",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/fbc6dc7662bf08caca0c6b7659050fb421511b6a09c1ad8e0837e7ac6e1449b8.png",
       "screenshots": [
@@ -21118,7 +21144,7 @@
       "version": "v.1.3.1",
       "title_id": "FF4000000",
       "description": "This is a wrapper/port of Final Fantasy IV (3D Remake) Android for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/ff4",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ca8052a02233879870cc07a4a92c1d236f000f83e69d0212fde3c8291c2faeb1.png",
       "screenshots": [
@@ -21154,7 +21180,7 @@
       "version": "v.1.0.1",
       "title_id": "FF4AY0000",
       "description": "This is a wrapper/port of Final Fantasy IV: The After Years Android for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run. By doing so, it's basically as if we emulate a minimalist Android environment in which we run natively the executable as is.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/ff4a",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4c7ca9e156df1f50c60b7fe66c4bd162d8c1696da7f1a883ec14da52515af4db.png",
       "screenshots": [
@@ -21190,7 +21216,7 @@
       "version": "v.1.0",
       "title_id": "FF5000000",
       "description": "This is a wrapper/port of Final Fantasy V Android for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/ff5",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/189b9bf884cf04a7da60ec628029bf444a8ddb577e20052f24b5e4e5b04948bc.png",
       "screenshots": [
@@ -21293,7 +21319,7 @@
       "version": "v.1.1.15",
       "title_id": "FHOMM0002",
       "description": "Heroes of Might and Magic II: The Succession Wars is a turn-based strategy video game developed by Jon Van Caneghem through New World Computing and published in 1996 by the 3DO Company. The game is the second installment of the Heroes of Might and Magic series and is typically credited as the breakout game for the series. Heroes II was voted the sixth-best PC game of all time by PC Gamer in May 1997.\nAn expansion pack, The Price of Loyalty, was released in 1997. Later, 3DO bundled Heroes II and its expansion pack in one box, released as Heroes of Might and Magic II Gold in 1998.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/fheroes2",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e82ee75fe7050f1f62b4e24789d13c2117031b13b27fa75f80affae58d29cc3f.png",
       "screenshots": [
@@ -22629,7 +22655,7 @@
       "version": "v.1.1",
       "title_id": "FLYCASTDC",
       "description": "Flycast Vita is a port of flycast, popular multiplatform Dreamcast emulator maintained by flyinghead. It's based on the standalone version of the emulator modified with added features to fasten the emulation compared to a regular vanilla port of the emulator.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4bc6dee03540ede916ab5cb42d49c1fee0e3e6f600779402ee9beed60cbc77df.png",
       "screenshots": [
@@ -25230,7 +25256,7 @@
       "version": "v.1.02",
       "title_id": "GEOMETRYD",
       "description": "Port of the Android release of Geometry Dash for the PS Vita. Jump and fly your way through danger in this rhythm-based action platformer!\nPrepare for a near impossible challenge in the world of Geometry Dash. Push your skills to the limit as you jump, fly and flip your way through dangerous passages and spiky obstacles.",
-      "requirements": "- libshacccg.suprx\n- libfmodstudio.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- libfmodstudio.suprx\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/gdash",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e7c861029b4702135b010ab07db1cb2d201e872b6891dde294405b796fe3dd51.png",
       "screenshots": [
@@ -25424,7 +25450,7 @@
       "version": "v.1.2",
       "title_id": "GHSTSHP01",
       "description": "Ghostship is a sourceport of Super Mario 64 based off the decompilation efforts of the game. It features several enhancements and mods support. The Vita port is based on version 1.0.2 (Dutchman Charlie) with bugfixes from the in-development branch.",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: N64",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: N64 in ux0:data/ghostship",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/77700dfef37a0fdf2a6948d12b1d185780b4c58e7aa06b0835a5272d323a1a9b.png",
       "screenshots": [
@@ -26367,6 +26393,37 @@
       "updated_at": "2017-02-12T16:35:33Z"
     },
     {
+      "id": "vitadbtoo-vita:1557",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "GrooveSpeed",
+      "summary": "Turntable speed checker for PSVITA using the gyroscope.",
+      "author": "smart-pickle",
+      "version": "v.1.0",
+      "title_id": "GROOVE001",
+      "description": "Turntable speed checker for PSVITA using the gyroscope.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ebf8c4447cec8c18dd85d921105f8836958c8fbc1c2211ace942987413c4c4de.png",
+      "screenshots": [],
+      "release_url": "https://github.com/smart-pickle/GrooveSpeed-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "GrooveSpeedVita.vpk",
+          "url": "https://github.com/smart-pickle/GrooveSpeed-Vita/releases/download/v1.0/GrooveSpeedVita.vpk",
+          "size": 2427118,
+          "md5": "8c97b9026ffb54eff8567b1b9e93b6b8"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-11"
+    },
+    {
       "id": "open-shop-channel-wii:GRRLIB_Examples_Collection",
       "platforms": [
         "wii"
@@ -26407,7 +26464,7 @@
       "version": "v.1.2",
       "title_id": "GTACTW000",
       "description": "A port of Grand Theft Auto: Chinatown Wars for PSVITA/PSTV based on the Android version of the game.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/gtactw",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e62e6e8906a7a54edba2fa22b75271eb115e81e4425269a2dd3a607a41aaf382.png",
       "screenshots": [
@@ -26440,7 +26497,7 @@
       "version": "v.2.1",
       "title_id": "GTASA0000",
       "description": "A port of Grand Theft Auto: San Andreas for PSVITA/PSTV based on the Mobile (Android) version of the game.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/gtasa",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/58cfaa639b114893d1a1ab4f5bf19920559242b4543b92cee8808b06af3cb721.png",
       "screenshots": [
@@ -26635,6 +26692,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2020-05-23"
+    },
+    {
+      "id": "vitadbtoo-vita:1556",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Gun Bros",
+      "summary": "Port of Gun Bros for PSVITA.",
+      "author": "Rocroverss",
+      "version": "v.1.0",
+      "title_id": "BROS00001",
+      "description": "Port of Gun Bros for PSVITA.",
+      "requirements": "- kubridge.skprx and fd_fix.skprx in ur0:tai\n- libshacccg.suprx in ur0:data\n- Gun Bros Samsung 3.1.4 APK and its downloaded files folder, converted with the included script, into ux0:data/gunbros",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c2edac1a7d603398f8900cb9112c87c2d1a798e22bcc992eed8da543b7709939.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Rocroverss/Gun-Bros-Psvita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Gun_Bros.vpk",
+          "url": "https://github.com/Rocroverss/Gun-Bros-Psvita/releases/download/v1.0/Gun_Bros.vpk",
+          "size": 3322402,
+          "md5": "5065c4c462d46c180e844c86164c7414"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-11"
     },
     {
       "id": "vitadbtoo-vita:694",
@@ -28210,7 +28298,7 @@
       "version": "beta2",
       "title_id": "HCR000000",
       "description": "Hill Climb Racing is a game made by Fingersoft, a Finnish game engine where you can control a vehicle and try to survive as far as possible to get more coins for more upgrades, vehicles and stages! Each stage has a different layout, and different obstacles to overcome. Each vehicle has their own strengths and weaknesses, making certain vehicles excel in certain stages, and their vehicles have overalls.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/hcr",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ffb1e52522fd627aff98145219a00f0feef7c9b44e91041b8d0ff506bacb7131.png",
       "screenshots": [
@@ -28375,7 +28463,7 @@
       "version": "v.0.81",
       "title_id": "HKVT12222",
       "description": "Port of Hollow Knight for PSVITA.\nHollow Knight is a classically styled 2D action adventure across a vast interconnected world. Explore twisting caverns, ancient cities and deadly wastes; battle tainted creatures and befriend bizarre bugs; and solve ancient mysteries at the kingdom's heart.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/HollowKnight",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/46c1acc7e0c8131c291d6930ca7c7fa9bd7ec9ab2afe26da1fc4a3dd1b727d55.png",
       "screenshots": [
@@ -28693,7 +28781,7 @@
       "version": "v.1.2.3",
       "title_id": "HOMM00003",
       "description": "This is a wrapper/port of HoMM III: HD Android for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.\nBy doing so, it's basically as if we emulate a minimalist Android environment in which we run natively the executable as is.",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: Android\n- kubridge.skprx",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/homm3hd",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1ccb156d169db996b728009c78137fb45f6ec1cc1d57c59c7337f4c5abb9d408.png",
       "screenshots": [
@@ -31821,7 +31909,7 @@
       "version": "v.01.15",
       "title_id": "VITAKSHOU",
       "description": "Katawa Shoujo r7 is a comprehensive remaster of the 2012 release, bringing in a plethora of improvements, bug fixes and all-new features with no compromise on the original's creative vision.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/ks-video",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/df0f87cfc4591b7b1943a96ebd2724916f198254d3e5102949d0754d362fbfd7.png",
       "screenshots": [
@@ -33333,19 +33421,19 @@
           "format": "3dsx",
           "filename": "isle.3dsx",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.3dsx",
-          "size": 3010444
+          "size": 3031516
         },
         {
           "format": "cia",
           "filename": "isle.cia",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.cia",
-          "size": 2170816
+          "size": 2183104
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-10T00:14:41Z"
+      "updated_at": "2026-09-10T21:29:46Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -34093,7 +34181,7 @@
       "version": "v.0.1",
       "title_id": "LSWCS0000",
       "description": "This is a wrapper/port of Lego Star Wars: The Complete Saga Android for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.\nBy doing so, it's basically as if we emulate a minimalist Android environment in which we run natively the executable as is.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/lswtcs",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d786c9c92b3d0ca299deb0ec573c1d5cf4e752ade3fddc9385c56d3602e5c93b.png",
       "screenshots": [
@@ -35231,7 +35319,7 @@
       "version": "v.1.0",
       "title_id": "MASSEFFEC",
       "description": "A loader for an iOS/Android-exclusive Third-Person Shooter with RPG Elements released as a tie-in game to Mass Effect 3. Please read the installation instructions on GitHub.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/masseffect",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a96b321240b70b4ad29f1ce8915833878be4623d8cb75c0b72428dc63703106e.png",
       "screenshots": [
@@ -35298,7 +35386,7 @@
       "version": "r4",
       "title_id": "MAXP00000",
       "description": "Port of Max Payne for PSVITA/PSTV based on the Android mobile version.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/maxpayne",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/96376bcd9b6289389f20a3380bb5483e9ec44fcdfa8b6d9b1cfb89a73a031294.png",
       "screenshots": [
@@ -36871,7 +36959,7 @@
       "version": "v.1.0",
       "title_id": "CRFT00001",
       "description": "This is a port of the Ludum Dare #22 entry by Notch called Minicraft.\n\nMinicraft is a 2D top-down sandbox game where your final goal is to \"kill the only other sentient being in the world, making sure youâ€™ll be alone forever\" as stated personally by Notch when he first released this game.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/Minicraft",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/2338df730215a8ed8f4a983e06346bac605a383bb13e8f45f69a9dd7099a9d3d.png",
       "screenshots": [
@@ -38799,7 +38887,7 @@
       "version": "Nightly",
       "title_id": "NZZMBSPTB",
       "description": "Call of Duty: Zombies \"de-make\" for PlayStation Portable & VITA, Nintendo Switch & 3DS, Windows, & Linux (ARM & x86). Powered by various Quake sourceports. Includes \"Nacht der Untoten\" and several community-made maps.",
-      "requirements": "- libshacccg.suprx",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Data files in ux0:data/nzp",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e3aea1ac1c7f21812928e612452ace2ca8b7fb9078a588e07083fbf6979ba6cd.png",
       "screenshots": [
@@ -38814,20 +38902,20 @@
           "format": "vpk",
           "filename": "1028-nzp.vpk",
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1028-nzp.vpk",
-          "size": 3612951,
-          "md5": "d6c1f0b2ab51328f4028ba0490a6617c"
+          "size": 2483483,
+          "md5": "98bf509c79633788cf9d962f6eab053b"
         },
         {
           "format": "data",
-          "filename": "nzp-data.zip",
-          "url": "https://files.coolatoms.org/nzp-data.zip"
+          "filename": "1028-data-nzp.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1028-data-nzp.zip"
         }
       ],
       "popularity": 90489,
       "source": "VitaDBtoo",
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
-      "updated_at": "2024-02-05"
+      "updated_at": "2026-09-09"
     },
     {
       "id": "vitadbtoo-psp:910",
@@ -40106,7 +40194,7 @@
       "version": "v.1.0",
       "title_id": "NFSHP0000",
       "description": "This is a wrapper/port of Need for Speed: Hot Pursuit Android for the PS Vita.\nThe port works by loading the official Android ARMv6 executable in memory, resolving its imports with native functions and patching it in order to properly run.",
-      "requirements": "- Game Data Files: Android\n- kubridge.skprx",
+      "requirements": "- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/nfshp",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/2fb5da42c44671cdb320b76ad5062dd669c6281034a3e0ca7be7ea6cc3f5777a.png",
       "screenshots": [
@@ -41228,7 +41316,7 @@
       "version": "v.1.1",
       "title_id": "NREDNECK1",
       "description": "NRedneck (previously Rednukem) is a fork of EDuke32 that adds support for Redneck Rampage and Rednack Rampage: Rides Again.\nRedneck Rampage is a 1997 first-person shooter game developed by Xatrix Entertainment and published by Interplay. The game is a first person shooter with a variety of weapons and levels, but has a hillbilly theme, primarily taking place in a fictional Arkansas town. Many of the weapons and power-ups border on nonsensical, and in some ways it is a parody of both first shooter games and rural American life.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/NRedneck",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3b464b83630d3fd1b0933552f7a62711ad559efd999717ac2bbb7d3948bc78e9.png",
       "screenshots": [
@@ -44447,7 +44535,7 @@
       "version": "v.1.20",
       "title_id": "OSU000001",
       "description": "osu!octave is a free and open source rhythm game designed to play osu!standard beatmaps, optimized for best performance and playability on PlayStation Vita.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/osu",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/8b3571aec0b5976ba87920f440ff8668607189b99ed48868e2b095c10eac00f4.png",
       "screenshots": [
@@ -45494,7 +45582,7 @@
       "version": "v.0.8b",
       "title_id": "ARKSPCLNK",
       "description": "Allows you to stream your PC session to your PSVITA/PSTV similarly to Vita Moonlight.\nDifferently to the latter, this homebrew supports even AMD cards and old NVIDIA ones.",
-      "requirements": "",
+      "requirements": "- PC companion app running on Windows",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/aebacfe7384082803698c04e63e4cac9e91af5fca1369fd0f494c9ef0d2de31f.png",
       "screenshots": [
@@ -45510,11 +45598,6 @@
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/358-pclink.vpk",
           "size": 2599085,
           "md5": "347d5b7a71037d7817d4f2120772713e"
-        },
-        {
-          "format": "data",
-          "filename": "358-data-streamer.zip",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/358-data-streamer.zip"
         }
       ],
       "popularity": 47992,
@@ -45717,7 +45800,7 @@
       "version": "v.1.3",
       "title_id": "PRFCTDARK",
       "description": "This is a port of the Prefect Dark sourceport by fgsfds based on the Perfect Dark decompilation efforts.\nPerfect Dark is a 2000 first-person shooter developed and published by Rare for the Nintendo 64. The first game of the Perfect Dark series, it follows Joanna Dark, an agent of the Carrington Institute research centre, as she attempts to stop an extraterrestrial conspiracy by rival corporation dataDyne. The game features a campaign mode where the player must complete a series of levels to progress through the story, as well as a range of multiplayer options, including a co-operative mode and traditional deathmatch settings with computer-controlled bots.",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: N64",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: N64 in ux0:data/pd",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d887a8e5c96f7c61a2c6fd8ae069629db524d11fffe08dae147cad427622ae0b.png",
       "screenshots": [
@@ -47837,7 +47920,7 @@
       "version": "v.1.2",
       "title_id": "POSTAL001",
       "description": "Take control of The Postal Dude in his infamous first outing as he battles to survive in a world gone mad! POSTAL is a classic isometric shooter filled to the brim with fast-paced explosive action. Crazed gunmen out for your blood await you around every corner, and your only choice is to get them before they get you. Fight back with a destructive arsenal as make your way through a violence-stricken town.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/postal",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/32def508ce807fe21c20a805a447a60ecebfb256b8f6d00e6125acf0d8c4e2c7.png",
       "screenshots": [
@@ -47909,7 +47992,7 @@
       "version": "v.0.1",
       "title_id": "DHEWM3ES2",
       "description": "Potatoom 3 is a PoC level port of Doom 3, popular FPS made by idSoftware with idTech 4 engine.\nThis port is based over a modified version of dhewm3 that adds basic multithreading support to idTech 4 optimized furtherly to squeeze as much performances as possible.",
-      "requirements": "- libshacccg.suprx",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Data files in ux0:data/dhewm3",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b771494e66927137564cc2edd305b9d9a3fe510294173019db5217f8bcc20643.png",
       "screenshots": [
@@ -48792,7 +48875,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5732,
+      "popularity": 5740,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48819,7 +48902,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2346,
+      "popularity": 2347,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48846,7 +48929,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4658,
+      "popularity": 4661,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48873,7 +48956,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4346,
+      "popularity": 4348,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48900,7 +48983,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36395,
+      "popularity": 36415,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48927,7 +49010,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1464,
+      "popularity": 1465,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -49201,30 +49284,30 @@
       "updated_at": "2026-06-21 15:37:35 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-5.17.8.elf",
+      "id": "ps5-payloads-atlas:ps5upload-5.17.10.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v5.17.8",
+      "version": "v5.17.10",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-5.17.8.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.8/ps5upload-5.17.8.elf",
-          "sha256": "89298249535d3f7c9be489ff2f7d8757093b6f4029dd7eb28caf85028f572e85"
+          "filename": "ps5upload-5.17.10.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.10/ps5upload-5.17.10.elf",
+          "sha256": "4039b181fb44d68f05f9d8d8e62062eef39202a2c2b8f3a75cfc3c78dae39a03"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-10 23:42:03 UTC+8"
+      "updated_at": "2026-09-11 11:14:05 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -49335,7 +49418,7 @@
       "version": "v.7.1",
       "title_id": "PSNE00001",
       "description": "SNES emulator, multiplatform port of snes9x emulator.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/psnes",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a1226bc8803ada665073b9164c69cb7f85985e0de8e929689e74a485851f479e.png",
       "screenshots": [
@@ -50720,7 +50803,7 @@
       "version": "v.1.6",
       "title_id": "QKSPMSPKD",
       "description": "Advanced and modern Quake source port with limits removed and high mods compatibility.",
-      "requirements": "- libshacccg.suprx",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Data files in ux0:data/Quakespasm",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9d7c2ecf8d9fffaf98f4e6b191878c3a2eee39dc2d556838053bd006f61b3c66.png",
       "screenshots": [
@@ -50894,7 +50977,7 @@
       "version": "v.1.4",
       "title_id": "QLINSTLPP",
       "description": "QuickLaunch Installer allows you to customize the quick menu shortcuts of your Livearea.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/qlinstaller",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/97cb59d94257013b456840a13461eda8a33a8b2c10135dd2da0aef9f04542746.png",
       "screenshots": [
@@ -52455,7 +52538,7 @@
       "version": "Nightly",
       "title_id": "RETROVITA",
       "description": "RetroArch is the official reference frontend for the libretro API.\nRetroArch is most popularly known for being a program with which you can play many emulators and games, which have all been customized and tailor-ported to the libretro API.\n\nIt is designed to be fast, lightweight, and portable. It tries to be on the cutting edge in terms of technology supported as well as trying to be as backwards compatible as possible.\n\nThis download is updated every night, at midnight, PDT, to the latest nightly release.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/retroarch",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d2e291dcd6bc6b02a9f808e6d41f84281258967300fee882c6fa6c81c369bd43.png",
       "screenshots": [
@@ -52829,7 +52912,7 @@
       "version": "v.1.1",
       "title_id": "RCHT00001",
       "description": "rinCheat SE allows you to apply several cheats to your savedata with few passages.\nYou can select your savedata slot and your preferred cheats from the official database that will be automatically updated at homebrew start.\nrinCheat SE also works as a database updater for rinCheat since when it will download database updates, it will update both rinCheat and rinCheat SE updates.\nIt supports both rinCheat and vita-savemgr.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/rinCheat",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/098f0a93614ee4c8de5d72e0b4a42eef985e65fb59a1546df2c54e2fbc763b28.png",
       "screenshots": [
@@ -55378,7 +55461,7 @@
       "version": "v.1.7",
       "title_id": "SPOP00001",
       "description": "SDLPoP is an open-source project that aims to allow people to play the original Prince of Persia DOS games on modern systems without the use of tools like DosBox. It was originally created by disassembling the code of the original game to get the source.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/prince",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f80b48d9880373930c5349ac5104a072add87c6c99f0a62e6f9b24717b333da8.png",
       "screenshots": [],
@@ -56254,7 +56337,7 @@
       "version": "v.1.2",
       "title_id": "SHIPOFHAR",
       "description": "Ship of Harkinian is a sourceport of The Legend of Zelda: Ocarina of Time based off the decompilation efforts of the game. It features several enhancements and mods support. The Vita port is based on a custom old version (more or less Khan Charlie (6.1.2)).",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: N64",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: N64 in ux0:data/soh",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f72b8ed94ea004ea602efdfacac9167d86924027542aa6fd4e9a2f6376106864.png",
       "screenshots": [
@@ -57711,7 +57794,7 @@
       "version": "v.1.22",
       "title_id": "SMB2SAKED",
       "description": "This is a wrapper/port of Super Monkey Ball 2: Sakura Edition for the PS Vita.\nThe port works by loading the official Android ARMv7 executables in memory, resolving its imports with native functions and patching it in order to properly run. By doing so, it's basically as if we emulate a minimalist Android environment in which we run natively the executable as is.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/smb2",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/bbcd9da9f220d7fc36166c4e7a3663fb84343d32eec0deac7fd29f3b22688cf2.png",
       "screenshots": [
@@ -58869,7 +58952,7 @@
       "version": "beta-2",
       "title_id": "SAIR30000",
       "description": "Sonic 3 A.I.R. (Angel Island Revisited) is a fan-made remaster of the classic Sega game Sonic 3 & Knuckles. This project modernizes the original game by adding widescreen support, improved graphics and audio, and new gameplay features. It is designed to offer a superior playing experience on modern systems while requiring original game data to run.",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: PC/Genesis/MegaDrive",
+      "requirements": "- libshacccg.suprx in ur0:data\n- fd_fix.skprx in ur0:tai\n- Game Data Files: PC/Genesis/MegaDrive in ux0:data/sonic3air",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5a69cedcb9274a128f800733c5d8e85d789d9b3358d879e2fec749656551938f.png",
       "screenshots": [
@@ -58940,7 +59023,7 @@
       "version": "v.2",
       "title_id": "RSDK00001",
       "description": "Port of Sonic CD for PSVITA/PSTV based on the decompilation of Sonic CD 2011.\nThis specific decompilation is based on the PC remake with improvements & tweaks from the mobile remakes.",
-      "requirements": "- Game Data Files: Android OR PC",
+      "requirements": "- Game Data Files: Android OR PC in ux0:data/SonicCD",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/85adce64fcd540b5cf2240e0f7460a1ee0301a75e261d905e8eb35350bfe2992.png",
       "screenshots": [
@@ -59073,7 +59156,7 @@
       "version": "v.1.1",
       "title_id": "MANIA0001",
       "description": "Port of Sonic Mania for PSVITA based on a decompilation project of the game and its engine.",
-      "requirements": "- Game Data Files: PC Steam OR PS4 OR Switch",
+      "requirements": "- Game Data Files: PC Steam OR PS4 OR Switch in ux0:data/Mania",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b688f17237780db1de66518fbd5fe82b2fdd78297f7a42e955774b5130afb7f0.png",
       "screenshots": [
@@ -59574,7 +59657,7 @@
       "version": "v.1.1",
       "title_id": "SOUL00001",
       "description": "This is a wrapper/port of SoulCalibur for the PS Vita. The port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run. By doing so, it's basically as if we emulate a minimalist Android environment in which we run natively the executable as is.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/soulcalibur",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/26a87fbc418f3d222a5ef17f954054bade9ff8453323bc6a9d23d6fa87c4cf9b.png",
       "screenshots": [
@@ -59766,7 +59849,7 @@
       "version": "v.1.1",
       "title_id": "SPAGHETTI",
       "description": "Spaghetti Kart is a sourceport of Mario Kart 64 based off the decompilation efforts of the game. It features several enhancements and mods support. The Vita port is based on version 1.0.0 (Bolognese Alfa) with bugfixes from the in-development branch.",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: N64",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: N64 in ux0:data/spaghetti",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1b6f60507a0dfa9122b491b83c885817f511203af45f619ad2f5ad9ca48e7a0e.png",
       "screenshots": [
@@ -61719,7 +61802,7 @@
       "version": "v.1.0",
       "title_id": "ALLSTARSW",
       "description": "Super Mario All-Stars Vita is a port of smw, a reimplementation of Super Mario World with several enhancements with experimental support for Super Mario All-Stars (Super Mario Bros 1 and Super Mario Bros: Lost Levels).\nThis release acts as an improvement of my previous Super Mario World port, bringing fixes (eg. the tunnels bug is fixed), support for SMB1 and SMB:LL, integer scaling option (IntegerScaling in the ini file), and more.",
-      "requirements": "- Game Data Files: SNES",
+      "requirements": "- Game Data Files: SNES in ux0:data/smworld",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/07c11affa95cb8e55965b62e0fab5d14cba6b4ec6aae1e1c0288b12f416c756b.png",
       "screenshots": [
@@ -61928,7 +62011,7 @@
       "version": "v.1.1.1",
       "title_id": "SPRMRWRLD",
       "description": "Super Mario World Vita is a port of smw, a reimplementation of Super Mario World with several enhancements.",
-      "requirements": "- Game Data Files: SNES",
+      "requirements": "- Game Data Files: SNES in ux0:data/smworld",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d8030c4de40e24c0f3777ff10d07499637cf050927246488f7aec7446779aef4.png",
       "screenshots": [
@@ -62329,7 +62412,7 @@
       "version": "v.1.1",
       "title_id": "SMWAR0000",
       "description": "Super Mario War is a Super Mario multiplayer game.\nThe goal is to stomp as many other Marios as possible to win the game.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/smw",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b959571f9653e9c67ce7ac100967b9f9993b41ea55b607032f3756282a2abc84.png",
       "screenshots": [
@@ -66243,7 +66326,7 @@
       "name": "TJAP_3DS",
       "summary": "TJAPlayer for 3DS - Music game of the TJA file.",
       "author": "TogeToge & MarioGames",
-      "version": "v2.3.3B",
+      "version": "v2.4.0",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/LuMariGames/TJAP_3DS/main/resource/icon.png",
       "release_url": "https://github.com/LuMariGames/TJAP_3DS/releases",
@@ -66251,20 +66334,20 @@
         {
           "format": "3dsx",
           "filename": "TJAP_3DS.3dsx",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.3.3B/TJAP_3DS.3dsx",
-          "size": 9886148
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.0/TJAP_3DS.3dsx",
+          "size": 9892060
         },
         {
           "format": "cia",
           "filename": "TJAP_3DS.cia",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.3.3B/TJAP_3DS.cia",
-          "size": 10048448
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.0/TJAP_3DS.cia",
+          "size": 10052544
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-27T11:41:50Z"
+      "updated_at": "2026-08-30T22:50:46Z"
     },
     {
       "id": "vitadbtoo-psp:984",
@@ -66368,7 +66451,7 @@
       "version": "v.1.2",
       "title_id": "TMBRAIDER",
       "description": "This is a wrapper/port of Tomb Raider 1 Classic and Tomb Raider 2 Classic Android for the PS Vita.\nThe port works by loading the official Android ARMv7 executables in memory, resolving their imports with native functions and patching them in order to properly run.\nBy doing so, it's basically as if we emulate a minimalist Android environment in which we run natively the executables as they are.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/tombraider",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/dbc976259e956549770155efbe47790b3b51afc6c9a06a324c88cbe18671aa5d.png",
       "screenshots": [
@@ -67769,7 +67852,7 @@
       "version": "v.1.0",
       "title_id": "TWOM00000",
       "description": "Port of This War of Mine and This War of Mine: Stores - Father's Promise for PSVITA based on the mobile (Android) version of the game.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/twom",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/df3725f0c2db5e2396c74d1c458fcb05d5830e1fdd88960261e825990aee269e.png",
       "screenshots": [
@@ -70223,7 +70306,7 @@
       "version": "v.1.1",
       "title_id": "DOOM00666",
       "description": "Doom 1/Doom 2 port for PSVITA based on DoomPSP.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/doom",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/7efea6eae7184a48b41067fe4e194b89baab583afe5f0273e0eddb417096afb2.png",
       "screenshots": [],
@@ -71412,7 +71495,7 @@
       "version": "v.1.12",
       "title_id": "RMTCLI001",
       "description": "ezRemote Client is a File Manager application that allows you to connect the VITA to remote FTP, SMB, NFS, WebDAV servers to transfer and manage files. The interface is inspired by Filezilla client which provides a commander like GUI.",
-      "requirements": "- libshacccg.suprx",
+      "requirements": "- libshacccg.suprx in ur0:data",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9b94160dff730fc8226d381238b88e9800831b335323300d880989a9baea08a2.png",
       "screenshots": [
@@ -71960,7 +72043,7 @@
       "version": "v.2.7",
       "title_id": "VITADBDLD",
       "description": "VitaDB Downloader is the official Vita client for VitaDB allowing to easily install homebrews from VitaDB directly from your PSVITA/PSTV.",
-      "requirements": "- libshacccg.suprx",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Data files in ux0:data/VitaDB",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/8064ba8cf5276704931ec20e5c9731e1431ba0966f9e26ff696425b0c196af0f.png",
       "screenshots": [
@@ -72295,7 +72378,7 @@
       "version": "v.2.3",
       "title_id": "HXEN00001",
       "description": "vitaHexenII is a port for PSVITA of Hexen II, a popular dark-fantasy fps created by Raven Software using a modified version of Quake Engine.\nIt's based on vitaQuake core and it shares a lot of features with it.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/Hexen II",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/15c7108894276150362813e67af8c56b4ff579a487f32229219a4dcd365712e5.png",
       "screenshots": [
@@ -72760,7 +72843,7 @@
       "version": "v.1.3",
       "title_id": "VPAD00001",
       "description": "VitaPad allows you to use your PSVITA as a wireless PC controller. It supports Windows (both 32 and 64 bit), Android and Linux.",
-      "requirements": "",
+      "requirements": "- PC companion app running on Windows or Linux",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b4b3201894336172760d3f1f5f2af13cc6e5ad04d1e008c03f4a21aa3e718da7.png",
       "screenshots": [],
@@ -72772,11 +72855,6 @@
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/50-VitaPad.vpk",
           "size": 91438,
           "md5": "0522fc48cf6c389a59d1244e020e1f14"
-        },
-        {
-          "format": "data",
-          "filename": "50-data-VitaPad.zip",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/50-data-VitaPad.zip"
         }
       ],
       "popularity": 52519,
@@ -72893,7 +72971,7 @@
       "version": "v.4.2",
       "title_id": "QUAK00001",
       "description": "vitaQuake is a port of Quake for PSVITA. It's based on glQuake but has several features from different source ports such as ProQuake and similars.\nAt the moment vitaQuake has unique features like Dualshock rumbling when player get hit, an fps counter. It supports also double analogs for comfortable gameplay, online and locale multiplayer with featured servers, soundtracks support, sounds support and a lot more stuffs.",
-      "requirements": "- libshacccg.suprx",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Data files in ux0:data/Quake",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9d7c2ecf8d9fffaf98f4e6b191878c3a2eee39dc2d556838053bd006f61b3c66.png",
       "screenshots": [
@@ -72934,7 +73012,7 @@
       "version": "v.2.4",
       "title_id": "QUAKE0002",
       "description": "Quake II port for PSVITA with network support (both LAN and multiplayer), savestates, soundtrack, sounds and all standard features of Quake II.\nThe port is fully hardware accelerated and supports high res textures pack and official mission packs.",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/quake2",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/01cd6fe1d88fb4c9efbbca12b93d7a653804a636341603c90400a941b8fed4c7.png",
       "screenshots": [
@@ -73080,7 +73158,7 @@
       "version": "v.0.9",
       "title_id": "RTCW00001",
       "description": "A port of Return to Castle Wolfenstein for PSVITA/PSTV based on iortcw.\nWorld War II rages and nations fall. SS head Himmler has Hitler's full backing to twist science and the occult into an army capable of annihilating the Allies once and for all. Battling alone, you're on an intense mission to pierce the black heart of the Third Reich and stop Himmler -- or die trying. Fighting in advanced team-based multiplayer mode, you'll wage your own WWII in an all-out Axis vs. Allies contest for frontline domination.\nPowered by the Quake III Arena engine, the Wolfenstein universe explodes with the kind of epic environments, A.I., firepower and cinematic effects that only a game created by true masters can deliver. The dark reich's closing in. The time to act is now. Evil prevails when good men do nothing.",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: PC Steam",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: PC Steam in ux0:data/iortcw",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/575c5f248bc6045548d13683e1846f893901a07b68bf80494d201523c20c079a.png",
       "screenshots": [
@@ -73619,7 +73697,7 @@
       "version": "v.1.7",
       "title_id": "WLFN0001",
       "description": "vitaWolfen is a port for PSVITA of the classic old school FPS Wolfenstein 3D (formerly WOLF3D). It's based on Wolf4SDL and supports both full game and its expansion (missionpacks included).",
-      "requirements": "",
+      "requirements": "- Data files in ux0:data/Wolfenstein 3D",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/6f9a852ed2e15001bf96a8c8f142aeb59ecc51b56bcb233d96a3e9774fec2667.png",
       "screenshots": [],
@@ -73655,7 +73733,7 @@
       "version": "v.4 fix",
       "title_id": "XASH00001",
       "description": "Xash3D is an open source re-creation of the GoldSrc engine, a modified Quake Engine running Half-Life, Counter Strike and Team Fortress.\nAt the moment vitaXash3D is capable of running Half Life, Counter Strike and their mods.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC in ux0:data/xash3d",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/fcf258922f702bebaeca657dbeac153377c1716326fdeb9fce2ce7c369d0bcf0.png",
       "screenshots": [
@@ -73693,7 +73771,7 @@
       "version": "v.1.0",
       "title_id": "VGLTETRIS",
       "description": "This is a custom version of tetris with 3D graphics written completely from scratch in C.\nThis was mostly a passion project to learn OpenGL and explore the idea of how feasible it would be to store the tetrominos as a 16-bit integer representation of the 4x4 grid containing its block shapes.",
-      "requirements": "- libshacccg.suprx",
+      "requirements": "- libshacccg.suprx in ur0:data",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3427019b04af388aebcac2e399df7a5c7a5bc7d1bc5e3e85fcd9a3dc0e301de1.png",
       "screenshots": [
@@ -77161,7 +77239,7 @@
       "version": "v.1.3",
       "title_id": "WIPEOUT95",
       "description": "Port of Wipeout Rewrite for PSVITA.\nWipeout Rewrite is a reimplementation of the 1995 Wipeout game for modern systems featuring high resolution, 60 FPS support, a modernized renderer, CRT post-processing effect and many more features.",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: PC/PSX",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: PC/PSX in ux0:data/wipeout",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b2ba2c5e64076674e145a068768065196f6c515e900ba1b09bd66c3bb76c8640.png",
       "screenshots": [
@@ -77582,7 +77660,7 @@
       "version": "v.1.2.1",
       "title_id": "WRLDOFGOO",
       "description": "This is a wrapper/port of World of Goo for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/goo",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e8bcbd0e844a591defb2dd72330db3036e3bf31641b0f7a3b50882caff481ce0.png",
       "screenshots": [
@@ -77977,7 +78055,7 @@
       "version": "v.continuous",
       "title_id": "XASH10000",
       "description": "Port of Xash3D-FWGS for PSVITA.\nXash3D-FWGS is an open source re-creation of the GoldSrc engine, a modified Quake Engine running Half-Life, Counter Strike and Team Fortress.\n\nNOTE: Data files are slightly different from vitaXash3D. This means both versions can't be installed at the same time.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: PC",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: PC in ux0:data/xash3d",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ea21c1e094cc19f20ed4e11d671e28f1cee347b2f07d1c64e03c5923d0928aa6.png",
       "screenshots": [
@@ -78826,7 +78904,7 @@
       "version": "v.Nightly",
       "title_id": "YYOLOADER",
       "description": "YoYo Loader is a loader for libyoyo.so, the official GameMaker Studio Runner application for Android, for the PS Vita.\nYoYo Loader works by loading such ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.\nThis enables to run potentially any game made with GameMaker Studio.",
-      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- fd_fix.skprx OR repatch_ex.skprx\n- Game Data Files: Android OR PC/Console Bytecode",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android OR PC/Console Bytecode in ux0:data/gms",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/31908a8a78d451a49d424b135c7e7ec72732102a6504574e41cca958f407b417.png",
       "screenshots": [
@@ -78995,28 +79073,28 @@
       "name": "zelda-alttp-3ds",
       "summary": "Nintendo 3DS dual-screen port of Zelda A Link to the Past based on zelda3",
       "author": "estebanpdn",
-      "version": "v2.9",
+      "version": "v3.0",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/EstebanPdN/zelda-alttp-3ds/main/udicon.png",
       "release_url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "zelda3-3ds-v2.9.3dsx",
-          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v2.9/zelda3-3ds-v2.9.3dsx",
-          "size": 5683548
+          "filename": "zelda3-3ds-v3.0.3dsx",
+          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v3.0/zelda3-3ds-v3.0.3dsx",
+          "size": 5795236
         },
         {
           "format": "cia",
-          "filename": "zelda3-3ds-v2.9.cia",
-          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v2.9/zelda3-3ds-v2.9.cia",
-          "size": 5227456
+          "filename": "zelda3-3ds-v3.0.cia",
+          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v3.0/zelda3-3ds-v3.0.cia",
+          "size": 5272512
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-04T00:21:10Z"
+      "updated_at": "2026-09-10T22:14:06Z"
     },
     {
       "id": "vitadbtoo-vita:993",
@@ -79029,7 +79107,7 @@
       "version": "v.1.3",
       "title_id": "ZELDASNES",
       "description": "Zelda3 Vita is a port of zelda3, a reimplementation of The Legend of Zelda: A Link to The Past with several enhancements.",
-      "requirements": "- Game Data Files: SNES",
+      "requirements": "- Game Data Files: SNES in ux0:data/zelda3",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/13396d56e8d636cc463c0d7208287ee102ae1cd15c042032afde30d33ceafb14.png",
       "screenshots": [
