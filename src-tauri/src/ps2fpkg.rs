@@ -26,7 +26,9 @@ pub fn args(job: &Job, output_dir: &Path) -> Result<Vec<String>, String> {
     for key in ["lua", "config", "icon", "background"] {
         if let Some(path) = option(job, key) {
             if !Path::new(&path).is_file() {
-                return Err(format!("El archivo configurado en {key} ya no existe: {path}"));
+                return Err(format!(
+                    "El archivo configurado en {key} ya no existe: {path}"
+                ));
             }
         }
     }

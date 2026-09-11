@@ -1464,8 +1464,7 @@ mod tests {
         let settings = Settings::default();
 
         for id in [
-            "z3ds", "3dstool", "ctrtool", "makerom", "iso2god", "xiso", "ps2fpkg",
-            "ps3iso", "wit",
+            "z3ds", "3dstool", "ctrtool", "makerom", "iso2god", "xiso", "ps2fpkg", "ps3iso", "wit",
         ] {
             install(id).await.unwrap_or_else(|e| panic!("{id}: {e}"));
             let (path, _) = locate(id, &settings).unwrap_or_else(|| panic!("{id}: no localizado"));
