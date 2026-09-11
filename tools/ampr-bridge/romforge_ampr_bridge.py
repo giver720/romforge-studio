@@ -17,6 +17,15 @@ import sys
 import tempfile
 from typing import Any
 
+# Ubuntu 22.04 usa Python 3.10. El módulo oficial AMPR importa `tomllib`,
+# incorporado en 3.11; el binario autocontenido registra el backport compatible.
+try:
+    import tomllib  # noqa: F401
+except ModuleNotFoundError:
+    import tomli as tomllib
+
+    sys.modules["tomllib"] = tomllib
+
 import ampr_pack
 import build_ampr_index
 

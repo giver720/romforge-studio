@@ -44,7 +44,7 @@ if (-not (Test-Path -LiteralPath (Join-Path $venv "Scripts\python.exe"))) {
     python -m venv $venv
 }
 $python = Join-Path $venv "Scripts\python.exe"
-& $python -m pip install --disable-pip-version-check "lz4==4.4.4" "pyinstaller==6.20.0"
+& $python -m pip install --disable-pip-version-check "lz4==4.4.4" "tomli==2.4.0" "pyinstaller==6.20.0"
 if ($LASTEXITCODE -ne 0) { throw "No se pudieron instalar las dependencias de AMPR Bridge" }
 
 $dist = Join-Path $bridgeRoot "dist\windows"

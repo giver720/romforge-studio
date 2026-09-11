@@ -27,7 +27,7 @@ venv="$bridge/.venv-build-linux"
 if [ ! -x "$venv/bin/python" ]; then
   python3 -m venv "$venv"
 fi
-"$venv/bin/python" -m pip install --disable-pip-version-check "lz4==4.4.4" "pyinstaller==6.20.0"
+"$venv/bin/python" -m pip install --disable-pip-version-check "lz4==4.4.4" "tomli==2.4.0" "pyinstaller==6.20.0"
 
 dist="$bridge/dist/linux"
 work="$bridge/build/linux"
