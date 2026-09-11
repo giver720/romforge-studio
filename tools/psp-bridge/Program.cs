@@ -17,7 +17,7 @@ namespace RomForge.PspBridge;
 
 internal static partial class Program
 {
-    private const string BridgeVersion = "1.0.0";
+    private const string BridgeVersion = "1.0.1";
     private const string AssetsUrl = "https://github.com/SvenGDK/PS-Classics-fPKG-Builder/releases/download/v1/PS.Classics.fPKG.Builder.v1.Linux.x64.tar.gz";
     private const string AssetsSha256 = "3a23ceb4cf29f0dd93f02a961a1e8624a2724785a8dc29be3933247134d91707";
     private const string PspDecryptWindowsUrl = "https://github.com/John-K/pspdecrypt/releases/download/1.0/pspdecrypt-1.0-windows.zip";
@@ -183,21 +183,66 @@ internal static partial class Program
 
     private static void DownloadVerified(string url, string path, string expected, string label)
     {
-        if (File.Exists(path) && Hash(path) == expected) return;
+        if (HashMatches(path, expected)) return;
+
+        Directory.CreateDirectory(Path.GetDirectoryName(path)!);
+        var temporary = $"{path}.{Environment.ProcessId}.{Guid.NewGuid():N}.download";
         Console.WriteLine($"[ROMFORGE] Downloading {label}");
-        using var http = new HttpClient { Timeout = TimeSpan.FromMinutes(30) };
-        http.DefaultRequestHeaders.UserAgent.ParseAdd("ROMForge-PSP-Bridge/1.0");
-        using var response = http.GetAsync(url, HttpCompletionOption.ResponseHeadersRead).GetAwaiter().GetResult();
-        response.EnsureSuccessStatusCode();
-        using var source = response.Content.ReadAsStream();
-        using var destination = File.Create(path);
-        source.CopyTo(destination);
-        destination.Flush();
-        if (Hash(path) != expected)
+        try
         {
-            File.Delete(path);
-            throw new InvalidDataException($"SHA-256 mismatch for {label}.");
+            using (var http = new HttpClient { Timeout = TimeSpan.FromMinutes(30) })
+            {
+                http.DefaultRequestHeaders.UserAgent.ParseAdd("ROMForge-PSP-Bridge/1.0");
+                using var response = http.GetAsync(url, HttpCompletionOption.ResponseHeadersRead).GetAwaiter().GetResult();
+                response.EnsureSuccessStatusCode();
+                using var source = response.Content.ReadAsStream();
+                using var destination = new FileStream(
+                    temporary, FileMode.CreateNew, FileAccess.Write, FileShare.None, 1024 * 128,
+                    FileOptions.SequentialScan);
+                source.CopyTo(destination);
+                destination.Flush(true);
+            }
+
+            // The destination stream must be closed before hashing. A using declaration
+            // scoped to this whole method kept the ZIP locked on Windows during first use.
+            if (!HashMatches(temporary, expected))
+                throw new InvalidDataException($"SHA-256 mismatch for {label}.");
+
+            PublishDownload(temporary, path, expected, label);
         }
+        finally
+        {
+            try { File.Delete(temporary); } catch { }
+        }
+    }
+
+    private static bool HashMatches(string path, string expected)
+    {
+        try { return File.Exists(path) && Hash(path) == expected; }
+        catch (IOException) { return false; }
+        catch (UnauthorizedAccessException) { return false; }
+    }
+
+    private static void PublishDownload(string temporary, string path, string expected, string label)
+    {
+        for (var attempt = 0; attempt < 40; attempt++)
+        {
+            if (HashMatches(path, expected)) return;
+            try
+            {
+                File.Move(temporary, path, true);
+                return;
+            }
+            catch (IOException) when (attempt < 39)
+            {
+                Thread.Sleep(250);
+            }
+            catch (UnauthorizedAccessException) when (attempt < 39)
+            {
+                Thread.Sleep(250);
+            }
+        }
+        throw new IOException($"Could not install {label}; its cache file remains in use.");
     }
 
     private static string Hash(string path)
