@@ -28,3 +28,8 @@ tools/ampr-bridge/.venv-build/
 tools/ampr-bridge/.venv-build-linux/
 tools/ampr-bridge/build/
 tools/ampr-bridge/dist/
+tools/psp-bridge/vendor/
+tools/psp-bridge/publish/
+tools/psp-bridge/bin/
+tools/psp-bridge/obj/
+tools/psp-bridge/.downloads/

@@ -5,6 +5,7 @@ mod ps2fpkg;
 mod ps3;
 mod ps5;
 mod psp;
+mod pspfpkg;
 mod settings;
 mod store;
 mod switch;
@@ -318,6 +319,15 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
         );
     }
 
+    if pspfpkg::is_mode(&spec.mode) {
+        return (
+            dir.join(format!("{stem}.pkg"))
+                .to_string_lossy()
+                .to_string(),
+            None,
+        );
+    }
+
     // Los modos de 3DS necesitan saber la extension de entrada para elegir la de salida
     if threeds::is_mode(&spec.mode) {
         let in_ext = input
@@ -381,6 +391,7 @@ fn add_jobs(app: AppHandle, state: State<AppState>, specs: Vec<JobSpec>) -> Vec<
             .or_else(|| ps3::tool_for(&spec.mode))
             .or_else(|| ps5::tool_for_input(&spec.mode, &spec.input))
             .or_else(|| ps2fpkg::is_mode(&spec.mode).then_some("ps2fpkg"))
+            .or_else(|| pspfpkg::is_mode(&spec.mode).then_some("pspfpkg"))
             .or_else(|| psp::is_mode(&spec.mode).then_some("maxcso"))
             .or_else(|| wii::is_mode(&spec.mode).then_some(wii::tool_for(&spec.mode)))
             .unwrap_or("chdman")

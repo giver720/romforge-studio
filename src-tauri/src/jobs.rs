@@ -2100,6 +2100,137 @@ async fn run_ps2fpkg(
     }
 }
 
+/// Crea un FPKG de PSP con PSPHD. El puente escribe directamente en la salida
+/// temporal, valida el paquete y ROMForge lo publica de forma atómica.
+async fn run_pspfpkg(
+    app: AppHandle,
+    id: String,
+    job: Job,
+    settings: Settings,
+    cancel: Arc<AtomicBool>,
+) {
+    use base64::Engine;
+
+    if !Path::new(&job.input).is_file() {
+        return custom_error(&app, &id, "La imagen ISO de PSP ya no existe".into());
+    }
+    let staged = match StagedOutput::new(&job, settings.overwrite) {
+        Ok(value) => value,
+        Err(message) => return custom_error(&app, &id, message),
+    };
+    let execution = &staged.execution_job;
+    let Some((tool, _)) = crate::tools::locate("pspfpkg", &settings) else {
+        staged.cleanup();
+        return custom_error(
+            &app,
+            &id,
+            "Falta ROMForge PSP Bridge. Reinstala ROMForge Studio o recompila los puentes.".into(),
+        );
+    };
+    let mut args = match crate::pspfpkg::args(&job, Path::new(&execution.output)) {
+        Ok(value) => value,
+        Err(message) => {
+            staged.cleanup();
+            return custom_error(&app, &id, message);
+        }
+    };
+
+    let mut art_dir = None;
+    let custom_art = job.options.contains_key("icon") || job.options.contains_key("background");
+    if !custom_art && job.options.get("auto_art").map(String::as_str) != Some("false") {
+        custom_phase(&app, &id, "Buscando portada de PSP", 4.0);
+        let artwork = crate::artwork::resolve(&job.input, "psp", settings.online_artwork).await;
+        if let Some(data_url) = artwork.data_url {
+            if let Some((_, encoded)) = data_url.split_once(',') {
+                if let Ok(bytes) = base64::engine::general_purpose::STANDARD.decode(encoded) {
+                    let directory = std::env::temp_dir().join(format!("romforge-pspfpkg-art-{id}"));
+                    if std::fs::create_dir_all(&directory).is_ok() {
+                        let cover = directory.join("cover");
+                        if std::fs::write(&cover, bytes).is_ok() {
+                            let path = cover.to_string_lossy().to_string();
+                            args.extend([
+                                "--icon".into(),
+                                path.clone(),
+                                "--background".into(),
+                                path,
+                            ]);
+                            art_dir = Some(directory);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    custom_phase(&app, &id, "Preparando PSPHD y descifrando EBOOT", 10.0);
+    let result = capture_failure(
+        chdman::run_capture_cancelable(&tool, &args, cancel.as_ref()).await,
+        "ROMForge PSP Bridge",
+    );
+    if let Some(directory) = art_dir {
+        let _ = std::fs::remove_dir_all(directory);
+    }
+    let output = match result {
+        Ok(value) => value,
+        Err(message) if message == "__canceled__" => {
+            staged.cleanup();
+            return custom_canceled(&app, &id);
+        }
+        Err(message) => {
+            staged.cleanup();
+            return custom_error(&app, &id, message);
+        }
+    };
+
+    custom_phase(&app, &id, "Comprobando el FPKG de PSP", 95.0);
+    let header = (|| -> std::io::Result<[u8; 4]> {
+        use std::io::Read;
+        let mut header = [0u8; 4];
+        std::fs::File::open(&execution.output)?.read_exact(&mut header)?;
+        Ok(header)
+    })();
+    if header.ok().as_ref() != Some(b"\x7fCNT") {
+        staged.cleanup();
+        return custom_error(
+            &app,
+            &id,
+            "El resultado no tiene una cabecera PKG válida".into(),
+        );
+    }
+    if cancel.load(Ordering::Relaxed) {
+        staged.cleanup();
+        return custom_canceled(&app, &id);
+    }
+    let published = match staged.publish(&job, settings.overwrite) {
+        Ok(value) => value,
+        Err(message) => {
+            staged.cleanup();
+            return custom_error(&app, &id, message);
+        }
+    };
+    let output_size = published_size(&published, &job);
+    let visible_output = display_output(&published, &job);
+    let state = app.state::<AppState>();
+    if let Some(done) = state.update(&id, |done| {
+        done.status = "done".into();
+        done.phase = "Listo · FPKG de PSP validado".into();
+        done.progress = 100.0;
+        done.output = visible_output.clone();
+        done.output_size = output_size;
+        done.ratio =
+            (done.input_size > 0).then_some(output_size as f32 * 100.0 / done.input_size as f32);
+        done.verification = "passed".into();
+        done.verification_message =
+            Some("Cabecera PKG y estructura interna validadas por LibOrbisPkg".into());
+        let mut lines: Vec<String> = output.lines().rev().take(80).map(str::to_string).collect();
+        lines.reverse();
+        done.log.extend(lines);
+        done.finished_at = Some(now_ms());
+    }) {
+        emit_job(&app, &done);
+    }
+}
+
 /// Ejecuta un trabajo de principio a fin, emitiendo progreso al frontend.
 async fn run_job(app: AppHandle, id: String) {
     let state = app.state::<AppState>();
@@ -2138,6 +2269,7 @@ async fn run_job(app: AppHandle, id: String) {
     if matches!(job.mode.as_str(), "ps3compact" | "ps3rpcs3")
         || crate::ps5::is_mode(&job.mode)
         || crate::ps2fpkg::is_mode(&job.mode)
+        || crate::pspfpkg::is_mode(&job.mode)
     {
         let cancel = Arc::new(AtomicBool::new(false));
         state
@@ -2160,6 +2292,9 @@ async fn run_job(app: AppHandle, id: String) {
             "ps3rpcs3" => run_ps3_rpcs3(app.clone(), id.clone(), job, cancel).await,
             crate::ps2fpkg::MODE => {
                 run_ps2fpkg(app.clone(), id.clone(), job, settings, cancel).await
+            }
+            crate::pspfpkg::MODE => {
+                run_pspfpkg(app.clone(), id.clone(), job, settings, cancel).await
             }
             _ => run_ps5_workflow(app.clone(), id.clone(), job, settings, cancel).await,
         }

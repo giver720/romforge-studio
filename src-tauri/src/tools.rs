@@ -321,6 +321,17 @@ pub const TOOLS: &[ToolSpec] = &[
         license: "MIT (los recursos del emulador se descargan aparte)",
     },
     ToolSpec {
+        id: "pspfpkg",
+        name: "ROMForge PSP Bridge",
+        exe: "romforge-psp-bridge",
+        kind: ToolKind::Bundled,
+        linux_kind: None,
+        linux_exe: None,
+        purpose: "Convierte ISO de PSP a FPKG configurable para PS4/PS5",
+        family: "psp",
+        license: "GPL-3.0-or-later · LibOrbisPkg LGPL-3.0 (PSPHD se descarga aparte)",
+    },
+    ToolSpec {
         id: "ps3iso",
         name: "ps3iso-utils",
         exe: "extractps3iso",
@@ -1484,6 +1495,7 @@ mod tests {
     #[test]
     fn windows_keeps_original_tool_variants() {
         assert!(matches!(spec("chdman").unwrap().kind(), ToolKind::Bundled));
+        assert!(matches!(spec("pspfpkg").unwrap().kind(), ToolKind::Bundled));
         assert_eq!(spec("dolphintool").unwrap().exe(), "DolphinTool");
         assert!(matches!(
             spec("ps2fpkg").unwrap().kind(),

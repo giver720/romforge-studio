@@ -1,0 +1,18 @@
+ROMForge PSP Bridge
+Copyright (c) 2026 ROMForge Studio contributors
+Licensed under GPL-3.0-or-later.
+
+This bridge builds PS4 packages with maxton/LibOrbisPkg at commit
+643477263b2644e0803e0f58b8726ea4e3f3b7d4 (LGPL-3.0).
+
+At runtime it can download John-K/pspdecrypt 1.0 (GPL-3.0) to decrypt the
+EBOOT from a user-provided PSP disc image. It can also obtain the PSPHD
+runtime from SvenGDK/PS-Classics-fPKG-Builder v1. PSPHD is not part of
+ROMForge Studio and remains property of its respective rights holder.
+
+DiscUtils.Iso9660 0.16.13 is licensed under MIT.
+SkiaSharp 3.119.4 is licensed under MIT.
+
+The bridge source and reproducible build scripts are included in the
+ROMForge Studio repository. The LibOrbisPkg license is copied next to the
+packaged bridge; dependency source and license links are listed here.

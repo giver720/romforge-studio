@@ -288,6 +288,21 @@ publicarlo. El primer uso descarga aparte los recursos del emulador; estos no fo
 ROMForge. El motor [easy-ps2-fpkg](https://github.com/spiral009/easy-ps2-fpkg) se instala desde
 **Ajustes → Herramientas** y debe usarse solo con copias propias y hardware modificado.
 
+## PSP → FPKG para PS4
+
+El apartado **PSP → PS4** convierte una imagen ISO propia en un FPKG para una PS4 modificada usando
+el emulador PSPHD. Permite escoger antialiasing nativo, MSAA 4× o SSAA 4×; botón de confirmación,
+idioma, guardados múltiples o seguros, registro de depuración, parches Lua, configuración PSPHD,
+reemplazo de texturas y opciones avanzadas `nombre=valor`. El ID se detecta desde `UMD_DATA.BIN` y
+también puede indicarse manualmente.
+
+La portada se busca en el catálogo de PSP y se prepara como icono y fondo con las dimensiones que
+espera PS4; también admite imágenes propias. El puente incluido descifra el EBOOT mediante
+[pspdecrypt](https://github.com/John-K/pspdecrypt), construye el paquete con
+[LibOrbisPkg](https://github.com/maxton/LibOrbisPkg) y valida su estructura antes de publicarlo.
+Los recursos PSPHD se descargan y verifican por separado en el primer uso: no se redistribuyen en
+ROMForge. La compatibilidad depende de cada juego y del firmware de la consola.
+
 ## Desarrollo
 
 ### Windows

@@ -59,6 +59,7 @@ jobs:
             src-tauri/src/jobs.rs \
             src-tauri/src/lib.rs \
             src-tauri/src/ps2fpkg.rs \
+            src-tauri/src/pspfpkg.rs \
             src-tauri/src/ps5.rs \
             src-tauri/src/settings.rs \
             src-tauri/src/tools.rs \
@@ -67,6 +68,7 @@ jobs:
           npm run dist:linux
           src-tauri/binaries/romforge-prospero-bridge --version
           src-tauri/binaries/romforge-ampr-bridge --version
+          src-tauri/binaries/romforge-psp-bridge --version
 
       - name: Validar e instalar el paquete
         run: |
@@ -83,6 +85,8 @@ jobs:
           grep -q GPL-3.0-LibProsperoPKG.txt "$bundle_dir/CONTENTS"
           grep -q romforge-ampr-bridge "$bundle_dir/CONTENTS"
           grep -q GPL-3.0-AMPR-Emu.txt "$bundle_dir/CONTENTS"
+          grep -q romforge-psp-bridge "$bundle_dir/CONTENTS"
+          grep -q LGPL-3.0-LibOrbisPkg.txt "$bundle_dir/CONTENTS"
           (cd "$bundle_dir" && sha256sum --check SHA256SUMS)
           sudo apt-get install -y "./$deb"
           command -v romforge-studio

@@ -23,6 +23,7 @@ export type View =
   | "threeds"
   | "xbox360"
   | "ps2fpkg"
+  | "pspfpkg"
   | "ps3"
   | "ps5"
   | "psp"
@@ -30,7 +31,7 @@ export type View =
   | "store"
   | "settings";
 
-export type ConsoleFamily = "switch" | "threeds" | "xbox360" | "ps2fpkg" | "psp" | "wii";
+export type ConsoleFamily = "switch" | "threeds" | "xbox360" | "ps2fpkg" | "pspfpkg" | "psp" | "wii";
 
 export interface ConsoleFile extends InputInfo {
   op: string;
@@ -43,6 +44,7 @@ function defaultOpFor(family: ConsoleFamily, ext: string): string {
   if (family === "psp") return pspDefaultOp(ext);
   if (family === "wii") return wiiDefaultOp(ext);
   if (family === "ps2fpkg") return "ps2fpkg";
+  if (family === "pspfpkg") return "pspfpkg";
   return "iso2god";
 }
 
@@ -52,6 +54,7 @@ export const FAMILY_EXT: Record<ConsoleFamily, string[]> = {
   threeds: THREEDS_EXT,
   xbox360: ["iso"],
   ps2fpkg: ["iso", "chd", "7z", "zip", "rar"],
+  pspfpkg: ["iso"],
   psp: PSP_EXT,
   wii: WII_EXT,
 };
@@ -180,7 +183,7 @@ export const useStore = create<AppStore>((set, get) => ({
     }
   },
 
-  consoleFiles: { switch: [], threeds: [], xbox360: [], ps2fpkg: [], psp: [], wii: [] },
+  consoleFiles: { switch: [], threeds: [], xbox360: [], ps2fpkg: [], pspfpkg: [], psp: [], wii: [] },
   addConsoleFiles: (family, infos) => {
     const current = get().consoleFiles[family];
     const seen = new Set(current.map((c) => c.path));

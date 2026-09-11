@@ -40,6 +40,7 @@ const SECTIONS: { title: string; items: NavItem[] }[] = [
       { id: "threeds", label: "3DS", icon: Layers, desc: "CIA, CCI y Z3DS" },
       { id: "xbox360", label: "Xbox 360", icon: Disc3, desc: "ISO → GOD o carpeta" },
       { id: "ps2fpkg", label: "PS2 → PS4", icon: Package, desc: "ISO → FPKG configurable" },
+      { id: "pspfpkg", label: "PSP → PS4", icon: Package, desc: "ISO → FPKG con PSPHD" },
       { id: "ps3", label: "PlayStation 3", icon: Scissors, desc: "ISO compacto · RPCS3" },
       { id: "ps5", label: "PlayStation 5", icon: FileArchive, desc: "FFPKG · exFAT · FFPFSC · Lab" },
       { id: "psp", label: "PSP", icon: Gauge, desc: "ISO ↔ CSO y ZSO" },
