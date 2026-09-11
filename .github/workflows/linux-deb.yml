@@ -147,7 +147,12 @@ jobs:
           "$bridge" convert --input "$work/source" --output "$work/lz4" --profile balanced
           "$bridge" verify --input "$work/lz4"
           "$bridge" unpack --input "$work/lz4" --output "$work/restored"
-          diff -rq "$work/source" "$work/restored"
+          # AMPR agrega su indice y fakelib al despliegue. Verificamos que cada
+          # archivo original se restaure byte por byte sin rechazar esos metadatos.
+          cmp "$work/source/eboot.bin" "$work/restored/eboot.bin"
+          cmp "$work/source/data.bin" "$work/restored/data.bin"
+          cmp "$work/source/sce_module/lib.prx" "$work/restored/sce_module/lib.prx"
+          cmp "$work/source/sce_sys/param.json" "$work/restored/sce_sys/param.json"
 
       - name: Prueba de arranque de la interfaz
         run: |
