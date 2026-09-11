@@ -7,6 +7,7 @@ import { ConvertView } from "./components/ConvertView";
 import { ExtractView } from "./components/ExtractView";
 import { InspectView } from "./components/InspectView";
 import { Ps3View } from "./components/Ps3View";
+import { Ps2FpkgView } from "./components/Ps2FpkgView";
 import { Ps5View } from "./components/Ps5View";
 import { PspView } from "./components/PspView";
 import { QueuePanel } from "./components/QueuePanel";
@@ -88,6 +89,7 @@ export default function App() {
       switch: [],
       threeds: [],
       xbox360: [],
+      ps2fpkg: [],
       psp: [],
       wii: [],
     };
@@ -186,6 +188,7 @@ export default function App() {
               {view === "switch" && <SwitchView dragging={dragging} />}
               {view === "threeds" && <ThreeDsView dragging={dragging} />}
               {view === "xbox360" && <XboxView dragging={dragging} />}
+              {view === "ps2fpkg" && <Ps2FpkgView dragging={dragging} />}
               {view === "ps3" && <Ps3View />}
               {view === "ps5" && <Ps5View />}
               {view === "psp" && <PspView dragging={dragging} />}

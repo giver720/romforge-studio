@@ -36,6 +36,8 @@ pub struct Job {
     pub codecs: Vec<String>,
     pub hunk_size: Option<u32>,
     pub unit_size: Option<u32>,
+    #[serde(default)]
+    pub options: std::collections::BTreeMap<String, String>,
     /// queued | running | done | error | canceled
     pub status: String,
     pub progress: f32,
@@ -79,6 +81,7 @@ impl Job {
             codecs: vec![],
             hunk_size: None,
             unit_size: None,
+            options: std::collections::BTreeMap::new(),
             status: "queued".into(),
             progress: 0.0,
             phase: "En cola".into(),
@@ -1220,7 +1223,8 @@ async fn run_ps5_workflow(
     cancel: Arc<AtomicBool>,
 ) {
     use crate::ps5::{
-        MODE_COMPRESS, MODE_EXFAT, MODE_EXTRACT, MODE_FFPFSC, MODE_FFPKG, MODE_NATIVE_FPKG,
+        MODE_COMPRESS, MODE_EXFAT, MODE_EXTRACT, MODE_FFPFSC, MODE_FFPKG, MODE_LZ4,
+        MODE_NATIVE_FPKG,
     };
 
     let input = PathBuf::from(&job.input);
@@ -1230,7 +1234,7 @@ async fn run_ps5_workflow(
 
     let builds_from_folder = matches!(
         job.mode.as_str(),
-        MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_NATIVE_FPKG
+        MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_NATIVE_FPKG | MODE_LZ4
     );
     let expected = if builds_from_folder {
         let scan = crate::ps5::scan(&job.input);
@@ -1331,6 +1335,18 @@ async fn run_ps5_workflow(
                 job.input.clone(),
                 "--output".into(),
                 execution.output.clone(),
+            ],
+        ),
+        MODE_LZ4 => (
+            "Creando carpeta AMPRPAK4 con bloques LZ4",
+            vec![
+                "convert".into(),
+                "--input".into(),
+                job.input.clone(),
+                "--output".into(),
+                execution.output.clone(),
+                "--profile".into(),
+                "balanced".into(),
             ],
         ),
         MODE_FFPFSC => (
@@ -1504,6 +1520,25 @@ async fn run_ps5_workflow(
                 }
             }
         }
+        MODE_LZ4 => {
+            let verify_args = vec!["verify".into(), "--input".into(), execution.output.clone()];
+            match capture_failure(
+                run_ps5_capture(tool_id, &tool, &verify_args, cancel.as_ref()).await,
+                "AMPRPAK4 verify",
+            ) {
+                Ok(_) => {
+                    "AMPRPAK4/LZ4 íntegro y reversible; el dump fuente no se modificó".to_string()
+                }
+                Err(message) if message == "__canceled__" => {
+                    staged.cleanup();
+                    return custom_canceled(&app, &id);
+                }
+                Err(message) => {
+                    staged.cleanup();
+                    return custom_error(&app, &id, message);
+                }
+            }
+        }
         MODE_FFPFSC => {
             // `pack folder` crea un exFAT dentro del PFS. `verify --source-dir`
             // compararia el dump con ese unico archivo interior; para comprobar
@@ -1601,6 +1636,7 @@ async fn run_ps5_workflow(
             MODE_EXFAT => "Listo · exFAT verificado",
             MODE_FFPKG => "Listo · FFPKG verificado",
             MODE_NATIVE_FPKG => "Listo · FPKG PS5 verificado",
+            MODE_LZ4 => "Listo · AMPRPAK4/LZ4 verificado",
             MODE_FFPFSC | MODE_COMPRESS => "Listo · FFPFSC verificado",
             MODE_EXTRACT => "Listo · dump extraido y verificado",
             _ => "Listo",
@@ -1922,6 +1958,148 @@ async fn run_ps3_rpcs3(app: AppHandle, id: String, job: Job, cancel: Arc<AtomicB
     }
 }
 
+/// Convierte una copia de PS2 en un FPKG de PS4. El motor elige el nombre real
+/// a partir del serial del disco; se captura dentro del staging y solo se
+/// publica con el nombre elegido por ROMForge despues de validarlo.
+async fn run_ps2fpkg(
+    app: AppHandle,
+    id: String,
+    job: Job,
+    settings: Settings,
+    cancel: Arc<AtomicBool>,
+) {
+    if !Path::new(&job.input).is_file() {
+        return custom_error(&app, &id, "La imagen de PS2 ya no existe".into());
+    }
+    let staged = match StagedOutput::new(&job, settings.overwrite) {
+        Ok(value) => value,
+        Err(message) => return custom_error(&app, &id, message),
+    };
+    let execution = &staged.execution_job;
+    let Some((tool, _)) = crate::tools::locate("ps2fpkg", &settings) else {
+        staged.cleanup();
+        return custom_error(
+            &app,
+            &id,
+            "Falta easy-ps2-fpkg. Instálalo desde Ajustes → Herramientas.".into(),
+        );
+    };
+    let Some(stage_dir) = Path::new(&execution.output).parent() else {
+        staged.cleanup();
+        return custom_error(&app, &id, "No se pudo preparar la salida temporal".into());
+    };
+    let args = match crate::ps2fpkg::args(&job, stage_dir) {
+        Ok(value) => value,
+        Err(message) => {
+            staged.cleanup();
+            return custom_error(&app, &id, message);
+        }
+    };
+
+    custom_phase(&app, &id, "Detectando serial y preparando el emulador", 8.0);
+    let output = match capture_failure(
+        chdman::run_capture_cancelable(&tool, &args, cancel.as_ref()).await,
+        "easy-ps2-fpkg",
+    ) {
+        Ok(value) => value,
+        Err(message) if message == "__canceled__" => {
+            staged.cleanup();
+            return custom_canceled(&app, &id);
+        }
+        Err(message) => {
+            staged.cleanup();
+            return custom_error(&app, &id, message);
+        }
+    };
+
+    custom_phase(&app, &id, "Comprobando el FPKG generado", 94.0);
+    let packages: Vec<PathBuf> = std::fs::read_dir(stage_dir)
+        .into_iter()
+        .flatten()
+        .flatten()
+        .map(|entry| entry.path())
+        .filter(|path| {
+            path.extension()
+                .map(|ext| ext.to_string_lossy().eq_ignore_ascii_case("pkg"))
+                .unwrap_or(false)
+        })
+        .collect();
+    if packages.len() != 1 {
+        staged.cleanup();
+        return custom_error(
+            &app,
+            &id,
+            format!(
+                "El motor produjo {} archivos PKG; se esperaba exactamente uno",
+                packages.len()
+            ),
+        );
+    }
+    let generated = &packages[0];
+    let header = (|| -> std::io::Result<[u8; 4]> {
+        use std::io::Read;
+        let mut header = [0u8; 4];
+        std::fs::File::open(generated)?.read_exact(&mut header)?;
+        Ok(header)
+    })();
+    if header.ok().as_ref() != Some(b"\x7fCNT") {
+        staged.cleanup();
+        return custom_error(
+            &app,
+            &id,
+            "El resultado no tiene una cabecera PKG válida".into(),
+        );
+    }
+    if generated != Path::new(&execution.output) {
+        if let Err(error) = std::fs::rename(generated, &execution.output) {
+            staged.cleanup();
+            return custom_error(
+                &app,
+                &id,
+                format!("No se pudo preparar el PKG final: {error}"),
+            );
+        }
+    }
+    if cancel.load(Ordering::Relaxed) {
+        staged.cleanup();
+        return custom_canceled(&app, &id);
+    }
+    let published = match staged.publish(&job, settings.overwrite) {
+        Ok(value) => value,
+        Err(message) => {
+            staged.cleanup();
+            return custom_error(&app, &id, message);
+        }
+    };
+    let output_size = published_size(&published, &job);
+    let visible_output = display_output(&published, &job);
+    let checks = output
+        .lines()
+        .find_map(|line| line.split_once("checks OK").map(|(left, _)| left))
+        .and_then(|left| left.rsplit('(').next())
+        .unwrap_or("comprobaciones internas");
+    let state = app.state::<AppState>();
+    if let Some(done) = state.update(&id, |done| {
+        done.status = "done".into();
+        done.phase = "Listo · FPKG de PS2 validado".into();
+        done.progress = 100.0;
+        done.output = visible_output.clone();
+        done.output_size = output_size;
+        done.ratio =
+            (done.input_size > 0).then_some(output_size as f32 * 100.0 / done.input_size as f32);
+        done.verification = "passed".into();
+        done.verification_message = Some(format!(
+            "Cabecera PKG válida y {checks} comprobados por easy-ps2-fpkg"
+        ));
+        let mut lines: Vec<String> = output.lines().rev().take(80).map(str::to_string).collect();
+        lines.reverse();
+        done.log.extend(lines);
+        done.finished_at = Some(now_ms());
+    }) {
+        emit_job(&app, &done);
+    }
+}
+
 /// Ejecuta un trabajo de principio a fin, emitiendo progreso al frontend.
 async fn run_job(app: AppHandle, id: String) {
     let state = app.state::<AppState>();
@@ -1957,7 +2135,10 @@ async fn run_job(app: AppHandle, id: String) {
         return;
     }
 
-    if matches!(job.mode.as_str(), "ps3compact" | "ps3rpcs3") || crate::ps5::is_mode(&job.mode) {
+    if matches!(job.mode.as_str(), "ps3compact" | "ps3rpcs3")
+        || crate::ps5::is_mode(&job.mode)
+        || crate::ps2fpkg::is_mode(&job.mode)
+    {
         let cancel = Arc::new(AtomicBool::new(false));
         state
             .cancels
@@ -1977,6 +2158,9 @@ async fn run_job(app: AppHandle, id: String) {
         match job.mode.as_str() {
             "ps3compact" => run_ps3_compact(app.clone(), id.clone(), job, settings, cancel).await,
             "ps3rpcs3" => run_ps3_rpcs3(app.clone(), id.clone(), job, cancel).await,
+            crate::ps2fpkg::MODE => {
+                run_ps2fpkg(app.clone(), id.clone(), job, settings, cancel).await
+            }
             _ => run_ps5_workflow(app.clone(), id.clone(), job, settings, cancel).await,
         }
         state.cancels.lock().unwrap().remove(&id);

@@ -92,7 +92,13 @@ pub fn compresion(mode: &str, s: &Settings) -> Option<(&'static str, u8)> {
 }
 
 /// `DolphinTool convert -i <entrada> -o <salida> -f <formato> [-s] [-c zstd -l N -b N] -u <temp>`
-pub fn convert_args(mode: &str, input: &str, output: &str, user_dir: &str, s: &Settings) -> Vec<String> {
+pub fn convert_args(
+    mode: &str,
+    input: &str,
+    output: &str,
+    user_dir: &str,
+    s: &Settings,
+) -> Vec<String> {
     let mut a = vec![
         "convert".to_string(),
         "-i".into(),

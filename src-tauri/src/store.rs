@@ -2,8 +2,8 @@ use anyhow::{anyhow, Context, Result};
 use futures_util::StreamExt;
 use sha2::{Digest, Sha256};
 use std::path::{Path, PathBuf};
-use tauri::{AppHandle, Emitter};
 use std::sync::Mutex;
+use tauri::{AppHandle, Emitter};
 
 static ACTIVE_DOWNLOAD: Mutex<Option<tokio::sync::watch::Sender<bool>>> = Mutex::new(None);
 
@@ -17,17 +17,27 @@ impl Drop for PartialPackage {
     }
 }
 impl Drop for PartialFile {
-    fn drop(&mut self) { let _ = std::fs::remove_file(&self.0); }
+    fn drop(&mut self) {
+        let _ = std::fs::remove_file(&self.0);
+    }
 }
 impl Drop for DownloadGuard {
-    fn drop(&mut self) { if let Ok(mut active) = ACTIVE_DOWNLOAD.lock() { *active = None; } }
+    fn drop(&mut self) {
+        if let Ok(mut active) = ACTIVE_DOWNLOAD.lock() {
+            *active = None;
+        }
+    }
 }
 
 async fn cancellable<T>(work: impl std::future::Future<Output = Result<T>>) -> Result<T> {
     let (sender, mut cancel) = tokio::sync::watch::channel(false);
     {
-        let mut active = ACTIVE_DOWNLOAD.lock().map_err(|_| anyhow!("No se pudo iniciar la descarga"))?;
-        if active.is_some() { return Err(anyhow!("Ya hay una descarga de la Store en marcha")); }
+        let mut active = ACTIVE_DOWNLOAD
+            .lock()
+            .map_err(|_| anyhow!("No se pudo iniciar la descarga"))?;
+        if active.is_some() {
+            return Err(anyhow!("Ya hay una descarga de la Store en marcha"));
+        }
         *active = Some(sender);
     }
     let _guard = DownloadGuard;
@@ -41,7 +51,9 @@ async fn cancellable<T>(work: impl std::future::Future<Output = Result<T>>) -> R
 #[tauri::command]
 pub fn cancel_store_download() -> Result<(), String> {
     let active = ACTIVE_DOWNLOAD.lock().map_err(|_| "No se pudo cancelar")?;
-    if let Some(sender) = active.as_ref() { let _ = sender.send(true); }
+    if let Some(sender) = active.as_ref() {
+        let _ = sender.send(true);
+    }
     Ok(())
 }
 
@@ -56,36 +68,86 @@ mod tests {
         assert_eq!(catalog["schema_version"], 1);
         let entries = catalog["entries"].as_array().unwrap();
         assert!(entries.len() > 2000);
-        for platform in ["3ds", "wii", "wiiu", "switch", "psvita", "psp", "ps4", "ps5"] {
-            assert!(entries.iter().any(|e| e["platforms"].as_array().unwrap().iter().any(|p| p == platform)));
+        for platform in [
+            "3ds", "wii", "wiiu", "switch", "psvita", "psp", "ps4", "ps5",
+        ] {
+            assert!(entries.iter().any(|e| e["platforms"]
+                .as_array()
+                .unwrap()
+                .iter()
+                .any(|p| p == platform)));
         }
     }
 
     #[tokio::test]
     #[ignore = "Downloads a small public metadata file without executing it"]
     async fn live_download_and_checksum_failure() {
-        let stamp = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).unwrap().as_nanos();
+        let stamp = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .unwrap()
+            .as_nanos();
         let root = std::env::temp_dir().join(format!("romforge-store-test-{stamp}"));
         std::fs::create_dir(&root).unwrap();
         let _cleanup = PartialPackage(root.clone());
         let url = "https://raw.githubusercontent.com/giver720/romforge-studio/403c546b33459b603d15ca6cde0e5dafe651b3ed/tools/homebrew-sources.json";
-        let output = download_homebrew_inner(|_| {}, url.into(), "sources.json".into(), root.to_string_lossy().into(), None).await.unwrap();
+        let output = download_homebrew_inner(
+            |_| {},
+            url.into(),
+            "sources.json".into(),
+            root.to_string_lossy().into(),
+            None,
+        )
+        .await
+        .unwrap();
         let bytes = std::fs::read(&output).unwrap();
         let value: serde_json::Value = serde_json::from_slice(&bytes).unwrap();
         assert_eq!(value["sources"].as_array().unwrap().len(), 10);
         let digest = format!("{:x}", Sha256::digest(&bytes));
-        download_homebrew_inner(|_| {}, url.into(), "verified.json".into(), root.to_string_lossy().into(), Some(digest)).await.unwrap();
-        let error = download_homebrew_inner(|_| {}, url.into(), "bad.json".into(), root.to_string_lossy().into(), Some("0".repeat(64))).await.unwrap_err();
+        download_homebrew_inner(
+            |_| {},
+            url.into(),
+            "verified.json".into(),
+            root.to_string_lossy().into(),
+            Some(digest),
+        )
+        .await
+        .unwrap();
+        let error = download_homebrew_inner(
+            |_| {},
+            url.into(),
+            "bad.json".into(),
+            root.to_string_lossy().into(),
+            Some("0".repeat(64)),
+        )
+        .await
+        .unwrap_err();
         assert!(error.contains("SHA-256"));
         assert!(!root.join("bad.json").exists());
         assert!(!root.join("bad.json.part").exists());
-        assert!(download_homebrew_inner(|_| {}, url.into(), "sources.json".into(), root.to_string_lossy().into(), None).await.is_err());
+        assert!(download_homebrew_inner(
+            |_| {},
+            url.into(),
+            "sources.json".into(),
+            root.to_string_lossy().into(),
+            None
+        )
+        .await
+        .is_err());
         assert_eq!(std::fs::read(output).unwrap(), bytes);
     }
 
     #[test]
     fn manifest_paths_stay_relative() {
-        for path in ["/etc/passwd", "C:/test", "../test", "apps/../../test", "apps//test", "apps/./test", "apps/file:stream", "apps/test\0"] {
+        for path in [
+            "/etc/passwd",
+            "C:/test",
+            "../test",
+            "apps/../../test",
+            "apps//test",
+            "apps/./test",
+            "apps/file:stream",
+            "apps/test\0",
+        ] {
             assert!(validate_manifest_path(path).is_err(), "{path}");
         }
         assert!(validate_manifest_path("wiiu/apps/100 Boxes/main.rpx").is_ok());
@@ -94,20 +156,39 @@ mod tests {
     #[tokio::test]
     #[ignore = "Downloads a small HBAS package without executing it"]
     async fn live_hbas_package() {
-        let stamp = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH).unwrap().as_nanos();
+        let stamp = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)
+            .unwrap()
+            .as_nanos();
         let root = std::env::temp_dir().join(format!("romforge-hbas-test-{stamp}"));
         std::fs::create_dir(&root).unwrap();
         let _cleanup = PartialPackage(root.clone());
         let url = "https://wiiu.cdn.fortheusers.org/packages/100_Boxes_Wiiu/manifest.install";
         let files = Mutex::new(std::collections::HashSet::new());
-        let output = download_hbas_inner(|event| { files.lock().unwrap().insert(event.filename); }, url.into(), root.to_string_lossy().into(), "100 Boxes".into()).await.unwrap();
+        let output = download_hbas_inner(
+            |event| {
+                files.lock().unwrap().insert(event.filename);
+            },
+            url.into(),
+            root.to_string_lossy().into(),
+            "100 Boxes".into(),
+        )
+        .await
+        .unwrap();
         let package = PathBuf::from(output).join("wiiu/apps/100_Boxes_Wiiu");
         for name in ["meta.xml", "icon.png", "100_Boxes.rpx"] {
             assert!(std::fs::metadata(package.join(name)).unwrap().len() > 0);
         }
         assert_eq!(files.lock().unwrap().len(), 3);
         assert_eq!(std::fs::read_dir(&root).unwrap().count(), 1);
-        assert!(download_hbas_inner(|_| {}, url.into(), root.to_string_lossy().into(), "100 Boxes".into()).await.is_err());
+        assert!(download_hbas_inner(
+            |_| {},
+            url.into(),
+            root.to_string_lossy().into(),
+            "100 Boxes".into()
+        )
+        .await
+        .is_err());
     }
 
     #[tokio::test]
@@ -120,7 +201,10 @@ mod tests {
         ready.await.unwrap();
         assert!(cancellable(async { Ok(()) }).await.is_err());
         cancel_store_download().unwrap();
-        let result = tokio::time::timeout(std::time::Duration::from_secs(1), task).await.unwrap().unwrap();
+        let result = tokio::time::timeout(std::time::Duration::from_secs(1), task)
+            .await
+            .unwrap()
+            .unwrap();
         assert_eq!(result.unwrap_err().to_string(), "Descarga cancelada");
         assert!(cancellable(async { Ok(()) }).await.is_ok());
     }
@@ -158,20 +242,36 @@ struct DownloadProgress {
 
 fn safe_filename(name: &str) -> Result<String> {
     let trimmed = name.trim();
-    if trimmed.is_empty() || trimmed == "." || trimmed == ".." || trimmed.contains(['/', '\\', ':', '\0']) {
+    if trimmed.is_empty()
+        || trimmed == "."
+        || trimmed == ".."
+        || trimmed.contains(['/', '\\', ':', '\0'])
+    {
         return Err(anyhow!("Nombre de archivo no válido"));
     }
     Ok(trimmed.to_string())
 }
 
 fn validate_manifest_path(relative: &str) -> Result<()> {
-    if relative.is_empty() || relative.starts_with('/') || relative.contains([':', '\0', '\\']) || relative.split('/').any(|part| part.is_empty() || part == ".." || part == ".") {
+    if relative.is_empty()
+        || relative.starts_with('/')
+        || relative.contains([':', '\0', '\\'])
+        || relative
+            .split('/')
+            .any(|part| part.is_empty() || part == ".." || part == ".")
+    {
         return Err(anyhow!("Ruta insegura en manifiesto"));
     }
     Ok(())
 }
 
-async fn fetch_file(emit: &impl Fn(DownloadProgress), client: &reqwest::Client, url: &str, path: &Path, label: &str) -> Result<()> {
+async fn fetch_file(
+    emit: &impl Fn(DownloadProgress),
+    client: &reqwest::Client,
+    url: &str,
+    path: &Path,
+    label: &str,
+) -> Result<()> {
     let response = client.get(url).send().await?.error_for_status()?;
     let total = response.content_length();
     let mut stream = response.bytes_stream();
@@ -181,7 +281,11 @@ async fn fetch_file(emit: &impl Fn(DownloadProgress), client: &reqwest::Client, 
         let chunk = chunk?;
         tokio::io::AsyncWriteExt::write_all(&mut file, &chunk).await?;
         received += chunk.len() as u64;
-        emit(DownloadProgress { filename: label.to_string(), received, total });
+        emit(DownloadProgress {
+            filename: label.to_string(),
+            received,
+            total,
+        });
     }
     tokio::io::AsyncWriteExt::flush(&mut file).await?;
     Ok(())
@@ -195,12 +299,24 @@ pub async fn download_homebrew(
     destination_dir: String,
     sha256: Option<String>,
 ) -> Result<String, String> {
-    download_homebrew_inner(move |progress| { let _ = app.emit("store://download", progress); }, url, filename, destination_dir, sha256).await
+    download_homebrew_inner(
+        move |progress| {
+            let _ = app.emit("store://download", progress);
+        },
+        url,
+        filename,
+        destination_dir,
+        sha256,
+    )
+    .await
 }
 
 async fn download_homebrew_inner(
-    emit: impl Fn(DownloadProgress), url: String, filename: String,
-    destination_dir: String, sha256: Option<String>,
+    emit: impl Fn(DownloadProgress),
+    url: String,
+    filename: String,
+    destination_dir: String,
+    sha256: Option<String>,
 ) -> Result<String, String> {
     let result = cancellable(async move {
         if !url.starts_with("https://") {
@@ -210,15 +326,36 @@ async fn download_homebrew_inner(
         let dir = PathBuf::from(destination_dir);
         std::fs::create_dir_all(&dir).context("No se pudo crear la carpeta de descarga")?;
         let final_path = dir.join(&filename);
-        let temp_path = final_path.with_extension(format!("{}.part", final_path.extension().and_then(|x| x.to_str()).unwrap_or("download")));
-        if final_path.exists() { return Err(anyhow!("El archivo ya existe. Elige otra carpeta para conservar ambas copias.")); }
-        if temp_path.exists() { return Err(anyhow!("Existe una descarga parcial previa. Elige otra carpeta.")); }
+        let temp_path = final_path.with_extension(format!(
+            "{}.part",
+            final_path
+                .extension()
+                .and_then(|x| x.to_str())
+                .unwrap_or("download")
+        ));
+        if final_path.exists() {
+            return Err(anyhow!(
+                "El archivo ya existe. Elige otra carpeta para conservar ambas copias."
+            ));
+        }
+        if temp_path.exists() {
+            return Err(anyhow!(
+                "Existe una descarga parcial previa. Elige otra carpeta."
+            ));
+        }
         let _partial = PartialFile(temp_path.clone());
-        let client = reqwest::Client::builder().https_only(true).connect_timeout(std::time::Duration::from_secs(20)).build()?;
+        let client = reqwest::Client::builder()
+            .https_only(true)
+            .connect_timeout(std::time::Duration::from_secs(20))
+            .build()?;
         let response = client.get(&url).send().await?.error_for_status()?;
         let total = response.content_length();
         let mut stream = response.bytes_stream();
-        let mut file = tokio::fs::OpenOptions::new().write(true).create_new(true).open(&temp_path).await?;
+        let mut file = tokio::fs::OpenOptions::new()
+            .write(true)
+            .create_new(true)
+            .open(&temp_path)
+            .await?;
         let mut hash = Sha256::new();
         let mut received = 0u64;
         while let Some(chunk) = stream.next().await {
@@ -226,7 +363,11 @@ async fn download_homebrew_inner(
             tokio::io::AsyncWriteExt::write_all(&mut file, &chunk).await?;
             hash.update(&chunk);
             received += chunk.len() as u64;
-            emit(DownloadProgress { filename: filename.clone(), received, total });
+            emit(DownloadProgress {
+                filename: filename.clone(),
+                received,
+                total,
+            });
         }
         tokio::io::AsyncWriteExt::flush(&mut file).await?;
         drop(file);
@@ -239,7 +380,8 @@ async fn download_homebrew_inner(
         }
         tokio::fs::rename(&temp_path, &final_path).await?;
         Ok(final_path.to_string_lossy().to_string())
-    }).await;
+    })
+    .await;
     result.map_err(|e| e.to_string())
 }
 
@@ -250,41 +392,81 @@ pub async fn download_hbas_package(
     destination_dir: String,
     package_name: String,
 ) -> Result<String, String> {
-    download_hbas_inner(move |progress| { let _ = app.emit("store://download", progress); }, manifest_url, destination_dir, package_name).await
+    download_hbas_inner(
+        move |progress| {
+            let _ = app.emit("store://download", progress);
+        },
+        manifest_url,
+        destination_dir,
+        package_name,
+    )
+    .await
 }
 
 async fn download_hbas_inner(
-    emit: impl Fn(DownloadProgress), manifest_url: String, destination_dir: String, package_name: String,
+    emit: impl Fn(DownloadProgress),
+    manifest_url: String,
+    destination_dir: String,
+    package_name: String,
 ) -> Result<String, String> {
     let result = cancellable(async move {
-        if !manifest_url.starts_with("https://") { return Err(anyhow!("Solo se permiten manifiestos HTTPS")); }
+        if !manifest_url.starts_with("https://") {
+            return Err(anyhow!("Solo se permiten manifiestos HTTPS"));
+        }
         let package_name = safe_filename(&package_name)?;
-        let base = manifest_url.rsplit_once('/').map(|(p, _)| p).ok_or_else(|| anyhow!("Manifiesto inválido"))?;
-        let client = reqwest::Client::builder().https_only(true).connect_timeout(std::time::Duration::from_secs(20)).build()?;
-        let manifest = client.get(&manifest_url).send().await?.error_for_status()?.text().await?;
+        let base = manifest_url
+            .rsplit_once('/')
+            .map(|(p, _)| p)
+            .ok_or_else(|| anyhow!("Manifiesto inválido"))?;
+        let client = reqwest::Client::builder()
+            .https_only(true)
+            .connect_timeout(std::time::Duration::from_secs(20))
+            .build()?;
+        let manifest = client
+            .get(&manifest_url)
+            .send()
+            .await?
+            .error_for_status()?
+            .text()
+            .await?;
         let destination = PathBuf::from(destination_dir);
         tokio::fs::create_dir_all(&destination).await?;
         let final_root = destination.join(&package_name);
-        if final_root.exists() { return Err(anyhow!("El paquete ya existe. Elige otra carpeta para conservar ambas copias.")); }
-        let stamp = std::time::SystemTime::now().duration_since(std::time::UNIX_EPOCH)?.as_nanos();
+        if final_root.exists() {
+            return Err(anyhow!(
+                "El paquete ya existe. Elige otra carpeta para conservar ambas copias."
+            ));
+        }
+        let stamp = std::time::SystemTime::now()
+            .duration_since(std::time::UNIX_EPOCH)?
+            .as_nanos();
         let root = destination.join(format!(".romforge-{stamp}.part"));
         tokio::fs::create_dir(&root).await?;
         let _partial = PartialPackage(root.clone());
         let mut count = 0;
         for line in manifest.lines() {
-            let Some(relative) = line.strip_prefix("U: ") else { continue };
+            let Some(relative) = line.strip_prefix("U: ") else {
+                continue;
+            };
             let relative = relative.trim().replace('\\', "/");
             validate_manifest_path(&relative)?;
             let target = root.join(&relative);
-            if let Some(parent) = target.parent() { tokio::fs::create_dir_all(parent).await?; }
+            if let Some(parent) = target.parent() {
+                tokio::fs::create_dir_all(parent).await?;
+            }
             let url = format!("{}/{}", base, relative);
             fetch_file(&emit, &client, &url, &target, &relative).await?;
             count += 1;
         }
-        if count == 0 { return Err(anyhow!("El manifiesto no contiene archivos descargables")); }
-        if final_root.exists() { return Err(anyhow!("La carpeta de destino ya existe")); }
+        if count == 0 {
+            return Err(anyhow!("El manifiesto no contiene archivos descargables"));
+        }
+        if final_root.exists() {
+            return Err(anyhow!("La carpeta de destino ya existe"));
+        }
         tokio::fs::rename(&root, &final_root).await?;
         Ok(final_root.to_string_lossy().to_string())
-    }).await;
+    })
+    .await;
     result.map_err(|e| e.to_string())
 }

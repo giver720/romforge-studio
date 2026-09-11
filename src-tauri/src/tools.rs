@@ -302,6 +302,25 @@ pub const TOOLS: &[ToolSpec] = &[
         license: "Ver repositorio",
     },
     ToolSpec {
+        id: "ps2fpkg",
+        name: "easy-ps2-fpkg",
+        exe: "ps2fpkg",
+        kind: ToolKind::Github {
+            repo: "spiral009/easy-ps2-fpkg",
+            asset: "win-x64.exe",
+            tag: "v1.2.0",
+        },
+        linux_kind: Some(ToolKind::Github {
+            repo: "spiral009/easy-ps2-fpkg",
+            asset: "linux-x64",
+            tag: "v1.2.0",
+        }),
+        linux_exe: None,
+        purpose: "Convierte copias de PS2 a FPKG configurables para PS4/PS5",
+        family: "ps2",
+        license: "MIT (los recursos del emulador se descargan aparte)",
+    },
+    ToolSpec {
         id: "ps3iso",
         name: "ps3iso-utils",
         exe: "extractps3iso",
@@ -365,6 +384,17 @@ pub const TOOLS: &[ToolSpec] = &[
         purpose: "Convierte dumps descifrados de PS5 en paquetes FPKG y valida su estructura",
         family: "ps5",
         license: "GPL-3.0-or-later",
+    },
+    ToolSpec {
+        id: "ampr",
+        name: "AMPR Pack Tools",
+        exe: "romforge-ampr-bridge",
+        kind: ToolKind::Bundled,
+        linux_kind: None,
+        linux_exe: None,
+        purpose: "Crea, verifica y restaura carpetas AMPRPAK4 con bloques LZ4 para PS5",
+        family: "ps5",
+        license: "GPL-3.0",
     },
     ToolSpec {
         id: "maxcso",
@@ -652,7 +682,7 @@ async fn probe_version(id: &str, path: &std::path::Path) -> Option<String> {
     // Las de PS3 entran en modo interactivo si no reconocen el argumento, asi
     // que hay que darles justo el que documentan
     let arg = match id {
-        "z3ds" | "4nxci" | "ps3iso" => "--help",
+        "z3ds" | "4nxci" | "ps3iso" | "ps2fpkg" => "--help",
         "dolphintool" => "--help",
         "mkpfs" => "-V",
         _ => "--version",
@@ -1408,6 +1438,14 @@ mod tests {
                 ..
             }
         ));
+        assert!(matches!(
+            spec("ps2fpkg").unwrap().kind(),
+            ToolKind::Github {
+                asset: "linux-x64",
+                tag: "v1.2.0",
+                ..
+            }
+        ));
         assert_eq!(spec("dolphintool").unwrap().exe(), "dolphin-tool");
     }
 
@@ -1426,7 +1464,8 @@ mod tests {
         let settings = Settings::default();
 
         for id in [
-            "z3ds", "3dstool", "ctrtool", "makerom", "iso2god", "xiso", "ps3iso", "wit",
+            "z3ds", "3dstool", "ctrtool", "makerom", "iso2god", "xiso", "ps2fpkg",
+            "ps3iso", "wit",
         ] {
             install(id).await.unwrap_or_else(|e| panic!("{id}: {e}"));
             let (path, _) = locate(id, &settings).unwrap_or_else(|| panic!("{id}: no localizado"));
@@ -1447,5 +1486,13 @@ mod tests {
     fn windows_keeps_original_tool_variants() {
         assert!(matches!(spec("chdman").unwrap().kind(), ToolKind::Bundled));
         assert_eq!(spec("dolphintool").unwrap().exe(), "DolphinTool");
+        assert!(matches!(
+            spec("ps2fpkg").unwrap().kind(),
+            ToolKind::Github {
+                asset: "win-x64.exe",
+                tag: "v1.2.0",
+                ..
+            }
+        ));
     }
 }

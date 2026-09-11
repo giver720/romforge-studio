@@ -35,6 +35,8 @@ Write-Host "  Actualizando herramientas nativas..." -ForegroundColor Cyan
 & "$PSScriptRoot\obtener-herramientas.ps1" | Out-Null
 Write-Host "  Compilando motor FPKG nativo de PS5..." -ForegroundColor Cyan
 & "$PSScriptRoot\build-prospero-bridge.ps1"
+Write-Host "  Compilando motor AMPR/LZ4 de PS5..." -ForegroundColor Cyan
+& "$PSScriptRoot\build-ampr-bridge.ps1"
 
 # --- 2. Instalador ---------------------------------------------------------
 Write-Host "  Compilando (esto tarda)..." -ForegroundColor Cyan

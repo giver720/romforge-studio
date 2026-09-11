@@ -270,8 +270,23 @@ en `sce_sys/param.json` y contener los ELF descifrados en su ruta normal o bajo 
 ROMForge ejecuta el motor como un proceso externo GPL-3.0-or-later, trabaja sobre una copia temporal,
 rechaza cualquier módulo cifrado sin resolver y valida el contenedor final antes de publicarlo. Que
 el paquete se pueda ejecutar en hardware real depende además del firmware y los payloads de la PS5.
-LZ4/Lizard aparece como anunciado, pero permanece deshabilitado hasta que exista un encoder y una
-especificación pública verificables.
+El modo **AMPR/LZ4** genera una copia jugable en carpeta con índices `AMPRIDX3` y paquetes
+`AMPRPAK4`, usando el runtime público de AMPR. ROMForge conserva suelta la parte sensible del juego,
+verifica cada paquete y permite reconstruir los archivos originales byte por byte.
+
+## PS2 → FPKG para PS4
+
+El apartado **PS2 → PS4** convierte ISO o CHD propios —también dentro de 7Z, ZIP o RAR— a un FPKG
+instalable en una PS4 modificada. Permite elegir los núcleos Jak v2 o Rogue v1, resolución interna,
+filtro de escalado, encuadre, multitap, parches Lua, un `config-emu-ps4.txt` completo y cualquier
+bandera avanzada `nombre=valor`.
+
+La portada se busca automáticamente por el serial del disco y se convierte en icono 512×512 y fondo
+1920×1080; también se pueden seleccionar imágenes propias. ROMForge crea el paquete en una carpeta
+temporal, exige que el motor termine sus comprobaciones internas y revisa la cabecera PKG antes de
+publicarlo. El primer uso descarga aparte los recursos del emulador; estos no forman parte de
+ROMForge. El motor [easy-ps2-fpkg](https://github.com/spiral009/easy-ps2-fpkg) se instala desde
+**Ajustes → Herramientas** y debe usarse solo con copias propias y hardware modificado.
 
 ## Desarrollo
 

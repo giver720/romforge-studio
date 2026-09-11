@@ -58,6 +58,7 @@ jobs:
             src-tauri/src/chdman.rs \
             src-tauri/src/jobs.rs \
             src-tauri/src/lib.rs \
+            src-tauri/src/ps2fpkg.rs \
             src-tauri/src/ps5.rs \
             src-tauri/src/settings.rs \
             src-tauri/src/tools.rs \
@@ -65,6 +66,7 @@ jobs:
           cargo test --manifest-path src-tauri/Cargo.toml
           npm run dist:linux
           src-tauri/binaries/romforge-prospero-bridge --version
+          src-tauri/binaries/romforge-ampr-bridge --version
 
       - name: Validar e instalar el paquete
         run: |
@@ -79,6 +81,8 @@ jobs:
           dpkg-deb --contents "$deb" | tee "$bundle_dir/CONTENTS"
           grep -q romforge-prospero-bridge "$bundle_dir/CONTENTS"
           grep -q GPL-3.0-LibProsperoPKG.txt "$bundle_dir/CONTENTS"
+          grep -q romforge-ampr-bridge "$bundle_dir/CONTENTS"
+          grep -q GPL-3.0-AMPR-Emu.txt "$bundle_dir/CONTENTS"
           (cd "$bundle_dir" && sha256sum --check SHA256SUMS)
           sudo apt-get install -y "./$deb"
           command -v romforge-studio
@@ -129,6 +133,21 @@ jobs:
             --output "$work/smoke.pkg"
           test -s "$work/smoke.pkg"
           "$bridge" validate --input "$work/smoke.pkg"
+
+      - name: Probar AMPR/LZ4 de PS5
+        run: |
+          work="$(mktemp -d)"
+          trap 'rm -rf "$work"' EXIT
+          mkdir -p "$work/source/sce_sys" "$work/source/sce_module"
+          printf 'synthetic eboot' > "$work/source/eboot.bin"
+          printf '{"titleId":"PPSA00000","titleName":"CI"}' > "$work/source/sce_sys/param.json"
+          dd if=/dev/zero of="$work/source/data.bin" bs=1M count=8 status=none
+          printf 'protected module' > "$work/source/sce_module/lib.prx"
+          bridge="src-tauri/binaries/romforge-ampr-bridge"
+          "$bridge" convert --input "$work/source" --output "$work/lz4" --profile balanced
+          "$bridge" verify --input "$work/lz4"
+          "$bridge" unpack --input "$work/lz4" --output "$work/restored"
+          diff -rq "$work/source" "$work/restored"
 
       - name: Prueba de arranque de la interfaz
         run: |

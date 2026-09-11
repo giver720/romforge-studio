@@ -21,6 +21,7 @@ export interface JobSpec {
   unit_size?: number | null;
   format?: string | null;
   output_dir?: string | null;
+  options?: Record<string, string>;
 }
 
 export interface GameArtwork {

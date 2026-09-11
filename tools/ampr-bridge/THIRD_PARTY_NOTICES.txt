@@ -1,0 +1,17 @@
+ROMForge AMPR Bridge
+====================
+
+This executable is licensed under GNU GPL version 3.
+
+It incorporates source code from:
+  AMPR userland emulation / AMPR Pack Tools
+  Copyright its contributors
+  https://github.com/drakmor/ampr_emu
+  Version 0.4.2.1, commit cfa85df379f6eeeb165d7badf9b648e266fe77b7
+  License: GNU GPL version 3
+
+It also incorporates LZ4 v1.10.0, commit
+ebb370ca83af193212df4dcbadcc5d87bc0de2f0, under its BSD 2-Clause license.
+
+The complete corresponding source and reproducible build scripts are available
+from the ROMForge Studio repository and the exact upstream commit above.

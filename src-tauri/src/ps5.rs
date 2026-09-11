@@ -10,9 +10,8 @@ pub const MODE_FFPKG: &str = "ps5ffpkg";
 pub const MODE_FFPFSC: &str = "ps5ffpfsc";
 pub const MODE_COMPRESS: &str = "ps5compress";
 pub const MODE_EXTRACT: &str = "ps5extract";
-/// FPKG nativo ya usa un motor verificable; LZ4 queda reservado hasta que se publique su encoder.
+/// Modos recientes con motores públicos y verificación independiente.
 pub const MODE_NATIVE_FPKG: &str = "ps5fpkg";
-#[allow(dead_code)]
 pub const MODE_LZ4: &str = "ps5lz4";
 pub const CLUSTER_SIZE: u64 = 64 * 1024;
 const SAMPLE_LIMIT: u64 = 32 * 1024 * 1024;
@@ -52,24 +51,21 @@ struct Stats {
 pub fn is_mode(mode: &str) -> bool {
     matches!(
         mode,
-        MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT | MODE_NATIVE_FPKG
+        MODE_EXFAT
+            | MODE_FFPKG
+            | MODE_FFPFSC
+            | MODE_COMPRESS
+            | MODE_EXTRACT
+            | MODE_NATIVE_FPKG
+            | MODE_LZ4
     )
-}
-
-#[allow(dead_code)]
-pub fn experimental_block_reason(mode: &str) -> Option<&'static str> {
-    match mode {
-        MODE_LZ4 => Some(
-            "LZ4/Lizard está bloqueado hasta que exista un encoder o una especificación pública",
-        ),
-        _ => None,
-    }
 }
 
 pub fn tool_for(mode: &str) -> Option<&'static str> {
     match mode {
         MODE_FFPKG => Some("ufs2tool"),
         MODE_NATIVE_FPKG => Some("prospero"),
+        MODE_LZ4 => Some("ampr"),
         MODE_EXFAT | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT => Some("mkpfs"),
         _ => None,
     }
@@ -98,7 +94,7 @@ pub fn output_ext(mode: &str) -> Option<&'static str> {
 }
 
 pub fn writes_directory(mode: &str) -> bool {
-    mode == MODE_EXTRACT
+    matches!(mode, MODE_EXTRACT | MODE_LZ4)
 }
 
 fn align(value: u64, unit: u64) -> u64 {
@@ -572,16 +568,14 @@ mod tests {
     }
 
     #[test]
-    fn keeps_experimental_ps5_modes_out_of_the_job_engine() {
+    fn maps_recent_ps5_modes_to_bundled_engines() {
         assert!(is_mode(MODE_NATIVE_FPKG));
-        assert!(!is_mode(MODE_LZ4));
-        assert_eq!(experimental_block_reason(MODE_NATIVE_FPKG), None);
-        assert!(experimental_block_reason(MODE_LZ4)
-            .unwrap()
-            .contains("encoder"));
+        assert!(is_mode(MODE_LZ4));
         assert_eq!(tool_for(MODE_NATIVE_FPKG), Some("prospero"));
+        assert_eq!(tool_for(MODE_LZ4), Some("ampr"));
         assert_eq!(output_ext(MODE_NATIVE_FPKG), Some("pkg"));
         assert_eq!(output_ext(MODE_LZ4), None);
+        assert!(writes_directory(MODE_LZ4));
     }
 
     #[test]

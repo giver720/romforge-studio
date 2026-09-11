@@ -1,6 +1,7 @@
 mod artwork;
 mod chdman;
 mod jobs;
+mod ps2fpkg;
 mod ps3;
 mod ps5;
 mod psp;
@@ -211,6 +212,8 @@ pub struct JobSpec {
     pub format: Option<String>,
     #[serde(default)]
     pub output_dir: Option<String>,
+    #[serde(default)]
+    pub options: std::collections::BTreeMap<String, String>,
 }
 
 fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
@@ -281,6 +284,14 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
     }
 
     if ps5::is_mode(&spec.mode) {
+        if spec.mode == ps5::MODE_LZ4 {
+            return (
+                dir.join(format!("{stem}-lz4"))
+                    .to_string_lossy()
+                    .to_string(),
+                None,
+            );
+        }
         if ps5::writes_directory(&spec.mode) {
             return (
                 dir.join(format!("{stem}-extraido"))
@@ -292,6 +303,15 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
         let ext = ps5::output_ext(&spec.mode).unwrap_or("exfat");
         return (
             dir.join(format!("{stem}.{ext}"))
+                .to_string_lossy()
+                .to_string(),
+            None,
+        );
+    }
+
+    if ps2fpkg::is_mode(&spec.mode) {
+        return (
+            dir.join(format!("{stem}.pkg"))
                 .to_string_lossy()
                 .to_string(),
             None,
@@ -360,6 +380,7 @@ fn add_jobs(app: AppHandle, state: State<AppState>, specs: Vec<JobSpec>) -> Vec<
             .or_else(|| xbox360::tool_for(&spec.mode))
             .or_else(|| ps3::tool_for(&spec.mode))
             .or_else(|| ps5::tool_for_input(&spec.mode, &spec.input))
+            .or_else(|| ps2fpkg::is_mode(&spec.mode).then_some("ps2fpkg"))
             .or_else(|| psp::is_mode(&spec.mode).then_some("maxcso"))
             .or_else(|| wii::is_mode(&spec.mode).then_some(wii::tool_for(&spec.mode)))
             .unwrap_or("chdman")
@@ -390,6 +411,7 @@ fn add_jobs(app: AppHandle, state: State<AppState>, specs: Vec<JobSpec>) -> Vec<
         job.codecs = spec.codecs;
         job.hunk_size = spec.hunk_size;
         job.unit_size = spec.unit_size;
+        job.options = spec.options;
         created.push(job);
     }
 

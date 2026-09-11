@@ -95,7 +95,12 @@ fn resolve(custom: &Option<String>, names: &[&str], fallback_dir: &PathBuf) -> O
             return Some(found);
         }
     }
-    first_existing(&names.iter().map(|n| fallback_dir.join(n)).collect::<Vec<_>>())
+    first_existing(
+        &names
+            .iter()
+            .map(|n| fallback_dir.join(n))
+            .collect::<Vec<_>>(),
+    )
 }
 
 pub fn boot9_path(s: &Settings) -> Option<PathBuf> {

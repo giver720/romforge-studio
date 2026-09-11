@@ -9,7 +9,6 @@ import {
   Gauge,
   Gamepad2,
   HardDrive,
-  LockKeyhole,
   Package2,
   ShieldCheck,
   Sparkles,
@@ -76,6 +75,7 @@ export function Ps5View() {
   const selectedFormat = formats.find((format) => format.mode === mode)!;
   const selectedToolMissing = missingTools.has(selectedFormat.tool);
   const prosperoMissing = missingTools.has("prospero");
+  const amprMissing = missingTools.has("ampr");
   const imageExt = imageSource?.split(".").pop()?.toLowerCase();
   const canCompress = imageExt === "exfat" || imageExt === "ffpkg";
 
@@ -268,11 +268,11 @@ export function Ps5View() {
           <div className="min-w-0 flex-1">
             <div className="flex flex-wrap items-center gap-2">
               <p className="text-[0.9rem] font-semibold">Laboratorio PS5</p>
-              <span className="chip text-[0.58rem]">En preparación</span>
+              <span className="chip text-[0.58rem]">Formatos recientes</span>
             </div>
             <p className="mt-1 max-w-3xl text-[0.68rem] leading-relaxed text-[var(--color-muted)]">
-              FPKG nativo usa LibProsperoPKG y valida el paquete antes de publicarlo. LZ4/Lizard
-              seguirá protegido hasta que su encoder y contenedor sean públicos.
+              FPKG nativo usa LibProsperoPKG. AMPR/LZ4 crea paquetes reversibles con el encoder
+              público y ambos resultados se validan antes de publicarse.
             </p>
           </div>
         </div>
@@ -331,29 +331,30 @@ export function Ps5View() {
               </ul>
               <button
                 className={`btn mt-4 w-full justify-center ${
-                  format.id === "fpkg" ? "btn-primary" : "btn-ghost opacity-70"
+                  format.id === "fpkg" ? "btn-primary" : "btn-ghost"
                 }`}
                 disabled={
                   busy ||
-                  format.id === "lz4" ||
-                  prosperoMissing ||
+                  (format.id === "fpkg" ? prosperoMissing : amprMissing) ||
                   !source ||
                   !scan?.valid ||
-                  !scan.fpkg_ready
+                  (format.id === "fpkg" && !scan.fpkg_ready)
                 }
                 title={
-                  format.id === "lz4"
-                    ? "Se habilitará cuando exista un encoder público verificable"
-                    : scan?.fpkg_blockers[0] ?? (prosperoMissing ? "Falta LibProsperoPKG" : "Crear FPKG PS5")
+                  format.id === "fpkg"
+                    ? scan?.fpkg_blockers[0] ?? (prosperoMissing ? "Falta LibProsperoPKG" : "Crear FPKG PS5")
+                    : amprMissing ? "Falta el motor AMPR/LZ4 incluido" : "Crear una copia AMPRPAK4/LZ4"
                 }
                 onClick={() =>
-                  format.id === "fpkg" &&
-                  source &&
-                  enqueue(source, format.mode, "FPKG nativo de PS5 añadido a la cola")
+                  source && enqueue(
+                    source,
+                    format.mode,
+                    format.id === "fpkg" ? "FPKG nativo de PS5 añadido a la cola" : "Copia AMPR/LZ4 añadida a la cola",
+                  )
                 }
               >
-                {format.id === "lz4" ? <LockKeyhole size={14} /> : <Package2 size={14} />}
-                {format.id === "fpkg" && prosperoMissing ? "Motor FPKG no disponible" : format.actionLabel}
+                <Package2 size={14} />
+                {(format.id === "fpkg" ? prosperoMissing : amprMissing) ? "Motor no disponible" : format.actionLabel}
               </button>
             </article>
           ))}

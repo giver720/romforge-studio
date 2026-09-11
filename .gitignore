@@ -23,3 +23,8 @@ tools/prospero-bridge/vendor/
 tools/prospero-bridge/publish/
 tools/prospero-bridge/bin/
 tools/prospero-bridge/obj/
+tools/ampr-bridge/vendor/
+tools/ampr-bridge/.venv-build/
+tools/ampr-bridge/.venv-build-linux/
+tools/ampr-bridge/build/
+tools/ampr-bridge/dist/

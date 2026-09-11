@@ -27,15 +27,12 @@ export interface Ps5LabFormat {
   name: string;
   badge: string;
   description: string;
-  availability: "available" | "announced";
+  availability: "available" | "beta";
   requirements: string[];
   actionLabel: string;
 }
 
-/**
- * Formatos PS5 en preparación. No son modos ejecutables todavía: mantenerlos
- * fuera de la cola evita producir archivos dañados o con un formato supuesto.
- */
+/** Formatos PS5 recientes con motores públicos verificables. */
 export const PS5_LAB_FORMATS: Ps5LabFormat[] = [
   {
     id: "fpkg",
@@ -55,16 +52,16 @@ export const PS5_LAB_FORMATS: Ps5LabFormat[] = [
   {
     id: "lz4",
     mode: "ps5lz4",
-    name: "LZ4 · Lizard",
-    badge: "Anunciado",
+    name: "LZ4 · AMPRPAK4",
+    badge: "Beta pública",
     description:
-      "Nuevo formato compacto anunciado para juegos de PS5; no es un archivo LZ4 genérico renombrado.",
-    availability: "announced",
+      "Carpeta compacta con bloques LZ4 seekable y runtime AMPR oficial. Mantiene sueltos módulos y archivos del sistema.",
+    availability: "beta",
     requirements: [
-      "Encoder o especificación pública",
-      "Detector fiable del contenedor",
-      "Prueba de extracción y montaje en PS5",
+      "ShadowMountPlus y payloads compatibles",
+      "Primera prueba recomendada desde USB o almacenamiento externo",
+      "La verificación offline no sustituye la prueba completa del juego",
     ],
-    actionLabel: "Esperando encoder público",
+    actionLabel: "Crear carpeta LZ4",
   },
 ];

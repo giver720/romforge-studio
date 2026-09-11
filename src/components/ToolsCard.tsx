@@ -12,6 +12,7 @@ const FAMILY_LABEL: Record<string, string> = {
   chd: "CHD",
   switch: "Nintendo Switch",
   "3ds": "Nintendo 3DS",
+  ps2: "PlayStation 2 → PS4",
   ps3: "PlayStation 3",
   ps5: "PlayStation 5",
   xbox360: "Xbox 360",
