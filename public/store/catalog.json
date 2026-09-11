@@ -43107,7 +43107,7 @@
       "name": "onionHEN",
       "summary": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
       "author": "",
-      "version": "v0.0.12",
+      "version": "v0.0.13",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/aydencharles/onionhen",
@@ -43115,15 +43115,15 @@
         {
           "format": "elf",
           "filename": "OnionHEN.elf",
-          "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.12/OnionHEN.elf",
-          "sha256": "a5c8dafe2af2681e8014421400c4ade4183a8d8be6dad6080dbd0930fa159e00"
+          "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.13/OnionHEN.elf",
+          "sha256": "aa3f98847948e2ae8ea600c3f437e28247a0a4f8b73651a046d2859924bf97b3"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-31 08:03:05 UTC+8"
+      "updated_at": "2026-09-12 00:44:31 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:985",
@@ -48845,6 +48845,168 @@
       "updated_at": "2023-11-05"
     },
     {
+      "id": "ps4-store:268181309",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — homebrew.elf",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "homebrew.elf",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/homebrew.elf",
+          "size": 4842768,
+          "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
+        }
+      ],
+      "popularity": 5755,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:238357415",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — PS5_Update_files.zip",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PS5_Update_files.zip",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/PS5_Update_files.zip",
+          "size": 1488211,
+          "sha256": null
+        }
+      ],
+      "popularity": 2355,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:268177439",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2-Legacy.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2-Legacy.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-Legacy.pkg",
+          "size": 24772608,
+          "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
+        }
+      ],
+      "popularity": 4673,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:167233612",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2-PS5.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2-PS5.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-PS5.pkg",
+          "size": 43450368,
+          "sha256": null
+        }
+      ],
+      "popularity": 4353,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:268177642",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg",
+          "size": 24772608,
+          "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
+        }
+      ],
+      "popularity": 36478,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-hen:457413679",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4HEN — hen.bin",
+      "summary": "**Full Changelog**: https://github.com/Scene-Collective/ps4-hen/compare/pre-release-main-179...pre-release-main-181",
+      "author": "Scene-Collective",
+      "version": "pre-release-main-181",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/Scene-Collective/ps4-hen/releases/tag/pre-release-main-181",
+      "downloads": [
+        {
+          "format": "bin",
+          "filename": "hen.bin",
+          "url": "https://github.com/Scene-Collective/ps4-hen/releases/download/pre-release-main-181/hen.bin",
+          "size": 499776,
+          "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
+        }
+      ],
+      "popularity": 1483,
+      "source": "PS4HEN",
+      "source_url": "https://github.com/Scene-Collective/ps4-hen",
+      "license_url": null,
+      "updated_at": "2026-06-25T07:39:15Z"
+    },
+    {
       "id": "vitadbtoo-vita:560",
       "platforms": [
         "psvita"
@@ -49112,30 +49274,30 @@
       "updated_at": "2026-06-21 15:37:35 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-5.17.10.elf",
+      "id": "ps5-payloads-atlas:ps5upload-5.18.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v5.17.10",
+      "version": "v5.18.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-5.17.10.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.17.10/ps5upload-5.17.10.elf",
-          "sha256": "4039b181fb44d68f05f9d8d8e62062eef39202a2c2b8f3a75cfc3c78dae39a03"
+          "filename": "ps5upload-5.18.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.18.0/ps5upload-5.18.0.elf",
+          "sha256": "07bb18ce1c6eacfc8da796394c23cc535850129d1ad0eff0c60dfb5dc7b93f0a"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-11 11:14:05 UTC+8"
+      "updated_at": "2026-09-12 04:09:54 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -79912,18 +80074,5 @@
       "homepage": "https://github.com/Scene-Collective/ps4-hen"
     }
   ],
-  "errors": [
-    {
-      "source": "ps4-goldhen",
-      "error": "HTTP Error 403: rate limit exceeded"
-    },
-    {
-      "source": "ps4-store",
-      "error": "HTTP Error 403: rate limit exceeded"
-    },
-    {
-      "source": "ps4-hen",
-      "error": "HTTP Error 403: rate limit exceeded"
-    }
-  ]
+  "errors": []
 }
