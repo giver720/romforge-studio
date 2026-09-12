@@ -523,7 +523,7 @@ pub fn locate(id: &str, s: &Settings) -> Option<(PathBuf, String)> {
 
     if let Some(p) = s.tool_paths.get(id) {
         let p = PathBuf::from(p);
-        if p.is_file() {
+        if p.is_file() && is_compatible(id, &p) {
             return Some((p, "manual".into()));
         }
     }
@@ -531,29 +531,31 @@ pub fn locate(id: &str, s: &Settings) -> Option<(PathBuf, String)> {
     let name = exe_name(spec.exe());
 
     let venv = venv_bin().join(&name);
-    if venv.is_file() {
+    if venv.is_file() && is_compatible(id, &venv) {
         return Some((venv, "venv".into()));
     }
 
     // Las que viajan dentro del instalador
     for d in chdman::bundled_dirs() {
         let c = d.join(&name);
-        if c.is_file() {
+        if c.is_file() && is_compatible(id, &c) {
             return Some((c, "bundled".into()));
         }
     }
 
     let downloaded = tools_dir().join(id).join(&name);
-    if downloaded.is_file() {
+    if downloaded.is_file() && is_compatible(id, &downloaded) {
         return Some((downloaded, "tools".into()));
     }
     // Algunos zips traen el binario dentro de una subcarpeta
-    if let Some(found) = find_in(&tools_dir().join(id), &name, 0) {
+    if let Some(found) = find_in(&tools_dir().join(id), &name, 0).filter(|p| is_compatible(id, p)) {
         return Some((found, "tools".into()));
     }
 
     if let Ok(p) = which::which(spec.exe()) {
-        return Some((p, "path".into()));
+        if is_compatible(id, &p) {
+            return Some((p, "path".into()));
+        }
     }
 
     // Las externas se buscan donde suele instalarlas su propio programa
@@ -681,6 +683,28 @@ fn find_in(dir: &std::path::Path, name: &str, depth: usize) -> Option<PathBuf> {
         }
     }
     dirs.into_iter().find_map(|d| find_in(&d, name, depth + 1))
+}
+
+/// MkPFS 0.0.x, which is still common on PATH, only handles PFS images and
+/// cannot create or extract the raw exFAT images ROMForge exposes. ROMForge
+/// requires the 1.0.x CLI, whose `pack --help` advertises the `exfat` mode.
+fn is_compatible(id: &str, path: &std::path::Path) -> bool {
+    if id != "mkpfs" {
+        return true;
+    }
+    let Ok(output) = std::process::Command::new(path)
+        .args(["pack", "--help"])
+        .output()
+    else {
+        return false;
+    };
+    let text = format!(
+        "{}\n{}",
+        String::from_utf8_lossy(&output.stdout),
+        String::from_utf8_lossy(&output.stderr)
+    )
+    .to_lowercase();
+    text.contains("exfat")
 }
 
 /// Pregunta la version ejecutando la herramienta; si falla, deja el campo vacio.
