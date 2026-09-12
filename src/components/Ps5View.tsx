@@ -399,6 +399,33 @@ export function Ps5View() {
             {imageSource && <p className="mono mt-2 truncate text-[0.65rem] text-blue-300">{imageSource}</p>}
           </div>
         </div>
+        {imageExt === "exfat" && (
+          <div className="mt-3 grid gap-2 rounded-xl border border-white/10 bg-white/[0.02] p-3 sm:grid-cols-3">
+            {[
+              { label: "MkPFS 1.0", ready: !missingTools.has("mkpfs") },
+              { label: "Motor FPKG", ready: !prosperoMissing },
+              { label: "Destino", ready: Boolean(settings.output_dir), optional: true },
+            ].map((requirement) => (
+              <div
+                key={requirement.label}
+                className={`flex items-center gap-2 text-[0.64rem] ${
+                  requirement.ready || requirement.optional ? "text-emerald-300" : "text-amber-300"
+                }`}
+              >
+                {requirement.ready || requirement.optional
+                  ? <CheckCircle2 size={13} />
+                  : <AlertTriangle size={13} />}
+                <span>
+                  {requirement.label}: {requirement.ready
+                    ? "listo"
+                    : requirement.optional
+                      ? "junto a la imagen"
+                      : "falta instalar"}
+                </span>
+              </div>
+            ))}
+          </div>
+        )}
         <div className="mt-4 flex flex-wrap gap-2">
           <button className="btn btn-ghost" onClick={chooseImage} disabled={busy}>
             <FileArchive size={15} /> Elegir imagen
