@@ -398,6 +398,16 @@ export function Ps5View() {
           >
             <ArchiveRestore size={15} /> Extraer a carpeta
           </button>
+          {imageExt === "exfat" && (
+            <button
+              className="btn btn-ghost"
+              disabled={busy || !imageSource || missingTools.has("mkpfs")}
+              title="Extrae el exFAT; después selecciona la carpeta en el laboratorio PS5 para crear el FPKG"
+              onClick={() => imageSource && enqueue(imageSource, "ps5extract", "ExFAT preparado para crear FPKG")}
+            >
+              <Package2 size={15} /> Preparar para FPKG
+            </button>
+          )}
         </div>
       </section>
 

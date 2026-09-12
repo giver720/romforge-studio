@@ -40,10 +40,11 @@ export const PS5_LAB_FORMATS: Ps5LabFormat[] = [
     name: "FPKG nativo de PS5",
     badge: "Disponible",
     description:
-      "Empaquetado FPKG para dumps nativos de PS5. Es distinto de FFPKG/UFS2 y del FPKG de PS4.",
+      "Empaquetado FPKG actualizado para dumps nativos de PS5. Admite preparar una carpeta o recuperar primero un exFAT y después crear el .pkg.",
     availability: "available",
     requirements: [
       "Dump con módulos ELF descifrados",
+      "Si partes de exFAT, extráelo a una carpeta antes de crear el .pkg",
       "contentId válido en sce_sys/param.json",
       "Firmware y payloads compatibles en la consola",
     ],
