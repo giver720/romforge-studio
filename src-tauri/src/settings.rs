@@ -52,6 +52,8 @@ pub struct Settings {
     pub ps5_fpkg_decrypted_subfolder: String,
     /// Permite que LibProsperoPKG use su right.sprx integrado.
     pub ps5_fpkg_embedded_right: bool,
+    /// Carpeta de salida exclusiva para PS5; si falta se hereda la general.
+    pub ps5_output_dir: Option<String>,
 }
 
 impl Default for Settings {
@@ -81,6 +83,7 @@ impl Default for Settings {
             wii_wbfs_split: true,
             ps5_fpkg_decrypted_subfolder: "decrypted".into(),
             ps5_fpkg_embedded_right: false,
+            ps5_output_dir: None,
         }
     }
 }

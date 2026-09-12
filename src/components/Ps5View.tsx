@@ -127,7 +127,13 @@ export function Ps5View() {
   ) {
     setBusy(true);
     try {
-      await api.addJobs([{ input, mode: selectedMode, system: "ps5", options }]);
+      await api.addJobs([{
+        input,
+        mode: selectedMode,
+        system: "ps5",
+        options,
+        output_dir: settings.ps5_output_dir,
+      }]);
       await refreshJobs();
       notify("ok", message);
     } catch (error) {
@@ -270,21 +276,37 @@ export function Ps5View() {
         </div>
         <div className="mt-3 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-3">
           <FolderInput size={16} className="shrink-0 text-violet-300" />
-          <span className="text-[0.68rem] text-[var(--color-muted)]">Carpeta de salida</span>
+          <span className="text-[0.68rem] text-[var(--color-muted)]">Carpeta de salida PS5</span>
           <button
             className="btn btn-quiet ml-auto min-w-0 max-w-[65%] justify-start"
             onClick={async () => {
               const result = await open({ directory: true, multiple: false });
-              if (result) await patchSettings({ output_dir: result as string });
+              if (result) await patchSettings({ ps5_output_dir: result as string });
             }}
             disabled={busy}
             title="Las conversiones PS5 se guardarán en esta carpeta"
           >
-            <span className="truncate">{settings.output_dir || "Junto a la entrada"}</span>
+            <span className="truncate">
+              {settings.ps5_output_dir || settings.output_dir || "Junto a la entrada"}
+            </span>
           </button>
+          {settings.ps5_output_dir && (
+            <button
+              className="btn btn-quiet shrink-0 px-2"
+              onClick={() => patchSettings({ ps5_output_dir: null })}
+              disabled={busy}
+              title="Volver a la salida general"
+            >
+              Restablecer
+            </button>
+          )}
         </div>
         <p className="mt-2 text-[0.62rem] leading-relaxed text-[var(--color-faint)]">
-          En exFAT → FPKG, la extracción temporal también se crea en esta ubicación para no llenar la unidad del sistema.
+          {settings.ps5_output_dir
+            ? "Esta ruta solo se aplica a PS5. En exFAT → FPKG, la extracción temporal también se crea aquí."
+            : settings.output_dir
+              ? "Usando la salida general. Elige otra carpeta para asignar una ruta exclusiva a PS5."
+              : "En exFAT → FPKG, la extracción temporal se crea junto a la imagen para no llenar la unidad del sistema."}
         </p>
         {mode === "ps5ffpkg" && (
           <p className="mt-2 text-[0.64rem] text-amber-300">
@@ -447,7 +469,7 @@ export function Ps5View() {
             {[
               { label: "MkPFS 1.0", ready: !missingTools.has("mkpfs") },
               { label: "Motor FPKG", ready: !prosperoMissing },
-              { label: "Destino", ready: Boolean(settings.output_dir), optional: true },
+              { label: "Destino", ready: Boolean(settings.ps5_output_dir || settings.output_dir), optional: true },
             ].map((requirement) => (
               <div
                 key={requirement.label}
