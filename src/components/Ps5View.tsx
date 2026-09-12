@@ -65,6 +65,8 @@ export function Ps5View() {
   const [artwork, setArtwork] = useState<GameArtwork | null>(null);
   const [mode, setMode] = useState<BuildMode>("ps5ffpkg");
   const [busy, setBusy] = useState(false);
+  const [outputLocationError, setOutputLocationError] = useState<string | null>(null);
+  const [checkingOutputLocation, setCheckingOutputLocation] = useState(false);
 
   useEffect(() => {
     refreshTools();
@@ -124,6 +126,30 @@ export function Ps5View() {
       active = false;
     };
   }, [source, decryptedSubfolderTrimmed, decryptedSubfolderValid]);
+
+  useEffect(() => {
+    const output = settings.ps5_output_dir || settings.output_dir;
+    if (!source || !output) {
+      setOutputLocationError(null);
+      setCheckingOutputLocation(false);
+      return;
+    }
+    let active = true;
+    setCheckingOutputLocation(true);
+    api.ps5ValidateOutputLocation(source, output)
+      .then(() => {
+        if (active) setOutputLocationError(null);
+      })
+      .catch((error) => {
+        if (active) setOutputLocationError(String(error));
+      })
+      .finally(() => {
+        if (active) setCheckingOutputLocation(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [source, settings.ps5_output_dir, settings.output_dir]);
 
   async function chooseImage() {
     const result = (await open({
@@ -284,7 +310,7 @@ export function Ps5View() {
           <button
             className="btn btn-primary"
             onClick={() => source && enqueue(source, mode, `${selectedFormat.name} añadido a la cola`)}
-            disabled={busy || selectedToolMissing || !source || !scan?.valid}
+            disabled={busy || checkingOutputLocation || Boolean(outputLocationError) || selectedToolMissing || !source || !scan?.valid}
           >
             <FileArchive size={15} /> Crear {mode === "ps5ffpkg" ? ".ffpkg" : mode === "ps5exfat" ? ".exfat" : ".ffpfsc"}
           </button>
@@ -323,6 +349,11 @@ export function Ps5View() {
               ? "Usando la salida general. Elige otra carpeta para asignar una ruta exclusiva a PS5."
               : "En exFAT → FPKG, la extracción temporal se crea junto a la imagen para no llenar la unidad del sistema."}
         </p>
+        {outputLocationError && (
+          <p className="mt-2 flex items-start gap-1.5 text-[0.64rem] leading-relaxed text-rose-300">
+            <AlertTriangle size={13} className="mt-0.5 shrink-0" /> {outputLocationError}
+          </p>
+        )}
         {mode === "ps5ffpkg" && (
           <p className="mt-2 text-[0.64rem] text-amber-300">
             Windows pedirá permiso de administrador al crear y verificar FFPKG; exFAT y FFPFSC no lo necesitan.
@@ -462,6 +493,8 @@ export function Ps5View() {
                 }`}
                 disabled={
                   busy ||
+                  checkingOutputLocation ||
+                  Boolean(outputLocationError) ||
                   (format.id === "fpkg" ? prosperoMissing : amprMissing) ||
                   !source ||
                   !scan?.valid ||

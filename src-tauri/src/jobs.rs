@@ -1389,6 +1389,11 @@ async fn run_ps5_workflow(
         job.mode.as_str(),
         MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_NATIVE_FPKG | MODE_EXFAT_FPKG | MODE_LZ4
     );
+    if input.is_dir() && builds_from_folder {
+        if let Err(message) = crate::ps5::validate_output_location(&input, Path::new(&job.output)) {
+            return custom_error(&app, &id, message);
+        }
+    }
     let expected = if builds_from_folder {
         let decrypted_subfolder = job
             .options

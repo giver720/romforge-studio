@@ -165,6 +165,48 @@ pub fn validate_decrypted_subfolder(value: &str) -> Result<&str, String> {
     Ok(value)
 }
 
+fn path_starts_with(candidate: &Path, base: &Path) -> bool {
+    #[cfg(windows)]
+    {
+        let candidate: Vec<_> = candidate.components().collect();
+        let base: Vec<_> = base.components().collect();
+        candidate.len() >= base.len()
+            && candidate.iter().zip(&base).all(|(left, right)| {
+                left.as_os_str()
+                    .to_string_lossy()
+                    .eq_ignore_ascii_case(&right.as_os_str().to_string_lossy())
+            })
+    }
+    #[cfg(not(windows))]
+    {
+        candidate.starts_with(base)
+    }
+}
+
+/// Evita crear el staging o la salida dentro del dump que se está leyendo.
+/// Para rutas que aún no existen se resuelve el primer ancestro existente, de
+/// modo que también se detectan subcarpetas nuevas bajo el juego.
+pub fn validate_output_location(input: &Path, output: &Path) -> Result<(), String> {
+    if !input.is_dir() {
+        return Ok(());
+    }
+    let input = std::fs::canonicalize(input)
+        .map_err(|error| format!("No se pudo comprobar la carpeta de entrada: {error}"))?;
+    let existing_output = output
+        .ancestors()
+        .find(|candidate| candidate.exists())
+        .ok_or_else(|| "No se pudo comprobar la ubicación de salida".to_string())?;
+    let output = std::fs::canonicalize(existing_output)
+        .map_err(|error| format!("No se pudo comprobar la carpeta de salida: {error}"))?;
+    if path_starts_with(&output, &input) {
+        return Err(
+            "La salida PS5 no puede estar dentro del dump de origen. Elige una carpeta externa para evitar incluir la conversión dentro de sí misma."
+                .into(),
+        );
+    }
+    Ok(())
+}
+
 fn align(value: u64, unit: u64) -> u64 {
     value.saturating_add(unit - 1) / unit * unit
 }
@@ -733,6 +775,38 @@ mod tests {
 
         let invalid = BTreeMap::from([("profile".into(), "maximum; remove".into())]);
         assert!(lz4_convert_args("game", "game-lz4", &invalid).is_err());
+    }
+
+    #[test]
+    fn blocks_ps5_output_inside_the_source_tree() {
+        let base = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-output-guard-{}",
+            std::process::id()
+        ));
+        let source = base.join("game");
+        let sibling = base.join("converted");
+        let nested = source.join("new/output/game.ffpkg");
+        let _ = std::fs::remove_dir_all(&base);
+        std::fs::create_dir_all(&source).unwrap();
+        std::fs::create_dir_all(&sibling).unwrap();
+
+        assert!(validate_output_location(&source, &sibling).is_ok());
+        assert!(validate_output_location(&source, &nested).is_err());
+        assert!(validate_output_location(&source, &source).is_err());
+        let _ = std::fs::remove_dir_all(base);
+    }
+
+    #[cfg(windows)]
+    #[test]
+    fn output_guard_compares_windows_paths_case_insensitively() {
+        assert!(path_starts_with(
+            Path::new(r"C:\Games\PPSA00001\converted"),
+            Path::new(r"c:\games\ppsa00001")
+        ));
+        assert!(!path_starts_with(
+            Path::new(r"C:\Games\PPSA000010\converted"),
+            Path::new(r"c:\games\ppsa00001")
+        ));
     }
 
     #[test]

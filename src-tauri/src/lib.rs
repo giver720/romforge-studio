@@ -643,6 +643,11 @@ fn ps5_scan(dir: String, decrypted_subfolder: Option<String>) -> ps5::Ps5Scan {
 }
 
 #[tauri::command]
+fn ps5_validate_output_location(input: String, output: String) -> Result<(), String> {
+    ps5::validate_output_location(std::path::Path::new(&input), std::path::Path::new(&output))
+}
+
+#[tauri::command]
 async fn game_artwork(
     input: String,
     system: String,
@@ -791,6 +796,7 @@ pub fn run() {
             ps3_scan,
             ps3_trim,
             ps5_scan,
+            ps5_validate_output_location,
             game_artwork,
             app_paths,
             reveal

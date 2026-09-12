@@ -65,6 +65,8 @@ export const api = {
   ps3Trim: (dir: string, paths: string[]) => invoke<TrimResult>("ps3_trim", { dir, paths }),
   ps5Scan: (dir: string, decryptedSubfolder = "decrypted") =>
     invoke<Ps5Scan>("ps5_scan", { dir, decryptedSubfolder }),
+  ps5ValidateOutputLocation: (input: string, output: string) =>
+    invoke<void>("ps5_validate_output_location", { input, output }),
   gameArtwork: (input: string, system: string) =>
     invoke<GameArtwork>("game_artwork", { input, system }),
   fetchStoreCatalog: () => invoke<unknown>("fetch_store_catalog"),
