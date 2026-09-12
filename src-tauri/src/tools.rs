@@ -872,10 +872,16 @@ async fn install_mkpfs_py310_compat() -> anyhow::Result<()> {
 
 /// Instala (o actualiza) un paquete de Python dentro del entorno de la app.
 pub async fn install_python_package(package: &str) -> anyhow::Result<String> {
-    let pip = ensure_venv().await?;
+    // Invocar `python -m pip` es más fiable que ejecutar el launcher pip.exe
+    // directamente: en Windows algunos antivirus/instalaciones recientes
+    // bloquean el script mientras el venv se está creando.
+    let _pip = ensure_venv().await?;
+    let python = venv_bin().join(exe_name("python"));
     let (ok, out) = chdman::run_capture(
-        &pip,
+        &python,
         &[
+            "-m".into(),
+            "pip".into(),
             "install".into(),
             "--upgrade".into(),
             "--disable-pip-version-check".into(),
