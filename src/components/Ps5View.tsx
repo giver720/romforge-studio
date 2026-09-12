@@ -82,6 +82,14 @@ export function Ps5View() {
   const amprMissing = missingTools.has("ampr");
   const imageExt = imageSource?.split(".").pop()?.toLowerCase();
   const canCompress = imageExt === "exfat" || imageExt === "ffpkg";
+  const decryptedSubfolderTrimmed = decryptedSubfolder.trim();
+  const decryptedSubfolderValid =
+    decryptedSubfolderTrimmed.length > 0 &&
+    decryptedSubfolderTrimmed.length <= 120 &&
+    !decryptedSubfolderTrimmed.includes(":") &&
+    !decryptedSubfolderTrimmed
+      .split(/[\\/]/)
+      .some((segment) => segment.length === 0 || segment === "." || segment === "..");
 
   async function chooseFolder() {
     const result = (await open({ directory: true, multiple: false })) as string | null;
@@ -367,6 +375,11 @@ export function Ps5View() {
                       placeholder="decrypted"
                       maxLength={120}
                     />
+                    {!decryptedSubfolderValid && (
+                      <span className="mt-1 block text-[0.6rem] text-rose-300">
+                        Usa una ruta relativa como decrypted o decrypted/modules, sin “..”.
+                      </span>
+                    )}
                   </label>
                   <Toggle
                     checked={embeddedRight}
@@ -385,6 +398,7 @@ export function Ps5View() {
                   (format.id === "fpkg" ? prosperoMissing : amprMissing) ||
                   !source ||
                   !scan?.valid ||
+                  (format.id === "fpkg" && !decryptedSubfolderValid) ||
                   (format.id === "fpkg" && !scan.fpkg_ready)
                 }
                 title={
@@ -398,7 +412,7 @@ export function Ps5View() {
                     format.mode,
                     format.id === "fpkg" ? "FPKG nativo de PS5 añadido a la cola" : "Copia AMPR/LZ4 añadida a la cola",
                     format.id === "fpkg"
-                      ? { decrypted_subfolder: decryptedSubfolder, embedded_right: String(embeddedRight) }
+                      ? { decrypted_subfolder: decryptedSubfolderTrimmed, embedded_right: String(embeddedRight) }
                       : {},
                   )
                 }
@@ -478,19 +492,21 @@ export function Ps5View() {
           {imageExt === "exfat" && (
             <button
               className="btn btn-primary"
-              disabled={busy || !imageSource || missingTools.has("mkpfs") || prosperoMissing}
+              disabled={busy || !imageSource || missingTools.has("mkpfs") || prosperoMissing || !decryptedSubfolderValid}
               title={
                 missingTools.has("mkpfs")
                   ? "Falta MkPFS 1.0.0"
                   : prosperoMissing
                     ? "Falta el motor LibProsperoPKG"
+                    : !decryptedSubfolderValid
+                      ? "Corrige la subcarpeta de módulos descifrados"
                     : "Extraer, convertir y verificar el FPKG automáticamente"
               }
               onClick={() => imageSource && enqueue(
                 imageSource,
                 "ps5fpkgexfat",
                 "Conversión exFAT → FPKG añadida a la cola",
-                { decrypted_subfolder: decryptedSubfolder, embedded_right: String(embeddedRight) },
+                { decrypted_subfolder: decryptedSubfolderTrimmed, embedded_right: String(embeddedRight) },
               )}
             >
               <Package2 size={15} /> Crear FPKG desde exFAT
