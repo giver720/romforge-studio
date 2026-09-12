@@ -440,8 +440,7 @@ impl StagedOutput {
 struct TemporaryWorkspace(PathBuf);
 
 impl TemporaryWorkspace {
-    fn create(name: String) -> Result<Self, String> {
-        let path = std::env::temp_dir().join(name);
+    fn create(path: PathBuf) -> Result<Self, String> {
         if path.exists() {
             std::fs::remove_dir_all(&path)
                 .map_err(|e| format!("No se pudo limpiar el temporal anterior: {e}"))?;
@@ -485,6 +484,20 @@ mod output_transaction_tests {
             "ps2".into(),
         );
         (dir, job)
+    }
+
+    #[test]
+    fn temporary_workspace_uses_requested_disk_and_cleans_on_drop() {
+        let (dir, _) = fixture("temporary-workspace");
+        let path = dir.join(".romforge-ps5-fpkg-input-test");
+        {
+            let workspace = TemporaryWorkspace::create(path.clone()).unwrap();
+            assert_eq!(workspace.path(), path.as_path());
+            std::fs::write(workspace.path().join("game.bin"), b"temporary").unwrap();
+            assert!(path.join("game.bin").is_file());
+        }
+        assert!(!path.exists());
+        let _ = std::fs::remove_dir_all(dir);
     }
 
     #[test]
@@ -1281,7 +1294,13 @@ async fn run_ps5_workflow(
                 "Falta MkPFS 1.0.0. Instálalo desde Ajustes → Herramientas.".into(),
             );
         };
-        let workspace = match TemporaryWorkspace::create(format!("romforge-ps5-fpkg-{id}")) {
+        let temporary_parent = Path::new(&job.output)
+            .parent()
+            .map(Path::to_path_buf)
+            .unwrap_or_else(|| PathBuf::from("."));
+        let workspace = match TemporaryWorkspace::create(
+            temporary_parent.join(format!(".romforge-ps5-fpkg-input-{id}")),
+        ) {
             Ok(value) => value,
             Err(message) => return custom_error(&app, &id, message),
         };

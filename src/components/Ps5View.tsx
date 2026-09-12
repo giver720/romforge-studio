@@ -269,6 +269,9 @@ export function Ps5View() {
             <span className="truncate">{settings.output_dir || "Junto a la entrada"}</span>
           </button>
         </div>
+        <p className="mt-2 text-[0.62rem] leading-relaxed text-[var(--color-faint)]">
+          En exFAT → FPKG, la extracción temporal también se crea en esta ubicación para no llenar la unidad del sistema.
+        </p>
         {mode === "ps5ffpkg" && (
           <p className="mt-2 text-[0.64rem] text-amber-300">
             Windows pedirá permiso de administrador al crear y verificar FFPKG; exFAT y FFPFSC no lo necesitan.
