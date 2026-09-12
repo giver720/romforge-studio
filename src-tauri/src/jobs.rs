@@ -1168,6 +1168,21 @@ fn custom_phase(app: &AppHandle, id: &str, text: &str, progress: f32) {
     }
 }
 
+fn custom_log_output(app: &AppHandle, id: &str, label: &str, output: &str) {
+    if output.trim().is_empty() {
+        return;
+    }
+    let state = app.state::<AppState>();
+    if let Some(job) = state.update(id, |job| {
+        job.log.push(format!("── {label} ──"));
+        let mut lines: Vec<String> = output.lines().rev().take(40).map(str::to_string).collect();
+        lines.reverse();
+        job.log.extend(lines);
+    }) {
+        emit_job(app, &job);
+    }
+}
+
 fn custom_error(app: &AppHandle, id: &str, message: String) {
     let state = app.state::<AppState>();
     if let Some(job) = state.update(id, |job| {
@@ -1343,7 +1358,7 @@ async fn run_ps5_workflow(
             Ok(value) => value,
             Err(message) => return custom_error(&app, &id, message),
         };
-        custom_phase(&app, &id, "Extrayendo exFAT para preparar el FPKG", 6.0);
+        custom_phase(&app, &id, "Extrayendo la imagen exFAT", 8.0);
         let extract_args = vec![
             "unpack".into(),
             "--overwrite".into(),
@@ -1356,7 +1371,7 @@ async fn run_ps5_workflow(
             run_ps5_capture("mkpfs", &mkpfs, &extract_args, cancel.as_ref()).await,
             "MkPFS exFAT unpack",
         ) {
-            Ok(_) => {}
+            Ok(report) => custom_log_output(&app, &id, "Extracción MkPFS", &report),
             Err(message) if message == "__canceled__" => {
                 return custom_canceled(&app, &id)
             }
@@ -1364,6 +1379,7 @@ async fn run_ps5_workflow(
         }
         prepared_input = workspace.path().to_path_buf();
         _temporary_input = Some(workspace);
+        custom_phase(&app, &id, "Validando el dump extraído y sus módulos", 42.0);
     }
 
     let builds_from_folder = matches!(
@@ -1537,7 +1553,8 @@ async fn run_ps5_workflow(
         }
     };
 
-    custom_phase(&app, &id, phase, 12.0);
+    let build_progress = if job.mode == MODE_EXFAT_FPKG { 55.0 } else { 12.0 };
+    custom_phase(&app, &id, phase, build_progress);
     let output = match capture_failure(
         run_ps5_capture(tool_id, &tool, &args, cancel.as_ref()).await,
         tool_id,
@@ -1553,7 +1570,8 @@ async fn run_ps5_workflow(
         }
     };
 
-    custom_phase(&app, &id, "Verificando el resultado", 88.0);
+    let verify_progress = if job.mode == MODE_EXFAT_FPKG { 92.0 } else { 88.0 };
+    custom_phase(&app, &id, "Verificando el resultado", verify_progress);
     let verification_message = match job.mode.as_str() {
         MODE_EXFAT => {
             let verify_args = vec![
@@ -1782,6 +1800,9 @@ async fn run_ps5_workflow(
         done.verification = "passed".into();
         done.verification_message = Some(verification_message.clone());
         if !output.trim().is_empty() {
+            if job.mode == MODE_EXFAT_FPKG {
+                done.log.push("── Construcción LibProsperoPKG ──".into());
+            }
             let mut lines: Vec<String> =
                 output.lines().rev().take(60).map(str::to_string).collect();
             lines.reverse();
