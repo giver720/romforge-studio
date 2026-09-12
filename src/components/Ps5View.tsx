@@ -65,8 +65,6 @@ export function Ps5View() {
   const [artwork, setArtwork] = useState<GameArtwork | null>(null);
   const [mode, setMode] = useState<BuildMode>("ps5ffpkg");
   const [busy, setBusy] = useState(false);
-  const [decryptedSubfolder, setDecryptedSubfolder] = useState("decrypted");
-  const [embeddedRight, setEmbeddedRight] = useState(false);
 
   useEffect(() => {
     refreshTools();
@@ -82,7 +80,7 @@ export function Ps5View() {
   const amprMissing = missingTools.has("ampr");
   const imageExt = imageSource?.split(".").pop()?.toLowerCase();
   const canCompress = imageExt === "exfat" || imageExt === "ffpkg";
-  const decryptedSubfolderTrimmed = decryptedSubfolder.trim();
+  const decryptedSubfolderTrimmed = settings.ps5_fpkg_decrypted_subfolder.trim();
   const decryptedSubfolderValid =
     decryptedSubfolderTrimmed.length > 0 &&
     decryptedSubfolderTrimmed.length <= 120 &&
@@ -370,8 +368,8 @@ export function Ps5View() {
                     Subcarpeta de módulos descifrados
                     <input
                       className="field mt-1 w-full"
-                      value={decryptedSubfolder}
-                      onChange={(event) => setDecryptedSubfolder(event.target.value)}
+                      value={settings.ps5_fpkg_decrypted_subfolder}
+                      onChange={(event) => patchSettings({ ps5_fpkg_decrypted_subfolder: event.target.value })}
                       placeholder="decrypted"
                       maxLength={120}
                     />
@@ -382,8 +380,8 @@ export function Ps5View() {
                     )}
                   </label>
                   <Toggle
-                    checked={embeddedRight}
-                    onChange={setEmbeddedRight}
+                    checked={settings.ps5_fpkg_embedded_right}
+                    onChange={(value) => patchSettings({ ps5_fpkg_embedded_right: value })}
                     label="Usar right.sprx integrado"
                     hint="Actívalo solo para dumps que requieran el módulo incluido por LibProsperoPKG."
                   />
@@ -412,7 +410,7 @@ export function Ps5View() {
                     format.mode,
                     format.id === "fpkg" ? "FPKG nativo de PS5 añadido a la cola" : "Copia AMPR/LZ4 añadida a la cola",
                     format.id === "fpkg"
-                      ? { decrypted_subfolder: decryptedSubfolderTrimmed, embedded_right: String(embeddedRight) }
+                      ? { decrypted_subfolder: decryptedSubfolderTrimmed, embedded_right: String(settings.ps5_fpkg_embedded_right) }
                       : {},
                   )
                 }
@@ -506,7 +504,7 @@ export function Ps5View() {
                 imageSource,
                 "ps5fpkgexfat",
                 "Conversión exFAT → FPKG añadida a la cola",
-                { decrypted_subfolder: decryptedSubfolderTrimmed, embedded_right: String(embeddedRight) },
+                { decrypted_subfolder: decryptedSubfolderTrimmed, embedded_right: String(settings.ps5_fpkg_embedded_right) },
               )}
             >
               <Package2 size={15} /> Crear FPKG desde exFAT

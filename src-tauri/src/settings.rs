@@ -48,6 +48,10 @@ pub struct Settings {
     pub wii_level: u8,
     /// Partir el WBFS en trozos para que quepa en FAT32.
     pub wii_wbfs_split: bool,
+    /// Carpeta relativa donde el dump guarda los ELF descifrados para FPKG PS5.
+    pub ps5_fpkg_decrypted_subfolder: String,
+    /// Permite que LibProsperoPKG use su right.sprx integrado.
+    pub ps5_fpkg_embedded_right: bool,
 }
 
 impl Default for Settings {
@@ -75,6 +79,8 @@ impl Default for Settings {
             wii_scrub: true,
             wii_level: 5,
             wii_wbfs_split: true,
+            ps5_fpkg_decrypted_subfolder: "decrypted".into(),
+            ps5_fpkg_embedded_right: false,
         }
     }
 }

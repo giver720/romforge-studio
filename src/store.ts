@@ -140,6 +140,8 @@ const DEFAULT_SETTINGS: Settings = {
   wii_level: 5,
   wii_wbfs_split: true,
   ps3_split_fat32: false,
+  ps5_fpkg_decrypted_subfolder: "decrypted",
+  ps5_fpkg_embedded_right: false,
 };
 
 /** Elige el perfil de sistema más probable a partir de la extensión y el tamaño. */
