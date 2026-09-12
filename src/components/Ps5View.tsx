@@ -19,6 +19,7 @@ import { api, type GameArtwork } from "../lib/api";
 import { bytes } from "../lib/format";
 import { PS5_LAB_FORMATS, type Ps5Scan } from "../lib/ps5";
 import { useStore } from "../store";
+import { Toggle } from "./ui";
 
 type BuildMode = "ps5ffpkg" | "ps5exfat" | "ps5ffpfsc";
 
@@ -64,6 +65,8 @@ export function Ps5View() {
   const [artwork, setArtwork] = useState<GameArtwork | null>(null);
   const [mode, setMode] = useState<BuildMode>("ps5ffpkg");
   const [busy, setBusy] = useState(false);
+  const [decryptedSubfolder, setDecryptedSubfolder] = useState("decrypted");
+  const [embeddedRight, setEmbeddedRight] = useState(false);
 
   useEffect(() => {
     refreshTools();
@@ -110,10 +113,15 @@ export function Ps5View() {
     if (result) setImageSource(result);
   }
 
-  async function enqueue(input: string, selectedMode: string, message: string) {
+  async function enqueue(
+    input: string,
+    selectedMode: string,
+    message: string,
+    options: Record<string, string> = {},
+  ) {
     setBusy(true);
     try {
-      await api.addJobs([{ input, mode: selectedMode, system: "ps5" }]);
+      await api.addJobs([{ input, mode: selectedMode, system: "ps5", options }]);
       await refreshJobs();
       notify("ok", message);
     } catch (error) {
@@ -348,6 +356,26 @@ export function Ps5View() {
                   </li>
                 ))}
               </ul>
+              {format.id === "fpkg" && (
+                <div className="mt-3 space-y-2 rounded-xl border border-white/10 bg-black/10 p-2.5">
+                  <label className="block text-[0.62rem] text-[var(--color-muted)]">
+                    Subcarpeta de módulos descifrados
+                    <input
+                      className="field mt-1 w-full"
+                      value={decryptedSubfolder}
+                      onChange={(event) => setDecryptedSubfolder(event.target.value)}
+                      placeholder="decrypted"
+                      maxLength={120}
+                    />
+                  </label>
+                  <Toggle
+                    checked={embeddedRight}
+                    onChange={setEmbeddedRight}
+                    label="Usar right.sprx integrado"
+                    hint="Actívalo solo para dumps que requieran el módulo incluido por LibProsperoPKG."
+                  />
+                </div>
+              )}
               <button
                 className={`btn mt-4 w-full justify-center ${
                   format.id === "fpkg" ? "btn-primary" : "btn-ghost"
@@ -369,6 +397,9 @@ export function Ps5View() {
                     source,
                     format.mode,
                     format.id === "fpkg" ? "FPKG nativo de PS5 añadido a la cola" : "Copia AMPR/LZ4 añadida a la cola",
+                    format.id === "fpkg"
+                      ? { decrypted_subfolder: decryptedSubfolder, embedded_right: String(embeddedRight) }
+                      : {},
                   )
                 }
               >
@@ -455,7 +486,12 @@ export function Ps5View() {
                     ? "Falta el motor LibProsperoPKG"
                     : "Extraer, convertir y verificar el FPKG automáticamente"
               }
-              onClick={() => imageSource && enqueue(imageSource, "ps5fpkgexfat", "Conversión exFAT → FPKG añadida a la cola")}
+              onClick={() => imageSource && enqueue(
+                imageSource,
+                "ps5fpkgexfat",
+                "Conversión exFAT → FPKG añadida a la cola",
+                { decrypted_subfolder: decryptedSubfolder, embedded_right: String(embeddedRight) },
+              )}
             >
               <Package2 size={15} /> Crear FPKG desde exFAT
             </button>

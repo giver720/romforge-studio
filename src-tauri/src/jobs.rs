@@ -1478,16 +1478,20 @@ async fn run_ps5_workflow(
                 execution.output.clone(),
             ],
         ),
-        MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => (
-            "Creando FPKG nativo de PS5",
-            vec![
-                "convert".into(),
-                "--input".into(),
-                prepared_input.to_string_lossy().to_string(),
-                "--output".into(),
-                execution.output.clone(),
-            ],
-        ),
+        MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => {
+            let args = match crate::ps5::fpkg_convert_args(
+                &prepared_input.to_string_lossy(),
+                &execution.output,
+                &job.options,
+            ) {
+                Ok(value) => value,
+                Err(message) => {
+                    staged.cleanup();
+                    return custom_error(&app, &id, message);
+                }
+            };
+            ("Creando FPKG nativo de PS5", args)
+        }
         MODE_LZ4 => (
             "Creando carpeta AMPRPAK4 con bloques LZ4",
             vec![

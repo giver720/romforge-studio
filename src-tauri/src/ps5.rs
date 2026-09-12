@@ -100,6 +100,44 @@ pub fn writes_directory(mode: &str) -> bool {
     matches!(mode, MODE_EXTRACT | MODE_LZ4)
 }
 
+pub fn fpkg_convert_args(
+    input: &str,
+    output: &str,
+    options: &BTreeMap<String, String>,
+) -> Result<Vec<String>, String> {
+    let decrypted_subfolder = options
+        .get("decrypted_subfolder")
+        .map(String::as_str)
+        .unwrap_or("decrypted")
+        .trim();
+    let invalid_segment = decrypted_subfolder
+        .split(['/', '\\'])
+        .any(|segment| segment.is_empty() || matches!(segment, "." | ".."));
+    if decrypted_subfolder.is_empty()
+        || decrypted_subfolder.len() > 120
+        || invalid_segment
+        || decrypted_subfolder.contains(':')
+    {
+        return Err("La subcarpeta de módulos descifrados debe ser una ruta relativa segura".into());
+    }
+    let embedded_right = match options.get("embedded_right").map(String::as_str) {
+        None | Some("false") => "false",
+        Some("true") => "true",
+        Some(_) => return Err("La opción right.sprx integrado no es válida".into()),
+    };
+    Ok(vec![
+        "convert".into(),
+        "--input".into(),
+        input.into(),
+        "--output".into(),
+        output.into(),
+        "--decrypted-subfolder".into(),
+        decrypted_subfolder.into(),
+        "--embedded-right".into(),
+        embedded_right.into(),
+    ])
+}
+
 fn align(value: u64, unit: u64) -> u64 {
     value.saturating_add(unit - 1) / unit * unit
 }
@@ -582,6 +620,23 @@ mod tests {
         assert_eq!(output_ext(MODE_EXFAT_FPKG), Some("pkg"));
         assert_eq!(output_ext(MODE_LZ4), None);
         assert!(writes_directory(MODE_LZ4));
+    }
+
+    #[test]
+    fn builds_safe_fpkg_engine_options() {
+        let options = BTreeMap::from([
+            ("decrypted_subfolder".into(), "decrypted/modules".into()),
+            ("embedded_right".into(), "true".into()),
+        ]);
+        let args = fpkg_convert_args("game", "game.pkg", &options).unwrap();
+        assert!(args.windows(2).any(|pair| pair == ["--decrypted-subfolder", "decrypted/modules"]));
+        assert!(args.windows(2).any(|pair| pair == ["--embedded-right", "true"]));
+    }
+
+    #[test]
+    fn rejects_unsafe_fpkg_subfolder() {
+        let options = BTreeMap::from([("decrypted_subfolder".into(), "../outside".into())]);
+        assert!(fpkg_convert_args("game", "game.pkg", &options).is_err());
     }
 
     #[test]
