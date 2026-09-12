@@ -435,6 +435,33 @@ impl StagedOutput {
     }
 }
 
+/// Workspace efímero para conversiones encadenadas. Se elimina en cualquier
+/// retorno, incluido cancelación o error de una herramienta externa.
+struct TemporaryWorkspace(PathBuf);
+
+impl TemporaryWorkspace {
+    fn create(name: String) -> Result<Self, String> {
+        let path = std::env::temp_dir().join(name);
+        if path.exists() {
+            std::fs::remove_dir_all(&path)
+                .map_err(|e| format!("No se pudo limpiar el temporal anterior: {e}"))?;
+        }
+        std::fs::create_dir_all(&path)
+            .map_err(|e| format!("No se pudo crear la carpeta temporal: {e}"))?;
+        Ok(Self(path))
+    }
+
+    fn path(&self) -> &Path {
+        &self.0
+    }
+}
+
+impl Drop for TemporaryWorkspace {
+    fn drop(&mut self) {
+        let _ = std::fs::remove_dir_all(&self.0);
+    }
+}
+
 #[cfg(test)]
 #[allow(clippy::items_after_test_module)]
 mod output_transaction_tests {
@@ -1223,8 +1250,8 @@ async fn run_ps5_workflow(
     cancel: Arc<AtomicBool>,
 ) {
     use crate::ps5::{
-        MODE_COMPRESS, MODE_EXFAT, MODE_EXTRACT, MODE_FFPFSC, MODE_FFPKG, MODE_LZ4,
-        MODE_NATIVE_FPKG,
+        MODE_COMPRESS, MODE_EXFAT, MODE_EXFAT_FPKG, MODE_EXTRACT, MODE_FFPFSC, MODE_FFPKG,
+        MODE_LZ4, MODE_NATIVE_FPKG,
     };
 
     let input = PathBuf::from(&job.input);
@@ -1232,12 +1259,66 @@ async fn run_ps5_workflow(
         return custom_error(&app, &id, "La entrada ya no existe".into());
     }
 
+    let extension = input
+        .extension()
+        .map(|value| value.to_string_lossy().to_lowercase())
+        .unwrap_or_default();
+    let mut prepared_input = input.clone();
+    let mut _temporary_input: Option<TemporaryWorkspace> = None;
+
+    if job.mode == MODE_EXFAT_FPKG {
+        if extension != "exfat" || !input.is_file() {
+            return custom_error(
+                &app,
+                &id,
+                "Para crear un FPKG directo selecciona una imagen .exfat".into(),
+            );
+        }
+        let Some((mkpfs, _)) = crate::tools::locate("mkpfs", &settings) else {
+            return custom_error(
+                &app,
+                &id,
+                "Falta MkPFS 1.0.0. Instálalo desde Ajustes → Herramientas.".into(),
+            );
+        };
+        let workspace = match TemporaryWorkspace::create(format!("romforge-ps5-fpkg-{id}")) {
+            Ok(value) => value,
+            Err(message) => return custom_error(&app, &id, message),
+        };
+        custom_phase(&app, &id, "Extrayendo exFAT para preparar el FPKG", 6.0);
+        let extract_args = vec![
+            "unpack".into(),
+            "--overwrite".into(),
+            "--format".into(),
+            "exfat".into(),
+            job.input.clone(),
+            workspace.path().to_string_lossy().to_string(),
+        ];
+        match capture_failure(
+            run_ps5_capture("mkpfs", &mkpfs, &extract_args, cancel.as_ref()).await,
+            "MkPFS exFAT unpack",
+        ) {
+            Ok(_) => {}
+            Err(message) if message == "__canceled__" => {
+                return custom_canceled(&app, &id)
+            }
+            Err(message) => return custom_error(&app, &id, message),
+        }
+        prepared_input = workspace.path().to_path_buf();
+        _temporary_input = Some(workspace);
+    }
+
     let builds_from_folder = matches!(
         job.mode.as_str(),
-        MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_NATIVE_FPKG | MODE_LZ4
+        MODE_EXFAT
+            | MODE_FFPKG
+            | MODE_FFPFSC
+            | MODE_NATIVE_FPKG
+            | MODE_EXFAT_FPKG
+            | MODE_LZ4
     );
     let expected = if builds_from_folder {
-        let scan = crate::ps5::scan(&job.input);
+        let scan = crate::ps5::scan(&prepared_input.to_string_lossy());
         if !scan.valid {
             return custom_error(
                 &app,
@@ -1246,7 +1327,7 @@ async fn run_ps5_workflow(
                     .unwrap_or_else(|| "La carpeta no parece un dump de PS5".into()),
             );
         }
-        if job.mode == MODE_NATIVE_FPKG && !scan.fpkg_ready {
+        if matches!(job.mode.as_str(), MODE_NATIVE_FPKG | MODE_EXFAT_FPKG) && !scan.fpkg_ready {
             return custom_error(
                 &app,
                 &id,
@@ -1256,7 +1337,7 @@ async fn run_ps5_workflow(
                 ),
             );
         }
-        match crate::ps5::manifest(&input) {
+        match crate::ps5::manifest(&prepared_input) {
             Ok(value) => Some(value),
             Err(error) => {
                 return custom_error(
@@ -1270,10 +1351,6 @@ async fn run_ps5_workflow(
         None
     };
 
-    let extension = input
-        .extension()
-        .map(|value| value.to_string_lossy().to_lowercase())
-        .unwrap_or_default();
     if job.mode == MODE_COMPRESS && !matches!(extension.as_str(), "exfat" | "ffpkg") {
         return custom_error(
             &app,
@@ -1327,12 +1404,12 @@ async fn run_ps5_workflow(
                 execution.output.clone(),
             ],
         ),
-        MODE_NATIVE_FPKG => (
+        MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => (
             "Creando FPKG nativo de PS5",
             vec![
                 "convert".into(),
                 "--input".into(),
-                job.input.clone(),
+                prepared_input.to_string_lossy().to_string(),
                 "--output".into(),
                 execution.output.clone(),
             ],
@@ -1490,7 +1567,7 @@ async fn run_ps5_workflow(
                 expected.as_ref().map(|value| value.len()).unwrap_or(0)
             )
         }
-        MODE_NATIVE_FPKG => {
+        MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => {
             let verify_args = vec![
                 "validate".into(),
                 "--input".into(),
@@ -1632,7 +1709,7 @@ async fn run_ps5_workflow(
         done.phase = match job.mode.as_str() {
             MODE_EXFAT => "Listo · exFAT verificado",
             MODE_FFPKG => "Listo · FFPKG verificado",
-            MODE_NATIVE_FPKG => "Listo · FPKG PS5 verificado",
+            MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => "Listo · FPKG PS5 verificado",
             MODE_LZ4 => "Listo · AMPRPAK4/LZ4 verificado",
             MODE_FFPFSC | MODE_COMPRESS => "Listo · FFPFSC verificado",
             MODE_EXTRACT => "Listo · dump extraido y verificado",

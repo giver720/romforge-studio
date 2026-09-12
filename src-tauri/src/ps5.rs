@@ -12,6 +12,8 @@ pub const MODE_COMPRESS: &str = "ps5compress";
 pub const MODE_EXTRACT: &str = "ps5extract";
 /// Modos recientes con motores públicos y verificación independiente.
 pub const MODE_NATIVE_FPKG: &str = "ps5fpkg";
+/// Extrae una imagen exFAT a un workspace temporal y crea un FPKG nativo.
+pub const MODE_EXFAT_FPKG: &str = "ps5fpkgexfat";
 pub const MODE_LZ4: &str = "ps5lz4";
 pub const CLUSTER_SIZE: u64 = 64 * 1024;
 const SAMPLE_LIMIT: u64 = 32 * 1024 * 1024;
@@ -57,6 +59,7 @@ pub fn is_mode(mode: &str) -> bool {
             | MODE_COMPRESS
             | MODE_EXTRACT
             | MODE_NATIVE_FPKG
+            | MODE_EXFAT_FPKG
             | MODE_LZ4
     )
 }
@@ -64,7 +67,7 @@ pub fn is_mode(mode: &str) -> bool {
 pub fn tool_for(mode: &str) -> Option<&'static str> {
     match mode {
         MODE_FFPKG => Some("ufs2tool"),
-        MODE_NATIVE_FPKG => Some("prospero"),
+        MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => Some("prospero"),
         MODE_LZ4 => Some("ampr"),
         MODE_EXFAT | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT => Some("mkpfs"),
         _ => None,
@@ -87,7 +90,7 @@ pub fn output_ext(mode: &str) -> Option<&'static str> {
     match mode {
         MODE_EXFAT => Some("exfat"),
         MODE_FFPKG => Some("ffpkg"),
-        MODE_NATIVE_FPKG => Some("pkg"),
+        MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => Some("pkg"),
         MODE_FFPFSC | MODE_COMPRESS => Some("ffpfsc"),
         _ => None,
     }
@@ -570,10 +573,13 @@ mod tests {
     #[test]
     fn maps_recent_ps5_modes_to_bundled_engines() {
         assert!(is_mode(MODE_NATIVE_FPKG));
+        assert!(is_mode(MODE_EXFAT_FPKG));
         assert!(is_mode(MODE_LZ4));
         assert_eq!(tool_for(MODE_NATIVE_FPKG), Some("prospero"));
+        assert_eq!(tool_for(MODE_EXFAT_FPKG), Some("prospero"));
         assert_eq!(tool_for(MODE_LZ4), Some("ampr"));
         assert_eq!(output_ext(MODE_NATIVE_FPKG), Some("pkg"));
+        assert_eq!(output_ext(MODE_EXFAT_FPKG), Some("pkg"));
         assert_eq!(output_ext(MODE_LZ4), None);
         assert!(writes_directory(MODE_LZ4));
     }

@@ -416,12 +416,18 @@ export function Ps5View() {
           </button>
           {imageExt === "exfat" && (
             <button
-              className="btn btn-ghost"
-              disabled={busy || !imageSource || missingTools.has("mkpfs")}
-              title="Extrae el exFAT; después selecciona la carpeta en el laboratorio PS5 para crear el FPKG"
-              onClick={() => imageSource && enqueue(imageSource, "ps5extract", "ExFAT preparado para crear FPKG")}
+              className="btn btn-primary"
+              disabled={busy || !imageSource || missingTools.has("mkpfs") || prosperoMissing}
+              title={
+                missingTools.has("mkpfs")
+                  ? "Falta MkPFS 1.0.0"
+                  : prosperoMissing
+                    ? "Falta el motor LibProsperoPKG"
+                    : "Extraer, convertir y verificar el FPKG automáticamente"
+              }
+              onClick={() => imageSource && enqueue(imageSource, "ps5fpkgexfat", "Conversión exFAT → FPKG añadida a la cola")}
             >
-              <Package2 size={15} /> Preparar para FPKG
+              <Package2 size={15} /> Crear FPKG desde exFAT
             </button>
           )}
         </div>
