@@ -444,6 +444,34 @@ fn ps5_fpkg_required_free_space(image_bytes: u64) -> u64 {
     image_bytes.saturating_mul(2).saturating_add(safety_margin)
 }
 
+fn ps5_output_required_free_space(mode: &str, scan: &crate::ps5::Ps5Scan) -> u64 {
+    use crate::ps5::{MODE_EXFAT, MODE_FFPFSC, MODE_FFPKG, MODE_LZ4, MODE_NATIVE_FPKG};
+    let payload = match mode {
+        MODE_EXFAT | MODE_FFPKG => scan.image_bytes,
+        MODE_FFPFSC => scan.compressed_estimate_bytes,
+        MODE_NATIVE_FPKG => scan.raw_bytes,
+        // AMPR primero copia el árbol y después crea los packs antes de retirar
+        // de la salida los archivos representados por ellos.
+        MODE_LZ4 => scan
+            .raw_bytes
+            .saturating_add(scan.compressed_estimate_bytes),
+        _ => 0,
+    };
+    let margin = (payload / 10).max(1024 * 1024 * 1024);
+    payload.saturating_add(margin)
+}
+
+fn available_space_near(path: &Path) -> Result<(u64, PathBuf), String> {
+    let parent = path.parent().unwrap_or_else(|| Path::new("."));
+    let probe = parent
+        .ancestors()
+        .find(|candidate| candidate.exists())
+        .ok_or_else(|| "No se encontró una unidad válida para la salida".to_string())?;
+    fs2::available_space(probe)
+        .map(|bytes| (bytes, probe.to_path_buf()))
+        .map_err(|error| format!("No se pudo consultar el espacio libre: {error}"))
+}
+
 fn gibibytes(bytes: u64) -> String {
     format!("{:.1} GiB", bytes as f64 / 1_073_741_824.0)
 }
@@ -517,6 +545,38 @@ mod output_transaction_tests {
             22 * 1024 * 1024 * 1024
         );
         assert_eq!(gibibytes(ten_gib), "10.0 GiB");
+    }
+
+    #[test]
+    fn ps5_space_estimates_include_staging_peak_and_margin() {
+        let gib = 1024 * 1024 * 1024;
+        let scan = crate::ps5::Ps5Scan {
+            valid: true,
+            title_id: None,
+            title: None,
+            version: None,
+            content_id: None,
+            file_count: 1,
+            directory_count: 0,
+            raw_bytes: 10 * gib,
+            image_bytes: 11 * gib,
+            compressed_estimate_bytes: 6 * gib,
+            estimated_savings_percent: 40.0,
+            recommended_format: "ffpkg".into(),
+            fpkg_ready: true,
+            fpkg_module_count: 1,
+            fpkg_blockers: vec![],
+            warnings: vec![],
+            error: None,
+        };
+        assert_eq!(
+            ps5_output_required_free_space(crate::ps5::MODE_NATIVE_FPKG, &scan),
+            11 * gib
+        );
+        assert_eq!(
+            ps5_output_required_free_space(crate::ps5::MODE_LZ4, &scan),
+            16 * gib + (16 * gib) / 10
+        );
     }
 
     #[test]
@@ -1421,6 +1481,25 @@ async fn run_ps5_workflow(
                     scan.fpkg_blockers.join(" · ")
                 ),
             );
+        }
+        if job.mode != MODE_EXFAT_FPKG {
+            let required = ps5_output_required_free_space(&job.mode, &scan);
+            if required > 0 {
+                if let Ok((available, probe)) = available_space_near(Path::new(&job.output)) {
+                    if available < required {
+                        return custom_error(
+                            &app,
+                            &id,
+                            format!(
+                                "Espacio insuficiente para esta conversión PS5. Se necesitan aproximadamente {} y hay {} disponibles en {}.",
+                                gibibytes(required),
+                                gibibytes(available),
+                                probe.display()
+                            ),
+                        );
+                    }
+                }
+            }
         }
         match crate::ps5::manifest(&prepared_input) {
             Ok(value) => Some(value),

@@ -57,6 +57,22 @@ const formats: {
   },
 ];
 
+const GIB = 1024 * 1024 * 1024;
+
+function withPs5WorkingMargin(payload: number) {
+  return payload + Math.max(payload / 10, GIB);
+}
+
+function estimatedPs5WorkingSpace(mode: string, scan: Ps5Scan) {
+  if (mode === "ps5exfat" || mode === "ps5ffpkg") return withPs5WorkingMargin(scan.image_bytes);
+  if (mode === "ps5ffpfsc") return withPs5WorkingMargin(scan.compressed_estimate_bytes);
+  if (mode === "ps5fpkg") return withPs5WorkingMargin(scan.raw_bytes);
+  if (mode === "ps5lz4") {
+    return withPs5WorkingMargin(scan.raw_bytes + scan.compressed_estimate_bytes);
+  }
+  return 0;
+}
+
 export function Ps5View() {
   const { notify, refreshJobs, tools, refreshTools, settings, patchSettings } = useStore();
   const [source, setSource] = useState<string | null>(null);
@@ -271,6 +287,9 @@ export function Ps5View() {
                     <span className="text-violet-300">
                       FFPFSC estimado: {bytes(scan.compressed_estimate_bytes)} · ahorro ~{scan.estimated_savings_percent.toFixed(0)}%
                     </span>
+                    <span className="text-blue-300">
+                      Espacio de trabajo recomendado: {bytes(estimatedPs5WorkingSpace(mode, scan))}
+                    </span>
                   </div>
                   <p className="mt-2 flex items-center gap-1.5 text-blue-300">
                     <Sparkles size={12} /> Recomendado para rendimiento: FFPKG · UFS2
@@ -454,6 +473,11 @@ export function Ps5View() {
                     hint="Actívalo solo para dumps que requieran el módulo incluido por LibProsperoPKG."
                   />
                 </div>
+              )}
+              {scan?.valid && (
+                <p className="mt-2 text-[0.62rem] text-blue-300">
+                  Espacio de trabajo recomendado: {bytes(estimatedPs5WorkingSpace(format.mode, scan))}
+                </p>
               )}
               {format.id === "lz4" && (
                 <div className="mt-3 rounded-xl border border-white/10 bg-black/10 p-2.5">
