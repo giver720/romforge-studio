@@ -110,16 +110,7 @@ pub fn fpkg_convert_args(
         .map(String::as_str)
         .unwrap_or("decrypted")
         .trim();
-    let invalid_segment = decrypted_subfolder
-        .split(['/', '\\'])
-        .any(|segment| segment.is_empty() || matches!(segment, "." | ".."));
-    if decrypted_subfolder.is_empty()
-        || decrypted_subfolder.len() > 120
-        || invalid_segment
-        || decrypted_subfolder.contains(':')
-    {
-        return Err("La subcarpeta de módulos descifrados debe ser una ruta relativa segura".into());
-    }
+    validate_decrypted_subfolder(decrypted_subfolder)?;
     let embedded_right = match options.get("embedded_right").map(String::as_str) {
         None | Some("false") => "false",
         Some("true") => "true",
@@ -136,6 +127,19 @@ pub fn fpkg_convert_args(
         "--embedded-right".into(),
         embedded_right.into(),
     ])
+}
+
+pub fn validate_decrypted_subfolder(value: &str) -> Result<&str, String> {
+    let value = value.trim();
+    let invalid_segment = value
+        .split(['/', '\\'])
+        .any(|segment| segment.is_empty() || matches!(segment, "." | ".."));
+    if value.is_empty() || value.len() > 120 || invalid_segment || value.contains(':') {
+        return Err(
+            "La subcarpeta de módulos descifrados debe ser una ruta relativa segura".into(),
+        );
+    }
+    Ok(value)
 }
 
 fn align(value: u64, unit: u64) -> u64 {
@@ -309,6 +313,7 @@ fn valid_content_id(value: &str) -> bool {
 fn collect_fpkg_modules(
     root: &Path,
     current: &Path,
+    decrypted_root: &Path,
     modules: &mut u64,
     blockers: &mut Vec<String>,
 ) {
@@ -318,10 +323,10 @@ fn collect_fpkg_modules(
     for entry in entries.flatten() {
         let path = entry.path();
         if path.is_dir() {
-            if path == root.join("decrypted") {
+            if path == decrypted_root {
                 continue;
             }
-            collect_fpkg_modules(root, &path, modules, blockers);
+            collect_fpkg_modules(root, &path, decrypted_root, modules, blockers);
             continue;
         }
         let name = path
@@ -342,11 +347,15 @@ fn collect_fpkg_modules(
             Some(0x464c_457f) => {}
             // SELF: hace falta su copia ELF bajo decrypted/ con la misma ruta.
             Some(0xeef5_1454) => {
-                let decrypted = root.join("decrypted").join(relative);
+                let decrypted = decrypted_root.join(relative);
                 if first_magic(&decrypted) != Some(0x464c_457f) {
                     blockers.push(format!(
-                        "Falta el ELF descifrado de {} en decrypted/{}",
+                        "Falta el ELF descifrado de {} en {}/{}",
                         relative.display(),
+                        decrypted_root
+                            .strip_prefix(root)
+                            .unwrap_or(decrypted_root)
+                            .display(),
                         relative.display()
                     ));
                 }
@@ -360,6 +369,10 @@ fn collect_fpkg_modules(
 }
 
 pub fn scan(dir: &str) -> Ps5Scan {
+    scan_with_decrypted_subfolder(dir, "decrypted")
+}
+
+pub fn scan_with_decrypted_subfolder(dir: &str, decrypted_subfolder: &str) -> Ps5Scan {
     let root = Path::new(dir);
     let invalid = |error: String| Ps5Scan {
         valid: false,
@@ -416,9 +429,20 @@ pub fn scan(dir: &str) -> Ps5Scan {
     if estimated_savings_percent < 10.0 {
         warnings.push("El muestreo indica que FFPFSC ahorraría poco espacio".into());
     }
+    let decrypted_subfolder = match validate_decrypted_subfolder(decrypted_subfolder) {
+        Ok(value) => value,
+        Err(error) => return invalid(error),
+    };
+    let decrypted_root = root.join(decrypted_subfolder);
     let mut fpkg_blockers = vec![];
     let mut fpkg_module_count = 0;
-    collect_fpkg_modules(root, root, &mut fpkg_module_count, &mut fpkg_blockers);
+    collect_fpkg_modules(
+        root,
+        root,
+        &decrypted_root,
+        &mut fpkg_module_count,
+        &mut fpkg_blockers,
+    );
     if fpkg_module_count == 0 {
         fpkg_blockers.push("No se encontró ningún módulo ejecutable de PS5".into());
     }
@@ -575,6 +599,41 @@ mod tests {
     }
 
     #[test]
+    fn accepts_configured_decrypted_subfolder_for_native_fpkg() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-fpkg-custom-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        std::fs::create_dir_all(root.join("sce_sys")).unwrap();
+        std::fs::create_dir_all(root.join("prepared/modules")).unwrap();
+        std::fs::write(root.join("eboot.bin"), [0x54, 0x14, 0xf5, 0xee, 0, 0, 0, 0]).unwrap();
+        std::fs::write(
+            root.join("prepared/modules/eboot.bin"),
+            [0x7f, b'E', b'L', b'F', 0, 0, 0, 0],
+        )
+        .unwrap();
+        std::fs::write(
+            root.join("sce_sys/param.json"),
+            r#"{"contentId":"UP9000-PPSA99099_00-PROSPERO00000000"}"#,
+        )
+        .unwrap();
+
+        let default_scan = scan(&root.to_string_lossy());
+        assert!(!default_scan.fpkg_ready);
+        let configured_scan =
+            scan_with_decrypted_subfolder(&root.to_string_lossy(), "prepared/modules");
+        assert!(configured_scan.valid);
+        assert!(
+            configured_scan.fpkg_ready,
+            "{:?}",
+            configured_scan.fpkg_blockers
+        );
+        assert_eq!(configured_scan.fpkg_module_count, 1);
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
     fn rejects_an_extra_parent_folder() {
         let root =
             std::env::temp_dir().join(format!("romforge-studio-ps5-bad-{}", std::process::id()));
@@ -629,8 +688,12 @@ mod tests {
             ("embedded_right".into(), "true".into()),
         ]);
         let args = fpkg_convert_args("game", "game.pkg", &options).unwrap();
-        assert!(args.windows(2).any(|pair| pair == ["--decrypted-subfolder", "decrypted/modules"]));
-        assert!(args.windows(2).any(|pair| pair == ["--embedded-right", "true"]));
+        assert!(args
+            .windows(2)
+            .any(|pair| pair == ["--decrypted-subfolder", "decrypted/modules"]));
+        assert!(args
+            .windows(2)
+            .any(|pair| pair == ["--embedded-right", "true"]));
     }
 
     #[test]

@@ -63,7 +63,8 @@ export const api = {
     }>("app_paths"),
   ps3Scan: (dir: string) => invoke<Ps3Scan>("ps3_scan", { dir }),
   ps3Trim: (dir: string, paths: string[]) => invoke<TrimResult>("ps3_trim", { dir, paths }),
-  ps5Scan: (dir: string) => invoke<Ps5Scan>("ps5_scan", { dir }),
+  ps5Scan: (dir: string, decryptedSubfolder = "decrypted") =>
+    invoke<Ps5Scan>("ps5_scan", { dir, decryptedSubfolder }),
   gameArtwork: (input: string, system: string) =>
     invoke<GameArtwork>("game_artwork", { input, system }),
   fetchStoreCatalog: () => invoke<unknown>("fetch_store_catalog"),

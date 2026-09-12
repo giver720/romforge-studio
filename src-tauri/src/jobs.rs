@@ -512,7 +512,10 @@ mod output_transaction_tests {
     #[test]
     fn ps5_fpkg_space_estimate_includes_extract_package_and_margin() {
         let ten_gib = 10 * 1024 * 1024 * 1024;
-        assert_eq!(ps5_fpkg_required_free_space(ten_gib), 22 * 1024 * 1024 * 1024);
+        assert_eq!(
+            ps5_fpkg_required_free_space(ten_gib),
+            22 * 1024 * 1024 * 1024
+        );
         assert_eq!(gibibytes(ten_gib), "10.0 GiB");
     }
 
@@ -1336,7 +1339,9 @@ async fn run_ps5_workflow(
                 format!("No se pudo preparar la carpeta de salida: {error}"),
             );
         }
-        let image_bytes = std::fs::metadata(&input).map(|value| value.len()).unwrap_or(0);
+        let image_bytes = std::fs::metadata(&input)
+            .map(|value| value.len())
+            .unwrap_or(0);
         let required = ps5_fpkg_required_free_space(image_bytes);
         if let Ok(available) = fs2::available_space(&temporary_parent) {
             if available < required {
@@ -1372,9 +1377,7 @@ async fn run_ps5_workflow(
             "MkPFS exFAT unpack",
         ) {
             Ok(report) => custom_log_output(&app, &id, "Extracción MkPFS", &report),
-            Err(message) if message == "__canceled__" => {
-                return custom_canceled(&app, &id)
-            }
+            Err(message) if message == "__canceled__" => return custom_canceled(&app, &id),
             Err(message) => return custom_error(&app, &id, message),
         }
         prepared_input = workspace.path().to_path_buf();
@@ -1384,15 +1387,18 @@ async fn run_ps5_workflow(
 
     let builds_from_folder = matches!(
         job.mode.as_str(),
-        MODE_EXFAT
-            | MODE_FFPKG
-            | MODE_FFPFSC
-            | MODE_NATIVE_FPKG
-            | MODE_EXFAT_FPKG
-            | MODE_LZ4
+        MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_NATIVE_FPKG | MODE_EXFAT_FPKG | MODE_LZ4
     );
     let expected = if builds_from_folder {
-        let scan = crate::ps5::scan(&prepared_input.to_string_lossy());
+        let decrypted_subfolder = job
+            .options
+            .get("decrypted_subfolder")
+            .map(String::as_str)
+            .unwrap_or("decrypted");
+        let scan = crate::ps5::scan_with_decrypted_subfolder(
+            &prepared_input.to_string_lossy(),
+            decrypted_subfolder,
+        );
         if !scan.valid {
             return custom_error(
                 &app,
@@ -1557,7 +1563,11 @@ async fn run_ps5_workflow(
         }
     };
 
-    let build_progress = if job.mode == MODE_EXFAT_FPKG { 55.0 } else { 12.0 };
+    let build_progress = if job.mode == MODE_EXFAT_FPKG {
+        55.0
+    } else {
+        12.0
+    };
     custom_phase(&app, &id, phase, build_progress);
     let output = match capture_failure(
         run_ps5_capture(tool_id, &tool, &args, cancel.as_ref()).await,
@@ -1574,7 +1584,11 @@ async fn run_ps5_workflow(
         }
     };
 
-    let verify_progress = if job.mode == MODE_EXFAT_FPKG { 92.0 } else { 88.0 };
+    let verify_progress = if job.mode == MODE_EXFAT_FPKG {
+        92.0
+    } else {
+        88.0
+    };
     custom_phase(&app, &id, "Verificando el resultado", verify_progress);
     let verification_message = match job.mode.as_str() {
         MODE_EXFAT => {

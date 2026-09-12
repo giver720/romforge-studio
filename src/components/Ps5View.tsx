@@ -96,7 +96,7 @@ export function Ps5View() {
     setArtwork(null);
     try {
       const [info, cover] = await Promise.all([
-        api.ps5Scan(result),
+        api.ps5Scan(result, decryptedSubfolderTrimmed),
         api.gameArtwork(result, "ps5").catch(() => null),
       ]);
       setSource(result);
@@ -109,6 +109,21 @@ export function Ps5View() {
       setBusy(false);
     }
   }
+
+  useEffect(() => {
+    if (!source || !decryptedSubfolderValid) return;
+    let active = true;
+    api.ps5Scan(source, decryptedSubfolderTrimmed)
+      .then((info) => {
+        if (active) setScan(info);
+      })
+      .catch((error) => {
+        if (active) notify("error", String(error));
+      });
+    return () => {
+      active = false;
+    };
+  }, [source, decryptedSubfolderTrimmed, decryptedSubfolderValid]);
 
   async function chooseImage() {
     const result = (await open({

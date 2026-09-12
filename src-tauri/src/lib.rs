@@ -638,8 +638,8 @@ fn ps3_trim(dir: String, paths: Vec<String>) -> Result<ps3::TrimResult, String> 
 }
 
 #[tauri::command]
-fn ps5_scan(dir: String) -> ps5::Ps5Scan {
-    ps5::scan(&dir)
+fn ps5_scan(dir: String, decrypted_subfolder: Option<String>) -> ps5::Ps5Scan {
+    ps5::scan_with_decrypted_subfolder(&dir, decrypted_subfolder.as_deref().unwrap_or("decrypted"))
 }
 
 #[tauri::command]
