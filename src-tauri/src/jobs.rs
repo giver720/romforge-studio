@@ -1390,12 +1390,6 @@ async fn run_ps5_workflow(
         ),
         MODE_EXTRACT => {
             let mut args = vec!["unpack".into(), "--overwrite".into()];
-            if extension == "ffpfsc" {
-                args.push("--deep".into());
-            }
-            if extension == "exfat" {
-                args.extend(["--format".into(), "exfat".into()]);
-            }
             args.extend([job.input.clone(), execution.output.clone()]);
             ("Extrayendo la imagen de PS5", args)
         }
@@ -1429,8 +1423,6 @@ async fn run_ps5_workflow(
                 execution.output.clone(),
                 "--source-dir".into(),
                 job.input.clone(),
-                "--format".into(),
-                "exfat".into(),
             ];
             match capture_failure(
                 run_ps5_capture(tool_id, &tool, &verify_args, cancel.as_ref()).await,
@@ -1547,14 +1539,13 @@ async fn run_ps5_workflow(
             let _ = std::fs::remove_dir_all(&verify_root);
             let verify_args = vec![
                 "unpack".into(),
-                "--deep".into(),
                 "--overwrite".into(),
                 execution.output.clone(),
                 verify_root.to_string_lossy().to_string(),
             ];
             let extracted = capture_failure(
                 run_ps5_capture(tool_id, &tool, &verify_args, cancel.as_ref()).await,
-                "MkPFS unpack --deep",
+                "MkPFS unpack",
             );
             let actual = extracted
                 .and_then(|_| crate::ps5::compare_trees(&input, &verify_root, cancel.as_ref()))
