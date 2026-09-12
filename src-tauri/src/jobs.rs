@@ -439,6 +439,15 @@ impl StagedOutput {
 /// retorno, incluido cancelación o error de una herramienta externa.
 struct TemporaryWorkspace(PathBuf);
 
+fn ps5_fpkg_required_free_space(image_bytes: u64) -> u64 {
+    let safety_margin = (image_bytes / 10).max(2 * 1024 * 1024 * 1024);
+    image_bytes.saturating_mul(2).saturating_add(safety_margin)
+}
+
+fn gibibytes(bytes: u64) -> String {
+    format!("{:.1} GiB", bytes as f64 / 1_073_741_824.0)
+}
+
 impl TemporaryWorkspace {
     fn create(path: PathBuf) -> Result<Self, String> {
         if path.exists() {
@@ -498,6 +507,13 @@ mod output_transaction_tests {
         }
         assert!(!path.exists());
         let _ = std::fs::remove_dir_all(dir);
+    }
+
+    #[test]
+    fn ps5_fpkg_space_estimate_includes_extract_package_and_margin() {
+        let ten_gib = 10 * 1024 * 1024 * 1024;
+        assert_eq!(ps5_fpkg_required_free_space(ten_gib), 22 * 1024 * 1024 * 1024);
+        assert_eq!(gibibytes(ten_gib), "10.0 GiB");
     }
 
     #[test]
@@ -1298,6 +1314,29 @@ async fn run_ps5_workflow(
             .parent()
             .map(Path::to_path_buf)
             .unwrap_or_else(|| PathBuf::from("."));
+        if let Err(error) = std::fs::create_dir_all(&temporary_parent) {
+            return custom_error(
+                &app,
+                &id,
+                format!("No se pudo preparar la carpeta de salida: {error}"),
+            );
+        }
+        let image_bytes = std::fs::metadata(&input).map(|value| value.len()).unwrap_or(0);
+        let required = ps5_fpkg_required_free_space(image_bytes);
+        if let Ok(available) = fs2::available_space(&temporary_parent) {
+            if available < required {
+                return custom_error(
+                    &app,
+                    &id,
+                    format!(
+                        "Espacio insuficiente para exFAT → FPKG. Se necesitan aproximadamente {} y hay {} disponibles en {}.",
+                        gibibytes(required),
+                        gibibytes(available),
+                        temporary_parent.display()
+                    ),
+                );
+            }
+        }
         let workspace = match TemporaryWorkspace::create(
             temporary_parent.join(format!(".romforge-ps5-fpkg-input-{id}")),
         ) {
