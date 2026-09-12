@@ -129,6 +129,7 @@ export interface Settings {
   ps5_fpkg_decrypted_subfolder: string;
   ps5_fpkg_embedded_right: boolean;
   ps5_output_dir: string | null;
+  ps5_lz4_profile: "fast" | "balanced" | "maximum";
 }
 
 /** Un archivo puesto en la mesa de trabajo, ya con su perfil asignado. */

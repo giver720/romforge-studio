@@ -14,6 +14,12 @@ romforge-ampr-bridge verify --input GAME-lz4
 romforge-ampr-bridge unpack --input GAME-lz4 --output GAME-restored
 ```
 
+Perfiles disponibles:
+
+- `fast`: compresión LZ4 rápida de nivel 1;
+- `balanced`: LZ4 HC nivel 9;
+- `maximum`: LZ4 HC nivel 12.
+
 El resultado necesita un firmware, un cargador y una versión de
 ShadowMountPlus compatibles. La verificación offline demuestra integridad y
 reversibilidad, no compatibilidad de cada juego en hardware.

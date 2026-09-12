@@ -1,6 +1,6 @@
 # Formatos experimentales de PS5
 
-ROMForge Studio reserva dos integraciones nuevas sin tratarlas todavía como conversiones funcionales. Esta separación evita confundir FPKG nativo de PS5 con FFPKG/UFS2 o con herramientas de PS4.
+ROMForge Studio integra FPKG nativo y AMPRPAK4/LZ4 como flujos experimentales separados. Esta separación evita confundir FPKG nativo de PS5 con FFPKG/UFS2 o con herramientas de PS4.
 
 ## FPKG nativo de PS5 (`ps5fpkg`)
 
@@ -9,7 +9,7 @@ Estado: integrado mediante el proceso externo ROMForge Prospero Bridge y LibPros
 Para habilitar el botón en un dump se requiere:
 
 - `contentId` válido en `sce_sys/param.json`;
-- módulos ELF ya descifrados, en su ruta normal o reflejados bajo `decrypted/`;
+- módulos ELF ya descifrados, en su ruta normal o reflejados bajo la subcarpeta configurable (por defecto `decrypted/`);
 - que no quede ningún SELF cifrado sin su ELF correspondiente;
 - el motor autocontenido incluido en la instalación de ROMForge.
 
@@ -17,20 +17,20 @@ El puente trabaja en una carpeta temporal, conserva intacto el dump original, re
 
 El anuncio inicial indica compatibilidad prevista hasta firmware 11.40, pero esto debe volver a validarse con la herramienta corregida y el soporte del lado de la consola.
 
-## LZ4/Lizard (`ps5lz4`)
+## AMPRPAK4/LZ4 (`ps5lz4`)
 
-Estado: anunciado; no existe en ROMForge un encoder público verificado.
+Estado: integrado mediante ROMForge AMPR Bridge y el encoder público de `drakmor/ampr_emu`.
 
-No se debe implementar como un `.lz4` genérico ni comprimir toda la carpeta con la biblioteca LZ4 común. Primero se necesita conocer el contenedor real, sus metadatos y la forma en que la PS5 lo monta.
+No es un `.lz4` genérico. El puente crea una carpeta AMPRPAK4 con bloques LZ4 seekable, conserva sueltos los módulos y archivos requeridos por el sistema, verifica cada bloque y permite restaurar el árbol original.
 
-Antes de habilitarlo se requiere:
+La interfaz ofrece tres perfiles persistentes:
 
-- encoder o especificación pública del formato;
-- firma o cabecera para identificarlo sin depender solo de la extensión;
-- extractor o método de comprobación independiente;
-- prueba de ida y vuelta sin pérdida;
-- montaje y ejecución confirmados en hardware real.
+- `fast`: LZ4 rápido, menor uso de CPU y normalmente mayor tamaño;
+- `balanced`: LZ4 HC nivel 9, recomendado para uso general;
+- `maximum`: LZ4 HC nivel 12, más lento y orientado a reducir el tamaño.
+
+La verificación offline demuestra integridad y reversibilidad. El montaje y la ejecución siguen dependiendo de una versión compatible de ShadowMountPlus, del firmware y de los payloads de la consola.
 
 ## Contrato de integración
 
-`ps5fpkg` es un modo ejecutable y produce `.pkg`; `ps5lz4` sigue reservado y `is_mode()` devuelve `false` únicamente para LZ4. La cola permite cancelar el proceso FPKG, limpia la salida temporal ante errores y solo publica un paquete aceptado.
+`ps5fpkg` produce `.pkg` y `ps5lz4` produce una carpeta AMPRPAK4. Ambos modos son ejecutables, cancelables y usan una salida temporal: ROMForge solo publica el resultado después de validarlo y limpia los restos si ocurre un error.

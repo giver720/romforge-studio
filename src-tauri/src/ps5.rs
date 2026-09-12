@@ -129,6 +129,29 @@ pub fn fpkg_convert_args(
     ])
 }
 
+pub fn lz4_convert_args(
+    input: &str,
+    output: &str,
+    options: &BTreeMap<String, String>,
+) -> Result<Vec<String>, String> {
+    let profile = options
+        .get("profile")
+        .map(String::as_str)
+        .unwrap_or("balanced");
+    if !matches!(profile, "fast" | "balanced" | "maximum") {
+        return Err("El perfil AMPR/LZ4 no es válido".into());
+    }
+    Ok(vec![
+        "convert".into(),
+        "--input".into(),
+        input.into(),
+        "--output".into(),
+        output.into(),
+        "--profile".into(),
+        profile.into(),
+    ])
+}
+
 pub fn validate_decrypted_subfolder(value: &str) -> Result<&str, String> {
     let value = value.trim();
     let invalid_segment = value
@@ -700,6 +723,16 @@ mod tests {
     fn rejects_unsafe_fpkg_subfolder() {
         let options = BTreeMap::from([("decrypted_subfolder".into(), "../outside".into())]);
         assert!(fpkg_convert_args("game", "game.pkg", &options).is_err());
+    }
+
+    #[test]
+    fn builds_and_validates_lz4_profile_arguments() {
+        let options = BTreeMap::from([("profile".into(), "maximum".into())]);
+        let args = lz4_convert_args("game", "game-lz4", &options).unwrap();
+        assert!(args.windows(2).any(|pair| pair == ["--profile", "maximum"]));
+
+        let invalid = BTreeMap::from([("profile".into(), "maximum; remove".into())]);
+        assert!(lz4_convert_args("game", "game-lz4", &invalid).is_err());
     }
 
     #[test]

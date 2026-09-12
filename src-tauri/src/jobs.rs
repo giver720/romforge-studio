@@ -1498,18 +1498,17 @@ async fn run_ps5_workflow(
             };
             ("Creando FPKG nativo de PS5", args)
         }
-        MODE_LZ4 => (
-            "Creando carpeta AMPRPAK4 con bloques LZ4",
-            vec![
-                "convert".into(),
-                "--input".into(),
-                job.input.clone(),
-                "--output".into(),
-                execution.output.clone(),
-                "--profile".into(),
-                "balanced".into(),
-            ],
-        ),
+        MODE_LZ4 => {
+            let args =
+                match crate::ps5::lz4_convert_args(&job.input, &execution.output, &job.options) {
+                    Ok(value) => value,
+                    Err(message) => {
+                        staged.cleanup();
+                        return custom_error(&app, &id, message);
+                    }
+                };
+            ("Creando carpeta AMPRPAK4 con bloques LZ4", args)
+        }
         MODE_FFPFSC => (
             "Comprimiendo el dump en FFPFSC",
             vec![

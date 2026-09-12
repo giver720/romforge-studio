@@ -424,6 +424,38 @@ export function Ps5View() {
                   />
                 </div>
               )}
+              {format.id === "lz4" && (
+                <div className="mt-3 rounded-xl border border-white/10 bg-black/10 p-2.5">
+                  <p className="text-[0.62rem] text-[var(--color-muted)]">Perfil de compresión LZ4</p>
+                  <div className="mt-2 grid grid-cols-3 gap-1">
+                    {([
+                      ["fast", "Rápido"],
+                      ["balanced", "Equilibrado"],
+                      ["maximum", "Máximo"],
+                    ] as const).map(([value, label]) => (
+                      <button
+                        key={value}
+                        className={`rounded-lg border px-2 py-1.5 text-[0.61rem] transition-colors ${
+                          settings.ps5_lz4_profile === value
+                            ? "border-[var(--accent)] bg-[var(--accent-soft)] text-white"
+                            : "border-white/10 text-[var(--color-muted)] hover:bg-white/5"
+                        }`}
+                        onClick={() => patchSettings({ ps5_lz4_profile: value })}
+                        type="button"
+                      >
+                        {label}
+                      </button>
+                    ))}
+                  </div>
+                  <p className="mt-2 text-[0.59rem] leading-relaxed text-[var(--color-faint)]">
+                    {settings.ps5_lz4_profile === "fast"
+                      ? "Prioriza velocidad y usa menos CPU; el resultado puede ocupar más."
+                      : settings.ps5_lz4_profile === "maximum"
+                        ? "Busca el menor tamaño con LZ4 HC nivel 12; tardará más."
+                        : "Recomendado: buen equilibrio entre tiempo, CPU y tamaño."}
+                  </p>
+                </div>
+              )}
               <button
                 className={`btn mt-4 w-full justify-center ${
                   format.id === "fpkg" ? "btn-primary" : "btn-ghost"
@@ -448,7 +480,7 @@ export function Ps5View() {
                     format.id === "fpkg" ? "FPKG nativo de PS5 añadido a la cola" : "Copia AMPR/LZ4 añadida a la cola",
                     format.id === "fpkg"
                       ? { decrypted_subfolder: decryptedSubfolderTrimmed, embedded_right: String(settings.ps5_fpkg_embedded_right) }
-                      : {},
+                      : { profile: settings.ps5_lz4_profile },
                   )
                 }
               >

@@ -54,6 +54,8 @@ pub struct Settings {
     pub ps5_fpkg_embedded_right: bool,
     /// Carpeta de salida exclusiva para PS5; si falta se hereda la general.
     pub ps5_output_dir: Option<String>,
+    /// Perfil AMPR/LZ4: "fast" | "balanced" | "maximum".
+    pub ps5_lz4_profile: String,
 }
 
 impl Default for Settings {
@@ -84,6 +86,7 @@ impl Default for Settings {
             ps5_fpkg_decrypted_subfolder: "decrypted".into(),
             ps5_fpkg_embedded_right: false,
             ps5_output_dir: None,
+            ps5_lz4_profile: "balanced".into(),
         }
     }
 }
@@ -157,7 +160,13 @@ pub fn save(s: &Settings) -> anyhow::Result<()> {
 
 #[cfg(test)]
 mod tests {
-    use super::migrated_config_dir;
+    use super::{migrated_config_dir, Settings};
+
+    #[test]
+    fn older_settings_receive_the_balanced_ps5_lz4_profile() {
+        let settings: Settings = serde_json::from_str("{}").unwrap();
+        assert_eq!(settings.ps5_lz4_profile, "balanced");
+    }
 
     #[test]
     fn migrates_the_legacy_configuration_directory() {
