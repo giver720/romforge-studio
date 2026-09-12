@@ -4,6 +4,7 @@ import {
   ArchiveRestore,
   CheckCircle2,
   FileArchive,
+  FolderInput,
   FlaskConical,
   FolderOpen,
   Gauge,
@@ -56,7 +57,7 @@ const formats: {
 ];
 
 export function Ps5View() {
-  const { notify, refreshJobs, tools, refreshTools } = useStore();
+  const { notify, refreshJobs, tools, refreshTools, settings, patchSettings } = useStore();
   const [source, setSource] = useState<string | null>(null);
   const [imageSource, setImageSource] = useState<string | null>(null);
   const [scan, setScan] = useState<Ps5Scan | null>(null);
@@ -251,6 +252,21 @@ export function Ps5View() {
             disabled={busy || selectedToolMissing || !source || !scan?.valid}
           >
             <FileArchive size={15} /> Crear {mode === "ps5ffpkg" ? ".ffpkg" : mode === "ps5exfat" ? ".exfat" : ".ffpfsc"}
+          </button>
+        </div>
+        <div className="mt-3 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-3">
+          <FolderInput size={16} className="shrink-0 text-violet-300" />
+          <span className="text-[0.68rem] text-[var(--color-muted)]">Carpeta de salida</span>
+          <button
+            className="btn btn-quiet ml-auto min-w-0 max-w-[65%] justify-start"
+            onClick={async () => {
+              const result = await open({ directory: true, multiple: false });
+              if (result) await patchSettings({ output_dir: result as string });
+            }}
+            disabled={busy}
+            title="Las conversiones PS5 se guardarán en esta carpeta"
+          >
+            <span className="truncate">{settings.output_dir || "Junto a la entrada"}</span>
           </button>
         </div>
         {mode === "ps5ffpkg" && (
