@@ -5209,6 +5209,37 @@
       "updated_at": "2020-03-05"
     },
     {
+      "id": "vitadbtoo-vita:1558",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Azahar",
+      "summary": "Nintendo 3DS emulator for PSVITA, based on Azahar.",
+      "author": "Grarak",
+      "version": "v.0.1.0",
+      "title_id": "AZAHARPSV",
+      "description": "Nintendo 3DS emulator for PSVITA, based on Azahar.",
+      "requirements": "- Decrypted 3DS ROMs in ux0:data/azahar/roms",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1c2facce6f36cd3a683c44384b57d720a6090772730cd9479f49c1172c5f13e7.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Grarak/azahar/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "azahar_vita.vpk",
+          "url": "https://github.com/Grarak/azahar/releases/download/0.1.0/azahar_vita.vpk",
+          "size": 8454197,
+          "md5": "65543d41f0e9c44cf825dfc539903e5c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-13"
+    },
+    {
       "id": "vitadbtoo-vita:828",
       "platforms": [
         "psvita"
@@ -15713,7 +15744,7 @@
       "name": "Deltarune Vita",
       "summary": "Port of Deltarune for PSVita.",
       "author": "ChatGPT AI",
-      "version": "v.0.72",
+      "version": "v.0.73",
       "title_id": "DLTVITA01",
       "description": "An unofficial port of DELTARUNE Chapters 1-5 for the PlayStation Vita.",
       "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Steam in ux0:data/deltarune",
@@ -15729,10 +15760,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Deltarune-v0.72-49.vpk",
-          "url": "https://github.com/WolffsRoom/DeltaruneVita/releases/download/v0.72/Deltarune-v0.72-49.vpk",
-          "size": 5418427,
-          "md5": "1cc08336d4ff91e952fdb7e0c96fd6de"
+          "filename": "Deltarune-v0.73.vpk",
+          "url": "https://github.com/WolffsRoom/DeltaruneVita/releases/download/v0.73/Deltarune-v0.73.vpk",
+          "size": 5591870,
+          "md5": "7c006f2c6b7709681068980da6037d48"
         }
       ],
       "popularity": 2259,
@@ -16412,7 +16443,7 @@
         "psvita"
       ],
       "name": "devilutionX",
-      "summary": "Port of Diablo for PSVita.",
+      "summary": "Port of Diablo for PSVita. Older 2019 port, see id 600 for the current one.",
       "author": "gokuhs",
       "version": "v.0.5.0 Beta 1",
       "title_id": "DVLX00001",
@@ -25996,7 +26027,7 @@
       "name": "GoldenBalloon",
       "summary": "Port of GoldenBalloon, a Diddy Kong Racing decompilation, for PSVITA.",
       "author": "zm2283145",
-      "version": "v.0.2.0",
+      "version": "v.1.7.1",
       "title_id": null,
       "description": "",
       "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Diddy Kong Racing in ux0:data/goldenballoon",
@@ -26007,17 +26038,17 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "mdkr64.vpk",
-          "url": "https://github.com/zm2283145/goldenballoon-vita-port/releases/download/vita-v0.2.0/mdkr64.vpk",
-          "size": 2587581,
-          "md5": "8cb87b40b65ef51a23cc02996b195600"
+          "filename": "GoldenBalloon-Vita-v1.7.1.vpk",
+          "url": "https://github.com/zm2283145/goldenballoon-vita-port/releases/download/v1.7.1/GoldenBalloon-Vita-v1.7.1.vpk",
+          "size": 4473413,
+          "md5": "f56f1d194c5493a36e27a3b67155a136"
         }
       ],
       "popularity": 0,
       "source": "VitaDBtoo",
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
-      "updated_at": "2026-09-09"
+      "updated_at": "2026-09-11"
     },
     {
       "id": "vitadbtoo-vita:1403",
@@ -35207,7 +35238,7 @@
         "psvita"
       ],
       "name": "MarmaladeBoy_LCD",
-      "summary": "An LCD-style Marmalade Boy game for PSVITA.",
+      "summary": "An LCD-style Marmalade Boy game for PSVITA. Later standalone release.",
       "author": "Bunkai9448",
       "version": "v.1.0",
       "title_id": "BUNKAI007",
@@ -35238,7 +35269,7 @@
         "psvita"
       ],
       "name": "MarmaladeBoy_LCD",
-      "summary": "Clone of MarmeladeBoy LCD console for PSVITA.",
+      "summary": "Clone of MarmeladeBoy LCD console for PSVITA. Fuhen 2023 contest build.",
       "author": "Bunkai",
       "version": "v.1.0",
       "title_id": "BUNKAI007",
@@ -48382,18 +48413,23 @@
       "version": "v.1.12",
       "title_id": "PRINCEPER",
       "description": "An open-source port of Prince of Persia for PSVITA/PSTV.",
-      "requirements": "",
+      "requirements": "- Game Data Files: Prince of Persia (DOS) in ux0:data/prince\n- Data files in ux0:data/prince",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f1464d52eb0d6b26677f497f2e4a387d20793e3eaeee6867810d8f114ba0c64a.png",
       "screenshots": [],
       "release_url": null,
       "downloads": [
         {
-          "format": "zip",
+          "format": "vpk",
+          "filename": "166-Prince-Of-Persia.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/166-Prince-Of-Persia.vpk",
+          "size": 6224036,
+          "md5": "30b5d494057984ffa39d8a27587295af"
+        },
+        {
+          "format": "data",
           "filename": "166-prince.zip",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/166-prince.zip",
-          "size": 279342,
-          "md5": "b8e49032ef93c82a9aafc65ea90b1f8d"
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/166-prince.zip"
         }
       ],
       "popularity": 14214,
@@ -48865,7 +48901,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5797,
+      "popularity": 5802,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48892,7 +48928,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2368,
+      "popularity": 2371,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48919,7 +48955,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4703,
+      "popularity": 4706,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48946,7 +48982,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4370,
+      "popularity": 4372,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48973,7 +49009,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36664,
+      "popularity": 36687,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49000,7 +49036,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1509,
+      "popularity": 1522,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -71858,37 +71894,6 @@
       "updated_at": "2020-12-20"
     },
     {
-      "id": "vitadbtoo-vita:1542",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "VitaBrightEX LUT Editor",
-      "summary": "LUT editor for VitaBrightEX.",
-      "author": "Zushikina-kun",
-      "version": "v.4.2",
-      "title_id": "VBRIGHTTL",
-      "description": "Companion application for the VitaBrightEX plugin: edits the lookup tables the plugin uses.",
-      "requirements": "- VitaBrightEX",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/cc0dc405788a66c118b236eb1afc8acd891d0b69dfead1b9f3e94183f427d4a2.png",
-      "screenshots": [],
-      "release_url": "https://github.com/Zushikina-kun/VitaBrightEX/releases",
-      "downloads": [
-        {
-          "format": "vpk",
-          "filename": "VitaBrightEX-LUT-Editor-v4.2.vpk",
-          "url": "https://github.com/Zushikina-kun/VitaBrightEX/releases/download/v1.3/VitaBrightEX-LUT-Editor-v4.2.vpk",
-          "size": 459389,
-          "md5": "7ad0415e59ae114a2db65c912411a264"
-        }
-      ],
-      "popularity": 0,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2026-08-30"
-    },
-    {
       "id": "vitadbtoo-vita:1541",
       "platforms": [
         "psvita"
@@ -73689,11 +73694,11 @@
       "release_url": "https://www.psx-place.com/threads/vitawolfen.31918/",
       "downloads": [
         {
-          "format": "zip",
-          "filename": "31-vitaWolfen.zip",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/31-vitaWolfen.zip",
-          "size": 1115769,
-          "md5": "dbc4b3383e5ffa96497ae5a3b76e8dec"
+          "format": "vpk",
+          "filename": "31-vitaWolfen.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/31-vitaWolfen.vpk",
+          "size": 8298018,
+          "md5": "050640595691574d6bcac49885bc0a58"
         },
         {
           "format": "data",
