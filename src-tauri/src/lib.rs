@@ -675,6 +675,22 @@ fn ps5_output_space(
 }
 
 #[tauri::command]
+fn ps5_image_space(
+    input: String,
+    output_dir: Option<String>,
+    state: State<'_, AppState>,
+) -> Result<ps5::ImageSpacePreflight, String> {
+    let settings = state.settings.lock().unwrap().clone();
+    let input = PathBuf::from(input);
+    let destination = output_dir
+        .or(settings.output_dir)
+        .map(PathBuf::from)
+        .filter(|path| !path.as_os_str().is_empty())
+        .unwrap_or_else(|| input.parent().map(Path::to_path_buf).unwrap_or_default());
+    ps5::image_space_preflight(&input, &destination)
+}
+
+#[tauri::command]
 async fn game_artwork(
     input: String,
     system: String,
@@ -826,6 +842,7 @@ pub fn run() {
             ps5_fpkg_readiness,
             ps5_validate_output_location,
             ps5_output_space,
+            ps5_image_space,
             game_artwork,
             app_paths,
             reveal

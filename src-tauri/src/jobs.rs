@@ -1585,6 +1585,27 @@ async fn run_ps5_workflow(
         );
     }
 
+    if matches!(job.mode.as_str(), MODE_COMPRESS | MODE_EXTRACT) {
+        // La estimación es exacta para PFS sin cifrar y una cota segura para
+        // exFAT/UFS2. Si no puede inspeccionarse, el motor decide en su lugar.
+        if let Ok(required) = crate::ps5::image_required_space(&input, &job.mode) {
+            if let Ok((available, probe)) = available_space_near(Path::new(&job.output)) {
+                if available < required {
+                    return custom_error(
+                        &app,
+                        &id,
+                        format!(
+                            "Espacio insuficiente para procesar esta imagen PS5. Se necesitan aproximadamente {} y hay {} disponibles en {}.",
+                            gibibytes(required),
+                            gibibytes(available),
+                            probe.display()
+                        ),
+                    );
+                }
+            }
+        }
+    }
+
     let staged = match StagedOutput::new(&job, settings.overwrite) {
         Ok(value) => value,
         Err(message) => return custom_error(&app, &id, message),

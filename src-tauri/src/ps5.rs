@@ -1,7 +1,7 @@
 use flate2::{write::ZlibEncoder, Compression};
 use serde::Serialize;
 use std::collections::BTreeMap;
-use std::io::{Read, Write};
+use std::io::{Read, Seek, SeekFrom, Write};
 use std::path::{Path, PathBuf};
 use std::sync::atomic::{AtomicBool, Ordering};
 
@@ -19,6 +19,13 @@ pub const MODE_LZ4: &str = "ps5lz4";
 pub const CLUSTER_SIZE: u64 = 64 * 1024;
 const SAMPLE_LIMIT: u64 = 32 * 1024 * 1024;
 const SAMPLE_PER_FILE: u64 = 2 * 1024 * 1024;
+const GIB: u64 = 1024 * 1024 * 1024;
+const PFS_MAGIC: i64 = 20_130_315;
+const PFS_MODE_SIGNED: u16 = 0x1;
+const PFS_MODE_64BIT_INODES: u16 = 0x2;
+const PFS_MODE_ENCRYPTED: u16 = 0x4;
+const INODE_MODE_FILE: u16 = 0x8000;
+const INODE_FLAG_COMPRESSED: u32 = 0x1;
 
 #[derive(Clone, Debug, Serialize)]
 pub struct Ps5Scan {
@@ -54,6 +61,14 @@ pub struct OutputSpace {
     pub location: String,
 }
 
+#[derive(Clone, Debug, Serialize)]
+pub struct ImageSpacePreflight {
+    pub input_bytes: u64,
+    pub available_bytes: u64,
+    pub location: String,
+    pub required_bytes: BTreeMap<String, u64>,
+}
+
 /// Consulta el espacio en la unidad real que recibirá la salida. La carpeta
 /// configurada puede no existir todavía, así que se prueba su primer ancestro
 /// existente en vez de asumir que la unidad del sistema es el destino.
@@ -67,6 +82,186 @@ pub fn output_space(destination: &Path) -> Result<OutputSpace, String> {
     Ok(OutputSpace {
         available_bytes,
         location: probe.to_string_lossy().to_string(),
+    })
+}
+
+fn with_space_margin(payload: u64, minimum_margin: u64) -> u64 {
+    payload.saturating_add((payload / 10).max(minimum_margin))
+}
+
+fn read_u16(data: &[u8], offset: usize) -> Result<u16, String> {
+    let bytes: [u8; 2] = data
+        .get(offset..offset + 2)
+        .ok_or_else(|| "Cabecera PFS truncada".to_string())?
+        .try_into()
+        .map_err(|_| "Cabecera PFS inválida".to_string())?;
+    Ok(u16::from_le_bytes(bytes))
+}
+
+fn read_u32(data: &[u8], offset: usize) -> Result<u32, String> {
+    let bytes: [u8; 4] = data
+        .get(offset..offset + 4)
+        .ok_or_else(|| "Cabecera PFS truncada".to_string())?
+        .try_into()
+        .map_err(|_| "Cabecera PFS inválida".to_string())?;
+    Ok(u32::from_le_bytes(bytes))
+}
+
+fn read_i64(data: &[u8], offset: usize) -> Result<i64, String> {
+    let bytes: [u8; 8] = data
+        .get(offset..offset + 8)
+        .ok_or_else(|| "Cabecera PFS truncada".to_string())?
+        .try_into()
+        .map_err(|_| "Cabecera PFS inválida".to_string())?;
+    Ok(i64::from_le_bytes(bytes))
+}
+
+/// Suma los tamaños lógicos declarados por los inodos sin leer ni descomprimir
+/// sus datos. Esto permite anticipar cuánto ocupará una extracción FFPFSC.
+fn pfs_logical_file_bytes(image: &Path) -> Result<u64, String> {
+    let mut file = std::fs::File::open(image)
+        .map_err(|error| format!("No se pudo abrir la imagen PFS: {error}"))?;
+    let file_bytes = file
+        .metadata()
+        .map_err(|error| format!("No se pudo leer el tamaño de la imagen: {error}"))?
+        .len();
+    let mut header = [0u8; 0x400];
+    file.read_exact(&mut header)
+        .map_err(|_| "La imagen PFS está truncada".to_string())?;
+
+    let version = read_i64(&header, 0x00)?;
+    let magic = read_i64(&header, 0x08)?;
+    let mode = read_u16(&header, 0x1c)?;
+    let block_size = u64::from(read_u32(&header, 0x20)?);
+    let inode_count = read_i64(&header, 0x30)?;
+    let inode_block_count = read_i64(&header, 0x40)?;
+    if magic != PFS_MAGIC || !matches!(version, 1 | 2) {
+        return Err("La imagen no contiene una cabecera PFS compatible".into());
+    }
+    if mode & PFS_MODE_ENCRYPTED != 0 {
+        return Err("No se puede estimar una imagen PFS cifrada sin su clave EKPFS".into());
+    }
+    if !(4096..=16 * 1024 * 1024).contains(&block_size) || !block_size.is_power_of_two() {
+        return Err("La imagen declara un tamaño de bloque PFS inválido".into());
+    }
+    let inode_count = u64::try_from(inode_count)
+        .map_err(|_| "La imagen declara una cantidad de inodos inválida".to_string())?;
+    let inode_block_count = u64::try_from(inode_block_count)
+        .map_err(|_| "La tabla de inodos PFS es inválida".to_string())?;
+    let inode_size = if mode & PFS_MODE_SIGNED == 0 {
+        0xa8u64
+    } else if mode & PFS_MODE_64BIT_INODES != 0 {
+        0x310u64
+    } else {
+        0x2c8u64
+    };
+    let inodes_per_block = block_size / inode_size;
+    if inodes_per_block == 0 {
+        return Err("El bloque PFS es demasiado pequeño para sus inodos".into());
+    }
+    let expected_blocks = inode_count.saturating_add(inodes_per_block - 1) / inodes_per_block;
+    if inode_block_count < expected_blocks {
+        return Err("La tabla de inodos PFS está incompleta".into());
+    }
+    let table_end = block_size
+        .checked_add(
+            inode_block_count
+                .checked_mul(block_size)
+                .ok_or_else(|| "La tabla de inodos PFS es demasiado grande".to_string())?,
+        )
+        .ok_or_else(|| "La tabla de inodos PFS es demasiado grande".to_string())?;
+    if table_end > file_bytes {
+        return Err("La tabla de inodos PFS queda fuera de la imagen".into());
+    }
+
+    let mut fields = [0u8; 24];
+    let mut total = 0u64;
+    for index in 0..inode_count {
+        let block = index / inodes_per_block;
+        let slot = index % inodes_per_block;
+        let offset = block_size
+            .saturating_add(block.saturating_mul(block_size))
+            .saturating_add(slot.saturating_mul(inode_size));
+        file.seek(SeekFrom::Start(offset))
+            .map_err(|error| format!("No se pudo leer la tabla de inodos PFS: {error}"))?;
+        file.read_exact(&mut fields)
+            .map_err(|_| "La tabla de inodos PFS está truncada".to_string())?;
+        if read_u16(&fields, 0)? & INODE_MODE_FILE == 0 {
+            continue;
+        }
+        let flags = read_u32(&fields, 4)?;
+        let stored_or_logical = read_i64(&fields, 8)?;
+        let compressed_logical = read_i64(&fields, 16)?;
+        let logical = if flags & INODE_FLAG_COMPRESSED != 0 {
+            compressed_logical
+        } else {
+            stored_or_logical
+        };
+        let logical = u64::try_from(logical)
+            .map_err(|_| "Un inodo PFS declara un tamaño lógico inválido".to_string())?;
+        total = total
+            .checked_add(logical)
+            .ok_or_else(|| "El tamaño lógico PFS supera el límite admitido".to_string())?;
+    }
+    Ok(total)
+}
+
+pub fn image_space_requirements(input: &Path) -> Result<BTreeMap<String, u64>, String> {
+    if !input.is_file() {
+        return Err("Selecciona un archivo de imagen PS5 válido".into());
+    }
+    let input_bytes = std::fs::metadata(input)
+        .map_err(|error| format!("No se pudo leer la imagen: {error}"))?
+        .len();
+    let extension = input
+        .extension()
+        .map(|value| value.to_string_lossy().to_ascii_lowercase())
+        .unwrap_or_default();
+    if !matches!(extension.as_str(), "exfat" | "ffpkg" | "ffpfs" | "ffpfsc") {
+        return Err("La extensión de la imagen PS5 no es compatible".into());
+    }
+
+    let mut requirements = BTreeMap::new();
+    if matches!(extension.as_str(), "exfat" | "ffpkg") {
+        requirements.insert(MODE_COMPRESS.into(), with_space_margin(input_bytes, GIB));
+    }
+    let extracted_bytes = if matches!(extension.as_str(), "ffpfs" | "ffpfsc") {
+        pfs_logical_file_bytes(input)?
+    } else {
+        input_bytes
+    };
+    requirements.insert(MODE_EXTRACT.into(), with_space_margin(extracted_bytes, GIB));
+    if extension == "exfat" {
+        requirements.insert(
+            MODE_EXFAT_FPKG.into(),
+            input_bytes
+                .saturating_mul(2)
+                .saturating_add((input_bytes / 10).max(2 * GIB)),
+        );
+    }
+    Ok(requirements)
+}
+
+pub fn image_required_space(input: &Path, mode: &str) -> Result<u64, String> {
+    image_space_requirements(input)?
+        .remove(mode)
+        .ok_or_else(|| "La operación no es compatible con esta imagen PS5".to_string())
+}
+
+pub fn image_space_preflight(
+    input: &Path,
+    destination: &Path,
+) -> Result<ImageSpacePreflight, String> {
+    let input_bytes = std::fs::metadata(input)
+        .map_err(|error| format!("No se pudo leer la imagen: {error}"))?
+        .len();
+    let required_bytes = image_space_requirements(input)?;
+    let output = output_space(destination)?;
+    Ok(ImageSpacePreflight {
+        input_bytes,
+        available_bytes: output.available_bytes,
+        location: output.location,
+        required_bytes,
     })
 }
 
@@ -883,6 +1078,48 @@ mod tests {
         assert!(result.available_bytes > 0);
         assert_eq!(PathBuf::from(result.location), base);
         let _ = std::fs::remove_dir_all(base);
+    }
+
+    #[test]
+    fn reads_logical_extraction_size_without_decompressing_pfs() {
+        let image = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-logical-{}.ffpfsc",
+            std::process::id()
+        ));
+        let logical_bytes = 20 * GIB;
+        let mut data = vec![0u8; 8192];
+        data[0x00..0x08].copy_from_slice(&2i64.to_le_bytes());
+        data[0x08..0x10].copy_from_slice(&PFS_MAGIC.to_le_bytes());
+        data[0x20..0x24].copy_from_slice(&4096u32.to_le_bytes());
+        data[0x30..0x38].copy_from_slice(&2i64.to_le_bytes());
+        data[0x40..0x48].copy_from_slice(&1i64.to_le_bytes());
+        let inode = 4096 + 0xa8;
+        data[inode..inode + 2].copy_from_slice(&INODE_MODE_FILE.to_le_bytes());
+        data[inode + 4..inode + 8].copy_from_slice(&INODE_FLAG_COMPRESSED.to_le_bytes());
+        data[inode + 8..inode + 16].copy_from_slice(&128i64.to_le_bytes());
+        data[inode + 16..inode + 24].copy_from_slice(&(logical_bytes as i64).to_le_bytes());
+        std::fs::write(&image, data).unwrap();
+
+        assert_eq!(pfs_logical_file_bytes(&image).unwrap(), logical_bytes);
+        let requirements = image_space_requirements(&image).unwrap();
+        assert_eq!(requirements[MODE_EXTRACT], 22 * GIB);
+        assert!(!requirements.contains_key(MODE_COMPRESS));
+        let _ = std::fs::remove_file(image);
+    }
+
+    #[test]
+    fn estimates_each_supported_exfat_image_operation() {
+        let image = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-image-space-{}.exfat",
+            std::process::id()
+        ));
+        std::fs::write(&image, vec![0u8; 1024]).unwrap();
+
+        let requirements = image_space_requirements(&image).unwrap();
+        assert_eq!(requirements[MODE_COMPRESS], GIB + 1024);
+        assert_eq!(requirements[MODE_EXTRACT], GIB + 1024);
+        assert_eq!(requirements[MODE_EXFAT_FPKG], 2 * GIB + 2048);
+        let _ = std::fs::remove_file(image);
     }
 
     #[cfg(windows)]

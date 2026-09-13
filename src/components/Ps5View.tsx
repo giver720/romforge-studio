@@ -17,7 +17,12 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { api, type GameArtwork } from "../lib/api";
 import { bytes } from "../lib/format";
-import { PS5_LAB_FORMATS, type Ps5OutputSpace, type Ps5Scan } from "../lib/ps5";
+import {
+  PS5_LAB_FORMATS,
+  type Ps5ImageSpacePreflight,
+  type Ps5OutputSpace,
+  type Ps5Scan,
+} from "../lib/ps5";
 import { useStore } from "../store";
 import { Toggle } from "./ui";
 
@@ -91,6 +96,11 @@ export function Ps5View() {
   const [outputSpace, setOutputSpace] = useState<Ps5OutputSpace | null>(null);
   const [outputSpaceError, setOutputSpaceError] = useState<string | null>(null);
   const [checkingOutputSpace, setCheckingOutputSpace] = useState(false);
+  const [outputSpaceKey, setOutputSpaceKey] = useState<string | null>(null);
+  const [imageSpace, setImageSpace] = useState<Ps5ImageSpacePreflight | null>(null);
+  const [imageSpaceError, setImageSpaceError] = useState<string | null>(null);
+  const [checkingImageSpace, setCheckingImageSpace] = useState(false);
+  const [imageSpaceKey, setImageSpaceKey] = useState<string | null>(null);
 
   useEffect(() => {
     refreshTools();
@@ -107,6 +117,11 @@ export function Ps5View() {
   const imageExt = imageSource?.split(".").pop()?.toLowerCase();
   const canCompress = imageExt === "exfat" || imageExt === "ffpkg";
   const canInspectImage = ["exfat", "ffpkg", "ffpfs", "ffpfsc"].includes(imageExt ?? "");
+  const effectiveOutputSetting = settings.ps5_output_dir || settings.output_dir || "";
+  const currentOutputSpaceKey = source ? `${source}\u0000${effectiveOutputSetting}` : null;
+  const currentImageSpaceKey = imageSource ? `${imageSource}\u0000${effectiveOutputSetting}` : null;
+  const outputSpaceStale = Boolean(currentOutputSpaceKey && outputSpaceKey !== currentOutputSpaceKey);
+  const imageSpaceStale = Boolean(currentImageSpaceKey && imageSpaceKey !== currentImageSpaceKey);
   const decryptedSubfolderTrimmed = settings.ps5_fpkg_decrypted_subfolder.trim();
   const decryptedSubfolderValid =
     decryptedSubfolderTrimmed.length > 0 &&
@@ -123,15 +138,21 @@ export function Ps5View() {
   );
   const requiredSpace = scan?.valid ? estimatedPs5WorkingSpace(mode, scan) : 0;
   const selectedSpaceInsufficient = Boolean(
-    requiredSpace && outputSpace && outputSpace.available_bytes < requiredSpace,
+    !outputSpaceStale && requiredSpace && outputSpace && outputSpace.available_bytes < requiredSpace,
   );
 
   function spaceInsufficientFor(targetMode: string) {
     return Boolean(
       scan?.valid &&
+      !outputSpaceStale &&
       outputSpace &&
       outputSpace.available_bytes < estimatedPs5WorkingSpace(targetMode, scan),
     );
+  }
+
+  function imageSpaceInsufficientFor(targetMode: string) {
+    const required = imageSpace?.required_bytes[targetMode];
+    return Boolean(!imageSpaceStale && required && imageSpace && imageSpace.available_bytes < required);
   }
 
   async function chooseFolder() {
@@ -222,18 +243,27 @@ export function Ps5View() {
       setOutputSpace(null);
       setOutputSpaceError(null);
       setCheckingOutputSpace(false);
+      setOutputSpaceKey(null);
       return;
     }
     let active = true;
     setOutputSpace(null);
     setOutputSpaceError(null);
     setCheckingOutputSpace(true);
+    setOutputSpaceKey(null);
+    const requestKey = currentOutputSpaceKey;
     api.ps5OutputSpace(source, settings.ps5_output_dir)
       .then((space) => {
-        if (active) setOutputSpace(space);
+        if (active) {
+          setOutputSpace(space);
+          setOutputSpaceKey(requestKey);
+        }
       })
       .catch((error) => {
-        if (active) setOutputSpaceError(String(error));
+        if (active) {
+          setOutputSpaceError(String(error));
+          setOutputSpaceKey(requestKey);
+        }
       })
       .finally(() => {
         if (active) setCheckingOutputSpace(false);
@@ -241,7 +271,7 @@ export function Ps5View() {
     return () => {
       active = false;
     };
-  }, [source, scan?.valid, settings.ps5_output_dir, settings.output_dir]);
+  }, [source, scan?.valid, effectiveOutputSetting]);
 
   async function chooseImage() {
     const result = (await open({
@@ -251,6 +281,41 @@ export function Ps5View() {
     })) as string | null;
     if (result) setImageSource(result);
   }
+
+  useEffect(() => {
+    if (!imageSource || !canInspectImage) {
+      setImageSpace(null);
+      setImageSpaceError(null);
+      setCheckingImageSpace(false);
+      setImageSpaceKey(null);
+      return;
+    }
+    let active = true;
+    setImageSpace(null);
+    setImageSpaceError(null);
+    setCheckingImageSpace(true);
+    setImageSpaceKey(null);
+    const requestKey = currentImageSpaceKey;
+    api.ps5ImageSpace(imageSource, settings.ps5_output_dir)
+      .then((space) => {
+        if (active) {
+          setImageSpace(space);
+          setImageSpaceKey(requestKey);
+        }
+      })
+      .catch((error) => {
+        if (active) {
+          setImageSpaceError(String(error));
+          setImageSpaceKey(requestKey);
+        }
+      })
+      .finally(() => {
+        if (active) setCheckingImageSpace(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [imageSource, canInspectImage, effectiveOutputSetting]);
 
   async function enqueue(
     input: string,
@@ -405,7 +470,7 @@ export function Ps5View() {
           <button
             className="btn btn-primary"
             onClick={() => source && enqueue(source, mode, `${selectedFormat.name} añadido a la cola`)}
-            disabled={busy || checkingOutputLocation || checkingOutputSpace || Boolean(outputLocationError) || selectedSpaceInsufficient || selectedToolMissing || !source || !scan?.valid}
+            disabled={busy || checkingOutputLocation || checkingOutputSpace || outputSpaceStale || Boolean(outputLocationError) || selectedSpaceInsufficient || selectedToolMissing || !source || !scan?.valid}
           >
             <FileArchive size={15} /> Crear {mode === "ps5ffpkg" ? ".ffpkg" : mode === "ps5exfat" ? ".exfat" : ".ffpfsc"}
           </button>
@@ -459,12 +524,12 @@ export function Ps5View() {
           >
             <HardDrive size={13} className="mt-0.5 shrink-0" />
             <span className="min-w-0">
-              {checkingOutputSpace
+              {checkingOutputSpace || outputSpaceStale
                 ? "Consultando el espacio libre del destino…"
                 : outputSpace
                   ? `${bytes(outputSpace.available_bytes)} libres · ${bytes(requiredSpace)} necesarios para ${selectedFormat.name}`
                   : outputSpaceError ?? "No se pudo consultar el espacio libre; la cola volverá a comprobarlo."}
-              {outputSpace && (
+              {outputSpace && !outputSpaceStale && (
                 <span className="mt-0.5 block truncate text-[var(--color-faint)]" title={outputSpace.location}>
                   Comprobado en {outputSpace.location}
                 </span>
@@ -577,7 +642,7 @@ export function Ps5View() {
               )}
               {scan?.valid && (
                 <p className={`mt-2 text-[0.62rem] ${spaceInsufficientFor(format.mode) ? "text-rose-300" : "text-blue-300"}`}>
-                  {checkingOutputSpace
+                  {checkingOutputSpace || outputSpaceStale
                     ? "Consultando espacio libre…"
                     : outputSpace
                       ? `${bytes(outputSpace.available_bytes)} libres · ${bytes(estimatedPs5WorkingSpace(format.mode, scan))} necesarios`
@@ -624,6 +689,7 @@ export function Ps5View() {
                   busy ||
                   checkingOutputLocation ||
                   checkingOutputSpace ||
+                  outputSpaceStale ||
                   Boolean(outputLocationError) ||
                   spaceInsufficientFor(format.mode) ||
                   (format.id === "fpkg" ? prosperoMissing : amprMissing) ||
@@ -703,20 +769,62 @@ export function Ps5View() {
             ))}
           </div>
         )}
+        {imageSource && canInspectImage && (
+          <div className="mt-3 rounded-xl border border-white/10 bg-white/[0.02] p-3">
+            <div className="flex items-center gap-2 text-[0.64rem] text-[var(--color-muted)]">
+              <HardDrive size={13} className="shrink-0" />
+              {checkingImageSpace || imageSpaceStale
+                ? "Calculando la recuperación y el espacio libre…"
+                : imageSpace
+                  ? `${bytes(imageSpace.available_bytes)} libres en el destino`
+                  : imageSpaceError ?? "No se pudo consultar el espacio; la cola volverá a comprobarlo."}
+            </div>
+            {imageSpace && !imageSpaceStale && (
+              <>
+                <div className="mt-2 flex flex-wrap gap-2">
+                  {([
+                    ["ps5compress", "Comprimir"],
+                    ["ps5extract", "Extraer"],
+                    ["ps5fpkgexfat", "Crear FPKG"],
+                  ] as const).map(([targetMode, label]) => {
+                    const required = imageSpace.required_bytes[targetMode];
+                    if (!required) return null;
+                    const insufficient = imageSpace.available_bytes < required;
+                    return (
+                      <span
+                        key={targetMode}
+                        className={`rounded-md border px-2 py-1 text-[0.61rem] ${
+                          insufficient
+                            ? "border-rose-400/25 bg-rose-400/[0.06] text-rose-300"
+                            : "border-emerald-400/20 bg-emerald-400/[0.05] text-emerald-300"
+                        }`}
+                      >
+                        {label}: {bytes(required)} {insufficient ? "· insuficiente" : "· listo"}
+                      </span>
+                    );
+                  })}
+                </div>
+                <p className="mt-1.5 truncate text-[0.58rem] text-[var(--color-faint)]" title={imageSpace.location}>
+                  Comprobado en {imageSpace.location}
+                </p>
+              </>
+            )}
+          </div>
+        )}
         <div className="mt-4 flex flex-wrap gap-2">
           <button className="btn btn-ghost" onClick={chooseImage} disabled={busy}>
             <FileArchive size={15} /> Elegir imagen
           </button>
           <button
             className="btn btn-primary"
-            disabled={busy || !imageSource || !canCompress || missingTools.has("mkpfs")}
+            disabled={busy || checkingImageSpace || imageSpaceStale || imageSpaceInsufficientFor("ps5compress") || !imageSource || !canCompress || missingTools.has("mkpfs")}
             onClick={() => imageSource && enqueue(imageSource, "ps5compress", "Compresión FFPFSC añadida a la cola")}
           >
             <Sparkles size={15} /> Comprimir a .ffpfsc
           </button>
           <button
             className="btn btn-ghost"
-            disabled={busy || !imageSource || !canInspectImage || (imageExt === "ffpkg" ? missingTools.has("ufs2tool") : missingTools.has("mkpfs"))}
+            disabled={busy || checkingImageSpace || imageSpaceStale || imageSpaceInsufficientFor("ps5extract") || !imageSource || !canInspectImage || (imageExt === "ffpkg" ? missingTools.has("ufs2tool") : missingTools.has("mkpfs"))}
             onClick={() => imageSource && enqueue(imageSource, "ps5extract", "Extracción añadida a la cola")}
           >
             <ArchiveRestore size={15} /> Extraer a carpeta
@@ -732,7 +840,7 @@ export function Ps5View() {
           {imageExt === "exfat" && (
             <button
               className="btn btn-primary"
-              disabled={busy || !imageSource || missingTools.has("mkpfs") || prosperoMissing || !decryptedSubfolderValid}
+              disabled={busy || checkingImageSpace || imageSpaceStale || imageSpaceInsufficientFor("ps5fpkgexfat") || !imageSource || missingTools.has("mkpfs") || prosperoMissing || !decryptedSubfolderValid}
               title={
                 missingTools.has("mkpfs")
                   ? "Falta MkPFS 1.0.0"

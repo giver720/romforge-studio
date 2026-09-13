@@ -29,6 +29,13 @@ export interface Ps5OutputSpace {
   location: string;
 }
 
+export interface Ps5ImageSpacePreflight {
+  input_bytes: number;
+  available_bytes: number;
+  location: string;
+  required_bytes: Record<string, number>;
+}
+
 export type Ps5LabFormatId = "fpkg" | "lz4";
 export type Ps5LabMode = "ps5fpkg" | "ps5lz4";
 
