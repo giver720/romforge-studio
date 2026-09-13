@@ -1587,6 +1587,26 @@ async fn run_ps5_workflow(
             "Se pueden extraer imagenes .exfat, .ffpkg, .ffpfs y .ffpfsc".into(),
         );
     }
+    let selected_extract_path = if job.mode == MODE_EXTRACT {
+        match crate::ps5::normalize_extract_path(
+            job.options
+                .get("extract_path")
+                .map(String::as_str)
+                .unwrap_or_default(),
+        ) {
+            Ok(value) => value,
+            Err(message) => return custom_error(&app, &id, message),
+        }
+    } else {
+        None
+    };
+    if selected_extract_path.is_some() && extension != "ffpkg" {
+        return custom_error(
+            &app,
+            &id,
+            "La extracción selectiva solo está disponible para imágenes FFPKG/UFS2".into(),
+        );
+    }
     if job.mode == MODE_VERIFY
         && !matches!(extension.as_str(), "exfat" | "ffpkg" | "ffpfs" | "ffpfsc")
     {
@@ -1597,7 +1617,8 @@ async fn run_ps5_workflow(
         );
     }
 
-    if matches!(job.mode.as_str(), MODE_COMPRESS | MODE_EXTRACT) {
+    if matches!(job.mode.as_str(), MODE_COMPRESS | MODE_EXTRACT) && selected_extract_path.is_none()
+    {
         // La estimación es exacta para PFS sin cifrar y una cota segura para
         // exFAT/UFS2. Si no puede inspeccionarse, el motor decide en su lugar.
         if let Ok(required) = crate::ps5::image_required_space(&input, &job.mode) {
@@ -1710,14 +1731,24 @@ async fn run_ps5_workflow(
                 execution.output.clone(),
             ],
         ),
-        MODE_EXTRACT if extension == "ffpkg" => (
-            "Extrayendo la imagen UFS2",
-            vec![
-                "extract".into(),
-                job.input.clone(),
-                execution.output.clone(),
-            ],
-        ),
+        MODE_EXTRACT if extension == "ffpkg" => {
+            let args =
+                match crate::ps5::ufs2_extract_args(&job.input, &execution.output, &job.options) {
+                    Ok(value) => value,
+                    Err(message) => {
+                        staged.cleanup();
+                        return custom_error(&app, &id, message);
+                    }
+                };
+            (
+                if selected_extract_path.is_some() {
+                    "Extrayendo la selección de la imagen UFS2"
+                } else {
+                    "Extrayendo la imagen UFS2"
+                },
+                args,
+            )
+        }
         MODE_EXTRACT => {
             let mut args = vec!["unpack".into(), "--overwrite".into()];
             if extension == "ffpfsc" {
@@ -1949,17 +1980,29 @@ async fn run_ps5_workflow(
             }
         }
         MODE_EXTRACT => {
-            let scan = crate::ps5::scan(&execution.output);
-            if !scan.valid {
-                staged.cleanup();
-                return custom_error(
-                    &app,
-                    &id,
-                    scan.error
-                        .unwrap_or_else(|| "La extraccion no produjo un dump valido".into()),
-                );
+            if let Some(path) = selected_extract_path.as_deref() {
+                if !Path::new(&execution.output).is_dir() {
+                    staged.cleanup();
+                    return custom_error(
+                        &app,
+                        &id,
+                        "UFS2Tool no produjo la carpeta de extracción esperada".into(),
+                    );
+                }
+                format!("Contenido UFS2 {path} extraído correctamente")
+            } else {
+                let scan = crate::ps5::scan(&execution.output);
+                if !scan.valid {
+                    staged.cleanup();
+                    return custom_error(
+                        &app,
+                        &id,
+                        scan.error
+                            .unwrap_or_else(|| "La extraccion no produjo un dump valido".into()),
+                    );
+                }
+                format!("Se extrajeron y comprobaron {} archivos", scan.file_count)
             }
-            format!("Se extrajeron y comprobaron {} archivos", scan.file_count)
         }
         MODE_VERIFY => match tool_id {
             "ufs2tool" => "UFS2 consistente según fsck_ufs en modo de solo lectura".to_string(),
@@ -1990,6 +2033,7 @@ async fn run_ps5_workflow(
             MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => "Listo · FPKG PS5 verificado",
             MODE_LZ4 => "Listo · AMPRPAK4/LZ4 verificado",
             MODE_FFPFSC | MODE_COMPRESS => "Listo · FFPFSC verificado",
+            MODE_EXTRACT if selected_extract_path.is_some() => "Listo · selección extraída",
             MODE_EXTRACT => "Listo · dump extraido y verificado",
             MODE_VERIFY => "Listo · imagen PS5 verificada",
             _ => "Listo",

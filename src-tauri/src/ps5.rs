@@ -330,6 +330,48 @@ pub fn writes_directory(mode: &str) -> bool {
     matches!(mode, MODE_EXTRACT | MODE_LZ4)
 }
 
+/// Normaliza una ruta interna UFS2 recibida desde la interfaz. La ruta nunca
+/// se interpreta en el sistema anfitrión: se entrega a UFS2Tool para escoger
+/// un archivo o directorio dentro de la imagen.
+pub fn normalize_extract_path(value: &str) -> Result<Option<String>, String> {
+    let value = value.trim();
+    if value.is_empty() {
+        return Ok(None);
+    }
+    if value.len() > 1024 || value.contains(['\0', ':']) {
+        return Err("La ruta interna de extracción no es válida".into());
+    }
+
+    let normalized = value.replace('\\', "/");
+    let relative = normalized.strip_prefix('/').unwrap_or(&normalized);
+    let relative = relative.strip_suffix('/').unwrap_or(relative);
+    if relative.is_empty()
+        || relative
+            .split('/')
+            .any(|segment| segment.is_empty() || matches!(segment, "." | ".."))
+    {
+        return Err("Usa una ruta interna segura, por ejemplo /sce_sys o /eboot.bin".into());
+    }
+    Ok(Some(format!("/{relative}")))
+}
+
+pub fn ufs2_extract_args(
+    input: &str,
+    output: &str,
+    options: &BTreeMap<String, String>,
+) -> Result<Vec<String>, String> {
+    let mut args = vec!["extract".into(), input.into(), output.into()];
+    if let Some(path) = normalize_extract_path(
+        options
+            .get("extract_path")
+            .map(String::as_str)
+            .unwrap_or_default(),
+    )? {
+        args.push(path);
+    }
+    Ok(args)
+}
+
 pub fn fpkg_convert_args(
     input: &str,
     output: &str,
@@ -1098,6 +1140,44 @@ mod tests {
 
         let invalid = BTreeMap::from([("profile".into(), "maximum; remove".into())]);
         assert!(lz4_convert_args("game", "game-lz4", &invalid).is_err());
+    }
+
+    #[test]
+    fn normalizes_safe_ufs2_extract_paths() {
+        assert_eq!(normalize_extract_path("").unwrap(), None);
+        assert_eq!(
+            normalize_extract_path(r#"sce_sys\param.json"#).unwrap(),
+            Some("/sce_sys/param.json".into())
+        );
+        assert_eq!(
+            normalize_extract_path("/sce_sys/").unwrap(),
+            Some("/sce_sys".into())
+        );
+    }
+
+    #[test]
+    fn rejects_unsafe_ufs2_extract_paths() {
+        for value in [
+            "../outside",
+            "sce_sys//param.json",
+            "C:/game",
+            "./eboot.bin",
+        ] {
+            assert!(normalize_extract_path(value).is_err(), "accepted {value}");
+        }
+    }
+
+    #[test]
+    fn appends_the_selected_path_to_ufs2_extract() {
+        let options = BTreeMap::from([("extract_path".into(), "sce_sys".into())]);
+        assert_eq!(
+            ufs2_extract_args("game.ffpkg", "game", &options).unwrap(),
+            ["extract", "game.ffpkg", "game", "/sce_sys"]
+        );
+        assert_eq!(
+            ufs2_extract_args("game.ffpkg", "game", &BTreeMap::new()).unwrap(),
+            ["extract", "game.ffpkg", "game"]
+        );
     }
 
     #[test]

@@ -81,6 +81,26 @@ function estimatedPs5WorkingSpace(mode: string, scan: Ps5Scan) {
   return 0;
 }
 
+function normalizeInternalPath(value: string) {
+  const trimmed = value.trim();
+  if (!trimmed) return "";
+  const normalized = trimmed.replace(/\\/g, "/");
+  const withoutLeadingSlash = normalized.startsWith("/") ? normalized.slice(1) : normalized;
+  const relative = withoutLeadingSlash.endsWith("/")
+    ? withoutLeadingSlash.slice(0, -1)
+    : withoutLeadingSlash;
+  if (
+    !relative ||
+    normalized.length > 1024 ||
+    normalized.includes(":") ||
+    normalized.includes("\0") ||
+    relative.split("/").some((segment) => !segment || segment === "." || segment === "..")
+  ) {
+    return null;
+  }
+  return `/${relative}`;
+}
+
 export function Ps5View() {
   const { notify, refreshJobs, tools, refreshTools, settings, patchSettings } = useStore();
   const [source, setSource] = useState<string | null>(null);
@@ -101,6 +121,7 @@ export function Ps5View() {
   const [imageSpaceError, setImageSpaceError] = useState<string | null>(null);
   const [checkingImageSpace, setCheckingImageSpace] = useState(false);
   const [imageSpaceKey, setImageSpaceKey] = useState<string | null>(null);
+  const [extractPath, setExtractPath] = useState("");
 
   useEffect(() => {
     refreshTools();
@@ -120,6 +141,9 @@ export function Ps5View() {
   const imageExt = imageSource?.split(".").pop()?.toLowerCase();
   const canCompress = imageExt === "exfat" || imageExt === "ffpkg";
   const canInspectImage = ["exfat", "ffpkg", "ffpfs", "ffpfsc"].includes(imageExt ?? "");
+  const normalizedExtractPath = normalizeInternalPath(extractPath);
+  const selectiveExtract = imageExt === "ffpkg" && Boolean(normalizedExtractPath);
+  const extractPathInvalid = imageExt === "ffpkg" && normalizedExtractPath === null;
   const effectiveOutputSetting = settings.ps5_output_dir || settings.output_dir || "";
   const currentOutputSpaceKey = source ? `${source}\u0000${effectiveOutputSetting}` : null;
   const currentImageSpaceKey = imageSource ? `${imageSource}\u0000${effectiveOutputSetting}` : null;
@@ -282,7 +306,10 @@ export function Ps5View() {
       multiple: false,
       filters: [{ name: "Imágenes PS5", extensions: ["exfat", "ffpkg", "ffpfs", "ffpfsc"] }],
     })) as string | null;
-    if (result) setImageSource(result);
+    if (result) {
+      setImageSource(result);
+      setExtractPath("");
+    }
   }
 
   useEffect(() => {
@@ -781,6 +808,44 @@ export function Ps5View() {
             ))}
           </div>
         )}
+        {imageExt === "ffpkg" && (
+          <div className="mt-3 rounded-xl border border-violet-400/20 bg-violet-400/[0.04] p-3">
+            <div className="flex flex-wrap items-end gap-2">
+              <label className="min-w-[240px] flex-1 text-[0.64rem] text-[var(--color-muted)]">
+                Ruta interna opcional
+                <input
+                  className="field mt-1 w-full"
+                  value={extractPath}
+                  onChange={(event) => setExtractPath(event.target.value)}
+                  placeholder="Vacía para extraer todo · /sce_sys"
+                  spellCheck={false}
+                />
+              </label>
+              {["", "/sce_sys", "/eboot.bin"].map((path) => (
+                <button
+                  key={path || "all"}
+                  type="button"
+                  className="btn btn-ghost"
+                  onClick={() => setExtractPath(path)}
+                >
+                  {path ? path.slice(1) : "Todo"}
+                </button>
+              ))}
+            </div>
+            {extractPathInvalid ? (
+              <p className="mt-2 text-[0.61rem] text-rose-300">
+                Usa una ruta interna segura; no se permiten segmentos “.”, “..”, rutas de Windows ni separadores dobles.
+              </p>
+            ) : (
+              <p className="mt-2 text-[0.61rem] leading-relaxed text-[var(--color-faint)]">
+                {selectiveExtract
+                  ? `Solo se recuperará ${normalizedExtractPath}. El tamaño exacto lo determina UFS2Tool al extraer.`
+                  : "La extracción completa conserva la verificación del dump. La selección sirve para recuperar archivos o carpetas concretas."}
+                {" "}UFS2Tool puede fallar con archivos individuales mayores de 2 GiB.
+              </p>
+            )}
+          </div>
+        )}
         {imageSource && canInspectImage && (
           <div className="mt-3 rounded-xl border border-white/10 bg-white/[0.02] p-3">
             <div className="flex items-center gap-2 text-[0.64rem] text-[var(--color-muted)]">
@@ -796,7 +861,7 @@ export function Ps5View() {
                 <div className="mt-2 flex flex-wrap gap-2">
                   {([
                     ["ps5compress", "Comprimir"],
-                    ["ps5extract", "Extraer"],
+                    ["ps5extract", selectiveExtract ? "Extraer todo" : "Extraer"],
                     ["ps5fpkgexfat", "Crear FPKG"],
                   ] as const).map(([targetMode, label]) => {
                     const required = imageSpace.required_bytes[targetMode];
@@ -836,10 +901,15 @@ export function Ps5View() {
           </button>
           <button
             className="btn btn-ghost"
-            disabled={busy || checkingImageSpace || imageSpaceStale || imageSpaceInsufficientFor("ps5extract") || !imageSource || !canInspectImage || (imageExt === "ffpkg" ? missingTools.has("ufs2tool") : missingTools.has("mkpfs"))}
-            onClick={() => imageSource && enqueue(imageSource, "ps5extract", "Extracción añadida a la cola")}
+            disabled={busy || extractPathInvalid || (!selectiveExtract && (checkingImageSpace || imageSpaceStale || imageSpaceInsufficientFor("ps5extract"))) || !imageSource || !canInspectImage || (imageExt === "ffpkg" ? missingTools.has("ufs2tool") : missingTools.has("mkpfs"))}
+            onClick={() => imageSource && enqueue(
+              imageSource,
+              "ps5extract",
+              selectiveExtract ? "Extracción selectiva añadida a la cola" : "Extracción añadida a la cola",
+              selectiveExtract && normalizedExtractPath ? { extract_path: normalizedExtractPath } : {},
+            )}
           >
-            <ArchiveRestore size={15} /> Extraer a carpeta
+            <ArchiveRestore size={15} /> {selectiveExtract ? "Extraer selección" : "Extraer a carpeta"}
           </button>
           <button
             className="btn btn-ghost"
