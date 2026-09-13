@@ -260,8 +260,29 @@ pub async fn run_capture_cancelable_in(
     cwd: Option<&Path>,
     cancel: &AtomicBool,
 ) -> anyhow::Result<CaptureResult> {
-    use tokio::io::AsyncReadExt;
+    run_capture_cancelable_in_streaming(exe, args, env, cwd, cancel, None).await
+}
 
+/// Igual que `run_capture_cancelable_in`, pero entrega cada linea mientras la
+/// herramienta sigue ejecutandose. La salida completa se conserva en el
+/// resultado para que los errores y validaciones no pierdan informacion.
+pub async fn run_capture_cancelable_streaming(
+    exe: &Path,
+    args: &[String],
+    cancel: &AtomicBool,
+    lines: tokio::sync::mpsc::UnboundedSender<String>,
+) -> anyhow::Result<CaptureResult> {
+    run_capture_cancelable_in_streaming(exe, args, &[], None, cancel, Some(lines)).await
+}
+
+async fn run_capture_cancelable_in_streaming(
+    exe: &Path,
+    args: &[String],
+    env: &[(&str, String)],
+    cwd: Option<&Path>,
+    cancel: &AtomicBool,
+    lines: Option<tokio::sync::mpsc::UnboundedSender<String>>,
+) -> anyhow::Result<CaptureResult> {
     let mut cmd = tokio::process::Command::new(exe);
     if let Some(dir) = cwd {
         cmd.current_dir(dir);
@@ -283,20 +304,8 @@ pub async fn run_capture_cancelable_in(
     let pid = child.id();
     let stdout = child.stdout.take();
     let stderr = child.stderr.take();
-    let stdout_task = tokio::spawn(async move {
-        let mut bytes = vec![];
-        if let Some(mut reader) = stdout {
-            let _ = reader.read_to_end(&mut bytes).await;
-        }
-        bytes
-    });
-    let stderr_task = tokio::spawn(async move {
-        let mut bytes = vec![];
-        if let Some(mut reader) = stderr {
-            let _ = reader.read_to_end(&mut bytes).await;
-        }
-        bytes
-    });
+    let stdout_task = tokio::spawn(capture_pipe(stdout, lines.clone()));
+    let stderr_task = tokio::spawn(capture_pipe(stderr, lines));
 
     loop {
         if cancel.load(Ordering::Relaxed) {
@@ -338,6 +347,48 @@ pub async fn run_capture_cancelable_in(
         }
         tokio::time::sleep(std::time::Duration::from_millis(120)).await;
     }
+}
+
+async fn capture_pipe<R>(
+    reader: Option<R>,
+    lines: Option<tokio::sync::mpsc::UnboundedSender<String>>,
+) -> Vec<u8>
+where
+    R: tokio::io::AsyncRead + Unpin + Send + 'static,
+{
+    use tokio::io::AsyncReadExt;
+
+    let mut bytes = Vec::new();
+    let mut pending = String::new();
+    let Some(mut reader) = reader else {
+        return bytes;
+    };
+    let mut chunk = [0u8; 4096];
+    loop {
+        match reader.read(&mut chunk).await {
+            Ok(0) | Err(_) => break,
+            Ok(count) => {
+                bytes.extend_from_slice(&chunk[..count]);
+                if let Some(sender) = &lines {
+                    pending.push_str(&String::from_utf8_lossy(&chunk[..count]));
+                    while let Some(index) = pending.find(['\r', '\n']) {
+                        let line = pending[..index].trim().to_string();
+                        pending.drain(..index + 1);
+                        if !line.is_empty() {
+                            let _ = sender.send(line);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    if let Some(sender) = &lines {
+        let line = pending.trim();
+        if !line.is_empty() {
+            let _ = sender.send(line.to_string());
+        }
+    }
+    bytes
 }
 
 /// El proceso cancelable se crea como grupo propio en Unix para poder cerrar
@@ -493,5 +544,42 @@ mod cancel_tests {
             .unwrap();
         assert!(matches!(result, CaptureResult::Canceled));
         assert!(started.elapsed() < Duration::from_secs(3));
+    }
+
+    #[tokio::test]
+    async fn streaming_capture_delivers_lines_before_process_finishes() {
+        let flag = AtomicBool::new(false);
+        let (sender, mut receiver) = tokio::sync::mpsc::unbounded_channel();
+
+        #[cfg(windows)]
+        let (exe, args) = (
+            PathBuf::from("powershell.exe"),
+            vec![
+                "-NoProfile".to_string(),
+                "-Command".to_string(),
+                "Write-Output first; Start-Sleep -Milliseconds 200; Write-Output second"
+                    .to_string(),
+            ],
+        );
+        #[cfg(unix)]
+        let (exe, args) = (
+            PathBuf::from("sh"),
+            vec![
+                "-c".to_string(),
+                "printf 'first\\n'; sleep 0.2; printf 'second\\n'".to_string(),
+            ],
+        );
+
+        let capture = run_capture_cancelable_streaming(&exe, &args, &flag, sender);
+        tokio::pin!(capture);
+        let first = tokio::select! {
+            result = &mut capture => panic!("capture finished before its first line: {}", result.is_ok()),
+            line = receiver.recv() => line.unwrap(),
+        };
+        assert_eq!(first, "first");
+
+        let result = capture.await.unwrap();
+        assert!(matches!(result, CaptureResult::Finished(true, _)));
+        assert_eq!(receiver.recv().await.as_deref(), Some("second"));
     }
 }

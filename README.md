@@ -248,6 +248,10 @@ inmediatas, omite trabajos duplicados que ya estén activos y los añade juntos 
 formato seleccionado. El lote admite FFPKG, exFAT, FFPFSC, FPKG nativo y AMPR/LZ4; cada juego
 vuelve a validarse de manera independiente antes de convertirlo.
 
+Durante el trabajo, la cola recibe en vivo las fases que publican MkPFS y LibProsperoPKG. AMPR/LZ4
+además muestra su porcentaje real de copia, indexado, compresión, comparación y restauración, sin
+esperar a que termine el proceso para actualizar la interfaz.
+
 Ofrece tres salidas compatibles con ShadowMountPlus:
 
 - **FFPKG/UFS2**: la opción recomendada para priorizar el rendimiento.

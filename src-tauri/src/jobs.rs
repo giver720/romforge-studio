@@ -612,6 +612,34 @@ mod output_transaction_tests {
     }
 
     #[test]
+    fn ps5_progress_reads_ampr_json_phases() {
+        let event = parse_ps5_tool_progress(
+            r#"{"event":"phase","progress":35,"message":"Restoring packed files"}"#,
+        )
+        .unwrap();
+        assert_eq!(event.percent, Some(35.0));
+        assert_eq!(event.phase, "Restaurando los archivos del juego");
+        assert!(event.structured);
+    }
+
+    #[test]
+    fn ps5_progress_reads_ampr_pack_percentages() {
+        let event = parse_ps5_tool_progress("[pack  47%] game-data.pak").unwrap();
+        assert_eq!(event.percent, Some(47.0));
+        assert_eq!(event.phase, "Comprimiendo bloques LZ4");
+        assert!(!event.structured);
+    }
+
+    #[test]
+    fn ps5_progress_surfaces_libprospero_phases_without_fake_percentages() {
+        let event =
+            parse_ps5_tool_progress("[LibProsperoPKG] Building package filesystem").unwrap();
+        assert_eq!(event.percent, None);
+        assert_eq!(event.phase, "LibProsperoPKG · Building package filesystem");
+        assert!(!event.structured);
+    }
+
+    #[test]
     fn ps5_verify_mode_never_creates_or_protects_an_output() {
         for mode in [crate::ps5::MODE_VERIFY, crate::ps5::MODE_LZ4_VERIFY] {
             let (dir, mut job) = fixture(&format!("ps5-read-only-{mode}"));
@@ -883,6 +911,97 @@ fn percent_token(line: &str) -> Option<f32> {
         }
     }
     best
+}
+
+#[derive(Debug, PartialEq)]
+struct Ps5ToolProgress {
+    percent: Option<f32>,
+    phase: String,
+    structured: bool,
+}
+
+fn ps5_phase_name(message: &str) -> String {
+    let lower = message.to_ascii_lowercase();
+    if lower.contains("copying the source dump") {
+        "Copiando el dump original".into()
+    } else if lower.contains("building ampridx3") {
+        "Creando el índice AMPRIDX3".into()
+    } else if lower.contains("compressing seekable lz4") {
+        "Comprimiendo bloques LZ4".into()
+    } else if lower.contains("comparing packed data") {
+        "Comparando los datos comprimidos".into()
+    } else if lower.contains("validating the compact") {
+        "Validando el despliegue compacto".into()
+    } else if lower.contains("verifying amprpak4") {
+        "Verificando bloques AMPRPAK4".into()
+    } else if lower.contains("copying compact deployment") {
+        "Copiando el despliegue compacto".into()
+    } else if lower.contains("restoring packed files") {
+        "Restaurando los archivos del juego".into()
+    } else if lower.contains("removing ampr") {
+        "Retirando los metadatos AMPR".into()
+    } else if lower.contains("inspecting decrypted ps5") {
+        "Inspeccionando el dump descifrado de PS5".into()
+    } else if let Some(detail) = message.strip_prefix("[LibProsperoPKG] ") {
+        format!("LibProsperoPKG · {detail}")
+    } else {
+        message.trim().to_string()
+    }
+}
+
+/// Entiende tanto los eventos JSON del puente AMPR como los porcentajes de
+/// AMPRPAK4/MkPFS y las fases textuales de LibProsperoPKG.
+fn parse_ps5_tool_progress(line: &str) -> Option<Ps5ToolProgress> {
+    if let Ok(value) = serde_json::from_str::<serde_json::Value>(line) {
+        let event = value.get("event").and_then(|item| item.as_str());
+        let percent = value
+            .get("progress")
+            .and_then(|item| item.as_f64())
+            .map(|item| item as f32)
+            .filter(|item| (0.0..=100.0).contains(item));
+        if event.is_some() && percent.is_some() {
+            let message = value
+                .get("message")
+                .and_then(|item| item.as_str())
+                .unwrap_or_else(|| match event.unwrap_or("phase") {
+                    "complete" => "Finalizando la carpeta AMPR/LZ4",
+                    "unpacked" => "Finalizando el dump restaurado",
+                    _ => "Procesando datos de PS5",
+                });
+            return Some(Ps5ToolProgress {
+                percent,
+                phase: ps5_phase_name(message),
+                structured: true,
+            });
+        }
+    }
+
+    if let Some((percent, _, _)) = parse_progress(line) {
+        let lower = line.to_ascii_lowercase();
+        let phase = if lower.contains("pack") || lower.contains("lz4") {
+            "Comprimiendo bloques LZ4"
+        } else if lower.contains("unpack") || lower.contains("extract") {
+            "Extrayendo datos de PS5"
+        } else if lower.contains("verify") || lower.contains("check") {
+            "Verificando datos de PS5"
+        } else {
+            "Procesando datos de PS5"
+        };
+        return Some(Ps5ToolProgress {
+            percent: Some(percent),
+            phase: phase.into(),
+            structured: false,
+        });
+    }
+
+    if line.starts_with("[LibProsperoPKG]") || line.contains("[ROMFORGE] Inspecting") {
+        return Some(Ps5ToolProgress {
+            percent: None,
+            phase: ps5_phase_name(line),
+            structured: false,
+        });
+    }
+    None
 }
 
 /// Lee un pipe partiendo por \r y \n, ya que chdman reescribe la misma linea.
@@ -1397,6 +1516,111 @@ async fn run_ps5_capture(
     chdman::run_capture_cancelable(tool, args, cancel).await
 }
 
+/// Ejecuta los motores PS5 mostrando sus mensajes y porcentajes en la cola en
+/// tiempo real. UFS2Tool se mantiene en el camino elevado de Windows porque el
+/// proceso que abre UAC no expone sus tuberias al proceso no elevado.
+async fn run_ps5_capture_progress(
+    app: &AppHandle,
+    id: &str,
+    tool_id: &str,
+    tool: &Path,
+    args: &[String],
+    cancel: &AtomicBool,
+    range_start: f32,
+    range_end: f32,
+) -> anyhow::Result<chdman::CaptureResult> {
+    if cfg!(windows) && tool_id == "ufs2tool" {
+        return run_ps5_capture(tool_id, tool, args, cancel).await;
+    }
+
+    let (line_tx, mut line_rx) = tokio::sync::mpsc::unbounded_channel();
+    let execution = chdman::run_capture_cancelable_streaming(tool, args, cancel, line_tx);
+    tokio::pin!(execution);
+    let mut last_local_percent = -1.0f32;
+    let mut last_emit = Instant::now() - Duration::from_secs(1);
+    let mut lines_open = true;
+
+    loop {
+        tokio::select! {
+            result = &mut execution => {
+                while let Ok(line) = line_rx.try_recv() {
+                    apply_ps5_progress_line(
+                        app,
+                        id,
+                        &line,
+                        range_start,
+                        range_end,
+                        &mut last_local_percent,
+                        &mut last_emit,
+                    );
+                }
+                return result;
+            }
+            line = line_rx.recv(), if lines_open => {
+                let Some(line) = line else {
+                    lines_open = false;
+                    continue;
+                };
+                apply_ps5_progress_line(
+                    app,
+                    id,
+                    &line,
+                    range_start,
+                    range_end,
+                    &mut last_local_percent,
+                    &mut last_emit,
+                );
+            }
+        }
+    }
+}
+
+fn apply_ps5_progress_line(
+    app: &AppHandle,
+    id: &str,
+    line: &str,
+    range_start: f32,
+    range_end: f32,
+    last_local_percent: &mut f32,
+    last_emit: &mut Instant,
+) {
+    let event = parse_ps5_tool_progress(line);
+    let mut mapped = None;
+    if let Some(percent) = event.as_ref().and_then(|item| item.percent) {
+        if *last_local_percent < 0.0 || percent > *last_local_percent + 0.05 {
+            *last_local_percent = percent;
+            mapped = Some(range_start + (range_end - range_start) * percent / 100.0);
+        }
+    }
+    let should_emit = mapped.is_some()
+        || event.as_ref().is_some_and(|item| item.percent.is_none())
+        || event.as_ref().is_some_and(|item| item.structured)
+        || last_emit.elapsed() >= Duration::from_millis(350);
+    let state = app.state::<AppState>();
+    if let Some(job) = state.update(id, |job| {
+        if let Some(event) = &event {
+            job.phase = event.phase.clone();
+            if let Some(progress) = mapped {
+                job.progress = progress.clamp(range_start, range_end);
+            }
+        }
+        let log_line = event
+            .as_ref()
+            .filter(|item| item.structured)
+            .map(|item| item.phase.clone())
+            .unwrap_or_else(|| line.to_string());
+        job.log.push(log_line);
+        if job.log.len() > 400 {
+            job.log.remove(0);
+        }
+    }) {
+        if should_emit {
+            *last_emit = Instant::now();
+            emit_job(app, &job);
+        }
+    }
+}
+
 async fn run_ps5_workflow(
     app: AppHandle,
     id: String,
@@ -1829,8 +2053,23 @@ async fn run_ps5_workflow(
         12.0
     };
     custom_phase(&app, &id, phase, build_progress);
+    let verify_progress = if job.mode == MODE_EXFAT_FPKG {
+        92.0
+    } else {
+        88.0
+    };
     let output = match capture_failure(
-        run_ps5_capture(tool_id, &tool, &args, cancel.as_ref()).await,
+        run_ps5_capture_progress(
+            &app,
+            &id,
+            tool_id,
+            &tool,
+            &args,
+            cancel.as_ref(),
+            build_progress,
+            verify_progress - 2.0,
+        )
+        .await,
         tool_id,
     ) {
         Ok(value) => value,
@@ -1844,11 +2083,6 @@ async fn run_ps5_workflow(
         }
     };
 
-    let verify_progress = if job.mode == MODE_EXFAT_FPKG {
-        92.0
-    } else {
-        88.0
-    };
     custom_phase(&app, &id, "Verificando el resultado", verify_progress);
     let verification_message = match job.mode.as_str() {
         MODE_EXFAT => {
@@ -2121,7 +2355,7 @@ async fn run_ps5_workflow(
             (done.input_size > 0).then_some(output_size as f32 * 100.0 / done.input_size as f32);
         done.verification = "passed".into();
         done.verification_message = Some(verification_message.clone());
-        if !output.trim().is_empty() {
+        if tool_id == "ufs2tool" && !output.trim().is_empty() {
             if job.mode == MODE_EXFAT_FPKG {
                 done.log.push("── Construcción LibProsperoPKG ──".into());
             }
