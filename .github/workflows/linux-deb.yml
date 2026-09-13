@@ -124,6 +124,8 @@ jobs:
           "$ufs2tool" fsck_ufs -n "$work/game.ffpkg"
           "$ufs2tool" extract "$work/game.ffpkg" "$work/ufs-out"
           diff -rq "$work/source" "$work/ufs-out"
+          "$ufs2tool" extract "$work/game.ffpkg" "$work/ufs-selected" /sce_sys/param.json
+          cmp "$work/source/sce_sys/param.json" "$work/ufs-selected/param.json"
 
       - name: Probar FPKG nativo de PS5
         run: |

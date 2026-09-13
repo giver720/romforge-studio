@@ -758,6 +758,37 @@ pub fn scan(dir: &str) -> Ps5Scan {
     scan_with_decrypted_subfolder(dir, "decrypted")
 }
 
+/// Encuentra raíces de juegos sin recorrer árboles completos. Solo se acepta
+/// la carpeta elegida o sus hijas directas para no confundir actualizaciones,
+/// DLC o copias descifradas anidadas con juegos independientes.
+pub fn discover_game_roots(dir: &str) -> Result<Vec<String>, String> {
+    let root = Path::new(dir);
+    if !root.is_dir() {
+        return Err("La carpeta de biblioteca PS5 no existe".into());
+    }
+    let is_game = |path: &Path| {
+        path.join("eboot.bin").is_file() && path.join("sce_sys").join("param.json").is_file()
+    };
+    if is_game(root) {
+        return Ok(vec![root.to_string_lossy().to_string()]);
+    }
+
+    let mut games = vec![];
+    for entry in std::fs::read_dir(root)
+        .map_err(|error| format!("No se pudo leer la biblioteca PS5: {error}"))?
+    {
+        let entry = entry.map_err(|error| format!("No se pudo leer una subcarpeta: {error}"))?;
+        let path = entry.path();
+        let metadata = std::fs::symlink_metadata(&path)
+            .map_err(|error| format!("No se pudo examinar {}: {error}", path.display()))?;
+        if metadata.is_dir() && !metadata.file_type().is_symlink() && is_game(&path) {
+            games.push(path.to_string_lossy().to_string());
+        }
+    }
+    games.sort_by_key(|path| path.to_lowercase());
+    Ok(games)
+}
+
 pub fn scan_with_decrypted_subfolder(dir: &str, decrypted_subfolder: &str) -> Ps5Scan {
     let root = Path::new(dir);
     let invalid = |error: String| Ps5Scan {
@@ -1069,6 +1100,48 @@ mod tests {
         std::fs::create_dir_all(root.join("PPSA00000/sce_sys")).unwrap();
         std::fs::write(root.join("PPSA00000/eboot.bin"), b"x").unwrap();
         assert!(!scan(&root.to_string_lossy()).valid);
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn discovers_only_immediate_ps5_game_roots() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-library-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        for name in ["Game B", "Game A"] {
+            std::fs::create_dir_all(root.join(name).join("sce_sys")).unwrap();
+            std::fs::write(root.join(name).join("eboot.bin"), b"elf").unwrap();
+            std::fs::write(root.join(name).join("sce_sys/param.json"), b"{}").unwrap();
+        }
+        std::fs::create_dir_all(root.join("wrapper/nested/sce_sys")).unwrap();
+        std::fs::write(root.join("wrapper/nested/eboot.bin"), b"elf").unwrap();
+        std::fs::write(root.join("wrapper/nested/sce_sys/param.json"), b"{}").unwrap();
+        std::fs::create_dir_all(root.join("not-a-game")).unwrap();
+
+        let games = discover_game_roots(&root.to_string_lossy()).unwrap();
+        assert_eq!(games.len(), 2);
+        assert!(games[0].ends_with("Game A"));
+        assert!(games[1].ends_with("Game B"));
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn accepts_a_game_root_as_a_one_item_library() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-single-library-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        std::fs::create_dir_all(root.join("sce_sys")).unwrap();
+        std::fs::write(root.join("eboot.bin"), b"elf").unwrap();
+        std::fs::write(root.join("sce_sys/param.json"), b"{}").unwrap();
+
+        assert_eq!(
+            discover_game_roots(&root.to_string_lossy()).unwrap(),
+            vec![root.to_string_lossy().to_string()]
+        );
         let _ = std::fs::remove_dir_all(root);
     }
 

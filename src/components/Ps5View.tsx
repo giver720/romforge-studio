@@ -27,6 +27,15 @@ import { useStore } from "../store";
 import { Toggle } from "./ui";
 
 type BuildMode = "ps5ffpkg" | "ps5exfat" | "ps5ffpfsc";
+type LibraryMode = BuildMode | "ps5fpkg" | "ps5lz4";
+
+const libraryFormats: { mode: LibraryMode; label: string; tool: "mkpfs" | "ufs2tool" | "prospero" | "ampr" }[] = [
+  { mode: "ps5ffpkg", label: "FFPKG · UFS2", tool: "ufs2tool" },
+  { mode: "ps5exfat", label: "exFAT · 64 KiB", tool: "mkpfs" },
+  { mode: "ps5ffpfsc", label: "FFPFSC · comprimido", tool: "mkpfs" },
+  { mode: "ps5fpkg", label: "FPKG nativo", tool: "prospero" },
+  { mode: "ps5lz4", label: "AMPR/LZ4", tool: "ampr" },
+];
 
 const formats: {
   mode: BuildMode;
@@ -102,12 +111,13 @@ function normalizeInternalPath(value: string) {
 }
 
 export function Ps5View() {
-  const { notify, refreshJobs, tools, refreshTools, settings, patchSettings } = useStore();
+  const { notify, refreshJobs, jobs, tools, refreshTools, settings, patchSettings } = useStore();
   const [source, setSource] = useState<string | null>(null);
   const [imageSource, setImageSource] = useState<string | null>(null);
   const [scan, setScan] = useState<Ps5Scan | null>(null);
   const [artwork, setArtwork] = useState<GameArtwork | null>(null);
   const [mode, setMode] = useState<BuildMode>("ps5ffpkg");
+  const [libraryMode, setLibraryMode] = useState<LibraryMode>("ps5ffpkg");
   const [busy, setBusy] = useState(false);
   const [outputLocationError, setOutputLocationError] = useState<string | null>(null);
   const [checkingOutputLocation, setCheckingOutputLocation] = useState(false);
@@ -133,6 +143,8 @@ export function Ps5View() {
   );
   const selectedFormat = formats.find((format) => format.mode === mode)!;
   const selectedToolMissing = missingTools.has(selectedFormat.tool);
+  const selectedLibraryFormat = libraryFormats.find((format) => format.mode === libraryMode)!;
+  const libraryToolMissing = missingTools.has(selectedLibraryFormat.tool);
   const selectedFormatIncompatible = Boolean(
     mode === "ps5ffpfsc" && scan?.valid && !scan.pfs_compatible,
   );
@@ -197,6 +209,63 @@ export function Ps5View() {
       setScannedFpkgSubfolder(decryptedSubfolderTrimmed);
       setArtwork(cover);
       if (!info.valid) notify("error", info.error ?? "La carpeta no parece un dump de PS5");
+    } catch (error) {
+      notify("error", String(error));
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function enqueueLibrary() {
+    const result = (await open({
+      directory: true,
+      multiple: false,
+      title: "Selecciona una carpeta con juegos de PS5",
+    })) as string | null;
+    if (!result) return;
+
+    setBusy(true);
+    try {
+      const discovered = await api.ps5DiscoverGames(result);
+      if (!discovered.length) {
+        notify(
+          "warn",
+          "No se encontraron dumps PS5 en esa carpeta. Cada juego debe contener eboot.bin y sce_sys/param.json.",
+        );
+        return;
+      }
+      const active = new Set(
+        jobs
+          .filter((job) => job.mode === libraryMode && ["queued", "running"].includes(job.status))
+          .map((job) => job.input.toLocaleLowerCase()),
+      );
+      const fresh = discovered.filter((path) => !active.has(path.toLocaleLowerCase()));
+      if (!fresh.length) {
+        notify("warn", "Todos los juegos detectados ya están activos en la cola.");
+        return;
+      }
+      let libraryOptions: Record<string, string> = {};
+      if (libraryMode === "ps5fpkg") {
+        libraryOptions = {
+          decrypted_subfolder: decryptedSubfolderTrimmed,
+          embedded_right: String(settings.ps5_fpkg_embedded_right),
+        };
+      } else if (libraryMode === "ps5lz4") {
+        libraryOptions = { profile: settings.ps5_lz4_profile };
+      }
+      await api.addJobs(fresh.map((input) => ({
+        input,
+        mode: libraryMode,
+        system: "ps5",
+        output_dir: settings.ps5_output_dir,
+        options: libraryOptions,
+      })));
+      await refreshJobs();
+      const skipped = discovered.length - fresh.length;
+      notify(
+        skipped ? "warn" : "ok",
+        `${fresh.length} ${fresh.length === 1 ? "juego añadido" : "juegos añadidos"} a la cola${skipped ? ` · ${skipped} duplicados omitidos` : ""}.`,
+      );
     } catch (error) {
       notify("error", String(error));
     } finally {
@@ -406,7 +475,10 @@ export function Ps5View() {
             return (
               <button
                 key={format.mode}
-                onClick={() => setMode(format.mode)}
+                onClick={() => {
+                  setMode(format.mode);
+                  setLibraryMode(format.mode);
+                }}
                 className={`rounded-xl border p-3 text-left transition-colors ${
                   selected
                     ? "border-[var(--accent)] bg-[var(--accent-soft)]"
@@ -513,6 +585,37 @@ export function Ps5View() {
           >
             <FileArchive size={15} /> Crear {mode === "ps5ffpkg" ? ".ffpkg" : mode === "ps5exfat" ? ".exfat" : ".ffpfsc"}
           </button>
+        </div>
+        <div className="mt-3 flex flex-wrap items-end gap-2 rounded-xl border border-white/10 bg-white/[0.02] p-3">
+          <label className="min-w-[210px] text-[0.62rem] text-[var(--color-muted)]">
+            Formato para la biblioteca
+            <select
+              className="field mt-1 w-full"
+              value={libraryMode}
+              onChange={(event) => setLibraryMode(event.target.value as LibraryMode)}
+              disabled={busy}
+            >
+              {libraryFormats.map((format) => (
+                <option key={format.mode} value={format.mode}>{format.label}</option>
+              ))}
+            </select>
+          </label>
+          <button
+            className="btn btn-ghost"
+            onClick={enqueueLibrary}
+            disabled={busy || libraryToolMissing || (libraryMode === "ps5fpkg" && !decryptedSubfolderValid)}
+            title={
+              libraryToolMissing
+                ? `Falta ${selectedLibraryFormat.label}`
+                : "Detecta juegos en las subcarpetas inmediatas y los añade a la cola"
+            }
+          >
+            <FolderInput size={15} /> Añadir biblioteca
+          </button>
+          <p className="min-w-[240px] flex-1 text-[0.62rem] leading-relaxed text-[var(--color-faint)]">
+            Busca cada dump en las subcarpetas inmediatas, omite duplicados activos y aplica
+            {` ${selectedLibraryFormat.label}`} a todos. Cada juego se valida antes de convertirlo.
+          </p>
         </div>
         <div className="mt-3 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-3">
           <FolderInput size={16} className="shrink-0 text-violet-300" />

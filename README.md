@@ -243,6 +243,11 @@ lee `sce_sys/param.json`, muestra nombre, Title ID, versión, portada, cantidad 
 estimación de tamaño y ahorro. La entrada debe contener `eboot.bin` y `sce_sys/param.json`; no se
 admite una carpeta contenedora adicional.
 
+Para colecciones, **Añadir biblioteca** detecta automáticamente los dumps en las subcarpetas
+inmediatas, omite trabajos duplicados que ya estén activos y los añade juntos a la cola con el
+formato seleccionado. El lote admite FFPKG, exFAT, FFPFSC, FPKG nativo y AMPR/LZ4; cada juego
+vuelve a validarse de manera independiente antes de convertirlo.
+
 Ofrece tres salidas compatibles con ShadowMountPlus:
 
 - **FFPKG/UFS2**: la opción recomendada para priorizar el rendimiento.
@@ -253,7 +258,8 @@ Ofrece tres salidas compatibles con ShadowMountPlus:
 También puede comprimir imágenes `.exfat` o `.ffpkg` existentes a `.ffpfsc` y recuperar `.exfat`,
 `.ffpkg`, `.ffpfs` o `.ffpfsc` a una carpeta. Cada salida se crea primero de forma temporal, se
 comprueba y solo entonces reemplaza el destino. exFAT y FFPFSC se validan archivo por archivo; FFPKG
-se revisa con `fsck_ufs` y una extracción completa.
+se revisa con `fsck_ufs` y una extracción completa. En FFPKG también puede indicarse una ruta UFS2
+interna —por ejemplo `/sce_sys` o `/eboot.bin`— para recuperar únicamente esa selección.
 
 ROMForge usa [MkPFS](https://github.com/PSBrew/MkPFS) para exFAT/PFS y
 [UFS2Tool](https://github.com/SvenGDK/UFS2Tool) para UFS2. Se instalan desde **Ajustes → Herramientas**.

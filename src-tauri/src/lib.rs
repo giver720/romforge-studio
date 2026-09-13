@@ -646,6 +646,11 @@ fn ps5_scan(dir: String, decrypted_subfolder: Option<String>) -> ps5::Ps5Scan {
 }
 
 #[tauri::command]
+fn ps5_discover_games(dir: String) -> Result<Vec<String>, String> {
+    ps5::discover_game_roots(&dir)
+}
+
+#[tauri::command]
 fn ps5_fpkg_readiness(
     dir: String,
     decrypted_subfolder: String,
@@ -839,6 +844,7 @@ pub fn run() {
             ps3_scan,
             ps3_trim,
             ps5_scan,
+            ps5_discover_games,
             ps5_fpkg_readiness,
             ps5_validate_output_location,
             ps5_output_space,

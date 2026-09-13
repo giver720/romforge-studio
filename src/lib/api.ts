@@ -65,6 +65,7 @@ export const api = {
   ps3Trim: (dir: string, paths: string[]) => invoke<TrimResult>("ps3_trim", { dir, paths }),
   ps5Scan: (dir: string, decryptedSubfolder = "decrypted") =>
     invoke<Ps5Scan>("ps5_scan", { dir, decryptedSubfolder }),
+  ps5DiscoverGames: (dir: string) => invoke<string[]>("ps5_discover_games", { dir }),
   ps5FpkgReadiness: (dir: string, decryptedSubfolder: string) =>
     invoke<Ps5FpkgReadiness>("ps5_fpkg_readiness", { dir, decryptedSubfolder }),
   ps5ValidateOutputLocation: (input: string, output: string) =>
