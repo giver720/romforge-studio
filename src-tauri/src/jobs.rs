@@ -447,8 +447,13 @@ fn ps5_fpkg_required_free_space(image_bytes: u64) -> u64 {
 fn ps5_output_required_free_space(mode: &str, scan: &crate::ps5::Ps5Scan) -> u64 {
     use crate::ps5::{MODE_EXFAT, MODE_FFPFSC, MODE_FFPKG, MODE_LZ4, MODE_NATIVE_FPKG};
     let payload = match mode {
-        MODE_EXFAT | MODE_FFPKG => scan.image_bytes,
-        MODE_FFPFSC => scan.compressed_estimate_bytes,
+        MODE_EXFAT => scan.image_bytes,
+        // Ambos modos extraen una copia completa junto al resultado para la
+        // comparación byte a byte antes de publicar.
+        MODE_FFPKG => scan.image_bytes.saturating_add(scan.raw_bytes),
+        MODE_FFPFSC => scan
+            .compressed_estimate_bytes
+            .saturating_add(scan.raw_bytes),
         MODE_NATIVE_FPKG => scan.raw_bytes,
         // AMPR primero copia el árbol y después crea los packs antes de retirar
         // de la salida los archivos representados por ellos.
@@ -470,6 +475,13 @@ fn available_space_near(path: &Path) -> Result<(u64, PathBuf), String> {
     fs2::available_space(probe)
         .map(|bytes| (bytes, probe.to_path_buf()))
         .map_err(|error| format!("No se pudo consultar el espacio libre: {error}"))
+}
+
+fn ps5_verification_root(output: &Path, id: &str, kind: &str) -> PathBuf {
+    output
+        .parent()
+        .unwrap_or_else(|| Path::new("."))
+        .join(format!(".romforge-ps5-{kind}-{id}"))
 }
 
 fn gibibytes(bytes: u64) -> String {
@@ -574,8 +586,26 @@ mod output_transaction_tests {
             11 * gib
         );
         assert_eq!(
+            ps5_output_required_free_space(crate::ps5::MODE_FFPKG, &scan),
+            21 * gib + (21 * gib) / 10
+        );
+        assert_eq!(
+            ps5_output_required_free_space(crate::ps5::MODE_FFPFSC, &scan),
+            16 * gib + (16 * gib) / 10
+        );
+        assert_eq!(
             ps5_output_required_free_space(crate::ps5::MODE_LZ4, &scan),
             16 * gib + (16 * gib) / 10
+        );
+    }
+
+    #[test]
+    fn ps5_verification_workspace_stays_beside_staged_output() {
+        let parent = Path::new("output").join(".romforge-stage-job");
+        let output = parent.join("game.ffpkg");
+        assert_eq!(
+            ps5_verification_root(&output, "job", "verify"),
+            parent.join(".romforge-ps5-verify-job")
         );
     }
 
@@ -1711,7 +1741,7 @@ async fn run_ps5_workflow(
                 return custom_error(&app, &id, message);
             }
 
-            let verify_root = std::env::temp_dir().join(format!("romforge-ps5-verify-{id}"));
+            let verify_root = ps5_verification_root(Path::new(&execution.output), &id, "verify");
             let _ = std::fs::remove_dir_all(&verify_root);
             let extract_args = vec![
                 "extract".into(),
@@ -1794,7 +1824,7 @@ async fn run_ps5_workflow(
             // `pack folder` crea un exFAT dentro del PFS. `verify --source-dir`
             // compararia el dump con ese unico archivo interior; para comprobar
             // realmente cada juego hay que hacer una extraccion profunda.
-            let verify_root = std::env::temp_dir().join(format!("romforge-ps5-pfsc-{id}"));
+            let verify_root = ps5_verification_root(Path::new(&execution.output), &id, "pfsc");
             let _ = std::fs::remove_dir_all(&verify_root);
             let verify_args = vec![
                 "unpack".into(),

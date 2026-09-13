@@ -64,8 +64,11 @@ function withPs5WorkingMargin(payload: number) {
 }
 
 function estimatedPs5WorkingSpace(mode: string, scan: Ps5Scan) {
-  if (mode === "ps5exfat" || mode === "ps5ffpkg") return withPs5WorkingMargin(scan.image_bytes);
-  if (mode === "ps5ffpfsc") return withPs5WorkingMargin(scan.compressed_estimate_bytes);
+  if (mode === "ps5exfat") return withPs5WorkingMargin(scan.image_bytes);
+  if (mode === "ps5ffpkg") return withPs5WorkingMargin(scan.image_bytes + scan.raw_bytes);
+  if (mode === "ps5ffpfsc") {
+    return withPs5WorkingMargin(scan.compressed_estimate_bytes + scan.raw_bytes);
+  }
   if (mode === "ps5fpkg") return withPs5WorkingMargin(scan.raw_bytes);
   if (mode === "ps5lz4") {
     return withPs5WorkingMargin(scan.raw_bytes + scan.compressed_estimate_bytes);
