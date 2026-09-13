@@ -184,7 +184,7 @@ fn build_args(job: &Job, s: &Settings) -> Vec<String> {
 
 /// Los modos de comprobacion no generan archivo, asi que no hay nada que limpiar.
 fn is_verify(mode: &str) -> bool {
-    matches!(mode, "verify" | "wiiverify" | "ps5verify")
+    matches!(mode, "verify" | "wiiverify") || crate::ps5::is_verify_mode(mode)
 }
 
 /// Algunos modos producen una carpeta en vez de un archivo suelto.
@@ -613,16 +613,18 @@ mod output_transaction_tests {
 
     #[test]
     fn ps5_verify_mode_never_creates_or_protects_an_output() {
-        let (dir, mut job) = fixture("ps5-read-only-verify");
-        job.mode = crate::ps5::MODE_VERIFY.into();
-        job.tool = "mkpfs".into();
-        job.output = job.input.clone();
+        for mode in [crate::ps5::MODE_VERIFY, crate::ps5::MODE_LZ4_VERIFY] {
+            let (dir, mut job) = fixture(&format!("ps5-read-only-{mode}"));
+            job.mode = mode.into();
+            job.tool = "mkpfs".into();
+            job.output = job.input.clone();
 
-        let staged = StagedOutput::new(&job, false).unwrap();
-        assert!(staged.root.is_none());
-        assert!(staged.final_parent.is_none());
-        assert_eq!(std::fs::read(&job.input).unwrap(), b"source");
-        let _ = std::fs::remove_dir_all(dir);
+            let staged = StagedOutput::new(&job, false).unwrap();
+            assert!(staged.root.is_none());
+            assert!(staged.final_parent.is_none());
+            assert_eq!(std::fs::read(&job.input).unwrap(), b"source");
+            let _ = std::fs::remove_dir_all(dir);
+        }
     }
 
     #[test]
@@ -1404,7 +1406,7 @@ async fn run_ps5_workflow(
 ) {
     use crate::ps5::{
         MODE_COMPRESS, MODE_EXFAT, MODE_EXFAT_FPKG, MODE_EXTRACT, MODE_FFPFSC, MODE_FFPKG,
-        MODE_LZ4, MODE_NATIVE_FPKG, MODE_VERIFY,
+        MODE_LZ4, MODE_LZ4_EXTRACT, MODE_LZ4_VERIFY, MODE_NATIVE_FPKG, MODE_VERIFY,
     };
 
     let input = PathBuf::from(&job.input);
@@ -1418,6 +1420,39 @@ async fn run_ps5_workflow(
         .unwrap_or_default();
     let mut prepared_input = input.clone();
     let mut _temporary_input: Option<TemporaryWorkspace> = None;
+
+    if matches!(job.mode.as_str(), MODE_LZ4_EXTRACT | MODE_LZ4_VERIFY) {
+        let scan = crate::ps5::ampr_scan(&job.input);
+        if !scan.valid {
+            return custom_error(
+                &app,
+                &id,
+                scan.error
+                    .unwrap_or_else(|| "La carpeta no es un despliegue AMPR/LZ4 válido".into()),
+            );
+        }
+        if job.mode == MODE_LZ4_EXTRACT {
+            if let Err(message) =
+                crate::ps5::validate_output_location(&input, Path::new(&job.output))
+            {
+                return custom_error(&app, &id, message);
+            }
+            if let Ok((available, probe)) = available_space_near(Path::new(&job.output)) {
+                if available < scan.restore_required_bytes {
+                    return custom_error(
+                        &app,
+                        &id,
+                        format!(
+                            "Espacio insuficiente para restaurar AMPR/LZ4. Se necesitan aproximadamente {} y hay {} disponibles en {}.",
+                            gibibytes(scan.restore_required_bytes),
+                            gibibytes(available),
+                            probe.display()
+                        ),
+                    );
+                }
+            }
+        }
+    }
 
     if job.mode == MODE_EXFAT_FPKG {
         if extension != "exfat" || !input.is_file() {
@@ -1700,6 +1735,20 @@ async fn run_ps5_workflow(
                 };
             ("Creando carpeta AMPRPAK4 con bloques LZ4", args)
         }
+        MODE_LZ4_EXTRACT => (
+            "Restaurando el dump desde AMPRPAK4/LZ4",
+            vec![
+                "unpack".into(),
+                "--input".into(),
+                job.input.clone(),
+                "--output".into(),
+                execution.output.clone(),
+            ],
+        ),
+        MODE_LZ4_VERIFY => (
+            "Comprobando AMPRPAK4/LZ4 sin modificarlo",
+            vec!["verify".into(), "--input".into(), job.input.clone()],
+        ),
         MODE_FFPFSC => (
             "Comprimiendo el dump en FFPFSC",
             vec![
@@ -1918,6 +1967,30 @@ async fn run_ps5_workflow(
                 }
             }
         }
+        MODE_LZ4_EXTRACT => {
+            let verify_args = vec!["verify".into(), "--input".into(), job.input.clone()];
+            if let Err(message) = capture_failure(
+                run_ps5_capture(tool_id, &tool, &verify_args, cancel.as_ref()).await,
+                "AMPRPAK4 verify",
+            ) {
+                staged.cleanup();
+                if message == "__canceled__" {
+                    return custom_canceled(&app, &id);
+                }
+                return custom_error(&app, &id, message);
+            }
+            match crate::ps5::validate_ampr_restored(Path::new(&execution.output)) {
+                Ok(scan) => format!(
+                    "AMPRPAK4 íntegro y dump restaurado con {} archivos",
+                    scan.file_count
+                ),
+                Err(message) => {
+                    staged.cleanup();
+                    return custom_error(&app, &id, message);
+                }
+            }
+        }
+        MODE_LZ4_VERIFY => "AMPRPAK4/LZ4 íntegro en modo de solo lectura".to_string(),
         MODE_FFPFSC => {
             // `pack folder` crea un exFAT dentro del PFS. `verify --source-dir`
             // compararia el dump con ese unico archivo interior; para comprobar
@@ -2032,6 +2105,8 @@ async fn run_ps5_workflow(
             MODE_FFPKG => "Listo · FFPKG verificado",
             MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => "Listo · FPKG PS5 verificado",
             MODE_LZ4 => "Listo · AMPRPAK4/LZ4 verificado",
+            MODE_LZ4_EXTRACT => "Listo · dump AMPR/LZ4 restaurado",
+            MODE_LZ4_VERIFY => "Listo · AMPRPAK4/LZ4 verificado",
             MODE_FFPFSC | MODE_COMPRESS => "Listo · FFPFSC verificado",
             MODE_EXTRACT if selected_extract_path.is_some() => "Listo · selección extraída",
             MODE_EXTRACT => "Listo · dump extraido y verificado",

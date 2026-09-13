@@ -16,6 +16,8 @@ pub const MODE_NATIVE_FPKG: &str = "ps5fpkg";
 /// Extrae una imagen exFAT a un workspace temporal y crea un FPKG nativo.
 pub const MODE_EXFAT_FPKG: &str = "ps5fpkgexfat";
 pub const MODE_LZ4: &str = "ps5lz4";
+pub const MODE_LZ4_EXTRACT: &str = "ps5lz4extract";
+pub const MODE_LZ4_VERIFY: &str = "ps5lz4verify";
 pub const CLUSTER_SIZE: u64 = 64 * 1024;
 const SAMPLE_LIMIT: u64 = 32 * 1024 * 1024;
 const SAMPLE_PER_FILE: u64 = 2 * 1024 * 1024;
@@ -69,6 +71,21 @@ pub struct ImageSpacePreflight {
     pub available_bytes: u64,
     pub location: String,
     pub required_bytes: BTreeMap<String, u64>,
+}
+
+#[derive(Clone, Debug, Serialize)]
+pub struct AmprScan {
+    pub valid: bool,
+    pub title: Option<String>,
+    pub title_id: Option<String>,
+    pub profile: Option<String>,
+    pub build_id: Option<String>,
+    pub compact_bytes: u64,
+    pub packed_logical_bytes: u64,
+    pub restored_estimate_bytes: u64,
+    pub restore_required_bytes: u64,
+    pub estimated_savings_percent: f32,
+    pub error: Option<String>,
 }
 
 /// Consulta el espacio en la unidad real que recibirá la salida. La carpeta
@@ -291,6 +308,8 @@ pub fn is_mode(mode: &str) -> bool {
             | MODE_NATIVE_FPKG
             | MODE_EXFAT_FPKG
             | MODE_LZ4
+            | MODE_LZ4_EXTRACT
+            | MODE_LZ4_VERIFY
     )
 }
 
@@ -298,7 +317,7 @@ pub fn tool_for(mode: &str) -> Option<&'static str> {
     match mode {
         MODE_FFPKG => Some("ufs2tool"),
         MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => Some("prospero"),
-        MODE_LZ4 => Some("ampr"),
+        MODE_LZ4 | MODE_LZ4_EXTRACT | MODE_LZ4_VERIFY => Some("ampr"),
         MODE_EXFAT | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT | MODE_VERIFY => Some("mkpfs"),
         _ => None,
     }
@@ -327,7 +346,11 @@ pub fn output_ext(mode: &str) -> Option<&'static str> {
 }
 
 pub fn writes_directory(mode: &str) -> bool {
-    matches!(mode, MODE_EXTRACT | MODE_LZ4)
+    matches!(mode, MODE_EXTRACT | MODE_LZ4 | MODE_LZ4_EXTRACT)
+}
+
+pub fn is_verify_mode(mode: &str) -> bool {
+    matches!(mode, MODE_VERIFY | MODE_LZ4_VERIFY)
 }
 
 /// Normaliza una ruta interna UFS2 recibida desde la interfaz. La ruta nunca
@@ -789,6 +812,193 @@ pub fn discover_game_roots(dir: &str) -> Result<Vec<String>, String> {
     Ok(games)
 }
 
+fn checked_tree_size(root: &Path, current: &Path) -> Result<u64, String> {
+    let mut total = 0u64;
+    for entry in std::fs::read_dir(current)
+        .map_err(|error| format!("No se pudo leer {}: {error}", current.display()))?
+    {
+        let entry = entry.map_err(|error| format!("No se pudo leer una entrada: {error}"))?;
+        let path = entry.path();
+        let metadata = std::fs::symlink_metadata(&path)
+            .map_err(|error| format!("No se pudo examinar {}: {error}", path.display()))?;
+        if metadata.file_type().is_symlink() {
+            return Err(format!(
+                "La carpeta AMPR contiene un enlace simbólico inseguro: {}",
+                path.strip_prefix(root).unwrap_or(&path).display()
+            ));
+        }
+        if metadata.is_dir() {
+            total = total
+                .checked_add(checked_tree_size(root, &path)?)
+                .ok_or_else(|| "El tamaño AMPR supera el límite admitido".to_string())?;
+        } else if metadata.is_file() {
+            total = total
+                .checked_add(metadata.len())
+                .ok_or_else(|| "El tamaño AMPR supera el límite admitido".to_string())?;
+        }
+    }
+    Ok(total)
+}
+
+fn ampr_removable_artifact_bytes(root: &Path) -> u64 {
+    let mut total = 0u64;
+    let fixed = [
+        "ampr_assets.index",
+        "ampr_assets.index.crc",
+        "ampr_assets.index.runtime",
+        "ampr_emu.index",
+        "ROMFORGE-LZ4.json",
+    ];
+    for name in fixed {
+        total = total.saturating_add(
+            std::fs::metadata(root.join(name))
+                .map(|metadata| metadata.len())
+                .unwrap_or(0),
+        );
+    }
+    total = total.saturating_add(
+        std::fs::metadata(root.join("fakelib/libSceAmpr.sprx"))
+            .map(|metadata| metadata.len())
+            .unwrap_or(0),
+    );
+    if let Ok(entries) = std::fs::read_dir(root) {
+        for entry in entries.flatten() {
+            let name = entry.file_name().to_string_lossy().to_ascii_lowercase();
+            if name.starts_with("ampr_assets-") && name.ends_with(".pak") {
+                total =
+                    total.saturating_add(entry.metadata().map(|value| value.len()).unwrap_or(0));
+            }
+        }
+    }
+    total
+}
+
+pub fn ampr_scan(dir: &str) -> AmprScan {
+    let invalid = |error: String| AmprScan {
+        valid: false,
+        title: None,
+        title_id: None,
+        profile: None,
+        build_id: None,
+        compact_bytes: 0,
+        packed_logical_bytes: 0,
+        restored_estimate_bytes: 0,
+        restore_required_bytes: 0,
+        estimated_savings_percent: 0.0,
+        error: Some(error),
+    };
+    let root = Path::new(dir);
+    if !root.is_dir() {
+        return invalid("La carpeta AMPR/LZ4 no existe".into());
+    }
+    for name in ["ampr_emu.index", "ampr_assets.index", "ROMFORGE-LZ4.json"] {
+        if !root.join(name).is_file() {
+            return invalid(format!("Falta {name} en la raíz AMPR/LZ4"));
+        }
+    }
+    let has_pack = std::fs::read_dir(root)
+        .ok()
+        .into_iter()
+        .flatten()
+        .flatten()
+        .any(|entry| {
+            let name = entry.file_name().to_string_lossy().to_ascii_lowercase();
+            entry.path().is_file() && name.starts_with("ampr_assets-") && name.ends_with(".pak")
+        });
+    if !has_pack {
+        return invalid("No se encontró ningún paquete AMPRPAK4".into());
+    }
+    let receipt_path = root.join("ROMFORGE-LZ4.json");
+    let receipt = match std::fs::read_to_string(&receipt_path)
+        .map_err(|error| format!("No se pudo leer ROMFORGE-LZ4.json: {error}"))
+        .and_then(|text| {
+            serde_json::from_str::<serde_json::Value>(&text)
+                .map_err(|error| format!("El recibo AMPR no es JSON válido: {error}"))
+        }) {
+        Ok(value) => value,
+        Err(error) => return invalid(error),
+    };
+    if receipt.get("format").and_then(|value| value.as_str()) != Some("AMPRPAK4") {
+        return invalid("El recibo no identifica una carpeta AMPRPAK4".into());
+    }
+    let packed_logical_bytes = match receipt
+        .pointer("/stats/logical_bytes")
+        .and_then(|value| value.as_u64())
+    {
+        Some(value) if value > 0 => value,
+        _ => return invalid("El recibo AMPR no declara el tamaño lógico empaquetado".into()),
+    };
+    let compact_bytes = match checked_tree_size(root, root) {
+        Ok(value) => value,
+        Err(error) => return invalid(error),
+    };
+    let restored_estimate_bytes = compact_bytes
+        .saturating_sub(ampr_removable_artifact_bytes(root))
+        .saturating_add(packed_logical_bytes);
+    let restore_required_bytes =
+        with_space_margin(compact_bytes.saturating_add(packed_logical_bytes), GIB);
+    let estimated_savings_percent = if restored_estimate_bytes == 0 {
+        0.0
+    } else {
+        (100.0 - compact_bytes as f32 * 100.0 / restored_estimate_bytes as f32).clamp(0.0, 99.0)
+    };
+    let (title_id, title, _, _) = metadata(root).unwrap_or((None, None, None, None));
+    AmprScan {
+        valid: true,
+        title,
+        title_id,
+        profile: receipt
+            .get("profile")
+            .and_then(|value| value.as_str())
+            .map(str::to_string),
+        build_id: receipt
+            .get("build_id")
+            .and_then(|value| value.as_str())
+            .map(str::to_string),
+        compact_bytes,
+        packed_logical_bytes,
+        restored_estimate_bytes,
+        restore_required_bytes,
+        estimated_savings_percent,
+        error: None,
+    }
+}
+
+pub fn validate_ampr_restored(root: &Path) -> Result<Ps5Scan, String> {
+    for name in [
+        "ampr_emu.index",
+        "ampr_assets.index",
+        "ampr_assets.index.crc",
+        "ampr_assets.index.runtime",
+        "ROMFORGE-LZ4.json",
+    ] {
+        if root.join(name).exists() {
+            return Err(format!(
+                "La restauración conservó el archivo auxiliar {name}"
+            ));
+        }
+    }
+    if root.join("fakelib/libSceAmpr.sprx").exists() {
+        return Err("La restauración conservó el runtime auxiliar de AMPR".into());
+    }
+    if let Ok(entries) = std::fs::read_dir(root) {
+        if entries.flatten().any(|entry| {
+            let name = entry.file_name().to_string_lossy().to_ascii_lowercase();
+            name.starts_with("ampr_assets-") && name.ends_with(".pak")
+        }) {
+            return Err("La restauración conservó paquetes AMPRPAK4".into());
+        }
+    }
+    let scan = scan(&root.to_string_lossy());
+    if !scan.valid {
+        return Err(scan
+            .error
+            .clone()
+            .unwrap_or_else(|| "La restauración no produjo un dump PS5 válido".into()));
+    }
+    Ok(scan)
+}
+
 pub fn scan_with_decrypted_subfolder(dir: &str, decrypted_subfolder: &str) -> Ps5Scan {
     let root = Path::new(dir);
     let invalid = |error: String| Ps5Scan {
@@ -1182,6 +1392,65 @@ mod tests {
         assert_eq!(output_ext(MODE_EXFAT_FPKG), Some("pkg"));
         assert_eq!(output_ext(MODE_LZ4), None);
         assert!(writes_directory(MODE_LZ4));
+        assert!(is_mode(MODE_LZ4_EXTRACT));
+        assert!(is_mode(MODE_LZ4_VERIFY));
+        assert_eq!(tool_for(MODE_LZ4_EXTRACT), Some("ampr"));
+        assert_eq!(tool_for(MODE_LZ4_VERIFY), Some("ampr"));
+        assert!(writes_directory(MODE_LZ4_EXTRACT));
+        assert!(is_verify_mode(MODE_LZ4_VERIFY));
+    }
+
+    #[test]
+    fn inspects_an_ampr_folder_and_estimates_restoration_space() {
+        let root =
+            std::env::temp_dir().join(format!("romforge-studio-ampr-scan-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&root);
+        std::fs::create_dir_all(root.join("sce_sys")).unwrap();
+        std::fs::create_dir_all(root.join("fakelib")).unwrap();
+        std::fs::write(root.join("eboot.bin"), b"elf").unwrap();
+        std::fs::write(
+            root.join("sce_sys/param.json"),
+            br#"{"titleId":"PPSA12345","titleName":"AMPR Test"}"#,
+        )
+        .unwrap();
+        std::fs::write(root.join("ampr_emu.index"), vec![0u8; 128]).unwrap();
+        std::fs::write(root.join("ampr_assets.index"), vec![0u8; 256]).unwrap();
+        std::fs::write(
+            root.join("ampr_assets-main-lane00-vol00-001.pak"),
+            vec![0u8; 512],
+        )
+        .unwrap();
+        std::fs::write(root.join("fakelib/libSceAmpr.sprx"), vec![0u8; 64]).unwrap();
+        std::fs::write(
+            root.join("ROMFORGE-LZ4.json"),
+            br#"{"format":"AMPRPAK4","profile":"maximum","build_id":"abc","stats":{"logical_bytes":4096}}"#,
+        )
+        .unwrap();
+
+        let scan = ampr_scan(&root.to_string_lossy());
+        assert!(scan.valid, "{:?}", scan.error);
+        assert_eq!(scan.title.as_deref(), Some("AMPR Test"));
+        assert_eq!(scan.profile.as_deref(), Some("maximum"));
+        assert_eq!(scan.packed_logical_bytes, 4096);
+        assert!(scan.restored_estimate_bytes > scan.compact_bytes);
+        assert!(scan.restore_required_bytes > scan.restored_estimate_bytes);
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn rejects_ampr_auxiliary_files_after_restoration() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ampr-restored-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        std::fs::create_dir_all(root.join("sce_sys")).unwrap();
+        std::fs::write(root.join("eboot.bin"), b"elf").unwrap();
+        std::fs::write(root.join("sce_sys/param.json"), b"{}").unwrap();
+        assert!(validate_ampr_restored(&root).is_ok());
+        std::fs::write(root.join("ampr_assets.index"), b"leftover").unwrap();
+        assert!(validate_ampr_restored(&root).is_err());
+        let _ = std::fs::remove_dir_all(root);
     }
 
     #[test]

@@ -19,6 +19,7 @@ import { api, type GameArtwork } from "../lib/api";
 import { bytes } from "../lib/format";
 import {
   PS5_LAB_FORMATS,
+  type Ps5AmprScan,
   type Ps5ImageSpacePreflight,
   type Ps5OutputSpace,
   type Ps5Scan,
@@ -132,6 +133,11 @@ export function Ps5View() {
   const [checkingImageSpace, setCheckingImageSpace] = useState(false);
   const [imageSpaceKey, setImageSpaceKey] = useState<string | null>(null);
   const [extractPath, setExtractPath] = useState("");
+  const [amprSource, setAmprSource] = useState<string | null>(null);
+  const [amprScan, setAmprScan] = useState<Ps5AmprScan | null>(null);
+  const [amprSpace, setAmprSpace] = useState<Ps5OutputSpace | null>(null);
+  const [checkingAmprSpace, setCheckingAmprSpace] = useState(false);
+  const [amprSpaceKey, setAmprSpaceKey] = useState<string | null>(null);
 
   useEffect(() => {
     refreshTools();
@@ -159,8 +165,16 @@ export function Ps5View() {
   const effectiveOutputSetting = settings.ps5_output_dir || settings.output_dir || "";
   const currentOutputSpaceKey = source ? `${source}\u0000${effectiveOutputSetting}` : null;
   const currentImageSpaceKey = imageSource ? `${imageSource}\u0000${effectiveOutputSetting}` : null;
+  const currentAmprSpaceKey = amprSource ? `${amprSource}\u0000${effectiveOutputSetting}` : null;
   const outputSpaceStale = Boolean(currentOutputSpaceKey && outputSpaceKey !== currentOutputSpaceKey);
   const imageSpaceStale = Boolean(currentImageSpaceKey && imageSpaceKey !== currentImageSpaceKey);
+  const amprSpaceStale = Boolean(currentAmprSpaceKey && amprSpaceKey !== currentAmprSpaceKey);
+  const amprSpaceInsufficient = Boolean(
+    amprScan?.valid &&
+    amprSpace &&
+    !amprSpaceStale &&
+    amprSpace.available_bytes < amprScan.restore_required_bytes,
+  );
   const decryptedSubfolderTrimmed = settings.ps5_fpkg_decrypted_subfolder.trim();
   const decryptedSubfolderValid =
     decryptedSubfolderTrimmed.length > 0 &&
@@ -380,6 +394,56 @@ export function Ps5View() {
       setExtractPath("");
     }
   }
+
+  async function chooseAmprFolder() {
+    const result = (await open({
+      directory: true,
+      multiple: false,
+      title: "Selecciona una carpeta AMPR/LZ4",
+    })) as string | null;
+    if (!result) return;
+    setBusy(true);
+    try {
+      const info = await api.ps5AmprScan(result);
+      setAmprSource(result);
+      setAmprScan(info);
+      if (!info.valid) notify("error", info.error ?? "La carpeta AMPR/LZ4 no es válida");
+    } catch (error) {
+      notify("error", String(error));
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  useEffect(() => {
+    if (!amprSource || !amprScan?.valid) {
+      setAmprSpace(null);
+      setAmprSpaceKey(null);
+      setCheckingAmprSpace(false);
+      return;
+    }
+    let active = true;
+    const requestKey = currentAmprSpaceKey;
+    setAmprSpace(null);
+    setAmprSpaceKey(null);
+    setCheckingAmprSpace(true);
+    api.ps5OutputSpace(amprSource, settings.ps5_output_dir)
+      .then((space) => {
+        if (active) {
+          setAmprSpace(space);
+          setAmprSpaceKey(requestKey);
+        }
+      })
+      .catch(() => {
+        if (active) setAmprSpaceKey(requestKey);
+      })
+      .finally(() => {
+        if (active) setCheckingAmprSpace(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [amprSource, amprScan?.valid, effectiveOutputSetting]);
 
   useEffect(() => {
     if (!imageSource || !canInspectImage) {
@@ -862,6 +926,87 @@ export function Ps5View() {
               </button>
             </article>
           ))}
+        </div>
+
+        <div className="mt-4 rounded-xl border border-fuchsia-400/20 bg-fuchsia-400/[0.04] p-4">
+          <div className="flex flex-wrap items-start gap-3">
+            <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-fuchsia-400/10 text-fuchsia-300">
+              <ArchiveRestore size={18} />
+            </span>
+            <div className="min-w-0 flex-1">
+              <p className="text-[0.76rem] font-semibold">Recuperar una carpeta AMPR/LZ4</p>
+              <p className="mt-1 text-[0.63rem] leading-relaxed text-[var(--color-muted)]">
+                Comprueba los bloques sin modificar nada o reconstruye el dump normal, retirando
+                paquetes, índices y el runtime auxiliar de AMPR.
+              </p>
+              {amprSource && (
+                <p className="mono mt-2 truncate text-[0.61rem] text-fuchsia-300" title={amprSource}>
+                  {amprSource}
+                </p>
+              )}
+            </div>
+            <button className="btn btn-ghost" onClick={chooseAmprFolder} disabled={busy}>
+              <FolderOpen size={14} /> Seleccionar AMPR/LZ4
+            </button>
+          </div>
+
+          {amprScan && (
+            <div
+              className={`mt-3 rounded-lg border px-3 py-2.5 text-[0.64rem] ${
+                amprScan.valid
+                  ? "border-emerald-400/20 bg-emerald-400/[0.04]"
+                  : "border-rose-400/25 bg-rose-400/[0.05] text-rose-300"
+              }`}
+            >
+              {amprScan.valid ? (
+                <>
+                  <div className="flex flex-wrap items-center gap-x-4 gap-y-1">
+                    <span className="font-medium text-emerald-300">
+                      {amprScan.title ?? amprScan.title_id ?? "Carpeta AMPRPAK4 válida"}
+                    </span>
+                    {amprScan.profile && <span>Perfil: {amprScan.profile}</span>}
+                    <span>Compacta: {bytes(amprScan.compact_bytes)}</span>
+                    <span>Restaurada: ~{bytes(amprScan.restored_estimate_bytes)}</span>
+                    <span>Ahorro: ~{amprScan.estimated_savings_percent.toFixed(0)}%</span>
+                  </div>
+                  <p className={`mt-2 ${amprSpaceInsufficient ? "text-rose-300" : "text-[var(--color-muted)]"}`}>
+                    {checkingAmprSpace || amprSpaceStale
+                      ? "Consultando espacio para la restauración…"
+                      : amprSpace
+                        ? `${bytes(amprSpace.available_bytes)} libres · ${bytes(amprScan.restore_required_bytes)} necesarios durante la restauración`
+                        : `Espacio de trabajo recomendado: ${bytes(amprScan.restore_required_bytes)}`}
+                  </p>
+                </>
+              ) : (
+                <span>{amprScan.error}</span>
+              )}
+            </div>
+          )}
+
+          <div className="mt-3 flex flex-wrap gap-2">
+            <button
+              className="btn btn-ghost"
+              disabled={busy || amprMissing || !amprSource || !amprScan?.valid}
+              onClick={() => amprSource && enqueue(
+                amprSource,
+                "ps5lz4verify",
+                "Verificación AMPR/LZ4 añadida a la cola",
+              )}
+            >
+              <ShieldCheck size={14} /> Verificar sin modificar
+            </button>
+            <button
+              className="btn btn-primary"
+              disabled={busy || amprMissing || checkingAmprSpace || amprSpaceStale || amprSpaceInsufficient || !amprSource || !amprScan?.valid}
+              onClick={() => amprSource && enqueue(
+                amprSource,
+                "ps5lz4extract",
+                "Restauración AMPR/LZ4 añadida a la cola",
+              )}
+            >
+              <ArchiveRestore size={14} /> Restaurar dump normal
+            </button>
+          </div>
         </div>
 
         <p className="mt-3 flex items-start gap-2 text-[0.64rem] leading-relaxed text-amber-300">

@@ -285,12 +285,20 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
     }
 
     if ps5::is_mode(&spec.mode) {
-        if spec.mode == ps5::MODE_VERIFY {
+        if ps5::is_verify_mode(&spec.mode) {
             return (spec.input.clone(), None);
         }
         if spec.mode == ps5::MODE_LZ4 {
             return (
                 dir.join(format!("{stem}-lz4"))
+                    .to_string_lossy()
+                    .to_string(),
+                None,
+            );
+        }
+        if spec.mode == ps5::MODE_LZ4_EXTRACT {
+            return (
+                dir.join(format!("{stem}-restaurado"))
                     .to_string_lossy()
                     .to_string(),
                 None,
@@ -651,6 +659,11 @@ fn ps5_discover_games(dir: String) -> Result<Vec<String>, String> {
 }
 
 #[tauri::command]
+fn ps5_ampr_scan(dir: String) -> ps5::AmprScan {
+    ps5::ampr_scan(&dir)
+}
+
+#[tauri::command]
 fn ps5_fpkg_readiness(
     dir: String,
     decrypted_subfolder: String,
@@ -845,6 +858,7 @@ pub fn run() {
             ps3_trim,
             ps5_scan,
             ps5_discover_games,
+            ps5_ampr_scan,
             ps5_fpkg_readiness,
             ps5_validate_output_location,
             ps5_output_space,

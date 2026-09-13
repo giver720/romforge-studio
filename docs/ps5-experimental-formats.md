@@ -31,6 +31,8 @@ La interfaz ofrece tres perfiles persistentes:
 
 La verificación offline demuestra integridad y reversibilidad. El montaje y la ejecución siguen dependiendo de una versión compatible de ShadowMountPlus, del firmware y de los payloads de la consola.
 
+El Laboratorio también acepta una carpeta AMPRPAK4 ya creada. `ps5lz4verify` comprueba todos sus bloques sin modificarla y `ps5lz4extract` reconstruye el dump normal dentro de una salida temporal. Antes de publicar, ROMForge vuelve a verificar el paquete fuente, exige una raíz PS5 válida y comprueba que no permanezcan paquetes, índices ni el runtime auxiliar de AMPR.
+
 ## Contrato de integración
 
 `ps5fpkg` produce `.pkg` y `ps5lz4` produce una carpeta AMPRPAK4. Ambos modos son ejecutables, cancelables y usan una salida temporal: ROMForge solo publica el resultado después de validarlo y limpia los restos si ocurre un error.

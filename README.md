@@ -278,7 +278,10 @@ rechaza cualquier módulo cifrado sin resolver y valida el contenedor final ante
 el paquete se pueda ejecutar en hardware real depende además del firmware y los payloads de la PS5.
 El modo **AMPR/LZ4** genera una copia jugable en carpeta con índices `AMPRIDX3` y paquetes
 `AMPRPAK4`, usando el runtime público de AMPR. ROMForge conserva suelta la parte sensible del juego,
-verifica cada paquete y permite reconstruir los archivos originales byte por byte.
+verifica cada paquete y permite reconstruir los archivos originales byte por byte. Desde el mismo
+Laboratorio puede inspeccionarse una carpeta AMPR/LZ4, verificarla en modo de solo lectura o
+restaurarla a un dump normal. La restauración elimina los paquetes, índices y runtime añadidos por
+AMPR, comprueba otra vez el conjunto original y solo entonces publica la carpeta recuperada.
 
 ## PS2 → FPKG para PS4
 

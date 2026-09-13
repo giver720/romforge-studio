@@ -14,6 +14,10 @@ romforge-ampr-bridge verify --input GAME-lz4
 romforge-ampr-bridge unpack --input GAME-lz4 --output GAME-restored
 ```
 
+`unpack` verifica los bloques antes de restaurar y retira del resultado los
+paquetes, índices y el runtime que el puente añadió al despliegue. El resultado
+es otra vez el árbol normal del dump, no una segunda carpeta AMPR.
+
 Perfiles disponibles:
 
 - `fast`: compresión LZ4 rápida de nivel 1;

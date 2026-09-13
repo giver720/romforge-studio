@@ -38,6 +38,20 @@ export interface Ps5ImageSpacePreflight {
   required_bytes: Record<string, number>;
 }
 
+export interface Ps5AmprScan {
+  valid: boolean;
+  title: string | null;
+  title_id: string | null;
+  profile: string | null;
+  build_id: string | null;
+  compact_bytes: number;
+  packed_logical_bytes: number;
+  restored_estimate_bytes: number;
+  restore_required_bytes: number;
+  estimated_savings_percent: number;
+  error: string | null;
+}
+
 export type Ps5LabFormatId = "fpkg" | "lz4";
 export type Ps5LabMode = "ps5fpkg" | "ps5lz4";
 
