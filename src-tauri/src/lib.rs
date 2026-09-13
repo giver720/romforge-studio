@@ -643,6 +643,14 @@ fn ps5_scan(dir: String, decrypted_subfolder: Option<String>) -> ps5::Ps5Scan {
 }
 
 #[tauri::command]
+fn ps5_fpkg_readiness(
+    dir: String,
+    decrypted_subfolder: String,
+) -> Result<ps5::FpkgReadiness, String> {
+    ps5::fpkg_readiness(&dir, &decrypted_subfolder)
+}
+
+#[tauri::command]
 fn ps5_validate_output_location(input: String, output: String) -> Result<(), String> {
     ps5::validate_output_location(std::path::Path::new(&input), std::path::Path::new(&output))
 }
@@ -796,6 +804,7 @@ pub fn run() {
             ps3_scan,
             ps3_trim,
             ps5_scan,
+            ps5_fpkg_readiness,
             ps5_validate_output_location,
             game_artwork,
             app_paths,

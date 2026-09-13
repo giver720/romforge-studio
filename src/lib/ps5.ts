@@ -18,6 +18,12 @@ export interface Ps5Scan {
   error: string | null;
 }
 
+export interface Ps5FpkgReadiness {
+  ready: boolean;
+  module_count: number;
+  blockers: string[];
+}
+
 export type Ps5LabFormatId = "fpkg" | "lz4";
 export type Ps5LabMode = "ps5fpkg" | "ps5lz4";
 

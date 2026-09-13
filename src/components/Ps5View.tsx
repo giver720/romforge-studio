@@ -83,6 +83,8 @@ export function Ps5View() {
   const [busy, setBusy] = useState(false);
   const [outputLocationError, setOutputLocationError] = useState<string | null>(null);
   const [checkingOutputLocation, setCheckingOutputLocation] = useState(false);
+  const [scannedFpkgSubfolder, setScannedFpkgSubfolder] = useState<string | null>(null);
+  const [checkingFpkgReadiness, setCheckingFpkgReadiness] = useState(false);
 
   useEffect(() => {
     refreshTools();
@@ -106,6 +108,12 @@ export function Ps5View() {
     !decryptedSubfolderTrimmed
       .split(/[\\/]/)
       .some((segment) => segment.length === 0 || segment === "." || segment === "..");
+  const fpkgReadinessStale = Boolean(
+    source &&
+    scan?.valid &&
+    decryptedSubfolderValid &&
+    scannedFpkgSubfolder !== decryptedSubfolderTrimmed,
+  );
 
   async function chooseFolder() {
     const result = (await open({ directory: true, multiple: false })) as string | null;
@@ -119,6 +127,7 @@ export function Ps5View() {
       ]);
       setSource(result);
       setScan(info);
+      setScannedFpkgSubfolder(decryptedSubfolderTrimmed);
       setArtwork(cover);
       if (!info.valid) notify("error", info.error ?? "La carpeta no parece un dump de PS5");
     } catch (error) {
@@ -129,19 +138,41 @@ export function Ps5View() {
   }
 
   useEffect(() => {
-    if (!source || !decryptedSubfolderValid) return;
+    if (
+      !source ||
+      !scan?.valid ||
+      !decryptedSubfolderValid ||
+      scannedFpkgSubfolder === decryptedSubfolderTrimmed
+    ) {
+      setCheckingFpkgReadiness(false);
+      return;
+    }
     let active = true;
-    api.ps5Scan(source, decryptedSubfolderTrimmed)
-      .then((info) => {
-        if (active) setScan(info);
-      })
-      .catch((error) => {
-        if (active) notify("error", String(error));
-      });
+    setCheckingFpkgReadiness(true);
+    const timer = window.setTimeout(() => {
+      api.ps5FpkgReadiness(source, decryptedSubfolderTrimmed)
+        .then((readiness) => {
+          if (!active) return;
+          setScan((current) => current ? {
+            ...current,
+            fpkg_ready: readiness.ready,
+            fpkg_module_count: readiness.module_count,
+            fpkg_blockers: readiness.blockers,
+          } : current);
+          setScannedFpkgSubfolder(decryptedSubfolderTrimmed);
+        })
+        .catch((error) => {
+          if (active) notify("error", String(error));
+        })
+        .finally(() => {
+          if (active) setCheckingFpkgReadiness(false);
+        });
+    }, 300);
     return () => {
       active = false;
+      window.clearTimeout(timer);
     };
-  }, [source, decryptedSubfolderTrimmed, decryptedSubfolderValid]);
+  }, [source, scan?.valid, decryptedSubfolderTrimmed, decryptedSubfolderValid, scannedFpkgSubfolder]);
 
   useEffect(() => {
     const output = settings.ps5_output_dir || settings.output_dir;
@@ -426,8 +457,10 @@ export function Ps5View() {
                 {format.description}
               </p>
               {format.id === "fpkg" && scan?.valid && (
-                <p className={`mt-2 text-[0.64rem] ${scan.fpkg_ready ? "text-emerald-300" : "text-amber-300"}`}>
-                  {scan.fpkg_ready
+                <p className={`mt-2 text-[0.64rem] ${scan.fpkg_ready && !checkingFpkgReadiness && !fpkgReadinessStale ? "text-emerald-300" : "text-amber-300"}`}>
+                  {checkingFpkgReadiness || fpkgReadinessStale
+                    ? "Actualizando la preparación FPKG…"
+                    : scan.fpkg_ready
                     ? `Dump listo · ${scan.fpkg_module_count} módulo${scan.fpkg_module_count === 1 ? "" : "s"} · ${scan.content_id}`
                     : "El dump necesita preparación antes de crear el FPKG."}
                 </p>
@@ -523,6 +556,7 @@ export function Ps5View() {
                   !source ||
                   !scan?.valid ||
                   (format.id === "fpkg" && !decryptedSubfolderValid) ||
+                  (format.id === "fpkg" && (checkingFpkgReadiness || fpkgReadinessStale)) ||
                   (format.id === "fpkg" && !scan.fpkg_ready)
                 }
                 title={

@@ -40,6 +40,13 @@ pub struct Ps5Scan {
     pub error: Option<String>,
 }
 
+#[derive(Clone, Debug, Serialize)]
+pub struct FpkgReadiness {
+    pub ready: bool,
+    pub module_count: u64,
+    pub blockers: Vec<String>,
+}
+
 #[derive(Clone, Debug, Default)]
 struct Stats {
     files: u64,
@@ -433,6 +440,44 @@ fn collect_fpkg_modules(
     }
 }
 
+fn fpkg_readiness_for(
+    root: &Path,
+    content_id: Option<&str>,
+    decrypted_subfolder: &str,
+) -> Result<FpkgReadiness, String> {
+    let decrypted_subfolder = validate_decrypted_subfolder(decrypted_subfolder)?;
+    let decrypted_root = root.join(decrypted_subfolder);
+    let mut blockers = vec![];
+    let mut module_count = 0;
+    collect_fpkg_modules(
+        root,
+        root,
+        &decrypted_root,
+        &mut module_count,
+        &mut blockers,
+    );
+    if module_count == 0 {
+        blockers.push("No se encontró ningún módulo ejecutable de PS5".into());
+    }
+    if content_id.map(valid_content_id) != Some(true) {
+        blockers.push("sce_sys/param.json no contiene un contentId válido de 36 caracteres".into());
+    }
+    Ok(FpkgReadiness {
+        ready: blockers.is_empty(),
+        module_count,
+        blockers,
+    })
+}
+
+pub fn fpkg_readiness(dir: &str, decrypted_subfolder: &str) -> Result<FpkgReadiness, String> {
+    let root = Path::new(dir);
+    if !root.is_dir() {
+        return Err("La carpeta seleccionada no existe".into());
+    }
+    let (_, _, _, content_id) = metadata(root)?;
+    fpkg_readiness_for(root, content_id.as_deref(), decrypted_subfolder)
+}
+
 pub fn scan(dir: &str) -> Ps5Scan {
     scan_with_decrypted_subfolder(dir, "decrypted")
 }
@@ -494,32 +539,12 @@ pub fn scan_with_decrypted_subfolder(dir: &str, decrypted_subfolder: &str) -> Ps
     if estimated_savings_percent < 10.0 {
         warnings.push("El muestreo indica que FFPFSC ahorraría poco espacio".into());
     }
-    let decrypted_subfolder = match validate_decrypted_subfolder(decrypted_subfolder) {
-        Ok(value) => value,
-        Err(error) => return invalid(error),
-    };
-    let decrypted_root = root.join(decrypted_subfolder);
-    let mut fpkg_blockers = vec![];
-    let mut fpkg_module_count = 0;
-    collect_fpkg_modules(
-        root,
-        root,
-        &decrypted_root,
-        &mut fpkg_module_count,
-        &mut fpkg_blockers,
-    );
-    if fpkg_module_count == 0 {
-        fpkg_blockers.push("No se encontró ningún módulo ejecutable de PS5".into());
-    }
-    if content_id
-        .as_deref()
-        .map(|value| !valid_content_id(value))
-        .unwrap_or(true)
-    {
-        fpkg_blockers
-            .push("sce_sys/param.json no contiene un contentId válido de 36 caracteres".into());
-    }
-    let fpkg_ready = fpkg_blockers.is_empty();
+    let readiness = fpkg_readiness_for(root, content_id.as_deref(), decrypted_subfolder)
+        .unwrap_or_else(|error| FpkgReadiness {
+            ready: false,
+            module_count: 0,
+            blockers: vec![error],
+        });
     Ps5Scan {
         valid: true,
         title_id,
@@ -533,9 +558,9 @@ pub fn scan_with_decrypted_subfolder(dir: &str, decrypted_subfolder: &str) -> Ps
         compressed_estimate_bytes,
         estimated_savings_percent,
         recommended_format: "ffpkg".into(),
-        fpkg_ready,
-        fpkg_module_count,
-        fpkg_blockers,
+        fpkg_ready: readiness.ready,
+        fpkg_module_count: readiness.module_count,
+        fpkg_blockers: readiness.blockers,
         warnings,
         error: None,
     }
@@ -695,6 +720,31 @@ mod tests {
             configured_scan.fpkg_blockers
         );
         assert_eq!(configured_scan.fpkg_module_count, 1);
+        let lightweight = fpkg_readiness(&root.to_string_lossy(), "prepared/modules").unwrap();
+        assert!(lightweight.ready, "{:?}", lightweight.blockers);
+        assert_eq!(lightweight.module_count, configured_scan.fpkg_module_count);
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn invalid_fpkg_subfolder_does_not_invalidate_the_whole_dump() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-invalid-fpkg-option-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        std::fs::create_dir_all(root.join("sce_sys")).unwrap();
+        std::fs::write(root.join("eboot.bin"), [0x7f, b'E', b'L', b'F']).unwrap();
+        std::fs::write(
+            root.join("sce_sys/param.json"),
+            r#"{"contentId":"UP9000-PPSA99099_00-PROSPERO00000000"}"#,
+        )
+        .unwrap();
+
+        let result = scan_with_decrypted_subfolder(&root.to_string_lossy(), "../unsafe");
+        assert!(result.valid);
+        assert!(!result.fpkg_ready);
+        assert!(result.fpkg_blockers[0].contains("ruta relativa segura"));
         let _ = std::fs::remove_dir_all(root);
     }
 
