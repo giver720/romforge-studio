@@ -103,6 +103,7 @@ export function Ps5View() {
   const amprMissing = missingTools.has("ampr");
   const imageExt = imageSource?.split(".").pop()?.toLowerCase();
   const canCompress = imageExt === "exfat" || imageExt === "ffpkg";
+  const canInspectImage = ["exfat", "ffpkg", "ffpfs", "ffpfsc"].includes(imageExt ?? "");
   const decryptedSubfolderTrimmed = settings.ps5_fpkg_decrypted_subfolder.trim();
   const decryptedSubfolderValid =
     decryptedSubfolderTrimmed.length > 0 &&
@@ -645,10 +646,18 @@ export function Ps5View() {
           </button>
           <button
             className="btn btn-ghost"
-            disabled={busy || !imageSource || (imageExt === "ffpkg" ? missingTools.has("ufs2tool") : missingTools.has("mkpfs"))}
+            disabled={busy || !imageSource || !canInspectImage || (imageExt === "ffpkg" ? missingTools.has("ufs2tool") : missingTools.has("mkpfs"))}
             onClick={() => imageSource && enqueue(imageSource, "ps5extract", "Extracción añadida a la cola")}
           >
             <ArchiveRestore size={15} /> Extraer a carpeta
+          </button>
+          <button
+            className="btn btn-ghost"
+            disabled={busy || !imageSource || !canInspectImage || (imageExt === "ffpkg" ? missingTools.has("ufs2tool") : missingTools.has("mkpfs"))}
+            onClick={() => imageSource && enqueue(imageSource, "ps5verify", "Verificación de imagen añadida a la cola")}
+            title="Comprueba la imagen en modo de solo lectura"
+          >
+            <ShieldCheck size={15} /> Verificar imagen
           </button>
           {imageExt === "exfat" && (
             <button

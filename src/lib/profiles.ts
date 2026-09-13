@@ -397,6 +397,7 @@ export const MODE_LABELS: Record<string, string> = {
   ps5extract: "Imagen → carpeta",
   ps5fpkg: "Carpeta → FPKG PS5 (experimental)",
   ps5fpkgexfat: "exFAT → FPKG PS5 (experimental)",
+  ps5verify: "Verificar imagen PS5",
   ps5lz4: "Carpeta → LZ4/Lizard (experimental)",
   iso2cso: "ISO → CSO",
   iso2zso: "ISO → ZSO",

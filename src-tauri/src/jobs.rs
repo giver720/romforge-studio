@@ -184,7 +184,7 @@ fn build_args(job: &Job, s: &Settings) -> Vec<String> {
 
 /// Los modos de comprobacion no generan archivo, asi que no hay nada que limpiar.
 fn is_verify(mode: &str) -> bool {
-    matches!(mode, "verify" | "wiiverify")
+    matches!(mode, "verify" | "wiiverify" | "ps5verify")
 }
 
 /// Algunos modos producen una carpeta en vez de un archivo suelto.
@@ -607,6 +607,20 @@ mod output_transaction_tests {
             ps5_verification_root(&output, "job", "verify"),
             parent.join(".romforge-ps5-verify-job")
         );
+    }
+
+    #[test]
+    fn ps5_verify_mode_never_creates_or_protects_an_output() {
+        let (dir, mut job) = fixture("ps5-read-only-verify");
+        job.mode = crate::ps5::MODE_VERIFY.into();
+        job.tool = "mkpfs".into();
+        job.output = job.input.clone();
+
+        let staged = StagedOutput::new(&job, false).unwrap();
+        assert!(staged.root.is_none());
+        assert!(staged.final_parent.is_none());
+        assert_eq!(std::fs::read(&job.input).unwrap(), b"source");
+        let _ = std::fs::remove_dir_all(dir);
     }
 
     #[test]
@@ -1388,7 +1402,7 @@ async fn run_ps5_workflow(
 ) {
     use crate::ps5::{
         MODE_COMPRESS, MODE_EXFAT, MODE_EXFAT_FPKG, MODE_EXTRACT, MODE_FFPFSC, MODE_FFPKG,
-        MODE_LZ4, MODE_NATIVE_FPKG,
+        MODE_LZ4, MODE_NATIVE_FPKG, MODE_VERIFY,
     };
 
     let input = PathBuf::from(&job.input);
@@ -1561,6 +1575,15 @@ async fn run_ps5_workflow(
             "Se pueden extraer imagenes .exfat, .ffpkg, .ffpfs y .ffpfsc".into(),
         );
     }
+    if job.mode == MODE_VERIFY
+        && !matches!(extension.as_str(), "exfat" | "ffpkg" | "ffpfs" | "ffpfsc")
+    {
+        return custom_error(
+            &app,
+            &id,
+            "Se pueden verificar imágenes .exfat, .ffpkg, .ffpfs y .ffpfsc".into(),
+        );
+    }
 
     let staged = match StagedOutput::new(&job, settings.overwrite) {
         Ok(value) => value,
@@ -1669,6 +1692,17 @@ async fn run_ps5_workflow(
             }
             args.extend([job.input.clone(), execution.output.clone()]);
             ("Extrayendo la imagen de PS5", args)
+        }
+        MODE_VERIFY if extension == "ffpkg" => (
+            "Comprobando la imagen UFS2 sin modificarla",
+            vec!["fsck_ufs".into(), "-n".into(), job.input.clone()],
+        ),
+        MODE_VERIFY => {
+            let mut args = vec!["verify".into(), job.input.clone()];
+            if extension == "exfat" {
+                args.extend(["--format".into(), "exfat".into()]);
+            }
+            ("Comprobando estructura y datos de la imagen", args)
         }
         _ => {
             staged.cleanup();
@@ -1894,6 +1928,10 @@ async fn run_ps5_workflow(
             }
             format!("Se extrajeron y comprobaron {} archivos", scan.file_count)
         }
+        MODE_VERIFY => match tool_id {
+            "ufs2tool" => "UFS2 consistente según fsck_ufs en modo de solo lectura".to_string(),
+            _ => "Estructura y sumas de comprobación aceptadas por MkPFS".to_string(),
+        },
         _ => unreachable!(),
     };
 
@@ -1920,6 +1958,7 @@ async fn run_ps5_workflow(
             MODE_LZ4 => "Listo · AMPRPAK4/LZ4 verificado",
             MODE_FFPFSC | MODE_COMPRESS => "Listo · FFPFSC verificado",
             MODE_EXTRACT => "Listo · dump extraido y verificado",
+            MODE_VERIFY => "Listo · imagen PS5 verificada",
             _ => "Listo",
         }
         .into();

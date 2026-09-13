@@ -285,6 +285,9 @@ fn output_for(spec: &JobSpec, s: &Settings) -> (String, Option<String>) {
     }
 
     if ps5::is_mode(&spec.mode) {
+        if spec.mode == ps5::MODE_VERIFY {
+            return (spec.input.clone(), None);
+        }
         if spec.mode == ps5::MODE_LZ4 {
             return (
                 dir.join(format!("{stem}-lz4"))

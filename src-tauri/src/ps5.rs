@@ -10,6 +10,7 @@ pub const MODE_FFPKG: &str = "ps5ffpkg";
 pub const MODE_FFPFSC: &str = "ps5ffpfsc";
 pub const MODE_COMPRESS: &str = "ps5compress";
 pub const MODE_EXTRACT: &str = "ps5extract";
+pub const MODE_VERIFY: &str = "ps5verify";
 /// Modos recientes con motores públicos y verificación independiente.
 pub const MODE_NATIVE_FPKG: &str = "ps5fpkg";
 /// Extrae una imagen exFAT a un workspace temporal y crea un FPKG nativo.
@@ -65,6 +66,7 @@ pub fn is_mode(mode: &str) -> bool {
             | MODE_FFPFSC
             | MODE_COMPRESS
             | MODE_EXTRACT
+            | MODE_VERIFY
             | MODE_NATIVE_FPKG
             | MODE_EXFAT_FPKG
             | MODE_LZ4
@@ -76,13 +78,13 @@ pub fn tool_for(mode: &str) -> Option<&'static str> {
         MODE_FFPKG => Some("ufs2tool"),
         MODE_NATIVE_FPKG | MODE_EXFAT_FPKG => Some("prospero"),
         MODE_LZ4 => Some("ampr"),
-        MODE_EXFAT | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT => Some("mkpfs"),
+        MODE_EXFAT | MODE_FFPFSC | MODE_COMPRESS | MODE_EXTRACT | MODE_VERIFY => Some("mkpfs"),
         _ => None,
     }
 }
 
 pub fn tool_for_input(mode: &str, input: &str) -> Option<&'static str> {
-    if mode == MODE_EXTRACT
+    if matches!(mode, MODE_EXTRACT | MODE_VERIFY)
         && Path::new(input)
             .extension()
             .map(|ext| ext.eq_ignore_ascii_case("ffpkg"))
@@ -780,6 +782,8 @@ mod tests {
         assert_eq!(output_ext(MODE_FFPFSC), Some("ffpfsc"));
         assert_eq!(tool_for_input(MODE_EXTRACT, "game.ffpkg"), Some("ufs2tool"));
         assert_eq!(tool_for_input(MODE_EXTRACT, "game.ffpfsc"), Some("mkpfs"));
+        assert_eq!(tool_for_input(MODE_VERIFY, "game.ffpkg"), Some("ufs2tool"));
+        assert_eq!(tool_for_input(MODE_VERIFY, "game.exfat"), Some("mkpfs"));
     }
 
     #[test]
