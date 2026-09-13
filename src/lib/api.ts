@@ -1,6 +1,6 @@
 import { invoke } from "@tauri-apps/api/core";
 import type { Ps3Scan, TrimResult } from "./ps3";
-import type { Ps5FpkgReadiness, Ps5Scan } from "./ps5";
+import type { Ps5FpkgReadiness, Ps5OutputSpace, Ps5Scan } from "./ps5";
 import type {
   ChdmanStatus,
   InputInfo,
@@ -69,6 +69,8 @@ export const api = {
     invoke<Ps5FpkgReadiness>("ps5_fpkg_readiness", { dir, decryptedSubfolder }),
   ps5ValidateOutputLocation: (input: string, output: string) =>
     invoke<void>("ps5_validate_output_location", { input, output }),
+  ps5OutputSpace: (input: string, outputDir: string | null) =>
+    invoke<Ps5OutputSpace>("ps5_output_space", { input, outputDir }),
   gameArtwork: (input: string, system: string) =>
     invoke<GameArtwork>("game_artwork", { input, system }),
   fetchStoreCatalog: () => invoke<unknown>("fetch_store_catalog"),

@@ -24,6 +24,11 @@ export interface Ps5FpkgReadiness {
   blockers: string[];
 }
 
+export interface Ps5OutputSpace {
+  available_bytes: number;
+  location: string;
+}
+
 export type Ps5LabFormatId = "fpkg" | "lz4";
 export type Ps5LabMode = "ps5fpkg" | "ps5lz4";
 

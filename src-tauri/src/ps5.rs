@@ -48,6 +48,28 @@ pub struct FpkgReadiness {
     pub blockers: Vec<String>,
 }
 
+#[derive(Clone, Debug, Serialize)]
+pub struct OutputSpace {
+    pub available_bytes: u64,
+    pub location: String,
+}
+
+/// Consulta el espacio en la unidad real que recibirá la salida. La carpeta
+/// configurada puede no existir todavía, así que se prueba su primer ancestro
+/// existente en vez de asumir que la unidad del sistema es el destino.
+pub fn output_space(destination: &Path) -> Result<OutputSpace, String> {
+    let probe = destination
+        .ancestors()
+        .find(|candidate| candidate.exists())
+        .ok_or_else(|| "No se encontró una unidad válida para la salida PS5".to_string())?;
+    let available_bytes = fs2::available_space(probe)
+        .map_err(|error| format!("No se pudo consultar el espacio libre: {error}"))?;
+    Ok(OutputSpace {
+        available_bytes,
+        location: probe.to_string_lossy().to_string(),
+    })
+}
+
 #[derive(Clone, Debug, Default)]
 struct Stats {
     files: u64,
@@ -847,6 +869,19 @@ mod tests {
         assert!(validate_output_location(&source, &sibling).is_ok());
         assert!(validate_output_location(&source, &nested).is_err());
         assert!(validate_output_location(&source, &source).is_err());
+        let _ = std::fs::remove_dir_all(base);
+    }
+
+    #[test]
+    fn probes_space_on_the_configured_output_disk() {
+        let base =
+            std::env::temp_dir().join(format!("romforge-studio-ps5-space-{}", std::process::id()));
+        let _ = std::fs::remove_dir_all(&base);
+        std::fs::create_dir_all(&base).unwrap();
+
+        let result = output_space(&base.join("future/output")).unwrap();
+        assert!(result.available_bytes > 0);
+        assert_eq!(PathBuf::from(result.location), base);
         let _ = std::fs::remove_dir_all(base);
     }
 

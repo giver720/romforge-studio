@@ -17,7 +17,7 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { api, type GameArtwork } from "../lib/api";
 import { bytes } from "../lib/format";
-import { PS5_LAB_FORMATS, type Ps5Scan } from "../lib/ps5";
+import { PS5_LAB_FORMATS, type Ps5OutputSpace, type Ps5Scan } from "../lib/ps5";
 import { useStore } from "../store";
 import { Toggle } from "./ui";
 
@@ -88,6 +88,9 @@ export function Ps5View() {
   const [checkingOutputLocation, setCheckingOutputLocation] = useState(false);
   const [scannedFpkgSubfolder, setScannedFpkgSubfolder] = useState<string | null>(null);
   const [checkingFpkgReadiness, setCheckingFpkgReadiness] = useState(false);
+  const [outputSpace, setOutputSpace] = useState<Ps5OutputSpace | null>(null);
+  const [outputSpaceError, setOutputSpaceError] = useState<string | null>(null);
+  const [checkingOutputSpace, setCheckingOutputSpace] = useState(false);
 
   useEffect(() => {
     refreshTools();
@@ -118,6 +121,18 @@ export function Ps5View() {
     decryptedSubfolderValid &&
     scannedFpkgSubfolder !== decryptedSubfolderTrimmed,
   );
+  const requiredSpace = scan?.valid ? estimatedPs5WorkingSpace(mode, scan) : 0;
+  const selectedSpaceInsufficient = Boolean(
+    requiredSpace && outputSpace && outputSpace.available_bytes < requiredSpace,
+  );
+
+  function spaceInsufficientFor(targetMode: string) {
+    return Boolean(
+      scan?.valid &&
+      outputSpace &&
+      outputSpace.available_bytes < estimatedPs5WorkingSpace(targetMode, scan),
+    );
+  }
 
   async function chooseFolder() {
     const result = (await open({ directory: true, multiple: false })) as string | null;
@@ -201,6 +216,32 @@ export function Ps5View() {
       active = false;
     };
   }, [source, settings.ps5_output_dir, settings.output_dir]);
+
+  useEffect(() => {
+    if (!source || !scan?.valid) {
+      setOutputSpace(null);
+      setOutputSpaceError(null);
+      setCheckingOutputSpace(false);
+      return;
+    }
+    let active = true;
+    setOutputSpace(null);
+    setOutputSpaceError(null);
+    setCheckingOutputSpace(true);
+    api.ps5OutputSpace(source, settings.ps5_output_dir)
+      .then((space) => {
+        if (active) setOutputSpace(space);
+      })
+      .catch((error) => {
+        if (active) setOutputSpaceError(String(error));
+      })
+      .finally(() => {
+        if (active) setCheckingOutputSpace(false);
+      });
+    return () => {
+      active = false;
+    };
+  }, [source, scan?.valid, settings.ps5_output_dir, settings.output_dir]);
 
   async function chooseImage() {
     const result = (await open({
@@ -364,7 +405,7 @@ export function Ps5View() {
           <button
             className="btn btn-primary"
             onClick={() => source && enqueue(source, mode, `${selectedFormat.name} añadido a la cola`)}
-            disabled={busy || checkingOutputLocation || Boolean(outputLocationError) || selectedToolMissing || !source || !scan?.valid}
+            disabled={busy || checkingOutputLocation || checkingOutputSpace || Boolean(outputLocationError) || selectedSpaceInsufficient || selectedToolMissing || !source || !scan?.valid}
           >
             <FileArchive size={15} /> Crear {mode === "ps5ffpkg" ? ".ffpkg" : mode === "ps5exfat" ? ".exfat" : ".ffpfsc"}
           </button>
@@ -407,6 +448,29 @@ export function Ps5View() {
           <p className="mt-2 flex items-start gap-1.5 text-[0.64rem] leading-relaxed text-rose-300">
             <AlertTriangle size={13} className="mt-0.5 shrink-0" /> {outputLocationError}
           </p>
+        )}
+        {scan?.valid && (
+          <div
+            className={`mt-2 flex items-start gap-2 rounded-lg border px-3 py-2 text-[0.64rem] ${
+              selectedSpaceInsufficient
+                ? "border-rose-400/25 bg-rose-400/[0.06] text-rose-300"
+                : "border-white/10 bg-white/[0.02] text-[var(--color-muted)]"
+            }`}
+          >
+            <HardDrive size={13} className="mt-0.5 shrink-0" />
+            <span className="min-w-0">
+              {checkingOutputSpace
+                ? "Consultando el espacio libre del destino…"
+                : outputSpace
+                  ? `${bytes(outputSpace.available_bytes)} libres · ${bytes(requiredSpace)} necesarios para ${selectedFormat.name}`
+                  : outputSpaceError ?? "No se pudo consultar el espacio libre; la cola volverá a comprobarlo."}
+              {outputSpace && (
+                <span className="mt-0.5 block truncate text-[var(--color-faint)]" title={outputSpace.location}>
+                  Comprobado en {outputSpace.location}
+                </span>
+              )}
+            </span>
+          </div>
         )}
         {mode === "ps5ffpkg" && (
           <p className="mt-2 text-[0.64rem] text-amber-300">
@@ -512,8 +576,12 @@ export function Ps5View() {
                 </div>
               )}
               {scan?.valid && (
-                <p className="mt-2 text-[0.62rem] text-blue-300">
-                  Espacio de trabajo recomendado: {bytes(estimatedPs5WorkingSpace(format.mode, scan))}
+                <p className={`mt-2 text-[0.62rem] ${spaceInsufficientFor(format.mode) ? "text-rose-300" : "text-blue-300"}`}>
+                  {checkingOutputSpace
+                    ? "Consultando espacio libre…"
+                    : outputSpace
+                      ? `${bytes(outputSpace.available_bytes)} libres · ${bytes(estimatedPs5WorkingSpace(format.mode, scan))} necesarios`
+                      : `Espacio de trabajo recomendado: ${bytes(estimatedPs5WorkingSpace(format.mode, scan))}`}
                 </p>
               )}
               {format.id === "lz4" && (
@@ -555,7 +623,9 @@ export function Ps5View() {
                 disabled={
                   busy ||
                   checkingOutputLocation ||
+                  checkingOutputSpace ||
                   Boolean(outputLocationError) ||
+                  spaceInsufficientFor(format.mode) ||
                   (format.id === "fpkg" ? prosperoMissing : amprMissing) ||
                   !source ||
                   !scan?.valid ||
