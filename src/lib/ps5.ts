@@ -14,6 +14,8 @@ export interface Ps5Scan {
   fpkg_ready: boolean;
   fpkg_module_count: number;
   fpkg_blockers: string[];
+  pfs_compatible: boolean;
+  pfs_blockers: string[];
   warnings: string[];
   error: string | null;
 }

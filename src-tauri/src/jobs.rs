@@ -578,6 +578,8 @@ mod output_transaction_tests {
             fpkg_ready: true,
             fpkg_module_count: 1,
             fpkg_blockers: vec![],
+            pfs_compatible: true,
+            pfs_blockers: vec![],
             warnings: vec![],
             error: None,
         };
@@ -1523,6 +1525,16 @@ async fn run_ps5_workflow(
                 format!(
                     "El dump no está preparado para FPKG: {}",
                     scan.fpkg_blockers.join(" · ")
+                ),
+            );
+        }
+        if job.mode == MODE_FFPFSC && !scan.pfs_compatible {
+            return custom_error(
+                &app,
+                &id,
+                format!(
+                    "El dump no es compatible con FFPFSC: {}",
+                    scan.pfs_blockers.join(" · ")
                 ),
             );
         }

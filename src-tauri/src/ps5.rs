@@ -44,6 +44,8 @@ pub struct Ps5Scan {
     pub fpkg_ready: bool,
     pub fpkg_module_count: u64,
     pub fpkg_blockers: Vec<String>,
+    pub pfs_compatible: bool,
+    pub pfs_blockers: Vec<String>,
     pub warnings: Vec<String>,
     pub error: Option<String>,
 }
@@ -273,6 +275,8 @@ struct Stats {
     allocated_bytes: u64,
     sample_bytes: u64,
     sample_compressed_bytes: u64,
+    pfs_non_ascii_count: u64,
+    pfs_non_ascii_examples: Vec<String>,
 }
 
 pub fn is_mode(mode: &str) -> bool {
@@ -450,6 +454,17 @@ fn collect_stats(root: &Path, current: &Path, stats: &mut Stats) -> Result<(), S
                 path.display()
             ));
         };
+        if !name.is_ascii() {
+            stats.pfs_non_ascii_count = stats.pfs_non_ascii_count.saturating_add(1);
+            if stats.pfs_non_ascii_examples.len() < 3 {
+                stats.pfs_non_ascii_examples.push(
+                    path.strip_prefix(root)
+                        .unwrap_or(&path)
+                        .to_string_lossy()
+                        .to_string(),
+                );
+            }
+        }
         if name.ends_with(['.', ' '])
             || name.chars().any(|c| {
                 c < '\u{20}' || ['<', '>', ':', '"', '/', '\\', '|', '?', '*'].contains(&c)
@@ -719,6 +734,8 @@ pub fn scan_with_decrypted_subfolder(dir: &str, decrypted_subfolder: &str) -> Ps
         fpkg_ready: false,
         fpkg_module_count: 0,
         fpkg_blockers: vec![],
+        pfs_compatible: false,
+        pfs_blockers: vec![],
         warnings: vec![],
         error: Some(error),
     };
@@ -758,6 +775,15 @@ pub fn scan_with_decrypted_subfolder(dir: &str, decrypted_subfolder: &str) -> Ps
     if estimated_savings_percent < 10.0 {
         warnings.push("El muestreo indica que FFPFSC ahorraría poco espacio".into());
     }
+    let pfs_blockers = if stats.pfs_non_ascii_count == 0 {
+        vec![]
+    } else {
+        vec![format!(
+            "FFPFSC/PFS solo admite nombres ASCII; se encontraron {} entrada(s) incompatibles. Ejemplos: {}",
+            stats.pfs_non_ascii_count,
+            stats.pfs_non_ascii_examples.join(" · ")
+        )]
+    };
     let readiness = fpkg_readiness_for(root, content_id.as_deref(), decrypted_subfolder)
         .unwrap_or_else(|error| FpkgReadiness {
             ready: false,
@@ -780,6 +806,8 @@ pub fn scan_with_decrypted_subfolder(dir: &str, decrypted_subfolder: &str) -> Ps
         fpkg_ready: readiness.ready,
         fpkg_module_count: readiness.module_count,
         fpkg_blockers: readiness.blockers,
+        pfs_compatible: pfs_blockers.is_empty(),
+        pfs_blockers,
         warnings,
         error: None,
     }
@@ -883,6 +911,30 @@ mod tests {
             result.content_id.as_deref(),
             Some("UP9000-PPSA99099_00-PROSPERO00000000")
         );
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn keeps_unicode_dump_valid_but_blocks_ascii_only_pfs() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-unicode-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        std::fs::create_dir_all(root.join("sce_sys")).unwrap();
+        std::fs::write(root.join("eboot.bin"), [0x7f, b'E', b'L', b'F']).unwrap();
+        std::fs::write(
+            root.join("sce_sys/param.json"),
+            r#"{"titleId":"PPSA12345","titleName":"Prueba"}"#,
+        )
+        .unwrap();
+        std::fs::write(root.join("español.txt"), b"contenido").unwrap();
+
+        let result = scan(&root.to_string_lossy());
+        assert!(result.valid, "{:?}", result.error);
+        assert!(!result.pfs_compatible);
+        assert_eq!(result.pfs_blockers.len(), 1);
+        assert!(result.pfs_blockers[0].contains("español.txt"));
         let _ = std::fs::remove_dir_all(root);
     }
 

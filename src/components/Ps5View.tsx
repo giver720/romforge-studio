@@ -112,6 +112,9 @@ export function Ps5View() {
   );
   const selectedFormat = formats.find((format) => format.mode === mode)!;
   const selectedToolMissing = missingTools.has(selectedFormat.tool);
+  const selectedFormatIncompatible = Boolean(
+    mode === "ps5ffpfsc" && scan?.valid && !scan.pfs_compatible,
+  );
   const prosperoMissing = missingTools.has("prospero");
   const amprMissing = missingTools.has("ampr");
   const imageExt = imageSource?.split(".").pop()?.toLowerCase();
@@ -370,6 +373,9 @@ export function Ps5View() {
           {formats.map((format) => {
             const Icon = format.icon;
             const selected = mode === format.mode;
+            const incompatible = Boolean(
+              format.mode === "ps5ffpfsc" && scan?.valid && !scan.pfs_compatible,
+            );
             return (
               <button
                 key={format.mode}
@@ -389,6 +395,11 @@ export function Ps5View() {
                 <p className="mt-2 text-[0.65rem] leading-relaxed text-[var(--color-muted)]">
                   {format.description}
                 </p>
+                {incompatible && (
+                  <p className="mt-2 text-[0.61rem] leading-relaxed text-rose-300">
+                    {scan?.pfs_blockers[0]}
+                  </p>
+                )}
               </button>
             );
           })}
@@ -470,7 +481,8 @@ export function Ps5View() {
           <button
             className="btn btn-primary"
             onClick={() => source && enqueue(source, mode, `${selectedFormat.name} añadido a la cola`)}
-            disabled={busy || checkingOutputLocation || checkingOutputSpace || outputSpaceStale || Boolean(outputLocationError) || selectedSpaceInsufficient || selectedToolMissing || !source || !scan?.valid}
+            disabled={busy || checkingOutputLocation || checkingOutputSpace || outputSpaceStale || Boolean(outputLocationError) || selectedSpaceInsufficient || selectedFormatIncompatible || selectedToolMissing || !source || !scan?.valid}
+            title={selectedFormatIncompatible ? scan?.pfs_blockers[0] : undefined}
           >
             <FileArchive size={15} /> Crear {mode === "ps5ffpkg" ? ".ffpkg" : mode === "ps5exfat" ? ".exfat" : ".ffpfsc"}
           </button>
