@@ -9617,6 +9617,37 @@
       "updated_at": "2012-12-27T00:00:00+00:00"
     },
     {
+      "id": "vitadbtoo-vita:1559",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Caffeine Installer",
+      "summary": "Installer for a plugin that adds a stay-awake toggle to the Quick Menu.",
+      "author": "M-Essa11",
+      "version": "v.1.0.0",
+      "title_id": "CFNE00001",
+      "description": "Quick Menu toggle that keeps the PSVITA awake.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e52af74ab2ca1b3f3c15cc42d1f02f2a92c08e955c172f34c2f356744bbfb28d.png",
+      "screenshots": [],
+      "release_url": "https://github.com/M-Essa11/Caffeine-for-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "CaffeineForVita.vpk",
+          "url": "https://github.com/M-Essa11/Caffeine-for-Vita/releases/download/v1.0.0/CaffeineForVita.vpk",
+          "size": 80008,
+          "md5": "54450bfd8655c3585b81c1100f5ae4ef"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-14"
+    },
+    {
       "id": "hbas-wiiu:CafXplorer",
       "platforms": [
         "wiiu"
@@ -38847,13 +38878,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64447249
+          "size": 64466546
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-13T12:41:21Z"
+      "updated_at": "2026-09-14T13:52:23Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -47840,7 +47871,7 @@
       "name": "Potatoom 3",
       "summary": "Port of Doom 3 for PSVITA.",
       "author": "Rinnegatamante",
-      "version": "v.0.1",
+      "version": "v.0.5",
       "title_id": "DHEWM3ES2",
       "description": "Potatoom 3 is a PoC level port of Doom 3, popular FPS made by idSoftware with idTech 4 engine.\nThis port is based over a modified version of dhewm3 that adds basic multithreading support to idTech 4 optimized furtherly to squeeze as much performances as possible.",
       "requirements": "- libshacccg.suprx in ur0:data\n- Data files in ux0:data/dhewm3",
@@ -47858,8 +47889,8 @@
           "format": "vpk",
           "filename": "1052-dhewm3.vpk",
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1052-dhewm3.vpk",
-          "size": 9530161,
-          "md5": "b5a2bd917a208633cfe778699a26d1e4"
+          "size": 9993277,
+          "md5": "273dc81620ca0bdf13ce0ed092da1679"
         },
         {
           "format": "data",
@@ -48731,7 +48762,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5814,
+      "popularity": 5823,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48758,7 +48789,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2376,
+      "popularity": 2379,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48785,7 +48816,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4717,
+      "popularity": 4726,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48812,7 +48843,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4378,
+      "popularity": 4382,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48839,7 +48870,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36754,
+      "popularity": 36810,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48866,7 +48897,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1531,
+      "popularity": 1537,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -52458,7 +52489,7 @@
       "name": "RetroFlow Launcher",
       "summary": "3D Coverflow launcher for PSVITA.",
       "author": "jimbob4000 & VitaHEX games",
-      "version": "v.8.3.0",
+      "version": "v.8.4.0",
       "title_id": "RETROFLOW",
       "description": "This is a modded version of HexFlow Launcher; a 3d coverflow like launcher for PS Vita.\nThis version includes categories for retro games which can be launched without bubbles for RetroArch and DaedalusX64. Playstation and PSP games can also be launched without having to create bubbles for every game!",
       "requirements": "",
@@ -52474,10 +52505,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "RetroFlow_v8.3.0.vpk",
-          "url": "https://github.com/jimbob4000/RetroFlow-Launcher/releases/download/v8.3.0/RetroFlow_v8.3.0.vpk",
-          "size": 13704574,
-          "md5": "f9507502a11b9d1c20bdcb2e5c203e65"
+          "filename": "RetroFlow_v8.4.0.vpk",
+          "url": "https://github.com/jimbob4000/RetroFlow-Launcher/releases/download/v8.4.0/RetroFlow_v8.4.0.vpk",
+          "size": 14094528,
+          "md5": "9e6f8e5d47f97e81cdb154ade7309c95"
         }
       ],
       "popularity": 250610,
@@ -55130,6 +55161,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2026-06-21"
+    },
+    {
+      "id": "vitadbtoo-vita:1560",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ScummVM",
+      "summary": "Interpreter for classic point-and-click adventure games.",
+      "author": "ScummVM Team",
+      "version": "v.2026.3.0",
+      "title_id": "VSCU00001",
+      "description": "Interpreter for classic point-and-click adventure games.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a2b74a1dbbc83fe7cdf231bef816e0f4594bf0362760ccc57edae82ad69cbbc0.png",
+      "screenshots": [],
+      "release_url": "https://www.scummvm.org/downloads/",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "585-scummvm.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/585-scummvm.vpk",
+          "size": 145275498,
+          "md5": "3e47b022a6bf5d5442b17cbfb68d5289"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-14"
     },
     {
       "id": "vitadbtoo-vita:585",
