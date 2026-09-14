@@ -8,7 +8,7 @@ namespace RomForge.ProsperoBridge;
 
 internal static class Program
 {
-    private const string BridgeVersion = "1.0.0";
+    private const string BridgeVersion = "1.1.0";
 
     private static int Main(string[] args)
     {

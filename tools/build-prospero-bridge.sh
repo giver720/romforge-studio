@@ -4,20 +4,19 @@ set -euo pipefail
 root="$(cd "$(dirname "$0")/.." && pwd)"
 bridge="$root/tools/prospero-bridge"
 vendor="$bridge/vendor"
-archive="$vendor/libprosperopkg-win-x64-v2.5.zip"
-expected="b4b3d290d5058a4fd408ca5c6e0207d8f4998eab3849c36d51dc5d97592fc151"
-url="https://github.com/SvenGDK/LibProsperoPKG/releases/download/v2.5/libprosperopkg-win-x64.zip"
-license_url="https://raw.githubusercontent.com/SvenGDK/LibProsperoPKG/3e159f2ed1d2c2c53c003f79ace378d987773fe3/LICENSE"
-notice_url="https://raw.githubusercontent.com/SvenGDK/LibProsperoPKG/3e159f2ed1d2c2c53c003f79ace378d987773fe3/NOTICE"
+source="$vendor/LibProsperoPKG-src"
+repository="https://github.com/SvenGDK/LibProsperoPKG.git"
+commit="748eabf1b7d17819528cabf367d8e27109d8fce3"
 
 mkdir -p "$vendor"
-if [ ! -f "$archive" ] || [ "$(sha256sum "$archive" | cut -d' ' -f1)" != "$expected" ]; then
-  curl -fL "$url" -o "$archive"
+if [ ! -d "$source/.git" ]; then
+  git clone --filter=blob:none --no-checkout "$repository" "$source"
 fi
-echo "$expected  $archive" | sha256sum --check --status
-unzip -oq "$archive" -d "$vendor"
-curl -fL "$license_url" -o "$vendor/LICENSE"
-curl -fL "$notice_url" -o "$vendor/NOTICE"
+git -C "$source" fetch --depth 1 origin "$commit"
+git -C "$source" checkout --detach "$commit"
+test "$(git -C "$source" rev-parse HEAD)" = "$commit"
+cp "$source/LICENSE" "$vendor/LICENSE"
+cp "$source/NOTICE" "$vendor/NOTICE"
 
 publish="$bridge/publish/linux-x64"
 dotnet publish "$bridge/ProsperoBridge.csproj" -c Release -r linux-x64 --self-contained true -o "$publish"

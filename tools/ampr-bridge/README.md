@@ -8,6 +8,11 @@ los archivos originales de esa copia y solo entonces retira de la salida los
 archivos representados por el pack. Nunca modifica el dump indicado en
 `--input`.
 
+Si la entrada ya es una carpeta AMPRPAK4 completa, `convert` la restaura en un
+área temporal junto al destino y la vuelve a comprimir con el perfil elegido.
+Si solo quedaron índices o el runtime de un intento anterior, los sustituye en
+la copia de salida sin tocar la carpeta original.
+
 ```text
 romforge-ampr-bridge convert --input GAME --output GAME-lz4 --profile balanced
 romforge-ampr-bridge verify --input GAME-lz4

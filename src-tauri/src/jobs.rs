@@ -922,6 +922,8 @@ fn ps5_phase_name(message: &str) -> String {
         "Restaurando los archivos del juego".into()
     } else if lower.contains("removing ampr") {
         "Retirando los metadatos AMPR".into()
+    } else if lower.contains("refreshing stale ampr") {
+        "Limpiando rastros de una conversión AMPR anterior".into()
     } else if lower.contains("inspecting decrypted ps5") {
         "Inspeccionando el dump descifrado de PS5".into()
     } else if let Some(detail) = message.strip_prefix("[LibProsperoPKG] ") {

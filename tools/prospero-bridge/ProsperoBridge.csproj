@@ -6,16 +6,14 @@
     <Nullable>enable</Nullable>
     <AssemblyName>romforge-prospero-bridge</AssemblyName>
     <RootNamespace>RomForge.ProsperoBridge</RootNamespace>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>true</SelfContained>
     <DebugType>None</DebugType>
     <DebugSymbols>false</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="LibProsperoPkg">
-      <HintPath>vendor/LibProsperoPkg.dll</HintPath>
-      <Private>true</Private>
-    </Reference>
+    <Compile Remove="vendor/**/*.cs" />
+    <ProjectReference Include="vendor/LibProsperoPKG-src/src/LibProsperoPkg/LibProsperoPkg.csproj" />
   </ItemGroup>
 </Project>

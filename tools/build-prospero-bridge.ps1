@@ -3,33 +3,24 @@ $ErrorActionPreference = "Stop"
 $projectRoot = Split-Path -Parent $PSScriptRoot
 $bridgeRoot = Join-Path $PSScriptRoot "prospero-bridge"
 $vendor = Join-Path $bridgeRoot "vendor"
-$archive = Join-Path $vendor "libprosperopkg-win-x64-v2.5.zip"
-$expectedSha256 = "B4B3D290D5058A4FD408CA5C6E0207D8F4998EAB3849C36D51DC5D97592FC151"
-$url = "https://github.com/SvenGDK/LibProsperoPKG/releases/download/v2.5/libprosperopkg-win-x64.zip"
-$licenseUrl = "https://raw.githubusercontent.com/SvenGDK/LibProsperoPKG/3e159f2ed1d2c2c53c003f79ace378d987773fe3/LICENSE"
-$noticeUrl = "https://raw.githubusercontent.com/SvenGDK/LibProsperoPKG/3e159f2ed1d2c2c53c003f79ace378d987773fe3/NOTICE"
-
-function Get-Sha256([string]$Path) {
-    $stream = [System.IO.File]::OpenRead($Path)
-    try {
-        $sha = [System.Security.Cryptography.SHA256]::Create()
-        try { return ([System.BitConverter]::ToString($sha.ComputeHash($stream))).Replace("-", "") }
-        finally { $sha.Dispose() }
-    }
-    finally { $stream.Dispose() }
-}
+$source = Join-Path $vendor "LibProsperoPKG-src"
+$repository = "https://github.com/SvenGDK/LibProsperoPKG.git"
+$commit = "748eabf1b7d17819528cabf367d8e27109d8fce3"
 
 New-Item -ItemType Directory -Force $vendor | Out-Null
-if (-not (Test-Path $archive) -or (Get-Sha256 $archive) -ne $expectedSha256) {
-    Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile $archive
+if (-not (Test-Path (Join-Path $source ".git"))) {
+    git clone --filter=blob:none --no-checkout $repository $source
+    if ($LASTEXITCODE -ne 0) { throw "No se pudo descargar LibProsperoPKG" }
 }
-if ((Get-Sha256 $archive) -ne $expectedSha256) {
-    throw "El SHA-256 de LibProsperoPKG v2.5 no coincide"
-}
+git -C $source fetch --depth 1 origin $commit
+if ($LASTEXITCODE -ne 0) { throw "No se pudo obtener el commit fijado de LibProsperoPKG" }
+git -C $source checkout --detach $commit
+if ($LASTEXITCODE -ne 0) { throw "No se pudo seleccionar el commit fijado de LibProsperoPKG" }
+$actualCommit = (git -C $source rev-parse HEAD).Trim()
+if ($actualCommit -ne $commit) { throw "El commit de LibProsperoPKG no coincide" }
 
-Expand-Archive -Path $archive -DestinationPath $vendor -Force
-Invoke-WebRequest -UseBasicParsing -Uri $licenseUrl -OutFile (Join-Path $vendor "LICENSE")
-Invoke-WebRequest -UseBasicParsing -Uri $noticeUrl -OutFile (Join-Path $vendor "NOTICE")
+Copy-Item (Join-Path $source "LICENSE") (Join-Path $vendor "LICENSE") -Force
+Copy-Item (Join-Path $source "NOTICE") (Join-Path $vendor "NOTICE") -Force
 $publish = Join-Path $bridgeRoot "publish\win-x64"
 dotnet publish (Join-Path $bridgeRoot "ProsperoBridge.csproj") -c Release -r win-x64 --self-contained true -o $publish
 if ($LASTEXITCODE -ne 0) { throw "No se pudo compilar ROMForge Prospero Bridge" }

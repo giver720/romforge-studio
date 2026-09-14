@@ -724,6 +724,13 @@ fn first_magic(path: &Path) -> Option<u32> {
     Some(u32::from_le_bytes(bytes))
 }
 
+const ELF_MAGIC: u32 = 0x464c_457f;
+const SELF_MAGIC: u32 = 0xeef5_1454;
+// Los runtimes fake-self usados por AMPR/etaHEN y otros payloads anteriores
+// a LibProsperoPKG 2.6 conservan esta cabecera. Ya están preparados para una
+// consola modificada y no necesitan un segundo ELF bajo decrypted/.
+const LEGACY_FAKE_SELF_MAGIC: u32 = 0x1d3d_154f;
+
 fn valid_content_id(value: &str) -> bool {
     let bytes = value.as_bytes();
     bytes.len() == 36
@@ -768,12 +775,13 @@ fn collect_fpkg_modules(
         *modules += 1;
         let relative = path.strip_prefix(root).unwrap_or(&path);
         match first_magic(&path) {
-            // ELF sin cifrar: el motor puede firmarlo directamente.
-            Some(0x464c_457f) => {}
+            // ELF sin cifrar o fake-self heredado: el motor puede conservarlo
+            // o firmarlo directamente sin buscar otra copia descifrada.
+            Some(ELF_MAGIC | LEGACY_FAKE_SELF_MAGIC) => {}
             // SELF: hace falta su copia ELF bajo decrypted/ con la misma ruta.
-            Some(0xeef5_1454) => {
+            Some(SELF_MAGIC) => {
                 let decrypted = decrypted_root.join(relative);
-                if first_magic(&decrypted) != Some(0x464c_457f) {
+                if first_magic(&decrypted) != Some(ELF_MAGIC) {
                     blockers.push(format!(
                         "Falta el ELF descifrado de {} en {}/{}",
                         relative.display(),
@@ -1428,6 +1436,35 @@ mod tests {
         let lightweight = fpkg_readiness(&root.to_string_lossy(), "prepared/modules").unwrap();
         assert!(lightweight.ready, "{:?}", lightweight.blockers);
         assert_eq!(lightweight.module_count, configured_scan.fpkg_module_count);
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn accepts_legacy_fake_self_runtime_modules_for_native_fpkg() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-fpkg-legacy-fself-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        std::fs::create_dir_all(root.join("sce_sys")).unwrap();
+        std::fs::create_dir_all(root.join("fakelib")).unwrap();
+        std::fs::write(root.join("eboot.bin"), [0x7f, b'E', b'L', b'F']).unwrap();
+        for name in ["libSceAmpr.sprx", "libScePlayGo.sprx"] {
+            std::fs::write(
+                root.join("fakelib").join(name),
+                [0x4f, 0x15, 0x3d, 0x1d, 0, 1, 1, 0x12],
+            )
+            .unwrap();
+        }
+        std::fs::write(
+            root.join("sce_sys/param.json"),
+            r#"{"contentId":"UP9000-PPSA99099_00-PROSPERO00000000"}"#,
+        )
+        .unwrap();
+
+        let readiness = fpkg_readiness(&root.to_string_lossy(), "decrypted").unwrap();
+        assert!(readiness.ready, "{:?}", readiness.blockers);
+        assert_eq!(readiness.module_count, 3);
         let _ = std::fs::remove_dir_all(root);
     }
 

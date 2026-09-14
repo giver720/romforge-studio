@@ -133,6 +133,11 @@ jobs:
           trap 'rm -rf "$work"' EXIT
           git clone --depth 1 --branch v2.5 \
             https://github.com/SvenGDK/LibProsperoPKG.git "$work/libprospero"
+          mkdir -p "$work/libprospero/src/HomebrewTest/fakelib"
+          cp tools/ampr-bridge/vendor/libSceAmpr.sprx \
+            "$work/libprospero/src/HomebrewTest/fakelib/libSceAmpr.sprx"
+          cp tools/ampr-bridge/vendor/libSceAmpr.sprx \
+            "$work/libprospero/src/HomebrewTest/fakelib/libScePlayGo.sprx"
           bridge="src-tauri/binaries/romforge-prospero-bridge"
           "$bridge" convert \
             --input "$work/libprospero/src/HomebrewTest" \
@@ -154,6 +159,17 @@ jobs:
           "$bridge" verify --input "$work/lz4"
           "$bridge" unpack --input "$work/lz4" --output "$work/restored"
           diff -rq "$work/source" "$work/restored"
+          "$bridge" convert --input "$work/lz4" --output "$work/repacked" --profile fast
+          "$bridge" verify --input "$work/repacked"
+          "$bridge" unpack --input "$work/repacked" --output "$work/repacked-restored"
+          diff -rq "$work/source" "$work/repacked-restored"
+
+          cp -a "$work/source" "$work/stale"
+          cp "$work/lz4/ampr_emu.index" "$work/stale/ampr_emu.index"
+          mkdir -p "$work/stale/fakelib"
+          cp "$work/lz4/fakelib/libSceAmpr.sprx" "$work/stale/fakelib/libSceAmpr.sprx"
+          "$bridge" convert --input "$work/stale" --output "$work/from-stale" --profile fast
+          "$bridge" verify --input "$work/from-stale"
 
       - name: Prueba de arranque de la interfaz
         run: |

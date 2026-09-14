@@ -30,7 +30,7 @@ import ampr_pack
 import build_ampr_index
 
 
-BRIDGE_VERSION = "1.1.0"
+BRIDGE_VERSION = "1.2.0"
 UPSTREAM_VERSION = "0.4.2.1"
 UPSTREAM_COMMIT = "cfa85df379f6eeeb165d7badf9b648e266fe77b7"
 RUNTIME_NAME = "libSceAmpr.sprx"
@@ -85,9 +85,15 @@ def clean_old_pack_set(root: Path) -> None:
                 shutil.rmtree(path)
             else:
                 path.unlink()
+    runtime = root / "fakelib" / RUNTIME_NAME
+    runtime.unlink(missing_ok=True)
+    try:
+        runtime.parent.rmdir()
+    except OSError:
+        pass
 
 
-def reject_existing_pack_set(root: Path) -> None:
+def deployment_conflicts(root: Path) -> list[str]:
     reserved = {
         "ampr_emu.index",
         "ampr_assets.index",
@@ -103,11 +109,26 @@ def reject_existing_pack_set(root: Path) -> None:
     ]
     if (root / "fakelib" / RUNTIME_NAME).exists():
         conflicts.append(f"fakelib/{RUNTIME_NAME}")
-    if conflicts:
-        raise RuntimeError(
-            "input already contains AMPR deployment files; restore it before recompressing: "
-            + ", ".join(sorted(conflicts, key=str.lower))
-        )
+    return sorted(conflicts, key=str.lower)
+
+
+def restore_compact_tree(
+    root: Path, output: Path, phases: tuple[int, int, int, int]
+) -> Any:
+    verify_progress, copy_progress, restore_progress, cleanup_progress = phases
+    emit("phase", progress=verify_progress, message="Verifying AMPRPAK4 blocks")
+    ampr_pack.verify_packs(root / "ampr_assets.index")
+    emit("phase", progress=copy_progress, message="Copying compact deployment")
+    shutil.copytree(root, output, copy_function=shutil.copy2)
+    emit("phase", progress=restore_progress, message="Restoring packed files")
+    result = ampr_pack.extract_packs(
+        root / "ampr_assets.index", output, overwrite=True, preserve_mtime=True
+    )
+    emit("phase", progress=cleanup_progress, message="Removing AMPR deployment metadata")
+    clean_old_pack_set(output)
+    if not (output / "eboot.bin").is_file() or not (output / "sce_sys" / "param.json").is_file():
+        raise RuntimeError("restored output is not a PS5 dump root")
+    return result
 
 
 def profile_text(profile: str) -> str:
@@ -205,11 +226,35 @@ def convert(source_arg: str, output_arg: str, profile: str) -> int:
         raise RuntimeError(f"output already exists: {output}")
     ensure_separate_paths(source, output)
     reject_unsafe_tree(source)
-    reject_existing_pack_set(source)
+    conflicts = deployment_conflicts(source)
+    has_pack_index = (source / "ampr_assets.index").is_file()
+    has_pack_files = any(source.glob("ampr_assets-*.pak"))
+    if has_pack_files and not has_pack_index:
+        raise RuntimeError(
+            "input contains an incomplete AMPR deployment; use a complete compact folder "
+            "or restore the missing index before recompressing"
+        )
 
-    emit("phase", progress=2, message="Copying the source dump")
+    restore_workspace: Path | None = None
     try:
-        shutil.copytree(source, output, copy_function=shutil.copy2)
+        copy_source = source
+        if has_pack_index:
+            output.parent.mkdir(parents=True, exist_ok=True)
+            restore_workspace = Path(
+                tempfile.mkdtemp(prefix=".romforge-ampr-recompress-", dir=output.parent)
+            )
+            restored = restore_workspace / "restored"
+            restore_compact_tree(source, restored, (2, 4, 7, 10))
+            copy_source = restored
+        elif conflicts:
+            emit(
+                "phase",
+                progress=4,
+                message="Refreshing stale AMPR deployment metadata",
+            )
+
+        emit("phase", progress=12, message="Copying the source dump")
+        shutil.copytree(copy_source, output, copy_function=shutil.copy2)
         clean_old_pack_set(output)
 
         fakelib = output / "fakelib"
@@ -275,6 +320,9 @@ def convert(source_arg: str, output_arg: str, profile: str) -> int:
     except Exception:
         shutil.rmtree(output, ignore_errors=True)
         raise
+    finally:
+        if restore_workspace is not None:
+            shutil.rmtree(restore_workspace, ignore_errors=True)
 
 
 def verify(root_arg: str) -> int:
@@ -305,33 +353,8 @@ def unpack(root_arg: str, output_arg: str) -> int:
         raise RuntimeError(f"output already exists: {output}")
     ensure_separate_paths(root, output)
     reject_unsafe_tree(root)
-    emit("phase", progress=5, message="Verifying AMPRPAK4 blocks")
-    ampr_pack.verify_packs(root / "ampr_assets.index")
     try:
-        emit("phase", progress=15, message="Copying compact deployment")
-        shutil.copytree(root, output, copy_function=shutil.copy2)
-        emit("phase", progress=35, message="Restoring packed files")
-        result = ampr_pack.extract_packs(
-            root / "ampr_assets.index", output, overwrite=True, preserve_mtime=True
-        )
-        emit("phase", progress=90, message="Removing AMPR deployment metadata")
-        for path in list(output.glob("ampr_assets-*.pak")):
-            path.unlink()
-        for name in [
-            "ampr_emu.index",
-            "ampr_assets.index",
-            "ampr_assets.index.crc",
-            "ampr_assets.index.runtime",
-            RECEIPT_NAME,
-        ]:
-            (output / name).unlink(missing_ok=True)
-        (output / "fakelib" / RUNTIME_NAME).unlink(missing_ok=True)
-        try:
-            (output / "fakelib").rmdir()
-        except OSError:
-            pass
-        if not (output / "eboot.bin").is_file() or not (output / "sce_sys" / "param.json").is_file():
-            raise RuntimeError("restored output is not a PS5 dump root")
+        result = restore_compact_tree(root, output, (5, 15, 35, 90))
         emit("unpacked", progress=100, output=str(output), result=result)
         return 0
     except Exception:
