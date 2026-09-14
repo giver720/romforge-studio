@@ -14934,42 +14934,6 @@
       "updated_at": "2026-01-04T07:26:06+00:00"
     },
     {
-      "id": "vitadbtoo-vita:553",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "Daedalus X64",
-      "summary": "N64 Emulator for PSVITA.",
-      "author": "Rinnegatamante",
-      "version": "v.Nightly",
-      "title_id": "DEDALOX64",
-      "description": "This download is updated every night, at midnight, PDT, to the latest nightly release. Daedalus X64 is a Nintendo 64 emulator originally for Linux and PSP ported to PSVITA thanks to vitaGL usage.",
-      "requirements": "- Data files in ux0:data/DaedalusX64",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/932a2c421cd1217626c59ea726d5e6a16ba737f98ce86c193db75e9e633fcec9.png",
-      "screenshots": [],
-      "release_url": "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases",
-      "downloads": [
-        {
-          "format": "vpk",
-          "filename": "DaedalusX64.vpk",
-          "url": "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases/download/Nightly/DaedalusX64.vpk",
-          "size": 2823264,
-          "md5": "4a0b719836466d0629815315707ba709"
-        },
-        {
-          "format": "data",
-          "filename": "DaedalusX64.zip",
-          "url": "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases/download/Nightly/DaedalusX64.zip"
-        }
-      ],
-      "popularity": 177136,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2020-05-29"
-    },
-    {
       "id": "vitadbtoo-psp:929",
       "platforms": [
         "psp"
@@ -30744,37 +30708,6 @@
       "updated_at": "2026-08-06"
     },
     {
-      "id": "vitadbtoo-vita:1551",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "Jazz² Resurrection",
-      "summary": "Port of Jazz Jackrabbit 2 for PSVITA.",
-      "author": "deathkiller",
-      "version": "Nightly",
-      "title_id": "JAZZ20000",
-      "description": "Port of Jazz Jackrabbit 2 for PSVITA.",
-      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Jazz Jackrabbit 2 in ux0:data/jazz2",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/16ecdd2ef720a20c311dc809707dc1e7a655015fbb825e9c283ba514c3ddcc56.png",
-      "screenshots": [],
-      "release_url": "https://github.com/deathkiller/jazz2-native/releases",
-      "downloads": [
-        {
-          "format": "vpk",
-          "filename": "Jazz2.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/Jazz2.vpk",
-          "size": 5016746,
-          "md5": "a5cbeb7e7d41c8a6e7d249a62ad02b9b"
-        }
-      ],
-      "popularity": 0,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2026-09-08"
-    },
-    {
       "id": "hbas-switch:JC-color-swapper",
       "platforms": [
         "switch"
@@ -38898,78 +38831,6 @@
       "updated_at": "2026-01-10"
     },
     {
-      "id": "vitadbtoo-vita:1028",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "Nazi Zombies Portable",
-      "summary": "Port of Nazi Zombies Portable for PSVITA.",
-      "author": "NZP Reboot Team & Rinnegatamante",
-      "version": "Nightly",
-      "title_id": "NZZMBSPTB",
-      "description": "Call of Duty: Zombies \"de-make\" for PlayStation Portable & VITA, Nintendo Switch & 3DS, Windows, & Linux (ARM & x86). Powered by various Quake sourceports. Includes \"Nacht der Untoten\" and several community-made maps.",
-      "requirements": "- libshacccg.suprx in ur0:data\n- Data files in ux0:data/nzp",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e3aea1ac1c7f21812928e612452ace2ca8b7fb9078a588e07083fbf6979ba6cd.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/700a132501a00d7586707b33c0a4727c2b0664e3ec9c86996efebd810a6cdcc3.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/6e7ece334d0b8604df007a714e9d33abc092dc86af50d4545d6e9177d01f832b.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/140e581c7bbf245de22fd278ef49270d10d8539201b32e6c4b3db7f44f9c17f8.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/a79e4d2418e3aecf44aeab0aca053932e1fa639ce53fc6fe7c0def570fb1ba35.png"
-      ],
-      "release_url": "https://github.com/nzp-team/nzportable/releases",
-      "downloads": [
-        {
-          "format": "vpk",
-          "filename": "1028-nzp.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1028-nzp.vpk",
-          "size": 2483483,
-          "md5": "98bf509c79633788cf9d962f6eab053b"
-        },
-        {
-          "format": "data",
-          "filename": "1028-data-nzp.zip",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1028-data-nzp.zip"
-        }
-      ],
-      "popularity": 90489,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2026-09-09"
-    },
-    {
-      "id": "vitadbtoo-psp:910",
-      "platforms": [
-        "psp"
-      ],
-      "name": "Nazi Zombies Portable: Reboot",
-      "summary": "Recreation of Nazi Zombies from CoD: WaW for PSP.",
-      "author": "NZP Reboot Team",
-      "version": "v.nightly",
-      "title_id": "AAAAAAAAA",
-      "description": "A recreation of Nazi Zombies gamemode from Call of Duty: World at War for PSP made in Quake Engine.",
-      "requirements": "",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a941d535f4d8b467f8b558744a77ef2d8e86bed25fe82de8103c4ca994fee5d5.png",
-      "screenshots": [],
-      "release_url": "https://github.com/nzp-team/nzportable/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "nzportable-vita.zip",
-          "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-vita.zip",
-          "size": 95525379,
-          "md5": "1e70d4472518862ce77452b073e28309"
-        }
-      ],
-      "popularity": 4143,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2022-09-12"
-    },
-    {
       "id": "universal-db:nzp-team/nzportable",
       "platforms": [
         "3ds"
@@ -40915,37 +40776,6 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2025-01-10"
-    },
-    {
-      "id": "vitadbtoo-vita:1093",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "NooDS",
-      "summary": "Multiplatform Nintendo DS emulator.",
-      "author": "Hydr8gon",
-      "version": "Nightly",
-      "title_id": "NOODSVITA",
-      "description": "NooDS aims to be a fast and portable Nintendo DS emulator. It's not quite there speed-wise, but it offers most other features that you might expect from a DS emulator. It even supports GBA backwards compatibility!",
-      "requirements": "",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b5d5f2da7042b1f4a17ca433344e5858f2e7ec73b81f99ba96aeb0be97d1c15d.png",
-      "screenshots": [],
-      "release_url": "https://github.com/Hydr8gon/NooDS/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "noods-vita.zip",
-          "url": "https://github.com/Hydr8gon/NooDS/releases/download/release/noods-vita.zip",
-          "size": 480453,
-          "md5": "f3a101d6a00147ae393fabfcd335387e"
-        }
-      ],
-      "popularity": 37774,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2023-06-28"
     },
     {
       "id": "vitadbtoo-vita:1479",
@@ -48901,7 +48731,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5807,
+      "popularity": 5814,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48928,7 +48758,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2372,
+      "popularity": 2376,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48955,7 +48785,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4709,
+      "popularity": 4717,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48982,7 +48812,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4373,
+      "popularity": 4378,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49009,7 +48839,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36717,
+      "popularity": 36754,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49036,7 +48866,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1526,
+      "popularity": 1531,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -52554,44 +52384,6 @@
       "updated_at": "2025-11-15"
     },
     {
-      "id": "vitadbtoo-vita:186",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "RetroArch",
-      "summary": "Collection of emulators for various platforms.",
-      "author": "Libretro Team",
-      "version": "Nightly",
-      "title_id": "RETROVITA",
-      "description": "RetroArch is the official reference frontend for the libretro API.\nRetroArch is most popularly known for being a program with which you can play many emulators and games, which have all been customized and tailor-ported to the libretro API.\n\nIt is designed to be fast, lightweight, and portable. It tries to be on the cutting edge in terms of technology supported as well as trying to be as backwards compatible as possible.\n\nThis download is updated every night, at midnight, PDT, to the latest nightly release.",
-      "requirements": "- Data files in ux0:data/retroarch",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d2e291dcd6bc6b02a9f808e6d41f84281258967300fee882c6fa6c81c369bd43.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/49ccc14cc63693473619e47d5980d1dd163192ac77003dff34fc21ca15841cb4.png"
-      ],
-      "release_url": "https://buildbot.libretro.com/nightly/playstation/vita/",
-      "downloads": [
-        {
-          "format": "vpk",
-          "filename": "186-186.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/186-186.vpk",
-          "size": 487257047,
-          "md5": "ed3897e38f786293c63f9b65709a8605"
-        },
-        {
-          "format": "data",
-          "filename": "retroarch-data.zip",
-          "url": "https://files.coolatoms.org/retroarch-data.zip"
-        }
-      ],
-      "popularity": 392633,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2021-01-04"
-    },
-    {
       "id": "vitadbtoo-psp:899",
       "platforms": [
         "psp"
@@ -55406,42 +55198,6 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-01-19T17:45:49+00:00"
-    },
-    {
-      "id": "vitadbtoo-vita:405",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "ScummVM Buildbot",
-      "summary": "Maniac Mansion Virtual Machine emulator.",
-      "author": "cpasjuste & rsn8887 & ScummVM Team",
-      "version": "Nightly",
-      "title_id": "VSCU00001",
-      "description": "This download is updated every night, at midnight, PDT, to the latest buildbot release.\nScummVM is a program which allows you to run certain classic graphical point-and-click adventure games, provided you already have their data files.\nScummVM supports many adventure games, including LucasArts SCUMM games (such as Monkey Island 1-3, Day of the Tentacle, Sam & Max, ...), many of Sierra's AGI and SCI games (such as King's Quest 1-6, Space Quest 1-5, ...), Discworld 1 and 2, Simon the Sorcerer 1 and 2, Beneath A Steel Sky, Lure of the Temptress, Broken Sword 1 and 2, Flight of the Amazon Queen, Gobliiins 1-3, The Legend of Kyrandia 1-3, many of Humongous Entertainment's children's SCUMM games (including Freddi Fish and Putt Putt games) and many more.",
-      "requirements": "",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/82f71201e5959d0f7624b1781394f60660693c42b2302f7ee400e8534d6e6803.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/70c639f7c94a7807c7571d62c9c23821521420f88b8bbf403f3f9cda0be0c81c.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/b80ad1de84d2a81d81ec775c1210e4ff5d829c3434229328c9a23fdd09de098b.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/e476f2d370d985df88964c9dd28bef3ef30cd01b7d570edb0558bcbb0a2ebe0a.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/1e3cbcb106e3d7805dbcedf828ba9fb1f932d5ea03a87b9b464a47808bf4871f.png"
-      ],
-      "release_url": "https://wiki.scummvm.org/index.php?title=PlayStation_Vita",
-      "downloads": [
-        {
-          "format": "vpk",
-          "filename": "405-405.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/405-405.vpk",
-          "size": 145368891,
-          "md5": "cc4a26b0b3e59a24ae098bd236d5a420"
-        }
-      ],
-      "popularity": 14205,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2018-11-05"
     },
     {
       "id": "hbas-switch:sdl_pong",
@@ -71610,7 +71366,7 @@
       "name": "vita-savemgr",
       "summary": "Savegame dumper/restorer.",
       "author": "d3m3vilurr",
-      "version": "v.nightly",
+      "version": "v.2.0.0",
       "title_id": "SAVEMGR00",
       "description": "Savegames dumper/restorer for PSVITA.",
       "requirements": "",
@@ -71622,9 +71378,9 @@
         {
           "format": "vpk",
           "filename": "savemgr.vpk",
-          "url": "https://github.com/d3m3vilurr/vita-savemgr/releases/download/nightly/savemgr.vpk",
-          "size": 515954,
-          "md5": "5c3e869faa3be41b078f1d9dd58a43e6"
+          "url": "https://github.com/d3m3vilurr/vita-savemgr/releases/download/2.0.0/savemgr.vpk",
+          "size": 490724,
+          "md5": "6b38f237a6635ebf717ec6faa24231ba"
         }
       ],
       "popularity": 65278,
@@ -78882,42 +78638,6 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2021-05-13T16:09:21Z"
-    },
-    {
-      "id": "vitadbtoo-vita:815",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "YoYo Loader Vita",
-      "summary": "Game Maker Studio games loader.",
-      "author": "Rinnegatamante",
-      "version": "v.Nightly",
-      "title_id": "YYOLOADER",
-      "description": "YoYo Loader is a loader for libyoyo.so, the official GameMaker Studio Runner application for Android, for the PS Vita.\nYoYo Loader works by loading such ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run.\nThis enables to run potentially any game made with GameMaker Studio.",
-      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx OR repatch_ex.skprx in ur0:tai\n- Game Data Files: Android OR PC/Console Bytecode in ux0:data/gms",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/31908a8a78d451a49d424b135c7e7ec72732102a6504574e41cca958f407b417.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/a0426d6edeec817ac132d10f0e5c3e353d4089d16dc96b274e67d639a13ae3d5.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/00bb464250354037195259c145bb043d9ce3eea6308d85808bdf78cb8ba69677.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/b3e12bcc5907dbd10a85a73da689aa1a771a229251759a7ee08bcc01beccfa42.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/f0660f3a135769d826cced458c2bdb9382a6a751b95a87079f05bed466e181fc.png"
-      ],
-      "release_url": "https://github.com/Rinnegatamante/yoyoloader_vita/releases",
-      "downloads": [
-        {
-          "format": "vpk",
-          "filename": "YoYoLoader.vpk",
-          "url": "https://github.com/Rinnegatamante/yoyoloader_vita/releases/download/Nightly/YoYoLoader.vpk",
-          "size": 8208053,
-          "md5": "33a09c7a681033093691d6b90dc22405"
-        }
-      ],
-      "popularity": 22393,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2022-04-10"
     },
     {
       "id": "open-shop-channel-wii:YGO-DT_DLC_Tool",
