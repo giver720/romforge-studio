@@ -21,6 +21,7 @@ import {
   PS5_LAB_FORMATS,
   type Ps5AmprScan,
   type Ps5ImageSpacePreflight,
+  type Ps5LibraryPreflight,
   type Ps5OutputSpace,
   type Ps5Scan,
 } from "../lib/ps5";
@@ -119,6 +120,8 @@ export function Ps5View() {
   const [artwork, setArtwork] = useState<GameArtwork | null>(null);
   const [mode, setMode] = useState<BuildMode>("ps5ffpkg");
   const [libraryMode, setLibraryMode] = useState<LibraryMode>("ps5ffpkg");
+  const [libraryPreflight, setLibraryPreflight] = useState<Ps5LibraryPreflight | null>(null);
+  const [libraryAnalyzing, setLibraryAnalyzing] = useState(false);
   const [busy, setBusy] = useState(false);
   const [outputLocationError, setOutputLocationError] = useState<string | null>(null);
   const [checkingOutputLocation, setCheckingOutputLocation] = useState(false);
@@ -193,6 +196,49 @@ export function Ps5View() {
   const selectedSpaceInsufficient = Boolean(
     !outputSpaceStale && requiredSpace && outputSpace && outputSpace.available_bytes < requiredSpace,
   );
+  const libraryReadyPaths = useMemo(
+    () => libraryPreflight?.games.filter((game) => game.ready).map((game) => game.path) ?? [],
+    [libraryPreflight],
+  );
+  const libraryActivePaths = useMemo(
+    () => new Set(
+      jobs
+        .filter((job) => job.mode === libraryMode && ["queued", "running"].includes(job.status))
+        .map((job) => job.input.toLocaleLowerCase()),
+    ),
+    [jobs, libraryMode],
+  );
+  const libraryFreshGames = useMemo(
+    () => libraryPreflight?.games.filter(
+      (game) => game.ready && !libraryActivePaths.has(game.path.toLocaleLowerCase()),
+    ) ?? [],
+    [libraryPreflight, libraryActivePaths],
+  );
+  const libraryFreshPaths = useMemo(
+    () => libraryFreshGames.map((game) => game.path),
+    [libraryFreshGames],
+  );
+  const libraryDuplicateCount = libraryReadyPaths.length - libraryFreshPaths.length;
+  const libraryFreshInputBytes = useMemo(
+    () => libraryFreshGames.reduce((total, game) => total + game.raw_bytes, 0),
+    [libraryFreshGames],
+  );
+  const libraryFreshOutputBytes = useMemo(
+    () => libraryFreshGames.reduce((total, game) => total + game.estimated_output_bytes, 0),
+    [libraryFreshGames],
+  );
+  const libraryFreshRequiredBytes = useMemo(() => {
+    if (!libraryPreflight || !libraryFreshGames.length) return 0;
+    const temporary = libraryFreshGames
+      .map((game) => Math.max(0, game.working_bytes - game.estimated_output_bytes))
+      .sort((left, right) => right - left)
+      .slice(0, libraryPreflight.parallel_jobs)
+      .reduce((total, value) => total + value, 0);
+    return libraryFreshOutputBytes + temporary;
+  }, [libraryPreflight, libraryFreshGames, libraryFreshOutputBytes]);
+  const librarySpaceInsufficient = Boolean(
+    libraryPreflight && libraryPreflight.available_bytes < libraryFreshRequiredBytes,
+  );
 
   function spaceInsufficientFor(targetMode: string) {
     return Boolean(
@@ -230,7 +276,7 @@ export function Ps5View() {
     }
   }
 
-  async function enqueueLibrary() {
+  async function analyzeLibrary() {
     const result = (await open({
       directory: true,
       multiple: false,
@@ -239,25 +285,32 @@ export function Ps5View() {
     if (!result) return;
 
     setBusy(true);
+    setLibraryAnalyzing(true);
+    setLibraryPreflight(null);
     try {
-      const discovered = await api.ps5DiscoverGames(result);
-      if (!discovered.length) {
-        notify(
-          "warn",
-          "No se encontraron dumps PS5 en esa carpeta. Cada juego debe contener eboot.bin y sce_sys/param.json.",
-        );
-        return;
-      }
-      const active = new Set(
-        jobs
-          .filter((job) => job.mode === libraryMode && ["queued", "running"].includes(job.status))
-          .map((job) => job.input.toLocaleLowerCase()),
+      const preflight = await api.ps5LibraryPreflight(
+        result,
+        libraryMode,
+        decryptedSubfolderTrimmed,
+        settings.ps5_output_dir,
       );
-      const fresh = discovered.filter((path) => !active.has(path.toLocaleLowerCase()));
-      if (!fresh.length) {
-        notify("warn", "Todos los juegos detectados ya están activos en la cola.");
-        return;
-      }
+      setLibraryPreflight(preflight);
+      notify(
+        preflight.rejected_count ? "warn" : "ok",
+        `${preflight.ready_count} ${preflight.ready_count === 1 ? "juego listo" : "juegos listos"}${preflight.rejected_count ? ` · ${preflight.rejected_count} incompatibles` : ""}.`,
+      );
+    } catch (error) {
+      notify("error", String(error));
+    } finally {
+      setLibraryAnalyzing(false);
+      setBusy(false);
+    }
+  }
+
+  async function enqueueLibrary() {
+    if (!libraryPreflight || !libraryFreshPaths.length || librarySpaceInsufficient) return;
+    setBusy(true);
+    try {
       let libraryOptions: Record<string, string> = {};
       if (libraryMode === "ps5fpkg") {
         libraryOptions = {
@@ -267,7 +320,7 @@ export function Ps5View() {
       } else if (libraryMode === "ps5lz4") {
         libraryOptions = { profile: settings.ps5_lz4_profile };
       }
-      await api.addJobs(fresh.map((input) => ({
+      await api.addJobs(libraryFreshPaths.map((input) => ({
         input,
         mode: libraryMode,
         system: "ps5",
@@ -275,17 +328,21 @@ export function Ps5View() {
         options: libraryOptions,
       })));
       await refreshJobs();
-      const skipped = discovered.length - fresh.length;
       notify(
-        skipped ? "warn" : "ok",
-        `${fresh.length} ${fresh.length === 1 ? "juego añadido" : "juegos añadidos"} a la cola${skipped ? ` · ${skipped} duplicados omitidos` : ""}.`,
+        libraryDuplicateCount ? "warn" : "ok",
+        `${libraryFreshPaths.length} ${libraryFreshPaths.length === 1 ? "juego añadido" : "juegos añadidos"} a la cola${libraryDuplicateCount ? ` · ${libraryDuplicateCount} duplicados omitidos` : ""}.`,
       );
+      setLibraryPreflight(null);
     } catch (error) {
       notify("error", String(error));
     } finally {
       setBusy(false);
     }
   }
+
+  useEffect(() => {
+    setLibraryPreflight(null);
+  }, [libraryMode, decryptedSubfolderTrimmed, effectiveOutputSetting, settings.parallel]);
 
   useEffect(() => {
     if (
@@ -666,7 +723,7 @@ export function Ps5View() {
           </label>
           <button
             className="btn btn-ghost"
-            onClick={enqueueLibrary}
+            onClick={analyzeLibrary}
             disabled={busy || libraryToolMissing || (libraryMode === "ps5fpkg" && !decryptedSubfolderValid)}
             title={
               libraryToolMissing
@@ -674,13 +731,100 @@ export function Ps5View() {
                 : "Detecta juegos en las subcarpetas inmediatas y los añade a la cola"
             }
           >
-            <FolderInput size={15} /> Añadir biblioteca
+            <FolderInput size={15} /> {libraryAnalyzing ? "Analizando…" : "Analizar biblioteca"}
           </button>
           <p className="min-w-[240px] flex-1 text-[0.62rem] leading-relaxed text-[var(--color-faint)]">
-            Busca cada dump en las subcarpetas inmediatas, omite duplicados activos y aplica
-            {` ${selectedLibraryFormat.label}`} a todos. Cada juego se valida antes de convertirlo.
+            Inspecciona cada dump, calcula el espacio del lote y comprueba
+            {` ${selectedLibraryFormat.label}`} antes de añadir trabajos.
           </p>
         </div>
+        {libraryPreflight && (
+          <div
+            className={`mt-3 rounded-xl border p-3 ${
+              librarySpaceInsufficient
+                ? "border-rose-400/25 bg-rose-400/[0.06]"
+                : "border-emerald-400/20 bg-emerald-400/[0.04]"
+            }`}
+          >
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.66rem]">
+              <span className="font-semibold text-emerald-300">
+                {libraryPreflight.ready_count} listos
+              </span>
+              {libraryPreflight.rejected_count > 0 && (
+                <span className="text-amber-300">{libraryPreflight.rejected_count} incompatibles</span>
+              )}
+              <span className="text-[var(--color-muted)]">
+                Entrada: {bytes(libraryFreshInputBytes)}
+              </span>
+              <span className="text-[var(--color-muted)]">
+                Salida estimada: {bytes(libraryFreshOutputBytes)}
+              </span>
+            </div>
+            <div
+              className={`mt-2 flex items-start gap-2 text-[0.64rem] ${
+                librarySpaceInsufficient ? "text-rose-300" : "text-blue-300"
+              }`}
+            >
+              <HardDrive size={13} className="mt-0.5 shrink-0" />
+              <span>
+                {bytes(libraryPreflight.available_bytes)} libres · {bytes(libraryFreshRequiredBytes)} necesarios
+                para el lote con {libraryPreflight.parallel_jobs} {libraryPreflight.parallel_jobs === 1 ? "trabajo" : "trabajos"} simultáneos
+                <span className="mt-0.5 block truncate text-[var(--color-faint)]" title={libraryPreflight.location}>
+                  Comprobado en {libraryPreflight.location}
+                </span>
+              </span>
+            </div>
+            <div className="mt-3 max-h-44 space-y-1.5 overflow-y-auto pr-1">
+              {libraryPreflight.games.map((game) => (
+                <div
+                  key={game.path}
+                  className="flex items-start gap-2 rounded-lg border border-white/[0.07] bg-black/10 px-2.5 py-2 text-[0.61rem]"
+                >
+                  {game.ready
+                    ? <CheckCircle2 size={13} className="mt-0.5 shrink-0 text-emerald-300" />
+                    : <AlertTriangle size={13} className="mt-0.5 shrink-0 text-amber-300" />}
+                  <span className="min-w-0 flex-1">
+                    <span className="block truncate font-medium" title={game.path}>
+                      {game.title ?? game.title_id ?? game.path.split(/[\\/]/).pop()}
+                    </span>
+                    <span className="text-[var(--color-faint)]">
+                      {game.ready
+                        ? `${bytes(game.raw_bytes)} → ~${bytes(game.estimated_output_bytes)}`
+                        : game.blockers[0] ?? "No compatible con el formato elegido"}
+                    </span>
+                  </span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-3 flex flex-wrap gap-2">
+              <button
+                className="btn btn-primary"
+                onClick={enqueueLibrary}
+                disabled={busy || librarySpaceInsufficient || libraryFreshPaths.length === 0}
+              >
+                <FolderInput size={14} /> Añadir {libraryFreshPaths.length} a la cola
+              </button>
+              <button
+                type="button"
+                className="btn btn-quiet"
+                onClick={() => setLibraryPreflight(null)}
+                disabled={busy}
+              >
+                Cerrar análisis
+              </button>
+              {libraryDuplicateCount > 0 && (
+                <span className="self-center text-[0.61rem] text-amber-300">
+                  {libraryDuplicateCount} duplicados activos se omitirán
+                </span>
+              )}
+              {librarySpaceInsufficient && (
+                <span className="self-center text-[0.61rem] text-rose-300">
+                  Elige otro destino o libera espacio antes de continuar.
+                </span>
+              )}
+            </div>
+          </div>
+        )}
         <div className="mt-3 flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.02] p-3">
           <FolderInput size={16} className="shrink-0 text-violet-300" />
           <span className="text-[0.68rem] text-[var(--color-muted)]">Carpeta de salida PS5</span>

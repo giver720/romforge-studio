@@ -659,6 +659,45 @@ fn ps5_discover_games(dir: String) -> Result<Vec<String>, String> {
 }
 
 #[tauri::command]
+async fn ps5_library_preflight(
+    dir: String,
+    mode: String,
+    decrypted_subfolder: String,
+    output_dir: Option<String>,
+    state: State<'_, AppState>,
+) -> Result<ps5::LibraryPreflight, String> {
+    let settings = state.settings.lock().unwrap().clone();
+    let library_root = PathBuf::from(&dir);
+    let destination = output_dir
+        .or(settings.output_dir)
+        .map(PathBuf::from)
+        .filter(|path| !path.as_os_str().is_empty())
+        .unwrap_or_else(|| {
+            if library_root.join("eboot.bin").is_file()
+                && library_root.join("sce_sys/param.json").is_file()
+            {
+                library_root
+                    .parent()
+                    .map(Path::to_path_buf)
+                    .unwrap_or_default()
+            } else {
+                library_root
+            }
+        });
+    tauri::async_runtime::spawn_blocking(move || {
+        ps5::library_preflight(
+            &dir,
+            &mode,
+            &decrypted_subfolder,
+            &destination,
+            settings.parallel,
+        )
+    })
+    .await
+    .map_err(|error| format!("No se pudo analizar la biblioteca PS5: {error}"))?
+}
+
+#[tauri::command]
 fn ps5_ampr_scan(dir: String) -> ps5::AmprScan {
     ps5::ampr_scan(&dir)
 }
@@ -858,6 +897,7 @@ pub fn run() {
             ps3_trim,
             ps5_scan,
             ps5_discover_games,
+            ps5_library_preflight,
             ps5_ampr_scan,
             ps5_fpkg_readiness,
             ps5_validate_output_location,

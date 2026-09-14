@@ -38,6 +38,31 @@ export interface Ps5ImageSpacePreflight {
   required_bytes: Record<string, number>;
 }
 
+export interface Ps5LibraryGamePreflight {
+  path: string;
+  title: string | null;
+  title_id: string | null;
+  raw_bytes: number;
+  estimated_output_bytes: number;
+  working_bytes: number;
+  ready: boolean;
+  blockers: string[];
+}
+
+export interface Ps5LibraryPreflight {
+  root: string;
+  mode: string;
+  games: Ps5LibraryGamePreflight[];
+  ready_count: number;
+  rejected_count: number;
+  total_input_bytes: number;
+  estimated_output_bytes: number;
+  required_bytes: number;
+  available_bytes: number;
+  location: string;
+  parallel_jobs: number;
+}
+
 export interface Ps5AmprScan {
   valid: boolean;
   title: string | null;

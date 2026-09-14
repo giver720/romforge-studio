@@ -243,10 +243,11 @@ lee `sce_sys/param.json`, muestra nombre, Title ID, versión, portada, cantidad 
 estimación de tamaño y ahorro. La entrada debe contener `eboot.bin` y `sce_sys/param.json`; no se
 admite una carpeta contenedora adicional.
 
-Para colecciones, **Añadir biblioteca** detecta automáticamente los dumps en las subcarpetas
-inmediatas, omite trabajos duplicados que ya estén activos y los añade juntos a la cola con el
-formato seleccionado. El lote admite FFPKG, exFAT, FFPFSC, FPKG nativo y AMPR/LZ4; cada juego
-vuelve a validarse de manera independiente antes de convertirlo.
+Para colecciones, **Analizar biblioteca** detecta automáticamente los dumps en las subcarpetas
+inmediatas y muestra una preinspección antes de tocar la cola. Indica qué juegos son compatibles
+con el formato elegido, cuáles se omitirán, el tamaño final estimado y el espacio máximo del lote
+según los trabajos simultáneos configurados. El lote admite FFPKG, exFAT, FFPFSC, FPKG nativo y
+AMPR/LZ4; los duplicados activos se excluyen del cálculo y cada juego vuelve a validarse al empezar.
 
 Durante el trabajo, la cola recibe en vivo las fases que publican MkPFS y LibProsperoPKG. AMPR/LZ4
 además muestra su porcentaje real de copia, indexado, compresión, comparación y restauración, sin

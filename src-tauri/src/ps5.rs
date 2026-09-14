@@ -74,6 +74,33 @@ pub struct ImageSpacePreflight {
 }
 
 #[derive(Clone, Debug, Serialize)]
+pub struct LibraryGamePreflight {
+    pub path: String,
+    pub title: Option<String>,
+    pub title_id: Option<String>,
+    pub raw_bytes: u64,
+    pub estimated_output_bytes: u64,
+    pub working_bytes: u64,
+    pub ready: bool,
+    pub blockers: Vec<String>,
+}
+
+#[derive(Clone, Debug, Serialize)]
+pub struct LibraryPreflight {
+    pub root: String,
+    pub mode: String,
+    pub games: Vec<LibraryGamePreflight>,
+    pub ready_count: usize,
+    pub rejected_count: usize,
+    pub total_input_bytes: u64,
+    pub estimated_output_bytes: u64,
+    pub required_bytes: u64,
+    pub available_bytes: u64,
+    pub location: String,
+    pub parallel_jobs: usize,
+}
+
+#[derive(Clone, Debug, Serialize)]
 pub struct AmprScan {
     pub valid: bool,
     pub title: Option<String>,
@@ -106,6 +133,33 @@ pub fn output_space(destination: &Path) -> Result<OutputSpace, String> {
 
 fn with_space_margin(payload: u64, minimum_margin: u64) -> u64 {
     payload.saturating_add((payload / 10).max(minimum_margin))
+}
+
+pub fn estimated_output_bytes(mode: &str, scan: &Ps5Scan) -> u64 {
+    match mode {
+        MODE_EXFAT | MODE_FFPKG => scan.image_bytes,
+        MODE_FFPFSC | MODE_LZ4 => scan.compressed_estimate_bytes,
+        MODE_NATIVE_FPKG => scan.image_bytes,
+        _ => 0,
+    }
+}
+
+/// Pico conservador para un único trabajo, incluyendo la salida temporal y la
+/// copia usada por la verificación antes de publicar el resultado.
+pub fn output_required_free_space(mode: &str, scan: &Ps5Scan) -> u64 {
+    let payload = match mode {
+        MODE_EXFAT => scan.image_bytes,
+        MODE_FFPKG => scan.image_bytes.saturating_add(scan.raw_bytes),
+        MODE_FFPFSC => scan
+            .compressed_estimate_bytes
+            .saturating_add(scan.raw_bytes),
+        MODE_NATIVE_FPKG => scan.raw_bytes,
+        MODE_LZ4 => scan
+            .raw_bytes
+            .saturating_add(scan.compressed_estimate_bytes),
+        _ => 0,
+    };
+    with_space_margin(payload, GIB)
 }
 
 fn read_u16(data: &[u8], offset: usize) -> Result<u16, String> {
@@ -812,6 +866,103 @@ pub fn discover_game_roots(dir: &str) -> Result<Vec<String>, String> {
     Ok(games)
 }
 
+/// Analiza una colección completa antes de tocar la cola. Además de validar
+/// cada dump para el formato elegido, calcula el pico del lote: todas las
+/// salidas que quedarán guardadas más los temporales de los trabajos que
+/// puedan ejecutarse simultáneamente.
+pub fn library_preflight(
+    dir: &str,
+    mode: &str,
+    decrypted_subfolder: &str,
+    destination: &Path,
+    parallel_jobs: usize,
+) -> Result<LibraryPreflight, String> {
+    if !matches!(
+        mode,
+        MODE_EXFAT | MODE_FFPKG | MODE_FFPFSC | MODE_NATIVE_FPKG | MODE_LZ4
+    ) {
+        return Err("El formato elegido no admite bibliotecas de PS5".into());
+    }
+
+    let roots = discover_game_roots(dir)?;
+    if roots.is_empty() {
+        return Err(
+            "No se encontraron dumps PS5. Cada juego debe contener eboot.bin y sce_sys/param.json"
+                .into(),
+        );
+    }
+
+    let mut games = Vec::with_capacity(roots.len());
+    let mut total_input_bytes = 0u64;
+    let mut total_output_bytes = 0u64;
+    let mut temporary_peaks = vec![];
+    for path in roots {
+        let scan = scan_with_decrypted_subfolder(&path, decrypted_subfolder);
+        let mut blockers = if scan.valid {
+            vec![]
+        } else {
+            vec![scan
+                .error
+                .clone()
+                .unwrap_or_else(|| "El dump no es válido".into())]
+        };
+        if scan.valid && mode == MODE_FFPFSC && !scan.pfs_compatible {
+            blockers.extend(scan.pfs_blockers.clone());
+        }
+        if scan.valid && mode == MODE_NATIVE_FPKG && !scan.fpkg_ready {
+            blockers.extend(scan.fpkg_blockers.clone());
+        }
+        if scan.valid {
+            if let Err(message) = validate_output_location(Path::new(&path), destination) {
+                blockers.push(message);
+            }
+        }
+
+        let estimated_output = estimated_output_bytes(mode, &scan);
+        let working_bytes = output_required_free_space(mode, &scan);
+        let ready = blockers.is_empty();
+        if ready {
+            total_input_bytes = total_input_bytes.saturating_add(scan.raw_bytes);
+            total_output_bytes = total_output_bytes.saturating_add(estimated_output);
+            temporary_peaks.push(working_bytes.saturating_sub(estimated_output));
+        }
+        games.push(LibraryGamePreflight {
+            path,
+            title: scan.title,
+            title_id: scan.title_id,
+            raw_bytes: scan.raw_bytes,
+            estimated_output_bytes: estimated_output,
+            working_bytes,
+            ready,
+            blockers,
+        });
+    }
+
+    temporary_peaks.sort_unstable_by(|left, right| right.cmp(left));
+    let parallel_jobs = parallel_jobs.max(1).min(temporary_peaks.len().max(1));
+    let concurrent_temporary_bytes = temporary_peaks
+        .into_iter()
+        .take(parallel_jobs)
+        .fold(0u64, u64::saturating_add);
+    let required_bytes = total_output_bytes.saturating_add(concurrent_temporary_bytes);
+    let space = output_space(destination)?;
+    let ready_count = games.iter().filter(|game| game.ready).count();
+
+    Ok(LibraryPreflight {
+        root: dir.into(),
+        mode: mode.into(),
+        rejected_count: games.len().saturating_sub(ready_count),
+        games,
+        ready_count,
+        total_input_bytes,
+        estimated_output_bytes: total_output_bytes,
+        required_bytes,
+        available_bytes: space.available_bytes,
+        location: space.location,
+        parallel_jobs,
+    })
+}
+
 fn checked_tree_size(root: &Path, current: &Path) -> Result<u64, String> {
     let mut total = 0u64;
     for entry in std::fs::read_dir(current)
@@ -1352,6 +1503,79 @@ mod tests {
             discover_game_roots(&root.to_string_lossy()).unwrap(),
             vec![root.to_string_lossy().to_string()]
         );
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn library_preflight_rejects_incompatible_games_before_queueing() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-library-preflight-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        for (folder, title) in [("Ready", "Ready Game"), ("Unicode", "Unicode Game")] {
+            let game = root.join(folder);
+            std::fs::create_dir_all(game.join("sce_sys")).unwrap();
+            std::fs::write(game.join("eboot.bin"), [0x7f, b'E', b'L', b'F']).unwrap();
+            std::fs::write(
+                game.join("sce_sys/param.json"),
+                format!(r#"{{"titleName":"{title}"}}"#),
+            )
+            .unwrap();
+        }
+        std::fs::write(root.join("Unicode/canción.bin"), b"data").unwrap();
+
+        let result =
+            library_preflight(&root.to_string_lossy(), MODE_FFPFSC, "decrypted", &root, 2).unwrap();
+        assert_eq!(result.ready_count, 1);
+        assert_eq!(result.rejected_count, 1);
+        assert_eq!(result.parallel_jobs, 1);
+        assert!(result.required_bytes > result.estimated_output_bytes);
+        let rejected = result.games.iter().find(|game| !game.ready).unwrap();
+        assert_eq!(rejected.title.as_deref(), Some("Unicode Game"));
+        assert!(rejected.blockers[0].contains("ASCII"));
+        let _ = std::fs::remove_dir_all(root);
+    }
+
+    #[test]
+    fn library_preflight_accounts_for_parallel_temporary_outputs() {
+        let root = std::env::temp_dir().join(format!(
+            "romforge-studio-ps5-library-parallel-{}",
+            std::process::id()
+        ));
+        let _ = std::fs::remove_dir_all(&root);
+        for folder in ["Game A", "Game B"] {
+            let game = root.join(folder);
+            std::fs::create_dir_all(game.join("sce_sys")).unwrap();
+            std::fs::write(game.join("eboot.bin"), [0x7f, b'E', b'L', b'F']).unwrap();
+            std::fs::write(game.join("sce_sys/param.json"), b"{}").unwrap();
+        }
+
+        let serial =
+            library_preflight(&root.to_string_lossy(), MODE_FFPKG, "decrypted", &root, 1).unwrap();
+        let parallel =
+            library_preflight(&root.to_string_lossy(), MODE_FFPKG, "decrypted", &root, 2).unwrap();
+        assert_eq!(serial.ready_count, 2);
+        assert_eq!(parallel.parallel_jobs, 2);
+        assert!(parallel.required_bytes > serial.required_bytes);
+
+        let unsafe_destination = root.join("Game A/converted");
+        let guarded = library_preflight(
+            &root.to_string_lossy(),
+            MODE_FFPKG,
+            "decrypted",
+            &unsafe_destination,
+            1,
+        )
+        .unwrap();
+        assert_eq!(guarded.ready_count, 1);
+        assert!(guarded
+            .games
+            .iter()
+            .find(|game| game.path.ends_with("Game A"))
+            .unwrap()
+            .blockers[0]
+            .contains("dentro del dump"));
         let _ = std::fs::remove_dir_all(root);
     }
 

@@ -445,25 +445,7 @@ fn ps5_fpkg_required_free_space(image_bytes: u64) -> u64 {
 }
 
 fn ps5_output_required_free_space(mode: &str, scan: &crate::ps5::Ps5Scan) -> u64 {
-    use crate::ps5::{MODE_EXFAT, MODE_FFPFSC, MODE_FFPKG, MODE_LZ4, MODE_NATIVE_FPKG};
-    let payload = match mode {
-        MODE_EXFAT => scan.image_bytes,
-        // Ambos modos extraen una copia completa junto al resultado para la
-        // comparación byte a byte antes de publicar.
-        MODE_FFPKG => scan.image_bytes.saturating_add(scan.raw_bytes),
-        MODE_FFPFSC => scan
-            .compressed_estimate_bytes
-            .saturating_add(scan.raw_bytes),
-        MODE_NATIVE_FPKG => scan.raw_bytes,
-        // AMPR primero copia el árbol y después crea los packs antes de retirar
-        // de la salida los archivos representados por ellos.
-        MODE_LZ4 => scan
-            .raw_bytes
-            .saturating_add(scan.compressed_estimate_bytes),
-        _ => 0,
-    };
-    let margin = (payload / 10).max(1024 * 1024 * 1024);
-    payload.saturating_add(margin)
+    crate::ps5::output_required_free_space(mode, scan)
 }
 
 fn available_space_near(path: &Path) -> Result<(u64, PathBuf), String> {
