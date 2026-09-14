@@ -1100,7 +1100,7 @@
       "name": "3DS-CLI",
       "summary": "Run full RISCV Linux on many game consoles",
       "author": "cmdada",
-      "version": "5.1",
+      "version": "5.2",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/cmdada/3DS-CLI/main/icon.png",
       "release_url": "https://github.com/cmdada/3DS-CLI/releases",
@@ -1108,14 +1108,14 @@
         {
           "format": "zip",
           "filename": "3ds_cli.zip",
-          "url": "https://github.com/cmdada/3DS-CLI/releases/download/5.1/3ds_cli.zip",
-          "size": 63052752
+          "url": "https://github.com/cmdada/3DS-CLI/releases/download/5.2/3ds_cli.zip",
+          "size": 63095493
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-10T13:42:07Z"
+      "updated_at": "2026-09-14T00:56:29Z"
     },
     {
       "id": "universal-db:icicle1133/3ds-Controller",
@@ -4757,7 +4757,7 @@
       "version": "v.0.8",
       "title_id": "GMSGH0ATL",
       "description": "Ported version of Glitchedheart's version of Atari 2600 game. Includes high score saving.",
-      "requirements": "",
+      "requirements": "- Game Data Files: PC (game.win) in ux0:app/GMSGH0ATL/games",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/613a2c37289dd4c62707482a9f28873d08878e2cf73b19eace02d12301b1edbf.png",
       "screenshots": [
@@ -6017,7 +6017,7 @@
       "version": "v.1.4",
       "title_id": "SSB64VITA",
       "description": "Port of Battleship for PSVITA.",
-      "requirements": "",
+      "requirements": "- Game Data Files: Super Smash Bros. 64 (.o2r) in ux0:data/battleship",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/afe0d67adefa58a9d8e98cf9a0614df494159d634dd0acf6bf521d6f00055a08.png",
       "screenshots": [],
@@ -10381,7 +10381,7 @@
       "version": "v.1.0",
       "title_id": "CATS11111",
       "description": "Cat Quest is an open world RPG set in the pawsome world of cats!\nLeap into a grand adventure in purrsuit of the evil Drakoth and your catnapped sister! Explore Felingard's huge overworld map, risk life and limb delving into dungeons for epic loot, and lend a paw to a furry cast of characters in a flurry of side quests.",
-      "requirements": "",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/CATS11111",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/8b362535a34713d3872c16e0fcaa72b2decfb746b3115541d2bb7f3b02cf5d87.png",
       "screenshots": [
@@ -12143,7 +12143,7 @@
       "version": "v.1.35",
       "title_id": "CFTK12345",
       "description": "Coffee Talk is a game about listening to peopleÃ¢â‚¬â„¢s problems and helping them by serving up a warm drink out of the ingredients you have in stock. It is a game that depicts lives as humanly as possible, while having a cast that is more than just humans.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/CFTK12345",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/74b634760cf29c428489ff3ef0bbbb80bce50ee9ee7542d8649c2a155d261ab0.png",
       "screenshots": [
@@ -17601,7 +17601,7 @@
       "version": "v.1.02",
       "title_id": "DROP54000",
       "description": "Dropsy is a non-traditional take on the classic point and click adventure formula starring the gameÃ¢â‚¬â„¢s perpetually carefree namesake clown as he explores a richly detailed world full of colorful characters and sinister secrets, doling out hugs along the way.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/DROP54000",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c586eeaf82a15268a4d71044ab6598a460380ab17ae946c58a49c01b8a5f9efa.png",
       "screenshots": [
@@ -22477,7 +22477,7 @@
       "version": "v.1.1",
       "title_id": "FLPR12345",
       "description": "Simple port of Flipper Volcano by Sokpop for Playstation Vita.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/FLPR12345",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/18ae0c62fc40fdc83468bf3769effa2a3f1d8fc4f97b0089ce702d19a61dcd54.png",
       "screenshots": [
@@ -23311,7 +23311,7 @@
       "version": "v.1.0",
       "title_id": "GMSV00001",
       "description": "Freeway Mutant is an endless monster-blasting runner.\nThe game is all about weaving through a shattered road, dodging other mutants, avoiding explosive curling disks, and collecting parts to make your gun more powerful.",
-      "requirements": "",
+      "requirements": "- Game Data Files: PC (game.win) in ux0:app/GMSV00001/games",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/12f6c0dc98fbc48d8608919551d8e2689e8486eaf51ec192a8b64400d5568db0.png",
       "screenshots": [],
@@ -23441,7 +23441,7 @@
       "version": "v.1.2",
       "title_id": "FRGB12345",
       "description": "Simple port of Froggy's Battle by Doot Tiny Games for Playstation Vita.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/FRGB12345",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/8295adc7846feb040c72c0acde76029f85eb4519d6601e915f0a3aea6ce510dc.png",
       "screenshots": [
@@ -26130,7 +26130,7 @@
       "version": "v.1.0",
       "title_id": "GOLF55533",
       "description": "Golfing Over It with Alva Majo is a discouraging game about climbing a surreal mountain with a golf ball, a different take on 2017's hit Getting Over It with Bennett Foddy. Experience the challenge of climbing an unyielding mountain without infuriating controls being part of that challenge.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/GOLF55533",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/083905305dd33fed5cca25dcf7dd3bc5aa962796729987d6fd1bcee373c29086.png",
       "screenshots": [
@@ -26231,7 +26231,7 @@
       "version": "v.1.0",
       "title_id": "HBGMSGRV1",
       "description": "A port of Grave, an entry for the Ludum Dare 33 Game Jam by uheartbeast.",
-      "requirements": "",
+      "requirements": "- Game Data Files: PC (game.win) in ux0:app/HBGMSGRV1/games",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4bd2ebdc875a4c8f11c0c2dffcf91de9351fcf312a7dfe1987c0eb856b9fbc08.png",
       "screenshots": [],
@@ -30037,7 +30037,7 @@
       "version": "alpha.1",
       "title_id": "INSC12345",
       "description": "Inscryption is an inky black card-based odyssey that blends the deckbuilding roguelike, escape-room style puzzles, and psychological horror into a blood-laced smoothie. Darker still are the secrets inscrybed upon the cards...",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/INSC12345",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/932102655a9eaa1e20426ea0e3a1ddbf7265bdae0daf8ffd6f4d1394250b19ba.png",
       "screenshots": [
@@ -30884,7 +30884,7 @@
       "version": "v.1.1",
       "title_id": "JELY00001",
       "description": "JellyCar is a great 2d game with soft body physics created by Walaber. This is a reimplemented version for Playstation Vita.",
-      "requirements": "",
+      "requirements": "- Game Data Files: JellyCar in ux0:data/jelly",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/aac16ae00587d26f5f0633def3e3fb658754afd99418fb9224fc6b8b24ebdb0b.png",
       "screenshots": [],
@@ -32048,7 +32048,7 @@
       "version": "v.1.0",
       "title_id": "KPMN12352",
       "description": "Keep in Mind is a psychological indie game that follows Jonas, a man struggling with mental illness, on a journey of reflection and emotional healing. This game was created for those who struggle with mental illness or those who find themselves lost in the dark. This game is meant to be a therapeutic experience, but because of its sensitive and controversial content, some audiences may want to be wary.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/KPMN12352",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/7dced581de4f700df62ae4e9e825f3d4ef1cd4b72c465a9a6ddbd7735fae9842.png",
       "screenshots": [
@@ -39203,7 +39203,7 @@
       "version": "v.1.0",
       "title_id": "HELL12345",
       "description": "Port of Neighbours From Hell for PSVita based on the free 1.1.5 version of Neighbours From Hell.\nNOTE: All Season 1 levels are unlocked. Season 2 levels are disabled as they are missing from the game files. Social buttons have been disabled because they caused crashes.",
-      "requirements": "- Game Data Files: Android",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/HELL12345",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/aac21744fcc03deeaefc1b8495fbab6447787c624eda1491de46ac1a01f2d1ac.png",
       "screenshots": [
@@ -40251,7 +40251,7 @@
       "version": "v.0.5",
       "title_id": "NITW22222",
       "description": "NIGHT IN THE WOODS is an adventure game focused on exploration, story, and character, featuring dozens of characters to meet and lots to do across a lush, vibrant world. After a successful Kickstarter it's being made by Infinite Fall, a teamup of Alec Holowka (Aquaria), Scott Benson (Late Night Work Club), and Bethany Hockenberry.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/NITW22222",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ea5ec76a6f36fa98af6537da8cbc9e825e5451dc1b0d26f69a0f31a80dc7cfb1.png",
       "screenshots": [
@@ -42280,7 +42280,7 @@
       "version": "v.2.6.5",
       "title_id": "NXEV00001",
       "description": "NXEngine-evo, a refactored engine for Cave Story. The original game files are required and are not included.",
-      "requirements": "- Game Data Files: Cave Story in ux0:data/timidity",
+      "requirements": "",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4d46f97253653049864fac2ad3a43c9a6a25c4de65bf256fab9d26643793ac38.png",
       "screenshots": [],
@@ -43018,7 +43018,7 @@
       "version": "v.1.0",
       "title_id": "OMEGAVITA",
       "description": "Omega Strike is a metroidvania game with a vast, open ended world and multiple playable characters. Explore the world, learn new abilities, upgrade your weapons and defeat Doctor Omega and his mutant armies!",
-      "requirements": "",
+      "requirements": "- Game Data Files: PC (game.win) in ux0:app/OMEGAVITA/games",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/10d6ad3cb6129fedf1ea2264896595dce73b12c73e00f23f2abd2ad9a258fa40.png",
       "screenshots": [],
@@ -46461,7 +46461,7 @@
       "version": "v.1.00",
       "title_id": "PIKU12345",
       "description": "Pikuniku is an absurdly wonderful puzzle-exploration game that takes place in a strange but playful world where not everything is as happy as it seems.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/PIKU12345",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/266cefc922207efee1f69a6b95d40ea5d4746f6257e6d0f46a2691730d0b8e5d.png",
       "screenshots": [
@@ -47532,7 +47532,7 @@
       "version": "v.0.9",
       "title_id": "POMO00137",
       "description": "Native port of Pocket Mortys.",
-      "requirements": "",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/POMO00137",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/cf2ebe116b3d65fa00421c6e8319ecd68cea58c82e9ea46ecb95a81ae7a9cb39.png",
       "screenshots": [],
@@ -47563,7 +47563,7 @@
       "version": "v.1.0",
       "title_id": "SPORTPACK",
       "description": "Collection of 10 ultra tiny minigames made by hwilson. Inspired by weird rom collections on pirate multicarts, but hopefully with a tiny bit more quality.",
-      "requirements": "",
+      "requirements": "- Game Data Files: PC (game.win) in ux0:app/SPORTPACK/games",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f4d3736f1c0f314dee9972067f81f1659c5d7c6a42b51dc2e3ed2b724929d99d.png",
       "screenshots": [
@@ -48347,7 +48347,7 @@
       "version": "v.1.0",
       "title_id": "PREHIST01",
       "description": "Prehistorik 2 is a platformer where you control a neanderthal who must march through hostile pre-historic environments seeking food and keeping himself safe. Use your club to crush animal enemies, many of which then release bonus items to collect. Other bonus items are located around the levels, while yet more can be found by using your club creatively and adventurously.",
-      "requirements": "- Game Data Files: DOS",
+      "requirements": "- Game Data Files: DOS in ux0:app/PREHIST01/data",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3bf3eff7d883e34a9c76eff0fdd62b4a7d8215977713b363257d40e5a3122fa5.png",
       "screenshots": [
@@ -48901,7 +48901,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5802,
+      "popularity": 5807,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48928,7 +48928,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2371,
+      "popularity": 2372,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48955,7 +48955,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4706,
+      "popularity": 4709,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48982,7 +48982,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4372,
+      "popularity": 4373,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49009,7 +49009,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36687,
+      "popularity": 36717,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49036,7 +49036,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1522,
+      "popularity": 1526,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -50419,7 +50419,7 @@
       "version": "v.1.0",
       "title_id": "PNCH11111",
       "description": "Punch Club is a sporting management simulation developed by Lazy Bear Games and published by tinyBuild. In the game, the player manages an upcoming boxer in training and preparation for a series of boxing matches at a local club, while searching for clues of who killed their father.",
-      "requirements": "- Game Data Files: Steam",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/PNCH11111",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e2a8f91086eb42b61b2b2efc9c945676427bdd710a7a9d18c562c04efbbb1aa1.png",
       "screenshots": [
@@ -50510,7 +50510,7 @@
       "version": "v.1.0",
       "title_id": "PRYA22322",
       "description": "Pureya is a collection of arcade minigames that play with just 2 buttons.\nEvery 10 seconds, the game will jump from one random minigame to another.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/PRYA22322",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e7a4dc5bfdc8baa34e60d831afeb333edc533160a180a3bd0a5360876aaed697.png",
       "screenshots": [
@@ -53762,7 +53762,7 @@
       "version": "v.1.3.1",
       "title_id": "DINK54321",
       "description": "Port of Dink Smallwood HD for PSVITA.\nThe game centers on Dink, a pig farmer-turned-hero who embarks on various quests throughout his world. The game features isometric, Diablo-like gameplay, including weapons, items, and magic. The game has a satirical off-color slant, including everything from a fiercely abusive uncle to a town that worships ducks. Dink is never freed from the grievances of being a pig farmer, a fact he is far too often reminded of by his nemesis, Milder Flatstomp.",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: Android/Windows/Mac/iOS",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Android/Windows/Mac/iOS in ux0:data/Dink Smallwood HD",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f5eafeee779fcff58a758318517664480fea1de1f8affc430d3b36b08e9aafc9.png",
       "screenshots": [],
@@ -59617,7 +59617,7 @@
       "version": "v.1.1.0",
       "title_id": "SORT12345",
       "description": "A port of Graeme Borland's Sort the Court to PSVITA.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/SORT12345",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4939eb633f1a997a974111ff884ea936f777fcbe49a3a5e7bda9894bb49e255f.png",
       "screenshots": [],
@@ -60670,7 +60670,7 @@
       "version": "v.0.9-hotfix.0",
       "title_id": "STWF00001",
       "description": "This is a a port of Star Warfare: Alien Invasion for the PlayStation Vita, playable with the Vita's controls and with trophies.",
-      "requirements": "- Game Data Files: Android",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/STWF00001",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/732d9bb0c4ff7eb9cf6b90a6b4ee5137c92493530b1c06e9fd053ffebf6d7637.png",
       "screenshots": [
@@ -62073,7 +62073,7 @@
       "version": "v.1.00",
       "title_id": "SMRV00000",
       "description": "A port of Super Mega Runners for PS Vita. A runner game inspired by 8-bit retro games.",
-      "requirements": "- Game Data Files: Android",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/SMRV00000",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4ba19e71a5db8922082ee7628f86b31be0fa8e6b9589db6c796f5abbd47213d5.png",
       "screenshots": [
@@ -65014,7 +65014,7 @@
       "version": "v.1.0",
       "title_id": "BLUES0001",
       "description": "The Blues Brothers is a 1991 platformer based on the self-titled band. You control either Jake or Elwood to evade police on your way to a blues concert. Throughout the 6 fun levels the game offers, your only weapons are agility and throwable crates.",
-      "requirements": "- Game Data Files: Amiga OR DOS",
+      "requirements": "- Game Data Files: DOS in ux0:app/BLUES0001/data",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1801dabbf92e4adfa4b57ef790f41c9c1a08fa63293e8024d0dfdc37ae214a9d.png",
       "screenshots": [
@@ -65048,7 +65048,7 @@
       "version": "v.1.0",
       "title_id": "BLUES0002",
       "description": "Jukebox Adventure is the sequel to The Blues Brothers. Once again, the player has to choose a favourite Blues Brother and take him through different side-scrolling platform levels. He needs to collect records and use them as defence by throwing them towards enemies. There are also power-ups that can be gathered until the jukebox to progress to the next level is found.",
-      "requirements": "- Game Data Files: DOS",
+      "requirements": "- Game Data Files: DOS in ux0:app/BLUES0002/data",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/8fbdfb49acde1b9e16b41736dba68a4f9b1483cc3c0fcc5e51e25d159f217190.png",
       "screenshots": [
@@ -65149,7 +65149,7 @@
       "version": "v.1.0",
       "title_id": "ISSY00001",
       "description": "The Curse of Issyos is a retro styled action platformer with nothing but the usual in an old 8 bit game: a good bunch of enemies and bosses, linear and open scroll levels, secrets to discover and a background story inspired by Greek mythology. It doesn't try to mimic a retro system in particular, but it's coherent with its own limitations in the use of colors, sprites and chip sounds.",
-      "requirements": "- Game Data Files: PC in ux0:app/ISSY00001/games",
+      "requirements": "- Game Data Files: PC",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3d2f9a4a3b74d49afd94a69f14760013a7148284cd1ed6fb5b80d850b8d61197.png",
       "screenshots": [],
@@ -65990,7 +65990,7 @@
       "version": "v.1.0",
       "title_id": "TIEE00000",
       "description": "TIE is a game about depression and the daily grind we are all forced too endure. Experience a week of more of the same, every day, through the eyes of our main character as the world and its inhabitants slowly start too become increasingly unfamiliar. Irregularities in the world and from deep within plague your day to day and a strange force seems to tear the very fabric of reality itself, as it becomes apparent that not all is as it seems in this short, atmospheric game about depression and existential dread.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/TIEE00000",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4c43e4c14cd0694ced16e15a9c724959ee6115a031dc3c8489a04a95e2be33a1.png",
       "screenshots": [
@@ -68656,7 +68656,7 @@
       "version": "v.0.3",
       "title_id": "UNSI22233",
       "description": "Port of Unsighted for PSVITA.\nThe game is a Metroidvania adventure game in which players assume the role of Alma, an automaton who has amnesia in the aftermath of a war between humans and robots.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: PC, Media folder, in ux0:app/UNSI22233",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1ee1ca16096bbb1d85d0ae498a5d54428d8eddacbb4aaacb54cc345673baddc7.png",
       "screenshots": [],
