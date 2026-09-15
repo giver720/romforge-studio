@@ -5543,7 +5543,7 @@
       "version": "v.0.13",
       "title_id": "BALA00001",
       "description": "Port of Balatro for PSVITA. Balatro is a poker-inspired roguelike deck builder all about creating powerful synergies and winning big.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: Steam, patched to game.love with the PC tool, in ux0:app/BALA00001",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/546d6118591bf845dce75b09d82f7a21269e2db9742c2c2aa07d67f800189318.png",
       "screenshots": [
@@ -6226,7 +6226,7 @@
       ],
       "name": "Beach Buggy Racing Vita",
       "summary": "Port of Beach Buggy Racing for PSVita.",
-      "author": "ChatGPT AI",
+      "author": "MeninoSung",
       "version": "v.1.0",
       "title_id": "BBRV00001",
       "description": "Unofficial wrapper/port of Beach Buggy Racing for PlayStation Vita.\nThe port loads the official Android ARMv7 executable directly into memory, links its dependencies to native Vita functions, and applies the compatibility layer required to run it. In practice, this provides a lightweight Android-like environment in which the original game code can run natively on the PS Vita.",
@@ -7651,7 +7651,7 @@
       ],
       "name": "Bloons TD 5 Vita",
       "summary": "Port of Bloons TD 5 for PSVita.",
-      "author": "Claude AI",
+      "author": "reallootfury",
       "version": "v.1.01",
       "title_id": "BTD500001",
       "description": "An unofficial PlayStation Vita loader for the Android ARMv7 release of Bloons TD 5.",
@@ -8013,7 +8013,7 @@
       "version": "v.1.0",
       "title_id": "BOMBS1762",
       "description": "Port of BombSquad for PSVITA.",
-      "requirements": "",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Android in ux0:data/bombsquad",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/df0bd91e1a7d0c111e986ae564592b717501e4b2b32e5973de14c99ee0883099.png",
       "screenshots": [],
@@ -11138,7 +11138,7 @@
       ],
       "name": "Chex Quest Vita",
       "summary": "Port of doomgeneric for PSVita.",
-      "author": "Claude AI",
+      "author": "DraxTube",
       "version": "v.1.0",
       "title_id": "CHEX00001",
       "description": "Port of doomgeneric for PSVita.\nThe purpose of doomgeneric is to make porting Doom easier. Of course Doom is already portable but with doomgeneric it is possible with just a few functions.",
@@ -13450,7 +13450,7 @@
       "version": "v.1.0",
       "title_id": "CRAZYTAXI",
       "description": "Crazy Traffic Jam 3D is an endless arcade driving game with stylized 3D graphics. Drive your car through highway traffic, earn coins, collect lightning boosts to speed up and maximize your score.\nThe game features local hi-score. The faster you drive the more score you get.",
-      "requirements": "",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Android in ux0:data/crazytaxi",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/7c036a38589673e1439a493a5da5d2162802bb9ad8bcfd5a499fdb9b5824a0b9.png",
       "screenshots": [
@@ -15738,7 +15738,7 @@
       ],
       "name": "Deltarune Vita",
       "summary": "Port of Deltarune for PSVita.",
-      "author": "ChatGPT AI",
+      "author": "WolffsRoom",
       "version": "v.0.73",
       "title_id": "DLTVITA01",
       "description": "An unofficial port of DELTARUNE Chapters 1-5 for the PlayStation Vita.",
@@ -18479,7 +18479,7 @@
       "version": "v.1.0",
       "title_id": "E2DV00001",
       "description": "Port of Earn to Die for PSVITA.",
-      "requirements": "",
+      "requirements": "- Game Data Files: Android in ux0:data/earntodie",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/7cbc70a935ca9bc56663d085bf713ea1bcdc4ba65a044c84593511a0ebcb5626.png",
       "screenshots": [],
@@ -20774,7 +20774,7 @@
       "version": "v.1.0.1",
       "title_id": "FATE00001",
       "description": "Port of Fate: Stay Night [Realta Nua], a popular japanese visual novel, for PSVITA.",
-      "requirements": "- fd_fix.skprx OR repatch_ex.skprx.\n- Game Data Files: PC",
+      "requirements": "",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5279cd063307c465732037402a900490c5f784b42b03f06bf3e36d2cc353c2e0.png",
       "screenshots": [],
@@ -28262,7 +28262,7 @@
       "version": "v.3.0.2",
       "title_id": "HIGURASHI",
       "description": "A completely unofficial port of Higurashi for the PS Vita.\nThe engine supports also VNDS games since v.2.5.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: Steam episodes, StreamingAssets folder converted with the included PC tool, in ux0:data/HIGURASHI/Games",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/688e6b1256224d6c5535132fbbe0b2c2ee59f0235b9591281cd68177fca31fd6.png",
       "screenshots": [],
@@ -33527,7 +33527,7 @@
       ],
       "name": "Leo's Fortune Vita",
       "summary": "Port of Leo's Fortune for PSVita.",
-      "author": "Claude AI",
+      "author": "stoicpingu",
       "version": "v.1.0",
       "title_id": "LEOFORT01",
       "description": "This is a wrapper/port of Leo's Fortune for the PS Vita.\nThe port works by loading the official Android ARMv7 executable in memory, resolving its imports with native functions and patching it in order to properly run. By doing so, it's basically as if we emulate a minimalist Android environment in which we run natively the executable as it is.",
@@ -38765,7 +38765,7 @@
       "version": "v.2.0.1",
       "title_id": "NAOH00001",
       "description": "NAOH: Arcade Collection for PSVITA.",
-      "requirements": "",
+      "requirements": "- Game Data Files: Neo Geo ROMs in ux0:data/NaohAC",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/fd15528e097b07e30c86ae15a0fb5acc0aae665d1f083d1ccb88960b753f7d78.png",
       "screenshots": [],
@@ -48793,7 +48793,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5842,
+      "popularity": 5849,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48820,7 +48820,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2390,
+      "popularity": 2392,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48847,7 +48847,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4745,
+      "popularity": 4748,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48874,7 +48874,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4392,
+      "popularity": 4395,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48901,7 +48901,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36881,
+      "popularity": 36905,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48928,7 +48928,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1546,
+      "popularity": 1555,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -54421,7 +54421,7 @@
       ],
       "name": "Save Keeper",
       "summary": "Save backup manager with Google Drive sync.",
-      "author": "Claude AI",
+      "author": "falkenhawk",
       "version": "v.1.3.1",
       "title_id": "SVK000001",
       "description": "Back up your PS Vita and PSP save games and sync them to your own Google Drive. Made for people with more than one Vita (or a PS TV) who want their saves to follow them.",
@@ -54454,7 +54454,7 @@
       ],
       "name": "Save Sync",
       "summary": "Self-hosted manual cloud save sync for PSVita.",
-      "author": "Claude AI & iamcco",
+      "author": "unveroleone & iamcco",
       "version": "v.0.1.8",
       "title_id": "SAVSYNC01",
       "description": "Save Sync backs up PS Vita save data to a zip and uploads it to your own server. Download and restore on another device to keep saves in sync. Works with any number of Vitas and PSTVs sharing one server.\nThe server can be created with the prebuilt docker image.",
@@ -57083,7 +57083,7 @@
       ],
       "name": "Skyrift",
       "summary": "Sky-gliding adventure game for PSVita.",
-      "author": "Claude AI",
+      "author": "Onur Kuru",
       "version": "v.1.3.0",
       "title_id": "SKRF00001",
       "description": "An original sky-gliding pixel-art adventure for PSVita.",
@@ -58446,7 +58446,7 @@
       ],
       "name": "Soda Dungeon Vita",
       "summary": "Port of Soda Dungeon for PSVita.",
-      "author": "Claude AI",
+      "author": "reallootfury",
       "version": "v.1.0.0",
       "title_id": "SODA00001",
       "description": "An unofficial PS Vita loader for the Android release of Soda Dungeon. It runs the original ARMv7 libraries inside a small Android compatibility layer.",
@@ -65029,7 +65029,7 @@
       "version": "v.1.0",
       "title_id": "ISSY00001",
       "description": "The Curse of Issyos is a retro styled action platformer with nothing but the usual in an old 8 bit game: a good bunch of enemies and bosses, linear and open scroll levels, secrets to discover and a background story inspired by Greek mythology. It doesn't try to mimic a retro system in particular, but it's coherent with its own limitations in the use of colors, sprites and chip sounds.",
-      "requirements": "- Game Data Files: PC",
+      "requirements": "- Game Data Files: free game from locomalito.com, data.win patched to game.win with the included xdelta tool and dropped into the VPK's games folder",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3d2f9a4a3b74d49afd94a69f14760013a7148284cd1ed6fb5b80d850b8d61197.png",
       "screenshots": [],
@@ -65037,8 +65037,8 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "784-Issyos.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/784-Issyos.vpk",
+          "filename": "784-CurseOfIssyos.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/784-CurseOfIssyos.vpk",
           "size": 3811255,
           "md5": "78e8ab786347eef148c23cfc9084d864"
         }
@@ -65606,7 +65606,7 @@
       "version": "v.1.3.7.3-1",
       "title_id": "THEXTECH0",
       "description": "Port of an old VB6 engine, purely written in C++. It completely reproduces the old SMBX 1.3 engine (aside from it's Editor), includes many of its logical bugs (critical bugs that lead the game to crash or freeze got fixed).",
-      "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
+      "requirements": "- Game Data Files: episodes and worlds in ux0:data/TheXTech",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5bdc6a1a2c4c20919ef8a5861cf9c1fcfe743a1f05de6cc5fd52b70968c62c25.png",
       "screenshots": [
@@ -68299,6 +68299,42 @@
       "updated_at": "2022-03-18"
     },
     {
+      "id": "vitadbtoo-vita:1564",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Undertale Yellow",
+      "summary": "Port of Undertale Yellow, a free fangame, for PSVITA.",
+      "author": "WolffsRoom",
+      "version": "v.0.1",
+      "title_id": "UTYV00001",
+      "description": "Port of Undertale Yellow, a free fangame, for PSVITA.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Data files in ux0:data/undertale-yellow",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0b2f41060f67e66ef22f117660082fe994fa9ec64649bc1b1764c3a452794338.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WolffsRoom/UndertaleYellowVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "UndertaleYellowVita-v0.1.vpk",
+          "url": "https://github.com/WolffsRoom/UndertaleYellowVita/releases/download/v0.1/UndertaleYellowVita-v0.1.vpk",
+          "size": 1845122,
+          "md5": "90903cb58ad69fbdfbd4018adf1a569e"
+        },
+        {
+          "format": "data",
+          "filename": "UndertaleYellow-data.zip",
+          "url": "https://github.com/WolffsRoom/UndertaleYellowVita/releases/download/v0.1/UndertaleYellow-data.zip"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-15"
+    },
+    {
       "id": "vitadbtoo-vita:798",
       "platforms": [
         "psvita"
@@ -70234,7 +70270,7 @@
       ],
       "name": "Vita Drop",
       "summary": "Wireless file server for PSVita.",
-      "author": "Claude AI",
+      "author": "Ibrahim Dogan",
       "version": "v.1.0.0",
       "title_id": "VDRP00001",
       "description": "VitaDrop transforms your PS Vita into a wireless file server. Browse, upload, download, and manage your entire Vita filesystem from any device with a web browser. No USB cables, no FTP clients, no hassle.",
@@ -70668,7 +70704,7 @@
       ],
       "name": "Vita MHDH",
       "summary": "Port of Monster Hunter Dynamic Hunting for PSVita.",
-      "author": "ChatGPT AI",
+      "author": "MeninoSung",
       "version": "v.1.1",
       "title_id": "MHDH00001",
       "description": "This is a wrapper port of the Android version of Monster Hunter Dynamic Hunting a spin-off of the Main MH game series for Android & iOS. It has been released worldwide on June 1, 2011.",
@@ -72988,7 +73024,7 @@
       ],
       "name": "VitaRPS5",
       "summary": "PS5 streaming application for PSVita.",
-      "author": "Claude AI & ywnico & AAGaming",
+      "author": "mauricio-gg & ywnico & AAGaming",
       "version": "v.3.1.1",
       "title_id": "VRPS50001",
       "description": "This is a fork built on top of ywnico's excellent vitaki-fork, which itself is based on AAGaming00's Vitaki.\nCredit where it's due: ywnico did the vast majority of the hard work, implementing audio, controls, external network support, wakeup functionality, and numerous critical fixes. AAGaming did the foundational work of porting Chiaki to PS Vita. This fork simply adds UI enhancements and quality-of-life improvements on top of their solid foundation.",
@@ -73797,6 +73833,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2017-08-31"
+    },
+    {
+      "id": "vitadbtoo-vita:1563",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Void Stranger",
+      "summary": "Port of Void Stranger for PSVITA.",
+      "author": "WolffsRoom",
+      "version": "v.1.0",
+      "title_id": "VSTR00001",
+      "description": "Port of Void Stranger for PSVITA.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Steam 1.1.3, prepared with the PC patcher, in ux0:data/voidstranger",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/710d55be67c54cca7f79f73885148b4196b611f93a34b717788f46fe4545259e.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WolffsRoom/VoidStrangerVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VoidStranger-v1.0.vpk",
+          "url": "https://github.com/WolffsRoom/VoidStrangerVita/releases/download/v1.0/VoidStranger-v1.0.vpk",
+          "size": 1941095,
+          "md5": "0eff0d40b01cd757ea37dc9abe353150"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-15"
     },
     {
       "id": "vitadbtoo-vita:13",
@@ -79608,7 +79675,7 @@
       ],
       "name": "Zombie Tsunami Vita",
       "summary": "Port of Zombie Tsunami for PSVita.",
-      "author": "ChatGPT AI",
+      "author": "MeninoSung",
       "version": "v.1.0",
       "title_id": "ZTSU00001",
       "description": "Unofficial wrapper/port of Zombie Tsunami for PlayStation Vita.\nThe port operates by loading the official Android ARMv7 executable directly into memory, linking its dependencies to native functions, and applying the necessary patches for it to run correctly. In practice, this creates a lightweight Android-like environment where the original executable can run natively without modification.",
