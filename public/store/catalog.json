@@ -4861,7 +4861,7 @@
       "name": "AtticPad",
       "summary": "Use your 3DS as a gamepad for a Windows or Linux PC over Wi-Fi.",
       "author": "ProPaint",
-      "version": "v0.5.0",
+      "version": "v0.6.0",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/atticpad/atticpad/main/clients/3ds/meta/icon.png",
       "release_url": "https://github.com/atticpad/atticpad/releases",
@@ -4869,20 +4869,20 @@
         {
           "format": "3dsx",
           "filename": "atticpad-3ds.3dsx",
-          "url": "https://github.com/atticpad/atticpad/releases/download/v0.5.0/atticpad-3ds.3dsx",
-          "size": 324996
+          "url": "https://github.com/atticpad/atticpad/releases/download/v0.6.0/atticpad-3ds.3dsx",
+          "size": 366880
         },
         {
           "format": "cia",
           "filename": "atticpad-3ds.cia",
-          "url": "https://github.com/atticpad/atticpad/releases/download/v0.5.0/atticpad-3ds.cia",
-          "size": 400320
+          "url": "https://github.com/atticpad/atticpad/releases/download/v0.6.0/atticpad-3ds.cia",
+          "size": 420800
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-17T17:43:11Z"
+      "updated_at": "2026-09-15T12:20:54Z"
     },
     {
       "id": "universal-db:Sunrase/AudioSwitcher3ds",
@@ -14171,7 +14171,7 @@
       "name": "CTR: High Octane",
       "summary": "Advanced source port of Crash Team Racing for PSVITA.",
       "author": "Rinnegatamante",
-      "version": "v.1.3.1",
+      "version": "v.1.4.1",
       "title_id": "CTR000004",
       "description": "Advanced source port of Crash Team Racing for PSVITA.",
       "requirements": "- Game Data Files: Crash Team Racing in ux0:data/ctr",
@@ -14188,9 +14188,9 @@
         {
           "format": "vpk",
           "filename": "ctr.vpk",
-          "url": "https://github.com/Rinnegatamante/Crash-Team-Racing-High-Octane/releases/download/v.1.3.1/ctr.vpk",
-          "size": 3572478,
-          "md5": "6d35452ceb14f54c0931b29ce94a1b6d"
+          "url": "https://github.com/Rinnegatamante/Crash-Team-Racing-High-Octane/releases/download/v.1.4.1/ctr.vpk",
+          "size": 3575693,
+          "md5": "9d7c666021453ccb43baa1f3921fc45f"
         }
       ],
       "popularity": 0,
@@ -32609,6 +32609,37 @@
       "updated_at": "2012-11-05T00:00:00+00:00"
     },
     {
+      "id": "vitadbtoo-vita:1561",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "KOTOR",
+      "summary": "Port of Star Wars: Knights of the Old Republic for PSVITA.",
+      "author": "ScoobyDouche",
+      "version": "v.0.1.11",
+      "title_id": "KOTR00001",
+      "description": "Port of Star Wars: Knights of the Old Republic for PSVITA.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: Android APK and game files in ux0:data/kotor",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4642580e05425f0aab769634d0a79478d05ae58b19c32709b0eed7c8aaabe089.png",
+      "screenshots": [],
+      "release_url": "https://github.com/ScoobyDouche/VitaKotor/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "KOTOR.vpk",
+          "url": "https://github.com/ScoobyDouche/VitaKotor/releases/download/v0.1.11/KOTOR.vpk",
+          "size": 2550052,
+          "md5": "95d3473827d42909fba43b0eea798613"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-15"
+    },
+    {
       "id": "ps5-payloads-atlas:kstuff.elf",
       "platforms": [
         "ps5"
@@ -33747,12 +33778,12 @@
         "psvita"
       ],
       "name": "Lighthouse",
-      "summary": "Lighthouse for PSVITA.",
+      "summary": "Port of Banjo-Kazooie for PSVITA.",
       "author": "Rinnegatamante",
       "version": "v.1.0.1",
       "title_id": "BANJO0064",
       "description": "Lighthouse for PSVITA.",
-      "requirements": "",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Banjo-Kazooie N64 (baserom.us.z64) in ux0:data/lighthouse",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4286890aeb69ef4c1aa23bc4eaf89e29675873de5be5db4d02c4aa4766830254.png",
       "screenshots": [],
@@ -38878,13 +38909,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64466546
+          "size": 64469470
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-14T13:52:23Z"
+      "updated_at": "2026-09-15T12:37:35Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -48762,7 +48793,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5831,
+      "popularity": 5842,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48789,7 +48820,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2383,
+      "popularity": 2390,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48816,7 +48847,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4734,
+      "popularity": 4745,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48843,7 +48874,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4385,
+      "popularity": 4392,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48870,7 +48901,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36852,
+      "popularity": 36881,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48897,7 +48928,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1542,
+      "popularity": 1546,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -49171,30 +49202,30 @@
       "updated_at": "2026-06-21 15:37:35 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-5.26.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-5.28.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v5.26.0",
+      "version": "v5.28.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-5.26.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.26.0/ps5upload-5.26.0.elf",
-          "sha256": "735edfeb5cf61b65bde8260cd63ce3d4417e2442dfe9609ae551a5bd8f15803a"
+          "filename": "ps5upload-5.28.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.28.0/ps5upload-5.28.0.elf",
+          "sha256": "e5937396055234122e21fa39ebc88287a8de916dbf541d5739b376e74ff882a3"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-13 16:00:45 UTC+8"
+      "updated_at": "2026-09-15 21:55:36 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -51988,6 +52019,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2016-10-24"
+    },
+    {
+      "id": "vitadbtoo-vita:1562",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Renegade Vita",
+      "summary": "Port of the Command & Conquer: Renegade M00 tutorial demo for PSVITA.",
+      "author": "TheGh0stShip",
+      "version": "v.A3.5-dev134",
+      "title_id": null,
+      "description": "",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Renegade PC retail data in ux0:data/renegade/retail",
+      "license": null,
+      "icon_url": null,
+      "screenshots": [],
+      "release_url": "https://github.com/TheGh0stShip/Renegade-Vita-Demo/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "RenegadeVita-A3.5-dev134.vpk",
+          "url": "https://github.com/TheGh0stShip/Renegade-Vita-Demo/releases/download/A3.5-dev134/RenegadeVita-A3.5-dev134.vpk",
+          "size": 3604321,
+          "md5": "925078db13619bc6b1b652e2e656ba5a"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-15"
     },
     {
       "id": "hbas-switch:renpy-switch",
@@ -73680,7 +73742,7 @@
       "name": "ViTube",
       "summary": "Native YouTube client for PSVITA.",
       "author": "shorelight82",
-      "version": "v.1.2",
+      "version": "v.2.0",
       "title_id": "VTUB00001",
       "description": "Native YouTube client for PSVITA.",
       "requirements": "",
@@ -73692,9 +73754,9 @@
         {
           "format": "vpk",
           "filename": "ViTube.vpk",
-          "url": "https://github.com/shorelight82/vitube-vpk/releases/download/v1.2/ViTube.vpk",
-          "size": 4214909,
-          "md5": "7d1d878ced465fe569fcbe6aab8ab0a6"
+          "url": "https://github.com/shorelight82/vitube-vpk/releases/download/v2.0/ViTube.vpk",
+          "size": 4212250,
+          "md5": "b0f41d7b0cb455dc089ad24fc7c1e59c"
         }
       ],
       "popularity": 0,
