@@ -45584,7 +45584,7 @@
       "name": "pegasus-dl",
       "summary": "PS5 payload that serves a local web interface for downloading and installing game or application package data.",
       "author": "",
-      "version": "v1.8.0",
+      "version": "v1.9.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/pegasus-ps5/pegasus-dl",
@@ -45592,15 +45592,15 @@
         {
           "format": "elf",
           "filename": "pegasus_dl.elf",
-          "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.8.0/pegasus_dl.elf",
-          "sha256": "3665fa275a185e597ef364379a7f7ad5a9d58f30fda2af6bd04e43299ff2e669"
+          "url": "https://github.com/pegasus-ps5/pegasus-dl/releases/download/v1.9.0/pegasus_dl.elf",
+          "sha256": "6336c626f0fbdef1272cc5d4e0239d7b44bf40f8106679083cf50d4c8e02389b"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-09 22:47:57 UTC+8"
+      "updated_at": "2026-09-15 18:05:53 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:847",
@@ -48762,7 +48762,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5828,
+      "popularity": 5831,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48789,7 +48789,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2382,
+      "popularity": 2383,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48816,7 +48816,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4730,
+      "popularity": 4734,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48843,7 +48843,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4383,
+      "popularity": 4385,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48870,7 +48870,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36835,
+      "popularity": 36852,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48897,7 +48897,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1541,
+      "popularity": 1542,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
