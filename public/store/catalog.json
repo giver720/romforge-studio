@@ -26027,7 +26027,7 @@
       "description": "",
       "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Diddy Kong Racing in ux0:data/goldenballoon",
       "license": null,
-      "icon_url": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/32bd67fda8ea954f910605abb698a57c4ae0ae6581b9d5e23e7214b9cbcca1f0.png",
       "screenshots": [],
       "release_url": "https://github.com/zm2283145/goldenballoon-vita-port/releases",
       "downloads": [
@@ -40852,7 +40852,7 @@
       "description": "",
       "requirements": "",
       "license": null,
-      "icon_url": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/36b86df3d64cd7a5f412162c3406099a34d9996e4980d39dfd40db928a440605.png",
       "screenshots": [],
       "release_url": "https://git.silica.codes/Li/nosleep/releases",
       "downloads": [
@@ -48793,7 +48793,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5849,
+      "popularity": 5856,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48820,7 +48820,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2392,
+      "popularity": 2393,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48847,7 +48847,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4748,
+      "popularity": 4749,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48874,7 +48874,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4395,
+      "popularity": 4396,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48901,7 +48901,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36905,
+      "popularity": 36930,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48928,7 +48928,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1555,
+      "popularity": 1560,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -49053,7 +49053,7 @@
       "name": "PS5 Web File Manager",
       "summary": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
       "author": "",
-      "version": "v1.8",
+      "version": "v1.9",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/owendswang/ps5-web-file-manager",
@@ -49061,15 +49061,15 @@
         {
           "format": "elf",
           "filename": "wfm-7zip-helper.elf",
-          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.8/wfm-7zip-helper.elf",
-          "sha256": "63b39c35cc2fa236d4511cd1782d41cb87ec08dfdf57e15fdcfe97b414896972"
+          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/wfm-7zip-helper.elf",
+          "sha256": "7a6369489143c2b8887331a7235a6a77dd5667c794c4234973f8159fed92fe24"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-08 23:21:14 UTC+8"
+      "updated_at": "2026-09-16 12:09:18 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:ps5-app-dumper.elf",
@@ -52033,7 +52033,7 @@
       "description": "",
       "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Renegade PC retail data in ux0:data/renegade/retail",
       "license": null,
-      "icon_url": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/36b86df3d64cd7a5f412162c3406099a34d9996e4980d39dfd40db928a440605.png",
       "screenshots": [],
       "release_url": "https://github.com/TheGh0stShip/Renegade-Vita-Demo/releases",
       "downloads": [
