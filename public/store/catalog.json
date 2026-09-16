@@ -11848,6 +11848,42 @@
       "updated_at": "2024-04-26"
     },
     {
+      "id": "vitadbtoo-vita:1565",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Class of '09 Native",
+      "summary": "Port of Class of '09 for PSVITA.",
+      "author": "TheSpasticGamer",
+      "version": "v.0.28",
+      "title_id": "C09FULL01",
+      "description": "Port of Class of '09 for PSVITA.",
+      "requirements": "- Data files in ux0:data/C09FULL01",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/34b53e141c14011bace4200f034c97aa0a89242c60f0bee8563a7276e346a5a8.png",
+      "screenshots": [],
+      "release_url": "https://github.com/TheSpasticGamer/Class-Of-09-Vita-Port/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ClassOf09-Native-0.28-Installer.vpk",
+          "url": "https://github.com/TheSpasticGamer/Class-Of-09-Vita-Port/releases/download/Release/ClassOf09-Native-0.28-Installer.vpk",
+          "size": 3113415,
+          "md5": "f83d71915277de4ff2ea2f4af25efc1a"
+        },
+        {
+          "format": "data",
+          "filename": "ClassOf09-Native-0.24-Content.zip",
+          "url": "https://github.com/TheSpasticGamer/Class-Of-09-Vita-Port/releases/download/Release/ClassOf09-Native-0.24-Content.zip"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-16"
+    },
+    {
       "id": "universal-db:ClassiCube/ClassiCube",
       "platforms": [
         "3ds"
@@ -32037,6 +32073,37 @@
       "updated_at": "2024-03-29"
     },
     {
+      "id": "vitadbtoo-vita:1567",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "KeeperFX",
+      "summary": "Port of KeeperFX, an open-source Dungeon Keeper engine recreation, for PSVITA.",
+      "author": "DannyDLux90",
+      "version": "v.1.02",
+      "title_id": "KFXV00001",
+      "description": "Port of KeeperFX, an open-source Dungeon Keeper engine recreation, for PSVITA.",
+      "requirements": "- Game Data Files: Dungeon Keeper PC and KeeperFX data in ux0:data/keeperfx",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/111f24b74d23a11219044ac5b83236350a1d32cfb155734dc77530bfa1dfe24f.png",
+      "screenshots": [],
+      "release_url": "https://github.com/DannyDLux90/KeeperFX-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "KeeperFX-Vita-v1.02-PUBLIC-no-game-data.vpk",
+          "url": "https://github.com/DannyDLux90/KeeperFX-Vita/releases/download/release/KeeperFX-Vita-v1.02-PUBLIC-no-game-data.vpk",
+          "size": 5276112,
+          "md5": "cddbbb25d7ba52703f1d10a083679e9a"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-16"
+    },
+    {
       "id": "universal-db:cavv-dev/Kekatsu-DS",
       "platforms": [
         "3ds"
@@ -38480,6 +38547,37 @@
       "updated_at": "2023-02-26T00:00:00+00:00"
     },
     {
+      "id": "vitadbtoo-vita:1566",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Mystery House",
+      "summary": "Remake of the 1980 Apple II adventure game Mystery House for PSVITA.",
+      "author": "Artem Isaiev",
+      "version": "v.1.0.2",
+      "title_id": "MYST00001",
+      "description": "Remake of the 1980 Apple II adventure game Mystery House for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c3a0dd7a918bc90a258c52c1034d7b20b0e0b0e80f2c99f2afd776abb3df3e21.png",
+      "screenshots": [],
+      "release_url": "https://aisaiev.itch.io/mystery-house",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Mystery-House-1.0.2.vpk",
+          "url": "https://artemisaiev.github.io/mh/Mystery-House-1.0.2.vpk",
+          "size": 13327308,
+          "md5": "d4cee5d0b3b0cb1dc561be7db1b938de"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-16"
+    },
+    {
       "id": "hbas-switch:solarus",
       "platforms": [
         "switch"
@@ -40206,28 +40304,28 @@
       "name": "NightClock",
       "summary": "a relaxing clock app for Nintendo 3ds called NightClock",
       "author": "Michele",
-      "version": "NightClock1.03",
+      "version": "NightClock1.04",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/Michele-3ds/NightClock/main/icon.png",
       "release_url": "https://github.com/Michele-3ds/NightClock/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "nightclock.3dsx",
-          "url": "https://github.com/Michele-3ds/NightClock/releases/download/NightClock1.03/nightclock.3dsx",
-          "size": 227768
+          "filename": "NightClock.3dsx",
+          "url": "https://github.com/Michele-3ds/NightClock/releases/download/NightClock1.04/NightClock.3dsx",
+          "size": 254856
         },
         {
           "format": "cia",
-          "filename": "nightclock.cia",
-          "url": "https://github.com/Michele-3ds/NightClock/releases/download/NightClock1.03/nightclock.cia",
-          "size": 220096
+          "filename": "NightClock.cia",
+          "url": "https://github.com/Michele-3ds/NightClock/releases/download/NightClock1.04/NightClock.cia",
+          "size": 701888
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-06-27T08:48:50Z"
+      "updated_at": "2026-09-16T10:22:50Z"
     },
     {
       "id": "open-shop-channel-wii:NiioFetch",
@@ -48793,7 +48891,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5861,
+      "popularity": 5863,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48820,7 +48918,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2394,
+      "popularity": 2395,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48847,7 +48945,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4752,
+      "popularity": 4753,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48874,7 +48972,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4398,
+      "popularity": 4400,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48901,7 +48999,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 36947,
+      "popularity": 36972,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48928,7 +49026,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1573,
+      "popularity": 1588,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
