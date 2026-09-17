@@ -2606,6 +2606,37 @@
       "updated_at": "2017-06-22"
     },
     {
+      "id": "vitadbtoo-vita:1569",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "AdvancedSlop",
+      "summary": "Game Boy Advance emulator for PSVITA.",
+      "author": "Grarak",
+      "version": "v.0.1.0",
+      "title_id": "ADVSLOP00",
+      "description": "Game Boy Advance emulator for PSVITA.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx v0.3.1+ in ur0:tai\n- Game Data Files: GBA ROMs in ux0:data/advancedslop",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b61a2ff397beb7f6ecfb361925450d3e93d452297de618337c1b7f0e70d4d45e.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Grarak/AdvancedSlop/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "advancedslop.vpk",
+          "url": "https://github.com/Grarak/AdvancedSlop/releases/download/0.1.0/advancedslop.vpk",
+          "size": 3333738,
+          "md5": "e52007092a4dc6e79a30d4d203955d83"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-17"
+    },
+    {
       "id": "vitadbtoo-vita:1552",
       "platforms": [
         "psvita"
@@ -46842,6 +46873,32 @@
       "updated_at": "2026-03-10"
     },
     {
+      "id": "ps5-payloads-atlas:pkgmgr_v1.0.0.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "PKG-Manager",
+      "summary": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
+      "author": "",
+      "version": "v1.0.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/itsplk/ps5-pkg-manager",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "pkgmgr_v1.0.0.elf",
+          "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.0.0/pkgmgr_v1.0.0.elf",
+          "sha256": "51d3f13a91d007019f3262e1bd8ccc8ba3cbea6b1b6534b8e86df6bd2e0efb4b"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-09-18 01:53:40 UTC+8"
+    },
+    {
       "id": "vitadbtoo-vita:341",
       "platforms": [
         "psvita"
@@ -47921,6 +47978,31 @@
       "updated_at": "2018-07-16"
     },
     {
+      "id": "universal-db:Taifuoguru/Postal-1-New-3DS-Port-Alpha-",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Postal 1 Engine Port for New3ds Alpha",
+      "summary": "A homebrew engine port of the original Postal 1 (1997) for New Nintendo 3DS. Features Circle Pad/D-Pad movement and full C-Stick aiming support. (Early Alpha / Playable Demo - Original game assets required).",
+      "author": "Taifu",
+      "version": "1.0.0",
+      "license": "GNU General Public License v2.0",
+      "icon_url": "https://raw.githubusercontent.com/Taifuoguru/Postal-1-New-3DS-Port-Alpha-/main/Icon.png",
+      "release_url": "https://github.com/Taifuoguru/Postal-1-New-3DS-Port-Alpha-/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "postal1-3ds.3dsx",
+          "url": "https://github.com/Taifuoguru/Postal-1-New-3DS-Port-Alpha-/releases/download/1.0.0/postal1-3ds.3dsx",
+          "size": 2429928
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-17T20:33:40Z"
+    },
+    {
       "id": "vitadbtoo-vita:415",
       "platforms": [
         "psvita"
@@ -48153,6 +48235,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2014-03-16T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-vita:1571",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Powerpuff Girls Mojo Madness",
+      "summary": "Port of The Powerpuff Girls: Mojo Madness for PSVITA.",
+      "author": "SpliffCurryBeats",
+      "version": "v.0.1.1",
+      "title_id": "PPGMV2000",
+      "description": "Port of The Powerpuff Girls: Mojo Madness for PSVITA.",
+      "requirements": "- Game Data Files: Android in ux0:data/powerpuff_mojo",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/acab3f3968437cdfa5ea6f6f7a44ed306cd8dc36f7e36215b0d78761ae7aec2d.png",
+      "screenshots": [],
+      "release_url": "https://gitlab.com/sexcurrybeats/powerpuff-mojo-madness-vita/-/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "PowerpuffVita_v0.1.1.vpk",
+          "url": "https://gitlab.com/sexcurrybeats/powerpuff-mojo-madness-vita/-/releases/v0.1.1/downloads/PowerpuffVita_v0.1.1.vpk",
+          "size": 2266049,
+          "md5": "c7f9187e8283a81edbf1a77bf2aa004d"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-17"
     },
     {
       "id": "hbas-switch:PowertoolsNX",
@@ -48891,7 +49004,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5884,
+      "popularity": 5892,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48918,7 +49031,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2407,
+      "popularity": 2410,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48945,7 +49058,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4770,
+      "popularity": 4776,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48972,7 +49085,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4416,
+      "popularity": 4420,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -48999,7 +49112,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 37052,
+      "popularity": 37079,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49026,7 +49139,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1608,
+      "popularity": 1611,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -52312,6 +52425,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2019-06-07"
+    },
+    {
+      "id": "vitadbtoo-vita:1570",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Resident Evil Gaiden",
+      "summary": "Static recompilation of Resident Evil Gaiden (Game Boy Color) for PSVITA.",
+      "author": "Rinnegatamante",
+      "version": "v.1.0",
+      "title_id": "REGD00001",
+      "description": "Static recompilation of Resident Evil Gaiden (Game Boy Color) for PSVITA.",
+      "requirements": "- Game Data Files: Resident Evil Gaiden (USA) GBC ROM in ux0:data/regaiden",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/91a4717723741ac17a8fda21e1460da7a8333f855acfd2a3ccd95f5078abff6e.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Rinnegatamante/regaiden-recomp/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ResidentEvilGaiden.vpk",
+          "url": "https://github.com/Rinnegatamante/regaiden-recomp/releases/download/v.1.0/ResidentEvilGaiden.vpk",
+          "size": 26043408,
+          "md5": "c928af458c0fe31d2251a3e7fd9fb0b7"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-17"
     },
     {
       "id": "hbas-switch:residualvm",
@@ -73551,6 +73695,37 @@
       "updated_at": "2016-08-31"
     },
     {
+      "id": "vitadbtoo-vita:1568",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VitaTransfer",
+      "summary": "AirDrop for PSVITA: transfer photos and videos to a phone or computer through a local web browser.",
+      "author": "vusalif",
+      "version": "v.0.30",
+      "title_id": "VITAT0001",
+      "description": "AirDrop for PSVITA: transfer photos and videos to a phone or computer through a local web browser.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/12c94b15c35513859ec83816c80f6438dbe95556d83219751ded85f9530370c6.png",
+      "screenshots": [],
+      "release_url": "https://github.com/vusalif/VitaTransfer/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VitaTransfer.vpk",
+          "url": "https://github.com/vusalif/VitaTransfer/releases/download/1/VitaTransfer.vpk",
+          "size": 162061,
+          "md5": "f80ca1af1f1f02dd311f1eb598195354"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-17"
+    },
+    {
       "id": "vitadbtoo-vita:1406",
       "platforms": [
         "psvita"
@@ -75178,10 +75353,10 @@
       "name": "Wii U Album",
       "categories": [],
       "description": "An album app for the Wii U. Browse, view, edit, and wirelessly transfer your screenshots and videos to a smart device.\n\nFeatures :\n\nview screenshots and videos stored in : /fs/vol/external01/wiiu/screenshots (Screenshotplugin) /fs/vol/external01/wiiu/videos (Screencaptureplugin)\n\nFilter by media type, application name, sort by date (newest/oldest)\n\nVideo Clipping : Trim videos with visual timeline and preview and export as a new video.\n\nImage Editor : Add customizable text to screenshots.\n\nQR Code Transfer : Scan QR code with a smart device to transfer media.\nSupports single and multi-file transfers (up to 5 files)",
-      "added_at": "2026-07-18",
+      "added_at": "2026-09-16",
       "summary": "Manage screenshots/videos on your Wii U",
       "author": "SudoTronics",
-      "version": "1.0",
+      "version": "2.0",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/Sudachi-E/WiiUAlbum",
@@ -75190,8 +75365,8 @@
           "format": "hbas",
           "filename": "WiiUAlbum.hbas",
           "url": "https://wiiu.cdn.fortheusers.org/packages/WiiUAlbum/manifest.install",
-          "size": 9079,
-          "sha256": "5532ff4a5a7db218284ac2b7d24e3e0f08d34ef39797aa8c32abd96e86be8c78"
+          "size": 9087,
+          "sha256": "ab99aeec9d2bc8469f5ebb05db08a01b991601ea158db5db617785e4d1998847"
         }
       ],
       "popularity": 1095,
@@ -75199,7 +75374,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
       "license_url": null,
-      "updated_at": "2026-07-31"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "hbas-wiiu:WiiUReboot",
