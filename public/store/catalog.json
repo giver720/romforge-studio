@@ -2920,10 +2920,10 @@
       "name": "Akira",
       "categories": [],
       "description": "PS Remote Play GUI based on chiaki-ng",
-      "added_at": "2026-08-23",
+      "added_at": "2026-09-09",
       "summary": "GUI for chiaki-ng",
       "author": "xlanor",
-      "version": "0.6.0",
+      "version": "0.6.3",
       "license": "Affero GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/xlanor/akira",
@@ -2932,8 +2932,8 @@
           "format": "hbas",
           "filename": "Akira.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/Akira/manifest.install",
-          "size": 26681,
-          "sha256": "7183667fbb858c9628e7b4f85f70406b5a70163823c3fc689933f73aa6d0963e"
+          "size": 27035,
+          "sha256": "662393360e35712948508ea8a65fc20c5e726eed39b7f1e8d4243b993ee010bc"
         }
       ],
       "popularity": 1928,
@@ -2941,7 +2941,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-08-26"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "hbas-switch:AlephOne",
@@ -10921,10 +10921,10 @@
         "utilities"
       ],
       "description": "ChatNX turns your Nintendo Switch into an AI companion. It talks to Puter's AI gateway over Wi-Fi, so you chat straight from the console.\n\nFeatures:\n- Chat with multiple AI models (Claude, GPT, and more)\n- Generate images from a text prompt, saved to a built-in gallery with a full-screen zoom/pan viewer\n- Analyze any Switch screenshot by attaching it to your question\n- Voice dictation with a USB microphone\n- Live usage and quota tracking, with a per-model cost breakdown\n- Wireless setup: scan a QR code to enter your Puter token\n- Full interface and AI responses in 28 languages\n\nRequires Atmosphère custom firmware, a Wi-Fi connection, and a free Puter account. Unofficial homebrew, not affiliated with Nintendo.",
-      "added_at": "2026-07-21",
+      "added_at": "2026-09-09",
       "summary": "Chat with AI and generate/analyse images",
       "author": "Jonathan8520",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/Jonathan8520/ChatNX",
@@ -10933,8 +10933,8 @@
           "format": "hbas",
           "filename": "ChatNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/ChatNX/manifest.install",
-          "size": 11896,
-          "sha256": "748af0be57fef593379ab5fd0796b87c9eb6b3e1189e5051e48c96f3121bff75"
+          "size": 11893,
+          "sha256": "666ed10916cff9cc9fbb3508ccfd65f5429bab3c23ab6043b08d69e2c7a32e30"
         }
       ],
       "popularity": 0,
@@ -10942,7 +10942,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-04"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "open-shop-channel-wii:cheat-manager",
@@ -19946,7 +19946,7 @@
       "added_at": "2026-07-24",
       "summary": "Inject past Raid Events in Pokemon Games",
       "author": "Insektaure",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/Insektaure/Event-Raid-Injector",
@@ -19955,8 +19955,8 @@
           "format": "hbas",
           "filename": "EventRaidInjector.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/EventRaidInjector/manifest.install",
-          "size": 93420,
-          "sha256": "2d71f57797622bc74fefd428f94d9292381ea6a76ca3bb881536fafd1d34de6c"
+          "size": 96230,
+          "sha256": "2a1b10e87664d507856e4f211ba65ed841d9e11f1daf6347cb74d1ec7b828a7b"
         }
       ],
       "popularity": 696,
@@ -19964,7 +19964,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-07-31"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "vitadbtoo-vita:1118",
@@ -22890,10 +22890,10 @@
         "games"
       ],
       "description": "Enjoy the Psych Engine 1.0.4 experience on your Nintendo Switch!\n\nYou must always open the game from an official game (usually by holding the R button while launching a game from the HOME menu).\n\nInstalling mods:\n\nInstalling mods on Switch Funkin' is easy. Once you open the game at least once, on your SD card, inside the \"switch\" folder, you will see a new folder called \"Switch-Funkin\" Inside it, you will find the “mods” folder, which works exactly the same as normal Psych Engine.",
-      "added_at": "2026-07-05",
+      "added_at": "2026-09-02",
       "summary": "Real FNF' for Nintendo Switch, why not?",
       "author": "Slushi",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "Apache v2",
       "icon_url": null,
       "release_url": "https://github.com/Slushi-Github/Switch-Funkin",
@@ -22902,8 +22902,8 @@
           "format": "hbas",
           "filename": "FNFSwitchFunkin.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/FNFSwitchFunkin/manifest.install",
-          "size": 349190,
-          "sha256": "f304736a4a218f8d812944e9d402ae8a0e03a0f148fd61082d96e0f66a78f5a9"
+          "size": 370462,
+          "sha256": "4e1fa927bd9bc67605573429119558dbdf8acaf684c62150b4b94ab8f713ceb9"
         }
       ],
       "popularity": 6730,
@@ -22911,7 +22911,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-07-06"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "hbas-switch:Foldery",
@@ -34722,10 +34722,10 @@
         "utilities"
       ],
       "description": "LunarNX is an unofficial Xbox and PlayStation game-streaming client for Nintendo Switch homebrew. Stream from your own Xbox One or Xbox Series console, use Xbox Cloud Gaming, or connect to a paired PS4 or PS5 locally or through PSN. It features hardware-accelerated H.264 and PS5 HEVC video, low-latency audio, controller remapping, PlayStation touchpad gestures, Switch motion forwarding, in-stream statistics, and stream recovery after returning from the HOME menu. Xbox Cloud Gaming availability depends on account entitlement and region. Remote streaming depends on console settings, platform services, NAT behavior, and network quality. Launch LunarNX from Homebrew Menu using title override/full-memory mode.",
-      "added_at": "2026-09-02",
+      "added_at": "2026-09-07",
       "summary": "Xbox and PlayStation streaming client",
       "author": "thinkzhou",
-      "version": "0.3.0",
+      "version": "0.3.3",
       "license": "Affero GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/thinkzhou/LunarNX",
@@ -34734,8 +34734,8 @@
           "format": "hbas",
           "filename": "LunarNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/LunarNX/manifest.install",
-          "size": 23288,
-          "sha256": "d6257bd62fd57bf39975cd984bc593d2203d74d7fdc3909c18e6d781230b6a13"
+          "size": 23336,
+          "sha256": "22d3fd6a48cf1e8742bd1db300e8bf438c5b55d6ea0deb5d7659727e278ef946"
         }
       ],
       "popularity": 0,
@@ -34743,7 +34743,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-04"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "vitadbtoo-vita:862",
@@ -38423,10 +38423,10 @@
         "utilities"
       ],
       "description": "A Nintendo Switch port of MusicPlayer2. Plays MP3, FLAC, OGG, Opus, WAV, MOD and MIDI.\n\n- Synced LRC lyrics with per-character highlighting, bilingual display (single or two column), and drag-to-browse\n- Reads title/artist/album and embedded cover art from the files themselves (ID3v2, FLAC and Ogg Vorbis comments), so Chinese and Japanese track names show correctly even though the Switch filesystem cannot store non-ASCII filenames\n- Downloads lyrics and cover art from NetEase Cloud Music or QQ Music, optionally writing them back into the audio file\n- Full touch support: every function is reachable both by controller and by touch. Turning touch off switches to an immersive view with a larger cover\n- Spectrum view, sleep-friendly screen dimming, and in-app updates\n\nSource: https://github.com/Schweik7/MusicPlayer2-Switch",
-      "added_at": "2026-09-08",
+      "added_at": "2026-09-14",
       "summary": "Music player with synced lyrics, embedded cover art and online lyric download",
       "author": "zhongyang219, Schweik7 (Switch port)",
-      "version": "0.8.0",
+      "version": "0.8.6",
       "license": "GPL-3.0",
       "icon_url": null,
       "release_url": "https://github.com/Schweik7/MusicPlayer2-Switch",
@@ -38435,8 +38435,8 @@
           "format": "hbas",
           "filename": "MusicPlayer2.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/MusicPlayer2/manifest.install",
-          "size": 10664,
-          "sha256": "bc8163fe525ddeb3e470922ff014325c09268ff04dc12b73ed7d45f22e642c11"
+          "size": 10810,
+          "sha256": "56554c82f04d2323ab32640939e8fc91d9f2b05084e3b5c536a4da8b9254f335"
         }
       ],
       "popularity": 0,
@@ -38444,7 +38444,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-08"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "vitadbtoo-vita:796",
@@ -46977,10 +46977,10 @@
         "utilities"
       ],
       "description": "A local bank system for Pokemon games on Nintendo Switch.\nMove Pokemon between your save files and local bank storage.\n\nFeatures\n- Profile Selection\n- Two-Panel Box Viewer\n- Pick & Place\n- Multi-Select\n- Pokemon Details\n\nBank System\n- Create a new bank (up to 32-character name)\n- Rename an existing bank\n- Delete a bank (with confirmation)\n\nEach bank has the same box capacity as its game family (32 or 40 boxes).\nThe bank list shows the number of occupied slots for each bank.\n\nYou can switch between banks from the main view via the menu, with or without saving first.\n\nBackup System\n- When loading a game save on Switch, an automatic backup is created before any modifications.\n- This is a full copy of the mounted save directory.\n\nSave Integrity\n- SCBlock saves (ZA, SV, SwSh, LA): Decrypted, modified, and re-encrypted. A round-trip verification runs on load to confirm the cycle is lossless.\n- BDSP saves: Flat binary with MD5 checksum, recalculated on every save.\n- All saves are written in-place to preserve ",
-      "added_at": "2026-07-16",
+      "added_at": "2026-09-09",
       "summary": "A local bank system for Pokemon games",
       "author": "Insektaure",
-      "version": "1.10.5",
+      "version": "1.10.6",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/Insektaure/pkHouse",
@@ -46990,7 +46990,7 @@
           "filename": "pkHouseLocalPokeBank.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/pkHouseLocalPokeBank/manifest.install",
           "size": 14742,
-          "sha256": "1beb3dd2b8c166686c103bee25396b039125826d359ce3ae2ffc214ee0464ddc"
+          "sha256": "7051205e18dbc47e45605324529f3b36e776015dc1aa89265b702780632cf600"
         }
       ],
       "popularity": 3927,
@@ -46998,7 +46998,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-07-17"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "universal-db:Universal-Team/pkmn-chest",
@@ -48869,6 +48869,168 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2023-11-05"
+    },
+    {
+      "id": "ps4-store:268181309",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — homebrew.elf",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "homebrew.elf",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/homebrew.elf",
+          "size": 4842768,
+          "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
+        }
+      ],
+      "popularity": 5884,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:238357415",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — PS5_Update_files.zip",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PS5_Update_files.zip",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/PS5_Update_files.zip",
+          "size": 1488211,
+          "sha256": null
+        }
+      ],
+      "popularity": 2407,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:268177439",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2-Legacy.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2-Legacy.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-Legacy.pkg",
+          "size": 24772608,
+          "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
+        }
+      ],
+      "popularity": 4770,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:167233612",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2-PS5.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2-PS5.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-PS5.pkg",
+          "size": 43450368,
+          "sha256": null
+        }
+      ],
+      "popularity": 4416,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:268177642",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg",
+          "size": 24772608,
+          "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
+        }
+      ],
+      "popularity": 37052,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-hen:457413679",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4HEN — hen.bin",
+      "summary": "**Full Changelog**: https://github.com/Scene-Collective/ps4-hen/compare/pre-release-main-179...pre-release-main-181",
+      "author": "Scene-Collective",
+      "version": "pre-release-main-181",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/Scene-Collective/ps4-hen/releases/tag/pre-release-main-181",
+      "downloads": [
+        {
+          "format": "bin",
+          "filename": "hen.bin",
+          "url": "https://github.com/Scene-Collective/ps4-hen/releases/download/pre-release-main-181/hen.bin",
+          "size": 499776,
+          "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
+        }
+      ],
+      "popularity": 1608,
+      "source": "PS4HEN",
+      "source_url": "https://github.com/Scene-Collective/ps4-hen",
+      "license_url": null,
+      "updated_at": "2026-06-25T07:39:15Z"
     },
     {
       "id": "vitadbtoo-vita:560",
@@ -57053,10 +57215,10 @@
       "name": "sLaunch",
       "categories": [],
       "description": "sLaunch is a fast text based HOME menu replacement inspired by niagara launcher.",
-      "added_at": "2026-08-22",
+      "added_at": "2026-09-11",
       "summary": "Fast text based HOME replacement",
       "author": "etonedemid",
-      "version": "1.1.0",
+      "version": "1.3.0",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/etonedemid/slaunch/",
@@ -57065,8 +57227,8 @@
           "format": "hbas",
           "filename": "sLaunch.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/sLaunch/manifest.install",
-          "size": 58579,
-          "sha256": "e237715966cda53ae70d39b7cdcfab4f59fa3ff47d364a20490a783db57b26dd"
+          "size": 58716,
+          "sha256": "87822df58bcf97a23df412fa8eb89db48f167e11746939396e462870b5786075"
         }
       ],
       "popularity": 231,
@@ -57074,7 +57236,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-08-24"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "hbas-switch:SlayTheSwitch",
@@ -59823,10 +59985,10 @@
         "utilities"
       ],
       "description": "A homebrew menu for the switch.\n\nFeatures: \nLaunch homebrew\nFile browser\nAppstore\nCreate / installer forwarders for homebrew\nTheme browser, powered by Themezer\nAnd many more! \n A homebrew menu for the switch.",
-      "added_at": "2026-08-15",
+      "added_at": "2026-09-09",
       "summary": "A hbmenu alternative",
       "author": "iTotalJustice",
-      "version": "1.0.6",
+      "version": "1.0.7",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/ITotalJustice/sphaira",
@@ -59835,8 +59997,8 @@
           "format": "hbas",
           "filename": "sphaira.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/sphaira/manifest.install",
-          "size": 4343,
-          "sha256": "6c27bf4737de8bf4d35ed228662a8caf5e7bc17d8b27e49b0af207c1121b01b1"
+          "size": 4990,
+          "sha256": "bbfab63462fd0d6741e3735e76a96ccc3237c5bf1ad3d2acdfcae0c68a36728b"
         }
       ],
       "popularity": 49633,
@@ -59844,7 +60006,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-08-16"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "vitadbtoo-vita:1238",
@@ -60294,10 +60456,10 @@
         "utilities"
       ],
       "description": "Features\n\nBrowse all screenshots from emuMMC/RAW1/Nintendo/Album/ with a dark SDL2 GUI\n\nSend to one or multiple Telegram chats (supports ALL option)\n\nOptional caption via on-screen keyboard before sending\n\nFullscreen preview\n\nLazy thumbnail loading — only decodes visible images\n\nSupports JPEG, PNG, BMP\n\nWeb Config — configure bot token and chat IDs from any browser on the same WiFi (port 7777)\n\nCatppuccin Mocha color palette",
-      "added_at": "2026-08-04",
+      "added_at": "2026-09-06",
       "summary": "Send screenshots from Switch to Telegram",
       "author": "fungalspores",
-      "version": "2.0",
+      "version": "2.2",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/fungalspores/SSBot",
@@ -60306,8 +60468,8 @@
           "format": "hbas",
           "filename": "SSBot.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SSBot/manifest.install",
-          "size": 8142,
-          "sha256": "58c42ed5e01834e840249e20985400e7f48a4a38948d041b49de2919d0e320a1"
+          "size": 7959,
+          "sha256": "5d4b16116af594e1e30982fe752c5ebe2f6797af2a14688678b00922a58fe6c2"
         }
       ],
       "popularity": 30,
@@ -60315,7 +60477,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-08-30"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "hbas-switch:SSBUModManager",
@@ -63455,10 +63617,10 @@
         "utilities"
       ],
       "description": "A hardware-accelerated media player for the Nintendo Switch, built on mpv and FFmpeg.  Features: \n\nCustom hardware acceleration backend for FFmpeg, with dynamic frequency scaling. The following codecs can be decoded:\n\nMPEG1/2/4\n\nVC1\n\nH.264/AVC (10+ bit not supported by hardware)\n\nH.265/HEVC (12+ bit not supported by hardware)\n\nVP8\n\nVP9 (10+ bit not supported by hardware)\n\nCustom graphics backend for mpv using deko3d, supporting:\n\nPlayback at 4k60fps\n\nDirect rendering (faster software decoding)\n\nCustom post-processing shaders\n\nCustom audio backend for mpv using native Nintendo APIs, supporting layouts up to 5.1 surround\n\nNetwork playback through Samba, NFS or SFTP\n\nExternal drive support using libusbhsfs\n\nRich and responsive user interface, even under load",
-      "added_at": "2026-05-22",
+      "added_at": "2026-09-16",
       "summary": "Hardware accelerated media player",
       "author": "averne",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/averne/SwitchWave/",
@@ -63467,8 +63629,8 @@
           "format": "hbas",
           "filename": "SwitchWave.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SwitchWave/manifest.install",
-          "size": 27007,
-          "sha256": "2c07dd605377880206ad692343c989e5fb5343ca872761f6db8ed4d07f24a977"
+          "size": 27051,
+          "sha256": "28f1b0badaad2fef16ffc7bdcfdebaad2b18b85d5dc08c82b3528c921acb99e1"
         }
       ],
       "popularity": 6454,
@@ -63476,7 +63638,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-05-23"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "vitadbtoo-vita:473",
@@ -68054,10 +68216,10 @@
         "utilities"
       ],
       "description": "A Skyline plugin using cargo-skyline for adding features to the training mode. It interfaces with skyline-web to provide a menu for customizing training options. (Note: This download will also install/update skyline)\n\nThe features in this modpack are configured through the menu, which can be accessed within training mode by pressing SPECIAL+UPTAUNT. Generally they fall into these categories:\n\nMash Settings; Defensive Settings: Controls CPU behavior\nSave State Settings: Saves and loads the positional state of the player and CPU\nMiscellaneous Settings: Displays additional information onscreen, enables or disables stage hazards\n\nMenu Settings:\nWhen multiple options are selected, one of the selected options will be chosen at random. Open / focused menus can be reset by pressing the Y button. All menus can be reset to the default by pressing the Z/ZR button. These defaults can be saved upon exiting the menu by pressing X when in-menu. Use this to make a preset that fits your personal training style.\n\nSave States:\nAt any time in Training Mode, you can press Shield + Down Taunt to save the state of training mode. This will save the position, state, and damage of each fighter, which can then be reverted to at any time with Shield + Up Taunt. With the mirroring setting, loading the save state will flip the positions, allowing you to practice your skills facing both directions. Use this instead of the built-in training mode reset!\n\nYou can switch Save State slots by using the associated toggle! There are 5 slots you can save, and they are persisted between loads of the game!",
-      "added_at": "2026-09-04",
+      "added_at": "2026-09-10",
       "summary": "An application to drastically improve the training mode in Super Smash Bros Ultimate",
       "author": "jugeeya",
-      "version": "7.1.0",
+      "version": "7.1.1",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/jugeeya/UltimateTrainingModpack/releases",
@@ -68066,8 +68228,8 @@
           "format": "hbas",
           "filename": "UltimateTrainingModpack.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/UltimateTrainingModpack/manifest.install",
-          "size": 2639,
-          "sha256": "55971cb2fc5df980bd8f91a144b15d8e9372fbc32e093ff8b633838736be0c7d"
+          "size": 2503,
+          "sha256": "ac4136a90cb1ff1a4594dd6987a58bda9c480e04d6c8b169bb1e67843c64da40"
         }
       ],
       "popularity": 25654,
@@ -68075,7 +68237,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-04"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "hbas-switch:UltrahandOverlay",
@@ -74264,10 +74426,10 @@
         "games"
       ],
       "description": "A card game based on a well known cooperative board game, with full rules enforcement, to play solo or (ultimately) multiplayer. Defeat villains with your team of heroes\nThese archives do not include resource files (images in particular). Resources will be automatically downloaded when the game starts (and it can take a while), unless you provide a separate \"core.zip\" file with those resources",
-      "added_at": "2026-07-03",
+      "added_at": "2026-08-30",
       "summary": "Solo/Coop card game",
       "author": "Wololo",
-      "version": "1.5.0",
+      "version": "1.6.0",
       "license": "Affero GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/frwololo/warnel-chawpiovs",
@@ -74276,8 +74438,8 @@
           "format": "hbas",
           "filename": "WarnelChawpiovs.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/WarnelChawpiovs/manifest.install",
-          "size": 64749,
-          "sha256": "986d16eb687c0f4f01779a6ea3d38f8455256d6458fde966c0af89109f8e930e"
+          "size": 65951,
+          "sha256": "3999c70639b48bfe5f84eacb5ad39a4c9d5dc3f2be5fa2372d14887d8a994692"
         }
       ],
       "popularity": 101,
@@ -74285,7 +74447,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-07-04"
+      "updated_at": "2026-09-17"
     },
     {
       "id": "vitadbtoo-vita:409",
@@ -79926,18 +80088,5 @@
       "homepage": "https://github.com/Scene-Collective/ps4-hen"
     }
   ],
-  "errors": [
-    {
-      "source": "ps4-goldhen",
-      "error": "HTTP Error 403: rate limit exceeded"
-    },
-    {
-      "source": "ps4-store",
-      "error": "HTTP Error 403: rate limit exceeded"
-    },
-    {
-      "source": "ps4-hen",
-      "error": "HTTP Error 403: rate limit exceeded"
-    }
-  ]
+  "errors": []
 }
