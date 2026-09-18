@@ -14968,6 +14968,37 @@
       "updated_at": "2022-01-15T10:45:25Z"
     },
     {
+      "id": "vitadbtoo-vita:1572",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "D2Vita",
+      "summary": "Port of Diablo II: Lord of Destruction for PSVITA, running the original Game.exe through a Win32 runtime layer.",
+      "author": "Franckrst",
+      "version": "v.0.1.1",
+      "title_id": "DTWO00001",
+      "description": "Port of Diablo II: Lord of Destruction for PSVITA, running the original Game.exe through a Win32 runtime layer.",
+      "requirements": "- Game Data Files: Diablo II PC and Lord of Destruction (d2data.mpq, d2exp.mpq) in ux0:data/d2vita",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/39fc01e282450d92d0f8b6e0509a05709738b1ebeb5628407f4a2eb430013b30.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Franckrst/D2Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "d2vita.vpk",
+          "url": "https://github.com/Franckrst/D2Vita/releases/download/v0.1.1/d2vita.vpk",
+          "size": 8806302,
+          "md5": "9c2d0aba29cd456f01ab718aa3a3029b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-18"
+    },
+    {
       "id": "open-shop-channel-wii:d2x-cios-installer",
       "platforms": [
         "wii"
@@ -26089,7 +26120,7 @@
       "name": "GoldenBalloon",
       "summary": "Port of GoldenBalloon, a Diddy Kong Racing decompilation, for PSVITA.",
       "author": "zm2283145",
-      "version": "v.1.7.1",
+      "version": "v.1.7.2",
       "title_id": null,
       "description": "",
       "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Diddy Kong Racing in ux0:data/goldenballoon",
@@ -26100,10 +26131,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "GoldenBalloon-Vita-v1.7.1.vpk",
-          "url": "https://github.com/zm2283145/goldenballoon-vita-port/releases/download/v1.7.1/GoldenBalloon-Vita-v1.7.1.vpk",
-          "size": 4473413,
-          "md5": "f56f1d194c5493a36e27a3b67155a136"
+          "filename": "GoldenBalloon-Vita-v1.7.2.vpk",
+          "url": "https://github.com/zm2283145/goldenballoon-vita-port/releases/download/v1.7.2/GoldenBalloon-Vita-v1.7.2.vpk",
+          "size": 4746335,
+          "md5": "927169b97a263d1874bb509a9a1f07d7"
         }
       ],
       "popularity": 0,
@@ -49010,7 +49041,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5906,
+      "popularity": 5911,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49037,7 +49068,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2415,
+      "popularity": 2417,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49064,7 +49095,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4787,
+      "popularity": 4791,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49091,7 +49122,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4426,
+      "popularity": 4428,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49118,7 +49149,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 37133,
+      "popularity": 37147,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49145,7 +49176,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1617,
+      "popularity": 1625,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -49419,30 +49450,30 @@
       "updated_at": "2026-06-21 15:37:35 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-5.28.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-5.30.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v5.28.0",
+      "version": "v5.30.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-5.28.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.28.0/ps5upload-5.28.0.elf",
-          "sha256": "e5937396055234122e21fa39ebc88287a8de916dbf541d5739b376e74ff882a3"
+          "filename": "ps5upload-5.30.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.30.0/ps5upload-5.30.0.elf",
+          "sha256": "5d459934a2e8dac8e1a21104db8c1632809d2f45bb2f9a5a0395317d44de32c8"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-15 21:55:36 UTC+8"
+      "updated_at": "2026-09-18 19:13:41 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -57865,6 +57896,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2017-01-27T00:03:00Z"
+    },
+    {
+      "id": "vitadbtoo-vita:1573",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Smash Melee Vita",
+      "summary": "Port of Super Smash Bros. Melee (NTSC-U 1.02) for PSVITA, built on the doldecomp decompilation and recompiled to run natively.",
+      "author": "zm2283145",
+      "version": "v.0.6.0-build.7.1",
+      "title_id": "MLVITA002",
+      "description": "Static recompilation port of Super Smash Bros. Melee (NTSC-U 1.02) for PSVITA.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Super Smash Bros. Melee NTSC-U rev 2 disc image (GALE01.iso, uncompressed) in ux0:data/melee",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/8feef65158cd625e1524dbd6ec81c79f9391dca0773aef63f98370a755871fa8.png",
+      "screenshots": [],
+      "release_url": "https://github.com/zm2283145/melee-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "SmashMeleevita.vpk",
+          "url": "https://github.com/zm2283145/melee-Vita/releases/download/vita-v0.6.0-build.7.1/SmashMeleevita.vpk",
+          "size": 2448228,
+          "md5": "a66de0c73ae175ce33447275a1a35e93"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-18"
     },
     {
       "id": "vitadbtoo-vita:1346",
