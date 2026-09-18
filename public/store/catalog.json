@@ -47983,7 +47983,7 @@
         "3ds"
       ],
       "name": "Postal 1 Engine Port for New3ds Alpha",
-      "summary": "A homebrew engine port of the original Postal 1 (1997) for New Nintendo 3DS. Features Circle Pad/D-Pad movement and full C-Stick aiming support. (Early Alpha / Playable Demo - Original game assets required).",
+      "summary": "An open-source, work-in-progress port of Postal 1 for Nintendo 3DS, built from the publicly available Postal source code. Original Postal 1 assets are required and are not included. (When the black screen appears, press START.) ",
       "author": "Taifu",
       "version": "1.0.0",
       "license": "GNU General Public License v2.0",
@@ -47993,8 +47993,14 @@
         {
           "format": "3dsx",
           "filename": "postal1-3ds.3dsx",
-          "url": "https://github.com/Taifuoguru/Postal-1-New-3DS-Port-Alpha-/releases/download/1.0.0/postal1-3ds.3dsx",
+          "url": "https://github.com/Taifuoguru/Postal-1-3DS/releases/download/1.0.0/postal1-3ds.3dsx",
           "size": 2429928
+        },
+        {
+          "format": "cia",
+          "filename": "postal1-3ds.cia",
+          "url": "https://github.com/Taifuoguru/Postal-1-3DS/releases/download/1.0.0/postal1-3ds.cia",
+          "size": 1466304
         }
       ],
       "source": "Universal-DB",
@@ -49004,7 +49010,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5892,
+      "popularity": 5901,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49031,7 +49037,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2410,
+      "popularity": 2412,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49058,7 +49064,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4776,
+      "popularity": 4778,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49085,7 +49091,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4420,
+      "popularity": 4423,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49112,7 +49118,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 37079,
+      "popularity": 37112,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49139,7 +49145,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1611,
+      "popularity": 1617,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
