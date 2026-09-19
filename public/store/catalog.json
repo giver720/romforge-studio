@@ -24574,7 +24574,7 @@
       "name": "Garlic SaveMgr",
       "summary": "On-console save decrypt/encrypt daemon. Back up saves in plaintext, edit on PC, re-encrypt for the same console. No network.",
       "author": "",
-      "version": "v1.13",
+      "version": "v1.13.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-savemgr",
@@ -24582,7 +24582,7 @@
         {
           "format": "elf",
           "filename": "garlic-savemgr.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.13/garlic-savemgr.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.13.1/garlic-savemgr.elf",
           "sha256": null
         }
       ],
@@ -24590,7 +24590,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-22 22:03:51 UTC+8"
+      "updated_at": "2026-09-19 10:28:52 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -33571,19 +33571,19 @@
           "format": "3dsx",
           "filename": "isle.3dsx",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.3dsx",
-          "size": 3032340
+          "size": 3038440
         },
         {
           "format": "cia",
           "filename": "isle.cia",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.cia",
-          "size": 2183616
+          "size": 2186688
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-18T19:57:24Z"
+      "updated_at": "2026-09-18T20:20:43Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -49041,7 +49041,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5914,
+      "popularity": 5921,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49068,7 +49068,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2422,
+      "popularity": 2424,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49095,7 +49095,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4796,
+      "popularity": 4801,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49122,7 +49122,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4430,
+      "popularity": 4431,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49149,7 +49149,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 37170,
+      "popularity": 37205,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49176,7 +49176,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1632,
+      "popularity": 1635,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
