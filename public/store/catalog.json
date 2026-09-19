@@ -6952,6 +6952,32 @@
       "updated_at": "2026-08-12 02:08:09 UTC+8"
     },
     {
+      "id": "ps5-payloads-atlas:bfplayer-standalone.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "BFplayer",
+      "summary": "A PS5 media and video player that also functions as a complete media library, with support for subtitles, multiple audio tracks, aspect-ratio adjustment, cropping, and many other playback settings.",
+      "author": "",
+      "version": "v0.1.0-alpha.44",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/itsblurf/bfplayer",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "bfplayer-standalone.elf",
+          "url": "https://github.com/ItsBlurf/BFplayer/releases/download/v0.1.0-alpha.44/bfplayer-standalone.elf",
+          "sha256": "0d028deb145d6fc9a5b55d43a45e072919178fbb261c66cd914ebcfb0b3b05c0"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-07-31 08:54:17 UTC+8"
+    },
+    {
       "id": "vitadbtoo-vita:1530",
       "platforms": [
         "psvita"
@@ -47223,32 +47249,6 @@
       "updated_at": "2019-01-28T00:00:00+00:00"
     },
     {
-      "id": "ps5-payloads-atlas:pldmgr_v0.5.1.elf",
-      "platforms": [
-        "ps5"
-      ],
-      "name": "pldmgr",
-      "summary": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
-      "author": "",
-      "version": "v0.5.1",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/itsplk/ps5-payload-manager",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "pldmgr_v0.5.1.elf",
-          "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.1/pldmgr_v0.5.1.elf",
-          "sha256": "05617c69ea145d1c11b8f7a6b7d3bd9e6df3831afd25d71a4ac85d63fb8e28aa"
-        }
-      ],
-      "source": "PS5 Payloads Atlas",
-      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
-      "license_url": null,
-      "popularity": null,
-      "updated_at": "2026-08-02 21:20:44 UTC+8"
-    },
-    {
       "id": "vitadbtoo-vita:640",
       "platforms": [
         "psvita"
@@ -47856,6 +47856,32 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2022-12-10"
+    },
+    {
+      "id": "ps5-payloads-atlas:PoorDS4rc44.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "PoorDS4",
+      "summary": "Use a wireless DualShock 4 in native PS5 games on jailbroken consoles.",
+      "author": "",
+      "version": "v0.1.0-rc44",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/itsblurf/poords4",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "PoorDS4rc44.elf",
+          "url": "https://github.com/ItsBlurf/PoorDS4/releases/download/v0.1.0-rc44/PoorDS4rc44.elf",
+          "sha256": "a077fe7a1defbe6918538b834eaa502a6b4239d7feff58c8fa4ec06cd325d9a8"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-09-19 02:57:23 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1030",
@@ -49015,7 +49041,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5927,
+      "popularity": 5933,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49042,7 +49068,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2427,
+      "popularity": 2428,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49069,7 +49095,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4806,
+      "popularity": 4811,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49096,7 +49122,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4433,
+      "popularity": 4434,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49123,38 +49149,38 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 37224,
+      "popularity": 37245,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
       "updated_at": "2023-05-19T20:41:59Z"
     },
     {
-      "id": "ps4-hen:457413679",
+      "id": "ps4-hen:574675730",
       "platforms": [
         "ps4"
       ],
       "name": "PS4HEN — hen.bin",
-      "summary": "**Full Changelog**: https://github.com/Scene-Collective/ps4-hen/compare/pre-release-main-179...pre-release-main-181",
+      "summary": "**Full Changelog**: https://github.com/Scene-Collective/ps4-hen/compare/pre-release-main-181...pre-release-main-182",
       "author": "Scene-Collective",
-      "version": "pre-release-main-181",
+      "version": "pre-release-main-182",
       "license": null,
       "icon_url": null,
-      "release_url": "https://github.com/Scene-Collective/ps4-hen/releases/tag/pre-release-main-181",
+      "release_url": "https://github.com/Scene-Collective/ps4-hen/releases/tag/pre-release-main-182",
       "downloads": [
         {
           "format": "bin",
           "filename": "hen.bin",
-          "url": "https://github.com/Scene-Collective/ps4-hen/releases/download/pre-release-main-181/hen.bin",
-          "size": 499776,
-          "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
+          "url": "https://github.com/Scene-Collective/ps4-hen/releases/download/pre-release-main-182/hen.bin",
+          "size": 500448,
+          "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 1644,
+      "popularity": 8,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
-      "updated_at": "2026-06-25T07:39:15Z"
+      "updated_at": "2026-09-19T11:47:15Z"
     },
     {
       "id": "vitadbtoo-vita:560",
@@ -49223,7 +49249,7 @@
       "name": "PS5 File Explorer",
       "summary": "BFpilot-derived web file manager for browsing and managing files on a jailbroken PS5.",
       "author": "",
-      "version": "file-explorer-v0.2.1",
+      "version": "v0.2.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/juma-sayeh/ps5-file-explorer",
@@ -49268,7 +49294,7 @@
       "updated_at": "2026-08-16 21:35:51 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:wfm-7zip-helper.elf",
+      "id": "ps5-payloads-atlas:web-file-mgr-v1.9.elf",
       "platforms": [
         "ps5"
       ],
@@ -49282,9 +49308,9 @@
       "downloads": [
         {
           "format": "elf",
-          "filename": "wfm-7zip-helper.elf",
-          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/wfm-7zip-helper.elf",
-          "sha256": "7a6369489143c2b8887331a7235a6a77dd5667c794c4234973f8159fed92fe24"
+          "filename": "web-file-mgr-v1.9.elf",
+          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.9/web-file-mgr-v1.9.elf",
+          "sha256": "711cb076e887fcd55d973ade8b84bb6c22720be295bfde18e32761f6e0479a3e"
         }
       ],
       "source": "PS5 Payloads Atlas",
@@ -49370,6 +49396,32 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-09-05 16:40:09 UTC+8"
+    },
+    {
+      "id": "ps5-payloads-atlas:pldmgr_v0.5.1.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ps5-payload-manager",
+      "summary": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
+      "author": "",
+      "version": "v0.5.1",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/itsplk/ps5-payload-manager",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "pldmgr_v0.5.1.elf",
+          "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.1/pldmgr_v0.5.1.elf",
+          "sha256": "05617c69ea145d1c11b8f7a6b7d3bd9e6df3831afd25d71a4ac85d63fb8e28aa"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-08-02 21:20:44 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:ps5-syslang-zh-Hans-v0.2.elf",
@@ -51867,7 +51919,7 @@
       "name": "red-viper",
       "summary": "A Virtual Boy emulator for the 3DS",
       "author": "Floogle",
-      "version": "v1.3.3",
+      "version": "v1.3.4",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/skyfloogle/red-viper/master/icon.png",
       "release_url": "https://github.com/skyfloogle/red-viper/releases",
@@ -51875,20 +51927,20 @@
         {
           "format": "3dsx",
           "filename": "red-viper.3dsx",
-          "url": "https://github.com/skyfloogle/red-viper/releases/download/v1.3.3/red-viper.3dsx",
-          "size": 681272
+          "url": "https://github.com/skyfloogle/red-viper/releases/download/v1.3.4/red-viper.3dsx",
+          "size": 681280
         },
         {
           "format": "cia",
           "filename": "red-viper.cia",
-          "url": "https://github.com/skyfloogle/red-viper/releases/download/v1.3.3/red-viper.cia",
+          "url": "https://github.com/skyfloogle/red-viper/releases/download/v1.3.4/red-viper.cia",
           "size": 701376
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-18T17:01:15Z"
+      "updated_at": "2026-09-19T14:58:23Z"
     },
     {
       "id": "hbas-switch:REDRIVER2",
