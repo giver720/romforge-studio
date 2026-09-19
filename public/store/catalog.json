@@ -6225,32 +6225,6 @@
       "updated_at": "2025-12-25T00:28:51Z"
     },
     {
-      "id": "ps5-payloads-atlas:bdj_unpatch_1360.elf",
-      "platforms": [
-        "ps5"
-      ],
-      "name": "bdj_unpatch",
-      "summary": "BD-JB Blu-ray patch payload for supported optical-drive PS5 firmware. Apply the patch and reboot to use Blu-ray based jailbreaking without reflashing.",
-      "author": "",
-      "version": "2.0",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/gezine/bd-jb5",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "bdj_unpatch_1360.elf",
-          "url": "https://github.com/Gezine/BD-JB5/releases/download/2.0/bdj_unpatch_1360.elf",
-          "sha256": "22bae58b6214832c99457d56fc97676ce8eef1d626fbaf50b6a69508e5c1e18e"
-        }
-      ],
-      "source": "PS5 Payloads Atlas",
-      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
-      "license_url": null,
-      "popularity": null,
-      "updated_at": "2026-08-05 07:40:33 UTC+8"
-    },
-    {
       "id": "vitadbtoo-vita:1437",
       "platforms": [
         "psvita"
@@ -49041,7 +49015,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5921,
+      "popularity": 5927,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49068,7 +49042,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2424,
+      "popularity": 2427,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49095,7 +49069,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4801,
+      "popularity": 4806,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49122,7 +49096,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4431,
+      "popularity": 4433,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49149,7 +49123,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 37205,
+      "popularity": 37224,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49176,7 +49150,7 @@
           "sha256": "568d57e7c6bfff1b96fc20a4e00b9ca744aa58b135a56eeb5c66c1175acfac3e"
         }
       ],
-      "popularity": 1635,
+      "popularity": 1644,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
