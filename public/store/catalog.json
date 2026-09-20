@@ -32776,7 +32776,7 @@
       "name": "kstuff-lite (EchoStretch)",
       "summary": "Kernel patcher for the full PS5 firmware range. Resolves kernel symbols at runtime via the SDK's NID table, so the same binary covers FW 1.00–12.x. Required by ShadowMountPlus and most other privileged payloads. Load this first.",
       "author": "",
-      "version": "v1.10",
+      "version": "v1.11",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/echostretch/kstuff-lite",
@@ -32784,15 +32784,15 @@
         {
           "format": "elf",
           "filename": "kstuff.elf",
-          "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.10/kstuff.elf",
-          "sha256": "82cbb1e70f8a562317d6b65269cf6aa0d7d94e22df4f1ac89a260ca0ec261252"
+          "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.11/kstuff.elf",
+          "sha256": "ea14edbfe18ddc04f10dc09c4b1bf0c26e95b34a115a797722d6eda6298769c7"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-12 11:31:03 UTC+8"
+      "updated_at": "2026-09-21 03:08:36 UTC+8"
     },
     {
       "id": "vitadbtoo-psp:953",
@@ -38787,7 +38787,7 @@
           "format": "elf",
           "filename": "nanodns.elf",
           "url": "https://github.com/drakmor/nanoDNS/releases/download/0.4/nanodns.elf",
-          "sha256": "dcb845f3570771275b22b37534bf924a7f8ae219fb91ef00c6bccab85d1c2420"
+          "sha256": "fcfb7d47c3b295560ea1603dc015f7c4950353ef0faca16428bd425680ef1fc5"
         }
       ],
       "source": "PS5 Payloads Atlas",
@@ -46904,30 +46904,30 @@
       "updated_at": "2026-03-10"
     },
     {
-      "id": "ps5-payloads-atlas:pkgmgr_v1.0.0.elf",
+      "id": "ps5-payloads-atlas:pkgmgr_v1.1.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PKG-Manager",
       "summary": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
       "author": "",
-      "version": "v1.0.0",
+      "version": "v1.1.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-pkg-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "pkgmgr_v1.0.0.elf",
-          "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.0.0/pkgmgr_v1.0.0.elf",
-          "sha256": "51d3f13a91d007019f3262e1bd8ccc8ba3cbea6b1b6534b8e86df6bd2e0efb4b"
+          "filename": "pkgmgr_v1.1.0.elf",
+          "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.1.0/pkgmgr_v1.1.0.elf",
+          "sha256": "3df00c908411741216b3a5741b297cd3e771ce3b492cdf0f2f4edb7cc60b403b"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-18 01:53:40 UTC+8"
+      "updated_at": "2026-09-21 03:37:59 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:341",
@@ -49041,7 +49041,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 6097,
+      "popularity": 6194,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49068,7 +49068,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2449,
+      "popularity": 2455,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49095,7 +49095,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 5030,
+      "popularity": 5159,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49122,7 +49122,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4488,
+      "popularity": 4508,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49149,7 +49149,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 38139,
+      "popularity": 38583,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49176,7 +49176,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 91,
+      "popularity": 109,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -49476,30 +49476,30 @@
       "updated_at": "2026-06-21 15:37:35 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-5.30.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-5.31.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v5.30.0",
+      "version": "v5.31.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-5.30.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.30.0/ps5upload-5.30.0.elf",
-          "sha256": "5d459934a2e8dac8e1a21104db8c1632809d2f45bb2f9a5a0395317d44de32c8"
+          "filename": "ps5upload-5.31.1.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.31.1/ps5upload-5.31.1.elf",
+          "sha256": "c366ebdec72c53154938d3dc319ca9ee6b1bbceee52344755e88774c3d3b0956"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-18 19:13:41 UTC+8"
+      "updated_at": "2026-09-21 02:31:08 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -56275,32 +56275,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2025-01-07"
-    },
-    {
-      "id": "ps5-payloads-atlas:shadowmountplus.elf",
-      "platforms": [
-        "ps5"
-      ],
-      "name": "ShadowMount+",
-      "summary": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
-      "author": "",
-      "version": "1.6beta16",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/drakmor/shadowmountplus",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "shadowmountplus.elf",
-          "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.6beta16/shadowmountplus.elf",
-          "sha256": "a35246fb3bb6042b25653b51cdcbc33254b40339342bf1d2dd0d2eceee2ca526"
-        }
-      ],
-      "source": "PS5 Payloads Atlas",
-      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
-      "license_url": null,
-      "popularity": null,
-      "updated_at": "2026-06-28 21:59:58 UTC+8"
     },
     {
       "id": "universal-db:dnasdw/SharedFontTool",
