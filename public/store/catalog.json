@@ -32686,7 +32686,7 @@
       ],
       "requirements": "wii · wii_mini · vwii · Wii Remote · Classic Controller · GameCube Controller · SDHC",
       "author": "Korbo",
-      "version": "7.0.0",
+      "version": "7.1.0",
       "title_id": "000100014EB9B936",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/korbodonut/icon.png",
@@ -32696,14 +32696,14 @@
           "format": "zip",
           "filename": "korbodonut.zip",
           "url": "https://hbb1.oscwii.org/api/contents/korbodonut/korbodonut.zip",
-          "size": 2682485
+          "size": 2663985
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-06T18:51:09+00:00"
+      "updated_at": "2026-09-20T04:12:04+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -49041,7 +49041,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 5938,
+      "popularity": 5977,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49068,7 +49068,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2429,
+      "popularity": 2435,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49095,7 +49095,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 4816,
+      "popularity": 4873,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49122,7 +49122,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4436,
+      "popularity": 4453,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49149,7 +49149,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 37272,
+      "popularity": 37514,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49176,7 +49176,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 13,
+      "popularity": 51,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -79341,28 +79341,28 @@
       "name": "zelda-alttp-3ds",
       "summary": "Nintendo 3DS dual-screen port of Zelda A Link to the Past based on zelda3",
       "author": "estebanpdn",
-      "version": "v3.1",
+      "version": "v3.2",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/EstebanPdN/zelda-alttp-3ds/main/udicon.png",
       "release_url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "zelda3-3ds-v3.1.3dsx",
-          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v3.1/zelda3-3ds-v3.1.3dsx",
-          "size": 6754764
+          "filename": "zelda3-3ds-v3.2.3dsx",
+          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v3.2/zelda3-3ds-v3.2.3dsx",
+          "size": 6756320
         },
         {
           "format": "cia",
-          "filename": "zelda3-3ds-v3.1.cia",
-          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v3.1/zelda3-3ds-v3.1.cia",
+          "filename": "zelda3-3ds-v3.2.cia",
+          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v3.2/zelda3-3ds-v3.2.cia",
           "size": 5944256
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-11T02:56:04Z"
+      "updated_at": "2026-09-20T01:30:37Z"
     },
     {
       "id": "vitadbtoo-vita:993",
