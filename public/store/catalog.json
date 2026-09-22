@@ -1460,7 +1460,7 @@
       ],
       "name": "3DSC2",
       "summary": "A universal 3DS screen capture and control software",
-      "author": "cylin577",
+      "author": "林辰祐",
       "version": "v1.1.2",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/cylin577/3DSC2/main/resources/icon.png",
@@ -6834,7 +6834,7 @@
       ],
       "name": "Better-NFCReader",
       "summary": "Read 0x7 NFC/RFID tags!",
-      "author": "cylin577",
+      "author": "林辰祐",
       "version": "v2.3.0",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/cylin577/Better-NFCReader/master/resources/icon.png",
@@ -21780,10 +21780,10 @@
         "utilities"
       ],
       "description": "This project should be helpful to anyone trying to learn SDL2 on Nintendo Switch in c++.\n\nPRESS PLUS TO RETURN TO HBMENU.\n- Ported to Nintendo Switch from: https://www.hanshq.net/fire.html\n\nSource:\nhttps://github.com/Marice/Fireplace-NX",
-      "added_at": "2026-02-21",
+      "added_at": "2026-09-21",
       "summary": "A lovely pixelated retro fireplace simulator",
       "author": "marice, ELY3M",
-      "version": "8",
+      "version": "1",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/ELY3M/Fireplace-NX",
@@ -21793,7 +21793,7 @@
           "filename": "FireplaceNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/FireplaceNX/manifest.install",
           "size": 6590,
-          "sha256": "e7b636ec62226ae27b48401080b0202512293e7abc16490eaf7b17fc67469d93"
+          "sha256": "3b01fae11e45f992d653dbd628458be897b3ad8c2d4b74100e89c6c2c850f4e1"
         }
       ],
       "popularity": 3019,
@@ -21801,7 +21801,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-02-22"
+      "updated_at": "2026-09-22"
     },
     {
       "id": "hbas-wiiu:fireplace-nx-wiiu",
@@ -46937,30 +46937,30 @@
       "updated_at": "2026-03-10"
     },
     {
-      "id": "ps5-payloads-atlas:pkgmgr_v1.2.1.elf",
+      "id": "ps5-payloads-atlas:pkgmgr_v1.2.2.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PKG-Manager",
       "summary": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
       "author": "",
-      "version": "v1.2.1",
+      "version": "v1.2.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-pkg-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "pkgmgr_v1.2.1.elf",
-          "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.2.1/pkgmgr_v1.2.1.elf",
-          "sha256": "dff50e27f954e78838e97bcddbb5914bd348572a3caa3b2f9a0880e25a0f5fbc"
+          "filename": "pkgmgr_v1.2.2.elf",
+          "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.2.2/pkgmgr_v1.2.2.elf",
+          "sha256": "67b649699a67eb68f5a6cfbfb34295b9419b88c70aba6e002af71f6c1c285624"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-22 08:55:49 UTC+8"
+      "updated_at": "2026-09-22 18:32:27 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:341",
@@ -49074,7 +49074,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 6533,
+      "popularity": 6579,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49101,7 +49101,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2495,
+      "popularity": 2497,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49128,7 +49128,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 5616,
+      "popularity": 5687,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49155,7 +49155,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4601,
+      "popularity": 4610,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49182,7 +49182,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 40045,
+      "popularity": 40230,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49209,7 +49209,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 152,
+      "popularity": 159,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -49509,30 +49509,30 @@
       "updated_at": "2026-06-21 15:37:35 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-5.31.4.elf",
+      "id": "ps5-payloads-atlas:ps5upload-5.33.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v5.31.4",
+      "version": "v5.33.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-5.31.4.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.31.4/ps5upload-5.31.4.elf",
-          "sha256": "420bdd4d9328ab1068f32ef1a19f96387586ddd2a308744f81957d04d8a41d3b"
+          "filename": "ps5upload-5.33.1.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v5.33.1/ps5upload-5.33.1.elf",
+          "sha256": "75b364880bedaaac1499779d5a459008ca838eb13d30252169f9b134dd32ed63"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-21 10:53:38 UTC+8"
+      "updated_at": "2026-09-22 16:58:30 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -69707,7 +69707,7 @@
       "name": "Vapecord-ACNL-Plugin",
       "summary": "An Animal Crossing New Leaf Modding Menu Overlay to use while playing the game.",
       "author": "RedShyGuy",
-      "version": "v3.3.1",
+      "version": "v3.4.0",
       "license": "Other",
       "icon_url": "https://avatars.githubusercontent.com/u/43783060?v=4&size=128",
       "release_url": "https://github.com/RedShyGuy/Vapecord-ACNL-Plugin/releases",
@@ -69715,14 +69715,14 @@
         {
           "format": "zip",
           "filename": "Vapecord.Public.zip",
-          "url": "https://github.com/RedShyGuy/Vapecord-ACNL-Plugin/releases/download/v3.3.1/Vapecord.Public.zip",
-          "size": 4699030
+          "url": "https://github.com/RedShyGuy/Vapecord-ACNL-Plugin/releases/download/v3.4.0/Vapecord.Public.zip",
+          "size": 8994150
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-04-12T07:24:37Z"
+      "updated_at": "2026-09-22T09:50:47Z"
     },
     {
       "id": "hbas-switch:Vapor_spec",
