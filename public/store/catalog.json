@@ -46937,30 +46937,30 @@
       "updated_at": "2026-03-10"
     },
     {
-      "id": "ps5-payloads-atlas:pkgmgr_v1.1.0.elf",
+      "id": "ps5-payloads-atlas:pkgmgr_v1.2.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PKG-Manager",
       "summary": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
       "author": "",
-      "version": "v1.1.0",
+      "version": "v1.2.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-pkg-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "pkgmgr_v1.1.0.elf",
-          "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.1.0/pkgmgr_v1.1.0.elf",
-          "sha256": "3df00c908411741216b3a5741b297cd3e771ce3b492cdf0f2f4edb7cc60b403b"
+          "filename": "pkgmgr_v1.2.1.elf",
+          "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.2.1/pkgmgr_v1.2.1.elf",
+          "sha256": "dff50e27f954e78838e97bcddbb5914bd348572a3caa3b2f9a0880e25a0f5fbc"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-21 03:37:59 UTC+8"
+      "updated_at": "2026-09-22 08:55:49 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:341",
@@ -49074,7 +49074,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 6462,
+      "popularity": 6533,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49101,7 +49101,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2486,
+      "popularity": 2495,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49128,7 +49128,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 5519,
+      "popularity": 5616,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49155,7 +49155,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4584,
+      "popularity": 4601,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49182,7 +49182,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 39778,
+      "popularity": 40045,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49209,7 +49209,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 144,
+      "popularity": 152,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
