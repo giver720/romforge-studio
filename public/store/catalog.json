@@ -2506,6 +2506,39 @@
       "updated_at": "2010-04-23T15:00:00+00:00"
     },
     {
+      "id": "hbas-switch:acnh-manager",
+      "platforms": [
+        "switch"
+      ],
+      "name": "ACNH-Manager",
+      "categories": [
+        "utilities"
+      ],
+      "description": "把 agent(游戏内增强 Mod)装进《集合啦!动物森友会》游戏目录(仅支持 3.0.3,写入前逐文件校验),装好后在聊天栏行首输入  /9C9  就能把物品放进背包,也可一键删除还原。\n\nInstalls the in-game agent for Animal Crossing: New Horizons 3.0.3 -- every file is SHA-256 checked before it is written -- so a chat line starting with  /9C9  puts that item in your bag, and one tap removes it again.",
+      "added_at": "2026-09-23",
+      "summary": "Installer and manager for the Animal Crossing: New Horizons in-game agent.",
+      "author": "acnh-game",
+      "version": "1.0.1",
+      "license": "GPLv3",
+      "icon_url": null,
+      "release_url": "https://gitee.com/acnh-game/acnh-manager",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "acnh-manager.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/acnh-manager/manifest.install",
+          "size": 2670,
+          "sha256": "db1474b60a500b62e82ca5bab082c61d51b5acdb98a21ac02cf32fb0393af025"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/acnh-manager/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-09-23"
+    },
+    {
       "id": "vitadbtoo-vita:307",
       "platforms": [
         "psvita"
@@ -8929,6 +8962,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2026-06-01T16:22:31Z"
+    },
+    {
+      "id": "hbas-switch:Brewser",
+      "platforms": [
+        "switch"
+      ],
+      "name": "Brewser",
+      "categories": [],
+      "description": "Brewser turns your Switch into a platform for web apps. Browse a curated catalogue of 28 apps at launch, a Three.js planetarium, a MIDI control surface, WS2812B LED panel control through an ESP32, a Home Assistant dashboard, an audio visualizer, and even an unmodified Unity WebGL game.\n\nUnder the hood: a real browser-grade engine (V8 with JIT, Skia, WebGL1/2) with hardware APIs the stock browser will never have: Web MIDI, WebSerial, WebUSB, WebBluetooth, all verified on real hardware.\n\nFully themeable from plain files on your SD card: wallpapers (including animated GLSL shader wallpapers), styles, cursors, and keyboards. Install once, Brewser self-updates from cryptographically signed releases.\n\nNo piracy: it runs web apps only, never commercial games or ROMs. It never contacts Nintendo servers and works fine with DNS.MITM/90DNS. Anyone can submit apps at brewser.io, every submission is security-scanned before publication.\n\nRequires Atmosphère 1.10+ (older may work).",
+      "added_at": "2026-09-17",
+      "summary": "Run web apps on your Switch",
+      "author": "natureglass",
+      "version": "0.1.1.31",
+      "license": "Mozilla PLv2",
+      "icon_url": null,
+      "release_url": "https://github.com/natureglass/Brewser",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "Brewser.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/Brewser/manifest.install",
+          "size": 74752,
+          "sha256": "6c0b2f8e1d6df18cd9190527819f8a320399ccab48a80496224f3669958d998b"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/Brewser/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-09-23"
     },
     {
       "id": "hbas-switch:Brick-Game-9999-in-1",
@@ -41705,6 +41769,37 @@
       "updated_at": "2026-02-28"
     },
     {
+      "id": "hbas-switch:NXPlazaStreetPass",
+      "platforms": [
+        "switch"
+      ],
+      "name": "NX Plaza - StreetPass",
+      "categories": [],
+      "description": "StreetPass for the Switch, over the internet.\n\nYour console quietly swaps a small pass with other consoles that share your network or your corner of the internet, and you come back later to a stack of them.\n\nWhat it does :\n\nA pass of your own - a name, a greeting, a card theme, up to four things you are \"carrying\", and a place label you type yourself.\nA Mii maker - face shape, skin, hair, eyes, eyebrows, nose, mouth, glasses, facial hair, headwear and build, all drawn from real part outlines.\nThe plaza - who crossed your path while you were away, newest first.\nThe radar - who else has the app open right now, in the reach you chose.\nA collection - everyone you have met, how long ago, and how many times.\nTrade back or block, per person.\nThe title you last played, picked from your five most recent - never typed, never guessed, and off entirely if you would.\n\nA pass never carries your account name, your friend code, your IP, or position.",
+      "added_at": "2026-09-19",
+      "summary": "An Online StreetPass System for Switch",
+      "author": "Insektaure",
+      "version": "0.1.0",
+      "license": "GPLv2",
+      "icon_url": null,
+      "release_url": "https://github.com/Insektaure/NX-Plaza",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "NXPlazaStreetPass.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/NXPlazaStreetPass/manifest.install",
+          "size": 7047,
+          "sha256": "aac6edfba0980f2d81464d902a9c72d129acc3aed416b8805a37c9385ab00e0d"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXPlazaStreetPass/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-09-23"
+    },
+    {
       "id": "hbas-switch:NXRemoteLauncher",
       "platforms": [
         "switch"
@@ -47823,6 +47918,39 @@
       "updated_at": "2024-06-13T14:28:35Z"
     },
     {
+      "id": "hbas-wiiu:PongU",
+      "platforms": [
+        "wiiu"
+      ],
+      "name": "Pong U",
+      "categories": [
+        "games"
+      ],
+      "description": "A simple, lightweigh (~500 kb size with metadata) pong clone written in C with SDL2. (Cross-platform. For more platforms check out my github.)\n\nFeatures:\nVery small size. (As I said, 524 kb with metadata)\n\nControls:\n| DPad |\nUp - Go up\nDown - Go down\nLeft - Go down\nRight - Go up\n\nWarning:\nDoes not support WiiMotes. (Tho the controls are made with those in mind in case I add the support)",
+      "added_at": "2026-08-29",
+      "summary": "1979 pong but worse!",
+      "author": "SpookScoop93",
+      "version": "1.4",
+      "license": "GPLv3",
+      "icon_url": null,
+      "release_url": "https://github.com/youdontknowmeaf/pong-sdl1.2/releases/latest/pong_u.wuhb",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "PongU.hbas",
+          "url": "https://wiiu.cdn.fortheusers.org/packages/PongU/manifest.install",
+          "size": 1038,
+          "sha256": "d9f1df8e05394d62b6b9b0319408af7762c1ba317727e92a41b2a8fa7a25ac73"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/PongU/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/wiiu",
+      "license_url": null,
+      "updated_at": "2026-09-23"
+    },
+    {
       "id": "hbas-switch:PongNX",
       "platforms": [
         "switch"
@@ -49074,7 +49202,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 6843,
+      "popularity": 6924,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49101,7 +49229,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2527,
+      "popularity": 2535,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49128,7 +49256,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 6115,
+      "popularity": 6228,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49155,7 +49283,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4669,
+      "popularity": 4694,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49182,7 +49310,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 41364,
+      "popularity": 41715,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49209,7 +49337,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 181,
+      "popularity": 184,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
