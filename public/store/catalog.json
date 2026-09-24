@@ -25288,7 +25288,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-24T06:53:41+00:00"
+      "updated_at": "2024-08-01T00:00:00+00:00"
     },
     {
       "id": "vitadbtoo-vita:158",
@@ -39139,7 +39139,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-24T04:20:29Z"
+      "updated_at": "2026-09-24T12:42:12Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -40633,7 +40633,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-24T06:49:58+00:00"
+      "updated_at": "2016-12-18T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:HIDTest",
@@ -41776,10 +41776,10 @@
       "name": "NX Plaza - StreetPass",
       "categories": [],
       "description": "StreetPass for the Switch, over the internet.\n\nYour console quietly swaps a small pass with other consoles that share your network or your corner of the internet, and you come back later to a stack of them.\n\nWhat it does :\n\nA pass of your own - a name, a greeting, a card theme, up to four things you are \"carrying\", and a place label you type yourself.\nA Mii maker - face shape, skin, hair, eyes, eyebrows, nose, mouth, glasses, facial hair, headwear and build, all drawn from real part outlines.\nThe plaza - who crossed your path while you were away, newest first.\nThe radar - who else has the app open right now, in the reach you chose.\nA collection - everyone you have met, how long ago, and how many times.\nTrade back or block, per person.\nThe title you last played, picked from your five most recent - never typed, never guessed, and off entirely if you would.\n\nA pass never carries your account name, your friend code, your IP, or position.",
-      "added_at": "2026-09-19",
+      "added_at": "2026-09-23",
       "summary": "An Online StreetPass System for Switch",
       "author": "Insektaure",
-      "version": "0.10.0",
+      "version": "0.11.0",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/Insektaure/NX-Plaza",
@@ -41788,8 +41788,8 @@
           "format": "hbas",
           "filename": "NXPlazaStreetPass.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/NXPlazaStreetPass/manifest.install",
-          "size": 7047,
-          "sha256": "5a829cc017a913c25d1a76c27a759716831db7baaf3209dc53f4edc445b76782"
+          "size": 7103,
+          "sha256": "f0b35ae15fd4a563ba462af2b5c36a5d181ebb273ed794c01573686c65c16997"
         }
       ],
       "popularity": 0,
@@ -41797,7 +41797,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-23"
+      "updated_at": "2026-09-24"
     },
     {
       "id": "hbas-switch:NXRemoteLauncher",
@@ -43735,10 +43735,10 @@
         "utilities"
       ],
       "description": "OpenHomeNX is a Nintendo Switch homebrew Pokémon save editor built on OpenHome's Rust core with pkHouse's UI.\n\nSupported games:\n- Gen 9: Scarlet / Violet, Legends: Z-A\n- Gen 8: Sword / Shield, Brilliant Diamond / Shining Pearl, Legends: Arceus\n- Gen 7: Let's Go Pikachu! / Eevee!, Sun / Moon, Ultra Sun / Ultra Moon\n- Gen 6: X / Y, Omega Ruby / Alpha Sapphire\n- Gen 5: Black / White / Black 2 / White 2 (save write-back)\n- Gen 4: Diamond / Pearl / Platinum / HeartGold / SoulSilver\n- Gen 3: FireRed / LeafGreen, Ruby / Sapphire / Emerald (imported saves)\n- Gen 2: Gold / Silver / Crystal\n- Gen 1: Red / Blue / Yellow\n\nFeatures:\n- Full party & box Pokémon editing: species, level, IVs/EVs, nature, ability, moves, held item, ball, OT/met data, shininess, gender\n- Cross-generation bank: deposit from one game, withdraw into another with full format conversion (Gen 1→9, all 13 targets), dex-cut & move-cut warnings with explicit confirmation, base-move refill on total drop\n- Backpack editing across generations: Gen 1/2 GB bags, Gen 3 RSE/FRLG (tabbed catalog, atomic gifting, anomaly scan with journal & fixes), Gen 4/5 DS bags with per-game pockets and CRC-preserving writes\n- LAN remote sync (Filebrowser-compatible devices): send/receive/auto-sync saves and ROMs, playtime & Pokédex-aware sync direction\n- Multi-select / drag-and-drop, box view (ZL/ZR), search/filter, 7 themes, 9 languages\n- On-device launcher installer (Sphaira-based, NCA in RAM, no prod.keys), Stable/Beta update channels, auto-check at boot, in-app update with SHA256 verification\n- On-console save backup/restore with history, WonderCard injection, LED indicator, settings.cfg unified config\n- HOME-style UI (SDL2) with full touch support, gallery/classic view toggle, favorites (ZR star), zoom stick, persistent reorderable dock\n- OpenHome Rust core via FFI for maximum generation support & legality (PKHeX parity)\n- Free, open source (GPL-3.0), built on OpenHome core + pkHouse UI",
-      "added_at": "2026-09-19",
+      "added_at": "2026-09-24",
       "summary": "Open-source Pokémon save editor with cross-gen transfer, multi-generation backpacks, LAN remote sync, on-device launcher, and on-console update",
       "author": "JostenSyon",
-      "version": "0.3.5",
+      "version": "0.3.6",
       "license": "GPL-3.0-or-later",
       "icon_url": null,
       "release_url": "https://github.com/JostenSyon/OpenHomeNX",
@@ -43747,8 +43747,8 @@
           "format": "hbas",
           "filename": "OpenHomeNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/OpenHomeNX/manifest.install",
-          "size": 19226,
-          "sha256": "1e69354975a4f18ee70d1b723c305bb5afe25c1c435a54e53b7ca192e4951cf9"
+          "size": 19292,
+          "sha256": "6babd163ba03f19004e39535355bccf3436e42c80786e025d799e204b39dae27"
         }
       ],
       "popularity": 0,
@@ -43756,7 +43756,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-21"
+      "updated_at": "2026-09-24"
     },
     {
       "id": "vitadbtoo-vita:378",
@@ -47422,7 +47422,7 @@
       "added_at": "2026-07-11",
       "summary": "A native Plex client — browse, stream an",
       "author": "thcolin",
-      "version": "1.1.0",
+      "version": "1.2.0",
       "license": "Apache v2",
       "icon_url": null,
       "release_url": "https://github.com/thcolin/pleNx",
@@ -47432,7 +47432,7 @@
           "filename": "pleNx.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/pleNx/manifest.install",
           "size": 27315,
-          "sha256": "7d97d15a28a26f739e79b6ee9b07c3acba05df9306c8ea696348981fc61698f0"
+          "sha256": "0ef7e311216393862bc8f9af8a7249d5ec93a4e6aed6f90fd50b7f8df0c31b59"
         }
       ],
       "popularity": 1965,
@@ -47440,7 +47440,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-07-31"
+      "updated_at": "2026-09-24"
     },
     {
       "id": "vitadbtoo-vita:300",
@@ -49202,7 +49202,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 7075,
+      "popularity": 7142,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49229,7 +49229,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2547,
+      "popularity": 2560,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49256,7 +49256,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 6439,
+      "popularity": 6513,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49283,7 +49283,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4732,
+      "popularity": 4752,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49310,7 +49310,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 42337,
+      "popularity": 42593,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49337,7 +49337,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 188,
+      "popularity": 191,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -74856,10 +74856,10 @@
         "games"
       ],
       "description": "A card game based on a well known cooperative board game, with full rules enforcement, to play solo or (ultimately) multiplayer. Defeat villains with your team of heroes\nThese archives do not include resource files (images in particular). Resources will be automatically downloaded when the game starts (and it can take a while), unless you provide a separate \"core.zip\" file with those resources",
-      "added_at": "2026-08-30",
+      "added_at": "2026-09-23",
       "summary": "Solo/Coop card game",
       "author": "Wololo",
-      "version": "1.6.0",
+      "version": "1.7.0",
       "license": "Affero GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/frwololo/warnel-chawpiovs",
@@ -74868,8 +74868,8 @@
           "format": "hbas",
           "filename": "WarnelChawpiovs.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/WarnelChawpiovs/manifest.install",
-          "size": 65951,
-          "sha256": "3999c70639b48bfe5f84eacb5ad39a4c9d5dc3f2be5fa2372d14887d8a994692"
+          "size": 69674,
+          "sha256": "568f42c0f6d78297938327244611b168ccb33fa0889c514c821c197ed2c4e6fa"
         }
       ],
       "popularity": 101,
@@ -74877,7 +74877,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-17"
+      "updated_at": "2026-09-24"
     },
     {
       "id": "vitadbtoo-vita:409",
@@ -75882,7 +75882,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-24T06:50:54+00:00"
+      "updated_at": "2026-09-23T19:42:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:wii7800",
