@@ -32849,7 +32849,7 @@
           "format": "elf",
           "filename": "kstuff.elf",
           "url": "https://github.com/EchoStretch/kstuff-lite/releases/download/v1.11/kstuff.elf",
-          "sha256": "858880a8adbedaabfaced025384f4f6f908cfe44f1a049070ad8df911c22b972"
+          "sha256": "ab9a6cb4d3b1daf139d4d646e402b1cf569071acd64599c936d7a3a6164dc779"
         }
       ],
       "source": "PS5 Payloads Atlas",
@@ -47193,10 +47193,10 @@
         "utilities"
       ],
       "description": "A local bank system for Pokemon games on Nintendo Switch.\nMove Pokemon between your save files and local bank storage.\n\nFeatures\n- Profile Selection\n- Two-Panel Box Viewer\n- Pick & Place\n- Multi-Select\n- Pokemon Details\n\nBank System\n- Create a new bank (up to 32-character name)\n- Rename an existing bank\n- Delete a bank (with confirmation)\n\nEach bank has the same box capacity as its game family (32 or 40 boxes).\nThe bank list shows the number of occupied slots for each bank.\n\nYou can switch between banks from the main view via the menu, with or without saving first.\n\nBackup System\n- When loading a game save on Switch, an automatic backup is created before any modifications.\n- This is a full copy of the mounted save directory.\n\nSave Integrity\n- SCBlock saves (ZA, SV, SwSh, LA): Decrypted, modified, and re-encrypted. A round-trip verification runs on load to confirm the cycle is lossless.\n- BDSP saves: Flat binary with MD5 checksum, recalculated on every save.\n- All saves are written in-place to preserve ",
-      "added_at": "2026-09-09",
+      "added_at": "2026-09-23",
       "summary": "A local bank system for Pokemon games",
       "author": "Insektaure",
-      "version": "1.10.6",
+      "version": "1.11.0",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/Insektaure/pkHouse",
@@ -47205,8 +47205,8 @@
           "format": "hbas",
           "filename": "pkHouseLocalPokeBank.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/pkHouseLocalPokeBank/manifest.install",
-          "size": 14742,
-          "sha256": "7051205e18dbc47e45605324529f3b36e776015dc1aa89265b702780632cf600"
+          "size": 14941,
+          "sha256": "52f4e367cfa637c3f819b5e1a8d86a03f69976012eb3d95837a8b57c6f6021dc"
         }
       ],
       "popularity": 3927,
@@ -47214,7 +47214,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-17"
+      "updated_at": "2026-09-23"
     },
     {
       "id": "universal-db:Universal-Team/pkmn-chest",
@@ -49202,7 +49202,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 6979,
+      "popularity": 7040,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49229,7 +49229,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2537,
+      "popularity": 2542,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49256,7 +49256,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 6325,
+      "popularity": 6394,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49283,7 +49283,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4707,
+      "popularity": 4723,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49310,7 +49310,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 41988,
+      "popularity": 42204,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49337,7 +49337,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 184,
+      "popularity": 186,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
