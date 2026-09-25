@@ -5011,37 +5011,6 @@
       "updated_at": "2023-12-28"
     },
     {
-      "id": "universal-db:Unitendo/aurorachat",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "aurorachat",
-      "summary": " Real Time Chatting for the 3DS, Wii, Wii U, and Web",
-      "author": "Unitendo",
-      "version": "v7.1",
-      "license": "MIT License",
-      "icon_url": "https://raw.githubusercontent.com/Unitendo/aurorachat-3ds/main/meta/icon.png",
-      "release_url": "https://github.com/Unitendo/aurorachat/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "aurorachat.3dsx",
-          "url": "https://github.com/Unitendo/aurorachat/releases/download/v7.1/aurorachat.3dsx",
-          "size": 199380
-        },
-        {
-          "format": "cia",
-          "filename": "aurorachat.cia",
-          "url": "https://github.com/Unitendo/aurorachat/releases/download/v7.1/aurorachat.cia",
-          "size": 533952
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2026-08-30T21:08:27Z"
-    },
-    {
       "id": "open-shop-channel-wii:aurorachat",
       "platforms": [
         "wii"
@@ -5134,6 +5103,37 @@
       "source_url": "https://hb-app.store/wiiu",
       "license_url": null,
       "updated_at": "2026-09-05"
+    },
+    {
+      "id": "universal-db:Unitendo/aurorachat-3ds",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "aurorachat-3ds",
+      "summary": "Aurorachat 3DS Client",
+      "author": "Startendo",
+      "version": "v7.1",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/Unitendo/aurorachat-3ds/main/meta/icon.png",
+      "release_url": "https://github.com/Unitendo/aurorachat-3ds/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "aurorachat.3dsx",
+          "url": "https://github.com/Unitendo/aurorachat-3ds/releases/download/v7.1/aurorachat.3dsx",
+          "size": 199380
+        },
+        {
+          "format": "cia",
+          "filename": "aurorachat.cia",
+          "url": "https://github.com/Unitendo/aurorachat-3ds/releases/download/v7.1/aurorachat.cia",
+          "size": 533952
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-30T21:07:42Z"
     },
     {
       "id": "hbas-switch:Avatool",
@@ -8224,6 +8224,31 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-05-30"
+    },
+    {
+      "id": "universal-db:Misakii-P/Booru3DS",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Booru3DS",
+      "summary": "A Safebooru and Konachan API client for the Nintendo 3DS. (SFW)",
+      "author": "MisakiP_",
+      "version": "v1.0",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/Misakii-P/Booru3DS/refs/heads/master/assets/booru3ds.png",
+      "release_url": "https://github.com/Misakii-P/Booru3DS/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "booru3ds.3dsx",
+          "url": "https://github.com/Misakii-P/Booru3DS/releases/download/v1.0/booru3ds.3dsx",
+          "size": 2597836
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-22T02:20:31Z"
     },
     {
       "id": "open-shop-channel-wii:BootMiiConfigurationEditor",
@@ -12417,6 +12442,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2026-07-24T10:10:01Z"
+    },
+    {
+      "id": "universal-db:verypedro/Comet",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Comet",
+      "summary": "Observatory of Luma Screenshots for the 3DS",
+      "author": "verypedro",
+      "version": "v3.2",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/verypedro/Comet/main/icon.png",
+      "release_url": "https://github.com/verypedro/Comet/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "Comet.3dsx",
+          "url": "https://github.com/verypedro/Comet/releases/download/v3.2/Comet.3dsx",
+          "size": 3193604
+        },
+        {
+          "format": "cia",
+          "filename": "Comet.cia",
+          "url": "https://github.com/verypedro/Comet/releases/download/v3.2/Comet.cia",
+          "size": 3437504
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-02T19:49:02Z"
     },
     {
       "id": "hbas-switch:ComicNX",
@@ -18101,6 +18157,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-07-22"
+    },
+    {
+      "id": "universal-db:thoughts3rased/DualPlex",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "DualPlex",
+      "summary": "Plex music client for 3DS",
+      "author": "thoughts3rased",
+      "version": "V1.1",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/thoughts3rased/DualPlex/main/icon.png",
+      "release_url": "https://github.com/thoughts3rased/DualPlex/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "DualPlex.3dsx",
+          "url": "https://github.com/thoughts3rased/DualPlex/releases/download/V1.1/DualPlex.3dsx",
+          "size": 2011392
+        },
+        {
+          "format": "cia",
+          "filename": "DualPlex.cia",
+          "url": "https://github.com/thoughts3rased/DualPlex/releases/download/V1.1/DualPlex.cia",
+          "size": 1081280
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-22T12:13:42Z"
     },
     {
       "id": "vitadbtoo-psp:973",
@@ -35136,6 +35223,37 @@
       "updated_at": "2016-10-08"
     },
     {
+      "id": "universal-db:BladeWheat/Mail3DS",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Mail3DS",
+      "summary": "任天堂 3DS 第三方电子邮件 homebrew 客户端：多账户、IMAP 收件、中文邮件解码、SD 卡本地缓存，非官方项目。 \\n  A third-party email homebrew client for the hacked Nintendo 3DS: multi-account, IMAP, Chinese mail decoding & SD-card cache. Unofficial.",
+      "author": "Wheat",
+      "version": "v1.1.0",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/BladeWheat/Mail3DS/master/icon.png",
+      "release_url": "https://github.com/BladeWheat/Mail3DS/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "Mail3DS.3dsx",
+          "url": "https://github.com/BladeWheat/Mail3DS/releases/download/v1.1.0/Mail3DS.3dsx",
+          "size": 24165792
+        },
+        {
+          "format": "cia",
+          "filename": "Mail3DS.cia",
+          "url": "https://github.com/BladeWheat/Mail3DS/releases/download/v1.1.0/Mail3DS.cia",
+          "size": 23966656
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-26T17:42:11Z"
+    },
+    {
       "id": "hbas-switch:mame2003",
       "platforms": [
         "switch"
@@ -49182,168 +49300,6 @@
       "updated_at": "2023-11-05"
     },
     {
-      "id": "ps4-store:268181309",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — homebrew.elf",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "homebrew.elf",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/homebrew.elf",
-          "size": 4842768,
-          "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
-        }
-      ],
-      "popularity": 7361,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:238357415",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — PS5_Update_files.zip",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "PS5_Update_files.zip",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/PS5_Update_files.zip",
-          "size": 1488211,
-          "sha256": null
-        }
-      ],
-      "popularity": 2582,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:268177439",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — Store-R2-Legacy.pkg",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "pkg",
-          "filename": "Store-R2-Legacy.pkg",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-Legacy.pkg",
-          "size": 24772608,
-          "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
-        }
-      ],
-      "popularity": 6821,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:167233612",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — Store-R2-PS5.pkg",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "pkg",
-          "filename": "Store-R2-PS5.pkg",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-PS5.pkg",
-          "size": 43450368,
-          "sha256": null
-        }
-      ],
-      "popularity": 4810,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:268177642",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — Store-R2.pkg",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "pkg",
-          "filename": "Store-R2.pkg",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg",
-          "size": 24772608,
-          "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
-        }
-      ],
-      "popularity": 43376,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-hen:574675730",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4HEN — hen.bin",
-      "summary": "**Full Changelog**: https://github.com/Scene-Collective/ps4-hen/compare/pre-release-main-181...pre-release-main-182",
-      "author": "Scene-Collective",
-      "version": "pre-release-main-182",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/Scene-Collective/ps4-hen/releases/tag/pre-release-main-182",
-      "downloads": [
-        {
-          "format": "bin",
-          "filename": "hen.bin",
-          "url": "https://github.com/Scene-Collective/ps4-hen/releases/download/pre-release-main-182/hen.bin",
-          "size": 500448,
-          "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
-        }
-      ],
-      "popularity": 201,
-      "source": "PS4HEN",
-      "source_url": "https://github.com/Scene-Collective/ps4-hen",
-      "license_url": null,
-      "updated_at": "2026-09-19T11:47:15Z"
-    },
-    {
       "id": "vitadbtoo-vita:560",
       "platforms": [
         "psvita"
@@ -60533,6 +60489,37 @@
       "updated_at": "2026-08-07"
     },
     {
+      "id": "universal-db:avncharlie/spotify3ds",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "spotify3ds",
+      "summary": "Control Spotify from your 3DS",
+      "author": "avncharlie",
+      "version": "1.5.2",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/avncharlie/spotify3ds/refs/heads/main/assets/icon.png",
+      "release_url": "https://github.com/avncharlie/spotify3ds/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "Spotify3DS.3dsx",
+          "url": "https://github.com/avncharlie/spotify3ds/releases/download/1.5.2/Spotify3DS.3dsx",
+          "size": 1005524
+        },
+        {
+          "format": "cia",
+          "filename": "Spotify3DS.cia",
+          "url": "https://github.com/avncharlie/spotify3ds/releases/download/1.5.2/Spotify3DS.cia",
+          "size": 771008
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-29T13:59:59Z"
+    },
+    {
       "id": "hbas-switch:SPSV",
       "platforms": [
         "switch"
@@ -64367,7 +64354,7 @@
         "3ds"
       ],
       "name": "SysMon",
-      "summary": "Vide-coded app that allows to see RAM, GPU and CPU stats from a linux PC in a browser or a 3DS console.",
+      "summary": "Turn your Nintendo 3DS into a secondary PC hardware monitor, macro pad, and virtual gamepad controller.",
       "author": "Just-a-Spider",
       "version": "v0.3.3",
       "license": "MIT License",
@@ -70478,7 +70465,7 @@
       "updated_at": "2018-03-20T16:53:38Z"
     },
     {
-      "id": "universal-db:bOOt3r/emus3ds-download-play",
+      "id": "universal-db:b00t3r/emus3ds-download-play",
       "platforms": [
         "3ds"
       ],
@@ -70487,8 +70474,8 @@
       "author": "Jonathan Limén",
       "version": "v1.02-dp2",
       "license": null,
-      "icon_url": "https://raw.githubusercontent.com/bOOt3r/emus3ds-download-play/main/src/cores/virtuanes/assets/icon.png",
-      "release_url": "https://github.com/bOOt3r/emus3ds-download-play/releases",
+      "icon_url": "https://raw.githubusercontent.com/b00t3r/emus3ds-download-play/main/virtuanes_3ds_top.png",
+      "release_url": "https://github.com/b00t3r/emus3ds-download-play/releases",
       "downloads": [
         {
           "format": "3dsx",
@@ -80370,6 +80357,49 @@
       "updated_at": "2026-02-06T03:20:25Z"
     },
     {
+      "id": "universal-db:BolgarMaxym97/3ds-ua",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Українізатор 3DS/2DS",
+      "summary": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS.",
+      "author": "Max Bolhar",
+      "version": "v1.9.0",
+      "license": "Other",
+      "icon_url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/assets/unistore-icon.png",
+      "release_url": "https://github.com/BolgarMaxym97/3ds-ua/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "3ds-ua-from-en-1.9.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.9.0/3ds-ua-from-en-1.9.0-new3ds.zip",
+          "size": 24123010
+        },
+        {
+          "format": "zip",
+          "filename": "3ds-ua-from-en-1.9.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.9.0/3ds-ua-from-en-1.9.0-old3ds.zip",
+          "size": 22275509
+        },
+        {
+          "format": "zip",
+          "filename": "3ds-ua-from-ru-1.9.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.9.0/3ds-ua-from-ru-1.9.0-new3ds.zip",
+          "size": 24394137
+        },
+        {
+          "format": "zip",
+          "filename": "3ds-ua-from-ru-1.9.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.9.0/3ds-ua-from-ru-1.9.0-old3ds.zip",
+          "size": 22585981
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-05T11:46:32Z"
+    },
+    {
       "id": "vitadbtoo-vita:1454",
       "platforms": [
         "psvita"
@@ -80518,5 +80548,18 @@
       "homepage": "https://github.com/Scene-Collective/ps4-hen"
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "source": "ps4-goldhen",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "source": "ps4-store",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "source": "ps4-hen",
+      "error": "HTTP Error 403: rate limit exceeded"
+    }
+  ]
 }
