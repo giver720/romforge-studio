@@ -27,7 +27,7 @@
           "sha256": null
         }
       ],
-      "popularity": 350,
+      "popularity": 355,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/A-Square-Astray/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -221,7 +221,7 @@
           "sha256": null
         }
       ],
-      "popularity": 570,
+      "popularity": 576,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/100boxesNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -285,7 +285,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3060,
+      "popularity": 3075,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/2planes/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -318,7 +318,7 @@
           "sha256": "8082021738dd9fce8ef6604eb9967649d3da7e79324e6afeeb208ec53e952e2c"
         }
       ],
-      "popularity": 9483,
+      "popularity": 9545,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/2048/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -2201,7 +2201,7 @@
           "sha256": null
         }
       ],
-      "popularity": 33395,
+      "popularity": 33565,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/AAReboot/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -2332,7 +2332,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2057,
+      "popularity": 2066,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/abuse/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -2531,7 +2531,7 @@
           "sha256": "db1474b60a500b62e82ca5bab082c61d51b5acdb98a21ac02cf32fb0393af025"
         }
       ],
-      "popularity": 0,
+      "popularity": 15,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/acnh-manager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -3000,7 +3000,7 @@
           "sha256": "662393360e35712948508ea8a65fc20c5e726eed39b7f1e8d4243b993ee010bc"
         }
       ],
-      "popularity": 1928,
+      "popularity": 2436,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Akira/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -3033,7 +3033,7 @@
           "sha256": "e192464376619462c5ef1c4487ebcfa61a8bb773837e4692d4d0ae54820c223f"
         }
       ],
-      "popularity": 78,
+      "popularity": 84,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/AlephOne/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -3107,7 +3107,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5205,
+      "popularity": 5219,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/avp/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -3238,7 +3238,7 @@
           "sha256": null
         }
       ],
-      "popularity": 98107,
+      "popularity": 98581,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/AmiiboGenerator/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -3271,7 +3271,7 @@
           "sha256": "6481b6bb1fbb6bab740dc1efe69c5219da44ec6b6dbb70c440ecc92612327390"
         }
       ],
-      "popularity": 127387,
+      "popularity": 128005,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Amiigo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -3304,7 +3304,7 @@
           "sha256": null
         }
       ],
-      "popularity": 52778,
+      "popularity": 52954,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/AmiigoMod/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -3335,7 +3335,7 @@
           "sha256": null
         }
       ],
-      "popularity": 25135,
+      "popularity": 25157,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Amiiswap/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -4136,7 +4136,7 @@
           "sha256": null
         }
       ],
-      "popularity": 14113,
+      "popularity": 14140,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Apollo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -4358,7 +4358,7 @@
           "sha256": null
         }
       ],
-      "popularity": 615,
+      "popularity": 617,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Aquaria/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -4389,7 +4389,7 @@
           "sha256": null
         }
       ],
-      "popularity": 15787,
+      "popularity": 15799,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/argon-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -4422,7 +4422,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2235,
+      "popularity": 2242,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ArkanoidNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -4676,7 +4676,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2785,
+      "popularity": 2788,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ASCIIStarWars/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -5066,7 +5066,7 @@
           "sha256": "c4f309ff7cb30fb06c61485674f1677d8f0d10abac93e6e4548015c7cfe6b3c7"
         }
       ],
-      "popularity": 579,
+      "popularity": 648,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/AuroraChatforSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -5161,7 +5161,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5842,
+      "popularity": 5850,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Avatool/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -5265,7 +5265,7 @@
           "sha256": null
         }
       ],
-      "popularity": 542,
+      "popularity": 544,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/AXChip8/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -5460,7 +5460,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1545,
+      "popularity": 1547,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/BackupNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -6183,7 +6183,7 @@
           "sha256": "1762903ad0e81a074494c3af3307114ae4addd6062d774e6eb236b57e6bba592"
         }
       ],
-      "popularity": 529,
+      "popularity": 552,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/bbloc/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -6314,7 +6314,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2277,
+      "popularity": 2282,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/bean-controller-checker/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -6347,7 +6347,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2255,
+      "popularity": 2259,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/bean-stick-checker/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -6591,7 +6591,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6568,
+      "popularity": 6593,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Bejeweled-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -6660,7 +6660,7 @@
           "sha256": null
         }
       ],
-      "popularity": 939,
+      "popularity": 940,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/bs/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -7102,7 +7102,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1317,
+      "popularity": 1322,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/BiggestDump/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -7403,7 +7403,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3219,
+      "popularity": 3228,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/blobby/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -7543,7 +7543,7 @@
           "sha256": "2ba5538fd348d138879fab02c314affd066c1a97d3ef13dcf8956bc2a82c723b"
         }
       ],
-      "popularity": 1777,
+      "popularity": 1783,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/BlockamokRemix/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -8026,7 +8026,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6530,
+      "popularity": 6556,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Bomberman-SwitchGDX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -8059,7 +8059,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5231,
+      "popularity": 5246,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/BomberManNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -8480,7 +8480,7 @@
           "sha256": null
         }
       ],
-      "popularity": 50426,
+      "popularity": 50497,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/botwsaveeditor/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -8513,7 +8513,7 @@
           "sha256": null
         }
       ],
-      "popularity": 22292,
+      "popularity": 22312,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/botw-unexplored/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -8609,7 +8609,7 @@
           "sha256": "e564c7da356818893fb2d955d7b280b5e2e197579fda7dd9a8c79eaad0f6f6d8"
         }
       ],
-      "popularity": 36,
+      "popularity": 46,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/BouncyBrawl/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -8738,7 +8738,7 @@
           "sha256": null
         }
       ],
-      "popularity": 932,
+      "popularity": 933,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/brainfuck/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -9012,7 +9012,7 @@
           "sha256": "6c0b2f8e1d6df18cd9190527819f8a320399ccab48a80496224f3669958d998b"
         }
       ],
-      "popularity": 0,
+      "popularity": 59,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Brewser/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -9045,7 +9045,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3638,
+      "popularity": 3647,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Brick-Game-9999-in-1/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -9114,7 +9114,7 @@
           "sha256": null
         }
       ],
-      "popularity": 453,
+      "popularity": 456,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Bricks-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -9178,7 +9178,7 @@
           "sha256": null
         }
       ],
-      "popularity": 658,
+      "popularity": 662,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/BrogueCE/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -9211,7 +9211,7 @@
           "sha256": null
         }
       ],
-      "popularity": 191853,
+      "popularity": 192764,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/browsenx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -9634,7 +9634,7 @@
           "sha256": "1edfd38f4a311340690406a5a40840ecc88c760db0266d23c893d58fda3f0a3b"
         }
       ],
-      "popularity": 28,
+      "popularity": 30,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ButtonBreakSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -9859,7 +9859,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2495,
+      "popularity": 2500,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CalculateNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -9917,7 +9917,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4047,
+      "popularity": 4054,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Calculator_NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -10018,7 +10018,7 @@
           "sha256": "b2c90ee68a7c3f5a6ecc59fa8068f90069aad23636212c4b8f6e306281ffe11b"
         }
       ],
-      "popularity": 1308,
+      "popularity": 1477,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CamNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -10154,7 +10154,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7872,
+      "popularity": 7885,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/cannonball/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -10259,7 +10259,7 @@
           "sha256": null
         }
       ],
-      "popularity": 11102,
+      "popularity": 11137,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Cannonball_Switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -10678,7 +10678,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2877,
+      "popularity": 2884,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CSE2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -10907,7 +10907,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5449,
+      "popularity": 5458,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CenaNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -11057,7 +11057,7 @@
           "sha256": "666ed10916cff9cc9fbb3508ccfd65f5429bab3c23ab6043b08d69e2c7a32e30"
         }
       ],
-      "popularity": 0,
+      "popularity": 353,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ChatNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -11179,7 +11179,7 @@
           "sha256": "4ce69d801e6d8b8b5ae98cf38fefbc42595bcec947b52a112b18b536f5fc0055"
         }
       ],
-      "popularity": 305079,
+      "popularity": 306888,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Checkpoint/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -11244,7 +11244,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4481,
+      "popularity": 4500,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CheezitTheGame/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -11432,7 +11432,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1435,
+      "popularity": 1436,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CHIP8/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -11495,7 +11495,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1940,
+      "popularity": 1942,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Doom/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -11600,7 +11600,7 @@
           "sha256": null
         }
       ],
-      "popularity": 12272,
+      "popularity": 12308,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Chocolate-Doom-Launcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -11765,7 +11765,7 @@
           "sha256": null
         }
       ],
-      "popularity": 308,
+      "popularity": 310,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ChunkIntercept/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -11925,7 +11925,7 @@
           "sha256": "ca438a8ecb4b2d2c8d1a696c9852ee7480dfdde1565d450885b7444d50c3a282"
         }
       ],
-      "popularity": 98,
+      "popularity": 108,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Clanbomber/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -12092,7 +12092,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6449,
+      "popularity": 6465,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ClawSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -12155,7 +12155,7 @@
           "sha256": "954b0991cade98a3bb62ccc61170f573262ad94fbb48f6da6495b669f60e226d"
         }
       ],
-      "popularity": 992,
+      "popularity": 1002,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Clock-Time/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -12380,7 +12380,7 @@
           "sha256": "c6059b577c4c8605fdf01b412272ab93404688d3f9c9f43a02f17dc5a69a0fb2"
         }
       ],
-      "popularity": 240,
+      "popularity": 245,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/COLDSTART/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -12500,7 +12500,7 @@
           "sha256": null
         }
       ],
-      "popularity": 26537,
+      "popularity": 26660,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ComicNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -12574,7 +12574,7 @@
           "sha256": null
         }
       ],
-      "popularity": 924,
+      "popularity": 927,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Commander-Keen/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -12673,7 +12673,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1082,
+      "popularity": 1083,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Connect-4-Dual-Edition/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -12739,7 +12739,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7629,
+      "popularity": 7637,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ConsoleEditor/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -13326,7 +13326,7 @@
           "sha256": null
         }
       ],
-      "popularity": 340,
+      "popularity": 342,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Cpp-Snake-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -14852,7 +14852,7 @@
           "sha256": "73c99da3ad683f225c96a9e8ef6f18936e476148d07af02b3cfab2b4053c019f"
         }
       ],
-      "popularity": 1138,
+      "popularity": 1308,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CustomBootScreen/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -14920,7 +14920,7 @@
           "sha256": null
         }
       ],
-      "popularity": 17412,
+      "popularity": 17465,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CuteManga/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -15475,7 +15475,7 @@
           "sha256": null
         }
       ],
-      "popularity": 8634,
+      "popularity": 8647,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DC-uLaunch_Updater/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -15571,7 +15571,7 @@
           "sha256": null
         }
       ],
-      "popularity": 30848,
+      "popularity": 30913,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DDLC/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -16011,7 +16011,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1827,
+      "popularity": 1829,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/delve/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -16263,7 +16263,7 @@
           "sha256": null
         }
       ],
-      "popularity": 60258,
+      "popularity": 60357,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/desmume/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -16543,7 +16543,7 @@
           "sha256": null
         }
       ],
-      "popularity": 11182,
+      "popularity": 11216,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/devilution-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -16607,7 +16607,7 @@
           "sha256": "88cd53fdb0e4c70e84aba9e6caa43afb8cd2d8a843ef77edb101d47519298539"
         }
       ],
-      "popularity": 12029,
+      "popularity": 12066,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DevilutionX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -16712,7 +16712,7 @@
           "sha256": null
         }
       ],
-      "popularity": 442,
+      "popularity": 443,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/dhewm3/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -16745,7 +16745,7 @@
           "sha256": null
         }
       ],
-      "popularity": 29649,
+      "popularity": 29768,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DinoRunNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -16972,7 +16972,7 @@
           "sha256": "1d0ba57c630bf56c8ff067b8f9c8af6405f58f25793015d35c8ff26d31e9c18c"
         }
       ],
-      "popularity": 1945,
+      "popularity": 2160,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DNSmitmChecker/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -17003,7 +17003,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6811,
+      "popularity": 6833,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/wae/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -17099,7 +17099,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3222,
+      "popularity": 3226,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DokkaebiHack/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -17260,7 +17260,7 @@
           "sha256": "bd86936a11c170d0c88bacf21a91ec3d9597e425570fdb6bc4eec888fb685ac6"
         }
       ],
-      "popularity": 1121,
+      "popularity": 1134,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Donut/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -17401,7 +17401,7 @@
           "sha256": null
         }
       ],
-      "popularity": 16588,
+      "popularity": 16641,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/doom64/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -17608,7 +17608,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1290,
+      "popularity": 1291,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Dr-Driller/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -18450,7 +18450,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1217,
+      "popularity": 1221,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DungeonRush/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -18578,7 +18578,7 @@
           "sha256": null
         }
       ],
-      "popularity": 20331,
+      "popularity": 20399,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DVDlogo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -18611,7 +18611,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1328,
+      "popularity": 1331,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/d1x-switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -18644,7 +18644,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1369,
+      "popularity": 1371,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/d2x-switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -18839,7 +18839,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5962,
+      "popularity": 5985,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/easypower/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -18905,7 +18905,7 @@
           "sha256": "fd95e3e5ce815244e28efb1ebe1ede4daa8b84dca399444c93dba1b24374754e"
         }
       ],
-      "popularity": 9273,
+      "popularity": 9293,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/EasyRPGplayer/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19065,7 +19065,7 @@
           "sha256": null
         }
       ],
-      "popularity": 10550,
+      "popularity": 10591,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/eBookReaderSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19098,7 +19098,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3811,
+      "popularity": 3825,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ebookViewerNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19165,7 +19165,7 @@
           "sha256": null
         }
       ],
-      "popularity": 520966,
+      "popularity": 522045,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Edizon/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19198,7 +19198,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7968,
+      "popularity": 7973,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/eduke32/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19272,7 +19272,7 @@
           "sha256": null
         }
       ],
-      "popularity": 9938,
+      "popularity": 9944,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Eevee/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19633,7 +19633,7 @@
           "sha256": null
         }
       ],
-      "popularity": 581,
+      "popularity": 584,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/emummc-toggle/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19666,7 +19666,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1988,
+      "popularity": 1990,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/emummc-toggler/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19699,7 +19699,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2972,
+      "popularity": 2977,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/EmuMmcConfig/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19732,7 +19732,7 @@
           "sha256": null
         }
       ],
-      "popularity": 703,
+      "popularity": 710,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/EmuNand-Swapper/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19801,7 +19801,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1173,
+      "popularity": 1174,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Enigma/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -20172,7 +20172,7 @@
           "sha256": "2a1b10e87664d507856e4f211ba65ed841d9e11f1daf6347cb74d1ec7b828a7b"
         }
       ],
-      "popularity": 696,
+      "popularity": 795,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/EventRaidInjector/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -20306,7 +20306,7 @@
           "sha256": null
         }
       ],
-      "popularity": 352,
+      "popularity": 353,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Evolution_saved_me_NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -20425,7 +20425,7 @@
           "sha256": "72b119d4292652a68577709ddaefe8cca9bdc8c339035be94ccc7a3f53b5f9b7"
         }
       ],
-      "popularity": 29870,
+      "popularity": 30110,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ezRemoteClient/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -20484,7 +20484,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1757,
+      "popularity": 1760,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/f2bgl/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -20517,7 +20517,7 @@
           "sha256": null
         }
       ],
-      "popularity": 249,
+      "popularity": 251,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FactorNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -20656,7 +20656,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2872,
+      "popularity": 2878,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Fake-08/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -21295,7 +21295,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6363,
+      "popularity": 6376,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/fceumm/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -21576,7 +21576,7 @@
           "sha256": "93afe8a94531b0cf5788a552b53f4f44a95954fb94d85205147ebc439a86a854"
         }
       ],
-      "popularity": 10461,
+      "popularity": 10499,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/fheroes2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -21650,7 +21650,7 @@
           "sha256": null
         }
       ],
-      "popularity": 500,
+      "popularity": 503,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Fifteen-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -21745,7 +21745,7 @@
           "sha256": "f8ff336a5a8ccd0677bccffe6a674d12af553b7914810bd1356443d15b684ea2"
         }
       ],
-      "popularity": 0,
+      "popularity": 433,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FinalFantasyIV/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -21882,7 +21882,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1034,
+      "popularity": 1035,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/femulti/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -21947,7 +21947,7 @@
           "sha256": "3b01fae11e45f992d653dbd628458be897b3ad8c2d4b74100e89c6c2c850f4e1"
         }
       ],
-      "popularity": 3019,
+      "popularity": 3049,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FireplaceNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -22210,7 +22210,7 @@
           "sha256": "f7ed76eab7fcbf5dc99a162a65e793bb56feb86d79d165390d1ec2b0afbd3a3a"
         }
       ],
-      "popularity": 1237,
+      "popularity": 1389,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FixCheat/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -22241,7 +22241,7 @@
           "sha256": null
         }
       ],
-      "popularity": 618,
+      "popularity": 620,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FizzBuzz_NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -22336,7 +22336,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1914,
+      "popularity": 1920,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FlappyBirdNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -22606,7 +22606,7 @@
           "sha256": null
         }
       ],
-      "popularity": 851,
+      "popularity": 852,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FlashCardsNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -22637,7 +22637,7 @@
           "sha256": "314e6e6730ee06df29bb9c3491cddce5127af1b9c445c332ff8aea72a3576a65"
         }
       ],
-      "popularity": 2096,
+      "popularity": 2533,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FlashNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -22668,7 +22668,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2459,
+      "popularity": 2465,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/flavortown/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -23119,7 +23119,7 @@
           "sha256": "4e1fa927bd9bc67605573429119558dbdf8acaf684c62150b4b94ab8f713ceb9"
         }
       ],
-      "popularity": 6730,
+      "popularity": 7568,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FNFSwitchFunkin/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -23152,7 +23152,7 @@
           "sha256": "f0f31f3f347d5fdc6e9185c073a508e4845db71e08489c68082b9d003e0cd06c"
         }
       ],
-      "popularity": 169,
+      "popularity": 240,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Foldery/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -23970,7 +23970,7 @@
           "sha256": null
         }
       ],
-      "popularity": 279774,
+      "popularity": 280277,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ftpd/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -24066,7 +24066,7 @@
           "sha256": "23caf41817fd0c76395623fa0611610793010a9485633e004d4b7dd29a98d2e1"
         }
       ],
-      "popularity": 957,
+      "popularity": 983,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ftpsrv/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -24125,7 +24125,7 @@
           "sha256": null
         }
       ],
-      "popularity": 85023,
+      "popularity": 85195,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FunkinRewritten/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -24229,7 +24229,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6710,
+      "popularity": 6718,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/gagorder/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -24363,7 +24363,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7221,
+      "popularity": 7242,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/gambatte/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -24427,7 +24427,7 @@
           "sha256": null
         }
       ],
-      "popularity": 915,
+      "popularity": 918,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/gol/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -24552,7 +24552,7 @@
           "sha256": null
         }
       ],
-      "popularity": 245,
+      "popularity": 247,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/game-example/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -24583,7 +24583,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6279,
+      "popularity": 6297,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/GameLad/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -25150,7 +25150,7 @@
           "sha256": null
         }
       ],
-      "popularity": 13796,
+      "popularity": 13838,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/gdkgba/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -25181,7 +25181,7 @@
           "sha256": null
         }
       ],
-      "popularity": 8859,
+      "popularity": 8875,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/gearboy/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -25338,7 +25338,7 @@
           "sha256": null
         }
       ],
-      "popularity": 18163,
+      "popularity": 18235,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/genesisgx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -25580,7 +25580,7 @@
           "sha256": "afec6961550fa8a38677563c6dd6846e3bfdec3efd8d3cfb5acc698258bc998c"
         }
       ],
-      "popularity": 210,
+      "popularity": 274,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/GerenciadorMIL/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -25849,7 +25849,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1178,
+      "popularity": 1183,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/GirlsAreWeirdNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -26356,7 +26356,7 @@
           "sha256": "231c9e932bb8e3f90a61c36ae561a40901990947b383ddcc0ee1e5e8cff5e815"
         }
       ],
-      "popularity": 647836,
+      "popularity": 650077,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Goldleaf/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -26961,7 +26961,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7091,
+      "popularity": 7122,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/GuitarNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -27159,7 +27159,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7757,
+      "popularity": 7772,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/gzdoom/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -27376,7 +27376,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1249,
+      "popularity": 1252,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Hamsters/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -27732,7 +27732,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1929,
+      "popularity": 1940,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/appstore_survey/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -27796,7 +27796,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2871,
+      "popularity": 2872,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/HCL-switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -27869,7 +27869,7 @@
           "sha256": "cf144c241e6dc48cb221590a89deda12ba8da93fdfae42aed79dfb7702a8076a"
         }
       ],
-      "popularity": 25328,
+      "popularity": 25587,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/hdr-launcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -27968,7 +27968,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7353,
+      "popularity": 7362,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/HekateBrew/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28063,7 +28063,7 @@
           "sha256": null
         }
       ],
-      "popularity": 180,
+      "popularity": 183,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/HelloColours/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28426,7 +28426,7 @@
           "sha256": null
         }
       ],
-      "popularity": 297,
+      "popularity": 298,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/hexgem/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28689,7 +28689,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6436,
+      "popularity": 6449,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/hode/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28788,7 +28788,7 @@
           "sha256": null
         }
       ],
-      "popularity": 380382,
+      "popularity": 382172,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/appstore/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28853,7 +28853,7 @@
           "sha256": null
         }
       ],
-      "popularity": 34849,
+      "popularity": 34872,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Homebrew-Details/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28917,7 +28917,7 @@
           "sha256": "f2618e1471a6a41b3e880a27d3930cf8164ea7f3afa20466fdc9e6a4e503479a"
         }
       ],
-      "popularity": 303443,
+      "popularity": 304373,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/hbmenu/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28948,7 +28948,7 @@
           "sha256": null
         }
       ],
-      "popularity": 29768,
+      "popularity": 29779,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Homebrew_SD_Setup/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28981,7 +28981,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4191,
+      "popularity": 4193,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/HomeBrew-Manager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -29107,7 +29107,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1311,
+      "popularity": 1312,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/hot_pocolate/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -29140,7 +29140,7 @@
           "sha256": null
         }
       ],
-      "popularity": 872,
+      "popularity": 873,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/hota/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -29346,7 +29346,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3054,
+      "popularity": 3059,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/HuntfortheShadowRider/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -29379,7 +29379,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2914,
+      "popularity": 2918,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Hurrican/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -30099,7 +30099,7 @@
           "sha256": null
         }
       ],
-      "popularity": 19900,
+      "popularity": 19928,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/in-home-switching/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -30395,7 +30395,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5805,
+      "popularity": 5836,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/InternalSpeakers/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -30464,7 +30464,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1451,
+      "popularity": 1452,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/InvadersNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -30497,7 +30497,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2567,
+      "popularity": 2573,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ioquake3nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -30648,7 +30648,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6628,
+      "popularity": 6655,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ipswitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -30681,7 +30681,7 @@
           "sha256": "54f66b0b7e903470d611d9dd63f15469c817557ca098c0053e8c4c9ba435ea0b"
         }
       ],
-      "popularity": 3653,
+      "popularity": 3740,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/IRSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31013,7 +31013,7 @@
           "sha256": null
         }
       ],
-      "popularity": 24962,
+      "popularity": 25062,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/JC-color-swapper/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31046,7 +31046,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2589,
+      "popularity": 2607,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/JCToolbox/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31079,7 +31079,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3751,
+      "popularity": 3757,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/jellycar/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31241,7 +31241,7 @@
           "sha256": null
         }
       ],
-      "popularity": 318,
+      "popularity": 321,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/JewelThief/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31598,7 +31598,7 @@
           "sha256": "c7881a6464d87b223755c8f992578855f5a3a86008267b4f250cbd4a836cf0ce"
         }
       ],
-      "popularity": 240982,
+      "popularity": 242069,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/jksv/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31629,7 +31629,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1552,
+      "popularity": 1564,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/JoyConMouse/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31662,7 +31662,7 @@
           "sha256": "f4dedb4307329b76d5b8d4d04ff8e57ae43830a678a1fc78ee403cabc9497c77"
         }
       ],
-      "popularity": 1038,
+      "popularity": 1191,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/JoyVibe/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31695,7 +31695,7 @@
           "sha256": "f5bbd983c7849de93b9c7443e855ecb96dd0d3118958797fb02601be48dfc418"
         }
       ],
-      "popularity": 1956,
+      "popularity": 1959,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/julius/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31832,7 +31832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1314,
+      "popularity": 1316,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/jumpnbump/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -32068,7 +32068,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4042,
+      "popularity": 4045,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Kartswitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -32367,7 +32367,7 @@
           "sha256": "30ee8a893d50747a3f0f5e0fd6e2474d2dbf87690c944998bdfda6a65ed83ff9"
         }
       ],
-      "popularity": 2297,
+      "popularity": 2298,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Kens-Labyrinth/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -32466,7 +32466,7 @@
           "sha256": null
         }
       ],
-      "popularity": 36564,
+      "popularity": 36652,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/kgdoom/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -32497,7 +32497,7 @@
           "sha256": null
         }
       ],
-      "popularity": 9314,
+      "popularity": 9320,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/khedgb/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -32632,7 +32632,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6782,
+      "popularity": 6789,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/KipSelect/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -32663,7 +32663,7 @@
           "sha256": null
         }
       ],
-      "popularity": 381,
+      "popularity": 385,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Kirikiri/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -32784,7 +32784,7 @@
           "sha256": null
         }
       ],
-      "popularity": 575,
+      "popularity": 579,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Klooni1010/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -33028,7 +33028,7 @@
           "sha256": "a229e5af060a825f7e594964a6d0bc9e1cc93f3659ddba57a72f9104ef7e42f7"
         }
       ],
-      "popularity": 114,
+      "popularity": 122,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/LaDeuda/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -33156,7 +33156,7 @@
           "sha256": null
         }
       ],
-      "popularity": 25621,
+      "popularity": 25675,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/laines/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -33475,7 +33475,7 @@
           "sha256": "8317855ef603ba8e0941dfef9cc2f85b5efb469fd2a65f2cf3324fe5640dc0e5"
         }
       ],
-      "popularity": 40338,
+      "popularity": 40461,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ldn_mitm/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -33698,7 +33698,7 @@
           "sha256": null
         }
       ],
-      "popularity": 17721,
+      "popularity": 17756,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pal/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -33793,7 +33793,7 @@
           "sha256": null
         }
       ],
-      "popularity": 73385,
+      "popularity": 74030,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/lennytube/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -33976,7 +33976,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3843,
+      "popularity": 3844,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/libtransistor-examples/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -34009,7 +34009,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1238,
+      "popularity": 1239,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/liero/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -34459,7 +34459,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1281,
+      "popularity": 1284,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/LoveStory_Demo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -34762,7 +34762,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2721,
+      "popularity": 2723,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Lugaru/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -34918,7 +34918,7 @@
           "sha256": "def043c02727697ba6015444f04a391004817168cc18dda7e0355c590b3bfa57"
         }
       ],
-      "popularity": 645,
+      "popularity": 666,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/LumioseShinyStashMap/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -34951,7 +34951,7 @@
           "sha256": "22d3fd6a48cf1e8742bd1db300e8bf438c5b55d6ea0deb5d7659727e278ef946"
         }
       ],
-      "popularity": 0,
+      "popularity": 850,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/LunarNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -35277,7 +35277,7 @@
           "sha256": null
         }
       ],
-      "popularity": 16024,
+      "popularity": 16076,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/mame2003/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -35308,7 +35308,7 @@
           "sha256": null
         }
       ],
-      "popularity": 15828,
+      "popularity": 15886,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/mame2000/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -35371,7 +35371,7 @@
           "sha256": null
         }
       ],
-      "popularity": 31008,
+      "popularity": 31138,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MAME-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -35436,7 +35436,7 @@
           "sha256": null
         }
       ],
-      "popularity": 713,
+      "popularity": 714,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/manaplus/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -35531,7 +35531,7 @@
           "sha256": null
         }
       ],
-      "popularity": 27769,
+      "popularity": 27816,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MarioBrosNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -35768,7 +35768,7 @@
           "sha256": null
         }
       ],
-      "popularity": 19040,
+      "popularity": 19219,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/max_nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -35837,7 +35837,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1479,
+      "popularity": 1482,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MazeNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -35870,7 +35870,7 @@
           "sha256": "813b613cfed8ce08210c254edeb0bdb97f94c48d0b9b2c5dd1e00b31ecbd2631"
         }
       ],
-      "popularity": 7115,
+      "popularity": 7176,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/McOsu-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -36089,7 +36089,7 @@
           "sha256": "f159fbcabfe30dc7bcb7a91ba4b4b6e3dce4511f24681fb018eb124b8658de08"
         }
       ],
-      "popularity": 1533,
+      "popularity": 1538,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MegaZeux/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -36152,7 +36152,7 @@
           "sha256": "a7a30f699d6f930800c5df9be3a150e0c0eafacfece836f1444c99134850d7c2"
         }
       ],
-      "popularity": 170290,
+      "popularity": 171472,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/melonDS/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -36216,7 +36216,7 @@
           "sha256": null
         }
       ],
-      "popularity": 367,
+      "popularity": 369,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/memory-game-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -36316,7 +36316,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1627,
+      "popularity": 1629,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/meritous/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -36491,7 +36491,7 @@
           "sha256": "20be0f72699415c2b25036833863ae1c9221be72371511bd186b28ae11214f55"
         }
       ],
-      "popularity": 223435,
+      "popularity": 224348,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/mGBA/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -36623,7 +36623,7 @@
           "sha256": "31846d02605a32e724afa4cc81fd02c33ca51086cb6b946a69b9083d18aa5e62"
         }
       ],
-      "popularity": 243,
+      "popularity": 261,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/microNXSaveSync/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -36852,7 +36852,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2731,
+      "popularity": 2747,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MiiPort/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -37014,7 +37014,7 @@
           "sha256": "2f2753252d24b9c8b5ef6ae101ce3c68f024d9af44f65d2a75d2182a9564ba16"
         }
       ],
-      "popularity": 2092,
+      "popularity": 2099,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/milkytracker/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -37140,7 +37140,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1265,
+      "popularity": 1268,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Minesweeper/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -37204,7 +37204,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2696,
+      "popularity": 2709,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/minesweeper-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -37268,7 +37268,7 @@
           "sha256": null
         }
       ],
-      "popularity": 409,
+      "popularity": 412,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MinesweeperNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -37542,7 +37542,7 @@
           "sha256": null
         }
       ],
-      "popularity": 835,
+      "popularity": 836,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/mirrormagic/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -37616,7 +37616,7 @@
           "sha256": "840b9039b0d44948eae52e458183ad1bbe9acb11c71f17cd1e590016e4eb5256"
         }
       ],
-      "popularity": 216,
+      "popularity": 235,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MiSTerCompanionNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -37862,7 +37862,7 @@
           "sha256": null
         }
       ],
-      "popularity": 11122,
+      "popularity": 11168,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Mod_Manager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -38216,7 +38216,7 @@
           "sha256": null
         }
       ],
-      "popularity": 46877,
+      "popularity": 47054,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/moonlight-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -38249,7 +38249,7 @@
           "sha256": "a1468c68c5334ed1df69e817706d666ed3bfcee0f2f6e4172e862966bd2a5ba9"
         }
       ],
-      "popularity": 215708,
+      "popularity": 217504,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Moonlight-Switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -38528,7 +38528,7 @@
           "sha256": "fbc5f8908fd1b988bb79d2527fcf0a70b4f6ece73270a9bc74b7697bd9a7790f"
         }
       ],
-      "popularity": 102,
+      "popularity": 113,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MTGLifeCounter/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -38561,7 +38561,7 @@
           "sha256": null
         }
       ],
-      "popularity": 28404,
+      "popularity": 28425,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/mtp-server-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -38683,7 +38683,7 @@
           "sha256": "56554c82f04d2323ab32640939e8fc91d9f2b05084e3b5c536a4da8b9254f335"
         }
       ],
-      "popularity": 0,
+      "popularity": 369,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MusicPlayer2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -38847,7 +38847,7 @@
           "sha256": null
         }
       ],
-      "popularity": 40930,
+      "popularity": 40938,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/solarus/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -38880,7 +38880,7 @@
           "sha256": null
         }
       ],
-      "popularity": 29887,
+      "popularity": 29933,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/N-Xplorer/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -38913,7 +38913,7 @@
           "sha256": null
         }
       ],
-      "popularity": 33662,
+      "popularity": 33680,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/dOPUS/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -39285,7 +39285,7 @@
           "sha256": null
         }
       ],
-      "popularity": 18755,
+      "popularity": 18873,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NaziZombiesPortable/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -39646,7 +39646,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3050,
+      "popularity": 3053,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/neopop_SDL/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -39840,7 +39840,7 @@
           "sha256": "22c534df9b95112fd81691defc36761ba837956999a404417e1fe21247253814"
         }
       ],
-      "popularity": 1078,
+      "popularity": 1541,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NetSurf/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -39873,7 +39873,7 @@
           "sha256": "f655d1089a35907724dc608cd7c45ca900646e5db84e1b645ba32ffe5abd69fe"
         }
       ],
-      "popularity": 35328,
+      "popularity": 35383,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Neumann/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -40922,7 +40922,7 @@
           "sha256": null
         }
       ],
-      "popularity": 387,
+      "popularity": 388,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nOmooRe/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -41025,7 +41025,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1459,
+      "popularity": 1461,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/noies/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -41174,7 +41174,7 @@
           "sha256": null
         }
       ],
-      "popularity": 39973,
+      "popularity": 40205,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NooDS/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -41627,7 +41627,7 @@
           "sha256": "c55f309bfd4a865cc1f8c5f44844ad647f602c3b22f594a832c4cf93051228bc"
         }
       ],
-      "popularity": 5759,
+      "popularity": 5814,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nso-icon-tool/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -41879,7 +41879,7 @@
           "sha256": "682f425de5042a02a437b80189991921200b19211eb40c8351ae0303eae0b6ee"
         }
       ],
-      "popularity": 300,
+      "popularity": 320,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXBadApple/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -41910,7 +41910,7 @@
           "sha256": "f0b35ae15fd4a563ba462af2b5c36a5d181ebb273ed794c01573686c65c16997"
         }
       ],
-      "popularity": 0,
+      "popularity": 32,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXPlazaStreetPass/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -41943,7 +41943,7 @@
           "sha256": "ce8d5272b59164012d5bc988d41352dd16346ac727a2c0fbfcd47988ce88f368"
         }
       ],
-      "popularity": 13221,
+      "popularity": 13374,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXRemoteLauncher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -41976,7 +41976,7 @@
           "sha256": "0fe36bd298000b40d1b94226256e90ce3226918e5d67f22d70822a7fb3100cd0"
         }
       ],
-      "popularity": 446,
+      "popularity": 618,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXSimpleDownloader/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42007,7 +42007,7 @@
           "sha256": "1b02e880a2fb945ac03c28dfd0c8d4670b5f89eebd90bcdcfe89de4774357820"
         }
       ],
-      "popularity": 104,
+      "popularity": 107,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXCGOL/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42038,7 +42038,7 @@
           "sha256": "58ae48f4838f2424a21e1bc4db421c5de30b0eeababa5675dfe567d00392e48b"
         }
       ],
-      "popularity": 1062,
+      "popularity": 1068,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXDucoMiner/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42069,7 +42069,7 @@
           "sha256": "cb1e3e5a540098320b97b5e0ac3263c56284b4230eccb5c42fd45c516e9cb314"
         }
       ],
-      "popularity": 2354,
+      "popularity": 2382,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXFetch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42102,7 +42102,7 @@
           "sha256": "884e8e7ba6a5ade903cbe38b81ef67bf488dcfc72645c5610913fc817ccd2dce"
         }
       ],
-      "popularity": 203,
+      "popularity": 211,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXFetchRem/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42133,7 +42133,7 @@
           "sha256": "e29739edcbff4e82fbe6e1489eef9465e5e58c8d395f04c760f9e3afba96637d"
         }
       ],
-      "popularity": 19,
+      "popularity": 86,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nxlaserplayer/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42166,7 +42166,7 @@
           "sha256": "396e1acfe62d5116f894b5c92f026a2249c14c54940d76c1d2233834b281d8f8"
         }
       ],
-      "popularity": 19600,
+      "popularity": 19682,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nx-locale-switcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42199,7 +42199,7 @@
           "sha256": null
         }
       ],
-      "popularity": 611,
+      "popularity": 612,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nx-midi/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42232,7 +42232,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3962,
+      "popularity": 3968,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NX-ntpc/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42265,7 +42265,7 @@
           "sha256": "080c570fa82b77c094c578a5dd28218d148a4b071befbaa9a6d5332ac89c8975"
         }
       ],
-      "popularity": 7383,
+      "popularity": 7444,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXSaveSync/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42298,7 +42298,7 @@
           "sha256": null
         }
       ],
-      "popularity": 256847,
+      "popularity": 257271,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NX-shell/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42331,7 +42331,7 @@
           "sha256": "247ecb28baf502ac6c3f6a4db4552db6e3943043d06f2c03a2405c45443e463a"
         }
       ],
-      "popularity": 253,
+      "popularity": 363,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nxsysinfo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42364,7 +42364,7 @@
           "sha256": "b714d4036cbad4d05b9a12ce6702bd7e17c1b7ec54319d237244128850cf77d5"
         }
       ],
-      "popularity": 51785,
+      "popularity": 52041,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NX-Update-Checker/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42397,7 +42397,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3818,
+      "popularity": 3822,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nx-vvvvvv/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42428,7 +42428,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3800,
+      "popularity": 3807,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXBlood/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42461,7 +42461,7 @@
           "sha256": null
         }
       ],
-      "popularity": 24736,
+      "popularity": 24760,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nXDownload/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42494,7 +42494,7 @@
           "sha256": "d97a1a85ad10c9f46ae4e252cac6093cf7af3dcc5ffa79d403d6c5ebe1782966"
         }
       ],
-      "popularity": 225246,
+      "popularity": 226349,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/gcdumptool/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42527,7 +42527,7 @@
           "sha256": null
         }
       ],
-      "popularity": 10501,
+      "popularity": 10519,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nxengine/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42591,7 +42591,7 @@
           "sha256": null
         }
       ],
-      "popularity": 33013,
+      "popularity": 33105,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXGallery/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42624,7 +42624,7 @@
           "sha256": "24eb895198a2128ab7f48d9f6e01097ee948b29813ef1cdd8fae2bfce23dbc3a"
         }
       ],
-      "popularity": 29894,
+      "popularity": 30035,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switchXBOXcontroller/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42657,7 +42657,7 @@
           "sha256": "ad1df53916c634ca5de0183d4e5447142d7f652630f422858578be83397527ec"
         }
       ],
-      "popularity": 8951,
+      "popularity": 9101,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXMilk/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42690,7 +42690,7 @@
           "sha256": "9d9dbc1bc58ed08eeafa88fa67d61632c58195ddd17d0f37526a9d90ce1e1853"
         }
       ],
-      "popularity": 87944,
+      "popularity": 88362,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXMP/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42723,7 +42723,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1367,
+      "popularity": 1370,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXoodles/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42756,7 +42756,7 @@
           "sha256": null
         }
       ],
-      "popularity": 15475,
+      "popularity": 15493,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nxplay/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42789,7 +42789,7 @@
           "sha256": "3d97c1a97ae6c22c5d6652b22baff008f6467e96be8a1507eda282f7e15485eb"
         }
       ],
-      "popularity": 5399,
+      "popularity": 6475,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXpotify/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42822,7 +42822,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3331,
+      "popularity": 3335,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nxquake/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42855,7 +42855,7 @@
           "sha256": null
         }
       ],
-      "popularity": 13293,
+      "popularity": 13319,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nxquake2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42888,7 +42888,7 @@
           "sha256": "f0fde4354c671af83e3ae22631a664559edf63a52ffdac3537aff0c6d807a6cb"
         }
       ],
-      "popularity": 344,
+      "popularity": 370,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXSAND/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42921,7 +42921,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2521,
+      "popularity": 2522,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nxsh/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42954,7 +42954,7 @@
           "sha256": "f647983e344e7e8ce35955c2f2154ec8043819063cc78e2c9d5f5161684c16c8"
         }
       ],
-      "popularity": 6258,
+      "popularity": 6788,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXShare/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42987,7 +42987,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4467,
+      "popularity": 4475,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nxTransmission/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -43481,7 +43481,7 @@
           "sha256": "556fd4584eb9dccf7cf303ebff09cf558331c853e1658f641e887e1c28e57b9a"
         }
       ],
-      "popularity": 1199,
+      "popularity": 1205,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ONScripterNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -43611,7 +43611,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2145,
+      "popularity": 2150,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/openfodder/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -43644,7 +43644,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1615,
+      "popularity": 1619,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenArenaNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -43675,7 +43675,7 @@
           "sha256": null
         }
       ],
-      "popularity": 8052,
+      "popularity": 8077,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/openbor/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -43869,7 +43869,7 @@
           "sha256": "6babd163ba03f19004e39535355bccf3436e42c80786e025d799e204b39dae27"
         }
       ],
-      "popularity": 0,
+      "popularity": 102,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenHomeNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -43940,7 +43940,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4574,
+      "popularity": 4593,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenJazzNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -43973,7 +43973,7 @@
           "sha256": null
         }
       ],
-      "popularity": 10411,
+      "popularity": 10429,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Openlara/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -44105,7 +44105,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5334,
+      "popularity": 5356,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/openmw/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -44171,7 +44171,7 @@
           "sha256": "1c6f068066ed22021aa02c1b0cd8e761fc24423a5cb8fdfe806f38f4b9ffc2de"
         }
       ],
-      "popularity": 83,
+      "popularity": 416,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenNOW/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -44237,7 +44237,7 @@
           "sha256": null
         }
       ],
-      "popularity": 12209,
+      "popularity": 12233,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/openrct2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -44403,7 +44403,7 @@
           "sha256": "3cd849233c6ddc0c2f2f6f2f12d83eaabe98c7cb617ec48fb1b43168419989a1"
         }
       ],
-      "popularity": 3254,
+      "popularity": 3259,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenSupaplex/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -44562,7 +44562,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6778,
+      "popularity": 6787,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenTTD/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -45111,7 +45111,7 @@
           "sha256": null
         }
       ],
-      "popularity": 9306,
+      "popularity": 9328,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/PacManNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -45144,7 +45144,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3450,
+      "popularity": 3475,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Pacpac/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -45825,7 +45825,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3659,
+      "popularity": 3663,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Payload-Launcher-Apple/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -45858,7 +45858,7 @@
           "sha256": null
         }
       ],
-      "popularity": 64030,
+      "popularity": 64113,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Payload_launcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -45951,7 +45951,7 @@
           "sha256": "88f160c6dacf2b7a38c2564d1ee7b6565f48e212d1e33878017ad627383475cb"
         }
       ],
-      "popularity": 177,
+      "popularity": 202,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/PctlManager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -46101,7 +46101,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1589,
+      "popularity": 1596,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/PepperandCarrot/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -46273,7 +46273,7 @@
           "sha256": "9b846cf86b3f10b11fc11628582b6b3ad455cb419dbab11104cfc2020dca18d4"
         }
       ],
-      "popularity": 57691,
+      "popularity": 57899,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pFBA/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -46434,7 +46434,7 @@
           "sha256": null
         }
       ],
-      "popularity": 564,
+      "popularity": 565,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Pickr/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -46523,7 +46523,7 @@
           "sha256": null
         }
       ],
-      "popularity": 14544,
+      "popularity": 14584,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/picodrive/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -46810,7 +46810,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4131,
+      "popularity": 4145,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pinballnx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -46973,7 +46973,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3625,
+      "popularity": 3627,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pixel-painter/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47006,7 +47006,7 @@
           "sha256": null
         }
       ],
-      "popularity": 437,
+      "popularity": 439,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Pixel_Shuffle_NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47039,7 +47039,7 @@
           "sha256": null
         }
       ],
-      "popularity": 930,
+      "popularity": 933,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/PixelWheels/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47072,7 +47072,7 @@
           "sha256": "e117f021ee2294c948b2facd7b6447eda83091daacddafdc5b790e1323b21de3"
         }
       ],
-      "popularity": 328,
+      "popularity": 342,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pkBakeryDonutEditor/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47142,7 +47142,7 @@
           "sha256": "79664e844ba213ebbd7af1a0129f8877bc0ba4140efde014d9153490e8defbe8"
         }
       ],
-      "popularity": 9963,
+      "popularity": 10062,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pkDex/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47327,7 +47327,7 @@
           "sha256": "3b8c9e214d0a6003d59ddae29bc7e6c44aacf6f96a4b91ab05e0c3f43b4a42a7"
         }
       ],
-      "popularity": 3927,
+      "popularity": 4277,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pkHouseLocalPokeBank/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47391,7 +47391,7 @@
           "sha256": "717e9fec3f373f55eaefc6ffc0497252cbdf15755874c969968cd18fcd967269"
         }
       ],
-      "popularity": 185,
+      "popularity": 1186,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/PKSE/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47455,7 +47455,7 @@
           "sha256": "9f97ace321447129f29b4958d5353a9d68672a2c5a468f542a3d33cef0d95971"
         }
       ],
-      "popularity": 341,
+      "popularity": 391,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pkTeraRaidMapViewer/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47553,7 +47553,7 @@
           "sha256": "0ef7e311216393862bc8f9af8a7249d5ec93a4e6aed6f90fd50b7f8df0c31b59"
         }
       ],
-      "popularity": 1965,
+      "popularity": 2288,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pleNx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47745,7 +47745,7 @@
           "sha256": "610c2941b64c231959dc0ad968bbba029b0fc3e3664c06f06c2821c4e4f7cd81"
         }
       ],
-      "popularity": 41383,
+      "popularity": 41762,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pNES/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -48094,7 +48094,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1420,
+      "popularity": 1423,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/PongNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -48280,7 +48280,7 @@
           "sha256": null
         }
       ],
-      "popularity": 11887,
+      "popularity": 11932,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/postal/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -48513,7 +48513,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3179,
+      "popularity": 3183,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/powder-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -48609,7 +48609,7 @@
           "sha256": null
         }
       ],
-      "popularity": 9771,
+      "popularity": 9786,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/PowertoolsNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -48642,7 +48642,7 @@
           "sha256": null
         }
       ],
-      "popularity": 49897,
+      "popularity": 50018,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pplay/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -48673,7 +48673,7 @@
           "sha256": "9296552c26d96c61f04d2aaf12f06f867cf59172b3748c1a4a97367c6361903f"
         }
       ],
-      "popularity": 255197,
+      "popularity": 256973,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ppsspp/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -49013,7 +49013,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1266,
+      "popularity": 1268,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/prodinfoenabler/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -49320,7 +49320,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 7453,
+      "popularity": 7491,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49347,7 +49347,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2594,
+      "popularity": 2596,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49374,7 +49374,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 6938,
+      "popularity": 6982,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49401,7 +49401,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4833,
+      "popularity": 4844,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49428,7 +49428,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 43701,
+      "popularity": 43847,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49455,7 +49455,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 205,
+      "popularity": 213,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -49897,7 +49897,7 @@
           "sha256": "2986e7ed26c8adaa729e9341fe22469fe8e8496b7c8407c40b3e4833d6011391"
         }
       ],
-      "popularity": 96686,
+      "popularity": 97349,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/psnes/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -51067,7 +51067,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1333,
+      "popularity": 1336,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pusha/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -51100,7 +51100,7 @@
           "sha256": null
         }
       ],
-      "popularity": 14247,
+      "popularity": 14258,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pynx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -51133,7 +51133,7 @@
           "sha256": null
         }
       ],
-      "popularity": 8518,
+      "popularity": 8572,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Q3ArenaNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -51356,7 +51356,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7769,
+      "popularity": 7774,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/QuakespasmNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -51649,7 +51649,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1420,
+      "popularity": 1423,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/RandPlayNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -51744,7 +51744,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3291,
+      "popularity": 3295,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/rawgl/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -51777,7 +51777,7 @@
           "sha256": null
         }
       ],
-      "popularity": 9667,
+      "popularity": 9670,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/RCMReboot/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -51810,7 +51810,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5866,
+      "popularity": 5869,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/RCMRebootInstant/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -52111,7 +52111,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7002,
+      "popularity": 7016,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/reboottopayloadswitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -52273,7 +52273,7 @@
           "sha256": "0108b9f1a52ad49642f733e2dccab078619f51549a68e263cc7edcdd2f583cb4"
         }
       ],
-      "popularity": 263,
+      "popularity": 311,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/REDRIVER2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -52561,7 +52561,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3541,
+      "popularity": 3547,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/REminiscence/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -52656,7 +52656,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6999,
+      "popularity": 7046,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/renpy-switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -52725,7 +52725,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7485,
+      "popularity": 7519,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Reset-Parental-Controls-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -53079,7 +53079,7 @@
           "sha256": "3860d928db9717d0a41509ba08cc78b0b1240adf5c02e8960b6410ba1d85bea9"
         }
       ],
-      "popularity": 943933,
+      "popularity": 947283,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/RetroNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -53488,7 +53488,7 @@
           "sha256": "31b45d12f9a78ecf505f34f075e58b9e2b4d392df67b95612e2b0037fd5bb4c7"
         }
       ],
-      "popularity": 3964,
+      "popularity": 4025,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/RingRacers/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -53660,7 +53660,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1182,
+      "popularity": 1184,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/rocksndiamonds/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -54842,7 +54842,7 @@
           "sha256": "a3a3f613707d5bcb6b30840b291efe39704e8760ff25436b042e286fda113af9"
         }
       ],
-      "popularity": 146703,
+      "popularity": 148711,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SaltyNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -54875,7 +54875,7 @@
           "sha256": "889f56ec3f06b24c5b98f115065fbe260b8173ce9e38a80316689d171e657332"
         }
       ],
-      "popularity": 33343,
+      "popularity": 33698,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SaltyNX-Tool/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -54908,7 +54908,7 @@
           "sha256": "700aafc5e45290f1d02179b6bb089e2ac53eced1703971338975213c3c676362"
         }
       ],
-      "popularity": 217,
+      "popularity": 293,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Sandboxels/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -55564,7 +55564,7 @@
           "sha256": "dbe2b4057b73e8df58ae292247e2454c82c003e217e0f97a4b1f1fcf80c7eaa4"
         }
       ],
-      "popularity": 4460,
+      "popularity": 4613,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ScratchEverywhere/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -55664,7 +55664,7 @@
           "sha256": null
         }
       ],
-      "popularity": 10057,
+      "popularity": 10071,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/screen-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -55728,7 +55728,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4051,
+      "popularity": 4057,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ScreenTester/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -55827,7 +55827,7 @@
           "sha256": "c0b3f1d0c41c840a5ba34459f8330d638dcc926e1b22336b015a730d8aa7cdda"
         }
       ],
-      "popularity": 32319,
+      "popularity": 32379,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/scummvm/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -55959,7 +55959,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1293,
+      "popularity": 1295,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sdl_pong/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -56207,7 +56207,7 @@
           "sha256": null
         }
       ],
-      "popularity": 16031,
+      "popularity": 16059,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SDLPoP/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -56240,7 +56240,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2164,
+      "popularity": 2167,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SealedBite/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -56442,7 +56442,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2883,
+      "popularity": 2886,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Serious-Engine-TFE/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -56475,7 +56475,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2733,
+      "popularity": 2739,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Serious-Engine-TSE/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -56803,7 +56803,7 @@
           "sha256": null
         }
       ],
-      "popularity": 269,
+      "popularity": 270,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Shasciw/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -56909,7 +56909,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1327,
+      "popularity": 1331,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Shiromino/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57041,7 +57041,7 @@
           "sha256": "553ce1f749bca0247b211a3ca884430580c5bf5204bac9f24c2c1507b69e2a9c"
         }
       ],
-      "popularity": 3040,
+      "popularity": 3104,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ShoWiFi/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57292,7 +57292,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1933,
+      "popularity": 1937,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SimonNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57424,7 +57424,7 @@
           "sha256": "90203e05e62f4b6d9b4c8bb442024584816db94a9c9194dfea333d2f0befe1a4"
         }
       ],
-      "popularity": 4301,
+      "popularity": 4450,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SimpleModAlchemist/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57519,7 +57519,7 @@
           "sha256": "365f978cb5a867881b677fb629fec3e2480664e266fee12b3c363683e9d22a35"
         }
       ],
-      "popularity": 76790,
+      "popularity": 77256,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SimpleModDownloader/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57552,7 +57552,7 @@
           "sha256": "ace860afe31286b9ff8569e040bd56d6c948ea094f889b67ab05f43144a527d6"
         }
       ],
-      "popularity": 75587,
+      "popularity": 75986,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SimpleModManager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57646,7 +57646,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7451,
+      "popularity": 7462,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SkyMM-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57679,7 +57679,7 @@
           "sha256": null
         }
       ],
-      "popularity": 38451,
+      "popularity": 38486,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SkyNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57743,7 +57743,7 @@
           "sha256": "4c53bcc6517a42634bbaf348aeb4e32550777f124af9d15e0bbe17bb289a262a"
         }
       ],
-      "popularity": 231,
+      "popularity": 413,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sLaunch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57776,7 +57776,7 @@
           "sha256": "596ecb3da1f278be1109b26b0a6d117ce38324407aa4af8c0daecb33f595692e"
         }
       ],
-      "popularity": 153,
+      "popularity": 159,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SlayTheSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -58116,7 +58116,7 @@
           "sha256": null
         }
       ],
-      "popularity": 419,
+      "popularity": 420,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Slinks-Adventure/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -58184,7 +58184,7 @@
           "sha256": null
         }
       ],
-      "popularity": 472,
+      "popularity": 473,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SlitherlinkNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -58423,7 +58423,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1579,
+      "popularity": 1585,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SMM2CourseInjector/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -58492,7 +58492,7 @@
           "sha256": null
         }
       ],
-      "popularity": 8654,
+      "popularity": 8664,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Snake/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -58660,7 +58660,7 @@
           "sha256": "45610abcfac68f00c5c870f68aef5167f4937f15b02cf1dfbd7d8cbcc0574415"
         }
       ],
-      "popularity": 249,
+      "popularity": 254,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SnakeNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -58938,7 +58938,7 @@
           "sha256": null
         }
       ],
-      "popularity": 30203,
+      "popularity": 30282,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/snes9x_2010/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -58969,7 +58969,7 @@
           "sha256": null
         }
       ],
-      "popularity": 31028,
+      "popularity": 31106,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/snes9x_2010_nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -59784,7 +59784,7 @@
           "sha256": "a6d3abece9c3003a7b5c830216c7de0e655a405b34b8fc9ec2efa67417621190"
         }
       ],
-      "popularity": 58619,
+      "popularity": 59207,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sonicroboblast2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60056,7 +60056,7 @@
           "sha256": null
         }
       ],
-      "popularity": 18769,
+      "popularity": 18853,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Sonic-CD/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60089,7 +60089,7 @@
           "sha256": null
         }
       ],
-      "popularity": 42797,
+      "popularity": 42944,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Sonic3-AIR/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60284,7 +60284,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3957,
+      "popularity": 3959,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/spacenx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60373,7 +60373,7 @@
           "sha256": "acd0e0fb41dc635e12a34461921649861e21bc86db4802f58649a6a3a1d2cc0f"
         }
       ],
-      "popularity": 517,
+      "popularity": 601,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SpaceVue/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60544,7 +60544,7 @@
           "sha256": "bbfab63462fd0d6741e3735e76a96ccc3237c5bf1ad3d2acdfcae0c68a36728b"
         }
       ],
-      "popularity": 49633,
+      "popularity": 52884,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sphaira/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60669,7 +60669,7 @@
           "sha256": "a6fe83b0f8831e9cd5ef95b86a44bb0fa77486d7f8e4e20370b9b89a60e33bc3"
         }
       ],
-      "popularity": 956,
+      "popularity": 1281,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SpotifySwitchRemote/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60733,7 +60733,7 @@
           "sha256": "7570d94d7ae2d02c32247a072d4c6b6dafc4afb43b5cf3174a9483888a68daf5"
         }
       ],
-      "popularity": 6193,
+      "popularity": 6224,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SPSV/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60982,7 +60982,7 @@
           "sha256": "b6790c041750569184d0842dadcfa3d7221adf135f219252c2b8fcccbb5abe73"
         }
       ],
-      "popularity": 21056,
+      "popularity": 21127,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SRB2Kart/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -61046,7 +61046,7 @@
           "sha256": "5d4b16116af594e1e30982fe752c5ebe2f6797af2a14688678b00922a58fe6c2"
         }
       ],
-      "popularity": 30,
+      "popularity": 191,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SSBot/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -61079,7 +61079,7 @@
           "sha256": "bef27082d3cafaa70c5c519c7b46713563ca94c3db8f4ca5cb1d028ae73fc57b"
         }
       ],
-      "popularity": 7444,
+      "popularity": 7644,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SSBUModManager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -61689,7 +61689,7 @@
           "sha256": "99a1ee2e78d65560faef26a3a03311ab3bdf1d019c5476777dd4be1f7848dbb1"
         }
       ],
-      "popularity": 5124,
+      "popularity": 5146,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/stepmania-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -61821,7 +61821,7 @@
           "sha256": "f77edcc278204e23dfe2fd69078f3c6ddcb94eab810a1384336915d11d112d39"
         }
       ],
-      "popularity": 980,
+      "popularity": 1438,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/StreamFinEX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -62004,7 +62004,7 @@
           "sha256": "e6ab197e23bcb3db79947f400acc729a49d4b6ccca886be2160c1ad57bbeb245"
         }
       ],
-      "popularity": 3296,
+      "popularity": 3308,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SuDokuL/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -62133,7 +62133,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1528,
+      "popularity": 1535,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SudokuNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -62534,7 +62534,7 @@
           "sha256": "7211c142a9e7605d10869959e2ca360ddcc1a484c87c6a40a6312512383b9039"
         }
       ],
-      "popularity": 34614,
+      "popularity": 34658,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/supermariowar-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -62708,7 +62708,7 @@
           "sha256": null
         }
       ],
-      "popularity": 32885,
+      "popularity": 32922,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SuperModysseyLoader/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -62836,7 +62836,7 @@
           "sha256": "b7b9461777ed08f5e67836b9f03e408fd56ef9c42014cc20c410a19cc2b414ef"
         }
       ],
-      "popularity": 11,
+      "popularity": 53,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SuperSquatSim/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -62900,7 +62900,7 @@
           "sha256": "e8f580516a2fb1317dd7783accfbc3a3b3e67e53db584bb134c684e802c94ea6"
         }
       ],
-      "popularity": 5498,
+      "popularity": 5507,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Super-Haxagon/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63166,7 +63166,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2469,
+      "popularity": 2478,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SuperTuxMilestone1/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63179,14 +63179,14 @@
         "wii"
       ],
       "name": "SuperTux Wii",
-      "summary": "Port of SuperTux",
-      "description": "Wii port of the classic platformer starring Tux the Penguin\n- Based on Milestone 1 of the game, originally released in 2003\n- Originally ported by scanff & Arikado\n- Updated by Deltaresero with various improvements and fixes\n- Includes 9 unique enemies and 26 challenging levels\n- Supports configurable Wii Remote and keyboard inputs\n\nFor more info, visit: github.com/DeltaResero/SuperTux-Wii",
+      "summary": "Port of SuperTux Milestone 1",
+      "description": "Wii port of the classic platformer starring Tux the Penguin\n- Based on Milestone 1 of the game, originally released in 2003\n- Originally ported by scanff & Arikado\n- Updated by Deltaresero with various improvements and fixes\n- Includes 9 unique enemies and 26 challenging levels\n- Supports Wii Remote, Nunchuk, C/GC Controller, & keyboard\n\nFor more info, visit: github.com/DeltaResero/SuperTux-Wii",
       "categories": [
         "games"
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · SDHC",
       "author": "Two devs, scanff, Arikado, DeltaResero",
-      "version": "0.1.4-wii-d.06",
+      "version": "0.1.4-wii-d.07",
       "title_id": "000100014E03EFC9",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/supertux/icon.png",
@@ -63196,14 +63196,14 @@
           "format": "zip",
           "filename": "supertux.zip",
           "url": "https://hbb1.oscwii.org/api/contents/supertux/supertux.zip",
-          "size": 9617948
+          "size": 10219416
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-08T00:00:00+00:00"
+      "updated_at": "2026-09-26T09:05:21+00:00"
     },
     {
       "id": "vitadbtoo-vita:803",
@@ -63266,7 +63266,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7215,
+      "popularity": 7218,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/svitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63299,7 +63299,7 @@
           "sha256": null
         }
       ],
-      "popularity": 67401,
+      "popularity": 67635,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Switch_90DNS_Tester/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63332,7 +63332,7 @@
           "sha256": "7fb8bc43a3313b5b8ac761029616b501a3c57847440356dd927e9d0509b7beb3"
         }
       ],
-      "popularity": 526,
+      "popularity": 592,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchAssistant/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63365,7 +63365,7 @@
           "sha256": null
         }
       ],
-      "popularity": 37582,
+      "popularity": 37700,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchFTPClient/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63396,7 +63396,7 @@
           "sha256": "eebbb218d089669627473750766d1d5e9b19286228d31e13c69c90343a4040d7"
         }
       ],
-      "popularity": 18579,
+      "popularity": 18943,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchNotificationLED/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63427,7 +63427,7 @@
           "sha256": "ec9d3f012a00b83a427ccda47582ddbd3fe083137dc8eae5f16c6b14b4a14718"
         }
       ],
-      "popularity": 1096,
+      "popularity": 1100,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchP8/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63460,7 +63460,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4227,
+      "popularity": 4233,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pong/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63524,7 +63524,7 @@
           "sha256": null
         }
       ],
-      "popularity": 14076,
+      "popularity": 14104,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switch-smb-client/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63588,7 +63588,7 @@
           "sha256": null
         }
       ],
-      "popularity": 144866,
+      "popularity": 145300,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switch-cheats-updater/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63619,7 +63619,7 @@
           "sha256": "64cda8ac15e6ab84ca1786715e45897cb8d69ed2cbbec2a0d3d4e99ac1c2cac0"
         }
       ],
-      "popularity": 7699,
+      "popularity": 9141,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switchnewpipe/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63652,7 +63652,7 @@
           "sha256": null
         }
       ],
-      "popularity": 78537,
+      "popularity": 78791,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switch-remote-play/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63685,7 +63685,7 @@
           "sha256": "d0f1ebdf676a84d8d6f907828ffda8cba7aa07293dbd45f3309c3818b2201475"
         }
       ],
-      "popularity": 16711,
+      "popularity": 16900,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switch-time/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63718,7 +63718,7 @@
           "sha256": "960f5a4a7779af4c4a117470c844f693add294b253aa4c99d74b0d1ab5c5ee6c"
         }
       ],
-      "popularity": 424,
+      "popularity": 717,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchCast/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63751,7 +63751,7 @@
           "sha256": "6646e87c3458b3fe3b2f0b0039c62ae53e0dfb339ad95d51257855bc9745969f"
         }
       ],
-      "popularity": 58782,
+      "popularity": 59815,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Switchfin/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63820,7 +63820,7 @@
           "sha256": "9e12fe61bd628d7c2c5f1ff09639632a9ea6f3a65b325cfa569bbc0af4f09731"
         }
       ],
-      "popularity": 1311,
+      "popularity": 1398,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchFishingDemo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63853,7 +63853,7 @@
           "sha256": null
         }
       ],
-      "popularity": 17644,
+      "popularity": 17665,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switchident-GUI/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63884,7 +63884,7 @@
           "sha256": null
         }
       ],
-      "popularity": 9096,
+      "popularity": 9108,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switchident-console/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63917,7 +63917,7 @@
           "sha256": "cbcb4dceb2c29983878e866587e965e8b4d6b16f1546602219ce64c7f90a7892"
         }
       ],
-      "popularity": 288,
+      "popularity": 388,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchInfoNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64012,7 +64012,7 @@
           "sha256": "d9020e2b0bad6d92bed9be6b480d9f5b1cb656f55e6fa86f1bbaf1ef2432fee9"
         }
       ],
-      "popularity": 329,
+      "popularity": 330,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchLanController/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64043,7 +64043,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5562,
+      "popularity": 5572,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchPresence-Rewritten/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64076,7 +64076,7 @@
           "sha256": null
         }
       ],
-      "popularity": 432,
+      "popularity": 433,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchSlide/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64107,7 +64107,7 @@
           "sha256": null
         }
       ],
-      "popularity": 486,
+      "popularity": 487,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switchstrobe/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64140,7 +64140,7 @@
           "sha256": "ef1f3a381ead48dea9d6860158ac8c595f0d4b1408758021779c977c7d3be77f"
         }
       ],
-      "popularity": 2415,
+      "popularity": 2460,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchVerifier/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64207,7 +64207,7 @@
           "sha256": "28f1b0badaad2fef16ffc7bdcfdebaad2b18b85d5dc08c82b3528c921acb99e1"
         }
       ],
-      "popularity": 6454,
+      "popularity": 6803,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchWave/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64370,7 +64370,7 @@
           "sha256": "0eefae05ce08054706389d615afb09cde4120d23f734ab129184ed8bf6207252"
         }
       ],
-      "popularity": 239124,
+      "popularity": 241090,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sys-clk/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64403,7 +64403,7 @@
           "sha256": null
         }
       ],
-      "popularity": 24176,
+      "popularity": 24258,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sys-clk-Editor/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64418,10 +64418,10 @@
       "name": "sys-con 1.x (2024)",
       "categories": [],
       "description": "Connect any USB controller to your Nintendo Switch.\n\nSys-con v1.x is a Nintendo Switch module that adds support for all HID and XID joysticks and gamepads to the Nintendo Switch.\n\nSupport all USB controllers: PC controllers, Wheels, Dualshock 3, Dualshock 4, Dualsense (PS5), XBOX, XBOX360, XBOXONE, ...",
-      "added_at": "2026-07-30",
+      "added_at": "2026-09-25",
       "summary": "Support for XBOX/PS/PC controllers",
       "author": "o0Zz",
-      "version": "1.7.0",
+      "version": "2.0.0",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/o0Zz/sys-con",
@@ -64430,16 +64430,16 @@
           "format": "hbas",
           "filename": "syscon1x2024.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/syscon1x2024/manifest.install",
-          "size": 770,
-          "sha256": "cf557101bb2990e76497fd1111320455c9e12157c58af7d5a1a9ad9008845872"
+          "size": 501,
+          "sha256": "f89ec045ebfce3bb03e1a2e7f195f0d9a95e5c0878f0a47016e3399e73ae29d7"
         }
       ],
-      "popularity": 75183,
+      "popularity": 76381,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/syscon1x2024/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-07-31"
+      "updated_at": "2026-09-26"
     },
     {
       "id": "open-shop-channel-wii:SysCheckHDE",
@@ -64529,7 +64529,7 @@
           "sha256": "dc932e652b893d78c380ba64e75a40df999cdbd4051d80cc0bad33ff998e32cc"
         }
       ],
-      "popularity": 125928,
+      "popularity": 126910,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SysDVR/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64721,7 +64721,7 @@
           "sha256": null
         }
       ],
-      "popularity": 500,
+      "popularity": 502,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/T-Rekt-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64818,7 +64818,7 @@
           "sha256": null
         }
       ],
-      "popularity": 20250,
+      "popularity": 20319,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Taisei/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64851,7 +64851,7 @@
           "sha256": "bd8b93b59d5dbb4dcda97953811ec96fad9627a0426a86c587aa9946856225c6"
         }
       ],
-      "popularity": 264,
+      "popularity": 358,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/taisei/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64916,7 +64916,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1899,
+      "popularity": 1906,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TamatoolNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -65290,7 +65290,7 @@
           "sha256": null
         }
       ],
-      "popularity": 166,
+      "popularity": 167,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/test-pkg/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -65323,7 +65323,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4005,
+      "popularity": 4010,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TetrisNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -65356,7 +65356,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4316,
+      "popularity": 4326,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/tetrisswitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -66524,7 +66524,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3312,
+      "popularity": 3319,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TicTacToeNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -66655,7 +66655,7 @@
           "sha256": null
         }
       ],
-      "popularity": 392,
+      "popularity": 394,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TIL-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -66751,7 +66751,7 @@
           "sha256": "4bd57598b3e70ef0174d5f4035d954b5b1a15ab5c2c21572efaa7b2416e000c1"
         }
       ],
-      "popularity": 795,
+      "popularity": 821,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TimerNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -67080,7 +67080,7 @@
           "sha256": "956e1ea33629dbefbda0607b2c466629f47fa2b57b81f90509b58d5bbcb129f8"
         }
       ],
-      "popularity": 5753,
+      "popularity": 6187,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TomoToolNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -67330,7 +67330,7 @@
           "sha256": "6a25e1353ff8a31408c21371effbfeeb938dfdfdb9aaf508ffcbbab9796fb367"
         }
       ],
-      "popularity": 38813,
+      "popularity": 38875,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TotKUnexplored/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -67392,7 +67392,7 @@
           "sha256": null
         }
       ],
-      "popularity": 605,
+      "popularity": 609,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/touch-screen/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -67557,7 +67557,7 @@
           "sha256": "810ab7e8a660bb1cc3da3f67d722576a9cbfef38b579281e314c7d0e5ca753a4"
         }
       ],
-      "popularity": 1213,
+      "popularity": 1532,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TranslateNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -67743,7 +67743,7 @@
           "sha256": null
         }
       ],
-      "popularity": 330,
+      "popularity": 331,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TriPeaks/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -67776,7 +67776,7 @@
           "sha256": null
         }
       ],
-      "popularity": 789,
+      "popularity": 790,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Triplane_Turmoil/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -67873,7 +67873,7 @@
           "sha256": "75dd8466f566ac9f906cacc52945ac9a47d632399daa508dc0ddc057eb28bd0e"
         }
       ],
-      "popularity": 3872,
+      "popularity": 3882,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Trogdor-Reburninated/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68135,7 +68135,7 @@
           "sha256": "98a0f25af14fb8345be494900813d90a4cc7dc8044e43e33d048cf07a0e609fa"
         }
       ],
-      "popularity": 2182,
+      "popularity": 2191,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Tsukihime/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68168,7 +68168,7 @@
           "sha256": "0585d7d66823f9e798b65cb2c0f3ec593a427ac6fcb5b1aa9e6c62fe0299f8ea"
         }
       ],
-      "popularity": 20294,
+      "popularity": 20639,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TsVitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68232,7 +68232,7 @@
           "sha256": "97ce8f65257c6667d80591c9b1d014b7202634b610f318c49f57a5f4829a30ad"
         }
       ],
-      "popularity": 41866,
+      "popularity": 41959,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Turnips/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68351,7 +68351,7 @@
           "sha256": "cd2e5fa590d75fb5cb0f09550440cabb2e6c51b8e1b19bb886eb056964695c57"
         }
       ],
-      "popularity": 1140,
+      "popularity": 1531,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/twiNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68606,7 +68606,7 @@
           "sha256": null
         }
       ],
-      "popularity": 8937,
+      "popularity": 8945,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/uae4all2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68773,7 +68773,7 @@
           "sha256": "2918537d01f249ba5f57aee63cedf6f768eacc5f4a4bc00c1b4f8253e38b31ef"
         }
       ],
-      "popularity": 63069,
+      "popularity": 63412,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/uLaunch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68806,7 +68806,7 @@
           "sha256": "ac4136a90cb1ff1a4594dd6987a58bda9c480e04d6c8b169bb1e67843c64da40"
         }
       ],
-      "popularity": 25654,
+      "popularity": 25891,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/UltimateTrainingModpack/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68839,7 +68839,7 @@
           "sha256": "1c09e0f844e981c5b90e2a245028fd90391814a0af1b2d27b2197c7ea298c677"
         }
       ],
-      "popularity": 88897,
+      "popularity": 91337,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/UltrahandOverlay/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68932,7 +68932,7 @@
           "sha256": "9366480d867053e70ea945164ed8d2b9b9df8cd60ab8b282a594fd1404052dc5"
         }
       ],
-      "popularity": 424,
+      "popularity": 427,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/UMSDPong/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -69159,7 +69159,7 @@
           "sha256": null
         }
       ],
-      "popularity": 685,
+      "popularity": 686,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Unlucky/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -69290,7 +69290,7 @@
           "sha256": null
         }
       ],
-      "popularity": 20641,
+      "popularity": 20688,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Untitled/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -69452,7 +69452,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7906,
+      "popularity": 7918,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/UpThemAll/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -69647,7 +69647,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6247,
+      "popularity": 6255,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/useless/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -69881,7 +69881,7 @@
           "sha256": null
         }
       ],
-      "popularity": 450,
+      "popularity": 453,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Vanilla-Conquer/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -70140,7 +70140,7 @@
           "sha256": null
         }
       ],
-      "popularity": 11400,
+      "popularity": 11407,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/vba-next/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -70171,7 +70171,7 @@
           "sha256": null
         }
       ],
-      "popularity": 35510,
+      "popularity": 35551,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/VBA_NEXT/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -70331,7 +70331,7 @@
           "sha256": "825e32fa54382044bf86f0445df464268a772050128ce9f21d3be07cce4986d3"
         }
       ],
-      "popularity": 31218,
+      "popularity": 31268,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/vgedit/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -70364,7 +70364,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2929,
+      "popularity": 2939,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/VGMplayerNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -70620,7 +70620,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2352,
+      "popularity": 2356,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/jaguar/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -74625,7 +74625,7 @@
           "sha256": null
         }
       ],
-      "popularity": 763,
+      "popularity": 764,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/VoyagerNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -74687,7 +74687,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1354,
+      "popularity": 1355,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nx-vr/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -75047,7 +75047,7 @@
           "sha256": "568f42c0f6d78297938327244611b168ccb33fa0889c514c821c197ed2c4e6fa"
         }
       ],
-      "popularity": 101,
+      "popularity": 106,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/WarnelChawpiovs/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -75264,7 +75264,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1735,
+      "popularity": 1741,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Whats-in-the-box-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -76309,7 +76309,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1352,
+      "popularity": 1355,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/wiiero/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -77790,7 +77790,7 @@
           "sha256": "56141ceaf56507ce883db1974837920e47596475475460ddd62e3878f125c22e"
         }
       ],
-      "popularity": 37310,
+      "popularity": 37480,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/wiliwili/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78025,7 +78025,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3596,
+      "popularity": 3602,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Wolf4SDL-Switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78160,7 +78160,7 @@
           "sha256": "8778c3a683cc6c9c39ea30da947220397cb9d329596fb3935b2d9d5a456c8da4"
         }
       ],
-      "popularity": 968,
+      "popularity": 1056,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/WookReadercomics/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78748,7 +78748,7 @@
           "sha256": null
         }
       ],
-      "popularity": 12932,
+      "popularity": 12983,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/xash3d-switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78781,7 +78781,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3491,
+      "popularity": 3497,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/xash3d-switch_Blue_Shift/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78814,7 +78814,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3288,
+      "popularity": 3295,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/xash3d-switch_Opposing_Force/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78847,7 +78847,7 @@
           "sha256": null
         }
       ],
-      "popularity": 562,
+      "popularity": 564,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/xash3d-switch-decay/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78880,7 +78880,7 @@
           "sha256": null
         }
       ],
-      "popularity": 636,
+      "popularity": 640,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/xash3d-switch-dmc/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78981,7 +78981,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1660,
+      "popularity": 1665,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/xrick/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -79106,7 +79106,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7263,
+      "popularity": 7266,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/yallarenuts/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -79265,7 +79265,7 @@
           "sha256": "88f94c8c38894b2237069fe828a08916fd0b882e25740b8f233bd7674e7287e8"
         }
       ],
-      "popularity": 2167,
+      "popularity": 2435,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/YamaNXTurkishPatcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -80225,7 +80225,7 @@
           "sha256": "b85dccda1e449619ea3125242639a0489df163edc85e1e213c3fa92aab6359fc"
         }
       ],
-      "popularity": 0,
+      "popularity": 81,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ZERODROID/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
