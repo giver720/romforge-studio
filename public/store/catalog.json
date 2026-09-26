@@ -3123,7 +3123,7 @@
       "name": "Aleph One Vita",
       "summary": "Port of Aleph One for PSVita.",
       "author": "DrDecki",
-      "version": "v.1.4",
+      "version": "v.2.0",
       "title_id": "ALPH00001",
       "description": "Aleph One is the open source continuation of Bungie's Marathon 2 game engine. Aleph One supports Marathon, Marathon 2 and Marathon Infinity natively. Many third party scenarios and net maps are also available.",
       "requirements": "- Game Data Files: PC in ux0:data/AlephOne",
@@ -3135,19 +3135,19 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/a6d8bd9da77fd9f3b594fe7b02d6c68e6ac51b084bcdbd61e74ba902d0cbbe34.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/d9aab4389fe7e54f7eb48952d0a3f7909bea67392c5cbfa341d5e1794a9acd54.png"
       ],
-      "release_url": "https://github.com/DrDecki/Aleph-One-Marathon-Trilogy-PsVita-/releases",
+      "release_url": "https://github.com/DrDecki/Aleph-One-PsVita/releases",
       "downloads": [
         {
           "format": "vpk",
           "filename": "alephone.vpk",
-          "url": "https://github.com/DrDecki/Aleph-One-Marathon-Trilogy-PsVita-/releases/download/AlephOneVita1.4/alephone.vpk",
-          "size": 6765491,
-          "md5": "05fff4cf7834d69ef43da5f6cf47d1be"
+          "url": "https://github.com/DrDecki/Aleph-One-PsVita/releases/download/AlephOneVita2.0/alephone.vpk",
+          "size": 6792026,
+          "md5": "fe94b301a610a588cc496d60be52e793"
         },
         {
           "format": "data",
           "filename": "AlephOne.zip",
-          "url": "https://github.com/DrDecki/Aleph-One-Marathon-Trilogy-PsVita-/releases/download/AlephOneVita1.4/AlephOne.zip"
+          "url": "https://github.com/DrDecki/Aleph-One-PsVita/releases/download/AlephOneVita2.0/AlephOne.zip"
         }
       ],
       "popularity": 558,
@@ -3155,6 +3155,42 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-07-02"
+    },
+    {
+      "id": "vitadbtoo-vita:1589",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Alex 4",
+      "summary": "Port of Alex the Allegator 4 for PSVITA.",
+      "author": "withLogic",
+      "version": "v.1.0",
+      "title_id": "WLOGICAX4",
+      "description": "Port of Alex the Allegator 4 for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/71c49f6d7031aa22eee80ea73cb798d9fdc385d5b7ad3e8619128e5dc66c8448.png",
+      "screenshots": [],
+      "release_url": "https://github.com/withLogic/alex4/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "alex4.vpk",
+          "url": "https://github.com/withLogic/alex4/releases/download/1.0/alex4.vpk",
+          "size": 879470,
+          "md5": "9e8c727a326405aa13f24dad7fddf4e1"
+        },
+        {
+          "format": "data",
+          "filename": "data.zip",
+          "url": "https://github.com/withLogic/alex4/releases/download/1.0/data.zip"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
     },
     {
       "id": "hbas-switch:avp",
@@ -4286,6 +4322,37 @@
       "updated_at": "2026-02-22"
     },
     {
+      "id": "vitadbtoo-vita:1588",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Apotris",
+      "summary": "Port of Apotris, an open-source block stacking game, for PSVITA.",
+      "author": "Rocroverss",
+      "version": "v.1.0",
+      "title_id": "APOT00001",
+      "description": "Port of Apotris, an open-source block stacking game, for PSVITA.",
+      "requirements": "- libshacccg.suprx in ur0:data",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/cf4271e84c36b0b22d115cabf4d6c589e66900134be05e39988fbe7d373047ce.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Rocroverss/apotris-psvita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Apotris.v1.0-audio.vpk",
+          "url": "https://github.com/Rocroverss/apotris-psvita/releases/download/v1.0/Apotris.v1.0-audio.vpk",
+          "size": 7874243,
+          "md5": "8167596ee37518942ab426daa27df146"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
+    },
+    {
       "id": "vitadbtoo-vita:204",
       "platforms": [
         "psvita"
@@ -4439,6 +4506,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2021-01-14"
+    },
+    {
+      "id": "vitadbtoo-vita:1585",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Arcaea",
+      "summary": "Port of Arcaea (Android) for PSVITA.",
+      "author": "MemoryHunter",
+      "version": "v.1.0",
+      "title_id": "ARCA69420",
+      "description": "Port of Arcaea (Android) for PSVITA.",
+      "requirements": "- Game Data Files: Android APK and OBB, extracted into ux0:data/arcaea and ux0:data/assets",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5dd14f2fcb8745e358710ae8e67bbb3ca10aefa0c11382b63a259fef11fd4f62.png",
+      "screenshots": [],
+      "release_url": "https://github.com/memory-hunter/arcaea-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "arcaea.vpk",
+          "url": "https://github.com/memory-hunter/arcaea-vita/releases/download/1.0/arcaea.vpk",
+          "size": 2723249,
+          "md5": "1fffed14e0a4e1c037bdba9d690b408e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
     },
     {
       "id": "hbas-switch:argon-nx",
@@ -5218,7 +5316,7 @@
       "name": "AuroraOS Installer",
       "summary": "Grabs the latest firm file from https://github.com/TeamAuroraOS/AuroraOS",
       "author": "TeamAuroraOS",
-      "version": "v1.0",
+      "version": "v1.1",
       "license": "mit",
       "icon_url": "https://raw.githubusercontent.com/TeamAuroraOS/AuroraOS-Installer/refs/heads/main/icon.png",
       "release_url": "https://github.com/TeamAuroraOS/AuroraOS-Installer/releases",
@@ -5226,14 +5324,14 @@
         {
           "format": "cia",
           "filename": "Aurora-Installer.cia",
-          "url": "https://github.com/TeamAuroraOS/AuroraOS-Installer/releases/download/v1.0/Aurora-Installer.cia",
-          "size": 758208
+          "url": "https://github.com/TeamAuroraOS/AuroraOS-Installer/releases/download/v1.1/Aurora-Installer.cia",
+          "size": 968128
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-26T23:03:48Z"
+      "updated_at": "2026-09-26T16:14:49Z"
     },
     {
       "id": "hbas-switch:Avatool",
@@ -9830,6 +9928,42 @@
       "updated_at": "2017-06-22T02:42:08Z"
     },
     {
+      "id": "vitadbtoo-vita:1587",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "C-Dogs SDL",
+      "summary": "Port of C-Dogs SDL, an overhead run-and-gun game, for PSVITA and PSTV.",
+      "author": "abduct",
+      "version": "v.preview-1",
+      "title_id": "CDOG00001",
+      "description": "Port of C-Dogs SDL, an overhead run-and-gun game, for PSVITA and PSTV.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/415f6c1dd420299aacf5d6069149e6e5b889db3915549eeaf9058bb49e1b227a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/abduct/cdogs-sdl/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "C-Dogs-SDL-Vita.vpk",
+          "url": "https://github.com/abduct/cdogs-sdl/releases/download/vita-preview-1/C-Dogs-SDL-Vita.vpk",
+          "size": 2023006,
+          "md5": "91d9f330c02121fd52e8cfc3c345dfe3"
+        },
+        {
+          "format": "data",
+          "filename": "C-Dogs-SDL-Vita-data.zip",
+          "url": "https://github.com/abduct/cdogs-sdl/releases/download/vita-preview-1/C-Dogs-SDL-Vita-data.zip"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
+    },
+    {
       "id": "open-shop-channel-wii:frodo",
       "platforms": [
         "wii"
@@ -12910,7 +13044,7 @@
       "name": "ConsoleID",
       "summary": "App showing console unique ID.",
       "author": "Freakler",
-      "version": "v.1.00",
+      "version": "v.1.01",
       "title_id": "CONSOLEID",
       "description": "An application that displays the PlayStation's unique Console Identification String.",
       "requirements": "",
@@ -12923,10 +13057,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "ConsoleID_v100.vpk",
-          "url": "https://github.com/Freakler/vita-ConsoleID/releases/download/1.00/ConsoleID_v100.vpk",
-          "size": 187573,
-          "md5": "aa3e86c39a1fece4c8e6c063c3b2d367"
+          "filename": "ConsoleID_v101.vpk",
+          "url": "https://github.com/Freakler/vita-ConsoleID/releases/download/1.01/ConsoleID_v101.vpk",
+          "size": 193265,
+          "md5": "16d0a73add5324add27769e3e39098f5"
         }
       ],
       "popularity": 2473,
@@ -24170,6 +24304,37 @@
       "updated_at": "2026-08-16T00:39:02Z"
     },
     {
+      "id": "vitadbtoo-vita:1575",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "FTP for Vita",
+      "summary": "FTP server and client for PSVITA.",
+      "author": "M-Essa11",
+      "version": "v.1.0.0",
+      "title_id": "FTPV00001",
+      "description": "FTP server and client for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/39202f1473d9764315dfd07c59d53ca869c4aa58bde9fd8dca178dbe35ebb0dd.png",
+      "screenshots": [],
+      "release_url": "https://github.com/M-Essa11/FTP-for-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "FTPForVita.vpk",
+          "url": "https://github.com/M-Essa11/FTP-for-Vita/releases/download/v1.0.0/FTPForVita.vpk",
+          "size": 91764,
+          "md5": "65515d2b9022c895d3408ca72b43d7ee"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
+    },
+    {
       "id": "universal-db:mtheall/ftpd",
       "platforms": [
         "3ds"
@@ -31792,7 +31957,7 @@
       "name": "JK2VITA: Jedi Outcast",
       "summary": "Port of Star Wars Jedi Knight II: Jedi Outcast for PSVITA.",
       "author": "NDRW",
-      "version": "v.1.0",
+      "version": "v.release-1.0.1",
       "title_id": "JK2VITA01",
       "description": "Port of Star Wars Jedi Knight II: Jedi Outcast for PSVITA.",
       "requirements": "- Game Data Files: Jedi Knight II: Jedi Outcast in ux0:data/JK2VITA",
@@ -31803,10 +31968,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "JK2VITA-1.0.vpk",
-          "url": "https://github.com/NDRWhun/JK2VITA/releases/download/release-1.0/JK2VITA-1.0.vpk",
-          "size": 3422087,
-          "md5": "67872a55bf0521a5874c0b23664e787d"
+          "filename": "JK2VITA_1.0.1.vpk",
+          "url": "https://github.com/NDRWhun/JK2VITA/releases/download/release-1.0.1/JK2VITA_1.0.1.vpk",
+          "size": 3423727,
+          "md5": "5ddbed60e293ea498ee29e1a7afc6085"
         }
       ],
       "popularity": 0,
@@ -34539,6 +34704,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2024-08-26T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-vita:1579",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "LinuxOnVita",
+      "summary": "Runs Linux on the PSVITA.",
+      "author": "devwithzachary",
+      "version": "v.1.2.0",
+      "title_id": "LNXONVITA",
+      "description": "Runs Linux on the PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ae0a9cce07e80c7ebf5a54bfa54dbabaf565246ee3b3824feea53a951fb4e3dd.png",
+      "screenshots": [],
+      "release_url": "https://github.com/devwithzachary/LinuxOnVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "LinuxOnVita.vpk",
+          "url": "https://github.com/devwithzachary/LinuxOnVita/releases/download/1.2.0/LinuxOnVita.vpk",
+          "size": 24321469,
+          "md5": "e421880a29ab70d835d1b35e396fe420"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
     },
     {
       "id": "open-shop-channel-wii:LoadPriiloader",
@@ -38364,6 +38560,37 @@
       "updated_at": "2026-06-14"
     },
     {
+      "id": "vitadbtoo-vita:1583",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Monster Shooter",
+      "summary": "Port of Monster Shooter (Android) for PSVITA.",
+      "author": "RaZorGaToR",
+      "version": "v.1.2",
+      "title_id": "MNST00001",
+      "description": "Port of Monster Shooter (Android) for PSVITA.",
+      "requirements": "- Game Data Files: Android APK, prepared with the included setup tool",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/def06d771692b561b23ce9b69b970d68990285ad29164039ee63f6d8d89df468.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Federicoilgrandebardo/MonsterShooter-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "monstershooter.vpk",
+          "url": "https://github.com/Federicoilgrandebardo/MonsterShooter-Vita/releases/download/v1.2/monstershooter.vpk",
+          "size": 944355,
+          "md5": "98c180aeff2cac862f538371f9a42e82"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
+    },
+    {
       "id": "universal-db:NotTheOnlyRph/MontyHallDS",
       "platforms": [
         "3ds"
@@ -40860,6 +41087,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2024-06-06T23:17:35Z"
+    },
+    {
+      "id": "vitadbtoo-vita:1584",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "NFS II SE Recompiled",
+      "summary": "Port of Need for Speed II Special Edition for PSVITA.",
+      "author": "veitorman",
+      "version": "v.1.0.0",
+      "title_id": "NFSR00001",
+      "description": "Port of Need for Speed II Special Edition for PSVITA.",
+      "requirements": "- Runtime support files (nfs2se-vita-runtime-v1.zip) in ux0:data/nfs2-recomp\n- Game Data Files: NFS II Special Edition CD, FEDATA and GAMEDATA folders, in ux0:data/nfs2-recomp/game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/00cd3bd2466a943411379922aa07719c39eba99a377c2a38d8e11d00a480e637.png",
+      "screenshots": [],
+      "release_url": "https://github.com/veitorman/nfs2se-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "nfs2se-vita-v1.vpk",
+          "url": "https://github.com/veitorman/nfs2se-vita/releases/download/v1.0.0/nfs2se-vita-v1.vpk",
+          "size": 3539852,
+          "md5": "7118879d5f68ce8f82d7dc2d9f105def"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
     },
     {
       "id": "vitadbtoo-vita:1173",
@@ -45452,7 +45710,7 @@
       "name": "Pacman CE DX Vita",
       "summary": "Port of Pacman CE DX for PSVita.",
       "author": "mcallbosco",
-      "version": "v.1.0",
+      "version": "v.3",
       "title_id": "PCMN00001",
       "description": "A homebrew .so-loader port of PAC-MAN Championship Edition DX (Android) to the PlayStation Vita.",
       "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/pacmancedx",
@@ -45465,8 +45723,8 @@
           "format": "vpk",
           "filename": "1409-pacmancedx.vpk",
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1409-pacmancedx.vpk",
-          "size": 1953422,
-          "md5": "fa31e108bd72870145e5bd9622b64625"
+          "size": 1996349,
+          "md5": "5f669a2b8aac8583235624a44a2cd304"
         }
       ],
       "popularity": 1763,
@@ -49768,7 +50026,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 7551,
+      "popularity": 7608,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49795,7 +50053,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2601,
+      "popularity": 2602,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49822,7 +50080,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 7051,
+      "popularity": 7102,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49849,7 +50107,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4861,
+      "popularity": 4872,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49876,7 +50134,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 44023,
+      "popularity": 44237,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49903,7 +50161,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 217,
+      "popularity": 221,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51173,6 +51431,37 @@
       "updated_at": "2008-09-03"
     },
     {
+      "id": "vitadbtoo-psp:1590",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSPWave",
+      "summary": "Custom PSP/Vita XMB wave background and sidebar color editor.",
+      "author": "violinmelody",
+      "version": "v.1.1.0",
+      "title_id": null,
+      "description": "",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/22681ccec9892984444b0aaf1dc30481b2b5bd60fb979c413ee37f1057aa21a0.png",
+      "screenshots": [],
+      "release_url": "https://github.com/violinmelody/PSPWave/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PSPWave.zip",
+          "url": "https://github.com/violinmelody/PSPWave/releases/download/1.1.0/PSPWave.zip",
+          "size": 106079,
+          "md5": "4516f5902efe6f9f990175bd326317b7"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-23"
+    },
+    {
       "id": "vitadbtoo-psp:947",
       "platforms": [
         "psp"
@@ -51304,7 +51593,7 @@
       "name": "PSVident",
       "summary": "Shows info about your PSVITA.",
       "author": "Freakler",
-      "version": "v.0.43",
+      "version": "v.1.00",
       "title_id": "PSVIDENT0",
       "description": "Tool that bring all your Vita/PSTV info in to one place. App has a very nostalgic design for first PSP users, interface is looking very similar to well known PSPident application for PSP.",
       "requirements": "",
@@ -51315,10 +51604,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "PSVident_v043.vpk",
-          "url": "https://github.com/Freakler/vita-PSVident/releases/download/0.43/PSVident_v043.vpk",
-          "size": 159945,
-          "md5": "dd53ea063a4352cf2cc3f8d08d20a65a"
+          "filename": "PSVident_v100.vpk",
+          "url": "https://github.com/Freakler/vita-PSVident/releases/download/1.00/PSVident_v100.vpk",
+          "size": 253763,
+          "md5": "76123ee75af6c646cf4736dd8e1b6b1b"
         }
       ],
       "popularity": 115061,
@@ -53609,7 +53898,7 @@
       "name": "RetroFlow Launcher",
       "summary": "3D Coverflow launcher for PSVITA.",
       "author": "jimbob4000 & VitaHEX games",
-      "version": "v.8.4.0",
+      "version": "v.8.4.1",
       "title_id": "RETROFLOW",
       "description": "This is a modded version of HexFlow Launcher; a 3d coverflow like launcher for PS Vita.\nThis version includes categories for retro games which can be launched without bubbles for RetroArch and DaedalusX64. Playstation and PSP games can also be launched without having to create bubbles for every game!",
       "requirements": "",
@@ -53625,10 +53914,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "RetroFlow_v8.4.0.vpk",
-          "url": "https://github.com/jimbob4000/RetroFlow-Launcher/releases/download/v8.4.0/RetroFlow_v8.4.0.vpk",
-          "size": 14094528,
-          "md5": "9e6f8e5d47f97e81cdb154ade7309c95"
+          "filename": "RetroFlow_v8.4.1.vpk",
+          "url": "https://github.com/jimbob4000/RetroFlow-Launcher/releases/download/v8.4.1/RetroFlow_v8.4.1.vpk",
+          "size": 14094871,
+          "md5": "0dad42e79abb7a7a74011f16436d2892"
         }
       ],
       "popularity": 250610,
@@ -58715,7 +59004,7 @@
       "name": "Smash Melee Vita",
       "summary": "Port of Super Smash Bros. Melee (NTSC-U 1.02) for PSVITA, built on the doldecomp decompilation and recompiled to run natively.",
       "author": "zm2283145",
-      "version": "v.0.6.0-build.7.1",
+      "version": "v.0.8.15",
       "title_id": "MLVITA002",
       "description": "Static recompilation port of Super Smash Bros. Melee (NTSC-U 1.02) for PSVITA.",
       "requirements": "- libshacccg.suprx in ur0:data\n- Game Data Files: Super Smash Bros. Melee NTSC-U rev 2 disc image (GALE01.iso, uncompressed) in ux0:data/melee",
@@ -58726,10 +59015,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "SmashMeleevita.vpk",
-          "url": "https://github.com/zm2283145/melee-Vita/releases/download/vita-v0.6.0-build.7.1/SmashMeleevita.vpk",
-          "size": 2448228,
-          "md5": "a66de0c73ae175ce33447275a1a35e93"
+          "filename": "SmashMeleevita-0.8.15.vpk",
+          "url": "https://github.com/zm2283145/melee-Vita/releases/download/v0.8.15/SmashMeleevita-0.8.15.vpk",
+          "size": 6705136,
+          "md5": "e35ef53632f4a22bc726a4fad33b2d44"
         }
       ],
       "popularity": 0,
@@ -60213,6 +60502,37 @@
       "updated_at": "2023-09-05"
     },
     {
+      "id": "vitadbtoo-vita:1582",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Sonic R",
+      "summary": "Port of Sonic R (PC 1998) for PSVITA.",
+      "author": "FreddySP",
+      "version": "v.1.1",
+      "title_id": "SONICR001",
+      "description": "Port of Sonic R (PC 1998) for PSVITA.",
+      "requirements": "- Game Data Files: Sonic R (PC, 1998) in ux0:data/sonicr",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/108171a499252a0cd63836330ade339d8ef214e1638ba9be5da1a39409965a78.png",
+      "screenshots": [],
+      "release_url": "https://github.com/fr3dsp/sonic-r-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "sonicr_vita.vpk",
+          "url": "https://github.com/fr3dsp/sonic-r-vita/releases/download/v1.1/sonicr_vita.vpk",
+          "size": 4141052,
+          "md5": "74521f615894a830787f6783fe3932c9"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
+    },
+    {
       "id": "universal-db:derrekr/srb2_3ds",
       "platforms": [
         "3ds"
@@ -61564,6 +61884,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2025-07-15"
+    },
+    {
+      "id": "vitadbtoo-vita:1578",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "SSSPlayer",
+      "summary": "Music and video player for PSVITA with hardware H.264 decoding and network streaming.",
+      "author": "SergioSSantiago",
+      "version": "v.1.1.34",
+      "title_id": "SSSP00001",
+      "description": "Music and video player for PSVITA with hardware H.264 decoding and network streaming.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d948da3ed7830ebd7679eb7c3f7bce8f4652ad01b47a366c61f0fef42f327d82.png",
+      "screenshots": [],
+      "release_url": "https://github.com/SergioSSantiago/SSSPlayer/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "SSSPlayer-1.1.34.vpk",
+          "url": "https://github.com/SergioSSantiago/SSSPlayer/releases/download/v1.1.34/SSSPlayer-1.1.34.vpk",
+          "size": 49061562,
+          "md5": "769b95195f22c6fce14b4b37681d0ba5"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
     },
     {
       "id": "vitadbtoo-vita:1189",
@@ -65777,6 +66128,37 @@
       "updated_at": "2019-06-22"
     },
     {
+      "id": "vitadbtoo-vita:1576",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Test Drive Vita",
+      "summary": "Port of Test Drive (1987, DOS) for PSVITA.",
+      "author": "smart-pickle",
+      "version": "v.0.1",
+      "title_id": "TDRV01987",
+      "description": "Port of Test Drive (1987, DOS) for PSVITA.",
+      "requirements": "- Game Data Files: Test Drive (1987) DOS version in ux0:data/TestDrive",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3a14e1016e16eaf074ce03fcc255723d7f8d5d0c701aa85760c77da396eafde8.png",
+      "screenshots": [],
+      "release_url": "https://github.com/smart-pickle/TestDrive-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "TestDriveVita.vpk",
+          "url": "https://github.com/smart-pickle/TestDrive-Vita/releases/download/v0.1/TestDriveVita.vpk",
+          "size": 876603,
+          "md5": "f007cb6391dc3997a2ebb59d7a2dc1ff"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
+    },
+    {
       "id": "hbas-switch:TetrisNX",
       "platforms": [
         "switch"
@@ -66033,6 +66415,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2016-08-23"
+    },
+    {
+      "id": "vitadbtoo-vita:1586",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "The Binding of Isaac: Repentance",
+      "summary": "Port of The Binding of Isaac: Repentance for PSVITA.",
+      "author": "0xl0cal",
+      "version": "v.0.1.1-alpha",
+      "title_id": "ISAACR001",
+      "description": "Port of The Binding of Isaac: Repentance for PSVITA.",
+      "requirements": "- Game Data Files: Repentance PC resources in ux0:data/isaacr001/resources",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0c0b2c1d637edfa5222ecef970f7a54e143c9aed70d094644f6aaadeea157f46.png",
+      "screenshots": [],
+      "release_url": "https://github.com/0xl0cal/repentogxm/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "repentogxm-v0.1.1-alpha.vpk",
+          "url": "https://github.com/0xl0cal/repentogxm/releases/download/v0.1.1-alpha/repentogxm-v0.1.1-alpha.vpk",
+          "size": 17529342,
+          "md5": "37f7ca02e462bae80e05e9ebbb06aac3"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
     },
     {
       "id": "vitadbtoo-vita:775",
@@ -66398,6 +66811,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-08-29"
+    },
+    {
+      "id": "vitadbtoo-vita:1577",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "The Impossible Game",
+      "summary": "Port of The Impossible Game (Android) for PSVITA.",
+      "author": "MetalSyntax",
+      "version": "v.1.1.0",
+      "title_id": "PSVTIG001",
+      "description": "Port of The Impossible Game (Android) for PSVITA.",
+      "requirements": "- kubridge.skprx in ur0:tai\n- libshacccg.suprx in ur0:data\n- Game Data Files: Android APK (libimpossible.so) in ux0:data/theimpossiblegame",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/826507d5af3cd33f036b6f38a2742ec8e06b5f9d3fa2719823a3ce8d6807d822.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/The-Impossible-Game-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "theimpossiblegame.vpk",
+          "url": "https://github.com/MetalSyntax/The-Impossible-Game-vita/releases/download/v.1.1.0/theimpossiblegame.vpk",
+          "size": 801752,
+          "md5": "0a97e1f71d4f0235a2b91924b77909e4"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
     },
     {
       "id": "vitadbtoo-vita:1141",
@@ -69219,6 +69663,37 @@
       "updated_at": "2019-04-23"
     },
     {
+      "id": "vitadbtoo-vita:1580",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "UFO 40",
+      "summary": "UFO 50-inspired collection of small games for PSVITA.",
+      "author": "naniiic137",
+      "version": "v.0.5.1",
+      "title_id": "UFOF00040",
+      "description": "UFO 50-inspired collection of small games for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a5d68e233c3ecd2d8a363bef33a8b4e3ae7e2adcf4120c910e57d57d8b16ffe6.png",
+      "screenshots": [],
+      "release_url": "https://github.com/naniiic137/ufo-40/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ufo40.vpk",
+          "url": "https://github.com/naniiic137/ufo-40/releases/download/v0.5.1/ufo40.vpk",
+          "size": 1833336,
+          "md5": "c60676ed4537ed2ed1468e286ccaff86"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
+    },
+    {
       "id": "vitadbtoo-vita:1069",
       "platforms": [
         "psvita"
@@ -70328,6 +70803,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2022-03-04T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-vita:1574",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VagaChatVITA",
+      "summary": "AI chat client for PSVITA.",
+      "author": "Frxn5J",
+      "version": "v.0.1.0",
+      "title_id": "VAGROUTE1",
+      "description": "AI chat client for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ac72f28d697d0205d91ea2299387b8846a6ebbe7abba6375768c3ff3a248265d.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Frxn5J/VagaChatVITA/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VagaChatVITA.vpk",
+          "url": "https://github.com/Frxn5J/VagaChatVITA/releases/download/0.1.0/VagaChatVITA.vpk",
+          "size": 2534795,
+          "md5": "9f51041b7f13cd1a7818e2868f849bf3"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
     },
     {
       "id": "vitadbtoo-vita:1297",
@@ -72701,6 +73207,37 @@
       "updated_at": "2019-10-30"
     },
     {
+      "id": "vitadbtoo-vita:1581",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vita-PrBoom++",
+      "summary": "Port of PrBoom+ for PSVITA, a Doom source port.",
+      "author": "TonyFideo & fgsfds",
+      "version": "v.2.6.66-1.1",
+      "title_id": "PBR002666",
+      "description": "Port of PrBoom+ for PSVITA, a Doom source port.",
+      "requirements": "- Game Data Files: Doom IWADs (doom1.wad etc.) in ux0:data/prboom/iwads",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/cbadd911a8f63e28754531471c1f00e5fa6f099253958d4eb3241fd8939364e9.png",
+      "screenshots": [],
+      "release_url": "https://github.com/TonyFideo/Vita-PrBoom-PlusPlus/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vita-prboom++.vpk",
+          "url": "https://github.com/TonyFideo/Vita-PrBoom-PlusPlus/releases/download/2.6.66-1.1/vita-prboom++.vpk",
+          "size": 3155126,
+          "md5": "608305141c061cf2a277ce042c45a27f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
+    },
+    {
       "id": "vitadbtoo-vita:9",
       "platforms": [
         "psvita"
@@ -73885,6 +74422,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2019-04-26"
+    },
+    {
+      "id": "vitadbtoo-vita:1592",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VitaOS",
+      "summary": "Modern PS5-style home screen for PSVITA with a games library, media apps and a homebrew store.",
+      "author": "mvizensk",
+      "version": "v.1.0.0",
+      "title_id": "VITAOS001",
+      "description": "Modern PS5-style home screen for PSVITA with a games library, media apps and a homebrew store.",
+      "requirements": "- Optional: vitaos_ps.suprx makes the PS button return to VitaOS instead of the standard menu",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a527d3f46f07a0cdfb886227bc07f2426da4e637d765eab6f6d3c141dd355e0f.png",
+      "screenshots": [],
+      "release_url": "https://github.com/mvizensk/VitaOS/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VitaOS.vpk",
+          "url": "https://github.com/mvizensk/VitaOS/releases/download/v1.0.0/VitaOS.vpk",
+          "size": 5077858,
+          "md5": "0cdc54f9bea4d4b7fc40a159b66fb864"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-09-26"
     },
     {
       "id": "vitadbtoo-vita:1239",
