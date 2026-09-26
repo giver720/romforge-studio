@@ -1043,6 +1043,31 @@
       "updated_at": "2023-06-24T15:44:37Z"
     },
     {
+      "id": "universal-db:DisLoPik/3DS-StreetPass-Light",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "3DS StreetPass Light",
+      "summary": "Flashes the streetpass light after a given time. Works in sleep mode.",
+      "author": "DisLoPik",
+      "version": "v1.,0",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/DisLoPik/3DS-StreetPass-Light/refs/heads/master/icon.png",
+      "release_url": "https://github.com/DisLoPik/3DS-StreetPass-Light/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "GreenFlashTimer.3dsx",
+          "url": "https://github.com/DisLoPik/3DS-StreetPass-Light/releases/download/v1.%2C0/GreenFlashTimer.3dsx",
+          "size": 151908
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-09T01:27:00Z"
+    },
+    {
       "id": "universal-db:maximalmax90/3dstp",
       "platforms": [
         "3ds"
@@ -1671,6 +1696,31 @@
       "updated_at": "2026-06-23T15:43:37Z"
     },
     {
+      "id": "universal-db:s4ammy/3DSLink",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "3DSLink",
+      "summary": "3DSLink lets you upload and download files from your 3DS SD card through a phone or computer browser over Wi-Fi. Includes a four-digit PIN, QR access, screenshot previews, and an upload queue. No companion app needed.",
+      "author": "Samantha",
+      "version": "1.0.0",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/s4ammy/3DSLink/main/meta/icon.png",
+      "release_url": "https://github.com/s4ammy/3DSLink/releases",
+      "downloads": [
+        {
+          "format": "cia",
+          "filename": "3DSLink.cia",
+          "url": "https://github.com/s4ammy/3DSLink/releases/download/1.0.0/3DSLink.cia",
+          "size": 1360832
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-05T14:09:12Z"
+    },
+    {
       "id": "universal-db:Sunrase/3DSoundboard",
       "platforms": [
         "3ds"
@@ -2207,6 +2257,31 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2023-11-05"
+    },
+    {
+      "id": "universal-db:Memetrix/telegram-3ds",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "AAhead Unofficial Telegram",
+      "summary": "Telegram for New Nintendo 3DS",
+      "author": "Memetrix",
+      "version": "v0.1.0",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/Memetrix/telegram-3ds/main/resources/icon.png",
+      "release_url": "https://github.com/Memetrix/telegram-3ds/releases",
+      "downloads": [
+        {
+          "format": "cia",
+          "filename": "Telegram-3DS.cia",
+          "url": "https://github.com/Memetrix/telegram-3ds/releases/download/v0.1.0/Telegram-3DS.cia",
+          "size": 34948032
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-08T12:52:39Z"
     },
     {
       "id": "vitadbtoo-vita:359",
@@ -3000,7 +3075,7 @@
           "sha256": "662393360e35712948508ea8a65fc20c5e726eed39b7f1e8d4243b993ee010bc"
         }
       ],
-      "popularity": 2436,
+      "popularity": 2438,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Akira/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -5136,6 +5211,31 @@
       "updated_at": "2026-08-30T21:07:42Z"
     },
     {
+      "id": "universal-db:TeamAuroraOS/AuroraOS-Installer",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "AuroraOS Installer",
+      "summary": "Grabs the latest firm file from https://github.com/TeamAuroraOS/AuroraOS",
+      "author": "TeamAuroraOS",
+      "version": "v1.0",
+      "license": "mit",
+      "icon_url": "https://raw.githubusercontent.com/TeamAuroraOS/AuroraOS-Installer/refs/heads/main/icon.png",
+      "release_url": "https://github.com/TeamAuroraOS/AuroraOS-Installer/releases",
+      "downloads": [
+        {
+          "format": "cia",
+          "filename": "Aurora-Installer.cia",
+          "url": "https://github.com/TeamAuroraOS/AuroraOS-Installer/releases/download/v1.0/Aurora-Installer.cia",
+          "size": 758208
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-26T23:03:48Z"
+    },
+    {
       "id": "hbas-switch:Avatool",
       "platforms": [
         "switch"
@@ -5531,6 +5631,31 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-08-02"
+    },
+    {
+      "id": "universal-db:Cracko298/Bad3DSGame",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Bad3DSGame",
+      "summary": "A bad demake/port of a bad \"3ds\" game about squares and grappling. You are square, and you have grapple. Use the grappling gun to swing around and score points.",
+      "author": "Phin Beresford",
+      "version": "v0.2.0",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/Cracko298/Bad3DSGame/refs/heads/main/icon.png",
+      "release_url": "https://github.com/Cracko298/Bad3DSGame/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "Bad3DSGame.3dsx",
+          "url": "https://github.com/Cracko298/Bad3DSGame/releases/download/v0.2.0/Bad3DSGame.3dsx",
+          "size": 2286740
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-28T23:19:18Z"
     },
     {
       "id": "open-shop-channel-wii:BBPRO",
@@ -8233,7 +8358,7 @@
       "name": "Booru3DS",
       "summary": "A Safebooru and Konachan API client for the Nintendo 3DS. (SFW)",
       "author": "MisakiP_",
-      "version": "v1.0",
+      "version": "v1.1",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/Misakii-P/Booru3DS/refs/heads/master/assets/booru3ds.png",
       "release_url": "https://github.com/Misakii-P/Booru3DS/releases",
@@ -8241,14 +8366,14 @@
         {
           "format": "3dsx",
           "filename": "booru3ds.3dsx",
-          "url": "https://github.com/Misakii-P/Booru3DS/releases/download/v1.0/booru3ds.3dsx",
-          "size": 2597836
+          "url": "https://github.com/Misakii-P/Booru3DS/releases/download/v1.1/booru3ds.3dsx",
+          "size": 2595852
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-22T02:20:31Z"
+      "updated_at": "2026-09-25T18:27:59Z"
     },
     {
       "id": "open-shop-channel-wii:BootMiiConfigurationEditor",
@@ -9211,7 +9336,7 @@
           "sha256": null
         }
       ],
-      "popularity": 192764,
+      "popularity": 192765,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/browsenx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -10430,6 +10555,37 @@
       "updated_at": "2022-09-29"
     },
     {
+      "id": "universal-db:bigtuna824/cart-ridge",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "cart ridge",
+      "summary": "fps homebrew game involving hardware components in reloading. coded by a robot, everything else by an artist.",
+      "author": "bigtuna824",
+      "version": "v1.0.1",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/bigtuna824/cart-ridge/master/gfx/icon.png",
+      "release_url": "https://github.com/bigtuna824/cart-ridge/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "cart-ridge.3dsx",
+          "url": "https://github.com/bigtuna824/cart-ridge/releases/download/v1.0.1/cart-ridge.3dsx",
+          "size": 21357788
+        },
+        {
+          "format": "cia",
+          "filename": "cart-ridge.cia",
+          "url": "https://github.com/bigtuna824/cart-ridge/releases/download/v1.0.1/cart-ridge.cia",
+          "size": 21869504
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-16T04:09:26Z"
+    },
+    {
       "id": "universal-db:tasken/Cart-Flasher",
       "platforms": [
         "3ds"
@@ -11057,7 +11213,7 @@
           "sha256": "666ed10916cff9cc9fbb3508ccfd65f5429bab3c23ab6043b08d69e2c7a32e30"
         }
       ],
-      "popularity": 353,
+      "popularity": 354,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ChatNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -12500,7 +12656,7 @@
           "sha256": null
         }
       ],
-      "popularity": 26660,
+      "popularity": 26661,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ComicNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -14852,7 +15008,7 @@
           "sha256": "73c99da3ad683f225c96a9e8ef6f18936e476148d07af02b3cfab2b4053c019f"
         }
       ],
-      "popularity": 1308,
+      "popularity": 1310,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CustomBootScreen/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -14920,7 +15076,7 @@
           "sha256": null
         }
       ],
-      "popularity": 17465,
+      "popularity": 17467,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CuteManga/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -15249,6 +15405,31 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2022-10-16T21:47:42Z"
+    },
+    {
+      "id": "universal-db:mirusu400/DaeMoon",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "DaeMoon",
+      "summary": "Save data sync for 3DS and Switch, by a self-hostable server.",
+      "author": "mirusu400",
+      "version": "v0.1.2",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/mirusu400/DaeMoon/main/platform/3ds/assets/icon.png",
+      "release_url": "https://github.com/mirusu400/DaeMoon/releases",
+      "downloads": [
+        {
+          "format": "cia",
+          "filename": "daemoon-3ds-v0.1.2.cia",
+          "url": "https://github.com/mirusu400/DaeMoon/releases/download/v0.1.2/daemoon-3ds-v0.1.2.cia",
+          "size": 1119680
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-12T13:14:10Z"
     },
     {
       "id": "open-shop-channel-wii:danbo",
@@ -16720,6 +16901,37 @@
       "updated_at": "2018-10-22"
     },
     {
+      "id": "universal-db:Sonalpt/Dingplay-chat-3DS",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Dingplay-chat-3DS",
+      "summary": "Chat with your Dingplay friends from a 3DS: DMs, the world chat and console-only rooms online, or text / drawings / voice over Local Wireless.",
+      "author": "Dingplay",
+      "version": "v0.1.0",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/Sonalpt/Dingplay-chat-3DS/main/meta/icon.png",
+      "release_url": "https://github.com/Sonalpt/Dingplay-chat-3DS/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "dingplay-chat.3dsx",
+          "url": "https://github.com/Sonalpt/Dingplay-chat-3DS/releases/download/v0.1.0/dingplay-chat.3dsx",
+          "size": 4176948
+        },
+        {
+          "format": "cia",
+          "filename": "dingplay-chat.cia",
+          "url": "https://github.com/Sonalpt/Dingplay-chat-3DS/releases/download/v0.1.0/dingplay-chat.cia",
+          "size": 4207552
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-19T14:55:08Z"
+    },
+    {
       "id": "hbas-switch:DinoRunNX",
       "platforms": [
         "switch"
@@ -16745,7 +16957,7 @@
           "sha256": null
         }
       ],
-      "popularity": 29768,
+      "popularity": 29769,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DinoRunNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -18578,7 +18790,7 @@
           "sha256": null
         }
       ],
-      "popularity": 20399,
+      "popularity": 20400,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DVDlogo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19165,7 +19377,7 @@
           "sha256": null
         }
       ],
-      "popularity": 522045,
+      "popularity": 522047,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Edizon/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19539,6 +19751,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-08-30 01:31:18 UTC+8"
+    },
+    {
+      "id": "universal-db:glacialmoongames/EllisHouseCpp",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Elli's House 3DS",
+      "summary": "Elli's House port for Nintendo 3DS - Original Game by glacial moon games for gamejaaj",
+      "author": "glacialmoongames",
+      "version": "v0.1.0-port-preview",
+      "license": null,
+      "icon_url": "https://avatars.githubusercontent.com/u/231716341?v=4&size=128",
+      "release_url": "https://github.com/glacialmoongames/EllisHouseCpp/releases",
+      "downloads": [
+        {
+          "format": "cia",
+          "filename": "EllisHouse-3DS.cia",
+          "url": "https://github.com/glacialmoongames/EllisHouseCpp/releases/download/v0.1.0-port-preview/EllisHouse-3DS.cia",
+          "size": 48235456
+        },
+        {
+          "format": "zip",
+          "filename": "EllisHouse-3DSX.zip",
+          "url": "https://github.com/glacialmoongames/EllisHouseCpp/releases/download/v0.1.0-port-preview/EllisHouse-3DSX.zip",
+          "size": 26138474
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-12T22:35:23Z"
     },
     {
       "id": "vitadbtoo-vita:1094",
@@ -23119,7 +23362,7 @@
           "sha256": "4e1fa927bd9bc67605573429119558dbdf8acaf684c62150b4b94ab8f713ceb9"
         }
       ],
-      "popularity": 7568,
+      "popularity": 7569,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FNFSwitchFunkin/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -23214,6 +23457,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2017-07-25T12:39:20Z"
+    },
+    {
+      "id": "universal-db:Michele-3ds/ForestClock",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "ForestClock",
+      "summary": "a relaxing clock app for nintendo 3ds",
+      "author": "Michele",
+      "version": "ForestClock1.00",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/Michele-3ds/ForestClock/main/icon.png",
+      "release_url": "https://github.com/Michele-3ds/ForestClock/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "ForestClock.3dsx",
+          "url": "https://github.com/Michele-3ds/ForestClock/releases/download/ForestClock1.00/ForestClock.3dsx",
+          "size": 6649372
+        },
+        {
+          "format": "cia",
+          "filename": "ForestClock.cia",
+          "url": "https://github.com/Michele-3ds/ForestClock/releases/download/ForestClock1.00/ForestClock.cia",
+          "size": 6693824
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-04T09:20:38Z"
     },
     {
       "id": "vitadbtoo-psp:1002",
@@ -23970,7 +24244,7 @@
           "sha256": null
         }
       ],
-      "popularity": 280277,
+      "popularity": 280278,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ftpd/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -26356,7 +26630,7 @@
           "sha256": "231c9e932bb8e3f90a61c36ae561a40901990947b383ddcc0ee1e5e8cff5e815"
         }
       ],
-      "popularity": 650077,
+      "popularity": 650083,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Goldleaf/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28788,7 +29062,7 @@
           "sha256": null
         }
       ],
-      "popularity": 382172,
+      "popularity": 382174,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/appstore/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -28917,7 +29191,7 @@
           "sha256": "f2618e1471a6a41b3e880a27d3930cf8164ea7f3afa20466fdc9e6a4e503479a"
         }
       ],
-      "popularity": 304373,
+      "popularity": 304374,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/hbmenu/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -31598,7 +31872,7 @@
           "sha256": "c7881a6464d87b223755c8f992578855f5a3a86008267b4f250cbd4a836cf0ce"
         }
       ],
-      "popularity": 242069,
+      "popularity": 242070,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/jksv/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -33722,7 +33996,7 @@
           "format": "3dsx",
           "filename": "isle.3dsx",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.3dsx",
-          "size": 3040512
+          "size": 3040536
         },
         {
           "format": "cia",
@@ -33734,7 +34008,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-23T03:00:37Z"
+      "updated_at": "2026-09-25T21:13:48Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -33793,7 +34067,7 @@
           "sha256": null
         }
       ],
-      "popularity": 74030,
+      "popularity": 74032,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/lennytube/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -34297,6 +34571,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2022-11-30T00:00:00+00:00"
+    },
+    {
+      "id": "universal-db:thevalmarch/localsend3ds",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "LocalSend3DS",
+      "summary": "Unofficial LocalSend client for Nintendo 3DS.",
+      "author": "Val March",
+      "version": "v1.0.0",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/thevalmarch/localsend3ds/main/icon.png",
+      "release_url": "https://github.com/thevalmarch/localsend3ds/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "LocalSend3DS-v1.0.0.3dsx",
+          "url": "https://github.com/thevalmarch/localsend3ds/releases/download/v1.0.0/LocalSend3DS-v1.0.0.3dsx",
+          "size": 669564
+        },
+        {
+          "format": "cia",
+          "filename": "LocalSend3DS-v1.0.0.cia",
+          "url": "https://github.com/thevalmarch/localsend3ds/releases/download/v1.0.0/LocalSend3DS-v1.0.0.cia",
+          "size": 575424
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-27T12:32:37Z"
     },
     {
       "id": "vitadbtoo-vita:822",
@@ -35506,6 +35811,37 @@
       "updated_at": "2022-09-22"
     },
     {
+      "id": "universal-db:EstebanPdN/mario-kart-64-3ds",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "mario-kart-64-3ds",
+      "summary": "Native Nintendo 3DS port work based on the Mario Kart 64 decompilation.",
+      "author": "estebanpdn",
+      "version": "v1.5",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/EstebanPdN/mario-kart-64-3ds/main/icon.jpeg",
+      "release_url": "https://github.com/EstebanPdN/mario-kart-64-3ds/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "mk64-3ds-v1.5.3dsx",
+          "url": "https://github.com/EstebanPdN/mario-kart-64-3ds/releases/download/v1.5/mk64-3ds-v1.5.3dsx",
+          "size": 14266292
+        },
+        {
+          "format": "cia",
+          "filename": "mk64-3ds-v1.5.cia",
+          "url": "https://github.com/EstebanPdN/mario-kart-64-3ds/releases/download/v1.5/mk64-3ds-v1.5.cia",
+          "size": 11420608
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-07T23:52:19Z"
+    },
+    {
       "id": "hbas-switch:MarioBrosNX",
       "platforms": [
         "switch"
@@ -36152,7 +36488,7 @@
           "sha256": "a7a30f699d6f930800c5df9be3a150e0c0eafacfece836f1444c99134850d7c2"
         }
       ],
-      "popularity": 171472,
+      "popularity": 171476,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/melonDS/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -36289,6 +36625,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-02-06T20:13:00+00:00"
+    },
+    {
+      "id": "universal-db:GABXRIEL/Mensinger3DS-Backend",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Mensinger 3DS",
+      "summary": "App Homebre de mensajeria para la Nintendo 3DS",
+      "author": "GABXRIEL",
+      "version": "v1.0.2",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/GABXRIEL/Mensinger3DS-Backend/refs/heads/main/icon.png",
+      "release_url": "https://github.com/GABXRIEL/Mensinger3DS-Backend/releases",
+      "downloads": [
+        {
+          "format": "cia",
+          "filename": "Mensinger3DS.cia",
+          "url": "https://github.com/GABXRIEL/Mensinger3DS-Backend/releases/download/v1.0.2/Mensinger3DS.cia",
+          "size": 512960
+        },
+        {
+          "format": "3dsx",
+          "filename": "Mini_Mensinger3DS.3dsx",
+          "url": "https://github.com/GABXRIEL/Mensinger3DS-Backend/releases/download/v1.0.2/Mini_Mensinger3DS.3dsx",
+          "size": 770844
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-07T05:08:29Z"
     },
     {
       "id": "hbas-switch:meritous",
@@ -36491,7 +36858,7 @@
           "sha256": "20be0f72699415c2b25036833863ae1c9221be72371511bd186b28ae11214f55"
         }
       ],
-      "popularity": 224348,
+      "popularity": 224349,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/mGBA/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -37314,6 +37681,31 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2016-11-07"
+    },
+    {
+      "id": "universal-db:KaliLugu/Minicraft3DS",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Minicraft3DS",
+      "summary": "3DS Homebrew port of Notch's ludum dare game \"Minicraft\"",
+      "author": "Adrien Besnier",
+      "version": "2.1.0",
+      "license": "Other",
+      "icon_url": "https://raw.githubusercontent.com/KaliLugu/Minicraft3DS/refs/heads/master/icon.png",
+      "release_url": "https://github.com/KaliLugu/Minicraft3DS/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "Minicraft3DS.3dsx",
+          "url": "https://github.com/KaliLugu/Minicraft3DS/releases/download/2.1.0/Minicraft3DS.3dsx",
+          "size": 5030804
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-24T04:31:10Z"
     },
     {
       "id": "open-shop-channel-wii:MinimaLauncher",
@@ -38683,7 +39075,7 @@
           "sha256": "56554c82f04d2323ab32640939e8fc91d9f2b05084e3b5c536a4da8b9254f335"
         }
       ],
-      "popularity": 369,
+      "popularity": 371,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MusicPlayer2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -39840,7 +40232,7 @@
           "sha256": "22c534df9b95112fd81691defc36761ba837956999a404417e1fe21247253814"
         }
       ],
-      "popularity": 1541,
+      "popularity": 1542,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NetSurf/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42298,7 +42690,7 @@
           "sha256": null
         }
       ],
-      "popularity": 257271,
+      "popularity": 257272,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NX-shell/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42494,7 +42886,7 @@
           "sha256": "d97a1a85ad10c9f46ae4e252cac6093cf7af3dcc5ffa79d403d6c5ebe1782966"
         }
       ],
-      "popularity": 226349,
+      "popularity": 226350,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/gcdumptool/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42591,7 +42983,7 @@
           "sha256": null
         }
       ],
-      "popularity": 33105,
+      "popularity": 33106,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXGallery/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42657,7 +43049,7 @@
           "sha256": "ad1df53916c634ca5de0183d4e5447142d7f652630f422858578be83397527ec"
         }
       ],
-      "popularity": 9101,
+      "popularity": 9102,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXMilk/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42789,7 +43181,7 @@
           "sha256": "3d97c1a97ae6c22c5d6652b22baff008f6467e96be8a1507eda282f7e15485eb"
         }
       ],
-      "popularity": 6475,
+      "popularity": 6476,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXpotify/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42954,7 +43346,7 @@
           "sha256": "f647983e344e7e8ce35955c2f2154ec8043819063cc78e2c9d5f5161684c16c8"
         }
       ],
-      "popularity": 6788,
+      "popularity": 6789,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXShare/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -43302,6 +43694,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2022-05-26"
+    },
+    {
+      "id": "universal-db:Omni-3DS/Omni10-3DS",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Omni10-3DS",
+      "summary": "Omni10-3DS – Full Access File Browser & Multi-Tool for Nintendo 3DS. Better than GodMode9. Native .o10 scripting, powerful Lua API, real FTP support, modern UI. https://www.reddit.com/r/Omni10_3DS/ SLR https://github.com/Omni-3DS/O10-SLR",
+      "author": "Omni10",
+      "version": "v1.1.2",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/Omni-3DS/Omni10-3DS/main/assets/icon.png",
+      "release_url": "https://github.com/Omni-3DS/Omni10-3DS/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "O10-Inst-Booter.3dsx",
+          "url": "https://github.com/Omni-3DS/Omni10-3DS/releases/download/v1.1.2/O10-Inst-Booter.3dsx",
+          "size": 969004
+        },
+        {
+          "format": "zip",
+          "filename": "Omni10-1.1.2.zip",
+          "url": "https://github.com/Omni-3DS/Omni10-3DS/releases/download/v1.1.2/Omni10-1.1.2.zip",
+          "size": 521855
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-06T11:10:05Z"
     },
     {
       "id": "vitadbtoo-vita:1522",
@@ -45568,6 +45991,31 @@
       "updated_at": "2021-01-02T20:17:30Z"
     },
     {
+      "id": "universal-db:soykhaler/ParkourLabs_godot",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Parkour Labs",
+      "summary": "A port of the videogame Parkour Labs made for godot, was a homebrew port for PSVita",
+      "author": "SoyKhaler",
+      "version": "release",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/soykhaler/ParkourLabs_godot/main/res/3ds/icon.png",
+      "release_url": "https://github.com/soykhaler/ParkourLabs_godot/releases",
+      "downloads": [
+        {
+          "format": "cia",
+          "filename": "ParkourLabs.cia",
+          "url": "https://github.com/soykhaler/ParkourLabs_godot/releases/download/release/ParkourLabs.cia",
+          "size": 26211264
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2023-07-20T12:44:38Z"
+    },
+    {
       "id": "vitadbtoo-vita:1099",
       "platforms": [
         "psvita"
@@ -46523,7 +46971,7 @@
           "sha256": null
         }
       ],
-      "popularity": 14584,
+      "popularity": 14585,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/picodrive/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47150,30 +47598,30 @@
       "updated_at": "2026-03-10"
     },
     {
-      "id": "ps5-payloads-atlas:pkg-manager_v1.3.0.elf",
+      "id": "ps5-payloads-atlas:pkg-manager_v1.4.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PKG-Manager",
       "summary": "Browse and install PKGs from USB, disc, or SMB shares directly on your PS5",
       "author": "",
-      "version": "v1.3.0",
+      "version": "v1.4.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-pkg-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "pkg-manager_v1.3.0.elf",
-          "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.3.0/pkg-manager_v1.3.0.elf",
-          "sha256": "3566678158f73f1ebdf80a7cccec263a554c6fbad1563a0054c5e8fcc0f4eb47"
+          "filename": "pkg-manager_v1.4.0.elf",
+          "url": "https://github.com/itsPLK/ps5-pkg-manager/releases/download/v1.4.0/pkg-manager_v1.4.0.elf",
+          "sha256": "3950d1a5ba4429bf1872bf6898859ba70910d95af439225c548cac092582493f"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-25 18:35:46 UTC+8"
+      "updated_at": "2026-09-26 20:02:48 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:341",
@@ -47327,7 +47775,7 @@
           "sha256": "3b8c9e214d0a6003d59ddae29bc7e6c44aacf6f96a4b91ab05e0c3f43b4a42a7"
         }
       ],
-      "popularity": 4277,
+      "popularity": 4279,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pkHouseLocalPokeBank/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -48288,17 +48736,17 @@
       "updated_at": "2018-07-16"
     },
     {
-      "id": "universal-db:Taifuoguru/Postal-1-New-3DS-Port-Alpha-",
+      "id": "universal-db:Taifuoguru/Postal-1-3DS",
       "platforms": [
         "3ds"
       ],
-      "name": "Postal 1 Engine Port for New3ds Alpha",
+      "name": "Postal 1 3DS",
       "summary": "An open-source, work-in-progress port of Postal 1 for Nintendo 3DS, built from the publicly available Postal source code. Original Postal 1 assets are required and are not included. (When the black screen appears, press START.) ",
       "author": "Taifu",
       "version": "1.0.0",
       "license": "GNU General Public License v2.0",
       "icon_url": "https://raw.githubusercontent.com/Taifuoguru/Postal-1-New-3DS-Port-Alpha-/main/Icon.png",
-      "release_url": "https://github.com/Taifuoguru/Postal-1-New-3DS-Port-Alpha-/releases",
+      "release_url": "https://github.com/Taifuoguru/Postal-1-3DS/releases",
       "downloads": [
         {
           "format": "3dsx",
@@ -48673,7 +49121,7 @@
           "sha256": "9296552c26d96c61f04d2aaf12f06f867cf59172b3748c1a4a97367c6361903f"
         }
       ],
-      "popularity": 256973,
+      "popularity": 256978,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ppsspp/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -49320,7 +49768,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 7491,
+      "popularity": 7551,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49347,7 +49795,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2596,
+      "popularity": 2601,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49374,7 +49822,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 6982,
+      "popularity": 7051,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49401,7 +49849,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4844,
+      "popularity": 4861,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49428,7 +49876,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 43847,
+      "popularity": 44023,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -49455,7 +49903,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 213,
+      "popularity": 217,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -53079,7 +53527,7 @@
           "sha256": "3860d928db9717d0a41509ba08cc78b0b1240adf5c02e8960b6410ba1d85bea9"
         }
       ],
-      "popularity": 947283,
+      "popularity": 947289,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/RetroNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -53488,7 +53936,7 @@
           "sha256": "31b45d12f9a78ecf505f34f075e58b9e2b4d392df67b95612e2b0037fd5bb4c7"
         }
       ],
-      "popularity": 4025,
+      "popularity": 4026,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/RingRacers/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -53970,6 +54418,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2020-07-10"
+    },
+    {
+      "id": "universal-db:Project-Rose/Roseverse3DSPatcher",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Roseverse3DSPatcher",
+      "summary": "The official patcher for Roséverse on Nintendo 3DS",
+      "author": "Project Rosé",
+      "version": "1.0.0",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/Project-Rose/Roseverse3DSPatcher/refs/heads/main/meta/icon.png",
+      "release_url": "https://github.com/Project-Rose/Roseverse3DSPatcher/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "Roseverse3DSPatcher.3dsx",
+          "url": "https://github.com/Project-Rose/Roseverse3DSPatcher/releases/download/1.0.0/Roseverse3DSPatcher.3dsx",
+          "size": 1183844
+        },
+        {
+          "format": "cia",
+          "filename": "Roseverse3DSPatcher.cia",
+          "url": "https://github.com/Project-Rose/Roseverse3DSPatcher/releases/download/1.0.0/Roseverse3DSPatcher.cia",
+          "size": 1033152
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-01T20:44:15Z"
     },
     {
       "id": "vitadbtoo-vita:804",
@@ -54842,7 +55321,7 @@
           "sha256": "a3a3f613707d5bcb6b30840b291efe39704e8760ff25436b042e286fda113af9"
         }
       ],
-      "popularity": 148711,
+      "popularity": 148712,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SaltyNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -54875,7 +55354,7 @@
           "sha256": "889f56ec3f06b24c5b98f115065fbe260b8173ce9e38a80316689d171e657332"
         }
       ],
-      "popularity": 33698,
+      "popularity": 33699,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SaltyNX-Tool/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -57727,10 +58206,10 @@
       "name": "sLaunch",
       "categories": [],
       "description": "sLaunch is a fast and beautiful home replacement for your switch",
-      "added_at": "2026-09-24",
+      "added_at": "2026-09-25",
       "summary": "Welcome to your new home.",
       "author": "etonedemid",
-      "version": "1.4.0",
+      "version": "1.4.1",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/etonedemid/slaunch/",
@@ -57739,8 +58218,8 @@
           "format": "hbas",
           "filename": "sLaunch.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/sLaunch/manifest.install",
-          "size": 66370,
-          "sha256": "4c53bcc6517a42634bbaf348aeb4e32550777f124af9d15e0bbe17bb289a262a"
+          "size": 65667,
+          "sha256": "47b3e9a831e9bd96c8c680d0f2e1b2a056fdde65d1d5f1cd9d52c7191ecb787f"
         }
       ],
       "popularity": 413,
@@ -57748,7 +58227,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-25"
+      "updated_at": "2026-09-26"
     },
     {
       "id": "hbas-switch:SlayTheSwitch",
@@ -59784,7 +60263,7 @@
           "sha256": "a6d3abece9c3003a7b5c830216c7de0e655a405b34b8fc9ec2efa67417621190"
         }
       ],
-      "popularity": 59207,
+      "popularity": 59208,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sonicroboblast2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60373,7 +60852,7 @@
           "sha256": "acd0e0fb41dc635e12a34461921649861e21bc86db4802f58649a6a3a1d2cc0f"
         }
       ],
-      "popularity": 601,
+      "popularity": 602,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SpaceVue/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -60544,7 +61023,7 @@
           "sha256": "bbfab63462fd0d6741e3735e76a96ccc3237c5bf1ad3d2acdfcae0c68a36728b"
         }
       ],
-      "popularity": 52884,
+      "popularity": 52886,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sphaira/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63203,7 +63682,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-26T09:05:21+00:00"
+      "updated_at": "2026-09-25T00:00:00+00:00"
     },
     {
       "id": "vitadbtoo-vita:803",
@@ -63396,7 +63875,7 @@
           "sha256": "eebbb218d089669627473750766d1d5e9b19286228d31e13c69c90343a4040d7"
         }
       ],
-      "popularity": 18943,
+      "popularity": 18944,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchNotificationLED/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63619,7 +64098,7 @@
           "sha256": "64cda8ac15e6ab84ca1786715e45897cb8d69ed2cbbec2a0d3d4e99ac1c2cac0"
         }
       ],
-      "popularity": 9141,
+      "popularity": 9144,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switchnewpipe/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63652,7 +64131,7 @@
           "sha256": null
         }
       ],
-      "popularity": 78791,
+      "popularity": 78792,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switch-remote-play/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -63820,7 +64299,7 @@
           "sha256": "9e12fe61bd628d7c2c5f1ff09639632a9ea6f3a65b325cfa569bbc0af4f09731"
         }
       ],
-      "popularity": 1398,
+      "popularity": 1399,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchFishingDemo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64207,7 +64686,7 @@
           "sha256": "28f1b0badaad2fef16ffc7bdcfdebaad2b18b85d5dc08c82b3528c921acb99e1"
         }
       ],
-      "popularity": 6803,
+      "popularity": 6804,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchWave/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64370,7 +64849,7 @@
           "sha256": "0eefae05ce08054706389d615afb09cde4120d23f734ab129184ed8bf6207252"
         }
       ],
-      "popularity": 241090,
+      "popularity": 241092,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sys-clk/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -64434,7 +64913,7 @@
           "sha256": "f89ec045ebfce3bb03e1a2e7f195f0d9a95e5c0878f0a47016e3399e73ae29d7"
         }
       ],
-      "popularity": 76381,
+      "popularity": 76383,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/syscon1x2024/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -66899,7 +67378,7 @@
       "name": "TJAP_3DS",
       "summary": "TJAPlayer for 3DS - Music game of the TJA file.",
       "author": "TogeToge & MarioGames",
-      "version": "v2.4.0A",
+      "version": "v2.4.1",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/LuMariGames/TJAP_3DS/main/resource/icon.png",
       "release_url": "https://github.com/LuMariGames/TJAP_3DS/releases",
@@ -66907,20 +67386,20 @@
         {
           "format": "3dsx",
           "filename": "TJAP_3DS.3dsx",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.0A/TJAP_3DS.3dsx",
-          "size": 9892232
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.1/TJAP_3DS.3dsx",
+          "size": 9896528
         },
         {
           "format": "cia",
           "filename": "TJAP_3DS.cia",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.0A/TJAP_3DS.cia",
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.1/TJAP_3DS.cia",
           "size": 10056640
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-14T21:21:51Z"
+      "updated_at": "2026-09-26T01:04:29Z"
     },
     {
       "id": "vitadbtoo-psp:984",
@@ -67557,7 +68036,7 @@
           "sha256": "810ab7e8a660bb1cc3da3f67d722576a9cbfef38b579281e314c7d0e5ca753a4"
         }
       ],
-      "popularity": 1532,
+      "popularity": 1534,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TranslateNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68168,7 +68647,7 @@
           "sha256": "0585d7d66823f9e798b65cb2c0f3ec593a427ac6fcb5b1aa9e6c62fe0299f8ea"
         }
       ],
-      "popularity": 20639,
+      "popularity": 20642,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TsVitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68299,6 +68778,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2022-09-11"
+    },
+    {
+      "id": "universal-db:git-effl/Tux-Pong",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Tux Pong!",
+      "summary": "A fork of the Scratch Version of Nate Pong, built on the Scratch Everywhere! runtime. Based on Tux,the mascot for Linux,and Konqi,the mascot for KDE.",
+      "author": "effL",
+      "version": "v1.1",
+      "license": "Main App: GNU Lesser General Public License v3.0 / MIT License / Fonts: CC BY-SA 3.0 / SIL Open Font License ",
+      "icon_url": "https://raw.githubusercontent.com/git-effl/Tux-Pong/refs/heads/main/gfx/icon.png",
+      "release_url": "https://github.com/git-effl/Tux-Pong/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "tuxpong.3dsx",
+          "url": "https://github.com/git-effl/Tux-Pong/releases/download/v1.1/tuxpong.3dsx",
+          "size": 35896312
+        },
+        {
+          "format": "cia",
+          "filename": "tuxpong.cia",
+          "url": "https://github.com/git-effl/Tux-Pong/releases/download/v1.1/tuxpong.cia",
+          "size": 34231232
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-24T18:00:56Z"
     },
     {
       "id": "universal-db:KirovAir/TwilightBoxart",
@@ -68773,7 +69283,7 @@
           "sha256": "2918537d01f249ba5f57aee63cedf6f768eacc5f4a4bc00c1b4f8253e38b31ef"
         }
       ],
-      "popularity": 63412,
+      "popularity": 63413,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/uLaunch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68806,7 +69316,7 @@
           "sha256": "ac4136a90cb1ff1a4594dd6987a58bda9c480e04d6c8b169bb1e67843c64da40"
         }
       ],
-      "popularity": 25891,
+      "popularity": 25892,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/UltimateTrainingModpack/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68839,7 +69349,7 @@
           "sha256": "1c09e0f844e981c5b90e2a245028fd90391814a0af1b2d27b2197c7ea298c677"
         }
       ],
-      "popularity": 91337,
+      "popularity": 91341,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/UltrahandOverlay/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -70364,7 +70874,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2939,
+      "popularity": 2940,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/VGMplayerNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78160,7 +78670,7 @@
           "sha256": "8778c3a683cc6c9c39ea30da947220397cb9d329596fb3935b2d9d5a456c8da4"
         }
       ],
-      "popularity": 1056,
+      "popularity": 1058,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/WookReadercomics/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -79701,6 +80211,37 @@
       "updated_at": "2026-09-20T01:30:37Z"
     },
     {
+      "id": "universal-db:EstebanPdN/zelda-tmc-3ds",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "zelda-tmc-3ds",
+      "summary": "Native Nintendo 3DS port of The Legend of Zelda: The Minish Cap based on Project Picori.",
+      "author": "estebanpdn",
+      "version": "v2.1",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/EstebanPdN/zelda-tmc-3ds/main/platform/3ds/assets/icon-48.png",
+      "release_url": "https://github.com/EstebanPdN/zelda-tmc-3ds/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "tmc-3ds-v2.1.3dsx",
+          "url": "https://github.com/EstebanPdN/zelda-tmc-3ds/releases/download/v2.1/tmc-3ds-v2.1.3dsx",
+          "size": 4997520
+        },
+        {
+          "format": "cia",
+          "filename": "tmc-3ds-v2.1.cia",
+          "url": "https://github.com/EstebanPdN/zelda-tmc-3ds/releases/download/v2.1/tmc-3ds-v2.1.cia",
+          "size": 3617728
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-09-20T08:16:04Z"
+    },
+    {
       "id": "vitadbtoo-vita:993",
       "platforms": [
         "psvita"
@@ -80552,40 +81093,40 @@
       "name": "Українізатор 3DS/2DS",
       "summary": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS.",
       "author": "Max Bolhar",
-      "version": "v1.9.0",
+      "version": "v1.10.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/assets/unistore-icon.png",
       "release_url": "https://github.com/BolgarMaxym97/3ds-ua/releases",
       "downloads": [
         {
           "format": "zip",
-          "filename": "3ds-ua-from-en-1.9.0-new3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.9.0/3ds-ua-from-en-1.9.0-new3ds.zip",
-          "size": 24123010
+          "filename": "3ds-ua-from-en-1.10.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.10.0/3ds-ua-from-en-1.10.0-new3ds.zip",
+          "size": 24123367
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-en-1.9.0-old3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.9.0/3ds-ua-from-en-1.9.0-old3ds.zip",
-          "size": 22275509
+          "filename": "3ds-ua-from-en-1.10.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.10.0/3ds-ua-from-en-1.10.0-old3ds.zip",
+          "size": 22275866
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-ru-1.9.0-new3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.9.0/3ds-ua-from-ru-1.9.0-new3ds.zip",
-          "size": 24394137
+          "filename": "3ds-ua-from-ru-1.10.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.10.0/3ds-ua-from-ru-1.10.0-new3ds.zip",
+          "size": 24394606
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-ru-1.9.0-old3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.9.0/3ds-ua-from-ru-1.9.0-old3ds.zip",
-          "size": 22585981
+          "filename": "3ds-ua-from-ru-1.10.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.10.0/3ds-ua-from-ru-1.10.0-old3ds.zip",
+          "size": 22586450
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-05T11:46:32Z"
+      "updated_at": "2026-09-26T12:53:35Z"
     },
     {
       "id": "vitadbtoo-vita:1454",
