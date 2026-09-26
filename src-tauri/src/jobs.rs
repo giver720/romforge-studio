@@ -622,6 +622,19 @@ mod output_transaction_tests {
     }
 
     #[test]
+    fn ps5_fpkg_compression_reports_activity_without_inventing_percentages() {
+        let event =
+            parse_ps5_tool_progress("[LibProsperoPKG] Preparing PS5 inner image (data-first)...")
+                .unwrap();
+        assert_eq!(event.percent, None);
+        assert_eq!(event.phase, "Comprimiendo el contenido del juego · Kraken");
+        let module =
+            parse_ps5_tool_progress("[LibProsperoPKG] Substituted decrypted module for eboot.bin.")
+                .unwrap();
+        assert_eq!(module.phase, "Incorporando los módulos descifrados");
+    }
+
+    #[test]
     fn ps5_verify_mode_never_creates_or_protects_an_output() {
         for mode in [crate::ps5::MODE_VERIFY, crate::ps5::MODE_LZ4_VERIFY] {
             let (dir, mut job) = fixture(&format!("ps5-read-only-{mode}"));
@@ -926,6 +939,14 @@ fn ps5_phase_name(message: &str) -> String {
         "Limpiando rastros de una conversión AMPR anterior".into()
     } else if lower.contains("inspecting decrypted ps5") {
         "Inspeccionando el dump descifrado de PS5".into()
+    } else if lower.contains("preparing ps5 inner image") {
+        "Comprimiendo el contenido del juego · Kraken".into()
+    } else if lower.contains("building the ps5 package") {
+        "Construyendo el paquete FPKG de PS5".into()
+    } else if lower.contains("fake-signed") {
+        "Preparando los módulos ejecutables de PS5".into()
+    } else if lower.contains("substituted decrypted module") {
+        "Incorporando los módulos descifrados".into()
     } else if let Some(detail) = message.strip_prefix("[LibProsperoPKG] ") {
         format!("LibProsperoPKG · {detail}")
     } else {
@@ -1523,9 +1544,23 @@ async fn run_ps5_capture_progress(
     let mut last_local_percent = -1.0f32;
     let mut last_emit = Instant::now() - Duration::from_secs(1);
     let mut lines_open = true;
+    let mut activity_tick = tokio::time::interval(Duration::from_secs(1));
+    activity_tick.set_missed_tick_behavior(tokio::time::MissedTickBehavior::Skip);
 
     loop {
         tokio::select! {
+            _ = activity_tick.tick() => {
+                let state = app.state::<AppState>();
+                if let Some(job) = state.update(id, |job| {
+                    if let Ok(metadata) = std::fs::metadata(&job.output) {
+                        if metadata.is_file() {
+                            job.output_size = metadata.len();
+                        }
+                    }
+                }) {
+                    emit_job(app, &job);
+                }
+            }
             result = &mut execution => {
                 while let Ok(line) = line_rx.try_recv() {
                     apply_ps5_progress_line(

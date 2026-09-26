@@ -191,7 +191,10 @@ function JobRow({ job }: { job: Job }) {
         <div className="mt-2.5">
           {/* Hay herramientas que no dicen por dónde van cuando su salida no es
               una consola. En ese caso se muestra lo que llevan escrito. */}
-          {job.progress > 0 ? (
+          {job.progress > 0 && !(
+            (job.mode === "ps5fpkg" || job.mode === "ps5fpkgexfat") &&
+            job.phase !== "Verificando el resultado"
+          ) ? (
             <>
               <div className="bar live">
                 <i style={{ width: `${Math.max(2, job.progress)}%` }} />
@@ -206,7 +209,7 @@ function JobRow({ job }: { job: Job }) {
             </>
           ) : (
             <>
-              <div className="bar indeterminate">
+              <div className="bar indeterminate" role="progressbar" aria-label={job.phase}>
                 <i />
               </div>
               <p className="mt-1.5 flex justify-between text-[0.66rem] text-[var(--color-muted)]">
