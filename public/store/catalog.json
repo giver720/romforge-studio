@@ -4185,6 +4185,32 @@
       "updated_at": "2023-07-20T00:00:00+00:00"
     },
     {
+      "id": "ps5-payloads-atlas:AnyPad-PS5-0.8.1-beta.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "AnyPad PS5",
+      "summary": "A Bluetooth controller bridge for jailbroken PS5 consoles. Un puente de mandos Bluetooth para PS5 con jailbreak.",
+      "author": "",
+      "version": "v0.8.1-beta",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://codeberg.org/elmonomalva0/any-pad-ps5",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "AnyPad-PS5-0.8.1-beta.elf",
+          "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5/releases/download/v0.8.1-beta/AnyPad-PS5-0.8.1-beta.elf",
+          "sha256": null
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-10 05:59:55 UTC+8"
+    },
+    {
       "id": "open-shop-channel-wii:AnyTitleDeleterMOD",
       "platforms": [
         "wii"
@@ -6024,30 +6050,30 @@
         "3ds"
       ],
       "name": "Bandolero 3DS",
-      "summary": "Editor de texto para 3Ds",
+      "summary": "Editor de texto para 3Ds. | Text Editor for 3DS",
       "author": "Tristán Álvarez",
-      "version": "1.5RU",
+      "version": "2.0",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/Tristanabs/bandolero3ds/refs/heads/main/icon.png",
       "release_url": "https://github.com/Tristanabs/bandolero3ds/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "Bandolero.3Ds.v1.5.RED.UPDATE.3dsx",
-          "url": "https://github.com/Tristanabs/bandolero3ds/releases/download/1.5RU/Bandolero.3Ds.v1.5.RED.UPDATE.3dsx",
-          "size": 635716
+          "filename": "Bandolero3DS-2.0.3dsx",
+          "url": "https://github.com/Tristanabs/bandolero3ds/releases/download/2.0/Bandolero3DS-2.0.3dsx",
+          "size": 1757680
         },
         {
           "format": "cia",
-          "filename": "Bandolero.3Ds.v1.5.RED.UPDATE.cia",
-          "url": "https://github.com/Tristanabs/bandolero3ds/releases/download/1.5RU/Bandolero.3Ds.v1.5.RED.UPDATE.cia",
-          "size": 545728
+          "filename": "Bandolero3DS-2.0.cia",
+          "url": "https://github.com/Tristanabs/bandolero3ds/releases/download/2.0/Bandolero3DS-2.0.cia",
+          "size": 1778624
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2025-05-18T15:34:19Z"
+      "updated_at": "2026-10-11T17:29:43Z"
     },
     {
       "id": "open-shop-channel-wii:bqop",
@@ -35900,6 +35926,32 @@
       "updated_at": "2026-08-06T19:56:35Z"
     },
     {
+      "id": "ps5-payloads-atlas:lz4-compression.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "LZ4 Compression (theghostonline)",
+      "summary": "Shrinks a game that is already on the PS5 by LZ4-packing its AMPR assets, entirely on the console: the game never leaves it. Works on folder games and on mounted .exfat/.ffpfs images, packs in place with rollback, verifies every file, and can undo. Needs ShadowMount+ for image sources. Open its page on port 5920 from the Connection screen's scene tools once it is running. ps5upload's Convert does the same packing on this computer when the game is here instead.",
+      "author": "",
+      "version": "v1.4.2",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/theghostonline/ps5-lz4-compression",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "lz4-compression.elf",
+          "url": "https://github.com/theghostonline/PS5-LZ4-Compression/releases/download/v1.4.2/lz4-compression.elf",
+          "sha256": "a4ec1695a2d7baa666da746649e1e4a49056ef53c7502455a7bad1e55f563511"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-12 01:55:48 UTC+8"
+    },
+    {
       "id": "vitadbtoo-vita:867",
       "platforms": [
         "psvita"
@@ -37809,7 +37861,7 @@
       "added_at": "2026-08-12",
       "summary": "Download and import Miis to your Switch!",
       "author": "KakarottoCake, Genwald",
-      "version": "0.1.3",
+      "version": "0.1.3-Online",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/KakarottoCake/MiiPort-Online",
@@ -37819,7 +37871,7 @@
           "filename": "MiiPortOnline.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/MiiPortOnline/manifest.install",
           "size": 7607,
-          "sha256": "4b32e550b58217ea4bce12745dcf38f426b19b70ed26ef71225bed21bfd7d781"
+          "sha256": "ecb5ae85c48cf612df9a672b76981caf32787ade96e6ef0e9fd8309a8f126d22"
         }
       ],
       "popularity": 0,
@@ -37827,7 +37879,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-10"
+      "updated_at": "2026-10-11"
     },
     {
       "id": "hbas-wiiu:UsendMii_Client",
@@ -50548,7 +50600,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9320,
+      "popularity": 9374,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50575,7 +50627,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2901,
+      "popularity": 2914,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50602,7 +50654,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 8802,
+      "popularity": 8865,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50629,7 +50681,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5606,
+      "popularity": 5626,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50656,7 +50708,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 49374,
+      "popularity": 49537,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50683,7 +50735,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 331,
+      "popularity": 334,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51061,30 +51113,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.0.8.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.0.10.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.0.8",
+      "version": "v7.0.10",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.0.8.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.8/ps5upload-7.0.8.elf",
-          "sha256": "085d27825a78bb2066c334506791e2a85e12240c0710db1e649e4bf15f8f4aa4"
+          "filename": "ps5upload-7.0.10.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.10/ps5upload-7.0.10.elf",
+          "sha256": "265cb3d2ed90a29a721a137b6877e680007c7f6041dfe324822c5b260eadc67f"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-11 18:14:33 UTC+8"
+      "updated_at": "2026-10-12 02:56:07 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -57159,7 +57211,7 @@
       "name": "scummvm",
       "summary": "Point-and-click adventure game engines",
       "author": "ScummVM",
-      "version": "v2026.3.0",
+      "version": "v2026.4.0",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/scummvm/scummvm/master/backends/platform/3ds/app/icon.png",
       "release_url": "https://www.scummvm.org/downloads/",
@@ -57167,26 +57219,26 @@
         {
           "format": "zip",
           "filename": "scummvm-3dsx.zip",
-          "url": "https://downloads.scummvm.org/frs/scummvm/2026.3.0/scummvm-2026.3.0-3ds-3dsx.zip",
+          "url": "https://downloads.scummvm.org/frs/scummvm/2026.4.0/scummvm-2026.4.0-3ds-3dsx.zip",
           "size": null
         },
         {
           "format": "zip",
           "filename": "scummvm-cia.zip",
-          "url": "https://downloads.scummvm.org/frs/scummvm/2026.3.0/scummvm-2026.3.0-3ds-cia.zip",
+          "url": "https://downloads.scummvm.org/frs/scummvm/2026.4.0/scummvm-2026.4.0-3ds-cia.zip",
           "size": null
         },
         {
           "format": "zip",
           "filename": "scummvm-ds.zip",
-          "url": "https://downloads.scummvm.org/frs/scummvm/2026.3.0/scummvm-2026.3.0-ds.zip",
+          "url": "https://downloads.scummvm.org/frs/scummvm/2026.4.0/scummvm-2026.4.0-ds.zip",
           "size": null
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-06-20T21:03:57Z"
+      "updated_at": "2026-10-11T18:04:33Z"
     },
     {
       "id": "hbas-switch:scummvm",
