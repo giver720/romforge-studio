@@ -40360,7 +40360,7 @@
       "name": "nds-bootstrap",
       "summary": "Boot an nds file",
       "author": "DS-Homebrew",
-      "version": "v2.16.0",
+      "version": "v2.17.0",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://db.universal-team.net/assets/images/icons/nds-bootstrap.png",
       "release_url": "https://github.com/DS-Homebrew/nds-bootstrap/releases",
@@ -40368,14 +40368,14 @@
         {
           "format": "zip",
           "filename": "nds-bootstrap.zip",
-          "url": "https://github.com/DS-Homebrew/nds-bootstrap/releases/download/v2.16.0/nds-bootstrap.zip",
-          "size": 1204507
+          "url": "https://github.com/DS-Homebrew/nds-bootstrap/releases/download/v2.17.0/nds-bootstrap.zip",
+          "size": 1212693
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-05-23T07:18:51Z"
+      "updated_at": "2026-10-11T03:54:03Z"
     },
     {
       "id": "universal-db:volkanturkut/NDSForwarder",
@@ -50548,7 +50548,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9283,
+      "popularity": 9320,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50575,7 +50575,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2897,
+      "popularity": 2901,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50602,7 +50602,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 8759,
+      "popularity": 8802,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50629,7 +50629,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5595,
+      "popularity": 5606,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50656,7 +50656,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 49267,
+      "popularity": 49374,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50683,7 +50683,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 330,
+      "popularity": 331,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51061,30 +51061,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.0.1.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.0.8.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.0.1",
+      "version": "v7.0.8",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.0.1.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.1/ps5upload-7.0.1.elf",
-          "sha256": "cf37ffb531a7dd56fb78d72eb01b5ec44fed40959504581a432b49a8d8352291"
+          "filename": "ps5upload-7.0.8.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.8/ps5upload-7.0.8.elf",
+          "sha256": "085d27825a78bb2066c334506791e2a85e12240c0710db1e649e4bf15f8f4aa4"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-11 10:51:45 UTC+8"
+      "updated_at": "2026-10-11 18:14:33 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -59112,10 +59112,10 @@
       "name": "sLaunch",
       "categories": [],
       "description": "sLaunch is a fast and beautiful home replacement for your switch",
-      "added_at": "2026-10-05",
+      "added_at": "2026-10-10",
       "summary": "Welcome to your new home.",
       "author": "etonedemid",
-      "version": "1.5.2",
+      "version": "1.5.3",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/etonedemid/slaunch/",
@@ -59124,8 +59124,8 @@
           "format": "hbas",
           "filename": "sLaunch.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/sLaunch/manifest.install",
-          "size": 69966,
-          "sha256": "e32900cca6af3740ecac356b262ce48186eecc2f61fc7207e85ec4d75c7f0e7a"
+          "size": 69965,
+          "sha256": "b802b9d83895eb32452a458ff434e8728daa462fde17eb2dd103593c5a0a9c1f"
         }
       ],
       "popularity": 504,
@@ -59133,7 +59133,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-06"
+      "updated_at": "2026-10-11"
     },
     {
       "id": "hbas-switch:SlayTheSwitch",
