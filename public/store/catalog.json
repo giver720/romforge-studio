@@ -4185,22 +4185,22 @@
       "updated_at": "2023-07-20T00:00:00+00:00"
     },
     {
-      "id": "ps5-payloads-atlas:AnyPad-PS5-0.8.1-beta.elf",
+      "id": "ps5-payloads-atlas:AnyPad-PS5-0.9.1-beta.elf",
       "platforms": [
         "ps5"
       ],
       "name": "AnyPad PS5",
       "summary": "A Bluetooth controller bridge for jailbroken PS5 consoles. Un puente de mandos Bluetooth para PS5 con jailbreak.",
       "author": "",
-      "version": "v0.8.1-beta",
+      "version": "v0.9.1-beta",
       "license": null,
       "icon_url": null,
       "release_url": "https://codeberg.org/elmonomalva0/any-pad-ps5",
       "downloads": [
         {
           "format": "elf",
-          "filename": "AnyPad-PS5-0.8.1-beta.elf",
-          "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5/releases/download/v0.8.1-beta/AnyPad-PS5-0.8.1-beta.elf",
+          "filename": "AnyPad-PS5-0.9.1-beta.elf",
+          "url": "https://codeberg.org/elmonomalva0/Any-Pad-ps5/releases/download/v0.9.1-beta/AnyPad-PS5-0.9.1-beta.elf",
           "sha256": null
         }
       ],
@@ -4208,7 +4208,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-10 05:59:55 UTC+8"
+      "updated_at": "2026-10-12 16:42:39 UTC+8"
     },
     {
       "id": "open-shop-channel-wii:AnyTitleDeleterMOD",
@@ -50600,7 +50600,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9394,
+      "popularity": 9426,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50627,7 +50627,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2915,
+      "popularity": 2919,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50654,7 +50654,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 8884,
+      "popularity": 8910,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50681,7 +50681,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5631,
+      "popularity": 5638,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50708,7 +50708,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 49618,
+      "popularity": 49683,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50735,7 +50735,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 337,
+      "popularity": 341,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51113,30 +51113,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.0.12.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.0.22.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.0.12",
+      "version": "v7.0.22",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.0.12.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.12/ps5upload-7.0.12.elf",
-          "sha256": "6291b53c92d5e1e0b0f44253439615254fd8a876970fbdb4e368a9ed01175648"
+          "filename": "ps5upload-7.0.22.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.22/ps5upload-7.0.22.elf",
+          "sha256": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-12 04:50:02 UTC+8"
+      "updated_at": "2026-10-12 17:47:07 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -82370,40 +82370,40 @@
       "name": "Українізатор 3DS/2DS",
       "summary": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS.",
       "author": "Max Bolhar",
-      "version": "v1.11.0",
+      "version": "v1.12.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/assets/unistore-icon.png",
       "release_url": "https://github.com/BolgarMaxym97/3ds-ua/releases",
       "downloads": [
         {
           "format": "zip",
-          "filename": "3ds-ua-from-en-1.11.0-new3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.11.0/3ds-ua-from-en-1.11.0-new3ds.zip",
-          "size": 24121902
+          "filename": "3ds-ua-from-en-1.12.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.12.0/3ds-ua-from-en-1.12.0-new3ds.zip",
+          "size": 24121942
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-en-1.11.0-old3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.11.0/3ds-ua-from-en-1.11.0-old3ds.zip",
-          "size": 22275044
+          "filename": "3ds-ua-from-en-1.12.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.12.0/3ds-ua-from-en-1.12.0-old3ds.zip",
+          "size": 22274790
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-ru-1.11.0-new3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.11.0/3ds-ua-from-ru-1.11.0-new3ds.zip",
-          "size": 24393148
+          "filename": "3ds-ua-from-ru-1.12.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.12.0/3ds-ua-from-ru-1.12.0-new3ds.zip",
+          "size": 24393084
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-ru-1.11.0-old3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.11.0/3ds-ua-from-ru-1.11.0-old3ds.zip",
-          "size": 22585534
+          "filename": "3ds-ua-from-ru-1.12.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.12.0/3ds-ua-from-ru-1.12.0-old3ds.zip",
+          "size": 22585258
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-27T10:43:02Z"
+      "updated_at": "2026-10-12T06:20:04Z"
     },
     {
       "id": "vitadbtoo-vita:1454",
