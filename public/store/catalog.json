@@ -5925,7 +5925,7 @@
       "name": "Balatro3DS",
       "summary": "A fanmade Balatro clone for the 3DS",
       "author": "Gazpacho",
-      "version": "v2.0.2-base",
+      "version": "v2.0.3-base",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/idkhan/Balatro3DS/refs/heads/main/resources/textures/1x/icon.png",
       "release_url": "https://github.com/idkhan/Balatro3DS/releases",
@@ -5933,20 +5933,20 @@
         {
           "format": "cia",
           "filename": "Balatro.cia",
-          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.2-base/Balatro.cia",
-          "size": 26829760
+          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.3-base/Balatro.cia",
+          "size": 26858432
         },
         {
           "format": "3dsx",
           "filename": "Balatro3DS.3dsx",
-          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.2-base/Balatro3DS.3dsx",
-          "size": 16943618
+          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.3-base/Balatro3DS.3dsx",
+          "size": 16952140
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-10T18:04:17Z"
+      "updated_at": "2026-10-12T19:40:46Z"
     },
     {
       "id": "vitadbtoo-vita:573",
@@ -17492,31 +17492,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-08-09"
-    },
-    {
-      "id": "universal-db:cmdada/dn3ds",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "dn3ds",
-      "summary": "The definitive port of Duke Nukem 3d to the 3DS - now open source!",
-      "author": "ada t",
-      "version": "v1.2",
-      "license": "GNU General Public License v2.0",
-      "icon_url": "https://raw.githubusercontent.com/cmdada/dn3ds/refs/heads/master/icon.png",
-      "release_url": "https://github.com/cmdada/dn3ds/releases",
-      "downloads": [
-        {
-          "format": "cia",
-          "filename": "dn3ds.cia",
-          "url": "https://github.com/cmdada/dn3ds/releases/download/v1.2/dn3ds.cia",
-          "size": 2419136
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2026-08-30T20:51:54Z"
     },
     {
       "id": "hbas-switch:DNSmitmChecker",
@@ -40329,13 +40304,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64555102
+          "size": 64563753
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-08T14:31:53Z"
+      "updated_at": "2026-10-12T16:40:56Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -50600,7 +50575,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9426,
+      "popularity": 9476,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50627,7 +50602,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2919,
+      "popularity": 2925,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50654,7 +50629,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 8910,
+      "popularity": 8961,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50681,7 +50656,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5638,
+      "popularity": 5653,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50708,7 +50683,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 49683,
+      "popularity": 49884,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50735,7 +50710,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 341,
+      "popularity": 348,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
