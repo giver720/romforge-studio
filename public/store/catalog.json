@@ -42815,7 +42815,7 @@
       "name": "NTR-HR",
       "summary": "An upgraded version of NTR with better streaming capabilities.",
       "author": "JS Deck",
-      "version": "v0.3.8.1",
+      "version": "v0.3.8.2",
       "license": "GNU General Public License v2.0",
       "icon_url": "https://avatars.githubusercontent.com/u/1617680?v=4&size=128",
       "release_url": "https://github.com/xzn/ntr-hr/releases",
@@ -42823,20 +42823,20 @@
         {
           "format": "cia",
           "filename": "BootNTRSelector-Mode3-PabloMK7-Banner.cia",
-          "url": "https://github.com/xzn/ntr-hr/releases/download/v0.3.8.1/BootNTRSelector-Mode3-PabloMK7-Banner.cia",
+          "url": "https://github.com/xzn/ntr-hr/releases/download/v0.3.8.2/BootNTRSelector-Mode3-PabloMK7-Banner.cia",
           "size": 1987520
         },
         {
           "format": "cia",
           "filename": "BootNTRSelector-PabloMK7-Banner.cia",
-          "url": "https://github.com/xzn/ntr-hr/releases/download/v0.3.8.1/BootNTRSelector-PabloMK7-Banner.cia",
+          "url": "https://github.com/xzn/ntr-hr/releases/download/v0.3.8.2/BootNTRSelector-PabloMK7-Banner.cia",
           "size": 1987520
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-17T05:34:19Z"
+      "updated_at": "2026-10-13T04:09:33Z"
     },
     {
       "id": "hbas-wiiu:ntrview-wiiu",
@@ -50575,7 +50575,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9476,
+      "popularity": 9523,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50602,7 +50602,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2925,
+      "popularity": 2938,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50629,7 +50629,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 8961,
+      "popularity": 9010,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50656,7 +50656,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5653,
+      "popularity": 5670,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50683,7 +50683,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 49884,
+      "popularity": 50038,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50710,7 +50710,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 348,
+      "popularity": 359,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -68532,7 +68532,7 @@
       "name": "TJAP_3DS",
       "summary": "TJAPlayer for 3DS - Music game of the TJA file.",
       "author": "TogeToge & MarioGames",
-      "version": "v2.4.1A",
+      "version": "v2.4.1B",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/LuMariGames/TJAP_3DS/main/resource/icon.png",
       "release_url": "https://github.com/LuMariGames/TJAP_3DS/releases",
@@ -68540,20 +68540,20 @@
         {
           "format": "3dsx",
           "filename": "TJAP_3DS.3dsx",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.1A/TJAP_3DS.3dsx",
-          "size": 10273124
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.1B/TJAP_3DS.3dsx",
+          "size": 10273420
         },
         {
           "format": "cia",
           "filename": "TJAP_3DS.cia",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.1A/TJAP_3DS.cia",
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.1B/TJAP_3DS.cia",
           "size": 10437568
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-02T21:12:30Z"
+      "updated_at": "2026-10-09T23:11:59Z"
     },
     {
       "id": "vitadbtoo-psp:984",
