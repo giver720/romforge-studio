@@ -40304,13 +40304,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64563753
+          "size": 64563875
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-12T16:40:56Z"
+      "updated_at": "2026-10-13T14:57:21Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -45941,7 +45941,7 @@
       "name": "Orbit Store",
       "summary": "A modern PS5 download manager with resumable downloads and phone controls",
       "author": "",
-      "version": "v1.2.0",
+      "version": "v1.3.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/saawant12/orbit-store-ps5",
@@ -45949,15 +45949,15 @@
         {
           "format": "elf",
           "filename": "orbit_store.elf",
-          "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.2.0/orbit_store.elf",
-          "sha256": "86778d4fa830b1ff46379d167568c32294764cb05bc06ce6b05edc9db2a91691"
+          "url": "https://github.com/saawant12/orbit-store-ps5/releases/download/v1.3.0/orbit_store.elf",
+          "sha256": "553b39e7503ec141f6a015b7939c83e93fe8f05dee176e42c7e3bc026b0ea519"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-12 03:47:53 UTC+8"
+      "updated_at": "2026-10-14 04:46:16 UTC+8"
     },
     {
       "id": "universal-db:EBLeifEricson/orchestrina",
@@ -50575,7 +50575,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9523,
+      "popularity": 9593,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50602,7 +50602,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2938,
+      "popularity": 2949,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50629,7 +50629,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9010,
+      "popularity": 9060,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50656,7 +50656,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5670,
+      "popularity": 5683,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50683,7 +50683,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 50038,
+      "popularity": 50228,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50710,7 +50710,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 359,
+      "popularity": 364,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -54076,7 +54076,7 @@
         "3ds"
       ],
       "name": "ReSharp3DS",
-      "summary": "Porting nanoCLR C# for Nintendo 3DS",
+      "summary": "Porting nanoCLR \"C#\" for Nintendo 3DS",
       "author": "Saiitanaa",
       "version": "v2.2.6",
       "license": "GNU General Public License v3.0",
