@@ -11609,7 +11609,7 @@
       "name": "Checkpoint",
       "summary": "Fast and simple homebrew save management framework for 3DS and Switch.",
       "author": "Bernardo Giordano",
-      "version": "v5.2.0",
+      "version": "v5.3.0",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/BernardoGiordano/Checkpoint/master/3ds/assets/icon.png",
       "release_url": "https://github.com/BernardoGiordano/Checkpoint/releases",
@@ -11617,20 +11617,20 @@
         {
           "format": "3dsx",
           "filename": "Checkpoint.3dsx",
-          "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.2.0/Checkpoint.3dsx",
-          "size": 3569484
+          "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.3dsx",
+          "size": 3652156
         },
         {
           "format": "cia",
           "filename": "Checkpoint.cia",
-          "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.2.0/Checkpoint.cia",
-          "size": 2593728
+          "url": "https://github.com/BernardoGiordano/Checkpoint/releases/download/v5.3.0/Checkpoint.cia",
+          "size": 2646976
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-26T13:30:35Z"
+      "updated_at": "2026-10-13T19:22:44Z"
     },
     {
       "id": "hbas-switch:Checkpoint",
@@ -12967,7 +12967,7 @@
       "name": "Comet",
       "summary": "Observatory of Luma Screenshots for the 3DS",
       "author": "verypedro",
-      "version": "v3.2",
+      "version": "v3.3",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/verypedro/Comet/main/icon.png",
       "release_url": "https://github.com/verypedro/Comet/releases",
@@ -12975,20 +12975,20 @@
         {
           "format": "3dsx",
           "filename": "Comet.3dsx",
-          "url": "https://github.com/verypedro/Comet/releases/download/v3.2/Comet.3dsx",
-          "size": 3193604
+          "url": "https://github.com/verypedro/Comet/releases/download/v3.3/Comet.3dsx",
+          "size": 3193764
         },
         {
           "format": "cia",
           "filename": "Comet.cia",
-          "url": "https://github.com/verypedro/Comet/releases/download/v3.2/Comet.cia",
+          "url": "https://github.com/verypedro/Comet/releases/download/v3.3/Comet.cia",
           "size": 3437504
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-02T19:49:02Z"
+      "updated_at": "2026-10-13T21:19:17Z"
     },
     {
       "id": "hbas-switch:ComicNX",
@@ -41828,14 +41828,14 @@
           "format": "zip",
           "filename": "Nintendont.zip",
           "url": "https://hbb1.oscwii.org/api/contents/Nintendont/Nintendont.zip",
-          "size": 1077088
+          "size": 1077171
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2016-12-18T00:00:00+00:00"
+      "updated_at": "2026-10-14T01:18:24+00:00"
     },
     {
       "id": "open-shop-channel-wii:HIDTest",
@@ -50575,7 +50575,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9593,
+      "popularity": 9624,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50602,7 +50602,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2949,
+      "popularity": 2953,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50629,7 +50629,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9060,
+      "popularity": 9081,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50656,7 +50656,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5683,
+      "popularity": 5699,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50683,7 +50683,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 50228,
+      "popularity": 50303,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50710,7 +50710,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 364,
+      "popularity": 369,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51010,30 +51010,30 @@
       "updated_at": "2026-09-05 16:40:09 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:pldmgr_v0.5.2.elf",
+      "id": "ps5-payloads-atlas:pldmgr_v0.6.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-payload-manager",
       "summary": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
       "author": "",
-      "version": "v0.5.2",
+      "version": "v0.6.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-payload-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "pldmgr_v0.5.2.elf",
-          "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.5.2/pldmgr_v0.5.2.elf",
-          "sha256": "62b3ba2a4937c2afc502f9a4e7242cca538610ebb4ae2800c7c6f72e7f268e7c"
+          "filename": "pldmgr_v0.6.0.elf",
+          "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.0/pldmgr_v0.6.0.elf",
+          "sha256": "5b31079d81d6467f2754edd1d6dbe63b0306502e135c21a425ecb263e39e2059"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-29 18:34:22 UTC+8"
+      "updated_at": "2026-10-14 07:38:40 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:ps5-syslang-zh-Hans-v0.2.1.elf",
