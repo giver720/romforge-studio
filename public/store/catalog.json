@@ -44466,7 +44466,7 @@
       "name": "onionHEN",
       "summary": "OnionHEN is a homebrew enabler and Toolbox for jailbroken PS5 consoles, built on etaHEN. It prepares the system, injects a Toolbox into the home screen, and adds cheats, in-game overlays, payload management, and background services.",
       "author": "",
-      "version": "v0.0.13",
+      "version": "v0.9.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/aydencharles/onionhen",
@@ -44474,15 +44474,15 @@
         {
           "format": "elf",
           "filename": "OnionHEN.elf",
-          "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.0.13/OnionHEN.elf",
-          "sha256": "aa3f98847948e2ae8ea600c3f437e28247a0a4f8b73651a046d2859924bf97b3"
+          "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0/OnionHEN.elf",
+          "sha256": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-12 00:44:31 UTC+8"
+      "updated_at": "2026-10-15 15:42:25 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:985",
@@ -50523,7 +50523,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9734,
+      "popularity": 9757,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50550,7 +50550,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2970,
+      "popularity": 2975,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50577,7 +50577,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9181,
+      "popularity": 9202,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50604,7 +50604,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5740,
+      "popularity": 5748,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50631,7 +50631,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 50661,
+      "popularity": 50715,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50658,7 +50658,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 382,
+      "popularity": 386,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51062,30 +51062,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.0.22.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.0.23.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.0.22",
+      "version": "v7.0.23",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.0.22.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.22/ps5upload-7.0.22.elf",
-          "sha256": "e382353612fdf85b2fdbfea75f4f5ebad260c767faa51b0446118646a6db0267"
+          "filename": "ps5upload-7.0.23.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.23/ps5upload-7.0.23.elf",
+          "sha256": "419b56a10336dda8f4a28672271dfb635e74b05966cc08d44305e70f862dc110"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-12 17:47:07 UTC+8"
+      "updated_at": "2026-10-15 15:48:16 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -69920,7 +69920,7 @@
       "name": "TwilightBoxart",
       "summary": "Automatically download box art/covers for TWiLightMenu++ and Pico Launcher, straight onto your SD card.",
       "author": "KirovAir",
-      "version": "2.3.1",
+      "version": "2.4.0",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/KirovAir/TwilightBoxart/master/docs/unistore-icon.png",
       "release_url": "https://github.com/KirovAir/TwilightBoxart/releases",
@@ -69928,14 +69928,14 @@
         {
           "format": "nds",
           "filename": "TwilightBoxart-DS-DSi.nds",
-          "url": "https://github.com/KirovAir/TwilightBoxart/releases/download/2.3.1/TwilightBoxart-DS-DSi.nds",
+          "url": "https://github.com/KirovAir/TwilightBoxart/releases/download/2.4.0/TwilightBoxart-DS-DSi.nds",
           "size": 2654720
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-10T18:47:48Z"
+      "updated_at": "2026-10-15T05:13:49Z"
     },
     {
       "id": "hbas-switch:twiNX",
