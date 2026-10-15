@@ -41783,7 +41783,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-14T01:18:24+00:00"
+      "updated_at": "2016-12-18T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:HIDTest",
@@ -45218,10 +45218,10 @@
       "name": "OpenNOW",
       "categories": [],
       "description": "OpenNOW is an independent, community-built GeForce NOW client for Nintendo Switch. Sign in with your NVIDIA account, browse supported games, search and filter the catalog, and launch cloud sessions directly from your console.\n\nFeatures include configurable resolution, bitrate, frame rate, server region and decoder settings; controller, touch and inline-keyboard input; support for up to four controllers; live stream and network statistics; session recovery; and optional HOME Menu shortcuts for individual games.\n\nA GeForce NOW account and stable internet connection are required. Launch through Homebrew Menu using title override/application mode for sufficient memory. OpenNOW is unofficial and is not affiliated with NVIDIA or Nintendo.\n",
-      "added_at": "2026-08-23",
+      "added_at": "2026-10-14",
       "summary": "GeForce NOW for Nintendo Switch.",
       "author": "OpenCloudGaming",
-      "version": "0.0.8",
+      "version": "0.0.9",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/OpenCloudGaming/OpenNOW-Switch",
@@ -45230,8 +45230,8 @@
           "format": "hbas",
           "filename": "OpenNOW.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/OpenNOW/manifest.install",
-          "size": 26667,
-          "sha256": "1c6f068066ed22021aa02c1b0cd8e761fc24423a5cb8fdfe806f38f4b9ffc2de"
+          "size": 30317,
+          "sha256": "130b373b8b09c3c497d283c595a54dab193981e476f25181b2c2ab05e0fc16fd"
         }
       ],
       "popularity": 448,
@@ -45239,7 +45239,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-08-29"
+      "updated_at": "2026-10-14"
     },
     {
       "id": "vitadbtoo-vita:1449",
@@ -50523,7 +50523,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9701,
+      "popularity": 9734,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50550,7 +50550,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2967,
+      "popularity": 2970,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50577,7 +50577,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9156,
+      "popularity": 9181,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50604,7 +50604,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5728,
+      "popularity": 5740,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50631,7 +50631,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 50560,
+      "popularity": 50661,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50658,7 +50658,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 376,
+      "popularity": 382,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -50705,7 +50705,7 @@
       "name": "PS4Mount",
       "summary": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
       "author": "",
-      "version": "v0.5.0",
+      "version": "v0.5.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/ps4mount",
@@ -50713,15 +50713,15 @@
         {
           "format": "elf",
           "filename": "ps4mount.elf",
-          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.5.0/ps4mount.elf",
-          "sha256": "656988c71c6057207986498083c1fd219b17a94d7d98f94dde50162680c33787"
+          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.5.1/ps4mount.elf",
+          "sha256": "23ef99696af8da139fafd13e97e0d1f94968f2e745cb79e45a6aa71bc6391549"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-15 01:04:46 UTC+8"
+      "updated_at": "2026-10-15 09:40:13 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:aria2-v1.37.0-3.elf",
