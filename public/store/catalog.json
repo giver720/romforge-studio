@@ -45218,10 +45218,10 @@
       "name": "OpenNOW",
       "categories": [],
       "description": "OpenNOW is an independent, community-built GeForce NOW client for Nintendo Switch. Sign in with your NVIDIA account, browse supported games, search and filter the catalog, and launch cloud sessions directly from your console.\n\nFeatures include configurable resolution, bitrate, frame rate, server region and decoder settings; controller, touch and inline-keyboard input; support for up to four controllers; live stream and network statistics; session recovery; and optional HOME Menu shortcuts for individual games.\n\nA GeForce NOW account and stable internet connection are required. Launch through Homebrew Menu using title override/application mode for sufficient memory. OpenNOW is unofficial and is not affiliated with NVIDIA or Nintendo.\n",
-      "added_at": "2026-10-14",
+      "added_at": "2026-10-15",
       "summary": "GeForce NOW for Nintendo Switch.",
       "author": "OpenCloudGaming",
-      "version": "0.0.9",
+      "version": "0.0.10",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/OpenCloudGaming/OpenNOW-Switch",
@@ -45230,8 +45230,8 @@
           "format": "hbas",
           "filename": "OpenNOW.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/OpenNOW/manifest.install",
-          "size": 30317,
-          "sha256": "130b373b8b09c3c497d283c595a54dab193981e476f25181b2c2ab05e0fc16fd"
+          "size": 30325,
+          "sha256": "5d2b4f853483b7684dc251215a3e1541edb43ac72018b1ebfef272c7931a67cd"
         }
       ],
       "popularity": 448,
@@ -45239,7 +45239,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-14"
+      "updated_at": "2026-10-16"
     },
     {
       "id": "vitadbtoo-vita:1449",
@@ -50523,7 +50523,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9839,
+      "popularity": 9870,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50550,7 +50550,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2994,
+      "popularity": 3000,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50577,7 +50577,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9316,
+      "popularity": 9355,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50604,7 +50604,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5785,
+      "popularity": 5794,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50631,7 +50631,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 51113,
+      "popularity": 51219,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50658,7 +50658,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 390,
+      "popularity": 395,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51088,30 +51088,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.0.26.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.0.27.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.0.26",
+      "version": "v7.0.27",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.0.26.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.26/ps5upload-7.0.26.elf",
-          "sha256": "9b08d5a3849a10209be028b63c07a181b10fd146a7cf94fd3185f328e68dea01"
+          "filename": "ps5upload-7.0.27.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.27/ps5upload-7.0.27.elf",
+          "sha256": "855f106a64a6e8a1ec0a3fac65e21585f209c9d6751995def04ee551b90a61ea"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-16 09:41:35 UTC+8"
+      "updated_at": "2026-10-16 16:48:19 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -64836,10 +64836,10 @@
         "utilities"
       ],
       "description": "Switch Frame Tap is a sysmodule that streams the game you are playing - picture and sound - to a Windows, Linux or macOS PC, with no capture card and no dock. It reads the game's finished frames and encodes them with the Switch's own H.264 encoder: native 1080p at 60 fps.\n\n- Play a Switch Lite (or any Switch) on a big screen: a USB cable in handheld, or the network (Wi-Fi or the dock's LAN port) to play docked\n- Game audio, also in games that block recording (optional), and recording to MP4 on the PC\n- Native-resolution PNG screenshots on a button combo, also next to the system's Album screenshots\n- Webcam mode: the Switch shows up as a USB camera, for OBS (H.264, 1080p60) or any camera app (uncompressed, 720p)\n- Turn the Switch's screen off while you stream\n- This manager app for the settings and to install the optional tools (Ultrahand, SaltyNX, ReverseNX-RT, sys-clk or Horizon OC), plus a Tesla/Ultrahand overlay\n\nNeeds Atmosphere (firmware 21 to 23) and the PC viewer (Windows, Linux or macOS) from the GitHub releases page. It reads the running game like a debugger; with cheats loaded for a game it reads through Atmosphere's cheat engine, which is slower.",
-      "added_at": "2026-10-14",
+      "added_at": "2026-10-16",
       "summary": "Stream your games to a PC at 1080p60",
       "author": "Papux200",
-      "version": "0.7.12",
+      "version": "0.7.13",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/TomasUribe/switch-frame-tap",
@@ -64848,8 +64848,8 @@
           "format": "hbas",
           "filename": "SwitchFrameTap.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SwitchFrameTap/manifest.install",
-          "size": 9929,
-          "sha256": "d53e8ca94c15bee5641550c6856f369754e8c4858f777aa03fef54af60d88bf3"
+          "size": 9990,
+          "sha256": "ad940fd3a69d8ff159cb03716c10773403a404485da48e2bb87cca1c27ace7fc"
         }
       ],
       "popularity": 0,
@@ -64857,7 +64857,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-14"
+      "updated_at": "2026-10-16"
     },
     {
       "id": "hbas-switch:SwitchFTPClient",
@@ -76653,6 +76653,39 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2025-10-01"
+    },
+    {
+      "id": "hbas-wiiu:WafelInstaller",
+      "platforms": [
+        "wiiu"
+      ],
+      "name": "Wafel Installer",
+      "categories": [
+        "utilities"
+      ],
+      "description": "This app is designed to be run from the browser via https://wafel.xyz. It helps prepare (format and partition) your USB or SD card, then sets up Aroma + Stroopwafel + ISFShax.\n\nIt also includes options to manage Stroopwafel plugins, set up SDUSB or USB partitions, and uninstall them. \nThis app can also be run directly from Aroma to add ISFShax + Stroopwafel and to manage plugins.",
+      "added_at": "2026-08-15",
+      "summary": "Easy Install ISFShax, Stroopwafel, Aroma",
+      "author": "zer00p",
+      "version": "1.7",
+      "license": "GPLv2",
+      "icon_url": null,
+      "release_url": "https://github.com/zer00p/wafel_installer",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "WafelInstaller.hbas",
+          "url": "https://wiiu.cdn.fortheusers.org/packages/WafelInstaller/manifest.install",
+          "size": 3279,
+          "sha256": "ae9f8fc30de4f0c9a259b00980742713e013331efadec6f5d536da614b536032"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WafelInstaller/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/wiiu",
+      "license_url": null,
+      "updated_at": "2026-10-16"
     },
     {
       "id": "vitadbtoo-psp:906",
