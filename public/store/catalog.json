@@ -7184,6 +7184,39 @@
       "updated_at": "2025-11-08T09:34:49Z"
     },
     {
+      "id": "hbas-switch:BetterBedrockNX",
+      "platforms": [
+        "switch"
+      ],
+      "name": "BetterBedrock NX",
+      "categories": [
+        "utilities"
+      ],
+      "description": "BetterBedrock NX is a toolkit for Minecraft (Bedrock) on a modded Switch running Atmosphere, for consoles that stay off Nintendo's servers (an emuMMC with Nintendo blocked, or a banned console) with a community server setup such as Nextendo's Prelude.\n\n- Vibrant Visuals on a Switch 1: the original Switch's Minecraft has Vibrant Visuals built in but switched off. This switches it on for Minecraft 1.26.44 (an Atmosphere exefs patch for that exact build), with Fast / Balanced / Quality profiles tuned for the Switch 1. It needs an overclock: about 20-25 fps in handheld at a high overclock with Mojang's own settings; the profiles are lighter.\n- Microsoft sign-in fix: Prelude (from 3.5.7) redirects Microsoft's sign-in servers in the hosts file, so Minecraft can't sign in. This turns off just those lines, and can undo it.\n- Join your own server: Minecraft on Switch has no Add Server button. One featured server in Play > Servers becomes a door to the server you choose, through BedrockConnect (any port) or directly (servers on port 19132).\n- A Tesla/Ultrahand overlay to switch routing on and off.\n\nNintendo's hosts lines are never touched, and it never contacts Nintendo. Formerly BedrockLink: settings carry over. Tested on firmware 22.5.0, Atmosphere 1.11.2 (Mariko).",
+      "added_at": "2026-10-06",
+      "summary": "Minecraft Bedrock toolkit for a modded Switch",
+      "author": "TomasUribe",
+      "version": "2.0.0",
+      "license": "GPLv2",
+      "icon_url": null,
+      "release_url": "https://github.com/TomasUribe/betterbedrock-nx",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "BetterBedrockNX.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/BetterBedrockNX/manifest.install",
+          "size": 8667,
+          "sha256": "eeffc076bdedb4454b7cf5ca3cfce64fae885595d454f404f8db4536ed2dc341"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/BetterBedrockNX/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-10-16"
+    },
+    {
       "id": "open-shop-channel-wii:betterpii",
       "platforms": [
         "wii"
@@ -20160,6 +20193,39 @@
       "updated_at": "2026-06-26"
     },
     {
+      "id": "hbas-switch:Emulanders",
+      "platforms": [
+        "switch"
+      ],
+      "name": "Emulanders",
+      "categories": [
+        "utilities"
+      ],
+      "description": "Emulanders is an end-to-end Skylanders NFC emulation, Joy-Con dumping, and collection management ecosystem for the Nintendo Switch.\n\nFeatures:\n- Mifare Protocol Emulation: Background sysmodule intercepting nfc:mf:u calls in Skylanders: Imaginators.\n- Tesla Overlay: Hot-swap and mount virtual .dump figures on-the-fly during gameplay.\n- Emulanders Portal: Standalone full-screen app for Joy-Con tag dumping, 1:1 and New Identity figure cloning, screenshot photo cropper, and OTA asset/dump downloaders.\n- Full bilingual localization (English & Portuguese).\n\nPackage installs the complete bundle: sysmodule (atmosphere/contents/420000000000E311), Tesla overlay (switch/.overlays/emulanders.ovl), and Emulanders Portal app (switch/EmulandersPortal/EmulandersPortal.nro).",
+      "added_at": "2026-10-15",
+      "summary": "Skylanders NFC Emulation, Joy-Con scanner, dump manager & Tesla overlay",
+      "author": "joaoHypo",
+      "version": "1.0.0",
+      "license": "GPLv3",
+      "icon_url": null,
+      "release_url": "https://github.com/joaohypo/emulanders/releases",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "Emulanders.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/Emulanders/manifest.install",
+          "size": 13339,
+          "sha256": "783d5a136b0e2309bc29cf50527714b3229def000866f48e8afc3ad53554f503"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/Emulanders/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-10-16"
+    },
+    {
       "id": "hbas-switch:emummc-toggle",
       "platforms": [
         "switch"
@@ -23204,7 +23270,7 @@
       ],
       "name": "FlashNX",
       "categories": [],
-      "description": "Plays .swf games from your SD card, or downloads them on the console: the Import tab searches the Flashpoint Archive and fetches a game with its title, its cover and its companion files. AS1/AS2 run well, AS3 partially. Controls are remapped per game on a picture of the controller. Each game keeps its own screen mode, rotation, zoom, filter and CPU overclock. Hold R when opening the Homebrew Menu, or FlashNX will not have the memory to launch a game. Atmosphère required. Flash emulation by Ruffle (ruffle.rs).",
+      "description": "Plays .swf games from your SD card, or downloads them on the console: the Import tab opens on Flashpoint Archive shelves (a random studio, random games), searches the whole archive and fetches a game with its cover and companion files. AS1 and AS2 run well, much of AS3 too. Up to four players, and a single Joy-Con held sideways is a whole controller. Controls are remapped per game on a picture of the controller, and each game keeps its own screen mode, rotation, zoom, filter and CPU overclock. Hold R while starting any game from the HOME Menu, then pick FlashNX, or it will not have the memory to run a game. Atmosphère required. Flash emulation by Ruffle (ruffle.rs).",
       "added_at": "2026-10-09",
       "summary": "Play your Flash (.swf) games on Switch, powered by Ruffle.",
       "author": "Jonathan8520",
@@ -23218,7 +23284,7 @@
           "filename": "FlashNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/FlashNX/manifest.install",
           "size": 18406,
-          "sha256": "2cce799b02214b4297ee2e9296f8c2d472de60d1c950e8af0ffd6197b88c4da4"
+          "sha256": "340827b6f6384ea963dcd074e54299812439e891fa4b4a68dba45ef6d3230799"
         }
       ],
       "popularity": 2581,
@@ -23226,7 +23292,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-10"
+      "updated_at": "2026-10-16"
     },
     {
       "id": "hbas-switch:flavortown",
@@ -50523,7 +50589,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9870,
+      "popularity": 9901,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50550,7 +50616,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3000,
+      "popularity": 3005,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50577,7 +50643,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9355,
+      "popularity": 9396,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50604,7 +50670,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5794,
+      "popularity": 5806,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50631,7 +50697,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 51219,
+      "popularity": 51334,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50828,30 +50894,30 @@
       "updated_at": "2026-10-02 14:39:43 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:TabShifter-v1.1.0.elf",
+      "id": "ps5-payloads-atlas:TabShifter.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5 TabShifter",
       "summary": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (FW 13.60 supported).",
       "author": "",
-      "version": "v.1.1.0",
+      "version": "v.1.2.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/xvvulcanvx/ps5-tabshifter",
       "downloads": [
         {
           "format": "elf",
-          "filename": "TabShifter-v1.1.0.elf",
-          "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v.1.1.0/TabShifter-v1.1.0.elf",
-          "sha256": "721a65877123362a18f4c9d43d64d971ae1bbff3cff61b0d9e069bf1484b91a1"
+          "filename": "TabShifter.elf",
+          "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v.1.2.1/TabShifter.elf",
+          "sha256": "147945cffb28405557a49cd4929c7d0534c55f6a757aba0063f9ce475c1c7255"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-15 22:51:39 UTC+8"
+      "updated_at": "2026-10-17 04:56:27 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:tailscale-0.7.1.elf",
@@ -51088,30 +51154,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.0.27.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.0.29.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.0.27",
+      "version": "v7.0.29",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.0.27.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.27/ps5upload-7.0.27.elf",
-          "sha256": "855f106a64a6e8a1ec0a3fac65e21585f209c9d6751995def04ee551b90a61ea"
+          "filename": "ps5upload-7.0.29.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.29/ps5upload-7.0.29.elf",
+          "sha256": "fa935b612129c225342cb7016159bfa3d5f4cbef75bb4132ce1e0ade03ae39da"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-16 16:48:19 UTC+8"
+      "updated_at": "2026-10-17 02:59:02 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
