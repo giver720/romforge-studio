@@ -50523,7 +50523,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9801,
+      "popularity": 9825,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50550,7 +50550,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2987,
+      "popularity": 2989,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50577,7 +50577,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9262,
+      "popularity": 9295,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50604,7 +50604,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5770,
+      "popularity": 5780,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50631,7 +50631,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 50932,
+      "popularity": 51044,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50658,7 +50658,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 387,
+      "popularity": 390,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51088,30 +51088,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.0.23.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.0.26.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.0.23",
+      "version": "v7.0.26",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.0.23.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.23/ps5upload-7.0.23.elf",
-          "sha256": "419b56a10336dda8f4a28672271dfb635e74b05966cc08d44305e70f862dc110"
+          "filename": "ps5upload-7.0.26.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.26/ps5upload-7.0.26.elf",
+          "sha256": "9b08d5a3849a10209be028b63c07a181b10fd146a7cf94fd3185f328e68dea01"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-15 15:48:16 UTC+8"
+      "updated_at": "2026-10-16 09:41:35 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -55167,6 +55167,12 @@
       "downloads": [
         {
           "format": "zip",
+          "filename": "3ds.zip",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.1.0/3ds.zip",
+          "size": 99868
+        },
+        {
+          "format": "zip",
           "filename": "Roku-Remote-3DS-V1.1.0.zip",
           "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.1.0/Roku-Remote-3DS-V1.1.0.zip",
           "size": 365285
@@ -55179,8 +55185,8 @@
         },
         {
           "format": "cia",
-          "filename": "RokuRemote3DSv1.1.0.cia",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.1.0/RokuRemote3DSv1.1.0.cia",
+          "filename": "RokuRemote3DSV1.1.0.cia",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.1.0/RokuRemote3DSV1.1.0.cia",
           "size": 248256
         },
         {
