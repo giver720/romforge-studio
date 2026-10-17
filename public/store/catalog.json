@@ -34731,22 +34731,22 @@
       "name": "Level256 Installer",
       "summary": "",
       "author": "Tekito_256",
-      "version": "v1.0.0",
-      "license": null,
+      "version": "v2.0.0",
+      "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/Tekito-256/level256-installer/refs/heads/main/assets/meta/icon.png",
       "release_url": "https://github.com/Tekito-256/level256-installer/releases",
       "downloads": [
         {
           "format": "cia",
-          "filename": "level256-installer.cia",
-          "url": "https://github.com/Tekito-256/level256-installer/releases/download/v1.0.0/level256-installer.cia",
-          "size": 1044416
+          "filename": "Level256Installer.cia",
+          "url": "https://github.com/Tekito-256/level256-installer/releases/download/v2.0.0/Level256Installer.cia",
+          "size": 1364928
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2025-03-14T14:03:21Z"
+      "updated_at": "2026-10-17T12:09:29Z"
     },
     {
       "id": "open-shop-channel-wii:libmii-example",
@@ -41776,7 +41776,7 @@
       "name": "Nintellivision",
       "summary": "Nintellivision - an Intellivision Emulator for the DS/DSi. High compatibility, custom overlay support, high score saving, tons of input mapping - all the quality of life improvements you need!",
       "author": "wavemotion-dave",
-      "version": "6.3",
+      "version": "6.4",
       "license": null,
       "icon_url": "https://db.universal-team.net/assets/images/icons/nintellivision.png",
       "release_url": "https://github.com/wavemotion-dave/NINTV-DS/releases",
@@ -41784,14 +41784,14 @@
         {
           "format": "nds",
           "filename": "NINTV-DS.nds",
-          "url": "https://github.com/wavemotion-dave/NINTV-DS/releases/download/6.3/NINTV-DS.nds",
+          "url": "https://github.com/wavemotion-dave/NINTV-DS/releases/download/6.4/NINTV-DS.nds",
           "size": 790016
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-01-01T12:21:57Z"
+      "updated_at": "2026-10-17T11:38:32Z"
     },
     {
       "id": "universal-db:lartodor/Nintendo-3DS-SpeedMaze",
@@ -50619,7 +50619,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9943,
+      "popularity": 9974,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50646,7 +50646,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3013,
+      "popularity": 3019,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50673,7 +50673,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9440,
+      "popularity": 9472,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50700,7 +50700,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5828,
+      "popularity": 5846,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50727,7 +50727,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 51528,
+      "popularity": 51660,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50754,7 +50754,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 404,
+      "popularity": 406,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
