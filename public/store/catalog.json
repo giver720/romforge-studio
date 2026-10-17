@@ -28652,30 +28652,30 @@
       "updated_at": "2026-10-02"
     },
     {
-      "id": "ps5-payloads-atlas:HearBridge-PS5-1.3.0.elf",
+      "id": "ps5-payloads-atlas:HearBridge-1.3.5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "HearBridge PS5",
       "summary": "Bluetooth A2DP audio bridge for PS5 homebrew",
       "author": "",
-      "version": "v1.3.0",
+      "version": "v1.3.5",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/x-f1reball-x/hearbridge-ps5",
       "downloads": [
         {
           "format": "elf",
-          "filename": "HearBridge-PS5-1.3.0.elf",
-          "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.0/HearBridge-PS5-1.3.0.elf",
-          "sha256": "0867d014d0fca7250c0999dab6b575ee480c5f32dd8374e10634f8ff43b4ea5e"
+          "filename": "HearBridge-1.3.5.elf",
+          "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.5/HearBridge-1.3.5.elf",
+          "sha256": "34e790936eee274137a20e879fa9bb746c302d017acc2164be6958a8470ac4fe"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-10 16:15:02 UTC+8"
+      "updated_at": "2026-10-17 12:41:49 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1071",
@@ -50619,7 +50619,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 9919,
+      "popularity": 9943,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50646,7 +50646,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3009,
+      "popularity": 3013,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50673,7 +50673,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9415,
+      "popularity": 9440,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50700,7 +50700,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5820,
+      "popularity": 5828,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50727,7 +50727,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 51441,
+      "popularity": 51528,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50754,7 +50754,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 399,
+      "popularity": 404,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51184,30 +51184,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.0.32.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.0.34.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.0.32",
+      "version": "v7.0.34",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.0.32.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.32/ps5upload-7.0.32.elf",
-          "sha256": "05f0fd48d3983cd34c03163950f545446a4db0e34eaf3131753e3fb8fbdf1f3d"
+          "filename": "ps5upload-7.0.34.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.0.34/ps5upload-7.0.34.elf",
+          "sha256": "f6a09ed9f92ea230490e2bc3ad912c4e882882839a25a184bb6daddabc0904a7"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-17 10:18:20 UTC+8"
+      "updated_at": "2026-10-17 16:37:03 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
