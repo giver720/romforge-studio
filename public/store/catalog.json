@@ -28652,30 +28652,30 @@
       "updated_at": "2026-10-02"
     },
     {
-      "id": "ps5-payloads-atlas:HearBridge-1.3.5.elf",
+      "id": "ps5-payloads-atlas:HearBridge-1.3.6.elf",
       "platforms": [
         "ps5"
       ],
       "name": "HearBridge PS5",
       "summary": "Bluetooth A2DP audio bridge for PS5 homebrew",
       "author": "",
-      "version": "v1.3.5",
+      "version": "v1.3.6",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/x-f1reball-x/hearbridge-ps5",
       "downloads": [
         {
           "format": "elf",
-          "filename": "HearBridge-1.3.5.elf",
-          "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.5/HearBridge-1.3.5.elf",
-          "sha256": "34e790936eee274137a20e879fa9bb746c302d017acc2164be6958a8470ac4fe"
+          "filename": "HearBridge-1.3.6.elf",
+          "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.3.6/HearBridge-1.3.6.elf",
+          "sha256": "7b1a1b4a9a44db0723692a83718ebca63ecef38875a53a41328950f2cfa6877c"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-17 12:41:49 UTC+8"
+      "updated_at": "2026-10-18 13:44:23 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1071",
@@ -34580,19 +34580,19 @@
           "format": "3dsx",
           "filename": "isle.3dsx",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.3dsx",
-          "size": 3045560
+          "size": 3048576
         },
         {
           "format": "cia",
           "filename": "isle.cia",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.cia",
-          "size": 2191296
+          "size": 2193344
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-18T02:07:49Z"
+      "updated_at": "2026-10-18T05:58:03Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -50593,7 +50593,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10069,
+      "popularity": 10102,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50620,7 +50620,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3031,
+      "popularity": 3034,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50647,7 +50647,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9567,
+      "popularity": 9594,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50674,7 +50674,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5867,
+      "popularity": 5876,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50701,7 +50701,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 51977,
+      "popularity": 52069,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50728,7 +50728,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 410,
+      "popularity": 411,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -81612,28 +81612,28 @@
       "name": "zelda-tmc-3ds",
       "summary": "Native Nintendo 3DS port of The Legend of Zelda: The Minish Cap based on Project Picori.",
       "author": "estebanpdn",
-      "version": "v2.1",
+      "version": "v2.2",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/EstebanPdN/zelda-tmc-3ds/main/platform/3ds/assets/icon-48.png",
       "release_url": "https://github.com/EstebanPdN/zelda-tmc-3ds/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "tmc-3ds-v2.1.3dsx",
-          "url": "https://github.com/EstebanPdN/zelda-tmc-3ds/releases/download/v2.1/tmc-3ds-v2.1.3dsx",
-          "size": 4982700
+          "filename": "tmc-3ds-v2.2.3dsx",
+          "url": "https://github.com/EstebanPdN/zelda-tmc-3ds/releases/download/v2.2/tmc-3ds-v2.2.3dsx",
+          "size": 4975192
         },
         {
           "format": "cia",
-          "filename": "tmc-3ds-v2.1.cia",
-          "url": "https://github.com/EstebanPdN/zelda-tmc-3ds/releases/download/v2.1/tmc-3ds-v2.1.cia",
-          "size": 3625920
+          "filename": "tmc-3ds-v2.2.cia",
+          "url": "https://github.com/EstebanPdN/zelda-tmc-3ds/releases/download/v2.2/tmc-3ds-v2.2.cia",
+          "size": 3621824
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-20T08:16:04Z"
+      "updated_at": "2026-10-18T09:05:14Z"
     },
     {
       "id": "vitadbtoo-vita:993",
