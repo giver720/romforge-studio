@@ -196,6 +196,32 @@
       "updated_at": "2025-10-18"
     },
     {
+      "id": "ps5-payloads-atlas:bond-server-0.3.0.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "007 First Light PS5 Online",
+      "summary": "007 First Light (PPSA11386) online on a jailbroken PS5, with no IOI servers involved and no PC needed. One payload does everything on the console, so the online features and TacSim work.",
+      "author": "",
+      "version": "v0.3.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://theghostonline.dev/theghostonline/007-first-light-ps5",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "bond-server-0.3.0.elf",
+          "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5/releases/download/v0.3.0/bond-server-0.3.0.elf",
+          "sha256": null
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-19 02:03:47 UTC+8"
+    },
+    {
       "id": "hbas-switch:100boxesNX",
       "platforms": [
         "switch"
@@ -5925,7 +5951,7 @@
       "name": "Balatro3DS",
       "summary": "A fanmade Balatro clone for the 3DS",
       "author": "Gazpacho",
-      "version": "v2.0.4-base",
+      "version": "v2.0.5-base",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/idkhan/Balatro3DS/refs/heads/main/resources/textures/1x/icon.png",
       "release_url": "https://github.com/idkhan/Balatro3DS/releases",
@@ -5933,20 +5959,20 @@
         {
           "format": "cia",
           "filename": "Balatro.cia",
-          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.4-base/Balatro.cia",
-          "size": 26887104
+          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.5-base/Balatro.cia",
+          "size": 26936256
         },
         {
           "format": "3dsx",
           "filename": "Balatro3DS.3dsx",
-          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.4-base/Balatro3DS.3dsx",
-          "size": 16961839
+          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.5-base/Balatro3DS.3dsx",
+          "size": 16977206
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-15T19:18:56Z"
+      "updated_at": "2026-10-18T17:24:07Z"
     },
     {
       "id": "vitadbtoo-vita:573",
@@ -25467,7 +25493,7 @@
       "name": "Garlic SaveMgr for PS5",
       "summary": "PS5 save decrypt/encrypt/browse with embedded web UI.",
       "author": "",
-      "version": "v1.13.1",
+      "version": "v1.14.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-savemgr",
@@ -25475,7 +25501,7 @@
         {
           "format": "elf",
           "filename": "garlic-savemgr.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.13.1/garlic-savemgr.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.14.0/garlic-savemgr.elf",
           "sha256": null
         }
       ],
@@ -25483,7 +25509,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-19 10:28:52 UTC+8"
+      "updated_at": "2026-10-19 01:50:22 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -35945,6 +35971,32 @@
       "updated_at": "2026-08-06T19:56:35Z"
     },
     {
+      "id": "ps5-payloads-atlas:lz4-compression.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "LZ4 Compression for PS5",
+      "summary": "Shrink your PS5 games on the console itself. Pick a game, choose Compress with LZ4, and it packs the game data into LZ4 asset packs that APR-EMU reads while the game runs. Every file gets checked before anything's deleted, and if the game doesn't ship APR-EMU, the right runtime is added for you.",
+      "author": "",
+      "version": "v1.6.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://theghostonline.dev/theghostonline/ps5-lz4-compression",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "lz4-compression.elf",
+          "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.0/lz4-compression.elf",
+          "sha256": null
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-19 03:52:42 UTC+8"
+    },
+    {
       "id": "vitadbtoo-vita:867",
       "platforms": [
         "psvita"
@@ -40660,6 +40712,32 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2011-10-21T00:00:00+00:00"
+    },
+    {
+      "id": "ps5-payloads-atlas:neo-manager.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "NeoEnabler",
+      "summary": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
+      "author": "",
+      "version": "v0.3.2",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/gasb07/neoenabler",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "neo-manager.elf",
+          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.2/neo-manager.elf",
+          "sha256": "bbc90b7de4e3e284c0c6c956b5ad987e6ff6402523bee2f75de44383bd50deea"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-18 00:35:43 UTC+8"
     },
     {
       "id": "open-shop-channel-wii:neopop",
@@ -50529,7 +50607,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10143,
+      "popularity": 10168,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50556,7 +50634,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3039,
+      "popularity": 3045,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50583,7 +50661,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9632,
+      "popularity": 9678,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50610,7 +50688,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5895,
+      "popularity": 5912,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50637,7 +50715,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 52197,
+      "popularity": 52346,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50664,7 +50742,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 412,
+      "popularity": 415,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -50938,6 +51016,32 @@
       "updated_at": "2026-10-09 00:06:48 UTC+8"
     },
     {
+      "id": "ps5-payloads-atlas:fps60.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ps5-60FPS",
+      "summary": "Unlock 60 FPS in PS4 and PS5 games on a jailbroken PS5, with one switch per game.",
+      "author": "",
+      "version": "v1.0.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/eladharels/ps5-60fps",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "fps60.elf",
+          "url": "https://github.com/eladharels/ps5-60FPS/releases/download/v1.0.0/fps60.elf",
+          "sha256": "5331ebf1b69cd272a0491f899b14ca5d59240adee2e69078631473070ddeca9b"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-16 13:37:57 UTC+8"
+    },
+    {
       "id": "ps5-payloads-atlas:ps5-app-dumper_v2.10.elf",
       "platforms": [
         "ps5"
@@ -51042,30 +51146,30 @@
       "updated_at": "2026-10-15 03:30:13 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5-syslang-zh-Hans-v0.2.1.elf",
+      "id": "ps5-payloads-atlas:syslang-ar-v0.3.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-syslang",
       "summary": "ShellUI language-switching payload for changing the PS5 system language, including on region-locked consoles.",
       "author": "",
-      "version": "v0.2.1",
+      "version": "v0.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/owendswang/ps5-syslang",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5-syslang-zh-Hans-v0.2.1.elf",
-          "url": "https://github.com/owendswang/ps5-syslang/releases/download/v0.2.1/ps5-syslang-zh-Hans-v0.2.1.elf",
-          "sha256": "1baaa4aa01540e07dea8e452594d04bfbb06a0a4abcbae342bd8ca24f56c423e"
+          "filename": "syslang-ar-v0.3.elf",
+          "url": "https://github.com/owendswang/ps5-syslang/releases/download/v0.3/syslang-ar-v0.3.elf",
+          "sha256": "71293a7c3eb22dff1dc63ac83aea92e03f66af18ccb48bda17229d58fa1de38c"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-02 01:43:22 UTC+8"
+      "updated_at": "2026-10-19 00:22:59 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:ps5debug-NG_v1.3.2.elf",
@@ -51094,30 +51198,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.1.2.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.1.4.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.1.2",
+      "version": "v7.1.4",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.1.2.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.2/ps5upload-7.1.2.elf",
-          "sha256": "dde5731e9423112c243cde2c13165b5992f99e3ec35eb423e2c2bcbfab0ee564"
+          "filename": "ps5upload-7.1.4.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.4/ps5upload-7.1.4.elf",
+          "sha256": "71398d65f2f7cd3d0a35ab16f7aee1f51f0f2d2d5b8ab3a184a62b68805cf775"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-18 21:23:58 UTC+8"
+      "updated_at": "2026-10-19 03:54:48 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -64842,10 +64946,10 @@
         "utilities"
       ],
       "description": "Switch Frame Tap is a sysmodule that streams the game you are playing - picture and sound - to a Windows, Linux or macOS PC, with no capture card and no dock. It reads the game's finished frames and encodes them with the Switch's own H.264 encoder: native 1080p at 60 fps.\n\n- Play a Switch Lite (or any Switch) on a big screen: a USB cable in handheld, or the network (Wi-Fi or the dock's LAN port) to play docked\n- Game audio, also in games that block recording (optional), and recording to MP4 on the PC\n- Native-resolution PNG screenshots on a button combo, also next to the system's Album screenshots\n- Webcam mode: the Switch shows up as a USB camera, for OBS (H.264, 1080p60) or any camera app (uncompressed, 720p)\n- Turn the Switch's screen off while you stream\n- This manager app for the settings and to install the optional tools (Ultrahand, SaltyNX, ReverseNX-RT, sys-clk or Horizon OC), plus a Tesla/Ultrahand overlay\n\nNeeds Atmosphere (firmware 21 to 23) and the PC viewer (Windows, Linux or macOS) from the GitHub releases page. It reads the running game like a debugger; with cheats loaded for a game it reads through Atmosphere's cheat engine, which is slower.",
-      "added_at": "2026-10-16",
+      "added_at": "2026-10-18",
       "summary": "Stream your games to a PC at 1080p60",
       "author": "Papux200",
-      "version": "0.7.13",
+      "version": "0.7.13.1",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/TomasUribe/switch-frame-tap",
@@ -64855,7 +64959,7 @@
           "filename": "SwitchFrameTap.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SwitchFrameTap/manifest.install",
           "size": 9990,
-          "sha256": "ad940fd3a69d8ff159cb03716c10773403a404485da48e2bb87cca1c27ace7fc"
+          "sha256": "9bbeac636c54db9bda55e4d19040dfee71b43785901025e8634b0a660b49abc2"
         }
       ],
       "popularity": 264,
@@ -64863,7 +64967,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-16"
+      "updated_at": "2026-10-18"
     },
     {
       "id": "hbas-switch:SwitchFTPClient",
@@ -67857,34 +67961,34 @@
       "name": "TheXTech",
       "summary": "The full port of the SMBX engine from VB6 into C++ and SDL2, FreeImage and MixerX",
       "author": "TheXTech Developers",
-      "version": "v1.7.4",
+      "version": "v1.7.4.1",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/TheXTech/TheXTech/main/resources/icon/thextech_48.png",
       "release_url": "https://github.com/TheXTech/TheXTech/releases",
       "downloads": [
         {
           "format": "zip",
-          "filename": "thextech-3ds-assets-aod-v1.7.4.zip",
-          "url": "https://github.com/TheXTech/TheXTech/releases/download/v1.7.4/thextech-3ds-assets-aod-v1.7.4.zip",
-          "size": 60781909
+          "filename": "thextech-3ds-assets-aod-v1.7.4.1.zip",
+          "url": "https://github.com/TheXTech/TheXTech/releases/download/v1.7.4.1/thextech-3ds-assets-aod-v1.7.4.1.zip",
+          "size": 60789065
         },
         {
           "format": "zip",
-          "filename": "thextech-3ds-assets-smbx13-v1.7.4.zip",
-          "url": "https://github.com/TheXTech/TheXTech/releases/download/v1.7.4/thextech-3ds-assets-smbx13-v1.7.4.zip",
-          "size": 48045837
+          "filename": "thextech-3ds-assets-smbx13-v1.7.4.1.zip",
+          "url": "https://github.com/TheXTech/TheXTech/releases/download/v1.7.4.1/thextech-3ds-assets-smbx13-v1.7.4.1.zip",
+          "size": 48054389
         },
         {
           "format": "zip",
-          "filename": "thextech-3ds-v1.7.4.zip",
-          "url": "https://github.com/TheXTech/TheXTech/releases/download/v1.7.4/thextech-3ds-v1.7.4.zip",
-          "size": 4227637
+          "filename": "thextech-3ds-v1.7.4.1.zip",
+          "url": "https://github.com/TheXTech/TheXTech/releases/download/v1.7.4.1/thextech-3ds-v1.7.4.1.zip",
+          "size": 4227012
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-05T21:01:25Z"
+      "updated_at": "2026-10-18T17:26:09Z"
     },
     {
       "id": "vitadbtoo-vita:727",
