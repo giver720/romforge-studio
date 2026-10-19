@@ -50607,7 +50607,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10205,
+      "popularity": 10227,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50634,7 +50634,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3054,
+      "popularity": 3060,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50661,7 +50661,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9706,
+      "popularity": 9733,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50688,7 +50688,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5932,
+      "popularity": 5947,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50715,7 +50715,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 52468,
+      "popularity": 52535,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50742,7 +50742,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 417,
+      "popularity": 419,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51172,30 +51172,30 @@
       "updated_at": "2026-09-05 16:40:09 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:pldmgr_v0.6.1.elf",
+      "id": "ps5-payloads-atlas:pldmgr_v0.6.2.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-payload-manager",
       "summary": "A modern, web-based dashboard to easily manage, import, and automatically load payloads on your PS5.",
       "author": "",
-      "version": "v0.6.1",
+      "version": "v0.6.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-payload-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "pldmgr_v0.6.1.elf",
-          "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.1/pldmgr_v0.6.1.elf",
-          "sha256": "5165cbe4c13360828bd0f5d558cdbb9e2d55b0660b1dc7f7a58d3f4ee9e23285"
+          "filename": "pldmgr_v0.6.2.elf",
+          "url": "https://github.com/itsPLK/ps5-payload-manager/releases/download/v0.6.2/pldmgr_v0.6.2.elf",
+          "sha256": "0cd5e0cc89ca4db6586dc1ff6f335caa4e33b50951c0ef86f5d1ea971f34e9c5"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-15 03:30:13 UTC+8"
+      "updated_at": "2026-10-19 20:00:07 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:syslang-ar-v0.3.elf",
@@ -51250,30 +51250,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.1.6.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.1.8.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.1.6",
+      "version": "v7.1.8",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.1.6.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.6/ps5upload-7.1.6.elf",
-          "sha256": "cc3cd53f9047ad6e82c13db246cb77c7399debaa00b57349c37e058b589b3950"
+          "filename": "ps5upload-7.1.8.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.8/ps5upload-7.1.8.elf",
+          "sha256": "2e7b45ca91a2aa0b3fb8f6f1478d77d925e6479ec83842f3971543b35d9bfa5f"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-19 12:08:40 UTC+8"
+      "updated_at": "2026-10-19 14:41:21 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
