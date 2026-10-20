@@ -50607,7 +50607,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10282,
+      "popularity": 10325,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50634,7 +50634,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3071,
+      "popularity": 3077,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50661,7 +50661,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9797,
+      "popularity": 9833,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50688,7 +50688,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5990,
+      "popularity": 6006,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50715,7 +50715,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 52869,
+      "popularity": 53100,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50742,7 +50742,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 424,
+      "popularity": 429,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51250,30 +51250,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.1.8.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.1.9.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.1.8",
+      "version": "v7.1.9",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.1.8.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.8/ps5upload-7.1.8.elf",
-          "sha256": "2e7b45ca91a2aa0b3fb8f6f1478d77d925e6479ec83842f3971543b35d9bfa5f"
+          "filename": "ps5upload-7.1.9.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.9/ps5upload-7.1.9.elf",
+          "sha256": "a9674bd22737688783c1857817d032ddf2fd5ca4e750eea17175428556271141"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-19 14:41:21 UTC+8"
+      "updated_at": "2026-10-20 04:14:26 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
