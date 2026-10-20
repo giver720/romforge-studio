@@ -31753,6 +31753,37 @@
       "updated_at": "2023-01-17"
     },
     {
+      "id": "hbas-switch:J2MENXX",
+      "platforms": [
+        "switch"
+      ],
+      "name": "J2meNXX",
+      "categories": [],
+      "description": "J2ME (Java ME / MIDP 2.0) emulator for Nintendo Switch, written in C with devkitPro + SDL2. Custom Java VM that runs old mobile phone .jar games directly on Switch: 2D/3D (M3G) graphics, MIDI/WAV/MP3 audio, HTTP/HTTPS/socket networking, RMS save data.\n\n",
+      "added_at": "2026-10-08",
+      "summary": "J2ME emulator for Nintendo Switch",
+      "author": "Tô Quang Thắng",
+      "version": "0.8.4",
+      "license": "n/a",
+      "icon_url": null,
+      "release_url": "https://github.com/ToThangGTVT/j2me-nxx",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "J2MENXX.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/J2MENXX/manifest.install",
+          "size": 17654,
+          "sha256": "21e659246f2c11109506dfb7d199923042f6bd09d235330555a2ab1f9d13713d"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/J2MENXX/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-10-20"
+    },
+    {
       "id": "vitadbtoo-vita:1075",
       "platforms": [
         "psvita"
@@ -40721,7 +40752,7 @@
       "name": "NeoEnabler",
       "summary": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
       "author": "",
-      "version": "v0.3.4",
+      "version": "v0.3.5",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/neoenabler",
@@ -40729,15 +40760,15 @@
         {
           "format": "elf",
           "filename": "neo-manager.elf",
-          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.4/neo-manager.elf",
-          "sha256": "92c624d96fa0350c9a45a0c66e890536f37a72a6c5f9421e07039368c05ae961"
+          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.3.5/neo-manager.elf",
+          "sha256": "65b7c27645fa54f2f7d5028236f7f413c08b0e28ce522011e3e3d6f268b30116"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-20 02:13:21 UTC+8"
+      "updated_at": "2026-10-20 23:32:48 UTC+8"
     },
     {
       "id": "open-shop-channel-wii:neopop",
@@ -50633,7 +50664,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10395,
+      "popularity": 10429,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50660,7 +50691,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3094,
+      "popularity": 3099,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50687,7 +50718,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9902,
+      "popularity": 9947,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50714,7 +50745,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6032,
+      "popularity": 6048,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50741,7 +50772,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 53537,
+      "popularity": 53777,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50768,7 +50799,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 432,
+      "popularity": 434,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -62263,11 +62294,11 @@
       "categories": [
         "utilities"
       ],
-      "description": "Sporegram is a Nintendo Switch port of AAhead, the Telegram client for the New Nintendo 3DS by Alex Gakh (Memetrix).\n\nEverything below the interface comes from there and is unchanged in substance: the MTProto transport, the application layer, storage, calls, and the text engine that does UTF-8, wrapping and Telegram's entities. That part was already proven against Telegram on real hardware, which is the only reason a port was affordable at all.\n\nThe interface is new. AAhead's views are composed for two stacked 400×240 panels; reshaping them into one 1280×720 screen turned out to cost more than writing an interface meant for it. So switch/ is written from scratch on SDL2 and FreeType, and none of source/ui/'s views are linked.\n\nSporegram is licensed GPL-3.0, like its upstream, and the whole source is here.",
-      "added_at": "2026-09-17",
-      "summary": "Unofficial Telegram client for Nintendo ",
+      "description": "Sporegram is a Telegram client for a Switch running custom firmware. Not a bridge and not a bot: the console talks to Telegram's servers over MTProto itself.\n\nFeatures\n- QR sign-in from your phone, two-step password supported\n- Chats, groups, channels, folders and archive in two panes: list and conversation on one screen\n- Replies, editing, deleting, forwarding, reactions, bot buttons, spoilers, quotes, premium emoji\n- Photos, albums and video right in the chat; video plays on the console\n- Send screenshots and clips from the console album, filtered by game with real game names\n- Voice messages: record, send, play, transcribe (Telegram Premium)\n- Voice calls with the four-emoji key check\n- Stickers: static, animated and video\n- Proxy: SOCKS5, HTTP and MTProto (dd and fake-TLS ee), right on the sign-in screen\n- Up to four accounts, each with its own session and cache\n- Russian and English\n- Touch in handheld and the pad everywhere; 720p and 1080p\n- Session file encrypted and bound to the console, optional passcode\n\nYou need your own Telegram API key from my.telegram.org in sdmc:/switch/sporegram/api.txt; the app writes a template and shows the steps on screen.\n\nFor voice messages and calls you need a headset with a microphone.\n\nA port of AAhead by Alex Gakh (Memetrix), GPL-3.0.",
+      "added_at": "2026-10-20",
+      "summary": "Unofficial Telegram client for Nintendo Switch",
       "author": "fungalspores",
-      "version": "1.0",
+      "version": "2.0",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/fungalspores/sporegram",
@@ -62276,8 +62307,8 @@
           "format": "hbas",
           "filename": "sporegram.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/sporegram/manifest.install",
-          "size": 32079,
-          "sha256": "979f593d9078cbb32331437e2aeca3f3cbe9ee332d50067d3248c4eca82724cd"
+          "size": 32223,
+          "sha256": "680ac141e342b62cd2318e6394cde56822ae4d300c2624495f473482fd4bed29"
         }
       ],
       "popularity": 94,
@@ -62285,7 +62316,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-10"
+      "updated_at": "2026-10-20"
     },
     {
       "id": "hbas-switch:SpotifySwitchRemote",
@@ -65079,6 +65110,39 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2023-01-28"
+    },
+    {
+      "id": "hbas-switch:SwitchHero",
+      "platforms": [
+        "switch"
+      ],
+      "name": "Switch Hero",
+      "categories": [
+        "games"
+      ],
+      "description": "Switch Hero is a rhythm game built for Nintendo Switch, designed for both standard controllers and guitar controllers.\n\nInspired by classic guitar rhythm games, Switch Hero brings fast, arcade-style note highway gameplay to the Switch with support for Joy-Con, Pro Controller, and compatible Wii guitar controllers.\n\nThe game supports Clone Hero-style custom song libraries, allowing players to bring their existing songs and charts into a portable console experience.\n\nFeatures include:\n\n• Joy-Con and Pro Controller support\n• Compatible Wii guitar controller support\n• Custom songs and charts\n• Clone Hero-compatible song structure\n• Multiple difficulty levels\n• Score tracking and performance feedback\n• Classic five-lane rhythm gameplay\n• Responsive gameplay designed specifically for Nintendo Switch\n\nWhether you're playing casually with a controller or using a guitar for the full rhythm-game experience, Switch Hero is built to make custom rhythm gaming portable.",
+      "added_at": "2026-10-07",
+      "summary": "A rhythm game for Nintendo Switch",
+      "author": "Rodrigo Ferreira",
+      "version": "0.3.1",
+      "license": "MIT",
+      "icon_url": null,
+      "release_url": "https://github.com/R-drg/switch-hero",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "SwitchHero.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/SwitchHero/manifest.install",
+          "size": 16381,
+          "sha256": "e7c68b8b2af29ef793742523c341271b5f82954de8a160980fae1009dbea4d3b"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchHero/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-10-20"
     },
     {
       "id": "hbas-switch:SwitchNotificationLED",
@@ -81238,7 +81302,7 @@
         "utilities"
       ],
       "description": "[TR] Switch oyunlarınızı kolayca Türkçeleştirmek için tasarlanmış hepsi bir arada çözüm.\n\n- Online Arşiv: Geniş bir yama listesine anında erişin ve indirin.\n- Otomatik Kurulum: Yamalar doğrudan doğru dizine kurulur.\n- Yama Yönetimi: Cihazınızdaki yüklü yamaları listeleyin ve düzenleyin.\n- Arama Özelliği: Arama kutusu ile istediğiniz oyunu saniyeler içinde bulun.\n- Modern ve Hızlı: Akıcı arayüzü ile en hızlı yama deneyimini yaşayın.\n\nDaha fazla detay için: https://github.com/sertay1/YamaNX\n\n\n[EN] All-in-one solution for translating your Nintendo Switch games.\n\n- Online Archive: Access and download a vast list of patches instantly.\n- Auto Install: Patches are placed directly in the correct directory.\n- Patch Management: List and manage the patches installed on your device.\n- Search Function: Find any game in seconds with the search box.\n- Fast & Modern: Enjoy the fastest patch experience with a sleek UI.\n\nFor more information: https://github.com/sertay1/YamaNX",
-      "added_at": "2026-06-21",
+      "added_at": "2026-10-19",
       "summary": "Easy Turkish game localization",
       "author": "SertAy",
       "version": "2.0.0",
@@ -81250,8 +81314,8 @@
           "format": "hbas",
           "filename": "YamaNXTurkishPatcher.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/YamaNXTurkishPatcher/manifest.install",
-          "size": 10593,
-          "sha256": "00e225dd4c22de9b1a65f34fc08cf7770c967c446efb785819fdfaf9067b340e"
+          "size": 10687,
+          "sha256": "0abfde65a30b194e2e6ef5af89b3ff999b84bda66df06bbf9b40c6e923e685a0"
         }
       ],
       "popularity": 2639,
