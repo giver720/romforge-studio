@@ -33738,7 +33738,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-20T09:43:03+00:00"
+      "updated_at": "2026-10-17T02:13:33+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -40374,13 +40374,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64827898
+          "size": 64831815
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-19T14:34:25Z"
+      "updated_at": "2026-10-20T12:40:42Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -47313,6 +47313,32 @@
       "updated_at": "2022-06-21"
     },
     {
+      "id": "ps5-payloads-atlas:perfbar-complete.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "PerfBar",
+      "summary": "A standalone on-screen performance overlay for the PS5. It draws FPS, frametimes, 1% lows, CPU/SoC temperatures, and RAM/VRAM usage directly over your games.",
+      "author": "",
+      "version": "perfbar-complete",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/x1nons/prefbar",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "perfbar-complete.elf",
+          "url": "https://github.com/X1NONs/PrefBar/releases/download/perfbar-complete/perfbar-complete.elf",
+          "sha256": "c06feb1dd34573086f43eaf6b39882e12776c8cc063cff110eae4b1bac310292"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-20 03:37:59 UTC+8"
+    },
+    {
       "id": "vitadbtoo-vita:1273",
       "platforms": [
         "psvita"
@@ -50607,7 +50633,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10357,
+      "popularity": 10395,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50634,7 +50660,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3085,
+      "popularity": 3094,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50661,7 +50687,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9866,
+      "popularity": 9902,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50688,7 +50714,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6017,
+      "popularity": 6032,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50715,7 +50741,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 53291,
+      "popularity": 53537,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50742,7 +50768,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 429,
+      "popularity": 432,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -54240,7 +54266,7 @@
       "name": "ReSharp3DS",
       "summary": "Porting nanoCLR \"C#\" for Nintendo 3DS",
       "author": "Saiitanaa",
-      "version": "v2.2.6",
+      "version": "v2.3.6",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/saysaa/ReSharp3DS/refs/heads/docs/icon.png",
       "release_url": "https://github.com/saysaa/ReSharp3DS/releases",
@@ -54248,20 +54274,20 @@
         {
           "format": "3dsx",
           "filename": "ReSharp3DS.3dsx",
-          "url": "https://github.com/saiitanaa/ReSharp3DS/releases/download/v2.2.6/ReSharp3DS.3dsx",
-          "size": 323952
+          "url": "https://github.com/saiitanaa/ReSharp3DS/releases/download/v2.3.6/ReSharp3DS.3dsx",
+          "size": 324656
         },
         {
           "format": "cia",
           "filename": "ReSharp3DS.cia",
-          "url": "https://github.com/saiitanaa/ReSharp3DS/releases/download/v2.2.6/ReSharp3DS.cia",
+          "url": "https://github.com/saiitanaa/ReSharp3DS/releases/download/v2.3.6/ReSharp3DS.cia",
           "size": 608192
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-06T14:19:00Z"
+      "updated_at": "2026-10-20T14:21:06Z"
     },
     {
       "id": "vitadbtoo-vita:83",
@@ -81215,7 +81241,7 @@
       "added_at": "2026-06-21",
       "summary": "Easy Turkish game localization",
       "author": "SertAy",
-      "version": "1.1.1",
+      "version": "2.0.0",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/sertay1/YamaNX",
@@ -81225,7 +81251,7 @@
           "filename": "YamaNXTurkishPatcher.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/YamaNXTurkishPatcher/manifest.install",
           "size": 10593,
-          "sha256": "88f94c8c38894b2237069fe828a08916fd0b882e25740b8f233bd7674e7287e8"
+          "sha256": "00e225dd4c22de9b1a65f34fc08cf7770c967c446efb785819fdfaf9067b340e"
         }
       ],
       "popularity": 2639,
@@ -81233,7 +81259,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-06-21"
+      "updated_at": "2026-10-20"
     },
     {
       "id": "vitadbtoo-vita:485",
@@ -81637,15 +81663,15 @@
       "platforms": [
         "switch"
       ],
-      "name": "Zelda Save Editor (Beta)",
+      "name": "Zelda Save Editor (Alpha)",
       "categories": [
         "utilities"
       ],
-      "description": "Public beta for Breath of the Wild on the original Nintendo Switch family. Edit hearts, stamina wheels, inventory, equipment, horses and advanced fields with undo/redo and verified backups. Includes Normal, transferred Profile 2 and Master Mode tabs, normal-only profile swapping, console-sourced navigation sounds and OLED black mode. Requires Atmosphere and application-mode homebrew with access to your installed BOTW resources. Launch Sphaira over BOTW by holding R for resource access, then close BOTW before editing. Keep an independent backup. Gameplay after profile swaps and wider device save-and-reload validation remain unverified; shared album and compendium pictures stay in place during swaps. Tested real-save fixture: BOTW 1.9.0. No Nintendo assets, private saves or extracted game resources are included.",
-      "added_at": "2026-10-02",
-      "summary": "Native BOTW save editor with profile management",
+      "description": "Save editor for Breath of the Wild and experimental Tears of the Kingdom on the original Nintendo Switch family. Edit player values, inventory, equipment and horses with undo/redo and verified backups. TOTK adds grouped armor stars/styles and Decayed/Pristine weapons, fusion, bulk tools, world flags, compendium, direct quest stages, map stamps, amiibo reset and Autobuild .zsbp import/export. BOTW retains separate Normal/Profile 2/Master Mode tabs and normal-only profile swapping. Includes console-sourced navigation sounds and Auto/Light/Dark/OLED appearance. Requires Atmosphere, application-mode homebrew and installed resources for the selected game. Hold R while opening that game to launch Sphaira, then open the editor; close the actual game before editing saves. Keep an independent backup. Expanded TOTK edits and fresh-install resource loading still need console acceptance; host tests do not establish in-game validity. Quest/world edits do not reconcile all story events or rewards. BOTW gameplay after profile swaps still needs wider testing. No Nintendo resource files or private saves are included. Screenshots are desktop previews of the same interface.",
+      "added_at": "2026-10-19",
+      "summary": "BOTW and experimental TOTK save editor",
       "author": "StockiestThree9",
-      "version": "0.1.4-beta.1",
+      "version": "0.1.5-alpha.5",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/amarkham23/Zelda-Save-Editor",
@@ -81654,8 +81680,8 @@
           "format": "hbas",
           "filename": "ZeldaSaveEditor.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/ZeldaSaveEditor/manifest.install",
-          "size": 10050,
-          "sha256": "d6744eef6b99d297bc7e1226bdf077743039b0ac70e71a4a4c8141b86b46e685"
+          "size": 10633,
+          "sha256": "7b59ba367e85e1374b7d4d3456d6a08273c85958245e9e863dc8e3c339018134"
         }
       ],
       "popularity": 6,
@@ -81663,7 +81689,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-17"
+      "updated_at": "2026-10-20"
     },
     {
       "id": "universal-db:EstebanPdN/zelda-alttp-3ds",
