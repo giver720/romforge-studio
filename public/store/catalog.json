@@ -33715,13 +33715,13 @@
       ],
       "name": "Korbo's Donut Shop",
       "summary": "Korbo's spinning donut!",
-      "description": "Korbo's world-famous* donut shop is always open!\n\n*Donut shop might not actually be \"world-famous\".\nNone of this would have ever happened without \"Wii Donut\" by emilydaemon, and\nxOx-Liy-Codez-XD-oXo helped me a ton getting the rewrite to initially work.\n\nMusic can be changed by adding a \"music.(mod/it/s3m/xm/whatever)\" file in the app directory.\nThis program supports *most* tracker music formats; https://modarchive.org is a good source.\nCertain formats (like mptm) may cause lag if intensive enough.\n\ne-mail:\nKorbo: korbin.m.marshall@gmail.com\n\t",
+      "description": "Korbo's world-famous* donut shop is always open!\n\n*Donut shop might not actually be \"world-famous\".\nNone of this would have ever happened without \"Wii Donut\" by emilydaemon, and\nxOx-Liy-Codez-XD-oXo helped me a ton getting the rewrite to initially work.\n\nMusic can be changed by adding a mod/it/s3m/xm/whatever tracker module in the music directory.\nThis program supports *most* tracker music formats; https://modarchive.org is a good source.\n\ne-mail:\nKorbo: korbin.m.marshall@gmail.com\n\t",
       "categories": [
         "games"
       ],
       "requirements": "wii · wii_mini · vwii · Wii Remote · Classic Controller · GameCube Controller · SDHC",
       "author": "Korbo",
-      "version": "8.0.0",
+      "version": "8.2.1",
       "title_id": "000100014EB9B936",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/korbodonut/icon.png",
@@ -33731,14 +33731,14 @@
           "format": "zip",
           "filename": "korbodonut.zip",
           "url": "https://hbb1.oscwii.org/api/contents/korbodonut/korbodonut.zip",
-          "size": 2675179
+          "size": 2311317
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-10T16:39:09+00:00"
+      "updated_at": "2026-10-20T09:43:03+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -50607,7 +50607,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10325,
+      "popularity": 10357,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50634,7 +50634,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3077,
+      "popularity": 3085,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50661,7 +50661,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 9833,
+      "popularity": 9866,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50688,7 +50688,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6006,
+      "popularity": 6017,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50715,7 +50715,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 53100,
+      "popularity": 53291,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
