@@ -50664,7 +50664,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10456,
+      "popularity": 10486,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50691,7 +50691,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3105,
+      "popularity": 3113,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50718,7 +50718,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10000,
+      "popularity": 10025,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50745,7 +50745,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6060,
+      "popularity": 6073,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50772,7 +50772,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 54016,
+      "popularity": 54152,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50799,7 +50799,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 435,
+      "popularity": 436,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -58217,32 +58217,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2025-01-07"
-    },
-    {
-      "id": "ps5-payloads-atlas:shadowmountplus.elf",
-      "platforms": [
-        "ps5"
-      ],
-      "name": "ShadowMount+",
-      "summary": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
-      "author": "",
-      "version": "1.7-beta5fix1",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/drakmor/shadowmountplus",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "shadowmountplus.elf",
-          "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7-beta5fix1/shadowmountplus.elf",
-          "sha256": "e85fd63b705498488f39c09c9aea6f9fa22e0df2e932865de49a8cedf25172d5"
-        }
-      ],
-      "source": "PS5 Payloads Atlas",
-      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
-      "license_url": null,
-      "popularity": null,
-      "updated_at": "2026-10-11 02:36:33 UTC+8"
     },
     {
       "id": "universal-db:dnasdw/SharedFontTool",
