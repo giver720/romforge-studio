@@ -20132,7 +20132,7 @@
       "name": "elfldr",
       "summary": "An ELF loader for jailbroken PS5s that accepts payloads on port 9021.",
       "author": "",
-      "version": "v0.26",
+      "version": "v0.27",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/ps5-payload-dev/elfldr",
@@ -20140,15 +20140,15 @@
         {
           "format": "elf",
           "filename": "elfldr-ps5.elf",
-          "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.26/elfldr-ps5.elf",
-          "sha256": "ed6d587a057c09d6a95b2176e336d9ffc605e547ac56462128b029e47b8ccea1"
+          "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.27/elfldr-ps5.elf",
+          "sha256": "82f6227610172c98bad6efe68219fc93a10027035991f47eb4b75532d023407d"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-30 01:31:18 UTC+8"
+      "updated_at": "2026-10-22 01:42:19 UTC+8"
     },
     {
       "id": "universal-db:glacialmoongames/EllisHouseCpp",
@@ -23327,10 +23327,10 @@
       "name": "FlashNX",
       "categories": [],
       "description": "Plays .swf games from your SD card, or downloads them on the console: the Import tab opens on Flashpoint Archive shelves (a random studio, random games), searches the whole archive and fetches a game with its cover and companion files. AS1 and AS2 run well, much of AS3 too. Up to four players, and a single Joy-Con held sideways is a whole controller. Controls are remapped per game on a picture of the controller, and each game keeps its own screen mode, rotation, zoom, filter and CPU overclock. Hold R while starting any game from the HOME Menu, then pick FlashNX, or it will not have the memory to run a game. Atmosphère required. Flash emulation by Ruffle (ruffle.rs).",
-      "added_at": "2026-10-17",
+      "added_at": "2026-10-20",
       "summary": "Play your Flash (.swf) games on Switch, powered by Ruffle.",
       "author": "Jonathan8520",
-      "version": "2.0.1",
+      "version": "2.0.2",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/Jonathan8520/FlashNX",
@@ -23339,8 +23339,8 @@
           "format": "hbas",
           "filename": "FlashNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/FlashNX/manifest.install",
-          "size": 19358,
-          "sha256": "bffc3a490c0c51d78b9fe13c6bc27141c0c614f02b383d9840f72bd2aecccbdb"
+          "size": 20318,
+          "sha256": "79a7e0baee0d4dfe5d7a21407686d3176cec6f0dce45f1e668d825a83a155a8d"
         }
       ],
       "popularity": 2958,
@@ -23348,7 +23348,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-18"
+      "updated_at": "2026-10-21"
     },
     {
       "id": "hbas-switch:flavortown",
@@ -48662,10 +48662,10 @@
         "utilities"
       ],
       "description": "PKSE (Pokémon Save Editor) is a Pokémon save editor for Nintendo Switch consoles -- no PC or save transfers needed.\n\nSupported games:\n- FireRed/LeafGreen\n- Let's Go, Pikachu!/Eevee!\n- Sword/Shield\n- Brilliant Diamond/Shining Pearl\n- Legends: Arceus\n- Scarlet/Violet\n- Legends: Z-A\n\nFeatures:\n- Edit party and box Pokémon: species, level, IVs/EVs, nature, ability, moves, held item, ball, OT and met data, shininess and gender\n- Trainer info and item pouches, with per-game item and count limits\n- Pokémon creator -- build one from scratch in any supported game's format\n- Legality checker flags illegal values as you edit; it never blocks or alters your data\n- Cross-game bank: deposit from one game, withdraw into another, converted to the destination format with origin preserved\n- HOME-style interface with full touch support\n- On-console save backup and restore with retained history\n\nFree, open source, built using PKHeX as a reference.",
-      "added_at": "2026-09-26",
+      "added_at": "2026-10-20",
       "summary": "Open-source Pokémon save editor",
       "author": "Kiasta",
-      "version": "1.2.0",
+      "version": "1.2.1",
       "license": "Affero GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/kiasta/PKSE",
@@ -48674,8 +48674,8 @@
           "format": "hbas",
           "filename": "PKSE.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/PKSE/manifest.install",
-          "size": 157732,
-          "sha256": "e2365d5bede61cb99faf2db860df6e0f0e6818efe263bb7951b44e25d6b5fe28"
+          "size": 157872,
+          "sha256": "82ee8a8a60076513010d0f68c588e23bb4df2ec2c1efba985d01e6b00cb60df7"
         }
       ],
       "popularity": 2069,
@@ -48683,7 +48683,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-26"
+      "updated_at": "2026-10-21"
     },
     {
       "id": "universal-db:FlagBrew/PKSM",
@@ -50690,7 +50690,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10524,
+      "popularity": 10584,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50717,7 +50717,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3116,
+      "popularity": 3124,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50744,7 +50744,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10056,
+      "popularity": 10083,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50771,7 +50771,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6084,
+      "popularity": 6097,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50798,7 +50798,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 54344,
+      "popularity": 54557,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50825,7 +50825,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 438,
+      "popularity": 439,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -56489,10 +56489,10 @@
       "name": "SaltyNX",
       "categories": [],
       "description": "Background process for the Nintendo Switch for file/code modification\n\nCreated by: https://github.com/shinyquagsire23\n\nThis fork includes many QoL improvements\n\n\nFor additional functions you need SaltyNX-Tool.\n\n",
-      "added_at": "2026-10-05",
+      "added_at": "2026-10-15",
       "summary": "Background process for the Nintendo Switch for file/code modification",
       "author": "masagrator, shinyquagsire23",
-      "version": "2.1.2",
+      "version": "2.1.3",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/masagrator/SaltyNX/releases",
@@ -56501,8 +56501,8 @@
           "format": "hbas",
           "filename": "SaltyNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SaltyNX/manifest.install",
-          "size": 475,
-          "sha256": "02d81dbfd026b47c7c13947d805fb75dda7a2f09f5acf801edff32807d4ddb7f"
+          "size": 479,
+          "sha256": "ce5f6e0f1e9ccf070c25cdfc9e67d41dfaa38533d0a1be19e5edeb6990158673"
         }
       ],
       "popularity": 151116,
@@ -56510,7 +56510,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-06"
+      "updated_at": "2026-10-21"
     },
     {
       "id": "hbas-switch:SaltyNX-Tool",
@@ -59364,10 +59364,10 @@
       "name": "sLaunch",
       "categories": [],
       "description": "sLaunch is a fast and beautiful home replacement for your switch",
-      "added_at": "2026-10-10",
+      "added_at": "2026-10-17",
       "summary": "Welcome to your new home.",
       "author": "etonedemid",
-      "version": "1.5.3",
+      "version": "1.5.5",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/etonedemid/slaunch/",
@@ -59376,8 +59376,8 @@
           "format": "hbas",
           "filename": "sLaunch.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/sLaunch/manifest.install",
-          "size": 69965,
-          "sha256": "b802b9d83895eb32452a458ff434e8728daa462fde17eb2dd103593c5a0a9c1f"
+          "size": 70069,
+          "sha256": "a74869df680c78d0204a369f2bfc202e744ca2eed7ed2ea056ab57dc26a5dc5d"
         }
       ],
       "popularity": 968,
@@ -59385,7 +59385,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-11"
+      "updated_at": "2026-10-21"
     },
     {
       "id": "hbas-switch:SlayTheSwitch",
