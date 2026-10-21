@@ -24846,26 +24846,52 @@
       "platforms": [
         "ps5"
       ],
-      "name": "Ftpsrv Streamextract",
-      "summary": "This is a simple FTP server that can be executed on a Playstation 4 or Playstation 5 that has been jailbroken and is running an ELF loader. The FTP server accepts connection on port 2121.",
+      "name": "ftpsrv (drakmor)",
+      "summary": "A simple FTP server for jailbroken PS4s and PS5s",
       "author": "",
-      "version": "1.0.0",
+      "version": "1.16-ng-stable",
       "license": null,
       "icon_url": null,
-      "release_url": "https://github.com/ruinelson/ftpsrv-streamextract",
+      "release_url": "https://github.com/drakmor/ftpsrv",
       "downloads": [
         {
           "format": "elf",
           "filename": "ftpsrv-ps5.elf",
-          "url": "https://github.com/RuiNelson/ftpsrv-streamextract/releases/download/1.0.0/ftpsrv-ps5.elf",
-          "sha256": "37f495b8eaf56c6bbac5daacb8eb74d863e64c250b6d95591bfedc212bca00b9"
+          "url": "https://github.com/drakmor/ftpsrv/releases/download/1.16-ng-stable/ftpsrv-ps5.elf",
+          "sha256": "f19ae469b25453a7a4af4529527521d31f143100f18a2c6839666e7121c8bd32"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-14 00:12:49 UTC+8"
+      "updated_at": "2026-09-21 04:48:47 UTC+8"
+    },
+    {
+      "id": "ps5-payloads-atlas:ftpsrv-se-ps5.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "Ftpsrv Streamextract",
+      "summary": "This is a simple FTP server that can be executed on a Playstation 4 or Playstation 5 that has been jailbroken and is running an ELF loader. The FTP server accepts connection on port 2121.",
+      "author": "",
+      "version": "1.0.1",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/ruinelson/ftpsrv-streamextract",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "ftpsrv-se-ps5.elf",
+          "url": "https://github.com/RuiNelson/ftpsrv-streamextract/releases/download/1.0.1/ftpsrv-se-ps5.elf",
+          "sha256": "771cdf86d89ec3b4cd115411fc82919b55a0adb9107e1b6540494f0a5ca1d15f"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-21 20:27:11 UTC+8"
     },
     {
       "id": "hbas-switch:FunkinRewritten",
@@ -25493,7 +25519,7 @@
       "name": "Garlic SaveMgr for PS5",
       "summary": "PS5 save decrypt/encrypt/browse with embedded web UI.",
       "author": "",
-      "version": "v1.14.0",
+      "version": "v1.14",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-savemgr",
@@ -25501,7 +25527,7 @@
         {
           "format": "elf",
           "filename": "garlic-savemgr.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.14.0/garlic-savemgr.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.14/garlic-savemgr.elf",
           "sha256": null
         }
       ],
@@ -25509,7 +25535,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-19 01:50:22 UTC+8"
+      "updated_at": "2026-10-21 21:16:26 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -40405,13 +40431,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64831815
+          "size": 64834890
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-20T12:40:42Z"
+      "updated_at": "2026-10-21T16:14:11Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -47344,30 +47370,30 @@
       "updated_at": "2022-06-21"
     },
     {
-      "id": "ps5-payloads-atlas:PrefBar-complete_V0.1.2.elf",
+      "id": "ps5-payloads-atlas:PrefBar-complete_V0.1.3.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PerfBar",
       "summary": "A standalone on-screen performance overlay for the PS5. It draws FPS, frametimes, 1% lows, CPU/SoC temperatures, and RAM/VRAM usage directly over your games.",
       "author": "",
-      "version": "v0.1.2",
+      "version": "v0.1.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/x1nons/prefbar",
       "downloads": [
         {
           "format": "elf",
-          "filename": "PrefBar-complete_V0.1.2.elf",
-          "url": "https://github.com/X1NONs/PrefBar/releases/download/v0.1.2/PrefBar-complete_V0.1.2.elf",
-          "sha256": "11fd568c5cc07974fc5aa37b3dd7fef79a862459d42a28027e9d14a74010ac89"
+          "filename": "PrefBar-complete_V0.1.3.elf",
+          "url": "https://github.com/X1NONs/PrefBar/releases/download/v0.1.3/PrefBar-complete_V0.1.3.elf",
+          "sha256": "f15022259e97b58bb2418cacd4be33b2035d90ac0b16db3af5d6cf6490caac39"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21 03:31:04 UTC+8"
+      "updated_at": "2026-10-21 23:57:50 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1273",
@@ -50664,7 +50690,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10486,
+      "popularity": 10524,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50691,7 +50717,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3113,
+      "popularity": 3116,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50718,7 +50744,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10025,
+      "popularity": 10056,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50745,7 +50771,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6073,
+      "popularity": 6084,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50772,7 +50798,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 54152,
+      "popularity": 54344,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50799,7 +50825,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 436,
+      "popularity": 438,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51307,30 +51333,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.1.10.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.1.11.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.1.10",
+      "version": "v7.1.11",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.1.10.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.10/ps5upload-7.1.10.elf",
-          "sha256": "0025ee8d5ac9b660e8bc0ee98e42675ddd69b39c58ce71ff5ac0fb97de1a6040"
+          "filename": "ps5upload-7.1.11.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.11/ps5upload-7.1.11.elf",
+          "sha256": "d82120553ab8826f64e1ce3fa3137a51dc28e8ee99711ebbe783d5b86bf7f814"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21 03:49:29 UTC+8"
+      "updated_at": "2026-10-21 12:39:43 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -58217,6 +58243,32 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2025-01-07"
+    },
+    {
+      "id": "ps5-payloads-atlas:shadowmountplus.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ShadowMount+",
+      "summary": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
+      "author": "",
+      "version": "1.7beta7",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/drakmor/shadowmountplus",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "shadowmountplus.elf",
+          "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta7/shadowmountplus.elf",
+          "sha256": "a8f9d7f76e8749912508ade0cd5c78076b5bbf1271813c78c80c3d3d9d4777ee"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-21 19:56:24 UTC+8"
     },
     {
       "id": "universal-db:dnasdw/SharedFontTool",
