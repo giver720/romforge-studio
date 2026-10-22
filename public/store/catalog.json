@@ -196,22 +196,22 @@
       "updated_at": "2025-10-18"
     },
     {
-      "id": "ps5-payloads-atlas:bond-server-0.3.0.elf",
+      "id": "ps5-payloads-atlas:bond-server-0.3.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "007 First Light PS5 Online",
       "summary": "007 First Light (PPSA11386) online on a jailbroken PS5, with no IOI servers involved and no PC needed. One payload does everything on the console, so the online features and TacSim work.",
       "author": "",
-      "version": "v0.3.0",
+      "version": "v0.3.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://theghostonline.dev/theghostonline/007-first-light-ps5",
       "downloads": [
         {
           "format": "elf",
-          "filename": "bond-server-0.3.0.elf",
-          "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5/releases/download/v0.3.0/bond-server-0.3.0.elf",
+          "filename": "bond-server-0.3.1.elf",
+          "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5/releases/download/v0.3.1/bond-server-0.3.1.elf",
           "sha256": null
         }
       ],
@@ -219,7 +219,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-19 02:03:47 UTC+8"
+      "updated_at": "2026-10-22 04:55:47 UTC+8"
     },
     {
       "id": "hbas-switch:100boxesNX",
@@ -11675,10 +11675,10 @@
         "utilities"
       ],
       "description": "Why use Checkpoint?\n\nCheckpoint is created following ideas of simplicity and efficiency. The UI has been designed to condense as many options as possible, while keeping it simple to work with.\n\nMoreover, Checkpoint is extremely lightweight - while being packaged with a nice graphic user interface - and is built using the most recent libraries available.\n\nCheckpoint for Switch natively supports NAND saves for the titles you have played. Title information are loaded automatically.\n\nWorking path\n\nCheckpoint relies on the following folders to store the files it generates. Note that all the working directories are automatically generated on first launch (or when Checkpoint finds a new title that doesn't have a working directory yet).\n\n - sdmc:/switch/Checkpoint: root path\n - sdmc:/switch/Checkpoint/config.json: custom configuration file\n - sdmc:/switch/Checkpoint/saves/<title id> <game title>: root path for all the save backups for a generic game\n\nUsage\n\nCheckpoint for Switch only runs on homebrew launcher. Make sure you're running up-to-date payloads.\n\nThe first launch will take considerably longer than usual (usually 1-2 minutes depending on how many titles you have installed), due to the working directories being created - Checkpoint will be significatively faster upon launch from then on.\n\nYou can scroll between the title list with the DPAD/LR and target a title with A when the selector is on it. Now, you can use the DPAD or the touchscreen to select a target backup to restore/overwrite.",
-      "added_at": "2026-08-26",
+      "added_at": "2026-10-13",
       "summary": "Save Manager",
       "author": "FlagBrew",
-      "version": "5.2.0",
+      "version": "5.3.0",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/FlagBrew/Checkpoint",
@@ -11687,8 +11687,8 @@
           "format": "hbas",
           "filename": "Checkpoint.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/Checkpoint/manifest.install",
-          "size": 4923,
-          "sha256": "4ce69d801e6d8b8b5ae98cf38fefbc42595bcec947b52a112b18b536f5fc0055"
+          "size": 4929,
+          "sha256": "a0714c655a13f67de0f17c3a4a7112b66d4def2f58b05839b5900823702ad4e1"
         }
       ],
       "popularity": 308101,
@@ -11696,7 +11696,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-08-27"
+      "updated_at": "2026-10-21"
     },
     {
       "id": "open-shop-channel-wii:CheckRegion",
@@ -12560,7 +12560,7 @@
       "name": "ClassiCube",
       "summary": "Custom Minecraft Classic / ClassiCube client written in C  from scratch (formerly ClassicalSharp in C#)",
       "author": "UnknownShadow200",
-      "version": "1.3.8",
+      "version": "1.3.9",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/ClassiCube/ClassiCube/master/misc/3ds/icon.png",
       "release_url": "https://www.classicube.net/download/3ds",
@@ -12581,7 +12581,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-02-17T12:28:45Z"
+      "updated_at": "2026-10-22T01:21:36Z"
     },
     {
       "id": "open-shop-channel-wii:ClassiCube",
@@ -36035,7 +36035,7 @@
       "name": "LZ4 Compression for PS5",
       "summary": "Shrink your PS5 games on the console itself. Pick a game, choose Compress with LZ4, and it packs the game data into LZ4 asset packs that APR-EMU reads while the game runs. Every file gets checked before anything's deleted, and if the game doesn't ship APR-EMU, the right runtime is added for you.",
       "author": "",
-      "version": "v1.6.2",
+      "version": "v1.6.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://theghostonline.dev/theghostonline/ps5-lz4-compression",
@@ -36043,7 +36043,7 @@
         {
           "format": "elf",
           "filename": "lz4-compression.elf",
-          "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.2/lz4-compression.elf",
+          "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.3/lz4-compression.elf",
           "sha256": null
         }
       ],
@@ -36051,7 +36051,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-19 10:08:51 UTC+8"
+      "updated_at": "2026-10-22 04:53:50 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:867",
@@ -50690,7 +50690,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10584,
+      "popularity": 10662,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50717,7 +50717,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3124,
+      "popularity": 3134,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50744,7 +50744,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10083,
+      "popularity": 10111,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50771,7 +50771,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6097,
+      "popularity": 6116,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50798,7 +50798,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 54557,
+      "popularity": 54735,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50825,7 +50825,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 439,
+      "popularity": 440,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
