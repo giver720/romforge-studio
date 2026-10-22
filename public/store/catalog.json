@@ -1343,31 +1343,6 @@
       "updated_at": "2024-05-03T19:18:09Z"
     },
     {
-      "id": "universal-db:MechanicalDragon0687/3DS-ParentalUnlock",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "3DS-ParentalUnlock",
-      "summary": "Remove parental save data (clearing parental lock and COPPA)",
-      "author": "MechanicalDragon",
-      "version": "1.0.1",
-      "license": null,
-      "icon_url": "https://avatars.githubusercontent.com/u/43786828?v=4&size=128",
-      "release_url": "https://github.com/MechanicalDragon0687/3DS-ParentalUnlock/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "ParentalUnlock.3dsx",
-          "url": "https://github.com/MechanicalDragon0687/3DS-ParentalUnlock/releases/download/1.0.1/ParentalUnlock.3dsx",
-          "size": 542960
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2020-05-28T05:55:43Z"
-    },
-    {
       "id": "universal-db:joel16/3DS-Recovery-Tool",
       "platforms": [
         "3ds"
@@ -1484,31 +1459,6 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2026-03-29T20:46:33Z"
-    },
-    {
-      "id": "universal-db:Asellus/3DS_Quick_Reboot",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "3DS_Quick_Reboot",
-      "summary": "3DS Quick Reboot.",
-      "author": "Asellus",
-      "version": "v1.0.1",
-      "license": "MIT License",
-      "icon_url": "https://raw.githubusercontent.com/Asellus/3DS_Quick_Reboot/master/resources/icon.png",
-      "release_url": "https://github.com/Asellus/3DS_Quick_Reboot/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "3DSQuickReboot-v1.0.1.zip",
-          "url": "https://github.com/Asellus/3DS_Quick_Reboot/releases/download/v1.0.1/3DSQuickReboot-v1.0.1.zip",
-          "size": 907497
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2016-05-18T11:55:39Z"
     },
     {
       "id": "universal-db:RocketRobz/3DSBank",
@@ -6358,37 +6308,6 @@
       "updated_at": "2016-09-04"
     },
     {
-      "id": "universal-db:Core-2-Extreme/Battery_mark_for_3DS",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Battery_mark_for_3DS",
-      "summary": "Benchmark your 3DS battery",
-      "author": "Core 2 Extreme",
-      "version": "v2.1.0",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://raw.githubusercontent.com/Core-2-Extreme/Battery_mark_for_3DS/master/resource/icon.png",
-      "release_url": "https://github.com/Core-2-Extreme/Battery_mark_for_3DS/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "Battery_mark_for_3DS.3dsx",
-          "url": "https://github.com/Core-2-Extreme/Battery_mark_for_3DS/releases/download/v2.1.0/Battery_mark_for_3DS.3dsx",
-          "size": 7880152
-        },
-        {
-          "format": "cia",
-          "filename": "Battery_mark_for_3DS.cia",
-          "url": "https://github.com/Core-2-Extreme/Battery_mark_for_3DS/releases/download/v2.1.0/Battery_mark_for_3DS.cia",
-          "size": 5481408
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2022-03-08T04:56:36Z"
-    },
-    {
       "id": "vitadbtoo-vita:1512",
       "platforms": [
         "psvita"
@@ -10323,31 +10242,6 @@
       "updated_at": "2019-09-18"
     },
     {
-      "id": "universal-db:LiquidFenrir/CalculaThreeDS",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "CalculaThreeDS",
-      "summary": "3DS homebrew scientific calculator ",
-      "author": "Théo B.",
-      "version": "v0.2",
-      "license": "MIT License",
-      "icon_url": "https://raw.githubusercontent.com/LiquidFenrir/CalculaThreeDS/main/icon.png",
-      "release_url": "https://github.com/LiquidFenrir/CalculaThreeDS/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "CalculaThreeDS.3dsx",
-          "url": "https://github.com/LiquidFenrir/CalculaThreeDS/releases/download/v0.2/CalculaThreeDS.3dsx",
-          "size": 332796
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2021-01-10T11:32:55Z"
-    },
-    {
       "id": "hbas-switch:Calculator_NX",
       "platforms": [
         "switch"
@@ -14012,37 +13906,6 @@
       "updated_at": "2024-06-01"
     },
     {
-      "id": "universal-db:RSDuck/craftus_reloaded",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Craftus Reloaded",
-      "summary": "A second attempt at a homebrew Minecraft clone for 3DS",
-      "author": "Kemal Afzal",
-      "version": "0.3",
-      "license": "Other",
-      "icon_url": "https://raw.githubusercontent.com/RSDuck/craftus_reloaded/master/icon/craftusreloaded.png",
-      "release_url": "https://github.com/RSDuck/craftus_reloaded/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "craftus_reloaded.3dsx",
-          "url": "https://github.com/RSDuck/craftus_reloaded/releases/download/0.3/craftus_reloaded.3dsx",
-          "size": 396424
-        },
-        {
-          "format": "cia",
-          "filename": "craftus_reloaded.cia",
-          "url": "https://github.com/RSDuck/craftus_reloaded/releases/download/0.3/craftus_reloaded.cia",
-          "size": 562112
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2020-11-18T00:15:43Z"
-    },
-    {
       "id": "vitadbtoo-vita:384",
       "platforms": [
         "psvita"
@@ -15028,37 +14891,6 @@
       "updated_at": "2016-06-15T19:03:12Z"
     },
     {
-      "id": "universal-db:masterfeizz/ctrQuake",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "ctrQuake",
-      "summary": "Port of quake for the Nintendo 3DS",
-      "author": "Felipe Izzo",
-      "version": "v0.8",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/masterfeizz/ctrQuake/master/icon.png",
-      "release_url": "https://github.com/masterfeizz/ctrQuake/releases",
-      "downloads": [
-        {
-          "format": "cia",
-          "filename": "ctrQuake.cia",
-          "url": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.8/ctrQuake.cia",
-          "size": 984000
-        },
-        {
-          "format": "zip",
-          "filename": "ctrQuake.zip",
-          "url": "https://github.com/masterfeizz/ctrQuake/releases/download/v0.8/ctrQuake.zip",
-          "size": 8921677
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2016-09-13T02:38:10Z"
-    },
-    {
       "id": "universal-db:Golem642/CtrRGBPAT2",
       "platforms": [
         "3ds"
@@ -15791,43 +15623,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2019-10-23"
-    },
-    {
-      "id": "universal-db:masterfeizz/daedalusx64-3DS",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "DaedalusX64-3DS",
-      "summary": "Port of DaedalusX64 to the Nintendo 3DS",
-      "author": "Felipe Izzo",
-      "version": "v1.0",
-      "license": "GNU General Public License v2.0",
-      "icon_url": "https://raw.githubusercontent.com/masterfeizz/DaedalusX64-3DS/master/Source/SysCTR/Resources/icon.png",
-      "release_url": "https://github.com/masterfeizz/daedalusx64-3DS/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "3ds.zip",
-          "url": "https://github.com/masterfeizz/DaedalusX64-3DS/releases/download/v1.0/3ds.zip",
-          "size": 13474361
-        },
-        {
-          "format": "3dsx",
-          "filename": "DaedalusX64.3dsx",
-          "url": "https://github.com/masterfeizz/DaedalusX64-3DS/releases/download/v1.0/DaedalusX64.3dsx",
-          "size": 1309152
-        },
-        {
-          "format": "cia",
-          "filename": "DaedalusX64.cia",
-          "url": "https://github.com/masterfeizz/DaedalusX64-3DS/releases/download/v1.0/DaedalusX64.cia",
-          "size": 938944
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2022-10-16T21:47:42Z"
     },
     {
       "id": "universal-db:mirusu400/DaeMoon",
@@ -16621,37 +16416,6 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2020-11-26"
-    },
-    {
-      "id": "universal-db:NPXTobi/Demo-Reset",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Demo-Reset",
-      "summary": "This app resets the democounter of the 3ds",
-      "author": "NPX-I7/Tobi",
-      "version": "1.0.0",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/NPXTobi/Demo-Reset/master/gfx/icon.png",
-      "release_url": "https://github.com/NPXTobi/Demo-Reset/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "Demo-Reset.3dsx",
-          "url": "https://github.com/NPXTobi/Demo-Reset/releases/download/1.0.0/Demo-Reset.3dsx",
-          "size": 1873396
-        },
-        {
-          "format": "cia",
-          "filename": "Demo-Reset.cia",
-          "url": "https://github.com/NPXTobi/Demo-Reset/releases/download/1.0.0/Demo-Reset.cia",
-          "size": 2036672
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2020-07-16T15:14:32Z"
     },
     {
       "id": "vitadbtoo-vita:679",
@@ -19101,37 +18865,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2020-09-12"
-    },
-    {
-      "id": "universal-db:pyroticinsanity/3dsdod",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Dungeons of Daggorath 3DS",
-      "summary": "Dungeons of Daggorath for the 3DS",
-      "author": "pyroticinsanity",
-      "version": "1.1",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://raw.githubusercontent.com/pyroticinsanity/3dsdod/master/banner/3dsdod-icon.png",
-      "release_url": "https://github.com/pyroticinsanity/3dsdod/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "3dsdod-1.1.3dsx",
-          "url": "https://github.com/pyroticinsanity/3dsdod/releases/download/1.1/3dsdod-1.1.3dsx",
-          "size": 4092504
-        },
-        {
-          "format": "cia",
-          "filename": "3dsdod-1.1.cia",
-          "url": "https://github.com/pyroticinsanity/3dsdod/releases/download/1.1/3dsdod-1.1.cia",
-          "size": 3851200
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2020-06-05T14:07:08Z"
     },
     {
       "id": "vitadbtoo-vita:542",
@@ -27228,37 +26961,6 @@
       "updated_at": "2023-10-08"
     },
     {
-      "id": "universal-db:flarn2006/graphcalc3ds",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "GraphCalc3DS",
-      "summary": "Simple graphing calculator for 3DS",
-      "author": "Sparkette",
-      "version": "v1.5.1",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://raw.githubusercontent.com/flarn2006/GraphCalc3DS/master/icon.png",
-      "release_url": "https://github.com/flarn2006/graphcalc3ds/releases",
-      "downloads": [
-        {
-          "format": "cia",
-          "filename": "GraphCalc3DS.cia",
-          "url": "https://github.com/flarn2006/GraphCalc3DS/releases/download/v1.5.1/GraphCalc3DS.cia",
-          "size": 1024960
-        },
-        {
-          "format": "zip",
-          "filename": "GraphCalc3DS_3DSX.zip",
-          "url": "https://github.com/flarn2006/GraphCalc3DS/releases/download/v1.5.1/GraphCalc3DS_3DSX.zip",
-          "size": 292107
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2016-12-03T21:05:23Z"
-    },
-    {
       "id": "vitadbtoo-vita:606",
       "platforms": [
         "psvita"
@@ -27435,31 +27137,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2023-05-21"
-    },
-    {
-      "id": "universal-db:nop90/Griffon-Legend-3DS",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Griffon-Legend-3DS",
-      "summary": "Port to 3DS of a nice Action RPG in SNES style originally written by Syn9 in FreeBASIC",
-      "author": "nop90",
-      "version": "v1.0",
-      "license": "Other",
-      "icon_url": "https://raw.githubusercontent.com/nop90/Griffon-Legend-3DS/master/resources/icon.png",
-      "release_url": "https://github.com/nop90/Griffon-Legend-3DS/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "GriffonLegend.v1.0.zip",
-          "url": "https://github.com/nop90/Griffon-Legend-3DS/releases/download/v1.0/GriffonLegend.v1.0.zip",
-          "size": 5008278
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2017-02-12T16:35:33Z"
     },
     {
       "id": "vitadbtoo-vita:1557",
@@ -28087,31 +27764,6 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2022-12-17T20:37:24Z"
-    },
-    {
-      "id": "universal-db:CollinScripter/Revamped3DS",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Halo Revamped",
-      "summary": "Halo Revamped 3DS",
-      "author": "TCPixel",
-      "version": "V1.11",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/CollinScripter/Revamped3DS/master/icon.png",
-      "release_url": "https://github.com/CollinScripter/Revamped3DS/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "Revamped.zip",
-          "url": "https://github.com/CollinScripter/Revamped3DS/releases/download/V1.11/Revamped.zip",
-          "size": 106271441
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2017-08-05T18:11:21Z"
     },
     {
       "id": "vitadbtoo-psp:920",
@@ -34455,37 +34107,6 @@
       "updated_at": "2020-09-05T17:30:43Z"
     },
     {
-      "id": "universal-db:SuperSaiyajinStackZ/LeafEdit-Pattern-Editor",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "LeafEdit-Pattern-Editor",
-      "summary": "This is LeafEdit's Pattern Editor as a separate app as well!",
-      "author": "StackZ",
-      "version": "v0.4.0",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/LeafEdit-Pattern-Editor/master/app/icon.png",
-      "release_url": "https://github.com/SuperSaiyajinStackZ/LeafEdit-Pattern-Editor/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "LeafEdit-Pattern-Editor.3dsx",
-          "url": "https://github.com/SuperSaiyajinStackZ/LeafEdit-Pattern-Editor/releases/download/v0.4.0/LeafEdit-Pattern-Editor.3dsx",
-          "size": 2073840
-        },
-        {
-          "format": "cia",
-          "filename": "LeafEdit-Pattern-Editor.cia",
-          "url": "https://github.com/SuperSaiyajinStackZ/LeafEdit-Pattern-Editor/releases/download/v0.4.0/LeafEdit-Pattern-Editor.cia",
-          "size": 2335680
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2020-08-29T12:45:26Z"
-    },
-    {
       "id": "vitadbtoo-vita:721",
       "platforms": [
         "psvita"
@@ -36972,31 +36593,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2023-09-24"
-    },
-    {
-      "id": "universal-db:MechanicalDragon0687/MCU_Bricker_tinydb",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "MCU Bricker",
-      "summary": "Makes your LED go rainbow.",
-      "author": "MarcuzD",
-      "version": "1.0",
-      "license": null,
-      "icon_url": "https://db.universal-team.net/assets/images/icons/mcu-bricker.png",
-      "release_url": "https://github.com/MechanicalDragon0687/MCU_Bricker_tinydb/releases",
-      "downloads": [
-        {
-          "format": "cia",
-          "filename": "RGB.cia",
-          "url": "https://github.com/MechanicalDragon0687/MCU_Bricker_tinydb/releases/download/1.0/RGB.cia",
-          "size": 292800
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2019-04-01T01:27:47Z"
     },
     {
       "id": "vitadbtoo-vita:259",
@@ -40437,7 +40033,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-21T16:14:11Z"
+      "updated_at": "2026-10-22T12:55:40Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -44422,7 +44018,7 @@
       "name": "Omega",
       "summary": "Omega 2.0, the next evolution of Epsilon! Now available for your Numworks calculator!",
       "author": "Omega",
-      "version": "O1.23.0-E15",
+      "version": "O2.0.4-E15",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/Omega-Numworks/Omega/omega-master/ion/src/simulator/3ds/assets/logo.png",
       "release_url": "https://github.com/Omega-Numworks/Omega/releases",
@@ -44443,7 +44039,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2021-11-11T21:24:35Z"
+      "updated_at": "2022-12-29T00:17:52Z"
     },
     {
       "id": "vitadbtoo-vita:827",
@@ -48367,43 +47963,6 @@
       "updated_at": "2026-03-16"
     },
     {
-      "id": "universal-db:SuperSaiyajinStackZ/PKCount",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "PKCount",
-      "summary": "A Pokemon Shiny Encounter Tool.",
-      "author": "StackZ",
-      "version": "v0.0.2",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://raw.githubusercontent.com/SuperSaiyajinStackZ/PKCount/master/3DS/app/icon.png",
-      "release_url": "https://github.com/SuperSaiyajinStackZ/PKCount/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "PKCount.3dsx",
-          "url": "https://github.com/SuperSaiyajinStackZ/PKCount/releases/download/v0.0.2/PKCount.3dsx",
-          "size": 767504
-        },
-        {
-          "format": "cia",
-          "filename": "PKCount.cia",
-          "url": "https://github.com/SuperSaiyajinStackZ/PKCount/releases/download/v0.0.2/PKCount.cia",
-          "size": 582592
-        },
-        {
-          "format": "nds",
-          "filename": "PKCount.nds",
-          "url": "https://github.com/SuperSaiyajinStackZ/PKCount/releases/download/v0.0.2/PKCount.nds",
-          "size": 719872
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2019-12-27T20:44:30Z"
-    },
-    {
       "id": "hbas-switch:pkDex",
       "platforms": [
         "switch"
@@ -48620,37 +48179,6 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2026-10-05"
-    },
-    {
-      "id": "universal-db:Universal-Team/pkmn-chest",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "pkmn-chest",
-      "summary": "A Pokémon Bank for the 3rd through 5th generation Pokémon games for the Nintendo DS(i).",
-      "author": "Universal-Team",
-      "version": "v2.2",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://raw.githubusercontent.com/Universal-Team/pkmn-chest/master/resources/icon.png",
-      "release_url": "https://github.com/Universal-Team/pkmn-chest/releases",
-      "downloads": [
-        {
-          "format": "cia",
-          "filename": "pkmn-chest.cia",
-          "url": "https://github.com/Universal-Team/pkmn-chest/releases/download/v2.2/pkmn-chest.cia",
-          "size": 1546496
-        },
-        {
-          "format": "nds",
-          "filename": "pkmn-chest.nds",
-          "url": "https://github.com/Universal-Team/pkmn-chest/releases/download/v2.2/pkmn-chest.nds",
-          "size": 7269376
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2020-07-07T04:00:43Z"
     },
     {
       "id": "hbas-switch:PKSE",
@@ -50690,7 +50218,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10730,
+      "popularity": 10803,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50717,7 +50245,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3140,
+      "popularity": 3145,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50744,7 +50272,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10132,
+      "popularity": 10155,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50771,7 +50299,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6127,
+      "popularity": 6134,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50798,7 +50326,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 54840,
+      "popularity": 55026,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50825,7 +50353,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 444,
+      "popularity": 446,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51047,30 +50575,30 @@
       "updated_at": "2026-10-07 07:46:38 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:web-file-mgr-v1.11b.elf",
+      "id": "ps5-payloads-atlas:web-file-mgr-v1.12.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5 Web File Manager",
       "summary": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
       "author": "",
-      "version": "v1.11b",
+      "version": "v1.12",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/owendswang/ps5-web-file-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "web-file-mgr-v1.11b.elf",
-          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.11b/web-file-mgr-v1.11b.elf",
-          "sha256": "989f26d292d07a35581a2ee36766fc477fc2f5deedb2a9d0cedae5ee19667eba"
+          "filename": "web-file-mgr-v1.12.elf",
+          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.12/web-file-mgr-v1.12.elf",
+          "sha256": "f3461eb967da7afbbf0420d3294fbc8f999cc2ad53a756bed413aa80c7cfa67a"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-19 23:29:47 UTC+8"
+      "updated_at": "2026-10-22 23:28:23 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.6.1.elf",
@@ -51333,30 +50861,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.1.13.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.1.16.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.1.13",
+      "version": "v7.1.16",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.1.13.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.13/ps5upload-7.1.13.elf",
-          "sha256": "46bb7dc0e7f28ded2859ac4392c151e39010354c79de2f323d73aaa861287a30"
+          "filename": "ps5upload-7.1.16.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.16/ps5upload-7.1.16.elf",
+          "sha256": "df095f4492602e5824297fb2cb45802ca4d415006b2ce8222b9940cb942bd880"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22 03:23:43 UTC+8"
+      "updated_at": "2026-10-22 18:47:03 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -53086,31 +52614,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-10-11"
-    },
-    {
-      "id": "universal-db:mrdanielps/r3Ddragon",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "r3Ddragon",
-      "summary": "A Virtual Boy emulator for the 3DS",
-      "author": "danielps",
-      "version": "v0.87",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/mrdanielps/r3Ddragon/master/icon.png",
-      "release_url": "https://github.com/mrdanielps/r3Ddragon/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "r3Ddragon-v0.87.zip",
-          "url": "https://github.com/mrdanielps/r3Ddragon/releases/download/v0.87/r3Ddragon-v0.87.zip",
-          "size": 463677
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2017-02-02T23:45:48Z"
     },
     {
       "id": "open-shop-channel-wii:Rainbii",
@@ -59364,10 +58867,10 @@
       "name": "sLaunch",
       "categories": [],
       "description": "sLaunch is a fast and beautiful home replacement for your switch",
-      "added_at": "2026-10-17",
+      "added_at": "2026-10-22",
       "summary": "Welcome to your new home.",
       "author": "etonedemid",
-      "version": "1.5.5",
+      "version": "1.5.6",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/etonedemid/slaunch/",
@@ -59376,8 +58879,8 @@
           "format": "hbas",
           "filename": "sLaunch.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/sLaunch/manifest.install",
-          "size": 70069,
-          "sha256": "a74869df680c78d0204a369f2bfc202e744ca2eed7ed2ea056ab57dc26a5dc5d"
+          "size": 70329,
+          "sha256": "a51e278f99e324d9cdf85ae5580ef6ed57eaf703c4ac568aa55b8424342925ff"
         }
       ],
       "popularity": 968,
@@ -59385,7 +58888,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-21"
+      "updated_at": "2026-10-22"
     },
     {
       "id": "hbas-switch:SlayTheSwitch",
@@ -60303,37 +59806,6 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2025-05-15"
-    },
-    {
-      "id": "universal-db:DDews/Snakes",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Snakes",
-      "summary": "Local play snake game for 3DS homebrew/cfw",
-      "author": "DDews",
-      "version": "0.2.5",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DDews/Snakes/master/meta/icon.png",
-      "release_url": "https://github.com/DDews/Snakes/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "snakes.3dsx",
-          "url": "https://github.com/DDews/Snakes/releases/download/0.2.5/snakes.3dsx",
-          "size": 327356
-        },
-        {
-          "format": "cia",
-          "filename": "snakes.cia",
-          "url": "https://github.com/DDews/Snakes/releases/download/0.2.5/snakes.cia",
-          "size": 781248
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2017-01-24T22:01:22Z"
     },
     {
       "id": "open-shop-channel-wii:SnakeWii",
@@ -61400,31 +60872,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-09-26"
-    },
-    {
-      "id": "universal-db:derrekr/srb2_3ds",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Sonic Robo Blast 2",
-      "summary": "Port of Sonic Roboblast 2 to the Nintendo New3DS",
-      "author": "derrek",
-      "version": "v1.1.3",
-      "license": null,
-      "icon_url": "https://github.com/derrekr/srb2_3ds/raw/master/meta/icon.png",
-      "release_url": "https://github.com/derrekr/srb2_3ds/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "srb2_3dsv1.1.3.zip",
-          "url": "https://github.com/derrekr/srb2_3ds/releases/download/v1.1.3/srb2_3dsv1.1.3.zip",
-          "size": 3034845
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2019-01-22T18:01:13Z"
     },
     {
       "id": "hbas-switch:sonicroboblast2",
@@ -71988,31 +71435,6 @@
       "updated_at": "2024-07-30"
     },
     {
-      "id": "universal-db:RedShyGuy/Vapecord-ACHHD-Plugin",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Vapecord-ACHHD-Plugin",
-      "summary": "An Animal Crossing Happy Home Designer Modding Menu Overlay to use while playing the game. ",
-      "author": "RedShyGuy",
-      "version": "v.1.1.0",
-      "license": "MIT License",
-      "icon_url": "https://avatars.githubusercontent.com/u/43783060?v=4&size=128",
-      "release_url": "https://github.com/RedShyGuy/Vapecord-ACHHD-Plugin/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "Vapecord-ACHHD.zip",
-          "url": "https://github.com/RedShyGuy/Vapecord-ACHHD-Plugin/releases/download/v.1.1.0/Vapecord-ACHHD.zip",
-          "size": 612846
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2021-04-13T21:58:23Z"
-    },
-    {
       "id": "universal-db:RedShyGuy/Vapecord-ACNL-Plugin",
       "platforms": [
         "3ds"
@@ -77292,30 +76714,30 @@
       "updated_at": "2026-08-03 03:51:42 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:wfm-7zip-helper-v26.03-2.elf",
+      "id": "ps5-payloads-atlas:wfm-7zip-helper-v26.04-0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "WFM 7-Zip Helper",
       "summary": "A separate extraction helper for PS5 Web File Manager. It uses 7-Zip's native archive handlers and runs as an independent PS5 payload.",
       "author": "",
-      "version": "v26.03-2",
+      "version": "v26.04-0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/owendswang/wfm-7zip-helper",
       "downloads": [
         {
           "format": "elf",
-          "filename": "wfm-7zip-helper-v26.03-2.elf",
-          "url": "https://github.com/owendswang/wfm-7zip-helper/releases/download/v26.03-2/wfm-7zip-helper-v26.03-2.elf",
-          "sha256": "dd8bbae4cd44ed20c4cbafc74fdc3271f52b9d7888a0d4f4038a8ae05feb92a4"
+          "filename": "wfm-7zip-helper-v26.04-0.elf",
+          "url": "https://github.com/owendswang/wfm-7zip-helper/releases/download/v26.04-0/wfm-7zip-helper-v26.04-0.elf",
+          "sha256": "6acc2972d358dfc92b5ac66cf8cb9ca8613c096bde56ce790077a6831fb17825"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-06 00:39:17 UTC+8"
+      "updated_at": "2026-10-22 23:27:06 UTC+8"
     },
     {
       "id": "hbas-switch:Whats-in-the-box-NX",
@@ -81586,31 +81008,6 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2025-06-29T15:10:21Z"
-    },
-    {
-      "id": "universal-db:mariohackandglitch/YAMKC_3DS",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Yet Another Mario Kart Clone 3DS",
-      "summary": "A Mario Kart game clone for the 3DS, made with the intention to mimic the feeling of a Mario Kart game using Mario Kart 7 as the inspiration",
-      "author": "PabloMK7",
-      "version": "v0.2",
-      "license": "Other",
-      "icon_url": "https://raw.githubusercontent.com/mariohackandglitch/YAMKC_3DS/main/icon.png",
-      "release_url": "https://github.com/mariohackandglitch/YAMKC_3DS/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "YAMKC_3DS.3dsx",
-          "url": "https://github.com/PabloMK7/YAMKC_3DS/releases/download/v0.2/YAMKC_3DS.3dsx",
-          "size": 7114120
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2021-05-13T16:09:21Z"
     },
     {
       "id": "open-shop-channel-wii:YGO-DT_DLC_Tool",
