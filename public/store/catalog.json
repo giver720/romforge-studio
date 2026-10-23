@@ -12613,7 +12613,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22T17:17:25+00:00"
+      "updated_at": "2024-09-21T00:00:00+00:00"
     },
     {
       "id": "hbas-switch:ClawSwitch",
@@ -12944,7 +12944,7 @@
       "name": "ColecoDS",
       "summary": "An Emulator for the DS/DSi with support for Colecovision, ADAM, MSX1, Sord-M5, Memotech MTX, Spectravision SVI, Hanimex Pencil II, Tatung Einstein, SG-1000/SC-3000, PV-1000, PV-2000 and the Creativision.",
       "author": "AlekMaul / wavemotion-dave",
-      "version": "11.0",
+      "version": "11.1",
       "license": null,
       "icon_url": "https://db.universal-team.net/assets/images/icons/colecods.png",
       "release_url": "https://github.com/wavemotion-dave/ColecoDS/releases",
@@ -12952,14 +12952,14 @@
         {
           "format": "nds",
           "filename": "ColecoDS.nds",
-          "url": "https://github.com/wavemotion-dave/ColecoDS/releases/download/11.0/ColecoDS.nds",
-          "size": 1481728
+          "url": "https://github.com/wavemotion-dave/ColecoDS/releases/download/11.1/ColecoDS.nds",
+          "size": 1480704
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-20T21:13:40Z"
+      "updated_at": "2026-10-22T22:18:21Z"
     },
     {
       "id": "universal-db:ArmstrongThomas/Doodle",
@@ -21879,7 +21879,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22T17:19:12+00:00"
+      "updated_at": "2026-10-20T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:fceugx-channel-installer",
@@ -33795,7 +33795,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22T17:18:03+00:00"
+      "updated_at": "2026-10-21T21:36:09+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -50690,7 +50690,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 10877,
+      "popularity": 10935,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50717,7 +50717,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3153,
+      "popularity": 3164,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50744,7 +50744,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10188,
+      "popularity": 10234,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50771,7 +50771,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6150,
+      "popularity": 6162,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50798,7 +50798,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 55209,
+      "popularity": 55383,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50825,7 +50825,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 449,
+      "popularity": 450,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -60453,7 +60453,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22T17:14:57+00:00"
+      "updated_at": "2026-10-20T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:snes9xgx-channel-installer",
@@ -72706,7 +72706,7 @@
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "Tantric",
-      "version": "3.0.3",
+      "version": "3.0.4",
       "title_id": "000100014E113DA1",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/vbagx/icon.png",
@@ -72716,14 +72716,14 @@
           "format": "zip",
           "filename": "vbagx.zip",
           "url": "https://hbb1.oscwii.org/api/contents/vbagx/vbagx.zip",
-          "size": 3991850
+          "size": 3565078
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-01T00:00:00+00:00"
+      "updated_at": "2026-10-22T23:24:06+00:00"
     },
     {
       "id": "open-shop-channel-wii:VC_Test",
