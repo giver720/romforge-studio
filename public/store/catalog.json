@@ -40778,7 +40778,7 @@
       "name": "NeoEnabler",
       "summary": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
       "author": "",
-      "version": "v0.4.1",
+      "version": "v0.5.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/neoenabler",
@@ -40786,15 +40786,15 @@
         {
           "format": "elf",
           "filename": "neo-manager.elf",
-          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.4.1/neo-manager.elf",
-          "sha256": "07402cf701cafba6a50e5922cbb90d860107adb09a37193f4bb81b3e10cd801d"
+          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.0/neo-manager.elf",
+          "sha256": "d3464c5deb8dac7c2b55f51baed244d0084a2c76d53b191ac3d42b6c4baf13d3"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-23 01:13:12 UTC+8"
+      "updated_at": "2026-10-23 19:03:10 UTC+8"
     },
     {
       "id": "open-shop-channel-wii:neopop",
@@ -50668,168 +50668,6 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-10-11 11:33:58 UTC+8"
-    },
-    {
-      "id": "ps4-store:268181309",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — homebrew.elf",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "homebrew.elf",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/homebrew.elf",
-          "size": 4842768,
-          "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
-        }
-      ],
-      "popularity": 10935,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:238357415",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — PS5_Update_files.zip",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "PS5_Update_files.zip",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/PS5_Update_files.zip",
-          "size": 1488211,
-          "sha256": null
-        }
-      ],
-      "popularity": 3164,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:268177439",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — Store-R2-Legacy.pkg",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "pkg",
-          "filename": "Store-R2-Legacy.pkg",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-Legacy.pkg",
-          "size": 24772608,
-          "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
-        }
-      ],
-      "popularity": 10234,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:167233612",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — Store-R2-PS5.pkg",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "pkg",
-          "filename": "Store-R2-PS5.pkg",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-PS5.pkg",
-          "size": 43450368,
-          "sha256": null
-        }
-      ],
-      "popularity": 6162,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:268177642",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — Store-R2.pkg",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "pkg",
-          "filename": "Store-R2.pkg",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg",
-          "size": 24772608,
-          "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
-        }
-      ],
-      "popularity": 55383,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-hen:574675730",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4HEN — hen.bin",
-      "summary": "**Full Changelog**: https://github.com/Scene-Collective/ps4-hen/compare/pre-release-main-181...pre-release-main-182",
-      "author": "Scene-Collective",
-      "version": "pre-release-main-182",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/Scene-Collective/ps4-hen/releases/tag/pre-release-main-182",
-      "downloads": [
-        {
-          "format": "bin",
-          "filename": "hen.bin",
-          "url": "https://github.com/Scene-Collective/ps4-hen/releases/download/pre-release-main-182/hen.bin",
-          "size": 500448,
-          "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
-        }
-      ],
-      "popularity": 450,
-      "source": "PS4HEN",
-      "source_url": "https://github.com/Scene-Collective/ps4-hen",
-      "license_url": null,
-      "updated_at": "2026-09-19T11:47:15Z"
     },
     {
       "id": "vitadbtoo-vita:560",
@@ -72723,7 +72561,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22T23:24:06+00:00"
+      "updated_at": "2026-10-20T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:VC_Test",
@@ -82727,40 +82565,46 @@
       "name": "Українізатор 3DS/2DS",
       "summary": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS.",
       "author": "Max Bolhar",
-      "version": "v1.12.0",
+      "version": "v2.0.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/assets/unistore-icon.png",
       "release_url": "https://github.com/BolgarMaxym97/3ds-ua/releases",
       "downloads": [
         {
           "format": "zip",
-          "filename": "3ds-ua-from-en-1.12.0-new3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.12.0/3ds-ua-from-en-1.12.0-new3ds.zip",
-          "size": 24121942
+          "filename": "3ds-ua-from-en-2.0.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.0.0/3ds-ua-from-en-2.0.0-new3ds.zip",
+          "size": 24122022
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-en-1.12.0-old3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.12.0/3ds-ua-from-en-1.12.0-old3ds.zip",
-          "size": 22274790
+          "filename": "3ds-ua-from-en-2.0.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.0.0/3ds-ua-from-en-2.0.0-old3ds.zip",
+          "size": 22274872
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-ru-1.12.0-new3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.12.0/3ds-ua-from-ru-1.12.0-new3ds.zip",
-          "size": 24393084
+          "filename": "3ds-ua-from-ru-2.0.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.0.0/3ds-ua-from-ru-2.0.0-new3ds.zip",
+          "size": 24393156
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-ru-1.12.0-old3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v1.12.0/3ds-ua-from-ru-1.12.0-old3ds.zip",
-          "size": 22585258
+          "filename": "3ds-ua-from-ru-2.0.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.0.0/3ds-ua-from-ru-2.0.0-old3ds.zip",
+          "size": 22585332
+        },
+        {
+          "format": "cia",
+          "filename": "3ds-ua-installer-2.0.0.cia",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.0.0/3ds-ua-installer-2.0.0.cia",
+          "size": 32752576
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-12T06:20:04Z"
+      "updated_at": "2026-10-23T10:04:23Z"
     },
     {
       "id": "vitadbtoo-vita:1454",
@@ -82911,5 +82755,18 @@
       "homepage": "https://github.com/Scene-Collective/ps4-hen"
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "source": "ps4-goldhen",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "source": "ps4-store",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "source": "ps4-hen",
+      "error": "HTTP Error 403: rate limit exceeded"
+    }
+  ]
 }
