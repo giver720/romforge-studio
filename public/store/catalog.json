@@ -1816,28 +1816,28 @@
       "name": "3DSoundShell",
       "summary": "Un lecteur de musique pour 2/3DS avec eqaliser visuel, playlist, paramètre de vitesse et bien plus..",
       "author": "Adritrain09",
-      "version": "Latest",
+      "version": "V0.99",
       "license": "Apache License 2.0",
       "icon_url": "https://raw.githubusercontent.com/Adritrain09/3DSoundShell/main/3DSoundShell.png",
       "release_url": "https://github.com/Adritrain09/3DSoundShell/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "3DSoundShell-V0.98.3dsx",
-          "url": "https://github.com/Adritrain09/3DSoundShell/releases/download/Latest/3DSoundShell-V0.98.3dsx",
-          "size": 2860064
+          "filename": "3DSoundShell-V0.99.3dsx",
+          "url": "https://github.com/Adritrain09/3DSoundShell/releases/download/V0.99/3DSoundShell-V0.99.3dsx",
+          "size": 4014680
         },
         {
           "format": "cia",
-          "filename": "3DSoundShell-V0.98.cia",
-          "url": "https://github.com/Adritrain09/3DSoundShell/releases/download/Latest/3DSoundShell-V0.98.cia",
-          "size": 3101632
+          "filename": "3DSoundShell-V0.99.cia",
+          "url": "https://github.com/Adritrain09/3DSoundShell/releases/download/V0.99/3DSoundShell-V0.99.cia",
+          "size": 4211648
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-07T19:12:21Z"
+      "updated_at": "2026-10-24T16:51:24Z"
     },
     {
       "id": "universal-db:fthomys/3ds-playcoin-tool",
@@ -43126,6 +43126,32 @@
       "updated_at": "2019-03-13"
     },
     {
+      "id": "ps5-payloads-atlas:nuvio-ps5.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "Nuvio PS5",
+      "summary": "Nuvio as a PS5 app, with a native 4K HDR player built for the console's own video hardware.",
+      "author": "",
+      "version": "v1.9.1",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://theghostonline.dev/theghostonline/nuvio-ps5",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "nuvio-ps5.elf",
+          "url": "https://theghostonline.dev/theghostonline/Nuvio-PS5/releases/download/v1.9.1/nuvio-ps5.elf",
+          "sha256": null
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-20 08:17:18 UTC+8"
+    },
+    {
       "id": "hbas-switch:NXBadApple",
       "platforms": [
         "switch"
@@ -50756,7 +50782,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11348,
+      "popularity": 11402,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50783,7 +50809,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3199,
+      "popularity": 3205,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50810,7 +50836,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10428,
+      "popularity": 10497,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50837,7 +50863,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6240,
+      "popularity": 6258,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50864,7 +50890,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 56453,
+      "popularity": 56746,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50891,7 +50917,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 458,
+      "popularity": 463,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51061,6 +51087,32 @@
       "updated_at": "2026-10-02 14:39:43 UTC+8"
     },
     {
+      "id": "ps5-payloads-atlas:game-updater.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "PS5 Game Updater",
+      "summary": "Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game and installs it, and applies a backport when an update needs a newer firmware than yours. No PC needed.",
+      "author": "",
+      "version": "v1.0.2",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://theghostonline.dev/theghostonline/ps5-game-updater",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "game-updater.elf",
+          "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.0.2/game-updater.elf",
+          "sha256": null
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-24 14:49:37 UTC+8"
+    },
+    {
       "id": "ps5-payloads-atlas:TabShifter.elf",
       "platforms": [
         "ps5"
@@ -51068,7 +51120,7 @@
       "name": "PS5 TabShifter",
       "summary": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (FW 13.60 supported).",
       "author": "",
-      "version": "v.1.2.1",
+      "version": "v1.3.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/xvvulcanvx/ps5-tabshifter",
@@ -51076,15 +51128,15 @@
         {
           "format": "elf",
           "filename": "TabShifter.elf",
-          "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v.1.2.1/TabShifter.elf",
-          "sha256": "147945cffb28405557a49cd4929c7d0534c55f6a757aba0063f9ce475c1c7255"
+          "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.3.0/TabShifter.elf",
+          "sha256": "5d2d9c46c2390df05c5a85781b033aa9471584629e8bd69b91608cb3e60f45b4"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-17 04:56:27 UTC+8"
+      "updated_at": "2026-10-25 02:38:30 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:tailscale-0.7.1.elf",
@@ -51399,30 +51451,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.3.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.4.3.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.3.0",
+      "version": "v7.4.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.3.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.3.0/ps5upload-7.3.0.elf",
-          "sha256": "ded4faa584fa2ac76d34210b7df01cee1359c47eeb0bae5c6f8d7c03a3e1a3cd"
+          "filename": "ps5upload-7.4.3.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.4.3/ps5upload-7.4.3.elf",
+          "sha256": "1a7dfaff37d131adac59a74a454dd0a756a503d1022bddda5b5b7e619299e667"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-24 18:22:39 UTC+8"
+      "updated_at": "2026-10-25 02:08:20 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -63108,7 +63160,7 @@
       "name": "StarCruiser7",
       "summary": "StarCruiser7 is a first-person space combat simulator for the 3DS game console",
       "author": "dotMizi",
-      "version": "v1.0.0",
+      "version": "v1.1.0",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/dotMizi/StarCruiser7/main/logo.png",
       "release_url": "https://github.com/dotMizi/StarCruiser7/releases",
@@ -63116,14 +63168,14 @@
         {
           "format": "3dsx",
           "filename": "StarCruiser7.3dsx",
-          "url": "https://github.com/dotMizi/StarCruiser7/releases/download/v1.0.0/StarCruiser7.3dsx",
-          "size": 1148996
+          "url": "https://github.com/dotMizi/StarCruiser7/releases/download/v1.1.0/StarCruiser7.3dsx",
+          "size": 1167312
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2024-12-06T15:57:52Z"
+      "updated_at": "2026-10-24T15:57:46Z"
     },
     {
       "id": "open-shop-channel-wii:starfield",
