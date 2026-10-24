@@ -2646,11 +2646,11 @@
       "categories": [
         "utilities"
       ],
-      "description": "把 agent(游戏内增强 Mod)装进《集合啦!动物森友会》游戏目录(仅支持 3.0.3,写入前逐文件校验),装好后在聊天栏行首输入  /9C9  就能把物品放进背包,也可一键删除还原。\n\nInstalls the in-game agent for Animal Crossing: New Horizons 3.0.3 -- every file is SHA-256 checked before it is written -- so a chat line starting with  /9C9  puts that item in your bag, and one tap removes it again.",
-      "added_at": "2026-09-23",
-      "summary": "Installer and manager for the Animal Crossing: New Horizons in-game agent.",
+      "description": "可从 SD 卡、HTTP 地址或手机/电脑浏览器安装 NSP、NSZ、XCI、XCZ；本应用不托管任何游戏内容。安装受支持的《集合啦!动物森友会》本体或更新后会自动安装 3.0.3 动森 Game Agent，所有文件逐项 SHA-256 校验。\n\nInstalls NSP, NSZ, XCI and XCZ packages from the SD card, an HTTP address or a phone/computer browser; no game content is hosted by this app. Installs the Game Agent for 3.0.3 automatically after a supported game or update, with SHA-256 verification for every file.",
+      "added_at": "2026-10-24",
+      "summary": "Switch game installer and manager for the Game Agent.",
       "author": "acnh-game",
-      "version": "1.0.1",
+      "version": "2.2.1",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://gitee.com/acnh-game/acnh-manager",
@@ -2659,8 +2659,8 @@
           "format": "hbas",
           "filename": "acnh-manager.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/acnh-manager/manifest.install",
-          "size": 2670,
-          "sha256": "db1474b60a500b62e82ca5bab082c61d51b5acdb98a21ac02cf32fb0393af025"
+          "size": 3754,
+          "sha256": "58111d1296a17dca99da23c806166da7459e9003c23da927c8562b49aa6fc08b"
         }
       ],
       "popularity": 125,
@@ -2668,7 +2668,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-23"
+      "updated_at": "2026-10-24"
     },
     {
       "id": "vitadbtoo-vita:307",
@@ -23833,6 +23833,39 @@
       "updated_at": "2026-09-17"
     },
     {
+      "id": "hbas-switch:FNFVSliceNX",
+      "platforms": [
+        "switch"
+      ],
+      "name": "FNF: V-Slice (unofficial port)",
+      "categories": [
+        "games"
+      ],
+      "description": "Friday Night Funkin' V-Slice 0.8.7 (the official engine by The Funkin' Crew), ported to the Nintendo Switch.\n\nThis homebrew contains no game assets. On first launch it downloads the official game files (about 734 MB) from The Funkin' Crew's GitHub repository (FunkinCrew/funkin.assets), checks every file against its SHA-256 and starts the game. Downloads resume after a lost connection or a closed game. Without internet on the console, the screen explains how to copy the files from a computer.\n\nRequirements:\n- Launch the homebrew menu from a game (hold R while starting any title), not from the Album.\n- About 1.1 GB free on the SD card.\n\nIncludes every week, Weekend 1, Erect and Pico mixes, Freeplay, Character Select, video cutscenes from the official files, HD Rumble and Nintendo button layout. Saves and mods go to /switch/Friday-Night-Funkin/.\n\nUnofficial port, not affiliated with The Funkin' Crew Inc. or Nintendo. Please support the official game.\n\nCredits: The Funkin' Crew (the game); FunkinNXTeam for the first V-Slice Switch port this one started from; Slushi for lime-nx and hx_libnx; devkitPro. Source code, build instructions and licences: https://github.com/leleletus/Funkin",
+      "added_at": "2026-10-21",
+      "summary": "Friday Night Funkin' V-Slice 0.8.7, downloads the official game files on first launch",
+      "author": "leleletus",
+      "version": "0.8.7-nx1",
+      "license": "Apache-2.0",
+      "icon_url": null,
+      "release_url": "https://github.com/leleletus/Funkin",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "FNFVSliceNX.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/FNFVSliceNX/manifest.install",
+          "size": 81884,
+          "sha256": "88f0ca5a3d8f7cc43b12e5f3fa35ffeabf13e3cc2837cc9080591744656d3bdb"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/FNFVSliceNX/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-10-24"
+    },
+    {
       "id": "hbas-switch:Foldery",
       "platforms": [
         "switch"
@@ -36542,28 +36575,28 @@
       "name": "mario-kart-64-3ds",
       "summary": "Native Nintendo 3DS port work based on the Mario Kart 64 decompilation.",
       "author": "estebanpdn",
-      "version": "v1.5",
+      "version": "v2.0",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/EstebanPdN/mario-kart-64-3ds/main/icon.jpeg",
       "release_url": "https://github.com/EstebanPdN/mario-kart-64-3ds/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "mk64-3ds-v1.5.3dsx",
-          "url": "https://github.com/EstebanPdN/mario-kart-64-3ds/releases/download/v1.5/mk64-3ds-v1.5.3dsx",
-          "size": 14266292
+          "filename": "mk64-3ds-v2.0.3dsx",
+          "url": "https://github.com/EstebanPdN/mario-kart-64-3ds/releases/download/v2.0/mk64-3ds-v2.0.3dsx",
+          "size": 49700432
         },
         {
           "format": "cia",
-          "filename": "mk64-3ds-v1.5.cia",
-          "url": "https://github.com/EstebanPdN/mario-kart-64-3ds/releases/download/v1.5/mk64-3ds-v1.5.cia",
-          "size": 11420608
+          "filename": "mk64-3ds-v2.0.cia",
+          "url": "https://github.com/EstebanPdN/mario-kart-64-3ds/releases/download/v2.0/mk64-3ds-v2.0.cia",
+          "size": 46179264
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-07T23:52:19Z"
+      "updated_at": "2026-10-23T21:14:28Z"
     },
     {
       "id": "hbas-switch:MarioBrosNX",
@@ -40778,7 +40811,7 @@
       "name": "NeoEnabler",
       "summary": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
       "author": "",
-      "version": "v0.5.0",
+      "version": "v0.5.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/neoenabler",
@@ -40786,15 +40819,15 @@
         {
           "format": "elf",
           "filename": "neo-manager.elf",
-          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.0/neo-manager.elf",
-          "sha256": "d3464c5deb8dac7c2b55f51baed244d0084a2c76d53b191ac3d42b6c4baf13d3"
+          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.1/neo-manager.elf",
+          "sha256": "105a48f1f1382c224f2f3227d28b02f8df79c3e07efe9fa79fb3f7b76cc41b64"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-23 19:03:10 UTC+8"
+      "updated_at": "2026-10-24 06:28:26 UTC+8"
     },
     {
       "id": "open-shop-channel-wii:neopop",
@@ -48750,6 +48783,39 @@
       "updated_at": "2026-08-26"
     },
     {
+      "id": "hbas-switch:PlayGuard",
+      "platforms": [
+        "switch"
+      ],
+      "name": "PlayGuard",
+      "categories": [
+        "utilities"
+      ],
+      "description": "PlayGuard sets the Nintendo Switch's own parental controls on the console, offline: no phone app, no Nintendo account. The countdown, the PIN prompt and the suspension at the limit stay the console's own, nothing runs in the background, and the limits stay if PlayGuard is removed.\n\n• Play-time limit: the same every day or one per weekday, saved profiles, extra time or no more play today, a bedtime alarm and a one-switch console lock.\n• Activity: play time per game and per user account, day by day, exported to CSV, JSON, XLSX or PDF.\n• Restrictions and PIN: restriction level, age rating, show or change the PIN, an optional PIN to open PlayGuard.\n• Network clock: set from NTP servers, so the play timer counts right on a console that never reaches Nintendo.\n• Safe: every change is logged and can be undone, settings are backed up to the SD card.\n• Unlinks the phone app on a second-hand console. Every console language, light and dark themes.\n\nPlayGuard carries on Pctl Manager by Taylor, of which it is a fork. It installs to /switch/playguard/ and keeps its files in /config/playguard/.\n\nA recovery sysmodule for a forgotten PIN is a separate, optional download: playguard-rescue.zip on the GitHub releases page.\n\nRequires Atmosphère. Play-time limit on firmware 21.0.0 and later, tested on a console up to 23.0.1; a newer firmware opens read-only until a release supports it.",
+      "added_at": "2026-10-18",
+      "summary": "Offline parental controls & play activity",
+      "author": "JigSawFr",
+      "version": "1.2.0",
+      "license": "GPLv3",
+      "icon_url": null,
+      "release_url": "https://github.com/JigSawFr/PlayGuard",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "PlayGuard.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/PlayGuard/manifest.install",
+          "size": 7613,
+          "sha256": "3298e318ae66d6e9220cb219d750b8deb99ee47b6d457d131b04898ec1f66b1b"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/PlayGuard/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-10-24"
+    },
+    {
       "id": "open-shop-channel-wii:playstats",
       "platforms": [
         "wii"
@@ -50690,7 +50756,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11144,
+      "popularity": 11219,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50717,7 +50783,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3185,
+      "popularity": 3193,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50744,7 +50810,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10334,
+      "popularity": 10372,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50771,7 +50837,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6203,
+      "popularity": 6222,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50798,7 +50864,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 55918,
+      "popularity": 56113,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50825,7 +50891,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 454,
+      "popularity": 455,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -50872,7 +50938,7 @@
       "name": "PS4Mount",
       "summary": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
       "author": "",
-      "version": "v0.6.1",
+      "version": "v0.7.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/ps4mount",
@@ -50880,15 +50946,15 @@
         {
           "format": "elf",
           "filename": "ps4mount.elf",
-          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.6.1/ps4mount.elf",
-          "sha256": "e8730c816fe762c52a9aa88c2116520569fa4448c49ff4c2035001ab9427601a"
+          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.0/ps4mount.elf",
+          "sha256": "9a99fdeb2be8ebee823b14636e0aac5721386feabcfe97e27dc6d5b3e4158bb7"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21 11:06:30 UTC+8"
+      "updated_at": "2026-10-24 10:07:53 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:aria2-v1.37.0-3.elf",
@@ -53111,6 +53177,39 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2017-02-02T23:45:48Z"
+    },
+    {
+      "id": "hbas-switch:ra-offline",
+      "platforms": [
+        "switch"
+      ],
+      "name": "ra-offline",
+      "categories": [
+        "utilities"
+      ],
+      "description": "ra-offline is an Atmosphere sysmodule that acts as an offline loopback server for RetroAchievements.\n\nWhile you play RetroArch without an internet connection, it pretends to be retroachievements.org on the Switch itself: game data is served from a local cache and every achievement you unlock is queued on the SD card. As soon as the Switch comes back online, the queued unlocks are replayed to the real retroachievements.org over TLS - automatically, and nothing is lost if the connection drops.\n\n## Setup (required after install)\n\n1. Save your account: run the fetch-cache.py tool from the GitHub repo once on a computer (needs your RetroAchievements account), then copy the resulting folder to sd:/switch/raoffline\n2. Point RetroArch at the proxy: set cheevos_custom_host = \\\"http://127.0.0.1:8080\\\" in retroarch/retroarch.cfg (the ra-config.sh helper from the repo does this for you), then restart RetroArch\n3. Reboot the console so the sysmodule starts\n4. Cache your games before you go offline. We recommend that you start each game once while the Switch is online: the module caches it, and you see that achievements load. To cache every game on the SD card in one run, start the ra-offline cacher app from the Homebrew Menu and press A.\n\nOffline, only cached games have achievements. A game that was never cached shows \\\"Not cached offline. Play this game once online to cache it.\\\"\n\n## Notes\n\n- Requires Atmosphere CFW and the standard RetroArch Switch build\n- The module logs to sd:/switch/raoffline/sysmodule.log for troubleshooting\n- Uninstall: delete sd:/atmosphere/contents/4300000000000042 and remove the cheevos_custom_host line from retroarch.cfg\n\n## Links\n\n- Source and documentation: https://github.com/cheasan/switch-retro-offline\n- Not affiliated with RetroAchievements.org, the RetroArch team, or Nintendo.",
+      "added_at": "2026-10-22",
+      "summary": "Offline RetroAchievements proxy sysmodule: keep earning achievements with no internet, auto-syncs when Wi-Fi returns.",
+      "author": "cheasan",
+      "version": "0.4.5",
+      "license": "MIT",
+      "icon_url": null,
+      "release_url": "https://github.com/cheasan/switch-retro-offline",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "ra-offline.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/ra-offline/manifest.install",
+          "size": 533,
+          "sha256": "244b9916a691e16ddf79f118edaa74634ce5a76ab85dcfd973a72d98242d09f5"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/ra-offline/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-10-24"
     },
     {
       "id": "open-shop-channel-wii:Rainbii",
@@ -55405,46 +55504,34 @@
       "name": "Roku-Remote-3DS",
       "summary": "A personal Nintendo 3DS homebrew remote for a Roku device on your home network.",
       "author": "nohsaidnottoplay-blip",
-      "version": "Roku-Remote-3DS-v1.1.0",
+      "version": "Roku-Remote-3DS-v1.2.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/nohsaidnottoplay-blip/Roku-Remote-3DS/refs/heads/main/icon.png",
       "release_url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases",
       "downloads": [
         {
-          "format": "zip",
-          "filename": "3ds.zip",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.1.0/3ds.zip",
-          "size": 99868
-        },
-        {
-          "format": "zip",
-          "filename": "Roku-Remote-3DS-V1.1.0.zip",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.1.0/Roku-Remote-3DS-V1.1.0.zip",
-          "size": 365285
-        },
-        {
           "format": "3dsx",
-          "filename": "RokuRemote3DS.3dsx",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.1.0/RokuRemote3DS.3dsx",
-          "size": 215328
+          "filename": "RokuRemote3DS-v1.2.0.3dsx",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.2.0/RokuRemote3DS-v1.2.0.3dsx",
+          "size": 232160
         },
         {
           "format": "cia",
-          "filename": "RokuRemote3DSV1.1.0.cia",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.1.0/RokuRemote3DSV1.1.0.cia",
-          "size": 248256
+          "filename": "RokuRemote3DS-v1.2.0.cia",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.2.0/RokuRemote3DS-v1.2.0.cia",
+          "size": 259008
         },
         {
           "format": "zip",
-          "filename": "source-project.zip",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.1.0/source-project.zip",
-          "size": 54696
+          "filename": "source-project-v1.2.0.zip",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.2.0/source-project-v1.2.0.zip",
+          "size": 74125
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-07T23:52:01Z"
+      "updated_at": "2026-10-23T22:20:00Z"
     },
     {
       "id": "vitadbtoo-vita:1312",
@@ -65080,11 +65167,11 @@
       "categories": [
         "utilities"
       ],
-      "description": "Switch Frame Tap is a sysmodule that streams the game you are playing - picture and sound - to a Windows, Linux or macOS PC, with no capture card and no dock. It reads the game's finished frames and encodes them with the Switch's own H.264 encoder: native 1080p at 60 fps.\n\n- Play a Switch Lite (or any Switch) on a big screen: a USB cable in handheld, or the network (Wi-Fi or the dock's LAN port) to play docked\n- Game audio, also in games that block recording (optional), and recording to MP4 on the PC\n- Native-resolution PNG screenshots on a button combo, also next to the system's Album screenshots\n- Webcam mode: the Switch shows up as a USB camera, for OBS (H.264, 1080p60) or any camera app (uncompressed, 720p)\n- Turn the Switch's screen off while you stream\n- This manager app for the settings and to install the optional tools (Ultrahand, SaltyNX, ReverseNX-RT, sys-clk or Horizon OC), plus a Tesla/Ultrahand overlay\n\nNeeds Atmosphere (firmware 21 to 23) and the PC viewer (Windows, Linux or macOS) from the GitHub releases page. It reads the running game like a debugger; with cheats loaded for a game it reads through Atmosphere's cheat engine, which is slower.",
-      "added_at": "2026-10-18",
+      "description": "Switch Frame Tap is a sysmodule that streams the game you are playing - picture and sound - to a Windows, Linux or macOS PC, with no capture card and no dock. It reads the game's finished frames and encodes them with the Switch's own H.264 encoder: native 1080p at 60 fps.\n\n- Play a Switch Lite (or any Switch) on a big screen: a USB cable in handheld, or the network (Wi-Fi or the dock's LAN port) to play docked\n- Game audio, also in games that block recording (optional), and recording to MP4 on the PC\n- Native-resolution PNG screenshots on a button combo, also next to the system's Album screenshots\n- Webcam mode: the Switch shows up as a USB camera, for OBS (H.264, 1080p60) or any camera app (uncompressed, 720p)\n- Stream the HOME menu and the console's overlays too: the volume bar, quick settings, power menu and Tesla/Ultrahand menus (optional)\n- Turn the Switch's screen off while you stream\n- This manager app for the settings and to install the optional tools (Ultrahand, SaltyNX, ReverseNX-RT, sys-clk or Horizon OC), plus a Tesla/Ultrahand overlay; it updates itself from GitHub\n\nNeeds Atmosphere (firmware 21 to 23) and a viewer from the GitHub releases page: Windows, Linux, macOS or Android / Android TV. It reads the running game like a debugger; with cheats loaded for a game it reads through Atmosphere's cheat engine, which is slower.",
+      "added_at": "2026-10-23",
       "summary": "Stream your games to a PC at 1080p60",
       "author": "Papux200",
-      "version": "0.7.13.1",
+      "version": "0.7.14",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/TomasUribe/switch-frame-tap",
@@ -65093,8 +65180,8 @@
           "format": "hbas",
           "filename": "SwitchFrameTap.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SwitchFrameTap/manifest.install",
-          "size": 9990,
-          "sha256": "9bbeac636c54db9bda55e4d19040dfee71b43785901025e8634b0a660b49abc2"
+          "size": 10061,
+          "sha256": "eb60bda7d58570302e561f6a2c710513815ffcaa6781f12893d9b7c81c8c5920"
         }
       ],
       "popularity": 264,
@@ -65102,7 +65189,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-18"
+      "updated_at": "2026-10-24"
     },
     {
       "id": "hbas-switch:SwitchFTPClient",
