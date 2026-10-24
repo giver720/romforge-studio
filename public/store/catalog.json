@@ -7317,7 +7317,7 @@
       "name": "BFpilot",
       "summary": "Web-based PS5 file manager serving a browser interface on port 5905 for browsing and managing console files.",
       "author": "",
-      "version": "v0.4.4",
+      "version": "v0.5.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsblurf/bfpilot",
@@ -7325,15 +7325,15 @@
         {
           "format": "elf",
           "filename": "bfpilot.elf",
-          "url": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.4.4/bfpilot.elf",
-          "sha256": "5a8237630260026ad054d71fbbe661e433ac9ffa2cb4eea2785769c1eb7ee1c1"
+          "url": "https://github.com/ItsBlurf/BFpilot/releases/download/v0.5.0/bfpilot.elf",
+          "sha256": "b9226a4321de09d434579d651b9fdbb5ce0ccbe5c65f86bb2e951c324da4df9f"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-12 02:08:09 UTC+8"
+      "updated_at": "2026-10-24 12:48:24 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:bfplayer-standalone.elf",
@@ -50756,7 +50756,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11219,
+      "popularity": 11277,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50783,7 +50783,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3193,
+      "popularity": 3195,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50810,7 +50810,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10372,
+      "popularity": 10392,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50837,7 +50837,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6222,
+      "popularity": 6228,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50864,7 +50864,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 56113,
+      "popularity": 56244,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51399,30 +51399,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.1.19.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.2.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.1.19",
+      "version": "v7.2.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.1.19.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.1.19/ps5upload-7.1.19.elf",
-          "sha256": "c5e68afd6c3101a50b6a425350a7d3fec9ab5049cf8bed9ced53f4548598da07"
+          "filename": "ps5upload-7.2.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.2.0/ps5upload-7.2.0.elf",
+          "sha256": "a8a20057b43fae225df7adfdda046911d81886a72fc3223e831c2999db948331"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-23 17:58:44 UTC+8"
+      "updated_at": "2026-10-24 16:05:52 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
