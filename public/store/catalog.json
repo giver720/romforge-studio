@@ -1536,37 +1536,6 @@
       "updated_at": "2020-11-04T01:21:35Z"
     },
     {
-      "id": "universal-db:cylin577/3DSC2",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "3DSC2",
-      "summary": "A universal 3DS screen capture and control software",
-      "author": "cylin577",
-      "version": "v1.1.2",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://raw.githubusercontent.com/cylin577/3DSC2/main/resources/icon.png",
-      "release_url": "https://github.com/cylin577/3DSC2/releases",
-      "downloads": [
-        {
-          "format": "3dsx",
-          "filename": "3dsc2_calib.3dsx",
-          "url": "https://github.com/cylin577/3DSC2/releases/download/v1.1.2/3dsc2_calib.3dsx",
-          "size": 50368
-        },
-        {
-          "format": "cia",
-          "filename": "3dsc2_calib.cia",
-          "url": "https://github.com/cylin577/3DSC2/releases/download/v1.1.2/3dsc2_calib.cia",
-          "size": 291776
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2026-08-17T04:40:45Z"
-    },
-    {
       "id": "universal-db:CTurt/3DSController",
       "platforms": [
         "3ds"
@@ -50756,7 +50725,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11476,
+      "popularity": 11540,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50783,7 +50752,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3219,
+      "popularity": 3224,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50810,7 +50779,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10555,
+      "popularity": 10595,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50837,7 +50806,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6284,
+      "popularity": 6298,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50864,7 +50833,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 57008,
+      "popularity": 57184,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50891,7 +50860,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 465,
+      "popularity": 467,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51068,7 +51037,7 @@
       "name": "PS5 Game Updater",
       "summary": "Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game and installs it, and applies a backport when an update needs a newer firmware than yours. No PC needed.",
       "author": "",
-      "version": "v1.0.2",
+      "version": "v1.1.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://theghostonline.dev/theghostonline/ps5-game-updater",
@@ -51076,7 +51045,7 @@
         {
           "format": "elf",
           "filename": "game-updater.elf",
-          "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.0.2/game-updater.elf",
+          "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.0/game-updater.elf",
           "sha256": null
         }
       ],
@@ -51084,7 +51053,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-24 14:49:37 UTC+8"
+      "updated_at": "2026-10-25 13:55:37 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:TabShifter.elf",
@@ -51425,30 +51394,30 @@
       "updated_at": "2026-09-23 11:21:00 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.5.1.elf",
+      "id": "ps5-payloads-atlas:ps5upload-7.5.2.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.5.1",
+      "version": "v7.5.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.5.1.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.1/ps5upload-7.5.1.elf",
-          "sha256": "021c03c15d1b077558f8966ca46f38636f1934c084b930545098167e11abbc7b"
+          "filename": "ps5upload-7.5.2.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.2/ps5upload-7.5.2.elf",
+          "sha256": "6ad5f22acb9dfb1f977b303c59e7e9c30dc61af302650249fe8fb0078feedde4"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-25 05:40:06 UTC+8"
+      "updated_at": "2026-10-25 15:08:42 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -70666,6 +70635,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2014-03-23"
+    },
+    {
+      "id": "universal-db:cylin577/3DSC2",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "UC2",
+      "summary": "A universal 3DS screen capture and control software",
+      "author": "cylin577",
+      "version": "v1.1.2",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/cylin577/3DSC2/main/resources/icon.png",
+      "release_url": "https://github.com/cylin577/3DSC2/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "3dsc2_calib.3dsx",
+          "url": "https://github.com/cylin577/UC2/releases/download/v1.1.2/3dsc2_calib.3dsx",
+          "size": 50368
+        },
+        {
+          "format": "cia",
+          "filename": "3dsc2_calib.cia",
+          "url": "https://github.com/cylin577/UC2/releases/download/v1.1.2/3dsc2_calib.cia",
+          "size": 291776
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-08-17T04:40:45Z"
     },
     {
       "id": "hbas-wiiu:UFDiine",
