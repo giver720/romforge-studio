@@ -48695,7 +48695,7 @@
       "name": "PKSM",
       "summary": "Gen I to GenVIII save manager.",
       "author": "FlagBrew",
-      "version": "10.4.1",
+      "version": "10.4.2",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/FlagBrew/PKSM/master/assets/icon.png",
       "release_url": "https://github.com/FlagBrew/PKSM/releases",
@@ -48703,20 +48703,20 @@
         {
           "format": "3dsx",
           "filename": "PKSM.3dsx",
-          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.1/PKSM.3dsx",
-          "size": 8162004
+          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.2/PKSM.3dsx",
+          "size": 8174516
         },
         {
           "format": "cia",
           "filename": "PKSM.cia",
-          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.1/PKSM.cia",
-          "size": 6828992
+          "url": "https://github.com/FlagBrew/PKSM/releases/download/10.4.2/PKSM.cia",
+          "size": 6841280
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-07T18:59:01Z"
+      "updated_at": "2026-10-25T14:51:51Z"
     },
     {
       "id": "hbas-switch:pkTeraRaidMapViewer",
@@ -50725,7 +50725,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11540,
+      "popularity": 11615,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50752,7 +50752,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3224,
+      "popularity": 3235,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50779,7 +50779,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10595,
+      "popularity": 10638,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50806,7 +50806,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6298,
+      "popularity": 6315,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50833,7 +50833,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 57184,
+      "popularity": 57437,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -70644,28 +70644,28 @@
       "name": "UC2",
       "summary": "A universal 3DS screen capture and control software",
       "author": "cylin577",
-      "version": "v1.1.2",
+      "version": "v2.0.0",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/cylin577/3DSC2/main/resources/icon.png",
       "release_url": "https://github.com/cylin577/3DSC2/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "3dsc2_calib.3dsx",
-          "url": "https://github.com/cylin577/UC2/releases/download/v1.1.2/3dsc2_calib.3dsx",
+          "filename": "uc2_calib.3dsx",
+          "url": "https://github.com/cylin577/UC2/releases/download/v2.0.0/uc2_calib.3dsx",
           "size": 50368
         },
         {
           "format": "cia",
-          "filename": "3dsc2_calib.cia",
-          "url": "https://github.com/cylin577/UC2/releases/download/v1.1.2/3dsc2_calib.cia",
-          "size": 291776
+          "filename": "uc2_calib.cia",
+          "url": "https://github.com/cylin577/UC2/releases/download/v2.0.0/uc2_calib.cia",
+          "size": 290752
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-08-17T04:40:45Z"
+      "updated_at": "2026-10-25T15:20:10Z"
     },
     {
       "id": "hbas-wiiu:UFDiine",
