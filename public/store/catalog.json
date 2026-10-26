@@ -33780,7 +33780,7 @@
       ],
       "requirements": "wii · wii_mini · vwii · Wii Remote · Classic Controller · GameCube Controller · SDHC",
       "author": "Korbo",
-      "version": "8.3.0",
+      "version": "8.5.0",
       "title_id": "000100014EB9B936",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/korbodonut/icon.png",
@@ -33790,14 +33790,14 @@
           "format": "zip",
           "filename": "korbodonut.zip",
           "url": "https://hbb1.oscwii.org/api/contents/korbodonut/korbodonut.zip",
-          "size": 1193732
+          "size": 1196689
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21T21:36:09+00:00"
+      "updated_at": "2026-10-26T01:52:43+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -35241,6 +35241,32 @@
       "updated_at": "2026-09-26"
     },
     {
+      "id": "ps5-payloads-atlas:liveshell.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "LiveShell",
+      "summary": "Animated backgrounds for PS5 home screen.",
+      "author": "",
+      "version": "v1.5.2",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/zizc3/liveshell",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "liveshell.elf",
+          "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.5.2/liveshell.elf",
+          "sha256": "3c546a3cc85ded2435f822be12f925a284ac25a2aef757c777d6139dad36b624"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-24 13:52:32 UTC+8"
+    },
+    {
       "id": "open-shop-channel-wii:LoadPriiloader",
       "platforms": [
         "wii"
@@ -36037,7 +36063,7 @@
       "name": "LZ4 Compression for PS5",
       "summary": "Shrink your PS5 games on the console itself. Pick a game, choose Compress with LZ4, and it packs the game data into LZ4 asset packs that APR-EMU reads while the game runs. Every file gets checked before anything's deleted, and if the game doesn't ship APR-EMU, the right runtime is added for you.",
       "author": "",
-      "version": "v1.6.3",
+      "version": "v1.6.4",
       "license": null,
       "icon_url": null,
       "release_url": "https://theghostonline.dev/theghostonline/ps5-lz4-compression",
@@ -36045,7 +36071,7 @@
         {
           "format": "elf",
           "filename": "lz4-compression.elf",
-          "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.3/lz4-compression.elf",
+          "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.4/lz4-compression.elf",
           "sha256": null
         }
       ],
@@ -36053,7 +36079,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22 04:53:50 UTC+8"
+      "updated_at": "2026-10-26 10:34:12 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:867",
@@ -50725,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11690,
+      "popularity": 11759,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50752,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3242,
+      "popularity": 3245,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50779,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10691,
+      "popularity": 10733,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50806,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6329,
+      "popularity": 6342,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50833,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 57700,
+      "popularity": 57932,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50860,7 +50886,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 467,
+      "popularity": 468,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51037,7 +51063,7 @@
       "name": "PS5 Game Updater",
       "summary": "Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game and installs it, and applies a backport when an update needs a newer firmware than yours. No PC needed.",
       "author": "",
-      "version": "v1.1.0",
+      "version": "v1.1.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://theghostonline.dev/theghostonline/ps5-game-updater",
@@ -51045,7 +51071,7 @@
         {
           "format": "elf",
           "filename": "game-updater.elf",
-          "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.0/game-updater.elf",
+          "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.1/game-updater.elf",
           "sha256": null
         }
       ],
@@ -51053,7 +51079,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-25 13:55:37 UTC+8"
+      "updated_at": "2026-10-26 10:52:48 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:TabShifter.elf",
@@ -51238,6 +51264,32 @@
       "updated_at": "2026-08-24 22:44:14 UTC+8"
     },
     {
+      "id": "ps5-payloads-atlas:ps5-dump-forge-0.4.1-ps5.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ps5-dump-forge",
+      "summary": "A toolkit for working with PS5 game dumps",
+      "author": "",
+      "version": "v0.4.1",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/quer3q/ps5-dump-forge",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "ps5-dump-forge-0.4.1-ps5.elf",
+          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.4.1/ps5-dump-forge-0.4.1-ps5.elf",
+          "sha256": "ea5c47d1500efc8573523d19cebaa8addac9ec51fc62a9c90048daca755f5c96"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-25 06:55:07 UTC+8"
+    },
+    {
       "id": "ps5-payloads-atlas:ps5-exporter.elf",
       "platforms": [
         "ps5"
@@ -51392,6 +51444,32 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-09-23 11:21:00 UTC+8"
+    },
+    {
+      "id": "ps5-payloads-atlas:backup.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "PS5Save",
+      "summary": "USB save backup utility for jailbroken PS5’s",
+      "author": "",
+      "version": "v2",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/heni0xyz/ps5save",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "backup.elf",
+          "url": "https://github.com/heni0xyz/PS5Save/releases/download/v2/backup.elf",
+          "sha256": "91a7661e1f6708da77fe2bb5a5e4634ff1c531445df65bb1681ef2b21357af4c"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-22 00:59:04 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:ps5upload-7.5.3.elf",
@@ -77075,10 +77153,10 @@
         "utilities"
       ],
       "description": "This app is designed to be run from the browser via https://wafel.xyz. It helps prepare (format and partition) your USB or SD card, then sets up Aroma + Stroopwafel + ISFShax.\n\nIt also includes options to manage Stroopwafel plugins, set up SDUSB or USB partitions, and uninstall them. \nThis app can also be run directly from Aroma to add ISFShax + Stroopwafel and to manage plugins.",
-      "added_at": "2026-08-15",
+      "added_at": "2026-10-25",
       "summary": "Easy Install ISFShax, Stroopwafel, Aroma",
       "author": "zer00p",
-      "version": "1.7",
+      "version": "1.8",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/zer00p/wafel_installer",
@@ -77087,8 +77165,8 @@
           "format": "hbas",
           "filename": "WafelInstaller.hbas",
           "url": "https://wiiu.cdn.fortheusers.org/packages/WafelInstaller/manifest.install",
-          "size": 3279,
-          "sha256": "0bb39cb471e292f476b016f274730c8a5a6250f8df6de6aa4b863784b05c2f1d"
+          "size": 3280,
+          "sha256": "00b9af8cfe197bec2780f682964ea123924d986ebad17de5177c0ba6fda9c59c"
         }
       ],
       "popularity": 195,
@@ -77096,7 +77174,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
       "license_url": null,
-      "updated_at": "2026-10-24"
+      "updated_at": "2026-10-26"
     },
     {
       "id": "vitadbtoo-psp:906",
@@ -77423,6 +77501,32 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-08-03 03:51:42 UTC+8"
+    },
+    {
+      "id": "ps5-payloads-atlas:WelcomeHubActivator-v1.2.0.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "WelcomeHubActivator",
+      "summary": "A PS5 ELF payload that enables the Welcome Hub.",
+      "author": "",
+      "version": "v1.2.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/ghost1372/welcomehubactivator",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "WelcomeHubActivator-v1.2.0.elf",
+          "url": "https://github.com/ghost1372/WelcomeHubActivator/releases/download/v1.2.0/WelcomeHubActivator-v1.2.0.elf",
+          "sha256": "f989cc412ef782a01f394fe80cf8fc237970884ba90ce4fe4baac165c0b5a2a6"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-24 04:08:05 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:wfm-7zip-helper-v26.04-0.elf",
@@ -78994,7 +79098,7 @@
       ],
       "requirements": "wii · Wii Remote · GameCube Controller",
       "author": "PowFPS1",
-      "version": "1.3.1",
+      "version": "1.3.2",
       "title_id": "000100014E52C616",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/WiiMedic/icon.png",
@@ -79004,14 +79108,14 @@
           "format": "zip",
           "filename": "WiiMedic.zip",
           "url": "https://hbb1.oscwii.org/api/contents/WiiMedic/WiiMedic.zip",
-          "size": 260575
+          "size": 260946
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-07-12T00:00:00+00:00"
+      "updated_at": "2026-10-26T01:52:56+00:00"
     },
     {
       "id": "open-shop-channel-wii:wiimednafen",
