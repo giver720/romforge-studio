@@ -50751,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11810,
+      "popularity": 11899,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3249,
+      "popularity": 3260,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10750,
+      "popularity": 10804,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6351,
+      "popularity": 6375,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 58081,
+      "popularity": 58401,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50886,7 +50886,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 469,
+      "popularity": 474,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51472,30 +51472,30 @@
       "updated_at": "2026-10-22 00:59:04 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-8.1.1.elf",
+      "id": "ps5-payloads-atlas:ps5upload-8.3.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v8.1.1",
+      "version": "v8.3.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-8.1.1.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.1.1/ps5upload-8.1.1.elf",
-          "sha256": "db756d8b61cfa91627491092f090120239722cb8699bc531f34030497c6a1910"
+          "filename": "ps5upload-8.3.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.3.0/ps5upload-8.3.0.elf",
+          "sha256": "9fe5785c63382b2d3c6eb131b14b7027a6c7cf0fcac011ba26cc331051e44a13"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-26 15:00:32 UTC+8"
+      "updated_at": "2026-10-27 01:22:47 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -53607,6 +53607,32 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2024-02-06"
+    },
+    {
+      "id": "ps5-payloads-atlas:RedDead2.60FPS_v2.0.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "RDR2 60fps — PS5 runtime patcher",
+      "summary": "Unlocks 60 FPS in Red Dead Redemption 2 (PS4, v1.32) on a jailbroken PS5, and on a 1080p TV renders the game's own PS4 Pro 4K checkerboard, shown at 1080p (supersampled).",
+      "author": "",
+      "version": "v2.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/armanate/rdr2-60fps-runtime-patcher",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "RedDead2.60FPS_v2.0.elf",
+          "url": "https://github.com/armanate/rdr2-60fps-runtime-patcher/releases/download/v2.0/RedDead2.60FPS_v2.0.elf",
+          "sha256": "646ecb71e80415ab9d9c651539451d38ee0052a5997f7ef7504a42932c7f8261"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-11 01:34:15 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1333",
