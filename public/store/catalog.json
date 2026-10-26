@@ -33797,7 +33797,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-26T01:52:43+00:00"
+      "updated_at": "2026-10-24T14:58:53+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -50751,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11759,
+      "popularity": 11810,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3245,
+      "popularity": 3249,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10733,
+      "popularity": 10750,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6342,
+      "popularity": 6351,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 57932,
+      "popularity": 58081,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50886,7 +50886,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 468,
+      "popularity": 469,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51472,30 +51472,30 @@
       "updated_at": "2026-10-22 00:59:04 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-7.5.3.elf",
+      "id": "ps5-payloads-atlas:ps5upload-8.1.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v7.5.3",
+      "version": "v8.1.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-7.5.3.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v7.5.3/ps5upload-7.5.3.elf",
-          "sha256": "2beb6924e2ecd5fa865c1ca2211009ba4bcf03457f4b9a089ab6945ff65e3ac3"
+          "filename": "ps5upload-8.1.1.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.1.1/ps5upload-8.1.1.elf",
+          "sha256": "db756d8b61cfa91627491092f090120239722cb8699bc531f34030497c6a1910"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-26 02:42:13 UTC+8"
+      "updated_at": "2026-10-26 15:00:32 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -79115,7 +79115,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-26T01:52:56+00:00"
+      "updated_at": "2026-10-24T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:wiimednafen",
@@ -82960,6 +82960,12 @@
           "filename": "3ds-ua-from-ru-2.1.0-old3ds.zip",
           "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.1.0/3ds-ua-from-ru-2.1.0-old3ds.zip",
           "size": 30316224
+        },
+        {
+          "format": "3dsx",
+          "filename": "3ds-ua-installer-2.1.0.3dsx",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.1.0/3ds-ua-installer-2.1.0.3dsx",
+          "size": 41592064
         },
         {
           "format": "cia",
