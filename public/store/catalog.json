@@ -1680,7 +1680,7 @@
       "name": "3dslibris",
       "summary": "An ebook and manga reader for Nintendo 3DS",
       "author": "Rigle",
-      "version": "v2.9.1",
+      "version": "v3.0.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/RigleGit/3dslibris/refs/heads/main/assets/release/icon-32x32.png",
       "release_url": "https://github.com/RigleGit/3dslibris/releases",
@@ -1688,38 +1688,38 @@
         {
           "format": "3dsx",
           "filename": "3dslibris-debug.3dsx",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v2.9.1/3dslibris-debug.3dsx",
-          "size": 14415248
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris-debug.3dsx",
+          "size": 14485464
         },
         {
           "format": "cia",
           "filename": "3dslibris-debug.cia",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v2.9.1/3dslibris-debug.cia",
-          "size": 13251520
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris-debug.cia",
+          "size": 13292480
         },
         {
           "format": "zip",
           "filename": "3dslibris-sdmc.zip",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v2.9.1/3dslibris-sdmc.zip",
-          "size": 5020749
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris-sdmc.zip",
+          "size": 5021175
         },
         {
           "format": "3dsx",
           "filename": "3dslibris.3dsx",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v2.9.1/3dslibris.3dsx",
-          "size": 14541556
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris.3dsx",
+          "size": 14600912
         },
         {
           "format": "cia",
           "filename": "3dslibris.cia",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v2.9.1/3dslibris.cia",
-          "size": 13386688
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris.cia",
+          "size": 13423552
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-01T17:38:47Z"
+      "updated_at": "2026-10-27T14:37:09Z"
     },
     {
       "id": "universal-db:s4ammy/3DSLink",
@@ -50751,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11970,
+      "popularity": 12058,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3271,
+      "popularity": 3278,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10839,
+      "popularity": 10884,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6393,
+      "popularity": 6410,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 58628,
+      "popularity": 58915,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50886,7 +50886,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 475,
+      "popularity": 477,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51264,30 +51264,30 @@
       "updated_at": "2026-08-24 22:44:14 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5-dump-forge-0.4.1-ps5.elf",
+      "id": "ps5-payloads-atlas:ps5-dump-forge-0.4.2-ps5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-dump-forge",
       "summary": "A toolkit for working with PS5 game dumps",
       "author": "",
-      "version": "v0.4.1",
+      "version": "v0.4.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/quer3q/ps5-dump-forge",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5-dump-forge-0.4.1-ps5.elf",
-          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.4.1/ps5-dump-forge-0.4.1-ps5.elf",
-          "sha256": "ea5c47d1500efc8573523d19cebaa8addac9ec51fc62a9c90048daca755f5c96"
+          "filename": "ps5-dump-forge-0.4.2-ps5.elf",
+          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.4.2/ps5-dump-forge-0.4.2-ps5.elf",
+          "sha256": "00ddbaa578f0c044cf445283adc00023c57812e17e9cda324b25557c8ba40453"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-25 06:55:07 UTC+8"
+      "updated_at": "2026-10-27 20:46:00 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:ps5-exporter.elf",
@@ -51472,30 +51472,30 @@
       "updated_at": "2026-10-22 00:59:04 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-8.5.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-8.5.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v8.5.0",
+      "version": "v8.5.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-8.5.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.5.0/ps5upload-8.5.0.elf",
-          "sha256": "7436b12f9cf402f381df4f086ec33bef43bcbb9d4a78fc04c12b59575bd982c3"
+          "filename": "ps5upload-8.5.1.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.5.1/ps5upload-8.5.1.elf",
+          "sha256": "2039eb340f6c09f7fce6bd726ad526adb68e9e924351b21dba74720025267481"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-27 16:27:48 UTC+8"
+      "updated_at": "2026-10-27 18:08:05 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -53898,6 +53898,32 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2020-05-07"
+    },
+    {
+      "id": "ps5-payloads-atlas:RecompStore-Installer.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "RecompStore",
+      "summary": "A homebrew app store for jailbroken PS5. It installs and updates native PS5 ports of recompiled games, emulators, apps and tools, and sets each game up from your own disc image.",
+      "author": "",
+      "version": "v2.7.3",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/elripalda/recompstore",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "RecompStore-Installer.elf",
+          "url": "https://github.com/elripalda/RecompStore/releases/download/v2.7.3/RecompStore-Installer.elf",
+          "sha256": "0e0deaf3da256dfcfe582b2c7b2392c18e99da75d280f4b4b0c1121db8507f01"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-26 15:15:51 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:782",
@@ -58438,7 +58464,7 @@
       "name": "ShadowMount+",
       "summary": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
       "author": "",
-      "version": "1.7beta7",
+      "version": "1.7beta9",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/drakmor/shadowmountplus",
@@ -58446,15 +58472,15 @@
         {
           "format": "elf",
           "filename": "shadowmountplus.elf",
-          "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta7/shadowmountplus.elf",
-          "sha256": "a8f9d7f76e8749912508ade0cd5c78076b5bbf1271813c78c80c3d3d9d4777ee"
+          "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta9/shadowmountplus.elf",
+          "sha256": "928a5a7e33d2801c1c14a5ed8ad83fcab07957ba3a5daccd382dba67d408b3e2"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21 19:56:24 UTC+8"
+      "updated_at": "2026-10-28 01:52:54 UTC+8"
     },
     {
       "id": "universal-db:dnasdw/SharedFontTool",
