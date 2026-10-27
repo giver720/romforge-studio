@@ -35248,7 +35248,7 @@
       "name": "LiveShell",
       "summary": "Animated backgrounds for PS5 home screen.",
       "author": "",
-      "version": "v1.5.2",
+      "version": "v1.6.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/zizc3/liveshell",
@@ -35256,15 +35256,15 @@
         {
           "format": "elf",
           "filename": "liveshell.elf",
-          "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.5.2/liveshell.elf",
-          "sha256": "3c546a3cc85ded2435f822be12f925a284ac25a2aef757c777d6139dad36b624"
+          "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.6.0/liveshell.elf",
+          "sha256": "99335e75312d6ffcce91f6a5b659f0191ec057c744b2b3d5b899db5a88b80ac3"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-24 13:52:32 UTC+8"
+      "updated_at": "2026-10-27 06:33:48 UTC+8"
     },
     {
       "id": "open-shop-channel-wii:LoadPriiloader",
@@ -42713,7 +42713,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v2.5.0",
+      "version": "v3.0",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42721,20 +42721,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v2.5.0/NoteRoom.3dsx",
-          "size": 840436
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.0/NoteRoom.3dsx",
+          "size": 3950148
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v2.5.0/NoteRoom.cia",
-          "size": 1318336
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.0/NoteRoom.cia",
+          "size": 4441024
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-06-04T12:32:06Z"
+      "updated_at": "2026-10-26T19:42:28Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -50751,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 11899,
+      "popularity": 11935,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3260,
+      "popularity": 3265,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10804,
+      "popularity": 10823,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6375,
+      "popularity": 6386,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 58401,
+      "popularity": 58517,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50886,7 +50886,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 474,
+      "popularity": 475,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
