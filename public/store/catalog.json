@@ -40806,7 +40806,7 @@
       "name": "NeoEnabler",
       "summary": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
       "author": "",
-      "version": "v0.5.2",
+      "version": "v0.5.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/neoenabler",
@@ -40814,15 +40814,15 @@
         {
           "format": "elf",
           "filename": "neo-manager.elf",
-          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.2/neo-manager.elf",
-          "sha256": "ea9342b1349ea26b55af4643bdd34308d7880bb09309b632c1dc2c8c95f7be1b"
+          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.3/neo-manager.elf",
+          "sha256": "9b37fa14568168a0cb22dad41a912562691286bb39a19211f692cdb332b81a6e"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-25 06:18:34 UTC+8"
+      "updated_at": "2026-10-28 09:09:44 UTC+8"
     },
     {
       "id": "open-shop-channel-wii:neopop",
@@ -42713,7 +42713,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v3.0",
+      "version": "v3.1",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42721,20 +42721,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.0/NoteRoom.3dsx",
-          "size": 3950148
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.1/NoteRoom.3dsx",
+          "size": 4047240
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.0/NoteRoom.cia",
-          "size": 4441024
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.1/NoteRoom.cia",
+          "size": 4527040
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-26T19:42:28Z"
+      "updated_at": "2026-10-28T01:12:09Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -50751,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12058,
+      "popularity": 12113,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3278,
+      "popularity": 3286,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10884,
+      "popularity": 10911,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6410,
+      "popularity": 6425,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 58915,
+      "popularity": 59063,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51063,7 +51063,7 @@
       "name": "PS5 Game Updater",
       "summary": "Update your installed PS5 games in a few taps, on the console. Finds the newest official update for each game and installs it, and applies a backport when an update needs a newer firmware than yours. No PC needed.",
       "author": "",
-      "version": "v1.1.1",
+      "version": "v1.1.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://theghostonline.dev/theghostonline/ps5-game-updater",
@@ -51071,7 +51071,7 @@
         {
           "format": "elf",
           "filename": "game-updater.elf",
-          "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.1/game-updater.elf",
+          "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.2/game-updater.elf",
           "sha256": null
         }
       ],
@@ -51079,7 +51079,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-26 10:52:48 UTC+8"
+      "updated_at": "2026-10-28 08:13:46 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:TabShifter.elf",
@@ -51160,30 +51160,30 @@
       "updated_at": "2026-10-22 23:28:23 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.6.1.elf",
+      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.6.2.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5 WebKit Autoloader",
       "summary": "Automatically loads the WebKit exploit and your elf payloads.",
       "author": "",
-      "version": "v0.6.1",
+      "version": "v0.6.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-webkit-autoloader",
       "downloads": [
         {
           "format": "elf",
-          "filename": "webkit-autoloader-installer_v0.6.1.elf",
-          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.1/webkit-autoloader-installer_v0.6.1.elf",
-          "sha256": "f662c75a502e4f1bc41b055dcb490625f8222c499ce437dc80f439a3a279e93f"
+          "filename": "webkit-autoloader-installer_v0.6.2.elf",
+          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf",
+          "sha256": "27fd335764270716972faea399a5cc7810b9e49a21abf4966d9759580756cb19"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-09 00:06:48 UTC+8"
+      "updated_at": "2026-10-28 08:07:18 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:fps60.elf",
