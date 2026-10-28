@@ -40459,13 +40459,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64834890
+          "size": 64835028
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-22T12:55:40Z"
+      "updated_at": "2026-10-28T13:57:59Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -42713,7 +42713,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v3.1",
+      "version": "v3.2",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42721,20 +42721,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.1/NoteRoom.3dsx",
-          "size": 4047240
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.2/NoteRoom.3dsx",
+          "size": 4529028
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.1/NoteRoom.cia",
-          "size": 4527040
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.2/NoteRoom.cia",
+          "size": 4826048
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-28T01:12:09Z"
+      "updated_at": "2026-10-28T21:56:12Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -50751,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12161,
+      "popularity": 12239,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3293,
+      "popularity": 3301,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10932,
+      "popularity": 10984,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6434,
+      "popularity": 6460,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 59177,
+      "popularity": 59436,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50886,7 +50886,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 478,
+      "popularity": 481,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -50933,7 +50933,7 @@
       "name": "PS4Mount",
       "summary": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
       "author": "",
-      "version": "v0.7.0",
+      "version": "v0.7.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/ps4mount",
@@ -50941,15 +50941,15 @@
         {
           "format": "elf",
           "filename": "ps4mount.elf",
-          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.0/ps4mount.elf",
-          "sha256": "9a99fdeb2be8ebee823b14636e0aac5721386feabcfe97e27dc6d5b3e4158bb7"
+          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.1/ps4mount.elf",
+          "sha256": "ea931ffc7b8da22b9ff36795388caaae28a926d9d44ecbb259e4c6e40aa72a27"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-24 10:07:53 UTC+8"
+      "updated_at": "2026-10-29 02:25:55 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:aria2-v1.37.0-3.elf",
@@ -66554,7 +66554,7 @@
       "name": "SysMon",
       "summary": "Turn your Nintendo 3DS into a secondary PC hardware monitor, macro pad, and virtual gamepad controller.",
       "author": "Just-a-Spider",
-      "version": "v0.3.3",
+      "version": "v0.3.4",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/Just-a-Spider/SysMon/refs/heads/main/sysmon-3ds/icon.png",
       "release_url": "https://github.com/Just-a-Spider/SysMon/releases",
@@ -66562,20 +66562,20 @@
         {
           "format": "3dsx",
           "filename": "sysmon-3ds.3dsx",
-          "url": "https://github.com/Just-a-Spider/SysMon/releases/download/v0.3.3/sysmon-3ds.3dsx",
-          "size": 4516468
+          "url": "https://github.com/Just-a-Spider/SysMon/releases/download/v0.3.4/sysmon-3ds.3dsx",
+          "size": 4516860
         },
         {
           "format": "cia",
           "filename": "sysmon-3ds.cia",
-          "url": "https://github.com/Just-a-Spider/SysMon/releases/download/v0.3.3/sysmon-3ds.cia",
+          "url": "https://github.com/Just-a-Spider/SysMon/releases/download/v0.3.4/sysmon-3ds.cia",
           "size": 4527040
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-01T15:42:19Z"
+      "updated_at": "2026-10-28T17:54:02Z"
     },
     {
       "id": "open-shop-channel-wii:SSRT",
