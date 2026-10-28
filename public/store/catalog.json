@@ -12538,7 +12538,7 @@
           "format": "3dsx",
           "filename": "ClassiCube-3ds.3dsx",
           "url": "https://cdn.classicube.net/client/latest/ClassiCube-3ds.3dsx",
-          "size": 783572
+          "size": 783620
         },
         {
           "format": "cia",
@@ -50751,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12113,
+      "popularity": 12161,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3286,
+      "popularity": 3293,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10911,
+      "popularity": 10932,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6425,
+      "popularity": 6434,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 59063,
+      "popularity": 59177,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50886,7 +50886,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 477,
+      "popularity": 478,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51472,30 +51472,30 @@
       "updated_at": "2026-10-22 00:59:04 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-8.5.1.elf",
+      "id": "ps5-payloads-atlas:ps5upload-8.6.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v8.5.1",
+      "version": "v8.6.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-8.5.1.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.5.1/ps5upload-8.5.1.elf",
-          "sha256": "2039eb340f6c09f7fce6bd726ad526adb68e9e924351b21dba74720025267481"
+          "filename": "ps5upload-8.6.1.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.6.1/ps5upload-8.6.1.elf",
+          "sha256": "3e7d67537a2eac9f92ae9330a90682499610b06a5058dd47cb99c2b567c62671"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-27 18:08:05 UTC+8"
+      "updated_at": "2026-10-28 16:28:30 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -82665,30 +82665,30 @@
       "updated_at": "2026-09-04"
     },
     {
-      "id": "ps5-payloads-atlas:zftpd-ps5-zhttp-v1.6.0.elf",
+      "id": "ps5-payloads-atlas:zftpd-ps5-zhttp-v1.7.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "zftpd",
       "summary": "Zero-copy FTP/HTTP server.",
       "author": "",
-      "version": "v1.6.0",
+      "version": "v1.7.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/seregonwar/zftpd",
       "downloads": [
         {
           "format": "elf",
-          "filename": "zftpd-ps5-zhttp-v1.6.0.elf",
-          "url": "https://github.com/seregonwar/zftpd/releases/download/v1.6.0/zftpd-ps5-zhttp-v1.6.0.elf",
-          "sha256": "fc59b60aab2dce9a8bae385c106bfa174048d765c826101355f1f010a789b497"
+          "filename": "zftpd-ps5-zhttp-v1.7.0.elf",
+          "url": "https://github.com/seregonwar/zftpd/releases/download/v1.7.0/zftpd-ps5-zhttp-v1.7.0.elf",
+          "sha256": "8f78ac0cde64a0744b82663d4a6bf8c1d7e937876dceddc219a21164578bd96e"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-01 03:14:18 UTC+8"
+      "updated_at": "2026-10-28 17:20:28 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:731",
@@ -83017,13 +83017,13 @@
           "format": "3dsx",
           "filename": "3ds-ua-installer-2.1.0.3dsx",
           "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.1.0/3ds-ua-installer-2.1.0.3dsx",
-          "size": 41592064
+          "size": 41591960
         },
         {
           "format": "cia",
           "filename": "3ds-ua-installer-2.1.0.cia",
           "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.1.0/3ds-ua-installer-2.1.0.cia",
-          "size": 41919424
+          "size": 41915328
         }
       ],
       "source": "Universal-DB",
