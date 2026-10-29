@@ -33797,7 +33797,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-29T09:52:18+00:00"
+      "updated_at": "2026-10-26T23:14:36+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -40806,7 +40806,7 @@
       "name": "NeoEnabler",
       "summary": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
       "author": "",
-      "version": "v0.5.3",
+      "version": "v0.6.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/neoenabler",
@@ -40814,15 +40814,15 @@
         {
           "format": "elf",
           "filename": "neo-manager.elf",
-          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.5.3/neo-manager.elf",
-          "sha256": "9b37fa14568168a0cb22dad41a912562691286bb39a19211f692cdb332b81a6e"
+          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.0/neo-manager.elf",
+          "sha256": "e1db4f5220a3b99453e422162ec50da6bb44c6b52a6fa125d782d2ab0dffa75b"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-28 09:09:44 UTC+8"
+      "updated_at": "2026-10-30 01:39:32 UTC+8"
     },
     {
       "id": "open-shop-channel-wii:neopop",
@@ -42713,7 +42713,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v3.3",
+      "version": "v3.4",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42721,20 +42721,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.3/NoteRoom.3dsx",
-          "size": 4529052
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.4/NoteRoom.3dsx",
+          "size": 4552152
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.3/NoteRoom.cia",
-          "size": 4826048
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.4/NoteRoom.cia",
+          "size": 4842432
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-28T23:25:42Z"
+      "updated_at": "2026-10-29T21:22:27Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -48263,6 +48263,43 @@
       "updated_at": "2026-03-09"
     },
     {
+      "id": "universal-db:ArmstrongThomas/PixelDoodle",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Pixel Doodle",
+      "summary": "An offline pixel-art editor and animation tool for DS, DSi and 3DS.",
+      "author": "Thomas Armstrong",
+      "version": "v0.24.0",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/ArmstrongThomas/PixelDoodle/main/assets/icon-3ds.png",
+      "release_url": "https://github.com/ArmstrongThomas/PixelDoodle/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "PixelDoodle.3dsx",
+          "url": "https://github.com/ArmstrongThomas/PixelDoodle/releases/download/v0.24.0/PixelDoodle.3dsx",
+          "size": 913896
+        },
+        {
+          "format": "cia",
+          "filename": "PixelDoodle.cia",
+          "url": "https://github.com/ArmstrongThomas/PixelDoodle/releases/download/v0.24.0/PixelDoodle.cia",
+          "size": 730048
+        },
+        {
+          "format": "nds",
+          "filename": "PixelDoodle.nds",
+          "url": "https://github.com/ArmstrongThomas/PixelDoodle/releases/download/v0.24.0/PixelDoodle.nds",
+          "size": 403968
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-10-26T23:20:03Z"
+    },
+    {
       "id": "hbas-switch:pixel-painter",
       "platforms": [
         "switch"
@@ -50751,7 +50788,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12307,
+      "popularity": 12402,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50815,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3306,
+      "popularity": 3323,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50842,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11021,
+      "popularity": 11071,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50869,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6473,
+      "popularity": 6500,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50896,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 59653,
+      "popularity": 59923,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50886,7 +50923,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 485,
+      "popularity": 489,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -50933,7 +50970,7 @@
       "name": "PS4Mount",
       "summary": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
       "author": "",
-      "version": "v0.7.1",
+      "version": "v0.7.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/ps4mount",
@@ -50941,15 +50978,15 @@
         {
           "format": "elf",
           "filename": "ps4mount.elf",
-          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.1/ps4mount.elf",
-          "sha256": "ea931ffc7b8da22b9ff36795388caaae28a926d9d44ecbb259e4c6e40aa72a27"
+          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.2/ps4mount.elf",
+          "sha256": "30627513e950f6b7b6b0e5ca43c30e954cdd873a646b8beefe0a4a925ac28479"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-29 02:25:55 UTC+8"
+      "updated_at": "2026-10-30 00:15:47 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:aria2-v1.37.0-3.elf",
@@ -51264,30 +51301,30 @@
       "updated_at": "2026-08-24 22:44:14 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5-dump-forge-0.4.2-ps5.elf",
+      "id": "ps5-payloads-atlas:ps5-dump-forge-0.5.0-ps5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-dump-forge",
       "summary": "A toolkit for working with PS5 game dumps",
       "author": "",
-      "version": "v0.4.2",
+      "version": "v0.5.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/quer3q/ps5-dump-forge",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5-dump-forge-0.4.2-ps5.elf",
-          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.4.2/ps5-dump-forge-0.4.2-ps5.elf",
-          "sha256": "00ddbaa578f0c044cf445283adc00023c57812e17e9cda324b25557c8ba40453"
+          "filename": "ps5-dump-forge-0.5.0-ps5.elf",
+          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.0/ps5-dump-forge-0.5.0-ps5.elf",
+          "sha256": "f0cc32e772318f1ae53f1eccae207cb9aa1efb96d1a2a6249205bb3e0e478986"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-27 20:46:00 UTC+8"
+      "updated_at": "2026-10-30 01:50:57 UTC+8"
     },
     {
       "id": "ps5-payloads-atlas:ps5-exporter.elf",
@@ -51472,30 +51509,30 @@
       "updated_at": "2026-10-22 00:59:04 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-8.10.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-9.1.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v8.10.0",
+      "version": "v9.1.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-8.10.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.10.0/ps5upload-8.10.0.elf",
-          "sha256": "d863502e034ccb7d632b296305c4cb121b0716619b9cf14b8c6a88c511b6f473"
+          "filename": "ps5upload-9.1.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v9.1.0/ps5upload-9.1.0.elf",
+          "sha256": "4004b092c48b531ceb2035c2213c5fe8b0a7aaa0af47df7370c67935649b0f1d"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-29 12:13:55 UTC+8"
+      "updated_at": "2026-10-29 23:13:58 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
