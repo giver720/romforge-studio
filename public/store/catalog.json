@@ -12750,7 +12750,7 @@
       "name": "Cloudpoint",
       "summary": "Bringing modern cloud save to 3DS.",
       "author": "dwalker109",
-      "version": "0.8.1",
+      "version": "0.9.0",
       "license": "MIT License",
       "icon_url": "https://media.githubusercontent.com/media/dwalker109/cloudpoint/refs/heads/main/cloudpoint_app/cia/icon.png",
       "release_url": "https://github.com/dwalker109/cloudpoint/releases",
@@ -12758,20 +12758,20 @@
         {
           "format": "3dsx",
           "filename": "cloudpoint.3dsx",
-          "url": "https://github.com/dwalker109/cloudpoint/releases/download/0.8.1/cloudpoint.3dsx",
-          "size": 3160144
+          "url": "https://github.com/dwalker109/cloudpoint/releases/download/0.9.0/cloudpoint.3dsx",
+          "size": 3143204
         },
         {
           "format": "cia",
           "filename": "cloudpoint.cia",
-          "url": "https://github.com/dwalker109/cloudpoint/releases/download/0.8.1/cloudpoint.cia",
-          "size": 2495424
+          "url": "https://github.com/dwalker109/cloudpoint/releases/download/0.9.0/cloudpoint.cia",
+          "size": 2466752
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-07T15:22:56Z"
+      "updated_at": "2026-10-28T17:20:56Z"
     },
     {
       "id": "vitadbtoo-psp:941",
@@ -42713,7 +42713,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v3.2",
+      "version": "v3.3",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42721,20 +42721,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.2/NoteRoom.3dsx",
-          "size": 4529028
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.3/NoteRoom.3dsx",
+          "size": 4529052
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.2/NoteRoom.cia",
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.3/NoteRoom.cia",
           "size": 4826048
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-28T21:56:12Z"
+      "updated_at": "2026-10-28T23:25:42Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -50751,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12239,
+      "popularity": 12276,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3301,
+      "popularity": 3303,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 10984,
+      "popularity": 11000,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6460,
+      "popularity": 6466,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 59436,
+      "popularity": 59544,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50886,7 +50886,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 481,
+      "popularity": 485,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51217,7 +51217,7 @@
         "ps5"
       ],
       "name": "ps5-app-dumper",
-      "summary": "Dumps installed PS5 apps to USB or internal storage in fakepkg/folder format. Reads config from /data/ps5-app-dumper/config.ini.",
+      "summary": "Dumps the running game, decrypted, to a USB drive or the console, one at a time or as a queue. ps5upload drives it from Games → Dumps (enter the code the TV shows once); it also has a web page of its own on port 8081.",
       "author": "",
       "version": "v2.10",
       "license": null,
@@ -51472,30 +51472,30 @@
       "updated_at": "2026-10-22 00:59:04 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-8.6.1.elf",
+      "id": "ps5-payloads-atlas:ps5upload-8.8.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v8.6.1",
+      "version": "v8.8.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-8.6.1.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.6.1/ps5upload-8.6.1.elf",
-          "sha256": "3e7d67537a2eac9f92ae9330a90682499610b06a5058dd47cb99c2b567c62671"
+          "filename": "ps5upload-8.8.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.0/ps5upload-8.8.0.elf",
+          "sha256": "71e100106f50d25056b998d0e39cefda1b36ca1f3a2b655ec3a45ccbc15a563f"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-28 16:28:30 UTC+8"
+      "updated_at": "2026-10-29 04:18:44 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -58464,7 +58464,7 @@
       "name": "ShadowMount+",
       "summary": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
       "author": "",
-      "version": "1.7beta9",
+      "version": "1.7beta10",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/drakmor/shadowmountplus",
@@ -58472,15 +58472,15 @@
         {
           "format": "elf",
           "filename": "shadowmountplus.elf",
-          "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta9/shadowmountplus.elf",
-          "sha256": "928a5a7e33d2801c1c14a5ed8ad83fcab07957ba3a5daccd382dba67d408b3e2"
+          "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta10/shadowmountplus.elf",
+          "sha256": "8c6798232ae2a8fbcd209ab97fc4f8d4d47cf23b7eecfaa6349c0bfeb8e4a3d3"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-28 01:52:54 UTC+8"
+      "updated_at": "2026-10-29 05:54:23 UTC+8"
     },
     {
       "id": "universal-db:dnasdw/SharedFontTool",
