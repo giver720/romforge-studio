@@ -33780,7 +33780,7 @@
       ],
       "requirements": "wii · wii_mini · vwii · Wii Remote · Classic Controller · GameCube Controller · SDHC",
       "author": "Korbo",
-      "version": "8.5.0",
+      "version": "8.5.1",
       "title_id": "000100014EB9B936",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/korbodonut/icon.png",
@@ -33790,14 +33790,14 @@
           "format": "zip",
           "filename": "korbodonut.zip",
           "url": "https://hbb1.oscwii.org/api/contents/korbodonut/korbodonut.zip",
-          "size": 1196689
+          "size": 2321205
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-24T14:58:53+00:00"
+      "updated_at": "2026-10-29T09:52:18+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -50751,7 +50751,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12276,
+      "popularity": 12307,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50778,7 +50778,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3303,
+      "popularity": 3306,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50805,7 +50805,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11000,
+      "popularity": 11021,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50832,7 +50832,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6466,
+      "popularity": 6473,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50859,7 +50859,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 59544,
+      "popularity": 59653,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51472,30 +51472,30 @@
       "updated_at": "2026-10-22 00:59:04 UTC+8"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-8.8.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-8.10.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v8.8.0",
+      "version": "v8.10.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-8.8.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.8.0/ps5upload-8.8.0.elf",
-          "sha256": "71e100106f50d25056b998d0e39cefda1b36ca1f3a2b655ec3a45ccbc15a563f"
+          "filename": "ps5upload-8.10.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v8.10.0/ps5upload-8.10.0.elf",
+          "sha256": "d863502e034ccb7d632b296305c4cb121b0716619b9cf14b8c6a88c511b6f473"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-29 04:18:44 UTC+8"
+      "updated_at": "2026-10-29 12:13:55 UTC+8"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -58387,6 +58387,38 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-08-13"
+    },
+    {
+      "id": "open-shop-channel-wii:SetaGX",
+      "platforms": [
+        "wii"
+      ],
+      "name": "Seta GX",
+      "summary": "Sega Saturn Emulator",
+      "description": "\nExperimental Sega Saturn Emulator based on the old Yabause Wii port.\n\n* Special thanks to:\nYabause Team - Original source code\ndevMiyax - Source code updates through YabaSanshiro\nExtrems - Help on GX issues and libogc2\nemu_kidid and pcercuei - For their continued work on WiiSX\ntueidj - Virtual memory code\n  ",
+      "categories": [
+        "emulators"
+      ],
+      "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Classic Controller · GameCube Controller · SDHC",
+      "author": "Evoca",
+      "version": "Beta 0.4.1",
+      "title_id": "000100014ED9A27F",
+      "license": null,
+      "icon_url": "https://hbb1.oscwii.org/api/contents/SetaGX/icon.png",
+      "release_url": null,
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "SetaGX.zip",
+          "url": "https://hbb1.oscwii.org/api/contents/SetaGX/SetaGX.zip",
+          "size": 749250
+        }
+      ],
+      "source": "Open Shop Channel",
+      "source_url": "https://oscwii.org/",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-09T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:Settings-Editor-GUI",
