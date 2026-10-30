@@ -219,7 +219,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22 04:55:47 UTC+8"
+      "updated_at": "2026-10-22T04:55:47+08:00"
     },
     {
       "id": "hbas-switch:100boxesNX",
@@ -4203,7 +4203,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-15 03:05:40 UTC+8"
+      "updated_at": "2026-10-15T03:05:40+08:00"
     },
     {
       "id": "open-shop-channel-wii:AnyTitleDeleterMOD",
@@ -4524,7 +4524,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-29 17:54:19 UTC+8"
+      "updated_at": "2026-08-29T17:54:19+08:00"
     },
     {
       "id": "hbas-switch:Aquaria",
@@ -5654,7 +5654,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-05-01 00:34:19 UTC+8"
+      "updated_at": "2026-05-01T00:34:19+08:00"
     },
     {
       "id": "vitadbtoo-vita:821",
@@ -7302,7 +7302,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-12 02:08:09 UTC+8"
+      "updated_at": "2026-08-12T02:08:09+08:00"
     },
     {
       "id": "ps5-payloads-atlas:bfplayer-standalone.elf",
@@ -7328,7 +7328,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-07-31 08:54:17 UTC+8"
+      "updated_at": "2026-07-31T08:54:17+08:00"
     },
     {
       "id": "vitadbtoo-vita:1530",
@@ -11601,7 +11601,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-11 02:01:49 UTC+8"
+      "updated_at": "2026-10-11T02:01:49+08:00"
     },
     {
       "id": "universal-db:BernardoGiordano/Checkpoint",
@@ -14841,6 +14841,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2026-09-06T02:42:14Z"
+    },
+    {
+      "id": "universal-db:NitroShellMKDS/CTGP-7-Mod-Manager",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "CTGP-7 Mod Manager",
+      "summary": "Homebrew application for managing mods from GameBanana for CTGP-7.",
+      "author": "NitroShell and Contributors",
+      "version": "v1.0.0",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/NitroShellMKDS/CTGP-7-Mod-Manager/refs/heads/main/app/icon.png",
+      "release_url": "https://github.com/NitroShellMKDS/CTGP-7-Mod-Manager/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "CTGP-7-Mod-Manager.3dsx",
+          "url": "https://github.com/Team-BrewSearch/CTGP-7-Mod-Manager/releases/download/v1.0.0/CTGP-7-Mod-Manager.3dsx",
+          "size": 3415680
+        },
+        {
+          "format": "cia",
+          "filename": "CTGP-7-Mod-Manager.cia",
+          "url": "https://github.com/Team-BrewSearch/CTGP-7-Mod-Manager/releases/download/v1.0.0/CTGP-7-Mod-Manager.cia",
+          "size": 2565056
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-10-29T23:34:15Z"
     },
     {
       "id": "universal-db:CyberYoshi64/CTGP7-SaveTransfer",
@@ -20117,7 +20148,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22 01:42:19 UTC+8"
+      "updated_at": "2026-10-22T01:42:19+08:00"
     },
     {
       "id": "universal-db:glacialmoongames/EllisHouseCpp",
@@ -20726,32 +20757,6 @@
       "updated_at": "2026-10-04T02:09:26Z"
     },
     {
-      "id": "ps5-payloads-atlas:etaHEN-11.00-13.60.elf",
-      "platforms": [
-        "ps5"
-      ],
-      "name": "etaHEN",
-      "summary": "Unofficial etaHEN 2.5B unified PS5 11.00-13.60 port: Toolbox, plugins and PS4/PS5 FPS. Original etaHEN by LightningMods and contributors.",
-      "author": "",
-      "version": "v2.5B-unified.1",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/gronedwaffel/etahen-11.00-13.60",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "etaHEN-11.00-13.60.elf",
-          "url": "https://github.com/GronedWaffel/etahen-11.00-13.60/releases/download/v2.5B-unified.1/etaHEN-11.00-13.60.elf",
-          "sha256": "46c161473b27d12f1fa5e2d1d10466ce587db841ed9e8d71a219424d8fcf637f"
-        }
-      ],
-      "source": "PS5 Payloads Atlas",
-      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
-      "license_url": null,
-      "popularity": null,
-      "updated_at": "2026-10-06 00:00:19 UTC+8"
-    },
-    {
       "id": "ps5-payloads-atlas:etaHEN-2.5B.bin",
       "platforms": [
         "ps5"
@@ -20775,7 +20780,33 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2025-12-25 13:31:40 UTC+8"
+      "updated_at": "2025-12-25T13:31:40+08:00"
+    },
+    {
+      "id": "ps5-payloads-atlas:etaHEN-11.00-13.60.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "etaHEN",
+      "summary": "Unofficial etaHEN 2.5B unified PS5 11.00-13.60 port: Toolbox, plugins and PS4/PS5 FPS. Original etaHEN by LightningMods and contributors.",
+      "author": "",
+      "version": "v2.5B-unified.1",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/gronedwaffel/etahen-11.00-13.60",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "etaHEN-11.00-13.60.elf",
+          "url": "https://github.com/GronedWaffel/etahen-11.00-13.60/releases/download/v2.5B-unified.1/etaHEN-11.00-13.60.elf",
+          "sha256": "46c161473b27d12f1fa5e2d1d10466ce587db841ed9e8d71a219424d8fcf637f"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-06T00:00:19+08:00"
     },
     {
       "id": "vitadbtoo-vita:263",
@@ -24867,7 +24898,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-21 04:48:47 UTC+8"
+      "updated_at": "2026-09-21T04:48:47+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ftpsrv-se-ps5.elf",
@@ -24893,7 +24924,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21 20:27:11 UTC+8"
+      "updated_at": "2026-10-21T20:27:11+08:00"
     },
     {
       "id": "hbas-switch:FunkinRewritten",
@@ -25537,7 +25568,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21 21:16:26 UTC+8"
+      "updated_at": "2026-10-21T21:16:26+08:00"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -25563,7 +25594,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-04 20:49:28 UTC+8"
+      "updated_at": "2026-09-04T20:49:28+08:00"
     },
     {
       "id": "vitadbtoo-vita:779",
@@ -25920,7 +25951,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-03 00:50:41 UTC+8"
+      "updated_at": "2026-08-03T00:50:41+08:00"
     },
     {
       "id": "hbas-switch:gdkgba",
@@ -28729,7 +28760,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-18 13:44:23 UTC+8"
+      "updated_at": "2026-10-18T13:44:23+08:00"
     },
     {
       "id": "vitadbtoo-vita:1071",
@@ -33226,7 +33257,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-10 05:28:26 UTC+8"
+      "updated_at": "2026-10-10T05:28:26+08:00"
     },
     {
       "id": "vitadbtoo-vita:1567",
@@ -33699,7 +33730,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-03 00:37:37 UTC+8"
+      "updated_at": "2026-08-03T00:37:37+08:00"
     },
     {
       "id": "hbas-switch:Klooni1010",
@@ -33886,7 +33917,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-21 03:08:36 UTC+8"
+      "updated_at": "2026-09-21T03:08:36+08:00"
     },
     {
       "id": "vitadbtoo-psp:953",
@@ -33943,7 +33974,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-01 21:29:25 UTC+8"
+      "updated_at": "2026-10-01T21:29:25+08:00"
     },
     {
       "id": "hbas-switch:LaDeuda",
@@ -34289,7 +34320,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-06-02 02:26:02 UTC+8"
+      "updated_at": "2026-06-02T02:26:02+08:00"
     },
     {
       "id": "vitadbtoo-vita:1548",
@@ -35264,7 +35295,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-27 06:33:48 UTC+8"
+      "updated_at": "2026-10-27T06:33:48+08:00"
     },
     {
       "id": "open-shop-channel-wii:LoadPriiloader",
@@ -36079,7 +36110,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-26 10:34:12 UTC+8"
+      "updated_at": "2026-10-26T10:34:12+08:00"
     },
     {
       "id": "vitadbtoo-vita:867",
@@ -40184,7 +40215,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-05 02:27:26 UTC+8"
+      "updated_at": "2026-08-05T02:27:26+08:00"
     },
     {
       "id": "vitadbtoo-vita:1241",
@@ -40822,7 +40853,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-30 01:39:32 UTC+8"
+      "updated_at": "2026-10-30T01:39:32+08:00"
     },
     {
       "id": "open-shop-channel-wii:neopop",
@@ -42713,7 +42744,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v3.4",
+      "version": "v3.4.1",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42721,20 +42752,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.4/NoteRoom.3dsx",
-          "size": 4552152
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.4.1/NoteRoom.3dsx",
+          "size": 4549708
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.4/NoteRoom.cia",
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.4.1/NoteRoom.cia",
           "size": 4842432
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-29T21:22:27Z"
+      "updated_at": "2026-10-29T23:00:41Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -42791,7 +42822,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-02 08:58:43 UTC+8"
+      "updated_at": "2026-10-02T08:58:43+08:00"
     },
     {
       "id": "open-shop-channel-wii:nReader",
@@ -43144,7 +43175,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-20 08:17:18 UTC+8"
+      "updated_at": "2026-10-20T08:17:18+08:00"
     },
     {
       "id": "hbas-switch:NXBadApple",
@@ -44677,7 +44708,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-15 15:42:25 UTC+8"
+      "updated_at": "2026-10-15T15:42:25+08:00"
     },
     {
       "id": "vitadbtoo-vita:985",
@@ -47421,7 +47452,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21 23:57:50 UTC+8"
+      "updated_at": "2026-10-21T23:57:50+08:00"
     },
     {
       "id": "vitadbtoo-vita:1273",
@@ -48525,7 +48556,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-10 23:38:10 UTC+8"
+      "updated_at": "2026-10-10T23:38:10+08:00"
     },
     {
       "id": "vitadbtoo-vita:341",
@@ -48969,7 +49000,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-14 12:57:17 UTC+8"
+      "updated_at": "2026-10-14T12:57:17+08:00"
     },
     {
       "id": "vitadbtoo-vita:300",
@@ -49602,7 +49633,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21 10:59:15 UTC+8"
+      "updated_at": "2026-10-21T10:59:15+08:00"
     },
     {
       "id": "vitadbtoo-vita:1030",
@@ -50765,7 +50796,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-11 11:33:58 UTC+8"
+      "updated_at": "2026-10-11T11:33:58+08:00"
     },
     {
       "id": "ps4-store:268181309",
@@ -50788,7 +50819,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12402,
+      "popularity": 12433,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50815,7 +50846,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3323,
+      "popularity": 3329,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50842,7 +50873,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11071,
+      "popularity": 11094,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50869,7 +50900,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6500,
+      "popularity": 6512,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50896,7 +50927,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 59923,
+      "popularity": 60038,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50923,7 +50954,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 489,
+      "popularity": 491,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -50986,7 +51017,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-30 00:15:47 UTC+8"
+      "updated_at": "2026-10-30T00:15:47+08:00"
     },
     {
       "id": "ps5-payloads-atlas:aria2-v1.37.0-3.elf",
@@ -51012,7 +51043,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-05 22:00:24 UTC+8"
+      "updated_at": "2026-10-05T22:00:24+08:00"
     },
     {
       "id": "ps5-payloads-atlas:PS5_Console.elf",
@@ -51038,7 +51069,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-31 19:42:15 UTC+8"
+      "updated_at": "2026-08-31T19:42:15+08:00"
     },
     {
       "id": "ps5-payloads-atlas:file-explorer.elf",
@@ -51064,7 +51095,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-06-19 20:34:09 UTC+8"
+      "updated_at": "2026-06-19T20:34:09+08:00"
     },
     {
       "id": "ps5-payloads-atlas:game-compressor.elf",
@@ -51090,7 +51121,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-02 14:39:43 UTC+8"
+      "updated_at": "2026-10-02T14:39:43+08:00"
     },
     {
       "id": "ps5-payloads-atlas:game-updater.elf",
@@ -51116,7 +51147,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-28 08:13:46 UTC+8"
+      "updated_at": "2026-10-28T08:13:46+08:00"
     },
     {
       "id": "ps5-payloads-atlas:TabShifter.elf",
@@ -51142,7 +51173,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-25 02:38:30 UTC+8"
+      "updated_at": "2026-10-25T02:38:30+08:00"
     },
     {
       "id": "ps5-payloads-atlas:tailscale-0.7.1.elf",
@@ -51168,33 +51199,33 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-07 07:46:38 UTC+8"
+      "updated_at": "2026-10-07T07:46:38+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:web-file-mgr-v1.12.elf",
+      "id": "ps5-payloads-atlas:web-file-mgr-v1.13-rc1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5 Web File Manager",
       "summary": "Web-based file manager for jailbroken PS5. Serves a browser UI over HTTP so you can browse, transfer, and manage files on the console's internal storage from any device on the LAN.",
       "author": "",
-      "version": "v1.12",
+      "version": "v1.13-rc1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/owendswang/ps5-web-file-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "web-file-mgr-v1.12.elf",
-          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.12/web-file-mgr-v1.12.elf",
-          "sha256": "f3461eb967da7afbbf0420d3294fbc8f999cc2ad53a756bed413aa80c7cfa67a"
+          "filename": "web-file-mgr-v1.13-rc1.elf",
+          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.13-rc1/web-file-mgr-v1.13-rc1.elf",
+          "sha256": "8c9456a10ddde61dd0247b9171e71a285b955096ca7eb8e4ae3bdbe94f38f605"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22 23:28:23 UTC+8"
+      "updated_at": "2026-10-30T03:33:13+08:00"
     },
     {
       "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.6.2.elf",
@@ -51220,7 +51251,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-28 08:07:18 UTC+8"
+      "updated_at": "2026-10-28T08:07:18+08:00"
     },
     {
       "id": "ps5-payloads-atlas:fps60.elf",
@@ -51246,7 +51277,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-16 13:37:57 UTC+8"
+      "updated_at": "2026-10-16T13:37:57+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-app-dumper_v2.10.elf",
@@ -51272,7 +51303,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-03 09:11:22 UTC+8"
+      "updated_at": "2026-10-03T09:11:22+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-date-time-sync.elf",
@@ -51298,7 +51329,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-24 22:44:14 UTC+8"
+      "updated_at": "2026-08-24T22:44:14+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-dump-forge-0.5.0-ps5.elf",
@@ -51324,7 +51355,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-30 01:50:57 UTC+8"
+      "updated_at": "2026-10-30T01:50:57+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-exporter.elf",
@@ -51350,7 +51381,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-20 01:10:18 UTC+8"
+      "updated_at": "2026-10-20T01:10:18+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-fan-control-v0.3.elf",
@@ -51376,7 +51407,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-09 00:39:00 UTC+8"
+      "updated_at": "2026-08-09T00:39:00+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-linux-loader.elf",
@@ -51402,7 +51433,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-05 16:40:09 UTC+8"
+      "updated_at": "2026-09-05T16:40:09+08:00"
     },
     {
       "id": "ps5-payloads-atlas:pldmgr_v0.6.3.elf",
@@ -51428,7 +51459,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-19 21:42:55 UTC+8"
+      "updated_at": "2026-10-19T21:42:55+08:00"
     },
     {
       "id": "ps5-payloads-atlas:syslang-ar-v0.3.elf",
@@ -51454,7 +51485,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-19 00:22:59 UTC+8"
+      "updated_at": "2026-10-19T00:22:59+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5debug-NG_v1.3.2.elf",
@@ -51480,7 +51511,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-23 11:21:00 UTC+8"
+      "updated_at": "2026-09-23T11:21:00+08:00"
     },
     {
       "id": "ps5-payloads-atlas:backup.elf",
@@ -51506,33 +51537,33 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22 00:59:04 UTC+8"
+      "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-9.1.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-9.4.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v9.1.0",
+      "version": "v9.4.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-9.1.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v9.1.0/ps5upload-9.1.0.elf",
-          "sha256": "4004b092c48b531ceb2035c2213c5fe8b0a7aaa0af47df7370c67935649b0f1d"
+          "filename": "ps5upload-9.4.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v9.4.0/ps5upload-9.4.0.elf",
+          "sha256": "620a771e34c83c2b84e537307d25e47cead2270c1024db44cf2c340c9c7bb083"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-29 23:13:58 UTC+8"
+      "updated_at": "2026-10-30T09:45:40+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -53669,7 +53700,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-11 01:34:15 UTC+8"
+      "updated_at": "2026-10-11T01:34:15+08:00"
     },
     {
       "id": "vitadbtoo-vita:1333",
@@ -53960,7 +53991,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-26 15:15:51 UTC+8"
+      "updated_at": "2026-10-26T15:15:51+08:00"
     },
     {
       "id": "vitadbtoo-vita:782",
@@ -58533,7 +58564,7 @@
       "name": "ShadowMount+",
       "summary": "Fully automated background 'Auto-Mounter' payload for jailbroken PS5. Watches scan folders for game folders and .ffpkg/.exfat/.ffpfs/.ffpfsc images, auto-mounts them, stages sce_sys + appmeta + trophy data, and registers them on the home screen.",
       "author": "",
-      "version": "1.7beta10",
+      "version": "1.7beta11",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/drakmor/shadowmountplus",
@@ -58541,15 +58572,15 @@
         {
           "format": "elf",
           "filename": "shadowmountplus.elf",
-          "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta10/shadowmountplus.elf",
-          "sha256": "8c6798232ae2a8fbcd209ab97fc4f8d4d47cf23b7eecfaa6349c0bfeb8e4a3d3"
+          "url": "https://github.com/drakmor/ShadowMountPlus/releases/download/1.7beta11/shadowmountplus.elf",
+          "sha256": "08c843018750bef013fe3a4de5f80c5c9738c6c2dafa2406e6b6e68d7585f3da"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-29 05:54:23 UTC+8"
+      "updated_at": "2026-10-30T05:22:45+08:00"
     },
     {
       "id": "universal-db:dnasdw/SharedFontTool",
@@ -59016,7 +59047,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-03 00:41:01 UTC+8"
+      "updated_at": "2026-08-03T00:41:01+08:00"
     },
     {
       "id": "hbas-wiiu:shutdown-hbl",
@@ -71443,7 +71474,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-06-18 22:24:15 UTC+8"
+      "updated_at": "2026-06-18T22:24:15+08:00"
     },
     {
       "id": "vitadbtoo-vita:1242",
@@ -77621,7 +77652,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-08-03 03:51:42 UTC+8"
+      "updated_at": "2026-08-03T03:51:42+08:00"
     },
     {
       "id": "ps5-payloads-atlas:WelcomeHubActivator-v1.2.0.elf",
@@ -77647,7 +77678,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-24 04:08:05 UTC+8"
+      "updated_at": "2026-10-24T04:08:05+08:00"
     },
     {
       "id": "ps5-payloads-atlas:wfm-7zip-helper-v26.04-0.elf",
@@ -77673,7 +77704,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22 23:27:06 UTC+8"
+      "updated_at": "2026-10-22T23:27:06+08:00"
     },
     {
       "id": "hbas-switch:Whats-in-the-box-NX",
@@ -78242,6 +78273,39 @@
       "source_url": "https://hb-app.store/wiiu",
       "license_url": null,
       "updated_at": "2026-10-18"
+    },
+    {
+      "id": "hbas-wiiu:WiiUEnvSelector",
+      "platforms": [
+        "wiiu"
+      ],
+      "name": "Wii U Env Selector",
+      "categories": [
+        "utilities"
+      ],
+      "description": "Use this app if you have multiple environments (like Tiramisu and Aroma, or multiple Aroma\nenvironments) and want change the default environment, without having to hold X during boot.\n\nThis app is similar in functionality to [envSwap](https://hb-app.store/wiiu/EnvSwap) but it's\nnot hardcoded to switch between \"aroma\" and \"tiramisu\". You can select any existing environment,\nusing any controller or the touch screen.",
+      "added_at": "2026-09-29",
+      "summary": "Set the default boot environment.",
+      "author": "Daniel K. O.",
+      "version": "1.0",
+      "license": "GPLv3",
+      "icon_url": null,
+      "release_url": "https://github.com/dkosmari/WiiUEnvSelector",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "WiiUEnvSelector.hbas",
+          "url": "https://wiiu.cdn.fortheusers.org/packages/WiiUEnvSelector/manifest.install",
+          "size": 3161,
+          "sha256": "3ef4112dfa6850a69b29b616760a8c3e912f2dd2a0b4a2363ab9ba278e1803d7"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WiiUEnvSelector/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/wiiu",
+      "license_url": null,
+      "updated_at": "2026-10-30"
     },
     {
       "id": "hbas-wiiu:WiiUReboot",
@@ -82757,7 +82821,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-28 17:20:28 UTC+8"
+      "updated_at": "2026-10-28T17:20:28+08:00"
     },
     {
       "id": "vitadbtoo-vita:731",
