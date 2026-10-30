@@ -16720,7 +16720,7 @@
         "3ds"
       ],
       "name": "descry",
-      "summary": "music tracker + synthesizer for the New Nintendo 3DS — song/chain/phrase sequencer, 5 synth engines, 23 FX commands, KAOSS pad, mic sampling",
+      "summary": "a music tracker and live instrument for new nintendo 3ds. synthesize, sample, sequence and perform.",
       "author": "patausx",
       "version": "v1.0.7",
       "license": "GNU General Public License v3.0",
@@ -50819,7 +50819,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12433,
+      "popularity": 12476,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50846,7 +50846,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3329,
+      "popularity": 3333,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50873,7 +50873,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11094,
+      "popularity": 11122,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50900,7 +50900,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6512,
+      "popularity": 6518,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50927,7 +50927,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 60038,
+      "popularity": 60156,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50954,7 +50954,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 491,
+      "popularity": 494,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51540,30 +51540,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-9.4.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-9.5.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5upload",
       "summary": "Integrated PS5 file, mount, save-management, monitoring, and remote package-install payload with a companion desktop client.",
       "author": "",
-      "version": "v9.4.0",
+      "version": "v9.5.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-9.4.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v9.4.0/ps5upload-9.4.0.elf",
-          "sha256": "620a771e34c83c2b84e537307d25e47cead2270c1024db44cf2c340c9c7bb083"
+          "filename": "ps5upload-9.5.1.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v9.5.1/ps5upload-9.5.1.elf",
+          "sha256": "6c113d167d7fe4c4f3e036e8556d044ab3b04e7f45fe53778f8dbea158ede8d7"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-30T09:45:40+08:00"
+      "updated_at": "2026-10-30T18:11:30+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -53975,7 +53975,7 @@
       "name": "RecompStore",
       "summary": "A homebrew app store for jailbroken PS5. It installs and updates native PS5 ports of recompiled games, emulators, apps and tools, and sets each game up from your own disc image.",
       "author": "",
-      "version": "v2.7.3",
+      "version": "v2.7.4",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/elripalda/recompstore",
@@ -53983,15 +53983,15 @@
         {
           "format": "elf",
           "filename": "RecompStore-Installer.elf",
-          "url": "https://github.com/elripalda/RecompStore/releases/download/v2.7.3/RecompStore-Installer.elf",
-          "sha256": "0e0deaf3da256dfcfe582b2c7b2392c18e99da75d280f4b4b0c1121db8507f01"
+          "url": "https://github.com/elripalda/RecompStore/releases/download/v2.7.4/RecompStore-Installer.elf",
+          "sha256": "3a20194226cf5e1ee66a5a67d81610c1ac9bf82deee7b791c752d0e7d6202d5c"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-26T15:15:51+08:00"
+      "updated_at": "2026-10-30T12:00:44+08:00"
     },
     {
       "id": "vitadbtoo-vita:782",
