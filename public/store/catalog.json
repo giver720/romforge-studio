@@ -7768,7 +7768,7 @@
         "3ds"
       ],
       "name": "Block Blast 3DS",
-      "summary": "A homebrew port of the mobile game Block Blast for the 3DS (old and new)",
+      "summary": "Block Blast on the Nintendo 3DS: a free homebrew game for Old and New 3DS and 2DS. Install the CIA by QR code in FBI, or run the 3DSX from the Homebrew Launcher.",
       "author": "TheFilip",
       "version": "V1.3",
       "license": "zlib License",
@@ -30347,6 +30347,32 @@
       "updated_at": "2021-02-15"
     },
     {
+      "id": "ps5-payloads-atlas:hush.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "hush",
+      "summary": "Turns off the PlayStation 5's continuous recent-gameplay recording. With nothing encoded, there is nothing for the console to save.",
+      "author": "",
+      "version": "v1.0.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/disco-trooper/hush",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "hush.elf",
+          "url": "https://github.com/disco-trooper/hush/releases/download/v1.0.0/hush.elf",
+          "sha256": "5c98dd0881b64eb00e90d58d90056a66193ef8ee50e2d9906a1e298b5a34c352"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-25T19:18:40+08:00"
+    },
+    {
       "id": "vitadbtoo-vita:522",
       "platforms": [
         "psvita"
@@ -40549,13 +40575,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64835028
+          "size": 64835128
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-28T13:57:59Z"
+      "updated_at": "2026-10-31T13:32:30Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -40896,7 +40922,7 @@
       "name": "NeoEnabler",
       "summary": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
       "author": "",
-      "version": "v0.6.0",
+      "version": "v0.6.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/neoenabler",
@@ -40904,15 +40930,15 @@
         {
           "format": "elf",
           "filename": "neo-manager.elf",
-          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.0/neo-manager.elf",
-          "sha256": "e1db4f5220a3b99453e422162ec50da6bb44c6b52a6fa125d782d2ab0dffa75b"
+          "url": "https://github.com/gasb07/NeoEnabler/releases/download/v0.6.1/neo-manager.elf",
+          "sha256": "d785d8a8747b5dbc2c294595f0fb394f653950b5f42b3ee42eb3e56dd80f7044"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-30T01:39:32+08:00"
+      "updated_at": "2026-11-01T02:29:50+08:00"
     },
     {
       "id": "open-shop-channel-wii:neopop",
@@ -42803,7 +42829,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v3.5",
+      "version": "v3.5.1",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42811,20 +42837,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.5/NoteRoom.3dsx",
-          "size": 4980604
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.5.1/NoteRoom.3dsx",
+          "size": 4989448
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.5/NoteRoom.cia",
-          "size": 5272512
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.5.1/NoteRoom.cia",
+          "size": 5276608
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-31T01:27:05Z"
+      "updated_at": "2026-10-31T19:55:15Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -50288,30 +50314,30 @@
       "updated_at": "2023-07-10T14:40:04Z"
     },
     {
-      "id": "ps5-payloads-atlas:prefbar-complete_v0.1.3.elf",
+      "id": "ps5-payloads-atlas:prefbar-complete_v0.2.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PrefBar",
-      "summary": "PerfBar - On-Screen Performance Overlay for Jailbroken PS5",
+      "summary": "PrefBar — On-Screen Performance Overlay for Jailbroken PS5 Consoles",
       "author": "",
-      "version": "v0.1.3",
+      "version": "v0.2.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/x1nons/prefbar",
       "downloads": [
         {
           "format": "elf",
-          "filename": "prefbar-complete_v0.1.3.elf",
-          "url": "https://github.com/X1NONs/PrefBar/releases/download/v0.1.3/PrefBar-complete_V0.1.3.elf",
-          "sha256": "f15022259e97b58bb2418cacd4be33b2035d90ac0b16db3af5d6cf6490caac39"
+          "filename": "prefbar-complete_v0.2.0.elf",
+          "url": "https://github.com/X1NONs/PrefBar/releases/download/v0.2.0/PrefBar-complete_V0.2.0.elf",
+          "sha256": "aef21e7106a2ab61ac49ff7142edf8421962038bf62b4d2f2b8aa36e8a91a480"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-21T23:57:50+08:00"
+      "updated_at": "2026-11-01T01:34:47+08:00"
     },
     {
       "id": "vitadbtoo-vita:777",
@@ -50956,7 +50982,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12621,
+      "popularity": 12704,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50983,7 +51009,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3349,
+      "popularity": 3358,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51010,7 +51036,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11213,
+      "popularity": 11258,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51037,7 +51063,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6550,
+      "popularity": 6571,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51064,7 +51090,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 60694,
+      "popularity": 61018,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51091,7 +51117,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 506,
+      "popularity": 510,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51703,30 +51729,30 @@
       "updated_at": "2026-10-30T03:33:13+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.6.2.elf",
+      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-webkit-autoloader",
       "summary": "An automated payload loader for exploited PS5 consoles",
       "author": "",
-      "version": "v0.6.2",
+      "version": "v0.7.0-prerelease-2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-webkit-autoloader",
       "downloads": [
         {
           "format": "elf",
-          "filename": "webkit-autoloader-installer_v0.6.2.elf",
-          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.6.2/webkit-autoloader-installer_v0.6.2.elf",
-          "sha256": "27fd335764270716972faea399a5cc7810b9e49a21abf4966d9759580756cb19"
+          "filename": "webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
+          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0-prerelease-2/webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
+          "sha256": "2a202023ee9ef4c742c3dc05d872c679c3570ca28e50c668b4b2e86c732d27b1"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-28T08:07:18+08:00"
+      "updated_at": "2026-11-01T02:19:13+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5_console.elf",
@@ -51807,30 +51833,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-10.0.2.elf",
+      "id": "ps5-payloads-atlas:ps5upload-10.1.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v10.0.2",
+      "version": "v10.1.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-10.0.2.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.0.2/ps5upload-10.0.2.elf",
-          "sha256": "53ad7fe7b446709ccc36bdd9a7109a0f62a38076bb3b8cb9ba5c3c7cce5dc510"
+          "filename": "ps5upload-10.1.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.1.0/ps5upload-10.1.0.elf",
+          "sha256": "2608d338b47438f7702a7be04a7821c637ace1e64fb046e179eb29c5385dfda0"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-31T15:31:59+08:00"
+      "updated_at": "2026-11-01T03:56:56+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -69683,22 +69709,22 @@
       "name": "topos_3ds-video-player",
       "summary": " topos — True SBS 3D (and normal 2D) Video Player for 3DS | RGB888, MVD Hardware Decode, Smooth & Clean ",
       "author": "mockmodular",
-      "version": "0.12.3.1",
+      "version": "0.12.3.2",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/mockmodular/topos_3ds-video-player/main/resource/icon.png",
       "release_url": "https://github.com/mockmodular/topos_3ds-video-player/releases",
       "downloads": [
         {
           "format": "cia",
-          "filename": "topos.cia",
-          "url": "https://github.com/mockmodular/topos_3ds-video-player/releases/download/0.12.3.1/topos.cia",
+          "filename": "topos_0.12.3.2.cia",
+          "url": "https://github.com/mockmodular/topos_3ds-video-player/releases/download/0.12.3.2/topos_0.12.3.2.cia",
           "size": 9974720
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-05-02T09:47:52Z"
+      "updated_at": "2026-10-31T19:44:25Z"
     },
     {
       "id": "universal-db:DisLoPik/Tor3ds",
