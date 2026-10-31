@@ -212,7 +212,7 @@
           "format": "elf",
           "filename": "bond-server-0.3.1.elf",
           "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5/releases/download/v0.3.1/bond-server-0.3.1.elf",
-          "sha256": null
+          "sha256": "d3e44059d5929f8d7cfb799894ddf4190d031e034affad175970c1fa9c07b9be"
         }
       ],
       "source": "PS5 Payloads Atlas",
@@ -6110,22 +6110,22 @@
       "name": "BareCTR",
       "summary": "Minimalist Minecraft server for Nintendo 3DS systems, based on Bareiron.",
       "author": "net",
-      "version": "Outdated",
+      "version": "v1.1",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DotNetttt/BareCTR/refs/heads/main/data/icon.png",
       "release_url": "https://github.com/DotNetttt/BareCTR/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "barectr.3dsx",
-          "url": "https://github.com/DotNetttt/BareCTR/releases/download/Outdated/barectr.3dsx",
-          "size": 211572
+          "filename": "BareCTR.3dsx",
+          "url": "https://github.com/DotNetttt/BareCTR/releases/download/v1.1/BareCTR.3dsx",
+          "size": 348340
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-06-03T09:25:45Z"
+      "updated_at": "2026-10-30T21:51:15Z"
     },
     {
       "id": "vitadbtoo-vita:1444",
@@ -42803,7 +42803,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v3.4.1",
+      "version": "v3.5",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42811,20 +42811,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.4.1/NoteRoom.3dsx",
-          "size": 4549708
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.5/NoteRoom.3dsx",
+          "size": 4980604
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.4.1/NoteRoom.cia",
-          "size": 4842432
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.5/NoteRoom.cia",
+          "size": 5272512
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-29T23:00:41Z"
+      "updated_at": "2026-10-31T01:27:05Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -43227,7 +43227,7 @@
           "format": "elf",
           "filename": "nuvio-ps5.elf",
           "url": "https://theghostonline.dev/theghostonline/Nuvio-PS5/releases/download/v1.9.1/nuvio-ps5.elf",
-          "sha256": null
+          "sha256": "f79777c24c0105af008ea03333ed3090974715fe3cc89790eb1f51808e10d98d"
         }
       ],
       "source": "PS5 Payloads Atlas",
@@ -50956,7 +50956,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12565,
+      "popularity": 12597,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -50983,7 +50983,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3344,
+      "popularity": 3346,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51010,7 +51010,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11170,
+      "popularity": 11188,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51037,7 +51037,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6534,
+      "popularity": 6540,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51064,7 +51064,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 60438,
+      "popularity": 60567,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51091,7 +51091,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 502,
+      "popularity": 504,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51407,7 +51407,7 @@
           "format": "elf",
           "filename": "game-updater.elf",
           "url": "https://theghostonline.dev/theghostonline/PS5-Game-Updater/releases/download/v1.1.2/game-updater.elf",
-          "sha256": null
+          "sha256": "3a21c41c901c29536e3e1a303861f8d4000c76957f52ea482eff8220d125759c"
         }
       ],
       "source": "PS5 Payloads Atlas",
@@ -51485,7 +51485,7 @@
           "format": "elf",
           "filename": "lz4-compression.elf",
           "url": "https://theghostonline.dev/theghostonline/PS5-LZ4-Compression/releases/download/v1.6.4/lz4-compression.elf",
-          "sha256": null
+          "sha256": "a7c1a956ebddfc92851822b7d0e71e22fa98fd69758bc17b77043b338bd495a4"
         }
       ],
       "source": "PS5 Payloads Atlas",
@@ -51807,30 +51807,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-9.11.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-10.0.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v9.11.0",
+      "version": "v10.0.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-9.11.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v9.11.0/ps5upload-9.11.0.elf",
-          "sha256": "ea961717fb823398dbf346a215cab21aba8cf7a966fb8be53b9d48e75543bdd9"
+          "filename": "ps5upload-10.0.1.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.0.1/ps5upload-10.0.1.elf",
+          "sha256": "c5da95b6438a6d68e8c453df8ea84fb0341744f5fc9dae0781371b350450c3cc"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-31T05:13:47+08:00"
+      "updated_at": "2026-10-31T10:49:07+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
