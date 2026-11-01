@@ -1325,22 +1325,22 @@
       "name": "3ds-hbmenu",
       "summary": "The 3DS Homebrew Menu (∩ ͡° ͜ʖ ͡°)⊃━☆ﾟ ",
       "author": "devkitPro",
-      "version": "v2.4.3",
+      "version": "v2.4.4",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/fincs/new-hbmenu/master/icon.png",
       "release_url": "https://github.com/fincs/new-hbmenu/releases",
       "downloads": [
         {
           "format": "zip",
-          "filename": "3ds-hbmenu-v2.4.3.zip",
-          "url": "https://github.com/devkitPro/3ds-hbmenu/releases/download/v2.4.3/3ds-hbmenu-v2.4.3.zip",
-          "size": 333338
+          "filename": "3ds-hbmenu-v2.4.4.zip",
+          "url": "https://github.com/devkitPro/3ds-hbmenu/releases/download/v2.4.4/3ds-hbmenu-v2.4.4.zip",
+          "size": 323597
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2024-05-03T19:18:09Z"
+      "updated_at": "2026-11-01T15:09:55Z"
     },
     {
       "id": "universal-db:MechanicalDragon0687/3DS-ParentalUnlock",
@@ -12327,7 +12327,7 @@
       "name": "Cirrus",
       "summary": "3DS switcher for Samtendo Network",
       "author": "Samtendo Network",
-      "version": "v3.0.0",
+      "version": "v3.1.0",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://cdn.samtendo.net/images/Cirrus.png",
       "release_url": "https://github.com/SamtendoNetwork/cirrus/releases",
@@ -12335,26 +12335,26 @@
         {
           "format": "zip",
           "filename": "3dsx.zip",
-          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.0.0/3dsx.zip",
-          "size": 733229
+          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.1.0/3dsx.zip",
+          "size": 756808
         },
         {
           "format": "zip",
           "filename": "cia.zip",
-          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.0.0/cia.zip",
-          "size": 1016773
+          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.1.0/cia.zip",
+          "size": 1029974
         },
         {
           "format": "zip",
           "filename": "combined.zip",
-          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.0.0/combined.zip",
-          "size": 1453362
+          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.1.0/combined.zip",
+          "size": 1479565
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-26T19:57:51Z"
+      "updated_at": "2026-11-01T21:09:13Z"
     },
     {
       "id": "universal-db:regimensocial/Citrahold-3DS",
@@ -50982,7 +50982,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12810,
+      "popularity": 12844,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51009,7 +51009,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3374,
+      "popularity": 3378,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51036,7 +51036,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11339,
+      "popularity": 11362,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51063,7 +51063,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6601,
+      "popularity": 6613,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51090,7 +51090,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 61556,
+      "popularity": 61696,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51117,7 +51117,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 516,
+      "popularity": 517,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51651,30 +51651,30 @@
       "updated_at": "2026-10-25T02:38:30+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:tailscale-0.7.1.elf",
+      "id": "ps5-payloads-atlas:tailscale-0.7.2.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-tailscale",
       "summary": "Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonlight/Sunshine (unofficial)",
       "author": "",
-      "version": "v0.7.1",
+      "version": "v0.7.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/holdmysocks/ps5-tailscale",
       "downloads": [
         {
           "format": "elf",
-          "filename": "tailscale-0.7.1.elf",
-          "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.1/tailscale-0.7.1.elf",
-          "sha256": "af320493c8e2fc3443b8f42496ac11aa3db77b112e95777706d835eccd304cb9"
+          "filename": "tailscale-0.7.2.elf",
+          "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.2/tailscale-0.7.2.elf",
+          "sha256": "47294aa593644d1e86f07d7faac71e40ae737b536c1b56261b2b7287238f37c8"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-07T07:46:38+08:00"
+      "updated_at": "2026-11-02T01:47:09+08:00"
     },
     {
       "id": "ps5-payloads-atlas:tailscale-1.0.0.elf",
@@ -51833,30 +51833,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-10.3.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-10.6.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v10.3.0",
+      "version": "v10.6.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-10.3.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.3.0/ps5upload-10.3.0.elf",
-          "sha256": "e3da25330b0b3aeba1ad1eab628726a7b7526bd2be2d5f9a40dba59527dfb155"
+          "filename": "ps5upload-10.6.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.6.0/ps5upload-10.6.0.elf",
+          "sha256": "2f67651bf1320a83202b632782a1f404543b1ea4911dfb3be5a510971f015392"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-01T11:39:32+08:00"
+      "updated_at": "2026-11-02T05:40:05+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -54766,6 +54766,32 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2016-10-24"
+    },
+    {
+      "id": "ps5-payloads-atlas:remoteplay_unlock_offsets.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "remoteplay_unlock",
+      "summary": "",
+      "author": "",
+      "version": "latest-testing",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/earthonion/remoteplay_unlock",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "remoteplay_unlock_offsets.elf",
+          "url": "https://github.com/earthonion/remoteplay_unlock/releases/download/latest-testing/remoteplay_unlock_offsets.elf",
+          "sha256": "007c5a67d23483477bdc4eaaae831155cb21a3c2928cada9a9d6980530399c6f"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-02T04:20:26+08:00"
     },
     {
       "id": "vitadbtoo-vita:1562",
@@ -70153,7 +70179,7 @@
       "name": "TriCord",
       "summary": "Discord client for Nintendo 3DS",
       "author": "2ipper",
-      "version": "v0.5.1",
+      "version": "v0.6.0",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/2b-zipper/TriCord/refs/heads/main/resources/icon.png",
       "release_url": "https://github.com/2b-zipper/TriCord/releases",
@@ -70161,14 +70187,14 @@
         {
           "format": "cia",
           "filename": "TriCord.cia",
-          "url": "https://github.com/2b-zipper/TriCord/releases/download/v0.5.1/TriCord.cia",
-          "size": 8901568
+          "url": "https://github.com/2b-zipper/TriCord/releases/download/v0.6.0/TriCord.cia",
+          "size": 9106368
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-07-27T04:08:33Z"
+      "updated_at": "2026-11-01T13:41:05Z"
     },
     {
       "id": "vitadbtoo-vita:1470",
