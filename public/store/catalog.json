@@ -50982,7 +50982,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12704,
+      "popularity": 12743,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51009,7 +51009,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3358,
+      "popularity": 3361,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51036,7 +51036,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11258,
+      "popularity": 11281,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51063,7 +51063,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6571,
+      "popularity": 6580,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51090,7 +51090,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 61018,
+      "popularity": 61224,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51833,30 +51833,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-10.1.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-10.3.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v10.1.0",
+      "version": "v10.3.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-10.1.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.1.0/ps5upload-10.1.0.elf",
-          "sha256": "2608d338b47438f7702a7be04a7821c637ace1e64fb046e179eb29c5385dfda0"
+          "filename": "ps5upload-10.3.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.3.0/ps5upload-10.3.0.elf",
+          "sha256": "e3da25330b0b3aeba1ad1eab628726a7b7526bd2be2d5f9a40dba59527dfb155"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-01T03:56:56+08:00"
+      "updated_at": "2026-11-01T11:39:32+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -82563,28 +82563,28 @@
       "name": "zelda-alttp-3ds",
       "summary": "Nintendo 3DS dual-screen port of Zelda A Link to the Past based on zelda3",
       "author": "estebanpdn",
-      "version": "v3.2",
+      "version": "v4.0",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/EstebanPdN/zelda-alttp-3ds/main/udicon.png",
       "release_url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "zelda3-3ds-v3.2.3dsx",
-          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v3.2/zelda3-3ds-v3.2.3dsx",
-          "size": 6756320
+          "filename": "zelda3-3ds-v4.0.3dsx",
+          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v4.0/zelda3-3ds-v4.0.3dsx",
+          "size": 8588148
         },
         {
           "format": "cia",
-          "filename": "zelda3-3ds-v3.2.cia",
-          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v3.2/zelda3-3ds-v3.2.cia",
-          "size": 5944256
+          "filename": "zelda3-3ds-v4.0.cia",
+          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v4.0/zelda3-3ds-v4.0.cia",
+          "size": 7312320
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-20T01:30:37Z"
+      "updated_at": "2026-11-01T00:06:14Z"
     },
     {
       "id": "universal-db:EstebanPdN/zelda-tmc-3ds",
