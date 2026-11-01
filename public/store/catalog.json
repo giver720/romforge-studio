@@ -50982,7 +50982,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12743,
+      "popularity": 12810,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51009,7 +51009,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3361,
+      "popularity": 3374,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51036,7 +51036,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11281,
+      "popularity": 11339,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51063,7 +51063,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6580,
+      "popularity": 6601,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51090,7 +51090,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 61224,
+      "popularity": 61556,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51117,7 +51117,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 510,
+      "popularity": 516,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51287,30 +51287,30 @@
       "updated_at": "2026-08-24T22:44:14+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5-dump-forge-0.5.0-ps5.elf",
+      "id": "ps5-payloads-atlas:ps5-dump-forge-0.5.1-ps5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-dump-forge",
       "summary": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
       "author": "",
-      "version": "v0.5.0",
+      "version": "v0.5.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/quer3q/ps5-dump-forge",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5-dump-forge-0.5.0-ps5.elf",
-          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.0/ps5-dump-forge-0.5.0-ps5.elf",
-          "sha256": "f0cc32e772318f1ae53f1eccae207cb9aa1efb96d1a2a6249205bb3e0e478986"
+          "filename": "ps5-dump-forge-0.5.1-ps5.elf",
+          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.1/ps5-dump-forge-0.5.1-ps5.elf",
+          "sha256": "864cf7c0739e9f411c596873c3c2fb482a2ebb2be207bf7bd1ac558e4699156f"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-30T01:50:57+08:00"
+      "updated_at": "2026-11-01T15:11:00+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-exporter.elf",
@@ -57712,7 +57712,7 @@
       "name": "Scratch Everywhere!",
       "summary": "Play Scratch games on your 3DS!",
       "author": "NateXS",
-      "version": "1.2.1",
+      "version": "1.3",
       "license": "GNU Lesser General Public License v3.0",
       "icon_url": "https://github.com/ScratchEverywhere/ScratchEverywhere/raw/refs/heads/main/gfx/icon.png",
       "release_url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases",
@@ -57720,26 +57720,26 @@
         {
           "format": "3dsx",
           "filename": "scratch-3ds.3dsx",
-          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.2.1/scratch-3ds.3dsx",
-          "size": 8632264
+          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.3/scratch-3ds.3dsx",
+          "size": 9862056
         },
         {
           "format": "cia",
           "filename": "scratch-3ds.cia",
-          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.2.1/scratch-3ds.cia",
-          "size": 6812608
+          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.3/scratch-3ds.cia",
+          "size": 7926720
         },
         {
           "format": "nds",
           "filename": "scratch-ds.nds",
-          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.2.1/scratch-ds.nds",
-          "size": 5915136
+          "url": "https://github.com/ScratchEverywhere/ScratchEverywhere/releases/download/1.3/scratch-ds.nds",
+          "size": 10997248
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-07T18:41:23Z"
+      "updated_at": "2026-11-01T09:02:42Z"
     },
     {
       "id": "hbas-wiiu:ScratchWiiU",
