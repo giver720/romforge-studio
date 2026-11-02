@@ -31871,6 +31871,39 @@
       "updated_at": "2023-01-17"
     },
     {
+      "id": "hbas-switch:iwbtgrt",
+      "platforms": [
+        "switch"
+      ],
+      "name": "IWBTGR Tribute Edition",
+      "categories": [
+        "games"
+      ],
+      "description": "I Wanna Be The Guy: Remastered Tribute Edition is fan-made version 1.6.6.6 of I Wanna Be The Guy: Remastered by Cherry Treehouse, on the Switch. Same brutal classic, plus new ways to suffer.\n\n- The full IWBTG: Remastered.\n- Tribute Mode: play as the Tribute Kid, with some extra secrets to find.\n- Over a dozen language options.\n- Secrets and hidden extras for the truly stubborn.\n\nStart it from the Homebrew Menu in title-override mode (hold R while starting a game) so it gets the full memory. Applet mode also works. B jump, Y shoot, X restart, + pause, A back, menus confirm with B. Controls can be remapped in Options. Saves go to /switch/iwbtgrt/save. To quit, press HOME and close the software.\n\nCredits: I Wanna Be The Guy by Michael \"Kayin\" O'Reilly. I Wanna Be The Guy: Remastered by Cherry Treehouse. I Wanna be the Tribute, and the 1.6.6.6 patch and extras, by shaman. Free fan project, not affiliated with Kayin or Cherry Treehouse.",
+      "added_at": "2026-10-25",
+      "summary": "IWBTG: Remastered 1.6.6.6, fan edition",
+      "author": "shaman",
+      "version": "1.6.6.6",
+      "license": "GPLv3",
+      "icon_url": null,
+      "release_url": "https://github.com/kaizerfcm/iwbtg-remastered-tribute-edition-switch",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "iwbtgrt.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/iwbtgrt/manifest.install",
+          "size": 97240,
+          "sha256": "30d2c2556d445e7946b766586ad7a2f8bd2edb6d2e7b4111b4e83a1f1a5b22ed"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/iwbtgrt/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-02"
+    },
+    {
       "id": "hbas-switch:J2MENXX",
       "platforms": [
         "switch"
@@ -33562,6 +33595,39 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2018-12-29"
+    },
+    {
+      "id": "hbas-switch:kickNX",
+      "platforms": [
+        "switch"
+      ],
+      "name": "kickNX",
+      "categories": [
+        "utilities"
+      ],
+      "description": "kickNX is an independent Kick client built specifically for the Nintendo Switch. It brings livestream viewing, category discovery, search, and integrated chat interaction to handheld, tabletop, and docked play.",
+      "added_at": "2026-10-31",
+      "summary": "Kick streaming client for Nintendo Switch",
+      "author": "j2k",
+      "version": "0.5.0",
+      "license": "GPLv3",
+      "icon_url": null,
+      "release_url": "https://github.com/j2k-lab/kickNX",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "kickNX.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/kickNX/manifest.install",
+          "size": 36219,
+          "sha256": "018a32035d0379fb480b13ef553edcd58d07698b678a687a286363ad4b962ff1"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/kickNX/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-02"
     },
     {
       "id": "open-shop-channel-wii:kidspaint",
@@ -40575,13 +40641,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64835128
+          "size": 64858279
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-31T13:32:30Z"
+      "updated_at": "2026-11-02T16:59:13Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -42829,7 +42895,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v3.5.1",
+      "version": "v4.0",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42837,20 +42903,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.5.1/NoteRoom.3dsx",
-          "size": 4989448
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.0/NoteRoom.3dsx",
+          "size": 5020288
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v3.5.1/NoteRoom.cia",
-          "size": 5276608
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.0/NoteRoom.cia",
+          "size": 5297088
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-31T19:55:15Z"
+      "updated_at": "2026-11-02T16:12:31Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -45017,6 +45083,39 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2018-10-23"
+    },
+    {
+      "id": "hbas-switch:OpenAoK",
+      "platforms": [
+        "switch"
+      ],
+      "name": "OpenAoK",
+      "categories": [
+        "games"
+      ],
+      "description": "OpenAoK is an engine for Age of Empires II: The Age of Kings (1999), written from scratch, that plays the game from your own copy of the original CD. The download holds none of the game: you make its data on a computer from your CD and copy the folder to the SD card beside the app, as the guide at zaydme.github.io/openaok/guide/switch says.\n\n- Random maps from the game's own scripts, the computer players' own AI scripts, the campaigns, scenarios and the scenario editor\n- In handheld mode the touch screen plays: tap to click, hold for a right click, two fingers to scroll, pinch to zoom\n- The controller plays as a mouse and the game's hotkeys: left stick moves the pointer, right stick scrolls, A clicks, B right-clicks, X goes to the next idle villager, + opens the game menu\n\nHold R while starting a game so the Homebrew Menu opens with all of the console's memory, which OpenAoK needs. Its files, the game's data, profile and saved games, live in sdmc:/switch/openaok/. Not affiliated with Microsoft.",
+      "added_at": "2026-11-02",
+      "summary": "Age of Empires II: The Age of Kings, from your own CD",
+      "author": "Zaydme",
+      "version": "0.6.6",
+      "license": "MIT",
+      "icon_url": null,
+      "release_url": "https://github.com/Zaydme/openaok",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "OpenAoK.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/OpenAoK/manifest.install",
+          "size": 12828,
+          "sha256": "d2b3f949ec81af0aafcabd14f8efd77b4ff5c0f5509f5d718893275c1c41513c"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenAoK/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-02"
     },
     {
       "id": "hbas-switch:OpenArenaNX",
@@ -50982,7 +51081,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12877,
+      "popularity": 12956,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51009,7 +51108,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3382,
+      "popularity": 3394,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51036,7 +51135,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11386,
+      "popularity": 11444,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51063,7 +51162,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6626,
+      "popularity": 6654,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51090,7 +51189,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 61863,
+      "popularity": 62228,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51117,7 +51216,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 520,
+      "popularity": 532,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -66329,11 +66428,11 @@
       "categories": [
         "utilities"
       ],
-      "description": "SwitchInfoNX est un utilitaire complet de diagnostic pour Nintendo Switch. Il propose des informations système, le stockage, le réseau, les performances, des diagnostics de manettes, un explorateur de fichiers, le transfert MTP et HTTP, ainsi que des thèmes personnalisables et 11 langues.",
-      "added_at": "2026-10-30",
+      "description": "SwitchInfoNX est un utilitaire complet de diagnostic pour Nintendo Switch. Il propose des informations système, le stockage, le réseau, les performances, des diagnostics de manettes, un explorateur de fichiers, les transferts FTP et MTP, la gestion des sauvegardes, des thèmes personnalisables et un overlay réseau pour Ultrahand.",
+      "added_at": "2026-11-01",
       "summary": "Utilitaire complet d'informations système",
       "author": "dodosi",
-      "version": "0.3",
+      "version": "0.5",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/dodosiiii/SwitchInfoNX",
@@ -66342,8 +66441,8 @@
           "format": "hbas",
           "filename": "SwitchInfoNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SwitchInfoNX/manifest.install",
-          "size": 8942,
-          "sha256": "925c1ddfa655ce13b5fd51966476e20c9e3a5a7c6b483e613cad622b337a57c7"
+          "size": 9274,
+          "sha256": "a9e6ba01cf7c6baf36af25e00563786c5659b96198a38045c3dd7d778d09f055"
         }
       ],
       "popularity": 468,
@@ -66351,7 +66450,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-30"
+      "updated_at": "2026-11-02"
     },
     {
       "id": "vitadbtoo-vita:207",
@@ -66447,6 +66546,39 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2025-05-03"
+    },
+    {
+      "id": "hbas-switch:SwitchnoteStudio",
+      "platforms": [
+        "switch"
+      ],
+      "name": "Switchnote Studio",
+      "categories": [
+        "games"
+      ],
+      "description": "Create frame-by-frame animations on Nintendo Switch. Draw at 640×360 with four layers, ten ink colours, pens, brushes, erasers, onion skin and eight playback speeds.\n\nAdd sound, import pictures, organise Switchnotes locally, export video and share through Switchnote Gallery.\n\nThis is a public alpha, so please back up your work.\n\nLaunch through Homebrew Menu in app override mode; applet mode is unsupported.\n\nAI use: Human-written.",
+      "added_at": "2026-11-02",
+      "summary": "Draw and share animations on Switch",
+      "author": "RexiMemo!",
+      "version": "0.1.51",
+      "license": "AGPLv3",
+      "icon_url": null,
+      "release_url": "https://flipnote.world/git/rekushi/switchnote",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "SwitchnoteStudio.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/SwitchnoteStudio/manifest.install",
+          "size": 26405,
+          "sha256": "09b33d18d7e7a0f510c6fe3d410b7973d76fdb666e542f32db1b9a66a7b9bd18"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchnoteStudio/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-02"
     },
     {
       "id": "hbas-switch:SwitchPresence-Rewritten",
