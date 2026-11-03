@@ -51081,7 +51081,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 12956,
+      "popularity": 13046,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51108,7 +51108,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3394,
+      "popularity": 3404,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51135,7 +51135,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11444,
+      "popularity": 11515,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51162,7 +51162,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6654,
+      "popularity": 6676,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51189,7 +51189,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 62228,
+      "popularity": 62545,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51216,7 +51216,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 532,
+      "popularity": 535,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51620,30 +51620,30 @@
       "updated_at": "2026-10-26T10:34:12+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:patchdl_0.3.11.elf",
+      "id": "ps5-payloads-atlas:patchdl_0.3.12.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-patchdl",
       "summary": "Official updates for your PS5 and PS4 games, from any browser. PatchDL runs on the PS5, finds the newest update for every installed game, downloads it with parallel connections and resume, and installs it on the console. Web UI for phone, laptop and TV, plus a home-screen tile. Runs on firmware 1.00 to 13.60.",
       "author": "",
-      "version": "v0.3.11",
+      "version": "v0.3.12",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/knutwurst/ps5-patchdl",
       "downloads": [
         {
           "format": "elf",
-          "filename": "patchdl_0.3.11.elf",
-          "url": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.11/patchdl_0.3.11.elf",
-          "sha256": "c008acd9fd7560a91c895e83a1042a1f5f9a689f910dcd7e57c3739dc378da92"
+          "filename": "patchdl_0.3.12.elf",
+          "url": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.12/patchdl_0.3.12.elf",
+          "sha256": "a8aeb6039825188561b7346bb6f0c9244f72d7be1412dc7dd6c2bea0dd3f396a"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-29T02:45:48+08:00"
+      "updated_at": "2026-11-03T04:40:16+08:00"
     },
     {
       "id": "ps5-payloads-atlas:pldmgr_v0.6.3.elf",
@@ -51932,30 +51932,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-10.7.2.elf",
+      "id": "ps5-payloads-atlas:ps5upload-10.7.5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v10.7.2",
+      "version": "v10.7.5",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-10.7.2.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.7.2/ps5upload-10.7.2.elf",
-          "sha256": "afb8b1965796795f308dcc8e27be1a2e80feeaddbb85e3c94823ba46dabeb0d2"
+          "filename": "ps5upload-10.7.5.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v10.7.5/ps5upload-10.7.5.elf",
+          "sha256": "aca8424e53bc08da2e3b41acb5bed563a73a31698a3b69825977f95625c3decb"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-02T12:25:36+08:00"
+      "updated_at": "2026-11-03T07:55:17+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -69867,22 +69867,22 @@
       "name": "topos_3ds-video-player",
       "summary": " topos — True SBS 3D (and normal 2D) Video Player for 3DS | RGB888, MVD Hardware Decode, Smooth & Clean ",
       "author": "mockmodular",
-      "version": "0.12.3.2",
+      "version": "1.12.3.4",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/mockmodular/topos_3ds-video-player/main/resource/icon.png",
       "release_url": "https://github.com/mockmodular/topos_3ds-video-player/releases",
       "downloads": [
         {
           "format": "cia",
-          "filename": "topos_0.12.3.2.cia",
-          "url": "https://github.com/mockmodular/topos_3ds-video-player/releases/download/0.12.3.2/topos_0.12.3.2.cia",
-          "size": 9974720
+          "filename": "topos.cia",
+          "url": "https://github.com/mockmodular/topos_3ds-video-player/releases/download/1.12.3.4/topos.cia",
+          "size": 9978816
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-31T19:44:25Z"
+      "updated_at": "2026-11-02T19:43:17Z"
     },
     {
       "id": "universal-db:DisLoPik/Tor3ds",
