@@ -25519,7 +25519,7 @@
       "name": "garlic-savemgr",
       "summary": "",
       "author": "",
-      "version": "v1.15-beta1",
+      "version": "v1.15-beta5",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-savemgr",
@@ -25527,7 +25527,7 @@
         {
           "format": "elf",
           "filename": "garlic-savemgr.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta1/garlic-savemgr.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta5/garlic-savemgr.elf",
           "sha256": null
         }
       ],
@@ -25535,7 +25535,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-23T21:44:13+08:00"
+      "updated_at": "2026-11-05T12:05:41+08:00"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -25545,7 +25545,7 @@
       "name": "garlic-worker",
       "summary": "",
       "author": "",
-      "version": "v1.1.8",
+      "version": "v1.2.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-worker",
@@ -25553,7 +25553,7 @@
         {
           "format": "elf",
           "filename": "garlic-worker-ps5.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.1.8/garlic-worker-ps5.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.2.2/garlic-worker-ps5.elf",
           "sha256": null
         }
       ],
@@ -25561,7 +25561,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-04T13:21:03+08:00"
+      "updated_at": "2026-11-05T12:05:07+08:00"
     },
     {
       "id": "vitadbtoo-vita:779",
@@ -40608,13 +40608,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64858279
+          "size": 64858611
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-02T16:59:13Z"
+      "updated_at": "2026-11-05T04:05:52Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -50063,7 +50063,7 @@
       "name": "PotatoStream",
       "summary": "Gamestream client for old 2ds/3DS",
       "author": "PainDe0Mie",
-      "version": "v1.3.0",
+      "version": "v1.3.5",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/PainDe0Mie/PotatoStream/n3ds-main/3ds/res/ic_streampotato.png",
       "release_url": "https://github.com/PainDe0Mie/PotatoStream/releases",
@@ -50071,20 +50071,20 @@
         {
           "format": "3dsx",
           "filename": "streampotato.3dsx",
-          "url": "https://github.com/PainDe0Mie/PotatoStream/releases/download/v1.3.0/streampotato.3dsx",
-          "size": 7676360
+          "url": "https://github.com/PainDe0Mie/PotatoStream/releases/download/v1.3.5/streampotato.3dsx",
+          "size": 7710000
         },
         {
           "format": "cia",
           "filename": "streampotato.cia",
-          "url": "https://github.com/PainDe0Mie/PotatoStream/releases/download/v1.3.0/streampotato.cia",
-          "size": 4409280
+          "url": "https://github.com/PainDe0Mie/PotatoStream/releases/download/v1.3.5/streampotato.cia",
+          "size": 4415936
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-06T22:44:00Z"
+      "updated_at": "2026-11-05T03:04:24Z"
     },
     {
       "id": "universal-db:nop90/POWDER-3DS",
@@ -51048,7 +51048,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 13493,
+      "popularity": 13620,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51075,7 +51075,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3440,
+      "popularity": 3458,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51102,7 +51102,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 11902,
+      "popularity": 12022,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51129,7 +51129,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6784,
+      "popularity": 6817,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51156,7 +51156,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 64167,
+      "popularity": 64535,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51183,7 +51183,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 547,
+      "popularity": 549,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51717,30 +51717,30 @@
       "updated_at": "2026-10-25T02:38:30+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:tailscale-0.7.2.elf",
+      "id": "ps5-payloads-atlas:tailscale-0.7.3.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-tailscale",
       "summary": "Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonlight/Sunshine (unofficial)",
       "author": "",
-      "version": "v0.7.2",
+      "version": "v0.7.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/holdmysocks/ps5-tailscale",
       "downloads": [
         {
           "format": "elf",
-          "filename": "tailscale-0.7.2.elf",
-          "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.2/tailscale-0.7.2.elf",
-          "sha256": "47294aa593644d1e86f07d7faac71e40ae737b536c1b56261b2b7287238f37c8"
+          "filename": "tailscale-0.7.3.elf",
+          "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.3/tailscale-0.7.3.elf",
+          "sha256": "899c9f76994317171ab62a331a229b260e7c93aab68963502d79c861392e5801"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-02T01:47:09+08:00"
+      "updated_at": "2026-11-05T00:05:32+08:00"
     },
     {
       "id": "ps5-payloads-atlas:tailscale-1.0.0.elf",
@@ -51899,30 +51899,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-11.0.8.elf",
+      "id": "ps5-payloads-atlas:ps5upload-11.1.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v11.0.8",
+      "version": "v11.1.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-11.0.8.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.0.8/ps5upload-11.0.8.elf",
-          "sha256": "f315f5645d7be6cc0736ec3183cfa67ec9d7ec689321295fb222f5b699b2542e"
+          "filename": "ps5upload-11.1.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.1.0/ps5upload-11.1.0.elf",
+          "sha256": "1aaf50efa91aac8d26d53ce27ec223a3646a880892834977615c2770ff17197b"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-04T16:30:48+08:00"
+      "updated_at": "2026-11-05T10:55:38+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -82031,6 +82031,32 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2023-08-03"
+    },
+    {
+      "id": "ps5-payloads-atlas:yt-blocker_v1.0.2.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "y2jb-update-blocker",
+      "summary": "A PlayStation 5 payload for blocking YouTube update metadata",
+      "author": "",
+      "version": "v1.0.2",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/epinorr/y2jb-update-blocker",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "yt-blocker_v1.0.2.elf",
+          "url": "https://github.com/Epinorr/y2jb-update-blocker/releases/download/v1.0.2/YT-Blocker_v1.0.2.elf",
+          "sha256": "6ab006d92685e1ef67f9984549a5d4e8df24f6f59b2452e77c2737be6ed7df5a"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-18T23:39:55+08:00"
     },
     {
       "id": "vitadbtoo-psp:965",
