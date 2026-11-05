@@ -25519,7 +25519,7 @@
       "name": "garlic-savemgr",
       "summary": "",
       "author": "",
-      "version": "v1.15-beta5",
+      "version": "v1.15-beta8",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-savemgr",
@@ -25527,7 +25527,7 @@
         {
           "format": "elf",
           "filename": "garlic-savemgr.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta5/garlic-savemgr.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta8/garlic-savemgr.elf",
           "sha256": null
         }
       ],
@@ -25535,7 +25535,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-05T12:05:41+08:00"
+      "updated_at": "2026-11-06T01:56:02+08:00"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -25545,7 +25545,7 @@
       "name": "garlic-worker",
       "summary": "",
       "author": "",
-      "version": "v1.2.2",
+      "version": "v1.2.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-worker",
@@ -25553,7 +25553,7 @@
         {
           "format": "elf",
           "filename": "garlic-worker-ps5.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.2.2/garlic-worker-ps5.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.2.3/garlic-worker-ps5.elf",
           "sha256": null
         }
       ],
@@ -25561,7 +25561,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-05T12:05:07+08:00"
+      "updated_at": "2026-11-05T22:57:53+08:00"
     },
     {
       "id": "vitadbtoo-vita:779",
@@ -40953,7 +40953,7 @@
         "ps5"
       ],
       "name": "NeoEnabler",
-      "summary": "Allows PS4 games with no PS4 Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
+      "summary": "Allows PS4 games with no PS4 Pro Support to receive patches via illusionyy's ps-patch-system that can unlock higher resolutions",
       "author": "",
       "version": "v0.6.2",
       "license": null,
@@ -51048,7 +51048,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 13620,
+      "popularity": 13740,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51075,7 +51075,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3458,
+      "popularity": 3474,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51102,7 +51102,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 12022,
+      "popularity": 12149,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51129,7 +51129,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6817,
+      "popularity": 6844,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51156,7 +51156,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 64535,
+      "popularity": 65045,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51183,7 +51183,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 549,
+      "popularity": 553,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51230,7 +51230,7 @@
       "name": "ps4mount",
       "summary": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
       "author": "",
-      "version": "v0.7.2",
+      "version": "v0.7.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/ps4mount",
@@ -51238,15 +51238,15 @@
         {
           "format": "elf",
           "filename": "ps4mount.elf",
-          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.2/ps4mount.elf",
-          "sha256": "30627513e950f6b7b6b0e5ca43c30e954cdd873a646b8beefe0a4a925ac28479"
+          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.3/ps4mount.elf",
+          "sha256": "f107a443aa83196744deeefe748a7f09d8b8b340a30df1b232535b6ee0f15127"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-30T00:15:47+08:00"
+      "updated_at": "2026-11-06T01:13:28+08:00"
     },
     {
       "id": "ps5-payloads-atlas:fps60.elf",
@@ -51353,30 +51353,30 @@
       "updated_at": "2026-08-24T22:44:14+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5-dump-forge-0.5.2-ps5.elf",
+      "id": "ps5-payloads-atlas:ps5-dump-forge-0.5.3-ps5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-dump-forge",
       "summary": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
       "author": "",
-      "version": "v0.5.2",
+      "version": "v0.5.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/quer3q/ps5-dump-forge",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5-dump-forge-0.5.2-ps5.elf",
-          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.2/ps5-dump-forge-0.5.2-ps5.elf",
-          "sha256": "140b4a8625b42af25acf8ff2c454c06c1182866960f18a0f4b04d57a380a5589"
+          "filename": "ps5-dump-forge-0.5.3-ps5.elf",
+          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.3/ps5-dump-forge-0.5.3-ps5.elf",
+          "sha256": "3dd9976dda293ed8d2f718bf93b4b214bce881d8f75d7168b9477a490170466a"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-03T22:08:52+08:00"
+      "updated_at": "2026-11-05T16:40:19+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-exporter.elf",
@@ -51899,30 +51899,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-11.1.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-11.2.3.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v11.1.0",
+      "version": "v11.2.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-11.1.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.1.0/ps5upload-11.1.0.elf",
-          "sha256": "1aaf50efa91aac8d26d53ce27ec223a3646a880892834977615c2770ff17197b"
+          "filename": "ps5upload-11.2.3.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.3/ps5upload-11.2.3.elf",
+          "sha256": "0a0fd1cd7946e5bd364dfaaadc0e7b01c35c33fd48302385378ff743646b129a"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-05T10:55:38+08:00"
+      "updated_at": "2026-11-06T00:17:04+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
