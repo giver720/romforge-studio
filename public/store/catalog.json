@@ -12538,7 +12538,7 @@
           "format": "3dsx",
           "filename": "ClassiCube-3ds.3dsx",
           "url": "https://cdn.classicube.net/client/latest/ClassiCube-3ds.3dsx",
-          "size": 783620
+          "size": 783300
         },
         {
           "format": "cia",
@@ -25519,7 +25519,7 @@
       "name": "garlic-savemgr",
       "summary": "",
       "author": "",
-      "version": "v1.15-beta8",
+      "version": "v1.15-beta11",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-savemgr",
@@ -25527,7 +25527,7 @@
         {
           "format": "elf",
           "filename": "garlic-savemgr.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta8/garlic-savemgr.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta11/garlic-savemgr.elf",
           "sha256": null
         }
       ],
@@ -25535,7 +25535,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-06T01:56:02+08:00"
+      "updated_at": "2026-11-06T13:54:32+08:00"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -25545,7 +25545,7 @@
       "name": "garlic-worker",
       "summary": "",
       "author": "",
-      "version": "v1.2.3",
+      "version": "v1.3.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-worker",
@@ -25553,7 +25553,7 @@
         {
           "format": "elf",
           "filename": "garlic-worker-ps5.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.2.3/garlic-worker-ps5.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.3.0/garlic-worker-ps5.elf",
           "sha256": null
         }
       ],
@@ -25561,7 +25561,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-05T22:57:53+08:00"
+      "updated_at": "2026-11-06T14:25:12+08:00"
     },
     {
       "id": "vitadbtoo-vita:779",
@@ -40614,7 +40614,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-05T04:05:52Z"
+      "updated_at": "2026-11-05T15:22:30Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -51048,7 +51048,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 13740,
+      "popularity": 13839,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51075,7 +51075,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3474,
+      "popularity": 3481,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51102,7 +51102,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 12149,
+      "popularity": 12272,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51129,7 +51129,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6844,
+      "popularity": 6864,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51156,7 +51156,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 65045,
+      "popularity": 65559,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51183,7 +51183,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 553,
+      "popularity": 556,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51899,30 +51899,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-11.2.3.elf",
+      "id": "ps5-payloads-atlas:ps5upload-11.2.4.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v11.2.3",
+      "version": "v11.2.4",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-11.2.3.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.3/ps5upload-11.2.3.elf",
-          "sha256": "0a0fd1cd7946e5bd364dfaaadc0e7b01c35c33fd48302385378ff743646b129a"
+          "filename": "ps5upload-11.2.4.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.4/ps5upload-11.2.4.elf",
+          "sha256": "06fb08963fb31c59ab277d5e1b109481c546fc1128a664b06ca70a9c2078e374"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-06T00:17:04+08:00"
+      "updated_at": "2026-11-06T10:19:39+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -70917,53 +70917,34 @@
       "name": "Tux Pong!",
       "summary": "A fork of the Scratch Version of Nate Pong, built on the Scratch Everywhere! runtime. Based on Tux,the mascot for Linux,and Konqi,the mascot for KDE.",
       "author": "effL",
-      "version": "v1.1",
+      "version": "v1.1a",
       "license": "Main App: GNU Lesser General Public License v3.0 / MIT License / Fonts: CC BY-SA 3.0 / SIL Open Font License ",
       "icon_url": "https://raw.githubusercontent.com/git-effl/Tux-Pong/refs/heads/main/gfx/icon.png",
       "release_url": "https://github.com/git-effl/Tux-Pong/releases",
       "downloads": [
         {
+          "format": "zip",
+          "filename": "Scratch.Everywhere.3DS.Nightly.6.zip",
+          "url": "https://github.com/git-effl/Tux-Pong/releases/download/v1.1a/Scratch.Everywhere.3DS.Nightly.6.zip",
+          "size": 65546045
+        },
+        {
           "format": "3dsx",
           "filename": "tuxpong.3dsx",
-          "url": "https://github.com/git-effl/Tux-Pong/releases/download/v1.1/tuxpong.3dsx",
-          "size": 35896312
+          "url": "https://github.com/git-effl/Tux-Pong/releases/download/v1.1a/tuxpong.3dsx",
+          "size": 35927648
         },
         {
           "format": "cia",
           "filename": "tuxpong.cia",
-          "url": "https://github.com/git-effl/Tux-Pong/releases/download/v1.1/tuxpong.cia",
-          "size": 34231232
+          "url": "https://github.com/git-effl/Tux-Pong/releases/download/v1.1a/tuxpong.cia",
+          "size": 34227136
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-09-24T18:00:56Z"
-    },
-    {
-      "id": "universal-db:KirovAir/TwilightBoxart",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "TwilightBoxart",
-      "summary": "Automatically download box art/covers for TWiLightMenu++ and Pico Launcher, straight onto your SD card.",
-      "author": "KirovAir",
-      "version": "2.4.0",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://raw.githubusercontent.com/KirovAir/TwilightBoxart/master/docs/unistore-icon.png",
-      "release_url": "https://github.com/KirovAir/TwilightBoxart/releases",
-      "downloads": [
-        {
-          "format": "nds",
-          "filename": "TwilightBoxart-DS-DSi.nds",
-          "url": "https://github.com/KirovAir/TwilightBoxart/releases/download/2.4.0/TwilightBoxart-DS-DSi.nds",
-          "size": 2654720
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2026-10-15T05:13:49Z"
+      "updated_at": "2026-11-05T19:05:24Z"
     },
     {
       "id": "hbas-switch:twiNX",
@@ -72441,22 +72422,22 @@
       "name": "uxnds",
       "summary": "NDS/3DS fork/port of the uxn/Varvara virtual machine",
       "author": "Adrian \"asie\" Siekierka",
-      "version": "v0.5.3",
+      "version": "v0.6.0",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/asiekierka/uxnds/main/misc/uxn48.png",
       "release_url": "https://github.com/asiekierka/uxnds/releases",
       "downloads": [
         {
           "format": "zip",
-          "filename": "uxnds053.zip",
-          "url": "https://github.com/asiekierka/uxnds/releases/download/v0.5.3/uxnds053.zip",
-          "size": 521512
+          "filename": "uxnds060.zip",
+          "url": "https://github.com/asiekierka/uxnds/releases/download/v0.6.0/uxnds060.zip",
+          "size": 523244
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2025-03-30T12:09:54Z"
+      "updated_at": "2026-11-05T15:19:37Z"
     },
     {
       "id": "vitadbtoo-vita:529",
@@ -83620,52 +83601,52 @@
       "name": "Українізатор 3DS/2DS",
       "summary": "Українська мова для системного інтерфейсу Nintendo 3DS/2DS.",
       "author": "Max Bolhar",
-      "version": "v2.3.0",
+      "version": "v2.4.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-ua/main/assets/unistore-icon.png",
       "release_url": "https://github.com/BolgarMaxym97/3ds-ua/releases",
       "downloads": [
         {
           "format": "zip",
-          "filename": "3ds-ua-from-en-2.3.0-new3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.3.0/3ds-ua-from-en-2.3.0-new3ds.zip",
-          "size": 32443492
+          "filename": "3ds-ua-from-en-2.4.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.4.0/3ds-ua-from-en-2.4.0-new3ds.zip",
+          "size": 32756236
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-en-2.3.0-old3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.3.0/3ds-ua-from-en-2.3.0-old3ds.zip",
-          "size": 30596342
+          "filename": "3ds-ua-from-en-2.4.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.4.0/3ds-ua-from-en-2.4.0-old3ds.zip",
+          "size": 30909086
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-ru-2.3.0-new3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.3.0/3ds-ua-from-ru-2.3.0-new3ds.zip",
-          "size": 32659143
+          "filename": "3ds-ua-from-ru-2.4.0-new3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.4.0/3ds-ua-from-ru-2.4.0-new3ds.zip",
+          "size": 32972104
         },
         {
           "format": "zip",
-          "filename": "3ds-ua-from-ru-2.3.0-old3ds.zip",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.3.0/3ds-ua-from-ru-2.3.0-old3ds.zip",
-          "size": 30851274
+          "filename": "3ds-ua-from-ru-2.4.0-old3ds.zip",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.4.0/3ds-ua-from-ru-2.4.0-old3ds.zip",
+          "size": 31164234
         },
         {
           "format": "3dsx",
-          "filename": "3ds-ua-installer-2.3.0.3dsx",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.3.0/3ds-ua-installer-2.3.0.3dsx",
-          "size": 45979720
+          "filename": "3ds-ua-installer-2.4.0.3dsx",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.4.0/3ds-ua-installer-2.4.0.3dsx",
+          "size": 46307204
         },
         {
           "format": "cia",
-          "filename": "3ds-ua-installer-2.3.0.cia",
-          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.3.0/3ds-ua-installer-2.3.0.cia",
-          "size": 46339008
+          "filename": "3ds-ua-installer-2.4.0.cia",
+          "url": "https://github.com/BolgarMaxym97/3ds-ua/releases/download/v2.4.0/3ds-ua-installer-2.4.0.cia",
+          "size": 46666688
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-04T18:16:56Z"
+      "updated_at": "2026-11-05T18:05:34Z"
     },
     {
       "id": "vitadbtoo-vita:1454",
