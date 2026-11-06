@@ -7644,6 +7644,32 @@
       "updated_at": "2019-11-23"
     },
     {
+      "id": "ps5-payloads-atlas:blackwire.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "BlackwireSMB",
+      "summary": "PS5 - PC SMB share.",
+      "author": "",
+      "version": "v0.3.0-beta.3",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/xxd3v3l0p3rxx/blackwiresmb",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "blackwire.elf",
+          "url": "https://github.com/XXD3V3L0P3RXX/BlackwireSMB/releases/download/v0.3.0-beta.3/Blackwire.elf",
+          "sha256": "8cebe80fa2510b581df5fa2602ce42bacdccc61cae82a21b3e699954248352a7"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-29T01:48:19+08:00"
+    },
+    {
       "id": "universal-db:DiscostewSM/blargSpc",
       "platforms": [
         "3ds"
@@ -12221,6 +12247,32 @@
       "updated_at": "2021-04-13T00:00:00+00:00"
     },
     {
+      "id": "ps5-payloads-atlas:chronicloader.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ChronicLoader-PS5-Payload",
+      "summary": "Payload Updater & autoload.txt manager",
+      "author": "",
+      "version": "0.1",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/stonedmodder/chronicloader-ps5-payload",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "chronicloader.elf",
+          "url": "https://github.com/StonedModder/ChronicLoader-PS5-Payload/releases/download/0.1/chronicloader.elf",
+          "sha256": "3561120f85e0ec32de5de15cdd61a1fe8d5146eb4c6aa99ee88209914a2774b1"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-04-08T06:29:09+08:00"
+    },
+    {
       "id": "hbas-switch:ChunkIntercept",
       "platforms": [
         "switch"
@@ -12327,7 +12379,7 @@
       "name": "Cirrus",
       "summary": "3DS switcher for Samtendo Network",
       "author": "Samtendo Network",
-      "version": "v3.1.0",
+      "version": "v3.1.1",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://cdn.samtendo.net/images/Cirrus.png",
       "release_url": "https://github.com/SamtendoNetwork/cirrus/releases",
@@ -12335,26 +12387,26 @@
         {
           "format": "zip",
           "filename": "3dsx.zip",
-          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.1.0/3dsx.zip",
-          "size": 756808
+          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.1.1/3dsx.zip",
+          "size": 756331
         },
         {
           "format": "zip",
           "filename": "cia.zip",
-          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.1.0/cia.zip",
-          "size": 1029974
+          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.1.1/cia.zip",
+          "size": 1029029
         },
         {
           "format": "zip",
           "filename": "combined.zip",
-          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.1.0/combined.zip",
-          "size": 1479565
+          "url": "https://github.com/SamtendoNetwork/cirrus/releases/download/v3.1.1/combined.zip",
+          "size": 1478399
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-01T21:09:13Z"
+      "updated_at": "2026-11-06T05:09:50Z"
     },
     {
       "id": "universal-db:regimensocial/Citrahold-3DS",
@@ -12538,7 +12590,7 @@
           "format": "3dsx",
           "filename": "ClassiCube-3ds.3dsx",
           "url": "https://cdn.classicube.net/client/latest/ClassiCube-3ds.3dsx",
-          "size": 783300
+          "size": 783368
         },
         {
           "format": "cia",
@@ -25519,7 +25571,7 @@
       "name": "garlic-savemgr",
       "summary": "",
       "author": "",
-      "version": "v1.15-beta11",
+      "version": "v1.15-beta12",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-savemgr",
@@ -25527,7 +25579,7 @@
         {
           "format": "elf",
           "filename": "garlic-savemgr.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta11/garlic-savemgr.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta12/garlic-savemgr.elf",
           "sha256": null
         }
       ],
@@ -25535,7 +25587,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-06T13:54:32+08:00"
+      "updated_at": "2026-11-06T20:15:04+08:00"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -25545,7 +25597,7 @@
       "name": "garlic-worker",
       "summary": "",
       "author": "",
-      "version": "v1.3.0",
+      "version": "v1.3.6",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-worker",
@@ -25553,7 +25605,7 @@
         {
           "format": "elf",
           "filename": "garlic-worker-ps5.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.3.0/garlic-worker-ps5.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.3.6/garlic-worker-ps5.elf",
           "sha256": null
         }
       ],
@@ -25561,7 +25613,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-06T14:25:12+08:00"
+      "updated_at": "2026-11-07T00:18:08+08:00"
     },
     {
       "id": "vitadbtoo-vita:779",
@@ -40608,13 +40660,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64858611
+          "size": 64859100
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-05T15:22:30Z"
+      "updated_at": "2026-11-06T14:57:22Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -46285,6 +46337,32 @@
       "updated_at": "2023-12-30"
     },
     {
+      "id": "ps5-payloads-atlas:orbit-play-0.7.0-ps5.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "orbit-play-ps5",
+      "summary": "Remote Play for jailbroken PS5s on Mac, Windows and Linux. Play at home without PSN sign-in, or away from home over a direct, encrypted connection. Supports local PS5 accounts and sets up Remote Play for you.",
+      "author": "",
+      "version": "v0.7.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/saawant12/orbit-play-ps5",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "orbit-play-0.7.0-ps5.elf",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.7.0/orbit-play-0.7.0-ps5.elf",
+          "sha256": "c567f2514d83cdaecf4a111bb887b77ac4f10c1bea6dcc2a357aedf2c7898879"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-02T23:34:33+08:00"
+    },
+    {
       "id": "universal-db:EBLeifEricson/orchestrina",
       "platforms": [
         "3ds"
@@ -51048,7 +51126,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 13839,
+      "popularity": 13951,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51075,7 +51153,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3481,
+      "popularity": 3490,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51102,7 +51180,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 12272,
+      "popularity": 12451,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51129,7 +51207,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6864,
+      "popularity": 6890,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51156,7 +51234,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 65559,
+      "popularity": 66208,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51183,7 +51261,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 556,
+      "popularity": 561,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51327,6 +51405,32 @@
       "updated_at": "2026-10-05T22:00:24+08:00"
     },
     {
+      "id": "ps5-payloads-atlas:ps5cleanup_v1.0.7.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "PS5-Cleanup",
+      "summary": "Räumt eine PS5 mit Jailbreak auf wie frisch eingerichtet – ohne Neuinstallation. Laufwerks-Kopplung, Konto und Lizenzen bleiben erhalten. Clean up a jailbroken PS5 like new, no reinstall.",
+      "author": "",
+      "version": "v1.0.7",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/xxbneutzernamexx/ps5-cleanup",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "ps5cleanup_v1.0.7.elf",
+          "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.7/ps5cleanup_v1.0.7.elf",
+          "sha256": "b1787f49680b15ecc1cb7261c08e8ff83c99ff49ed4452d7dfdd0bfcec20e518"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-04T05:34:12+08:00"
+    },
+    {
       "id": "ps5-payloads-atlas:ps5-date-time-sync.elf",
       "platforms": [
         "ps5"
@@ -51353,30 +51457,30 @@
       "updated_at": "2026-08-24T22:44:14+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5-dump-forge-0.5.3-ps5.elf",
+      "id": "ps5-payloads-atlas:ps5-dump-forge-0.5.4-ps5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-dump-forge",
       "summary": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
       "author": "",
-      "version": "v0.5.3",
+      "version": "v0.5.4",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/quer3q/ps5-dump-forge",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5-dump-forge-0.5.3-ps5.elf",
-          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.3/ps5-dump-forge-0.5.3-ps5.elf",
-          "sha256": "3dd9976dda293ed8d2f718bf93b4b214bce881d8f75d7168b9477a490170466a"
+          "filename": "ps5-dump-forge-0.5.4-ps5.elf",
+          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.4/ps5-dump-forge-0.5.4-ps5.elf",
+          "sha256": "ad8c36040c39f538376fbbc6434bdbe7f3d001e4f84cbb9afaa16a6d29617fc9"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-05T16:40:19+08:00"
+      "updated_at": "2026-11-06T20:51:45+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-exporter.elf",
@@ -51507,6 +51611,32 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-10-28T08:13:46+08:00"
+    },
+    {
+      "id": "ps5-payloads-atlas:ps5-homeassistant.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ps5-homeassistant",
+      "summary": "Your jailbroken PS5 as a Home Assistant device: a payload that publishes temperatures, power, FPS and the game over MQTT, and shows notifications from Home Assistant on the TV",
+      "author": "",
+      "version": "v0.3.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/marice/ps5-homeassistant",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "ps5-homeassistant.elf",
+          "url": "https://github.com/Marice/ps5-homeassistant/releases/download/v0.3.0/ps5-homeassistant.elf",
+          "sha256": "4716f2e9f13bce2f914b1603ec37b175a6e2505c02201037c5f36bbbfbddb6c2"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-23T18:00:14+08:00"
     },
     {
       "id": "ps5-payloads-atlas:lapy_jb_daemon-v1.2.elf",
@@ -51665,6 +51795,58 @@
       "updated_at": "2026-10-10T23:38:10+08:00"
     },
     {
+      "id": "ps5-payloads-atlas:ps5-signal.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ps5-signal",
+      "summary": "PS5 background payload that plays beep tunes and LED colour patterns for homebrew, through a small HTTP API on 127.0.0.1",
+      "author": "",
+      "version": "v0.2.1",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/marice/ps5-signal",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "ps5-signal.elf",
+          "url": "https://github.com/Marice/ps5-signal/releases/download/v0.2.1/ps5-signal.elf",
+          "sha256": "823d0f602b010dd137104f8ccfb08334688b48a8299782c8346dc1ce00620786"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-20T01:10:33+08:00"
+    },
+    {
+      "id": "ps5-payloads-atlas:ps5-smbd.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ps5-smbd",
+      "summary": "The PS5's /data and /mnt as Windows shares (SMB2/3), from a payload",
+      "author": "",
+      "version": "v0.3.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/marice/ps5-smbd",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "ps5-smbd.elf",
+          "url": "https://github.com/Marice/ps5-smbd/releases/download/v0.3.0/ps5-smbd.elf",
+          "sha256": "577ae81e1e6214d74934b7de39a19bd515f30bf76cb0958233092b5d6dfa8dff"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-01T03:42:13+08:00"
+    },
+    {
       "id": "ps5-payloads-atlas:syslang-zh-hans-v0.3.elf",
       "platforms": [
         "ps5"
@@ -51821,6 +52003,32 @@
       "updated_at": "2026-11-01T02:19:13+08:00"
     },
     {
+      "id": "ps5-payloads-atlas:browser_appcache_remove.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ps5_appcache_remove",
+      "summary": "A PS5 payload that wipes WebKit browser cache, cookies, appcache, localstorage, and resource-load-statistics for every user account on the console.",
+      "author": "",
+      "version": "v1.0.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/techsociology/ps5_appcache_remove",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "browser_appcache_remove.elf",
+          "url": "https://github.com/Techsociology/ps5_appcache_remove/releases/download/v1.0.0/Browser_appCache_remove.elf",
+          "sha256": "c2c499d7c20da17043a77a1a74f7c57e551aea3b97189dacc55417af26eee12d"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-20T03:45:01+08:00"
+    },
+    {
       "id": "ps5-payloads-atlas:ps5_console.elf",
       "platforms": [
         "ps5"
@@ -51873,6 +52081,32 @@
       "updated_at": "2026-09-23T11:21:00+08:00"
     },
     {
+      "id": "ps5-payloads-atlas:ps5diag.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "PS5Diag",
+      "summary": "Read-only PlayStation 5 hardware diagnostics, live system monitoring, and DxDiag-style reporting for jailbroken consoles.",
+      "author": "",
+      "version": "v1.0.1",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/tojala1998/ps5diag",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "ps5diag.elf",
+          "url": "https://github.com/tojala1998/PS5Diag/releases/download/v1.0.1/ps5diag.elf",
+          "sha256": "6223f0582937deab5a06ada24c1e3fb5f8261cdfb89708ddf0c16fb6869da084"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-25T04:25:14+08:00"
+    },
+    {
       "id": "ps5-payloads-atlas:backup.elf",
       "platforms": [
         "ps5"
@@ -51899,30 +52133,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-11.2.4.elf",
+      "id": "ps5-payloads-atlas:ps5upload-11.2.8.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v11.2.4",
+      "version": "v11.2.8",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-11.2.4.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.4/ps5upload-11.2.4.elf",
-          "sha256": "06fb08963fb31c59ab277d5e1b109481c546fc1128a664b06ca70a9c2078e374"
+          "filename": "ps5upload-11.2.8.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.8/ps5upload-11.2.8.elf",
+          "sha256": "a76ae6f70ee8cb0b536ee39f60855cee627a01f33271699020ee35989a9a8f37"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-06T10:19:39+08:00"
+      "updated_at": "2026-11-07T02:27:55+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -63106,6 +63340,32 @@
       "updated_at": "2026-10-03T14:45:16Z"
     },
     {
+      "id": "ps5-payloads-atlas:spotless.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "spotless",
+      "summary": "Your music. Your console. No PSN required. Independent Spotify integration research for PS5.",
+      "author": "",
+      "version": "v0.2.0-beta",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/abhi245y/spotless",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "spotless.elf",
+          "url": "https://github.com/abhi245y/spotless/releases/download/v0.2.0-beta/Spotless.elf",
+          "sha256": "6ba14304946055f556adc1e495ebc3439bab7b9b66376f59b6c2c33618c6ad16"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-20T04:58:20+08:00"
+    },
+    {
       "id": "hbas-switch:SPSV",
       "platforms": [
         "switch"
@@ -70945,6 +71205,31 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2026-11-05T19:05:24Z"
+    },
+    {
+      "id": "universal-db:KirovAir/TwilightBoxart",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "TwilightBoxart",
+      "summary": "Automatically download box art/covers for TWiLightMenu++ and Pico Launcher, straight onto your SD card.",
+      "author": "KirovAir",
+      "version": "2.4.0",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/KirovAir/TwilightBoxart/master/docs/unistore-icon.png",
+      "release_url": "https://github.com/KirovAir/TwilightBoxart/releases",
+      "downloads": [
+        {
+          "format": "nds",
+          "filename": "TwilightBoxart-DS-DSi.nds",
+          "url": "https://github.com/KirovAir/TwilightBoxart/releases/download/2.4.0/TwilightBoxart-DS-DSi.nds",
+          "size": 2654720
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-10-15T05:13:49Z"
     },
     {
       "id": "hbas-switch:twiNX",
@@ -82519,6 +82804,32 @@
       "updated_at": "2026-10-30"
     },
     {
+      "id": "ps5-payloads-atlas:ytps5.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ytps5-sponsorblock",
+      "summary": "YouTube ad blocker + SponsorBlock for the official PS5 video app (jailbroken FW 8.20). One ELF via Payload Manager, native settings, no app packages, keys, or DRM tools. Research/educational. Tested with PPSA01652.",
+      "author": "",
+      "version": "v1.2.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/mastershivnath007/ytps5-sponsorblock",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "ytps5.elf",
+          "url": "https://github.com/MasterShivnath007/ytps5-sponsorblock/releases/download/v1.2.0/ytps5.elf",
+          "sha256": "bbbf486e1e5c632916a22f86381e2948cbefd8d8bbd3ffa33978b954499b1036"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-05T15:29:27+08:00"
+    },
+    {
       "id": "open-shop-channel-wii:YGO-DT_DLC_Tool",
       "platforms": [
         "wii"
@@ -83525,6 +83836,32 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2019-02-15"
+    },
+    {
+      "id": "ps5-payloads-atlas:zsshd-ps5-v0.8.0.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "zsshd",
+      "summary": "Minimal PS5 SSH server payload: root shell, built-in commands, scripting/automation, post-quantum KEX",
+      "author": "",
+      "version": "v0.8.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/jinxcase000/zsshd",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "zsshd-ps5-v0.8.0.elf",
+          "url": "https://github.com/jinxcase000/zsshd/releases/download/v0.8.0/zsshd-ps5-v0.8.0.elf",
+          "sha256": "f0f1a77f776609d701a454e16fda6ccf66ccd29ac3126e2d47c266892215b40e"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-02T13:11:36+08:00"
     },
     {
       "id": "vitadbtoo-vita:478",
