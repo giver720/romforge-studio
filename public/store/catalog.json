@@ -50139,7 +50139,7 @@
         "3ds"
       ],
       "name": "PotatoStream",
-      "summary": "Gamestream client for old 2ds/3DS",
+      "summary": "Gamestream client for 3DS (Old & New)",
       "author": "PainDe0Mie",
       "version": "v1.3.5",
       "license": "GNU General Public License v3.0",
@@ -51126,7 +51126,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 13951,
+      "popularity": 14051,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51153,7 +51153,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3490,
+      "popularity": 3498,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51180,7 +51180,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 12451,
+      "popularity": 12631,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51207,7 +51207,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6890,
+      "popularity": 6915,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51234,7 +51234,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 66208,
+      "popularity": 67018,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51261,7 +51261,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 561,
+      "popularity": 563,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51977,30 +51977,30 @@
       "updated_at": "2026-10-30T03:33:13+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
+      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.7.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-webkit-autoloader",
       "summary": "An automated payload loader for exploited PS5 consoles",
       "author": "",
-      "version": "v0.7.0-prerelease-2",
+      "version": "v0.7.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-webkit-autoloader",
       "downloads": [
         {
           "format": "elf",
-          "filename": "webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
-          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0-prerelease-2/webkit-autoloader-installer_v0.7.0-dev-3a34c3b.elf",
-          "sha256": "2a202023ee9ef4c742c3dc05d872c679c3570ca28e50c668b4b2e86c732d27b1"
+          "filename": "webkit-autoloader-installer_v0.7.0.elf",
+          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0/webkit-autoloader-installer_v0.7.0.elf",
+          "sha256": "10cb38baae078e41f252cffb0d356829c89ee63fd3234f1fd1e6b19f81eab1c7"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-01T02:19:13+08:00"
+      "updated_at": "2026-11-07T06:07:55+08:00"
     },
     {
       "id": "ps5-payloads-atlas:browser_appcache_remove.elf",
@@ -52133,30 +52133,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-11.2.8.elf",
+      "id": "ps5-payloads-atlas:ps5upload-11.3.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v11.2.8",
+      "version": "v11.3.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-11.2.8.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.2.8/ps5upload-11.2.8.elf",
-          "sha256": "a76ae6f70ee8cb0b536ee39f60855cee627a01f33271699020ee35989a9a8f37"
+          "filename": "ps5upload-11.3.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.3.0/ps5upload-11.3.0.elf",
+          "sha256": "db1d0e2be1d14fea08b42a9289e20ebe8609011f288b29b7dd73c957b2616ffd"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-07T02:27:55+08:00"
+      "updated_at": "2026-11-07T11:21:47+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -83838,30 +83838,30 @@
       "updated_at": "2019-02-15"
     },
     {
-      "id": "ps5-payloads-atlas:zsshd-ps5-v0.8.0.elf",
+      "id": "ps5-payloads-atlas:zsshd-ps5-v0.8.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "zsshd",
       "summary": "Minimal PS5 SSH server payload: root shell, built-in commands, scripting/automation, post-quantum KEX",
       "author": "",
-      "version": "v0.8.0",
+      "version": "v0.8.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/jinxcase000/zsshd",
       "downloads": [
         {
           "format": "elf",
-          "filename": "zsshd-ps5-v0.8.0.elf",
-          "url": "https://github.com/jinxcase000/zsshd/releases/download/v0.8.0/zsshd-ps5-v0.8.0.elf",
-          "sha256": "f0f1a77f776609d701a454e16fda6ccf66ccd29ac3126e2d47c266892215b40e"
+          "filename": "zsshd-ps5-v0.8.1.elf",
+          "url": "https://github.com/jinxcase000/zsshd/releases/download/v0.8.1/zsshd-ps5-v0.8.1.elf",
+          "sha256": "0b303c8fd50aebffd41d83368b8c185a1d73c0f6a1d7d5bd49b5ab6aab845643"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-02T13:11:36+08:00"
+      "updated_at": "2026-11-07T12:01:00+08:00"
     },
     {
       "id": "vitadbtoo-vita:478",
