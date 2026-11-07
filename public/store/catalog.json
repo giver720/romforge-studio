@@ -196,30 +196,30 @@
       "updated_at": "2025-10-18"
     },
     {
-      "id": "ps5-payloads-atlas:bond-server-0.3.1.elf",
+      "id": "ps5-payloads-atlas:bond-server-0.3.2.elf",
       "platforms": [
         "ps5"
       ],
       "name": "007-First-Light-PS5",
       "summary": "007 First Light online on a jailbroken PS5, with the whole backend inside the payload. No PC needed.",
       "author": "",
-      "version": "v0.3.1",
+      "version": "v0.3.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://theghostonline.dev/theghostonline/007-first-light-ps5",
       "downloads": [
         {
           "format": "elf",
-          "filename": "bond-server-0.3.1.elf",
-          "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5/releases/download/v0.3.1/bond-server-0.3.1.elf",
-          "sha256": "d3e44059d5929f8d7cfb799894ddf4190d031e034affad175970c1fa9c07b9be"
+          "filename": "bond-server-0.3.2.elf",
+          "url": "https://theghostonline.dev/theghostonline/007-First-Light-PS5/releases/download/v0.3.2/bond-server-0.3.2.elf",
+          "sha256": "2fe68ddb0b84c8e697c0a03ad5982fa3bdbab261efd330f6a326cd81e11ddc42"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22T04:55:47+08:00"
+      "updated_at": "2026-11-07T22:21:58+08:00"
     },
     {
       "id": "hbas-switch:100boxesNX",
@@ -1680,7 +1680,7 @@
       "name": "3dslibris",
       "summary": "An ebook and manga reader for Nintendo 3DS",
       "author": "Rigle",
-      "version": "v3.0.0",
+      "version": "v3.1.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/RigleGit/3dslibris/refs/heads/main/assets/release/icon-32x32.png",
       "release_url": "https://github.com/RigleGit/3dslibris/releases",
@@ -1688,38 +1688,38 @@
         {
           "format": "3dsx",
           "filename": "3dslibris-debug.3dsx",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris-debug.3dsx",
-          "size": 14485464
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.0/3dslibris-debug.3dsx",
+          "size": 14677016
         },
         {
           "format": "cia",
           "filename": "3dslibris-debug.cia",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris-debug.cia",
-          "size": 13292480
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.0/3dslibris-debug.cia",
+          "size": 13415360
         },
         {
           "format": "zip",
           "filename": "3dslibris-sdmc.zip",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris-sdmc.zip",
-          "size": 5021175
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.0/3dslibris-sdmc.zip",
+          "size": 5021452
         },
         {
           "format": "3dsx",
           "filename": "3dslibris.3dsx",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris.3dsx",
-          "size": 14600912
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.0/3dslibris.3dsx",
+          "size": 14881180
         },
         {
           "format": "cia",
           "filename": "3dslibris.cia",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.0.0/3dslibris.cia",
-          "size": 13423552
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.0/3dslibris.cia",
+          "size": 13603776
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-27T14:37:09Z"
+      "updated_at": "2026-11-07T19:28:44Z"
     },
     {
       "id": "universal-db:s4ammy/3DSLink",
@@ -12590,7 +12590,7 @@
           "format": "3dsx",
           "filename": "ClassiCube-3ds.3dsx",
           "url": "https://cdn.classicube.net/client/latest/ClassiCube-3ds.3dsx",
-          "size": 783368
+          "size": 783440
         },
         {
           "format": "cia",
@@ -25597,7 +25597,7 @@
       "name": "garlic-worker",
       "summary": "",
       "author": "",
-      "version": "v1.3.6",
+      "version": "v1.3.9",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-worker",
@@ -25605,7 +25605,7 @@
         {
           "format": "elf",
           "filename": "garlic-worker-ps5.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.3.6/garlic-worker-ps5.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-worker/releases/download/v1.3.9/garlic-worker-ps5.elf",
           "sha256": null
         }
       ],
@@ -25613,7 +25613,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-07T00:18:08+08:00"
+      "updated_at": "2026-11-08T00:05:11+08:00"
     },
     {
       "id": "vitadbtoo-vita:779",
@@ -42914,7 +42914,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v4.1",
+      "version": "v4.2",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42922,20 +42922,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.1/NoteRoom.3dsx",
-          "size": 5022924
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.2/NoteRoom.3dsx",
+          "size": 5029732
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.1/NoteRoom.cia",
-          "size": 5301184
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.2/NoteRoom.cia",
+          "size": 5305280
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-03T11:27:16Z"
+      "updated_at": "2026-11-07T12:37:11Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -51126,7 +51126,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 14093,
+      "popularity": 14179,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51153,7 +51153,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3504,
+      "popularity": 3511,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51180,7 +51180,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 12743,
+      "popularity": 12913,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51207,7 +51207,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6924,
+      "popularity": 6942,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51234,7 +51234,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 67391,
+      "popularity": 68311,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51261,7 +51261,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 563,
+      "popularity": 567,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -52133,30 +52133,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-11.4.0.elf",
+      "id": "ps5-payloads-atlas:ps5upload-11.5.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v11.4.0",
+      "version": "v11.5.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-11.4.0.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.4.0/ps5upload-11.4.0.elf",
-          "sha256": "35d95bce6b4bec134575164d45658051e7ab5689b331beac68c81d1f24842b33"
+          "filename": "ps5upload-11.5.1.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.5.1/ps5upload-11.5.1.elf",
+          "sha256": "e6059aafb53eb48b8bc0ce31f2f0db3b0b5e58d97fea7b7cf813e66a5086b08c"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-07T18:15:24+08:00"
+      "updated_at": "2026-11-08T03:38:05+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -67332,7 +67332,7 @@
       "name": "SysMon",
       "summary": "Turn your Nintendo 3DS into a secondary PC hardware monitor, macro pad, and virtual gamepad controller.",
       "author": "Just-a-Spider",
-      "version": "v0.3.4",
+      "version": "v0.3.5",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/Just-a-Spider/SysMon/refs/heads/main/sysmon-3ds/icon.png",
       "release_url": "https://github.com/Just-a-Spider/SysMon/releases",
@@ -67340,20 +67340,20 @@
         {
           "format": "3dsx",
           "filename": "sysmon-3ds.3dsx",
-          "url": "https://github.com/Just-a-Spider/SysMon/releases/download/v0.3.4/sysmon-3ds.3dsx",
-          "size": 4516860
+          "url": "https://github.com/Just-a-Spider/SysMon/releases/download/v0.3.5/sysmon-3ds.3dsx",
+          "size": 4517316
         },
         {
           "format": "cia",
           "filename": "sysmon-3ds.cia",
-          "url": "https://github.com/Just-a-Spider/SysMon/releases/download/v0.3.4/sysmon-3ds.cia",
-          "size": 4527040
+          "url": "https://github.com/Just-a-Spider/SysMon/releases/download/v0.3.5/sysmon-3ds.cia",
+          "size": 4584384
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-28T17:54:02Z"
+      "updated_at": "2026-11-07T19:19:43Z"
     },
     {
       "id": "open-shop-channel-wii:SSRT",
