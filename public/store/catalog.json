@@ -12802,7 +12802,7 @@
       "name": "Cloudpoint",
       "summary": "Bringing modern cloud save to 3DS.",
       "author": "dwalker109",
-      "version": "0.9.0",
+      "version": "0.9.1",
       "license": "MIT License",
       "icon_url": "https://media.githubusercontent.com/media/dwalker109/cloudpoint/refs/heads/main/cloudpoint_app/cia/icon.png",
       "release_url": "https://github.com/dwalker109/cloudpoint/releases",
@@ -12810,20 +12810,20 @@
         {
           "format": "3dsx",
           "filename": "cloudpoint.3dsx",
-          "url": "https://github.com/dwalker109/cloudpoint/releases/download/0.9.0/cloudpoint.3dsx",
-          "size": 3143204
+          "url": "https://github.com/dwalker109/cloudpoint/releases/download/0.9.1/cloudpoint.3dsx",
+          "size": 3156688
         },
         {
           "format": "cia",
           "filename": "cloudpoint.cia",
-          "url": "https://github.com/dwalker109/cloudpoint/releases/download/0.9.0/cloudpoint.cia",
-          "size": 2466752
+          "url": "https://github.com/dwalker109/cloudpoint/releases/download/0.9.1/cloudpoint.cia",
+          "size": 2474944
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-28T17:20:56Z"
+      "updated_at": "2026-11-08T00:24:01Z"
     },
     {
       "id": "vitadbtoo-psp:941",
@@ -18149,15 +18149,15 @@
       "platforms": [
         "wii"
       ],
-      "name": "DOSBox Wii 1.7x b4",
+      "name": "DOSBox for Wii",
       "summary": "DOS Emulator",
-      "description": "Port of DOSBox to the Wii with Dynamic Recompiler support.",
+      "description": "Port of DOSBox to the Wii",
       "categories": [
         "emulators"
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Classic Controller · GameCube Controller · SDHC",
-      "author": "Tantric (forked from)",
-      "version": "1.7x beta4 r4301 dynrec",
+      "author": "Tantric",
+      "version": "2.0",
       "title_id": "000100014E4B13B3",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/dosbox-wii/icon.png",
@@ -18167,14 +18167,14 @@
           "format": "zip",
           "filename": "dosbox-wii.zip",
           "url": "https://hbb1.oscwii.org/api/contents/dosbox-wii/dosbox-wii.zip",
-          "size": 2404692
+          "size": 2316895
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2021-05-02T00:00:00+00:00"
+      "updated_at": "2026-11-08T04:41:58+00:00"
     },
     {
       "id": "vitadbtoo-vita:1211",
@@ -21855,7 +21855,7 @@
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "Tantric",
-      "version": "4.0.3",
+      "version": "4.0.4",
       "title_id": "000100014E3DC7D1",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/fceugx/icon.png",
@@ -21865,14 +21865,14 @@
           "format": "zip",
           "filename": "fceugx.zip",
           "url": "https://hbb1.oscwii.org/api/contents/fceugx/fceugx.zip",
-          "size": 2768607
+          "size": 2849329
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-20T00:00:00+00:00"
+      "updated_at": "2026-11-03T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:fceugx-channel-installer",
@@ -25571,7 +25571,7 @@
       "name": "garlic-savemgr",
       "summary": "",
       "author": "",
-      "version": "v1.15-beta12",
+      "version": "v1.15-beta14",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-savemgr",
@@ -25579,7 +25579,7 @@
         {
           "format": "elf",
           "filename": "garlic-savemgr.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta12/garlic-savemgr.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta14/garlic-savemgr.elf",
           "sha256": null
         }
       ],
@@ -25587,7 +25587,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-06T20:15:04+08:00"
+      "updated_at": "2026-11-08T10:10:49+08:00"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -33981,7 +33981,7 @@
       ],
       "requirements": "wii · wii_mini · vwii · Wii Remote · Classic Controller · GameCube Controller · SDHC",
       "author": "Korbo",
-      "version": "8.5.1",
+      "version": "8.6.0",
       "title_id": "000100014EB9B936",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/korbodonut/icon.png",
@@ -33991,14 +33991,14 @@
           "format": "zip",
           "filename": "korbodonut.zip",
           "url": "https://hbb1.oscwii.org/api/contents/korbodonut/korbodonut.zip",
-          "size": 2321205
+          "size": 1193978
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-26T23:14:36+00:00"
+      "updated_at": "2026-11-05T00:09:37+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -42914,7 +42914,7 @@
       "name": "NoteRoom",
       "summary": "Drawing and text Chat Rooms.",
       "author": "SprtnDio",
-      "version": "v4.2",
+      "version": "v4.3",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/SprtnDio/NoteRoom/main/icon.png",
       "release_url": "https://github.com/SprtnDio/NoteRoom/releases",
@@ -42922,20 +42922,20 @@
         {
           "format": "3dsx",
           "filename": "NoteRoom.3dsx",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.2/NoteRoom.3dsx",
-          "size": 5029732
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.3/NoteRoom.3dsx",
+          "size": 5047068
         },
         {
           "format": "cia",
           "filename": "NoteRoom.cia",
-          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.2/NoteRoom.cia",
-          "size": 5305280
+          "url": "https://github.com/SprtnDio/NoteRoom/releases/download/v4.3/NoteRoom.cia",
+          "size": 5317568
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-07T12:37:11Z"
+      "updated_at": "2026-11-07T21:26:16Z"
     },
     {
       "id": "universal-db:Ryuzaki-MrL/NotifyMii",
@@ -51126,7 +51126,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 14179,
+      "popularity": 14247,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51153,7 +51153,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3511,
+      "popularity": 3515,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51180,7 +51180,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 12913,
+      "popularity": 13011,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51207,7 +51207,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6942,
+      "popularity": 6953,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51234,7 +51234,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 68311,
+      "popularity": 68865,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51261,7 +51261,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 567,
+      "popularity": 574,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51405,30 +51405,30 @@
       "updated_at": "2026-10-05T22:00:24+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5cleanup_v1.0.7.elf",
+      "id": "ps5-payloads-atlas:ps5cleanup_v1.0.8.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5-Cleanup",
       "summary": "Räumt eine PS5 mit Jailbreak auf wie frisch eingerichtet – ohne Neuinstallation. Laufwerks-Kopplung, Konto und Lizenzen bleiben erhalten. Clean up a jailbroken PS5 like new, no reinstall.",
       "author": "",
-      "version": "v1.0.7",
+      "version": "v1.0.8",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/xxbneutzernamexx/ps5-cleanup",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5cleanup_v1.0.7.elf",
-          "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.7/ps5cleanup_v1.0.7.elf",
-          "sha256": "b1787f49680b15ecc1cb7261c08e8ff83c99ff49ed4452d7dfdd0bfcec20e518"
+          "filename": "ps5cleanup_v1.0.8.elf",
+          "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.8/ps5cleanup_v1.0.8.elf",
+          "sha256": "5ac20609caac40e82ee74e0d60a5c92ea013e26394618473b1a992da488d5e77"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-04T05:34:12+08:00"
+      "updated_at": "2026-11-08T07:45:51+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-date-time-sync.elf",
@@ -51977,30 +51977,30 @@
       "updated_at": "2026-10-30T03:33:13+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.7.0.elf",
+      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.7.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-webkit-autoloader",
       "summary": "An automated payload loader for exploited PS5 consoles",
       "author": "",
-      "version": "v0.7.0",
+      "version": "v0.7.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-webkit-autoloader",
       "downloads": [
         {
           "format": "elf",
-          "filename": "webkit-autoloader-installer_v0.7.0.elf",
-          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.0/webkit-autoloader-installer_v0.7.0.elf",
-          "sha256": "10cb38baae078e41f252cffb0d356829c89ee63fd3234f1fd1e6b19f81eab1c7"
+          "filename": "webkit-autoloader-installer_v0.7.1.elf",
+          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.7.1/webkit-autoloader-installer_v0.7.1.elf",
+          "sha256": "df60538570e9811bb0b4652a3fdb3e1a35ec3455b3ca7c80edc4140c5bb47ce2"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-07T06:07:55+08:00"
+      "updated_at": "2026-11-08T08:52:43+08:00"
     },
     {
       "id": "ps5-payloads-atlas:browser_appcache_remove.elf",
@@ -52133,30 +52133,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-11.5.1.elf",
+      "id": "ps5-payloads-atlas:ps5upload-11.6.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v11.5.1",
+      "version": "v11.6.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-11.5.1.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.5.1/ps5upload-11.5.1.elf",
-          "sha256": "e6059aafb53eb48b8bc0ce31f2f0db3b0b5e58d97fea7b7cf813e66a5086b08c"
+          "filename": "ps5upload-11.6.0.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v11.6.0/ps5upload-11.6.0.elf",
+          "sha256": "13dca53b2216d920ad94b9564cba68fd085d4ea0f1f0193be5b5299c9872e67e"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-08T03:38:05+08:00"
+      "updated_at": "2026-11-08T12:40:36+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -61367,7 +61367,7 @@
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "Tantric",
-      "version": "5.0.4",
+      "version": "5.0.5",
       "title_id": "000100014E18E199",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/snes9xgx/icon.png",
@@ -61377,14 +61377,14 @@
           "format": "zip",
           "filename": "snes9xgx.zip",
           "url": "https://hbb1.oscwii.org/api/contents/snes9xgx/snes9xgx.zip",
-          "size": 2988096
+          "size": 3038952
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-20T00:00:00+00:00"
+      "updated_at": "2026-11-03T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:snes9xgx-channel-installer",
@@ -73184,13 +73184,13 @@
       ],
       "name": "VBoy Color GX",
       "summary": "Virtual Boy emulator, in color!",
-      "description": "VBoy Color GX is a port of VBoy Color to the Wii, using Tantric's GX frontend.\n\nOptimized for steady performance during gameplay. Includes many different color options.\n\nSupports Wii Remote + Nunchuk, Classic Controller, Wii U Pro Controller, GameCube controller, and the Wii U GamePad in vWii.",
+      "description": "VBoy Color GX is a port of VBoy Color to the Wii, using Tantric's GX frontend.\n\nOptimized for steady performance during gameplay. Includes many different color options.\n\nSupports Wii Remote + Nunchuk, Classic Controller, Wii U Pro Controller, GameCube controller, and the Wii U GamePad.",
       "categories": [
         "emulators"
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "cmyksoda",
-      "version": "1.2.0",
+      "version": "2.0.0",
       "title_id": "000100014E99650C",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/vbcgx/icon.png",
@@ -73200,14 +73200,14 @@
           "format": "zip",
           "filename": "vbcgx.zip",
           "url": "https://hbb1.oscwii.org/api/contents/vbcgx/vbcgx.zip",
-          "size": 6331983
+          "size": 6396121
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-29T00:00:00+00:00"
+      "updated_at": "2026-11-05T00:00:00+00:00"
     },
     {
       "id": "universal-db:lxfly2000/VConV",
@@ -73721,7 +73721,7 @@
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "Tantric",
-      "version": "3.0.4",
+      "version": "3.0.5",
       "title_id": "000100014E113DA1",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/vbagx/icon.png",
@@ -73731,14 +73731,14 @@
           "format": "zip",
           "filename": "vbagx.zip",
           "url": "https://hbb1.oscwii.org/api/contents/vbagx/vbagx.zip",
-          "size": 3565078
+          "size": 3645666
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-20T00:00:00+00:00"
+      "updated_at": "2026-11-03T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:VC_Test",
@@ -79611,13 +79611,13 @@
       ],
       "name": "WiiFlow WFL",
       "summary": "USB Loader app",
-      "description": "WiiFlow is a app for loading backup games from a USB Device or SD card. It displays your games in a coverflow with 3D full box covers. Key features: * Emulated NAND support * Plugin system for emu apps * Devolution support * Nintendont support * Neek2o support",
+      "description": "WiiFlow is a app for loading backup games from a USB Device or SD card.\n    It displays your games in a coverflow with 3D full box covers.\n    \n    Key features:\n    * Emulated NAND support\n    * Plugin system for emu apps\n    * Devolution support\n    * Nintendont support\n    * Neek2o support\n\t\t",
       "categories": [
         "utilities"
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "Fledge68",
-      "version": "5.6.1",
+      "version": "5.6.2",
       "title_id": "000100014E40908E",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/wiiflow/icon.png",
@@ -79627,7 +79627,7 @@
           "format": "zip",
           "filename": "wiiflow.zip",
           "url": "https://hbb1.oscwii.org/api/contents/wiiflow/wiiflow.zip",
-          "size": 3320566
+          "size": 3320579
         }
       ],
       "source": "Open Shop Channel",
