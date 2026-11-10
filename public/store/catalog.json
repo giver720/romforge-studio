@@ -35449,7 +35449,7 @@
       "name": "LiveShell",
       "summary": "Animated backgrounds for PS5 home screen.",
       "author": "",
-      "version": "v1.6.0",
+      "version": "v1.7.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/zizc3/liveshell",
@@ -35457,15 +35457,15 @@
         {
           "format": "elf",
           "filename": "liveshell.elf",
-          "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.6.0/liveshell.elf",
-          "sha256": "99335e75312d6ffcce91f6a5b659f0191ec057c744b2b3d5b899db5a88b80ac3"
+          "url": "https://github.com/ZiZc3/LiveShell/releases/download/v1.7.0/liveshell.elf",
+          "sha256": "56ffecdb1a02f28044f4426729a4b1b3027e68a52d057c723a1d4c27e5f298fa"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-27T06:33:48+08:00"
+      "updated_at": "2026-11-11T02:03:09+08:00"
     },
     {
       "id": "open-shop-channel-wii:LoadPriiloader",
@@ -51060,7 +51060,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 14614,
+      "popularity": 14698,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51087,7 +51087,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3562,
+      "popularity": 3568,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51114,7 +51114,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 13614,
+      "popularity": 13762,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51141,7 +51141,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7045,
+      "popularity": 7057,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51168,7 +51168,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 71616,
+      "popularity": 72179,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51195,7 +51195,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 601,
+      "popularity": 607,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -51885,30 +51885,30 @@
       "updated_at": "2026-10-10T01:12:13+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:web-file-mgr-v1.13-rc2.elf",
+      "id": "ps5-payloads-atlas:web-file-mgr-v1.14.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-web-file-manager",
       "summary": "A file manager for PS5 with a web UI.",
       "author": "",
-      "version": "v1.13-rc2",
+      "version": "v1.14",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/owendswang/ps5-web-file-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "web-file-mgr-v1.13-rc2.elf",
-          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.13-rc2/web-file-mgr-v1.13-rc2.elf",
-          "sha256": "91f8e7f52183ce624651b779016bb48cbe7adaad278833a1191ad2e8fc6fbfe3"
+          "filename": "web-file-mgr-v1.14.elf",
+          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf",
+          "sha256": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-30T03:33:13+08:00"
+      "updated_at": "2026-11-10T21:40:53+08:00"
     },
     {
       "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.7.1.elf",
@@ -52067,30 +52067,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.4.2.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.4.5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.4.2",
+      "version": "v12.4.5",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.4.2.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.2/ps5upload-12.4.2.elf",
-          "sha256": "06dbb9022bcb71cb95178c29c9da39ae6e60d17becf9c1ff8938c98bd15fa8ef"
+          "filename": "ps5upload-12.4.5.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.5/ps5upload-12.4.5.elf",
+          "sha256": "72fef6dcd299aa927b3df800dcc13f166f84eef7b8e403004cb6f4c33ece0b77"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-10T07:48:53+08:00"
+      "updated_at": "2026-11-11T02:59:40+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
