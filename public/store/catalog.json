@@ -51060,7 +51060,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 14561,
+      "popularity": 14614,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51087,7 +51087,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3555,
+      "popularity": 3562,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51114,7 +51114,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 13542,
+      "popularity": 13614,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51141,7 +51141,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7040,
+      "popularity": 7045,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51168,7 +51168,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 71237,
+      "popularity": 71616,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51195,7 +51195,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 597,
+      "popularity": 601,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -52067,30 +52067,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.4.1.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.4.2.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.4.1",
+      "version": "v12.4.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.4.1.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.1/ps5upload-12.4.1.elf",
-          "sha256": "fd3f6679bba4f3246ef83fa4cc747a614b449ad1b9dcfabb0b0069751a609ed4"
+          "filename": "ps5upload-12.4.2.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.2/ps5upload-12.4.2.elf",
+          "sha256": "06dbb9022bcb71cb95178c29c9da39ae6e60d17becf9c1ff8938c98bd15fa8ef"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-10T04:08:40+08:00"
+      "updated_at": "2026-11-10T07:48:53+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -61234,7 +61234,7 @@
       "name": "Snes9x (updated fork)",
       "summary": "SNES9x Port for 3DS / 2DS",
       "author": "bubble2k16 / matbo87 / willjow / Xeddius-Network",
-      "version": "v1.61",
+      "version": "v2.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/matbo87/snes9x_3ds/master/resources/icon.png",
       "release_url": "https://github.com/matbo87/snes9x_3ds/releases",
@@ -61242,20 +61242,20 @@
         {
           "format": "3dsx",
           "filename": "snes9x_3ds.3dsx",
-          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v1.61/snes9x_3ds.3dsx",
-          "size": 2492636
+          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v2.0/snes9x_3ds.3dsx",
+          "size": 9848220
         },
         {
           "format": "cia",
           "filename": "snes9x_3ds.cia",
-          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v1.61/snes9x_3ds.cia",
-          "size": 2409408
+          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v2.0/snes9x_3ds.cia",
+          "size": 3855296
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-06-28T18:00:50Z"
+      "updated_at": "2026-11-09T18:51:22Z"
     },
     {
       "id": "open-shop-channel-wii:snes9xgx",
