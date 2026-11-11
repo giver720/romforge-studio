@@ -51060,7 +51060,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 14794,
+      "popularity": 14923,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51087,7 +51087,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3575,
+      "popularity": 3584,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51114,7 +51114,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 13874,
+      "popularity": 14048,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51141,7 +51141,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7074,
+      "popularity": 7096,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51168,7 +51168,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 72694,
+      "popularity": 73362,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -51195,7 +51195,7 @@
           "sha256": "c05f6097dbc0707e8ec2fb5443ee507da6ac6e79c6fa8e9f78544658710efeff"
         }
       ],
-      "popularity": 612,
+      "popularity": 618,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -52067,30 +52067,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.4.7.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.4.8.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.4.7",
+      "version": "v12.4.8",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.4.7.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.7/ps5upload-12.4.7.elf",
-          "sha256": "721d9dbca1e05c73aa58bdf4fe5093b4caf35f775a1d8702b080920ecb2111ab"
+          "filename": "ps5upload-12.4.8.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.8/ps5upload-12.4.8.elf",
+          "sha256": "053154034ffdb5057a08a962b68a26708270c78da966ef0a9f433c3f6de860fc"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-11T09:03:09+08:00"
+      "updated_at": "2026-11-11T15:10:10+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -70172,6 +70172,37 @@
       "updated_at": "2018-10-25"
     },
     {
+      "id": "universal-db:njlent/tougelike-3ds-pub",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Tougelike",
+      "summary": "Night racing roguelike on Japanese mountain roads.",
+      "author": "noeljustin",
+      "version": "v0.1.37",
+      "license": "Other",
+      "icon_url": "https://raw.githubusercontent.com/njlent/tougelike-3ds-pub/main/assets/icon.png",
+      "release_url": "https://github.com/njlent/tougelike-3ds-pub/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "tougelike.3dsx",
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.37/tougelike.3dsx",
+          "size": 51872568
+        },
+        {
+          "format": "cia",
+          "filename": "tougelike.cia",
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.37/tougelike.cia",
+          "size": 52171712
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-11-11T12:20:38Z"
+    },
+    {
       "id": "vitadbtoo-vita:1529",
       "platforms": [
         "psvita"
@@ -82909,28 +82940,28 @@
       "name": "zelda-alttp-3ds",
       "summary": "Nintendo 3DS dual-screen port of Zelda A Link to the Past based on zelda3",
       "author": "estebanpdn",
-      "version": "v4.0",
+      "version": "v4.1",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/EstebanPdN/zelda-alttp-3ds/main/udicon.png",
       "release_url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases",
       "downloads": [
         {
           "format": "3dsx",
-          "filename": "zelda3-3ds-v4.0.3dsx",
-          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v4.0/zelda3-3ds-v4.0.3dsx",
-          "size": 8588148
+          "filename": "zelda3-3ds-v4.1.3dsx",
+          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v4.1/zelda3-3ds-v4.1.3dsx",
+          "size": 8836848
         },
         {
           "format": "cia",
-          "filename": "zelda3-3ds-v4.0.cia",
-          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v4.0/zelda3-3ds-v4.0.cia",
-          "size": 7312320
+          "filename": "zelda3-3ds-v4.1.cia",
+          "url": "https://github.com/EstebanPdN/zelda-alttp-3ds/releases/download/v4.1/zelda3-3ds-v4.1.cia",
+          "size": 7545792
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-01T00:06:14Z"
+      "updated_at": "2026-11-11T05:20:13Z"
     },
     {
       "id": "universal-db:EstebanPdN/zelda-tmc-3ds",
