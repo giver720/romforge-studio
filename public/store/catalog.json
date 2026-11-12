@@ -2092,7 +2092,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/73cf60c4cee69def9efabba41de92b2cebce1130559cc2e45cb6ce4fadcf236c.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/78a31d5259989c99d3fbc8ab37bcd451328cbee7a94f5d63ad2f83770f8d3a10.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/46/",
+      "release_url": "https://web.archive.org/web/20251115034056/https://fuhen.homebrew-contest.com/submissions/46/",
       "downloads": [
         {
           "format": "vpk",
@@ -3924,7 +3924,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/f5fb9b5d2d33b71ee6ada3ca1403a493c1649d25284cb736830feb511a42276a.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/2b3cbf27e841f72ae52ed095285b7d8fbe97b54dde79b77156e0e9cc26d26675.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/40/",
+      "release_url": "https://web.archive.org/web/20251115030734/https://fuhen.homebrew-contest.com/submissions/40/",
       "downloads": [
         {
           "format": "vpk",
@@ -5278,7 +5278,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/be05a5f2d39fcb0d0de5f14af10d0c2f45fbc7cd88fac022f933c094788abce9.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/5cb46aca798c7153e973f07ffd9f1874a2b532b780380cbb7e795940fbb28ce2.png"
       ],
-      "release_url": null,
+      "release_url": "https://github.com/xanderten50/Atlantis/releases",
       "downloads": [
         {
           "format": "vpk",
@@ -5498,10 +5498,10 @@
       "name": "AuroraChat for Switch",
       "categories": [],
       "description": "A chatting application for the 3DS and Wii U, now on the Nintendo Switch.\nAuroraChat is a real-time chatting application made originally for the 3DS family, now cross-platform.\nThis is the official Switch port of AuroraChat.\nAll messages are moderated. The Code of Conduct is available on the GitHub repository.",
-      "added_at": "2026-08-18",
+      "added_at": "2026-11-11",
       "summary": "A cross-platform chatting application.",
       "author": "3pm",
-      "version": "26.8.18",
+      "version": "26.8.18-r1",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/Unitendo/aurorachat-switch/",
@@ -5511,7 +5511,7 @@
           "filename": "AuroraChatforSwitch.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/AuroraChatforSwitch/manifest.install",
           "size": 10769,
-          "sha256": "c4f309ff7cb30fb06c61485674f1677d8f0d10abac93e6e4548015c7cfe6b3c7"
+          "sha256": "4e445e4fbe999eb1541c59a45e4831e55a3696e605fc17762e2c02ec064fcd64"
         }
       ],
       "popularity": 693,
@@ -5519,7 +5519,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-08-19"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "hbas-wiiu:aurorachatforWiiU",
@@ -5529,10 +5529,10 @@
       "name": "aurorachat for Wii U",
       "categories": [],
       "description": "A chatting application originally for the Nintendo 3DS and 2DS systems, now on Wii U.\n\nTo use the app, create an account or log in to an existing one.\nUsers can send and receive real-time messages online. All messages are moderated, and users are expected to follow the rules. The Code of Conduct is available in the GitHub repository.",
-      "added_at": "2026-09-04",
+      "added_at": "2026-11-11",
       "summary": "A chatting application.",
       "author": "Unitendo",
-      "version": "7.1",
+      "version": "7.1-r1",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/Unitendo/aurorachat-wiiu",
@@ -5541,8 +5541,8 @@
           "format": "hbas",
           "filename": "aurorachatforWiiU.hbas",
           "url": "https://wiiu.cdn.fortheusers.org/packages/aurorachatforWiiU/manifest.install",
-          "size": 10983,
-          "sha256": "02aa7b58991d168a5520b99eac52f86350502c9775c67e5e5d709a33f5f72a0b"
+          "size": 10984,
+          "sha256": "f857cb417dafaa3d374e854ecd96e193adda097e48907a184ec600b70878e11c"
         }
       ],
       "popularity": 2285,
@@ -5550,7 +5550,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
       "license_url": null,
-      "updated_at": "2026-09-05"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "universal-db:Unitendo/aurorachat-3ds",
@@ -7383,7 +7383,7 @@
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0e2aacfced0d40d38f800319cfa4b0f3b47b41f121e4c7b48b71222c7028c221.png",
       "screenshots": [],
-      "release_url": null,
+      "release_url": "https://github.com/THEN00P/Better-Browser-Downloader/releases",
       "downloads": [
         {
           "format": "vpk",
@@ -8872,7 +8872,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/ebed10a0da6bd1e086d39779fe704b5ae424cc29c61ede5763d33b40ba49066a.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/63cc93880eb04c082f3ecb9ce7d0d4a74ef74d1e2329b4b66a1f08972faa1f14.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/69/",
+      "release_url": "https://web.archive.org/web/20251115030213/https://fuhen.homebrew-contest.com/submissions/69/",
       "downloads": [
         {
           "format": "vpk",
@@ -11613,7 +11613,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/6a75d3201ee1a12dbfe2c21b24af0017e9dab6a107501156aa9d5f72ef4611f0.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/528c931df6640b07bbaff6b6947dedbde94e71bd9bd4ded2a37c6f66a72690b2.png"
       ],
-      "release_url": null,
+      "release_url": "https://mrkane.itch.io/cartoon-combatt-flying-circus",
       "downloads": [
         {
           "format": "vpk",
@@ -12815,7 +12815,7 @@
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f0da669197f809f681ff129f5b675d08bcd4db67c7bfa04c2a035a12c79c7d1e.png",
       "screenshots": [],
-      "release_url": null,
+      "release_url": "https://github.com/mwpenny/Chocolate-Doom/releases",
       "downloads": [
         {
           "format": "zip",
@@ -16961,7 +16961,7 @@
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/96799ede1d7e73e5c3c11e206d7506b6b521c8535fe20fe83095ede2fad0d4ee.png",
       "screenshots": [],
-      "release_url": null,
+      "release_url": "https://github.com/KanadeEngel/Database_Updater/releases",
       "downloads": [
         {
           "format": "vpk",
@@ -19478,7 +19478,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/f4b6436fe513fbb2edd4486b1b5a0ae2e270393a3b93a6a270c6a18180fda0e1.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/d7bb36e9e82c3dd78c153c9031617a47719e659433f2b61895d43aad4501f93b.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/73/",
+      "release_url": "https://web.archive.org/web/20251115031302/https://fuhen.homebrew-contest.com/submissions/73/",
       "downloads": [
         {
           "format": "vpk",
@@ -19538,7 +19538,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/c5952ae12a3560e033d93134beddedd4aaad4718db056740e5d2622782e71cf7.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/ff52bc7929aee80ac0e56a907bea16e54984d8b4a1bdf1d2723d643a8edeed19.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/29/",
+      "release_url": "https://web.archive.org/web/20251115031901/https://fuhen.homebrew-contest.com/submissions/29/",
       "downloads": [
         {
           "format": "vpk",
@@ -19955,7 +19955,7 @@
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/409b0a9b12d7b6860b905d35dba26372af76617b9d342078d443cf4182a4719d.png",
       "screenshots": [],
-      "release_url": null,
+      "release_url": "https://github.com/FouadtjuhMaster/Duck-Hunt-PSP/releases",
       "downloads": [
         {
           "format": "zip",
@@ -23457,7 +23457,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/677cd53a44191c6fff7e23cd4e3bfd225fc463be4886d2b23bdb859dd8f4fa42.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/ac7b0877e720ca5de4d413c99ae3cdb580670102138a39b0d70a6c436be05352.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/71/",
+      "release_url": "https://web.archive.org/web/20251215230452/https://fuhen.homebrew-contest.com/submissions/71/",
       "downloads": [
         {
           "format": "vpk",
@@ -23967,7 +23967,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/dae3565bae61298de65563c0c9e57f97f6ecbcba54e66b809f76706cbf83e5d9.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/fdd3f7318a7b425122879544a03fdeadcfe7e7104f6120ef0cdfffd700264574.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/38/",
+      "release_url": "https://web.archive.org/web/20260419135437/https://fuhen.homebrew-contest.com/submissions/38/",
       "downloads": [
         {
           "format": "vpk",
@@ -24002,7 +24002,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/a69026f723837a1826a216e0c39a33b543a4e5ef9999f1147f3314d62d759d25.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/a31a6dfb775518068af4b4e7653cec259def4056bc89c66b2ddda83590c1b058.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/39/",
+      "release_url": "https://web.archive.org/web/20260613180104/https://fuhen.homebrew-contest.com/submissions/39/",
       "downloads": [
         {
           "format": "vpk",
@@ -27834,7 +27834,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/3eb1e8488ada20c53c3cd9c337f39f4c6fe272078c4361c6d6fa62c91a869258.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/9463ddc3b75fd47cec3b47c4738fb0d5c82d2a700225c732c948b2f12e9828dd.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/49/",
+      "release_url": "https://web.archive.org/web/20251115031108/https://fuhen.homebrew-contest.com/submissions/49/",
       "downloads": [
         {
           "format": "vpk",
@@ -28403,7 +28403,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/2e253f07566c0aec04eb0464a22989ff78226ebb5f8e75d549e4b671c7d7a45c.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/bd6e0319a7bcf3df6f46d03b429e1f42899de3de98caf92c717a52caba8bba7c.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/36/",
+      "release_url": "https://web.archive.org/web/20260613183615/https://fuhen.homebrew-contest.com/submissions/36/",
       "downloads": [
         {
           "format": "vpk",
@@ -28584,7 +28584,7 @@
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e99b3e49a8f2f9631c8563f66af05ec6937cbaa161f10a4ecf4e498754dbb3fb.png",
       "screenshots": [],
-      "release_url": null,
+      "release_url": "https://github.com/OneRice07/GoHAN/releases",
       "downloads": [
         {
           "format": "vpk",
@@ -28819,7 +28819,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/7944f45996a3f52fdbdb6c87bc768dce4e89c92b0529de81a4fdb37dad2b7cae.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/c2dfaaf23470f4b5aec355f81dcd73c942731fce6708dc6e062bda856fe1a526.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/67/",
+      "release_url": "https://web.archive.org/web/20260801143000/https://fuhen.homebrew-contest.com/submissions/67",
       "downloads": [
         {
           "format": "vpk",
@@ -34013,7 +34013,7 @@
       "name": "JAVITA: Jedi Academy",
       "summary": "Port of Star Wars Jedi Knight: Jedi Academy for PSVITA.",
       "author": "NDRW",
-      "version": "v.1.0.1",
+      "version": "v.1.1.0",
       "title_id": "JAVITA001",
       "description": "Port of Star Wars Jedi Knight: Jedi Academy for PSVITA.",
       "requirements": "- Game Data Files: Jedi Knight: Jedi Academy in ux0:data/JAVITA",
@@ -34024,10 +34024,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "JAVITA_1.0.1.vpk",
-          "url": "https://github.com/NDRWhun/JAVITA/releases/download/release-1.0.1/JAVITA_1.0.1.vpk",
-          "size": 3820474,
-          "md5": "37b4155956282aca508c14b2e43f1b5e"
+          "filename": "JAVITA.vpk",
+          "url": "https://github.com/NDRWhun/JAVITA/releases/download/release-1.1.0/JAVITA.vpk",
+          "size": 3899088,
+          "md5": "cdd15b30066fcedd8f7bd46b21e01ce1"
         }
       ],
       "popularity": 0,
@@ -36398,7 +36398,7 @@
       "screenshots": [
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/9b1cdc787b719b9cbdf081cf54196e17606cbcb3bd64fa571352487fc22dca41.png"
       ],
-      "release_url": null,
+      "release_url": "https://github.com/SoyKhaler/LaDeuda/releases",
       "downloads": [
         {
           "format": "vpk",
@@ -36779,10 +36779,10 @@
         "utilities"
       ],
       "description": "A mitm kip modified from fs_mitm.\n\nldn_mitm implements LAN connectivity by replacing the system's ldn service.\n\nThe original ldn service is only responsible for calling the WiFi service to scan and connect to nearby Switch. ldn_mitm uses the LAN UDP to emulate this scanning process. Therefore ldn_mitm is usually used with switch-lan-play. A configuration tutorial can be found here.",
-      "added_at": "2026-09-28",
+      "added_at": "2026-11-11",
       "summary": "A mitm kip modified from fs_mitm",
       "author": "spacemeowx2, DefenderOfHyrule",
-      "version": "1.22.0",
+      "version": "1.22.2",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/DefenderOfHyrule/ldn_mitm/",
@@ -36792,7 +36792,7 @@
           "filename": "ldn_mitm.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/ldn_mitm/manifest.install",
           "size": 670,
-          "sha256": "a72bc9b5ceee54dae5d7f5d1ccb1e0f7afa34a99785d1399926bc65528506188"
+          "sha256": "60c9646d7f14950e66d4f62eff1220c2a69b8eeccf16b94059c057f18108157a"
         }
       ],
       "popularity": 40857,
@@ -36800,7 +36800,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-29"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "universal-db:Universal-Team/LeafEdit",
@@ -38800,7 +38800,7 @@
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/871ec652dd4d89fea31056f47fc48f139888849ba9dc31e541726abbc04a7618.png",
       "screenshots": [],
-      "release_url": null,
+      "release_url": "https://github.com/BeniYukiMai/MaiDumpTool/releases",
       "downloads": [
         {
           "format": "vpk",
@@ -42007,7 +42007,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/5cb463d0cb0c25ab272ce6277aebd424e65e2a2085dde7d13a1413dedf6888aa.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/fdcb57e11223b75665c40a0477a3cab46488ba01e7a7746cd3fb38337adacd78.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/57/",
+      "release_url": "https://web.archive.org/web/20251115031136/https://fuhen.homebrew-contest.com/submissions/57/",
       "downloads": [
         {
           "format": "vpk",
@@ -47680,7 +47680,7 @@
       "name": "onionHEN",
       "summary": "Yet another HEN enabler for jailbroken PS5",
       "author": "",
-      "version": "v0.9.0",
+      "version": "nightly",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/aydencharles/onionhen",
@@ -47688,15 +47688,15 @@
         {
           "format": "elf",
           "filename": "onionhen.elf",
-          "url": "https://github.com/aydencharles/onionHEN/releases/download/v0.9.0/OnionHEN.elf",
-          "sha256": "1f1f7c883d5d998be1d95d7d80b718f85180f8156f257661b0f445a7c6b7c212"
+          "url": "https://github.com/aydencharles/onionHEN/releases/download/nightly/OnionHEN.elf",
+          "sha256": "d0620cc430c10ac2bc7776bd10265742075c7b782b5c8c3fd05cf46e752ed49e"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-15T15:42:25+08:00"
+      "updated_at": "2026-11-12T12:24:50+08:00"
     },
     {
       "id": "vitadbtoo-vita:985",
@@ -47815,7 +47815,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/d4bfc2ab516fb1fa74a4b91e081123e4c8e6e9950b2834039660d324f1a3dffa.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/b41e6446f1296e5b536c24a323f6f2882f9e61a6f4ee56b79fd23b31a8c07558.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/50/",
+      "release_url": "https://web.archive.org/web/20251215223542/https://fuhen.homebrew-contest.com/submissions/50/",
       "downloads": [
         {
           "format": "vpk",
@@ -50362,7 +50362,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/a61e21dfe6590ec143a4fc443af956ee0898f4fa442645d7ba8dd9cd59c54067.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/30f674fcf24c6c74ba9a9d231c9aba37d79e1643e33bb4f65bd967c2f80a3b6b.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/58/",
+      "release_url": "https://web.archive.org/web/20251216003131/https://fuhen.homebrew-contest.com/submissions/58/",
       "downloads": [
         {
           "format": "vpk",
@@ -51160,7 +51160,7 @@
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/14544f1bfe6f3ad9769441426b879fdc425264d99f714f899caa270b0e11a200.png",
       "screenshots": [],
-      "release_url": null,
+      "release_url": "https://github.com/Notaz/PicoDrive/releases",
       "downloads": [
         {
           "format": "zip",
@@ -54569,7 +54569,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 15016,
+      "popularity": 15112,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54596,7 +54596,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3590,
+      "popularity": 3594,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54623,7 +54623,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 14190,
+      "popularity": 14318,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54650,7 +54650,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7108,
+      "popularity": 7116,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54677,7 +54677,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 73981,
+      "popularity": 74556,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54704,7 +54704,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 10,
+      "popularity": 76,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -55576,30 +55576,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.4.10.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.4.12.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.4.10",
+      "version": "v12.4.12",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.4.10.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.10/ps5upload-12.4.10.elf",
-          "sha256": "c51f52398aa9a9b0c78b5561010dffbaf198511f3daf8388bcf293918810f483"
+          "filename": "ps5upload-12.4.12.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.12/ps5upload-12.4.12.elf",
+          "sha256": "7ce3b5fc3b5815b8b39711aacc83df247d93947fc165810161f1336b8527f2e3"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-12T07:49:31+08:00"
+      "updated_at": "2026-11-12T13:31:28+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -56882,7 +56882,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/df85fb6e447de78b0bf29c2b499c5950b8e663269c05fb0e3f416999b7ab0006.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/d19d2225e400e0b43d84a5ce7d997ac6cb4bfd6cc63e4c7ddd94fd1f7ddbcf41.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/54/",
+      "release_url": "https://web.archive.org/web/20251216004152/https://fuhen.homebrew-contest.com/submissions/54/",
       "downloads": [
         {
           "format": "vpk",
@@ -58266,7 +58266,7 @@
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/31a5547132077125426247389e1472596f7bb8325a546f6bc5c8139af58fa6f9.png",
       "screenshots": [],
-      "release_url": null,
+      "release_url": "https://github.com/RetroGamer74/RedRunner/releases",
       "downloads": [
         {
           "format": "vpk",
@@ -58396,7 +58396,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/44a33e724589e7f56af4e749f7614f9b3360496626519b690136fc3013330a33.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/8ce0899f65b4a57c2662337afd301028a43c49691c0de09c81b9b39d89a8d390.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/61/",
+      "release_url": "https://web.archive.org/web/20260419151712/https://fuhen.homebrew-contest.com/submissions/61/",
       "downloads": [
         {
           "format": "vpk",
@@ -60346,7 +60346,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/5a4599cbaac3479301a969cee4099d0b29001225a274ad6f40e1992e9ad1783a.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/e82f997f3ba43486d84a54010afc5a288fd76f8e981f8dd086976dcb2cae8c52.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/45/",
+      "release_url": "https://web.archive.org/web/20251115032027/https://fuhen.homebrew-contest.com/submissions/45/",
       "downloads": [
         {
           "format": "vpk",
@@ -64132,7 +64132,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/60ea1ec4c61c5aae3d8e9c27893ccfe8d5150b3956d2aa058cfe9666e6503b6f.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/f1bbce207e4042796e3b3b7d93452af209c7f0fe68dc2a027736ec06e4fe12e9.png"
       ],
-      "release_url": null,
+      "release_url": "https://megagameboy.itch.io/simple-fps-platformer",
       "downloads": [
         {
           "format": "vpk",
@@ -64328,7 +64328,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/98016e55c33334770c4a9f4a5ed92eee19d3fdfb56277f1cecd966ec88bb34cb.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/94ee9ddbda5226296041d073d6cecdea7926032958a1f4b359cab1b013449c86.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/53/",
+      "release_url": "https://web.archive.org/web/20251115032124/https://fuhen.homebrew-contest.com/submissions/53/",
       "downloads": [
         {
           "format": "vpk",
@@ -66751,7 +66751,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/1a37c62c0c567e1607171d9c19ab768756862c68305176a2b7f7f9a31e07e0ef.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/e280ada716c7b6a793f3cf4eb58232784e8173bc9c5e8f03365d253f80dbb711.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/16/",
+      "release_url": "https://web.archive.org/web/20260630012901/https://fuhen.homebrew-contest.com/submissions/16/",
       "downloads": [
         {
           "format": "vpk",
@@ -68482,7 +68482,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/fc4f0cbabc9827008cd568af215c9775244d4854e63e59864c310bc41f42a37b.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/436220b55c013ad9a2deb5d656e31647aefcb650070bb39288987bcf615a7f43.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/60/",
+      "release_url": "https://web.archive.org/web/20251115025931/https://fuhen.homebrew-contest.com/submissions/60/",
       "downloads": [
         {
           "format": "vpk",
@@ -72570,7 +72570,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/9daee290b094945c7b0b653dc27d60ada3b68018e7506eb092f13996a87587d0.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/301de0cbf488e877f8b17a212ee08bcd887e826dc0604892abe88bf735a25d7c.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/26/",
+      "release_url": "https://web.archive.org/web/20251115020000/https://fuhen.homebrew-contest.com/submissions/26/",
       "downloads": [
         {
           "format": "vpk",
@@ -73589,7 +73589,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/f4076caa2a49818ae0d7c63a903334800f39d1b60f7b1e9cf760b3a414e6dae9.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/a2e3012063c76f69674e26468dfdc28dd5e12e98542860a1c3fdeb8cfe73d9fc.png"
       ],
-      "release_url": null,
+      "release_url": "https://github.com/nedmapagmahal/The-Great-Adventures-of-NedMapagmahal/releases",
       "downloads": [
         {
           "format": "vpk",
@@ -73782,7 +73782,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/bf1f34faf700ec70a943c7b6f78d0635a4c0e32ebcd76c869d3d32825be4345a.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/4ca668fba920bfb840ad8e2d67d55a3bf30b1e2d6cf3e6610fd61e1b19f5a4e1.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/55/",
+      "release_url": "https://web.archive.org/web/20251215230254/https://fuhen.homebrew-contest.com/submissions/55/",
       "downloads": [
         {
           "format": "vpk",
@@ -74026,7 +74026,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/18aed8cb6db1232696c549fec0f5f963f80676e29222e905a261c686933de674.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/4713cd50a760dfc4b7b639cfe78fbf4e956120febdf51f040a510ad352c02938.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/28/",
+      "release_url": "https://web.archive.org/web/20251215234641/https://fuhen.homebrew-contest.com/submissions/28/",
       "downloads": [
         {
           "format": "vpk",
@@ -74736,7 +74736,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/cc235546f843a40cf878c5b4292fd610a8c6628b527a69dc27096847f1050c51.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/ebe50f03688ff85b655dbc97487fb78a2a28faf89b98e276e77cb02a4779c8c1.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/63/",
+      "release_url": "https://web.archive.org/web/20251115022200/https://fuhen.homebrew-contest.com/submissions/63/",
       "downloads": [
         {
           "format": "vpk",
@@ -77373,7 +77373,7 @@
       "name": "UMD Player",
       "summary": "UMD Player for PSVita.",
       "author": "xesf",
-      "version": "v.0.9.14",
+      "version": "v.0.9.15",
       "title_id": "UMDP00001",
       "description": "UMD Player for PSVita.",
       "requirements": "",
@@ -77384,10 +77384,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "umdplayer-v0.9.14.vpk",
-          "url": "https://github.com/xesf/umd-player/releases/download/v0.9.14/umdplayer-v0.9.14.vpk",
-          "size": 1001063,
-          "md5": "d08a5a5d86b9c91413c68342a254305d"
+          "filename": "umdplayer-v0.9.15.vpk",
+          "url": "https://github.com/xesf/umd-player/releases/download/v0.9.15/umdplayer-v0.9.15.vpk",
+          "size": 1001488,
+          "md5": "4bfd21da1e228ed75bd4542c7e6144d6"
         }
       ],
       "popularity": 0,
@@ -80417,7 +80417,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/8ac08ecb3b1b5230c1525297dacb8ede3d35877877f5c69ce1172e4d78535af2.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/1bf64213c3c6004938238520e16fedfebd621c3483b256c9bf7e915c96749378.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/48/",
+      "release_url": "https://web.archive.org/web/20260613182818/https://fuhen.homebrew-contest.com/submissions/48/",
       "downloads": [
         {
           "format": "vpk",
@@ -81958,7 +81958,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/96c47db6bcb9bb93309bf49b6642f38441be1e91abcac57ed6a25a55535b5849.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/93e892cfca87a94f44b4e1f041bb2430e685249ef7ae3a5c8da627930da1cc9b.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/33/",
+      "release_url": "https://web.archive.org/web/20251115032855/https://fuhen.homebrew-contest.com/submissions/33/",
       "downloads": [
         {
           "format": "vpk",
@@ -83621,7 +83621,7 @@
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/76c9a0ca27def3f2e3764c7fb4e676f6fae441538e7807a950b9131f58061218.png",
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/6519bfdbe6f767720d6015fe94b2a9158239346ef5fcf51086c8abde71138105.png"
       ],
-      "release_url": "https://fuhen.homebrew-contest.com/submissions/52/",
+      "release_url": "https://web.archive.org/web/20251115025855/https://fuhen.homebrew-contest.com/submissions/52/",
       "downloads": [
         {
           "format": "vpk",
@@ -84523,7 +84523,7 @@
       "screenshots": [
         "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/788bc9baea3c53cc1c0050dc5c32782b5faec8736e5a0b54e0dca19cfc086ef3.png"
       ],
-      "release_url": null,
+      "release_url": "https://vlambeer.itch.io/wasteland-kings",
       "downloads": [
         {
           "format": "vpk",
