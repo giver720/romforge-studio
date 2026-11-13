@@ -1126,7 +1126,7 @@
       "name": "3DS-CLI",
       "summary": "Run full RISCV Linux on many game consoles",
       "author": "cmdada",
-      "version": "5.3",
+      "version": "5.3.1",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/cmdada/3DS-CLI/main/icon.png",
       "release_url": "https://github.com/cmdada/3DS-CLI/releases",
@@ -1134,14 +1134,14 @@
         {
           "format": "zip",
           "filename": "3ds_cli.zip",
-          "url": "https://github.com/cmdada/3DS-CLI/releases/download/5.3/3ds_cli.zip",
-          "size": 63109147
+          "url": "https://github.com/cmdada/3DS-CLI/releases/download/5.3.1/3ds_cli.zip",
+          "size": 63107030
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-03T02:25:17Z"
+      "updated_at": "2026-11-12T17:14:08Z"
     },
     {
       "id": "universal-db:icicle1133/3ds-Controller",
@@ -1655,7 +1655,7 @@
       "name": "3dslibris",
       "summary": "An ebook and manga reader for Nintendo 3DS",
       "author": "Rigle",
-      "version": "v3.1.1",
+      "version": "v3.2.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/RigleGit/3dslibris/refs/heads/main/assets/release/icon-32x32.png",
       "release_url": "https://github.com/RigleGit/3dslibris/releases",
@@ -1663,38 +1663,38 @@
         {
           "format": "3dsx",
           "filename": "3dslibris-debug.3dsx",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.1/3dslibris-debug.3dsx",
-          "size": 14677608
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.0/3dslibris-debug.3dsx",
+          "size": 14735148
         },
         {
           "format": "cia",
           "filename": "3dslibris-debug.cia",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.1/3dslibris-debug.cia",
-          "size": 13415360
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.0/3dslibris-debug.cia",
+          "size": 13452224
         },
         {
           "format": "zip",
           "filename": "3dslibris-sdmc.zip",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.1/3dslibris-sdmc.zip",
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.0/3dslibris-sdmc.zip",
           "size": 5021452
         },
         {
           "format": "3dsx",
           "filename": "3dslibris.3dsx",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.1/3dslibris.3dsx",
-          "size": 14881684
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.0/3dslibris.3dsx",
+          "size": 14944996
         },
         {
           "format": "cia",
           "filename": "3dslibris.cia",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.1.1/3dslibris.cia",
-          "size": 13607872
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.0/3dslibris.cia",
+          "size": 13648832
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-08T12:34:58Z"
+      "updated_at": "2026-11-12T16:20:37Z"
     },
     {
       "id": "universal-db:s4ammy/3DSLink",
@@ -3553,10 +3553,10 @@
         "utilities"
       ],
       "description": "Amiigo is a GUI for Emuiibo and a EmuGUIibo alternative that runs directly on the switch.\n\nControls\nUp / Down on Dpad to move up and down the list.\n\nA to select a Amiibo from the list.\n\nX toggles emulation state.\n\nY moves on to the next Amiibo.\n\nB enters the Amiigo Maker. Press B again to go back to the Amiibo selection UI.\n\nYou can also use the touch screen to select an Amiibo by tapping on a item in the list, tapping the emulation status rectangle will toggle the emulation state, and tapping the currently selected Amiibo on the top rectangle will move on to the next Amiibo.",
-      "added_at": "2026-01-18",
+      "added_at": "2026-11-06",
       "summary": "GUI for Emuiibo",
       "author": "CompSciOrBust",
-      "version": "2.4.1",
+      "version": "2.5.0",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/CompSciOrBust/Amiigo/releases",
@@ -3565,8 +3565,8 @@
           "format": "hbas",
           "filename": "Amiigo.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/Amiigo/manifest.install",
-          "size": 8631,
-          "sha256": "6481b6bb1fbb6bab740dc1efe69c5219da44ec6b6dbb70c440ecc92612327390"
+          "size": 8934,
+          "sha256": "fa728251470584d35a1f0f5b42502a8bebf57425dbf4942a05338132294940a1"
         }
       ],
       "popularity": 128974,
@@ -3574,7 +3574,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-01-20"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "hbas-switch:AmiigoMod",
@@ -23660,10 +23660,10 @@
         "games"
       ],
       "description": "Details\nInstallation\n\nYou will need a copy of the official game to run this port. Put the game files in /switch/fheroes2 (specifically ANIM, DATA, MAPS and MUSIC folders), ANIM and MUSIC folders are optional: you can play without any music or movies. If you don't have the ANIM folder, create it and copy whatever *.smk files you have from DATA to ANIM.\n\nControls\n\n- Touchscreen - emulates mouse, including dragging\n- L-stick - move mouse cursor\n- R-stick/D-pad - scroll\n- A - left mouse click\n- B - Right mouse click\n- X - Escape\n- Y - Enter\n- (+) - Cast spell\n- (-) - End turn\n- R - Cycle through towns\n- L - Cycle through heroes\n\nMore info at https://github.com/dimag0g/fheroes2/tree/switch",
-      "added_at": "2026-06-30",
+      "added_at": "2026-11-08",
       "summary": "Free Heroes of Might and Magic II engine",
       "author": "dimag0g",
-      "version": "1.1.17",
+      "version": "1.1.18",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/ihhub/fheroes2",
@@ -23672,8 +23672,8 @@
           "format": "hbas",
           "filename": "fheroes2.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/fheroes2/manifest.install",
-          "size": 19412,
-          "sha256": "93afe8a94531b0cf5788a552b53f4f44a95954fb94d85205147ebc439a86a854"
+          "size": 19933,
+          "sha256": "46630551bb4b9f58149b64da4e2e62dc799c88854d70624d139e05df9befd391"
         }
       ],
       "popularity": 10554,
@@ -23681,7 +23681,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-07-01"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "vitadbtoo-vita:354",
@@ -24783,10 +24783,10 @@
       "name": "FlashNX",
       "categories": [],
       "description": "Plays .swf games from your SD card, or downloads them on the console: the Import tab opens on Flashpoint Archive shelves (a random studio, random games), searches the whole archive and fetches a game with its cover and companion files. AS1 and AS2 run well, much of AS3 too. Up to four players, and a single Joy-Con held sideways is a whole controller. Controls are remapped per game on a picture of the controller, and each game keeps its own screen mode, rotation, zoom, filter and CPU overclock. Hold R while starting any game from the HOME Menu, then pick FlashNX, or it will not have the memory to run a game. Atmosphère required. Flash emulation by Ruffle (ruffle.rs).",
-      "added_at": "2026-10-20",
+      "added_at": "2026-11-10",
       "summary": "Play your Flash (.swf) games on Switch, powered by Ruffle.",
       "author": "Jonathan8520",
-      "version": "2.0.2",
+      "version": "2.1.0",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/Jonathan8520/FlashNX",
@@ -24795,8 +24795,8 @@
           "format": "hbas",
           "filename": "FlashNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/FlashNX/manifest.install",
-          "size": 20318,
-          "sha256": "79a7e0baee0d4dfe5d7a21407686d3176cec6f0dce45f1e668d825a83a155a8d"
+          "size": 20942,
+          "sha256": "5294ed61f1270b56482d12aadd0304e4b63542d95ae00f85a93f31825209c5db"
         }
       ],
       "popularity": 3572,
@@ -24804,7 +24804,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-21"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "vitadbtoo-vita:1771",
@@ -29855,10 +29855,10 @@
         "games"
       ],
       "description": "NOTE: Halo's game data is not included. Put an Xbox disc image of Halo: Combat Evolved (any version, .iso or .xiso) on the SD card as /switch/halo/halo.iso; the game unpacks its maps folder from it on the first start (about 1.7 GB on the card, a few minutes). Or put the disc's maps folder at /switch/halo/maps yourself.\n\nHalo: Combat Evolved on the Switch, built from the decompilation of the Xbox game: the campaign, split-screen and online multiplayer, Halo Custom Edition maps (in /switch/halo/custom_maps), gyro aiming, and the game's own renderer on deko3d at up to 1080p docked.\n\nSaves go in /switch/halo/save and the settings in /switch/halo/config.toml. The game updates itself from its GitHub releases when a new build is out.",
-      "added_at": "2026-10-30",
+      "added_at": "2026-11-10",
       "summary": "Halo: Combat Evolved, built from the decompilation of the Xbox game. Needs your own disc image.",
       "author": "thelinkin3000",
-      "version": "111",
+      "version": "build-141",
       "license": "AGPL-3.0-or-later",
       "icon_url": null,
       "release_url": "https://github.com/thelinkin3000/halo-ce-universal",
@@ -29867,8 +29867,8 @@
           "format": "hbas",
           "filename": "halo-ce-universal.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/halo-ce-universal/manifest.install",
-          "size": 31975,
-          "sha256": "ba1155217e5c98dce5e4f92236aa03a7419bf6906255edb7090cd954fa265473"
+          "size": 32871,
+          "sha256": "5f4f0c09ce63f24475057bd1ac69be124429c58146f85bc3a0b330c65bc5df29"
         }
       ],
       "popularity": 204,
@@ -29876,7 +29876,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-30"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "hbas-switch:Halyard",
@@ -30507,10 +30507,10 @@
         "utilities"
       ],
       "description": "A dedicated application to seamlessly install/update/launch HDR, the gameplay overhaul mod for Smash Ultimate.",
-      "added_at": "2026-10-01",
+      "added_at": "2026-11-08",
       "summary": "Easily install/update/launch HDR!",
       "author": "HDR-Development",
-      "version": "0.9.1",
+      "version": "0.9.2",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/techyCoder81/hdr-launcher-react",
@@ -30519,8 +30519,8 @@
           "format": "hbas",
           "filename": "hdr-launcher.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/hdr-launcher/manifest.install",
-          "size": 12616,
-          "sha256": "5639d86ff83817085f12c1d8f3ab727ac44628f428b67ec7fd3857240920d564"
+          "size": 13384,
+          "sha256": "6418a45b0b87f96ba35adc9157ff458016c151f6f53153f0b2df8d044e18dd32"
         }
       ],
       "popularity": 26145,
@@ -30528,7 +30528,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-02"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "ps5-payloads-atlas:hearbridge-1.4.0.elf",
@@ -38431,31 +38431,6 @@
       "updated_at": "2022-08-20"
     },
     {
-      "id": "universal-db:LumaTeam/Luma3DS",
-      "platforms": [
-        "3ds"
-      ],
-      "name": "Luma3DS",
-      "summary": "Nintendo 3DS \"Custom Firmware\"",
-      "author": "LumaTeam",
-      "version": "v13.5",
-      "license": "GNU General Public License v3.0",
-      "icon_url": "https://avatars.githubusercontent.com/u/65085206?v=4&size=128",
-      "release_url": "https://github.com/LumaTeam/Luma3DS/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "Luma3DSv13.5.zip",
-          "url": "https://github.com/LumaTeam/Luma3DS/releases/download/v13.5/Luma3DSv13.5.zip",
-          "size": 545619
-        }
-      ],
-      "source": "Universal-DB",
-      "source_url": "https://db.universal-team.net/",
-      "license_url": null,
-      "updated_at": "2026-11-02T00:07:07Z"
-    },
-    {
       "id": "universal-db:Dzhmelyk135/Luma3DSWeather",
       "platforms": [
         "3ds"
@@ -39147,13 +39122,13 @@
           "format": "3dsx",
           "filename": "3ds_google_maps.3dsx",
           "url": "https://github.com/Oldhimaster1/3ds-Google-Maps/releases/download/v2.2.0/3ds_google_maps.3dsx",
-          "size": 1898844
+          "size": 1902636
         },
         {
           "format": "cia",
           "filename": "3ds_google_maps.cia",
           "url": "https://github.com/Oldhimaster1/3ds-Google-Maps/releases/download/v2.2.0/3ds_google_maps.cia",
-          "size": 1535936
+          "size": 1537984
         }
       ],
       "source": "Universal-DB",
@@ -39947,7 +39922,7 @@
       "name": "MemDBG",
       "summary": "MemDBG is a high-performance memory debugging and inspection suite designed for PlayStation 4 and PlayStation 5 homebrew research environments.",
       "author": "",
-      "version": "nightly-20260930-g6e493c9",
+      "version": "nightly-20261112-g6e31144",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/seregonwar/memdbg",
@@ -39955,15 +39930,15 @@
         {
           "format": "elf",
           "filename": "memdbg-ps5.elf",
-          "url": "https://github.com/seregonwar/MemDBG/releases/download/nightly-20260930-g6e493c9/MemDBG-ps5.elf",
-          "sha256": "2fbdc9f0b21043619b1c32b512df47b3ddf79a99f096243c0d48f5ffc14e1906"
+          "url": "https://github.com/seregonwar/MemDBG/releases/download/nightly-20261112-g6e31144/MemDBG-ps5.elf",
+          "sha256": "d2d8565c7c83b1d1dfe5d66471b5941b164d21854eee6a1b2e1d945eed383cbb"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-09-30T15:46:37+08:00"
+      "updated_at": "2026-11-13T09:53:22+08:00"
     },
     {
       "id": "hbas-switch:memory-game-NX",
@@ -52056,10 +52031,10 @@
         "utilities"
       ],
       "description": "A local bank system for Pokemon games on Nintendo Switch.\nMove Pokemon between your save files and local bank storage.\n\nFeatures\n- Profile Selection\n- Two-Panel Box Viewer\n- Pick & Place\n- Multi-Select\n- Pokemon Details\n\nBank System\n- Create a new bank (up to 32-character name)\n- Rename an existing bank\n- Delete a bank (with confirmation)\n\nEach bank has the same box capacity as its game family (32 or 40 boxes).\nThe bank list shows the number of occupied slots for each bank.\n\nYou can switch between banks from the main view via the menu, with or without saving first.\n\nBackup System\n- When loading a game save on Switch, an automatic backup is created before any modifications.\n- This is a full copy of the mounted save directory.\n\nSave Integrity\n- SCBlock saves (ZA, SV, SwSh, LA): Decrypted, modified, and re-encrypted. A round-trip verification runs on load to confirm the cycle is lossless.\n- BDSP saves: Flat binary with MD5 checksum, recalculated on every save.\n- All saves are written in-place to preserve ",
-      "added_at": "2026-10-04",
+      "added_at": "2026-11-09",
       "summary": "A local bank system for Pokemon games",
       "author": "Insektaure",
-      "version": "2.3.0",
+      "version": "2.3.3",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/Insektaure/pkHouse",
@@ -52068,8 +52043,8 @@
           "format": "hbas",
           "filename": "pkHouseLocalPokeBank.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/pkHouseLocalPokeBank/manifest.install",
-          "size": 14033,
-          "sha256": "4918739b18d46967f1c995537fd00c75aee36e9f9e6c19af024ae1c596afc66e"
+          "size": 14197,
+          "sha256": "ad1e86bbb11a72e97088819b04fda9d14c6a80168e1a7cc409c5c1890f0cf682"
         }
       ],
       "popularity": 5042,
@@ -52077,7 +52052,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-05"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "universal-db:Universal-Team/pkmn-chest",
@@ -53458,7 +53433,7 @@
         "3ds"
       ],
       "name": "PotatoStream",
-      "summary": "Gamestream client for 3DS (Old & New)",
+      "summary": "Gamestream client for 3DS (Old & New) - moonlight",
       "author": "PainDe0Mie",
       "version": "v1.3.5",
       "license": "GNU General Public License v3.0",
@@ -54569,7 +54544,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 15112,
+      "popularity": 15182,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54596,7 +54571,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3594,
+      "popularity": 3603,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54623,7 +54598,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 14318,
+      "popularity": 14417,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54650,7 +54625,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7116,
+      "popularity": 7130,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54677,7 +54652,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 74556,
+      "popularity": 75030,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54704,7 +54679,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 76,
+      "popularity": 106,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -55323,7 +55298,7 @@
       "name": "PS5-TabShifter",
       "summary": "Standalone PS5 on-console payload to move apps between Games/Media tabs and hide offline PSN bloatware (Universal FW 5.00 – 13.60)",
       "author": "",
-      "version": "v1.3.0",
+      "version": "v1.4.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/xvvulcanvx/ps5-tabshifter",
@@ -55331,15 +55306,15 @@
         {
           "format": "elf",
           "filename": "tabshifter.elf",
-          "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.3.0/TabShifter.elf",
-          "sha256": "5d2d9c46c2390df05c5a85781b033aa9471584629e8bd69b91608cb3e60f45b4"
+          "url": "https://github.com/xvvulcanvx/PS5-TabShifter/releases/download/v1.4.0/TabShifter.elf",
+          "sha256": "f687372160a2ae564b2c401c5378fa5ae0902e9815f2f13fc6a07b9c34c1630f"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-25T02:38:30+08:00"
+      "updated_at": "2026-11-13T08:27:16+08:00"
     },
     {
       "id": "ps5-payloads-atlas:tailscale-0.7.3.elf",
@@ -55576,30 +55551,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.4.12.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.4.14.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.4.12",
+      "version": "v12.4.14",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.4.12.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.12/ps5upload-12.4.12.elf",
-          "sha256": "7ce3b5fc3b5815b8b39711aacc83df247d93947fc165810161f1336b8527f2e3"
+          "filename": "ps5upload-12.4.14.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.14/ps5upload-12.4.14.elf",
+          "sha256": "17dc0827d3d49701534a8b2f7dca337ec88f213eb825ed028763be5eeec72f7e"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-12T13:31:28+08:00"
+      "updated_at": "2026-11-13T05:47:15+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -60069,34 +60044,52 @@
       "name": "Roku-Remote-3DS",
       "summary": "A personal Nintendo 3DS homebrew remote for a Roku device on your home network.",
       "author": "nohsaidnottoplay-blip",
-      "version": "Roku-Remote-3DS-v1.2.0",
+      "version": "Roku-Remote-3DS-v1.3.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/nohsaidnottoplay-blip/Roku-Remote-3DS/refs/heads/main/icon.png",
       "release_url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases",
       "downloads": [
         {
-          "format": "3dsx",
-          "filename": "RokuRemote3DS-v1.2.0.3dsx",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.2.0/RokuRemote3DS-v1.2.0.3dsx",
-          "size": 232160
-        },
-        {
-          "format": "cia",
-          "filename": "RokuRemote3DS-v1.2.0.cia",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.2.0/RokuRemote3DS-v1.2.0.cia",
-          "size": 259008
+          "format": "zip",
+          "filename": "3ds.zip",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/3ds.zip",
+          "size": 221396
         },
         {
           "format": "zip",
-          "filename": "source-project-v1.2.0.zip",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.2.0/source-project-v1.2.0.zip",
-          "size": 74125
+          "filename": "EXTRA.zip",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/EXTRA.zip",
+          "size": 8281
+        },
+        {
+          "format": "3dsx",
+          "filename": "RokuRemote3DS-v1.3.3dsx",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/RokuRemote3DS-v1.3.3dsx",
+          "size": 406436
+        },
+        {
+          "format": "cia",
+          "filename": "RokuRemote3DS-v1.3.cia",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/RokuRemote3DS-v1.3.cia",
+          "size": 540608
+        },
+        {
+          "format": "zip",
+          "filename": "source-project-v1.3.zip",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/source-project-v1.3.zip",
+          "size": 12364275
+        },
+        {
+          "format": "zip",
+          "filename": "validation-v1.3.zip",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/validation-v1.3.zip",
+          "size": 2440
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-23T22:20:00Z"
+      "updated_at": "2026-11-12T18:27:43Z"
     },
     {
       "id": "vitadbtoo-vita:1312",
@@ -61265,10 +61258,10 @@
       "name": "SaltyNX",
       "categories": [],
       "description": "Background process for the Nintendo Switch for file/code modification\n\nCreated by: https://github.com/shinyquagsire23\n\nThis fork includes many QoL improvements\n\n\nFor additional functions you need SaltyNX-Tool.\n\n",
-      "added_at": "2026-10-15",
+      "added_at": "2026-11-03",
       "summary": "Background process for the Nintendo Switch for file/code modification",
       "author": "masagrator, shinyquagsire23",
-      "version": "2.1.3",
+      "version": "2.1.4",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/masagrator/SaltyNX/releases",
@@ -61277,8 +61270,8 @@
           "format": "hbas",
           "filename": "SaltyNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SaltyNX/manifest.install",
-          "size": 479,
-          "sha256": "ce5f6e0f1e9ccf070c25cdfc9e67d41dfaa38533d0a1be19e5edeb6990158673"
+          "size": 486,
+          "sha256": "0170ad00f07feb6d3cfe0bab9993481857837c2dae140a09545e80b4617f8818"
         }
       ],
       "popularity": 153236,
@@ -61286,7 +61279,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-21"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "hbas-switch:SaltyNX-Tool",
@@ -70814,10 +70807,10 @@
         "utilities"
       ],
       "description": "Switch Frame Tap is a sysmodule that streams the game you are playing - picture and sound - to a Windows, Linux or macOS PC, with no capture card and no dock. It reads the game's finished frames and encodes them with the Switch's own H.264 encoder: native 1080p at 60 fps.\n\n- Play a Switch Lite (or any Switch) on a big screen: a USB cable in handheld, or the network (Wi-Fi or the dock's LAN port) to play docked\n- Game audio, also in games that block recording (optional), and recording to MP4 on the PC\n- Native-resolution PNG screenshots on a button combo, also next to the system's Album screenshots\n- Webcam mode: the Switch shows up as a USB camera, for OBS (H.264, 1080p60) or any camera app (uncompressed, 720p)\n- Stream the HOME menu and the console's overlays too: the volume bar, quick settings, power menu and Tesla/Ultrahand menus (optional)\n- Turn the Switch's screen off while you stream\n- This manager app for the settings and to install the optional tools (Ultrahand, SaltyNX, ReverseNX-RT, sys-clk or Horizon OC), plus a Tesla/Ultrahand overlay; it updates itself from GitHub\n\nNeeds Atmosphere (firmware 21 to 23) and a viewer from the GitHub releases page: Windows, Linux, macOS or Android / Android TV. It reads the running game like a debugger; with cheats loaded for a game it reads through Atmosphere's cheat engine, which is slower.",
-      "added_at": "2026-10-25",
+      "added_at": "2026-11-11",
       "summary": "Stream your games to a PC at 1080p60",
       "author": "Papux200",
-      "version": "0.7.19",
+      "version": "0.7.22",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/TomasUribe/switch-frame-tap",
@@ -70826,8 +70819,8 @@
           "format": "hbas",
           "filename": "SwitchFrameTap.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SwitchFrameTap/manifest.install",
-          "size": 10097,
-          "sha256": "15c1adab5b9102ae640f983eb2bdddec38da260b04dbd7ca078bb7f974421096"
+          "size": 10121,
+          "sha256": "04389bc485f71ec6ed41201a54bfdaf5290a4e5d52a8930ce3a0adea1003f3d3"
         }
       ],
       "popularity": 1347,
@@ -70835,7 +70828,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-30"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "hbas-switch:SwitchFTPClient",
@@ -71266,10 +71259,10 @@
         "utilities"
       ],
       "description": "Switchfin is third-party PC player for Jellyfin that provides a native user interface to browse and play movies and series.\nSupported media items: movies, series, seasons, episodes\nDirect play and transcoding",
-      "added_at": "2026-08-25",
+      "added_at": "2026-11-10",
       "summary": "Nintendo Switch Jellyfin client",
       "author": "dragonflylee",
-      "version": "0.9.4",
+      "version": "0.9.5",
       "license": "Apache v2",
       "icon_url": null,
       "release_url": "https://github.com/dragonflylee/switchfin",
@@ -71278,8 +71271,8 @@
           "format": "hbas",
           "filename": "Switchfin.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/Switchfin/manifest.install",
-          "size": 64112,
-          "sha256": "6646e87c3458b3fe3b2f0b0039c62ae53e0dfb339ad95d51257855bc9745969f"
+          "size": 66176,
+          "sha256": "86cbde77940c5a8550b23dd766b67ff8714becb5b8ee57986fb95e1ed2697359"
         }
       ],
       "popularity": 61014,
@@ -71287,7 +71280,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-04"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "vitadbtoo-vita:1258",
@@ -71432,10 +71425,10 @@
         "utilities"
       ],
       "description": "SwitchInfoNX est un utilitaire complet de diagnostic pour Nintendo Switch. Il propose des informations système, le stockage, le réseau, les performances, des diagnostics de manettes, un explorateur de fichiers, les transferts FTP et MTP, la gestion des sauvegardes, des thèmes personnalisables et un overlay réseau pour Ultrahand.",
-      "added_at": "2026-11-01",
+      "added_at": "2026-11-06",
       "summary": "Utilitaire complet d'informations système",
       "author": "dodosi",
-      "version": "0.5",
+      "version": "0.6",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/dodosiiii/SwitchInfoNX",
@@ -71444,8 +71437,8 @@
           "format": "hbas",
           "filename": "SwitchInfoNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SwitchInfoNX/manifest.install",
-          "size": 9274,
-          "sha256": "a9e6ba01cf7c6baf36af25e00563786c5659b96198a38045c3dd7d778d09f055"
+          "size": 9302,
+          "sha256": "eb42de191b9320ddb2992fcbe0f0b1fe6e492fad9c3252c080a1b0d87d05d607"
         }
       ],
       "popularity": 693,
@@ -71453,7 +71446,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-11-02"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "vitadbtoo-vita:207",
@@ -71982,10 +71975,10 @@
       "name": "sys-con 1.x (2024)",
       "categories": [],
       "description": "Connect any USB controller to your Nintendo Switch.\n\nSys-con v1.x is a Nintendo Switch module that adds support for all HID and XID joysticks and gamepads to the Nintendo Switch.\n\nSupport all USB controllers: PC controllers, Wheels, Dualshock 3, Dualshock 4, Dualsense (PS5), XBOX, XBOX360, XBOXONE, ...",
-      "added_at": "2026-09-25",
+      "added_at": "2026-11-06",
       "summary": "Support for XBOX/PS/PC controllers",
       "author": "o0Zz",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/o0Zz/sys-con",
@@ -71994,8 +71987,8 @@
           "format": "hbas",
           "filename": "syscon1x2024.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/syscon1x2024/manifest.install",
-          "size": 501,
-          "sha256": "f89ec045ebfce3bb03e1a2e7f195f0d9a95e5c0878f0a47016e3399e73ae29d7"
+          "size": 527,
+          "sha256": "723ea1b924809b92e9b493be80a7f23b34d61e2f247b5208b993f48d0fe066a7"
         }
       ],
       "popularity": 79214,
@@ -72003,7 +71996,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-26"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "open-shop-channel-wii:SysCheckHDE",
@@ -74792,7 +74785,7 @@
       "name": "TinyVNC",
       "summary": "A VNC viewer for Nintendo 3DS",
       "author": "badda71",
-      "version": "2.0.1",
+      "version": "2.1",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/badda71/TinyVNC/master/meta/icon.png",
       "release_url": "https://github.com/badda71/TinyVNC/releases",
@@ -74800,20 +74793,20 @@
         {
           "format": "3dsx",
           "filename": "TinyVNC.3dsx",
-          "url": "https://github.com/badda71/TinyVNC/releases/download/2.0.1/TinyVNC.3dsx",
-          "size": 1937112
+          "url": "https://github.com/badda71/TinyVNC/releases/download/2.1/TinyVNC.3dsx",
+          "size": 2048632
         },
         {
           "format": "cia",
           "filename": "TinyVNC.cia",
-          "url": "https://github.com/badda71/TinyVNC/releases/download/2.0.1/TinyVNC.cia",
-          "size": 1827776
+          "url": "https://github.com/badda71/TinyVNC/releases/download/2.1/TinyVNC.cia",
+          "size": 1897408
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2022-06-07T15:19:51Z"
+      "updated_at": "2026-11-12T20:09:27Z"
     },
     {
       "id": "universal-db:LuMariGames/TJAP_3DS",
@@ -77280,10 +77273,10 @@
         "utilities"
       ],
       "description": "WARNING: This will overwrite Tesla Menu if already installed. Includes ppkantorski's nx-ovlloader fork. \n\nUltrahand Overlay is a Tesla Menu replacement built from the ground up off of libtesla that provides powerful C/C++ commands through the usage of its own custom interpretive programming language (similar to Shell/BASH). It is a versatile tool that enables you to create and share custom command-based packages, providing enhanced functionality for managing files and directories on your SD card.\n\nWith Ultrahand, you have the flexibility to customize and shape your file management system according to your needs, empowering you with greater control over your system configurations.\n\nSupport the dev on Ko-fi: https://ko-fi.com/ppkantorski",
-      "added_at": "2026-07-18",
+      "added_at": "2026-11-08",
       "summary": "The fully craft-able overlay executor.",
       "author": "ppkantorski",
-      "version": "2.5.3",
+      "version": "2.5.4",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/ppkantorski/Ultrahand-Overlay",
@@ -77292,8 +77285,8 @@
           "format": "hbas",
           "filename": "UltrahandOverlay.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/UltrahandOverlay/manifest.install",
-          "size": 2816,
-          "sha256": "1c09e0f844e981c5b90e2a245028fd90391814a0af1b2d27b2197c7ea298c677"
+          "size": 2823,
+          "sha256": "6e9033530662f843c720f76371e22798a4fcfe6bd6b3fbd5c8b9e281e264a89a"
         }
       ],
       "popularity": 95151,
@@ -77301,7 +77294,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-07-31"
+      "updated_at": "2026-11-12"
     },
     {
       "id": "vitadbtoo-vita:748",
