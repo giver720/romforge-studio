@@ -3484,7 +3484,7 @@
       "platforms": [
         "psvita"
       ],
-      "name": "Ambidextro",
+      "name": "Ambidextro (Rocroverss)",
       "summary": "Port of Ambidextro for PSVita.",
       "author": "Rocroverss",
       "version": "v.1.0",
@@ -3509,6 +3509,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "vitadbtoo-vita:1837",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Ambidextro (WolffsRoom)",
+      "summary": "Port of Ambidextro for PSVITA.",
+      "author": "WolffsRoom",
+      "version": "v.0.1.0-beta.1",
+      "title_id": "AMBX40001",
+      "description": "Port of Ambidextro for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5ae3df4f5cb3b1d27a9bfbc505bf81ba52b586fd35ddd5176a7bcefd0b7a3056.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WolffsRoom/ambidextro-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "AmbidextroVita-v0.1.0-beta.1.vpk",
+          "url": "https://github.com/WolffsRoom/ambidextro-vita/releases/download/v0.1.0-beta.1/AmbidextroVita-v0.1.0-beta.1.vpk",
+          "size": 23000674,
+          "md5": "429674881408bdf2e4c378db6e57cbf8"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
     },
     {
       "id": "hbas-switch:AmiiboGenerator",
@@ -10438,7 +10469,7 @@
       "name": "Burnout recomp GL",
       "summary": "Native port of Burnout Legends by static recompilation.",
       "author": "LAB0ULANGE",
-      "version": "v.0.0.1",
+      "version": "v.0.0.3",
       "title_id": "BRNG00001",
       "description": "Native port of Burnout Legends by static recompilation.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PSP",
@@ -10449,10 +10480,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "burnout-gl-0.0.1.vpk",
-          "url": "https://github.com/LAB0ULANGE/BurnoutLegends-Vita/releases/download/v0.0.1/burnout-gl-0.0.1.vpk",
-          "size": 11661754,
-          "md5": "f0d35ed38d74824092df427ed1bbe007"
+          "filename": "burnout-gl-0.0.3.vpk",
+          "url": "https://github.com/LAB0ULANGE/BurnoutLegends-Vita/releases/download/v0.0.3/burnout-gl-0.0.3.vpk",
+          "size": 38469483,
+          "md5": "fa788e386ecd767529066e0db606e689"
         }
       ],
       "popularity": 0,
@@ -17540,6 +17571,37 @@
       "updated_at": "2022-09-04"
     },
     {
+      "id": "vitadbtoo-vita:1838",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Deltarune Lightners",
+      "summary": "Port of Deltarune Lightners for PSVITA.",
+      "author": "WolffsRoom",
+      "version": "v.1.0",
+      "title_id": "DLLP40001",
+      "description": "Port of Deltarune Lightners for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b464c66693d95476964c274fc0f19b1a35920d56e572bc416397373a46e925dc.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WolffsRoom/DeltaruneLightnersVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "deltalightplusvita.vpk",
+          "url": "https://github.com/WolffsRoom/DeltaruneLightnersVita/releases/download/v1.0/deltalightplusvita.vpk",
+          "size": 23901128,
+          "md5": "5a15d122f4887264ac2a7399c738e7b5"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
+    },
+    {
       "id": "vitadbtoo-vita:1439",
       "platforms": [
         "psvita"
@@ -19405,7 +19467,7 @@
       "name": "Dragon Ball Z: BT3",
       "summary": "Port of Dragon Ball Z: Budokai Tenkaichi 3 for PSVita.",
       "author": "arielxflores",
-      "version": "v.1.1",
+      "version": "v.1.2.1",
       "title_id": "BTTD00010",
       "description": "Port of Dragon Ball Z: Budokai Tenkaichi 3 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PS2",
@@ -19417,9 +19479,9 @@
         {
           "format": "vpk",
           "filename": "Tenkaichi3Decomp-Vita.vpk",
-          "url": "https://github.com/arielxflores/Tenkaichi3Decomp-Vita/releases/download/v1.1/Tenkaichi3Decomp-Vita.vpk",
-          "size": 2665717,
-          "md5": "0023de8d3122ee72adfebd2c9e03d25e"
+          "url": "https://github.com/arielxflores/Tenkaichi3Decomp-Vita/releases/download/v1.2.1/Tenkaichi3Decomp-Vita.vpk",
+          "size": 5954773,
+          "md5": "4289a4c768c272c12b334912b353a63e"
         }
       ],
       "popularity": 0,
@@ -19427,6 +19489,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "vitadbtoo-vita:1831",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Dragon Ball Z: BT4",
+      "summary": "Port of Dragon Ball Z: Budokai Tenkaichi 4 for PSVita.",
+      "author": "manumastro & arielxflores",
+      "version": "v.1.1.2",
+      "title_id": "BTFV00010",
+      "description": "Port of Dragon Ball Z: Budokai Tenkaichi 4 for PSVita.",
+      "requirements": "- libshacccg.suprx\n- Game Data Files: PS2",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/55605d3242d19a5613c517c36efd33170e914e965041563588b4ebefe6443071.png",
+      "screenshots": [],
+      "release_url": "https://github.com/manumastro/DBZ-BT4-Tag-Team-Decomp-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "BT4-Vita.vpk",
+          "url": "https://github.com/manumastro/DBZ-BT4-Tag-Team-Decomp-Vita/releases/download/v1.1.2/BT4-Vita.vpk",
+          "size": 3374819,
+          "md5": "3b838b4b8448f6db4ff358d04ef6333e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
     },
     {
       "id": "vitadbtoo-vita:823",
@@ -20428,6 +20521,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2020-06-05T14:07:08Z"
+    },
+    {
+      "id": "vitadbtoo-vita:1835",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "DuskOnVita",
+      "summary": "Port of The Legend of Zelda: Twilight Princess for PSVita.",
+      "author": "NathanKneT",
+      "version": "v.0.9.0",
+      "title_id": "TWVT00001",
+      "description": "Port of The Legend of Zelda: Twilight Princess for PSVita.",
+      "requirements": "- libshacccg.suprx\n- Game Data Files: Gamecube",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/333bca95a1c0c32f2d9d2fd00bdb1f39812a39302ececfeba433da013d2092b0.png",
+      "screenshots": [],
+      "release_url": "https://github.com/NathanKneT/DuskOnVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "DuskOnVita.vpk",
+          "url": "https://github.com/NathanKneT/DuskOnVita/releases/download/v0.9.0/DuskOnVita.vpk",
+          "size": 11867758,
+          "md5": "eba5c177d679c650ed0fa530c9702e2a"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
     },
     {
       "id": "vitadbtoo-vita:542",
@@ -25216,7 +25340,7 @@
       ],
       "name": "FMVita",
       "summary": "Multifunctional file manager for PSVita.",
-      "author": "Wolff & TheFloW",
+      "author": "WolffsRoom & TheFloW",
       "version": "v.0.5.0",
       "title_id": "FILEMNGR1",
       "description": "FMVita (File Manager Vita) is an enhanced VitaShell (by TheFloW) fork by WolffsRoom with animated backgrounds, full touchscreen dialogs, column view, undo system, QR code scanning/downloading, and independent settings at ux0:FMVita/.",
@@ -28734,7 +28858,7 @@
       ],
       "name": "GoldenIdol-Vita",
       "summary": "Port of The Case of the Golden Idol for PSVita.",
-      "author": "Wolff",
+      "author": "WolffsRoom",
       "version": "v.0.8.7",
       "title_id": "IDOL00001",
       "description": "A port of The Case of the Golden Idol for the PlayStation Vita, adapted from the original Godot Engine PC release.",
@@ -33256,6 +33380,37 @@
       "updated_at": "2026-08-29"
     },
     {
+      "id": "vitadbtoo-vita:1833",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Inotia 4",
+      "summary": "Port of Inotia 4 for PSVita.",
+      "author": "MetalSyntax",
+      "version": "v.0.1",
+      "title_id": "PSVI4I001",
+      "description": "Port of Inotia 4 for PSVita.",
+      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: iOS",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/83148bb30905f8b299dba14557238ab56d247dc9d6c1f5c05c334fbb171b0980.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/Inotia4-iOS-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "inotia4ios.vpk",
+          "url": "https://github.com/MetalSyntax/Inotia4-iOS-vita/releases/download/v0.1/inotia4ios.vpk",
+          "size": 2857542,
+          "md5": "dcfa8068bc4a039d5ac12947cca11afb"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
+    },
+    {
       "id": "vitadbtoo-vita:1810",
       "platforms": [
         "psvita"
@@ -36309,7 +36464,7 @@
       "name": "KOTOR II",
       "summary": "Port of Star Wars: Knights of the Old Republic 2 for PSVita.",
       "author": "pyjabox",
-      "version": "v.0.5.8",
+      "version": "v.0.6.0",
       "title_id": "KOTR00002",
       "description": "Port of Star Wars: Knights of the Old Republic 2 for PSVita.",
       "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
@@ -36321,9 +36476,9 @@
         {
           "format": "vpk",
           "filename": "KOTOR2.vpk",
-          "url": "https://github.com/pyjabox/VitaKotor2/releases/download/v0.5.8/KOTOR2.vpk",
-          "size": 2138556,
-          "md5": "5f17bc55b8cca13663fbbb9103da56ed"
+          "url": "https://github.com/pyjabox/VitaKotor2/releases/download/v0.6.0/KOTOR2.vpk",
+          "size": 2194649,
+          "md5": "2753cf31f901fb3fa7ecca135836e848"
         }
       ],
       "popularity": 0,
@@ -42344,7 +42499,7 @@
       ],
       "name": "MOTHER Encore Vita",
       "summary": "Port of MOTHER Encore for PSVita.",
-      "author": "Wolff",
+      "author": "WolffsRoom",
       "version": "v.0.2b",
       "title_id": "MOTHER001",
       "description": "A native PlayStation Vita port of MOTHER: Encore, the free fan-made reimagining of MOTHER 1, adapted from its original Godot Engine PC release.",
@@ -43456,13 +43611,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64893968
+          "size": 64894100
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-08T16:44:45Z"
+      "updated_at": "2026-11-14T19:40:17Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -49379,30 +49534,30 @@
       "updated_at": "2026-11-11"
     },
     {
-      "id": "ps5-payloads-atlas:orbit-play-0.8.0-ps5.elf",
+      "id": "ps5-payloads-atlas:orbit-play-0.8.1-ps5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "orbit-play-ps5",
       "summary": "Remote Play for jailbroken PS5s on Mac, Windows and Linux. Play at home without PSN sign-in, or away from home over a direct, encrypted connection. Supports local PS5 accounts and sets up Remote Play for you.",
       "author": "",
-      "version": "v0.8.0",
+      "version": "v0.8.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/saawant12/orbit-play-ps5",
       "downloads": [
         {
           "format": "elf",
-          "filename": "orbit-play-0.8.0-ps5.elf",
-          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.8.0/orbit-play-0.8.0-ps5.elf",
-          "sha256": "ec081aaad816e49cfdd66e8a1ae501342939b3c4f627c6032c691d0574d548fa"
+          "filename": "orbit-play-0.8.1-ps5.elf",
+          "url": "https://github.com/saawant12/orbit-play-ps5/releases/download/v0.8.1/orbit-play-0.8.1-ps5.elf",
+          "sha256": "80147c2c50c68911dd69015785d1096778deefff605b22128a80e5da3213a3f5"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-12T05:14:15+08:00"
+      "updated_at": "2026-11-15T04:27:59+08:00"
     },
     {
       "id": "universal-db:EBLeifEricson/orchestrina",
@@ -49428,6 +49583,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2017-03-30T01:49:01Z"
+    },
+    {
+      "id": "vitadbtoo-vita:1832",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Orcs & Elves II",
+      "summary": "Port of Orcs & Elves II for PSVita.",
+      "author": "sweetpalma",
+      "version": "v.1.2.0",
+      "title_id": "ORCS00002",
+      "description": "Port of Orcs & Elves II for PSVita.",
+      "requirements": "- Game Data Files: Mobile",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0e8171b407af1470fd56dd54f68cf4257493907faf1f284d4811f7ec54abd0bf.png",
+      "screenshots": [],
+      "release_url": "https://github.com/sweetpalma/oe-2-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "oe2.vpk",
+          "url": "https://github.com/sweetpalma/oe-2-vita/releases/download/v1.2.0/oe2.vpk",
+          "size": 1093783,
+          "md5": "cc14e431e86352796349d0da02420ebe"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
     },
     {
       "id": "vitadbtoo-vita:814",
@@ -50220,6 +50406,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "vitadbtoo-vita:1836",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Paratopic",
+      "summary": "A Paratopic PSVita Port.",
+      "author": "PupueStudios",
+      "version": "v.1.0",
+      "title_id": "PRTP01000",
+      "description": "A Paratopic PSVita Port.",
+      "requirements": "- Game Data Files: PC",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d549913d90820b6edec94957ff92fa9c70892d2b61c9c6fec812e3d77d7b883f.png",
+      "screenshots": [],
+      "release_url": "https://github.com/PupueStudios/Paratopic-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "paratopic.vpk",
+          "url": "https://github.com/PupueStudios/Paratopic-Vita/releases/download/v1.0/paratopic.vpk",
+          "size": 16482024,
+          "md5": "6bd085d9abdca3c48b64fbf5e237c536"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
     },
     {
       "id": "vitadbtoo-vita:1475",
@@ -51978,6 +52195,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2022-08-28"
+    },
+    {
+      "id": "vitadbtoo-vita:1839",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Pizza Tower SAGE 2019",
+      "summary": "Port of the Pizza Tower SAGE 2019 demo for PSVITA.",
+      "author": "WolffsRoom",
+      "version": "v.0.55",
+      "title_id": "PTSAGE001",
+      "description": "Port of the Pizza Tower SAGE 2019 demo for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d49a9815df1931a3dbb11c535fe0bd478c01ede67ad6f92f00d08d11794aca46.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WolffsRoom/PizzaTowerSage2019Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "PizzaTowerSAGE-v0.55.vpk",
+          "url": "https://github.com/WolffsRoom/PizzaTowerSage2019Vita/releases/download/v0.55/PizzaTowerSAGE-v0.55.vpk",
+          "size": 7928694,
+          "md5": "e5027cff837fe14a828a33f6e47e2005"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
     },
     {
       "id": "ps5-payloads-atlas:pizza-hen-v2.00.elf",
@@ -54757,7 +55005,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 15632,
+      "popularity": 15741,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54784,7 +55032,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3646,
+      "popularity": 3652,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54811,7 +55059,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 14818,
+      "popularity": 14901,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54838,7 +55086,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7176,
+      "popularity": 7189,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54865,7 +55113,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 76835,
+      "popularity": 77146,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54892,7 +55140,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 213,
+      "popularity": 225,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -55036,30 +55284,30 @@
       "updated_at": "2026-10-05T22:00:24+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5cleanup_v1.0.9.elf",
+      "id": "ps5-payloads-atlas:ps5cleanup_v1.0.10.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PS5-Cleanup",
       "summary": "Clean up a jailbroken PS5 like new, no reinstall.",
       "author": "",
-      "version": "v1.0.9",
+      "version": "v1.0.10",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/xxbneutzernamexx/ps5-cleanup",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5cleanup_v1.0.9.elf",
-          "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.9/ps5cleanup_v1.0.9.elf",
-          "sha256": "381e0555b5c67ebb5236d5b47ce80ced81239d79c4134ede2f1a783ceab108bf"
+          "filename": "ps5cleanup_v1.0.10.elf",
+          "url": "https://github.com/xXBneutzerNameXx/PS5-Cleanup/releases/download/v1.0.10/ps5cleanup_v1.0.10.elf",
+          "sha256": "992332419af558a82d7ba0fb7feb6dbe73043ed0b162c55c84b47b5bdc3b017a"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-10T04:46:10+08:00"
+      "updated_at": "2026-11-15T04:34:21+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-date-time-sync.elf",
@@ -55764,30 +56012,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.4.19.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.4.20.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.4.19",
+      "version": "v12.4.20",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.4.19.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.19/ps5upload-12.4.19.elf",
-          "sha256": "cd3765ab9c643190bb3ca00b40de0dee5a90d6f5f0f1085d0decd056c5d91889"
+          "filename": "ps5upload-12.4.20.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.20/ps5upload-12.4.20.elf",
+          "sha256": "23584161eb851eca7185ede538387da8a280cfc84092e0c3dff488e41975cbba"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-14T19:06:20+08:00"
+      "updated_at": "2026-11-15T04:51:11+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -66743,6 +66991,37 @@
       "updated_at": "2024-02-12T00:00:00+00:00"
     },
     {
+      "id": "vitadbtoo-vita:1834",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Sonic CD Redux",
+      "summary": "The definitive way to play Sonic CD on your PSVita.",
+      "author": "PupueStudios",
+      "version": "v.1.0",
+      "title_id": "SCDR00001",
+      "description": "The definitive way to play Sonic CD on your PSVita.",
+      "requirements": "- libshacccg.suprx\n- Game Data Files: PC/Android",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/adb004b097bc73337dc2d36d7441ea64f7fc888133fda1c1594c53e1e7fa32fa.png",
+      "screenshots": [],
+      "release_url": "https://github.com/PupueStudios/SCD-Vita-Redux/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "SonicCDRedux.vpk",
+          "url": "https://github.com/PupueStudios/SCD-Vita-Redux/releases/download/v1.0/SonicCDRedux.vpk",
+          "size": 2168332,
+          "md5": "b16acbfb543c9237435bb150f782bc03"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
+    },
+    {
       "id": "vitadbtoo-vita:868",
       "platforms": [
         "psvita"
@@ -75302,7 +75581,7 @@
       "name": "TNTV",
       "summary": "Native port of The New Tetris for PSVITA and PSTV.",
       "author": "T64NCollection",
-      "version": "v.1.0",
+      "version": "v.1.01",
       "title_id": "NTET00001",
       "description": "All eight solo stages run at about 60 FPS, with the Wonders construction, saved progress and original sound restored. Local 2 to 4 player multiplayer works on PSTV.",
       "requirements": "- Game Data Files: The New Tetris (N64, USA 1.0) ROM in ux0:/data/TNTV/",
@@ -75313,10 +75592,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "TNTV_v1.0.vpk",
-          "url": "https://github.com/T64NCollection/TNTV/releases/download/v1.0/TNTV_v1.0.vpk",
-          "size": 711691,
-          "md5": "5365a09f8a27448318e300e88709dbe0"
+          "filename": "TNTV_v1.01.vpk",
+          "url": "https://github.com/T64NCollection/TNTV/releases/download/v1.01/TNTV_v1.01.vpk",
+          "size": 741555,
+          "md5": "db287b5b8567082ee290eb6ba0e0d782"
         }
       ],
       "popularity": 0,
@@ -78712,7 +78991,7 @@
       "name": "Vampire Survivors",
       "summary": "Recreation of Vampire Survivors for PSVita.",
       "author": "RaZorGaToR",
-      "version": "v.1.1",
+      "version": "v.1.2.1",
       "title_id": "VSPH00001",
       "description": "Recreation of Vampire Survivors for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -78723,10 +79002,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "VampireSurvivors-Vita-v1.1.vpk",
-          "url": "https://github.com/Federicoilgrandebardo/vampire-survivors-vita/releases/download/v1.1/VampireSurvivors-Vita-v1.1.vpk",
-          "size": 13150344,
-          "md5": "1ada18ffe44f657bdf9ae39aaf686871"
+          "filename": "VampireSurvivors-Vita-v1.2.1.vpk",
+          "url": "https://github.com/Federicoilgrandebardo/vampire-survivors-vita/releases/download/v1.2.1/VampireSurvivors-Vita-v1.2.1.vpk",
+          "size": 13368510,
+          "md5": "33900660db816df3bb4eff3eacb19b47"
         }
       ],
       "popularity": 0,
@@ -84201,7 +84480,7 @@
       "name": "Void Trader",
       "summary": "Space trading game for PSVita.",
       "author": "Syncriel",
-      "version": "v.1.5.8",
+      "version": "v.1.6.1",
       "title_id": "VTRD00001",
       "description": "Space trading game for PSVita.",
       "requirements": "- libshacccg.suprx",
@@ -84212,10 +84491,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "voidtrader-v1.5.8.vpk",
-          "url": "https://github.com/Syncriel/void-trader/releases/download/v1.5.8/voidtrader-v1.5.8.vpk",
-          "size": 1626706,
-          "md5": "03742a4bf4b38836720dd7fde57c67e5"
+          "filename": "voidtrader-v1.6.1.vpk",
+          "url": "https://github.com/Syncriel/void-trader/releases/download/v1.6.1/voidtrader-v1.6.1.vpk",
+          "size": 1652498,
+          "md5": "aeef3eb1a71cf014a02c65f4cf993af3"
         }
       ],
       "popularity": 0,
@@ -88196,6 +88475,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2023-09-05"
+    },
+    {
+      "id": "vitadbtoo-vita:1830",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "World of Illusion",
+      "summary": "PSVita port of World of Illusion Starring Mickey Mouse and Donald Duck.",
+      "author": "Ports Collection",
+      "version": "v.1.0",
+      "title_id": "WOLI00001",
+      "description": "PSVita port of World of Illusion Starring Mickey Mouse and Donald Duck.",
+      "requirements": "- Game Data Files: Genesis/MegaDrive",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1a8108b6e153cc23a265d3e5810f2c3e02fe2fee42d20671e156295de221181c.png",
+      "screenshots": [],
+      "release_url": "https://github.com/LokiDSx/WorldofIllusionStarringMickeyMouseandDonaldDuck-PS-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "WorldOfIllusion.vpk",
+          "url": "https://github.com/LokiDSx/WorldofIllusionStarringMickeyMouseandDonaldDuck-PS-Vita/releases/download/v1.0/WorldOfIllusion.vpk",
+          "size": 1465493,
+          "md5": "9d8e487a1bda3617b5b10927657cb8d9"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-14"
     },
     {
       "id": "vitadbtoo-vita:994",
