@@ -4752,6 +4752,37 @@
       "updated_at": "2026-09-26"
     },
     {
+      "id": "vitadbtoo-vita:1808",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Area Play Vita Edition",
+      "summary": "Game hub for PSVita.",
+      "author": "NexArea-Official",
+      "version": "v.1.0",
+      "title_id": "ARPL00001",
+      "description": "Game hub for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/32abf7bbabff0094575ad9397e0f304c4cf6557ab14d80635ce95f7ecc406d09.png",
+      "screenshots": [],
+      "release_url": "https://github.com/NexArea-Official/AreaPlay/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "AreaPlay.vpk",
+          "url": "https://github.com/NexArea-Official/AreaPlay/releases/download/V1.0/AreaPlay.vpk",
+          "size": 2437177,
+          "md5": "e3eaf802ee53a7a3f3422d4f2ca7f6bf"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
+    },
+    {
       "id": "hbas-switch:argon-nx",
       "platforms": [
         "switch"
@@ -11416,7 +11447,7 @@
       "name": "Carmageddon 2",
       "summary": "Port of Carmageddon II for PSVita.",
       "author": "bojan1986819",
-      "version": "v.1.0",
+      "version": "v.1.1",
       "title_id": "C2VITA001",
       "description": "Port of Carmageddon II for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -11427,10 +11458,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "carpocalypse2-vita-v1.0.vpk",
-          "url": "https://github.com/bojan1986819/Carpocalypse2/releases/download/v1.0/carpocalypse2-vita-v1.0.vpk",
-          "size": 2786647,
-          "md5": "7839b7491cf0e004eb42b83548df3579"
+          "filename": "carpocalypse2-vita-v1.1.vpk",
+          "url": "https://github.com/bojan1986819/Carpocalypse2/releases/download/v1.1/carpocalypse2-vita-v1.1.vpk",
+          "size": 2811825,
+          "md5": "3d8713e02feeb8d227a41f0cc544c4cd"
         }
       ],
       "popularity": 0,
@@ -12476,6 +12507,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2023-10-08"
+    },
+    {
+      "id": "vitadbtoo-vita:1811",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Chess Online",
+      "summary": "Chess app for PSVita.",
+      "author": "flowoverflow",
+      "version": "v.1.0.1",
+      "title_id": "CHESSONL1",
+      "description": "Chess app for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c6479cc1ff72bf495a09b159535c797cdadf296c80cb198065b381ad30266250.png",
+      "screenshots": [],
+      "release_url": "https://github.com/flowoverflow/chess-online-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ChessOnline-1.0.1.vpk",
+          "url": "https://github.com/flowoverflow/chess-online-vita/releases/download/v1.0.1/ChessOnline-1.0.1.vpk",
+          "size": 5638624,
+          "md5": "1e007ca59b343156bc803568df434c4c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
     },
     {
       "id": "vitadbtoo-vita:1616",
@@ -15348,7 +15410,7 @@
       "name": "CrossCraft SurvivalTest",
       "summary": "Recreation of Minecraft Java Edition: Classic Survival Test.",
       "author": "Iridescence & MotoLegacy",
-      "version": "ST3",
+      "version": "ST4",
       "title_id": "CCST00100",
       "description": "CrossCraft-SurvivalTest is a project that aims to implement Minecraft Java Edition: Classic Survival Test. It is not a clone. CrossCraft does not use any of the source code of the original game, nor do the developers have any knowledge of the source code. CrossCraft does not use the original copyrighted assets. All knowledge is figured out with documentation and observation of in-game mechanics.",
       "requirements": "- Data files in ux0:data/CrossCraft-ST",
@@ -15361,8 +15423,8 @@
           "format": "vpk",
           "filename": "850-CrossCraft-SurvivalTest.vpk",
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/850-CrossCraft-SurvivalTest.vpk",
-          "size": 36059515,
-          "md5": "eb4dc8a47ee98a3d1f04355b7ef6ca9f"
+          "size": 10000187,
+          "md5": "f64bb19e965f26130d0c36bbfb71b3d0"
         },
         {
           "format": "data",
@@ -15384,7 +15446,7 @@
       "name": "CrossCraft SurvivalTest",
       "summary": "Recreation of Minecraft Java Edition: Classic Survival Test.",
       "author": "Iridescence & MotoLegacy",
-      "version": "ST3",
+      "version": "ST4",
       "title_id": "UCJS10041",
       "description": "CrossCraft-SurvivalTest is a project that aims to implement Minecraft Java Edition: Classic Survival Test. It is not a clone. CrossCraft does not use any of the source code of the original game, nor do the developers have any knowledge of the source code. CrossCraft does not use the original copyrighted assets. All knowledge is figured out with documentation and observation of in-game mechanics.",
       "requirements": "",
@@ -15396,9 +15458,9 @@
         {
           "format": "zip",
           "filename": "CrossCraft-PSP.zip",
-          "url": "https://github.com/CrossCraft/CrossCraft-SurvivalTest/releases/download/ST3/CrossCraft-PSP.zip",
-          "size": 36864192,
-          "md5": "0575beec9ad02b47c7d642a89a88dbf5"
+          "url": "https://github.com/CrossCraft/CrossCraft-SurvivalTest/releases/download/ST4/CrossCraft-PSP.zip",
+          "size": 9746437,
+          "md5": "9ca3b3ece8647b3837e05eda5c198312"
         }
       ],
       "popularity": 1935,
@@ -21806,37 +21868,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2024-02-09"
-    },
-    {
-      "id": "vitadbtoo-vita:1778",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "Engram Vita",
-      "summary": "Engram Vita for PSVITA.",
-      "author": "badmanwazzy37",
-      "version": "v.1.0",
-      "title_id": null,
-      "description": "",
-      "requirements": "",
-      "license": null,
-      "icon_url": null,
-      "screenshots": [],
-      "release_url": "https://github.com/chazzarchibald-ops/engram-vita/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "engram.suprx",
-          "url": "https://github.com/chazzarchibald-ops/engram-vita/releases/download/1.0/engram.suprx",
-          "size": 27371,
-          "md5": "d6d709df7ce68052cdf156c554f5756c"
-        }
-      ],
-      "popularity": 0,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2026-11-11"
     },
     {
       "id": "hbas-switch:Enigma",
@@ -28577,7 +28608,7 @@
       "name": "GoHAN",
       "summary": "Savedata modifier for PSVITA.",
       "author": "OneRice07",
-      "version": "v.2.1.0",
+      "version": "v.2.10",
       "title_id": "ZXGQ00003",
       "description": "Homebrew that allows the user to modifiy games savedata.",
       "requirements": "",
@@ -28588,8 +28619,8 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "250-GoHAN.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/250-GoHAN.vpk",
+          "filename": "GoHAN_2.10.vpk",
+          "url": "https://github.com/OneRice07/GoHAN/releases/download/v2.10/GoHAN_2.10.vpk",
           "size": 971586,
           "md5": "74035335046405b0c6c0d5f132596037"
         }
@@ -30117,7 +30148,7 @@
       "name": "HardRPG",
       "summary": "RPG Maker games player for PSVita.",
       "author": "Asukate",
-      "version": "v.0.5.2-alpha",
+      "version": "v.0.5.3-alpha",
       "title_id": "HARDRPG01",
       "description": "RPG Maker games player for PSVita.",
       "requirements": "- libshacccg.suprx",
@@ -30128,10 +30159,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "HardRPG-0.5.2.vpk",
-          "url": "https://github.com/Asukate/mkxp-z-vita/releases/download/v0.5.2-alpha/HardRPG-0.5.2.vpk",
-          "size": 25389122,
-          "md5": "6fbcd6c7820c9f26bd7690155a3142a7"
+          "filename": "HardRPG-0.5.3.vpk",
+          "url": "https://github.com/Asukate/mkxp-z-vita/releases/download/v0.5.3-alpha/HardRPG-0.5.3.vpk",
+          "size": 25399388,
+          "md5": "84fbadebe2b59e3749c69bfee5939476"
         }
       ],
       "popularity": 0,
@@ -30529,6 +30560,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2026-11-12"
+    },
+    {
+      "id": "vitadbtoo-vita:1812",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "He-Man",
+      "summary": "Port of He-Man: The Most Powerful Game for PSVita.",
+      "author": "DominicanNY",
+      "version": "v.1.0",
+      "title_id": "HEMAN0001",
+      "description": "Port of He-Man: The Most Powerful Game for PSVita.",
+      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5215280d20372b703e52585bea9bb49f313c3bbc1f4c6542bad08ae8c8628ea8.png",
+      "screenshots": [],
+      "release_url": "https://github.com/gmejia11/he-man_vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "heman.vpk",
+          "url": "https://github.com/gmejia11/he-man_vita/releases/download/v1.0/heman.vpk",
+          "size": 2237591,
+          "md5": "b4c7582dd99cba723a2ddd41427e7c8f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
     },
     {
       "id": "ps5-payloads-atlas:hearbridge-1.4.0.elf",
@@ -33194,6 +33256,37 @@
       "updated_at": "2026-08-29"
     },
     {
+      "id": "vitadbtoo-vita:1810",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Inotia Legend of Feanor",
+      "summary": "Port of The Chronicles of Inotia: Legend of Feanor for PSVita.",
+      "author": "MetalSyntax",
+      "version": "v.0.1.0",
+      "title_id": "PSVFEANOR",
+      "description": "Port of The Chronicles of Inotia: Legend of Feanor for PSVita.",
+      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: iOS",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/772219e0441137632ef0bf75f2ade0bf86d06248ac3d842ab84baadb0b85aa9d.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/Feanor-iOS-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "feanor.vpk",
+          "url": "https://github.com/MetalSyntax/Feanor-iOS-vita/releases/download/v0.1.0/feanor.vpk",
+          "size": 3851393,
+          "md5": "3d313cb0c5389b8cc478f49ccb02831b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
+    },
+    {
       "id": "universal-db:TehFridge/InPost3DS",
       "platforms": [
         "3ds"
@@ -35841,7 +35934,7 @@
       "name": "Kingdom Hearts 358/2 Days",
       "summary": "Port of Kingdom Hearts 358/2 Days for PSVita.",
       "author": "Galetote",
-      "version": "v.1.0",
+      "version": "v.1.1",
       "title_id": "KHDD00358",
       "description": "Port of Kingdom Hearts 358/2 Days for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: NDS",
@@ -35852,10 +35945,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "khdays-vita-1.0.0.vpk",
-          "url": "https://github.com/ggdrn/KH-DAYS-VITA/releases/download/1.0/khdays-vita-1.0.0.vpk",
-          "size": 3978235,
-          "md5": "e4d481641bdeac328c39e5603d21410c"
+          "filename": "khdays-vita-1.1.0.vpk",
+          "url": "https://github.com/ggdrn/KH-DAYS-VITA/releases/download/1.1/khdays-vita-1.1.0.vpk",
+          "size": 3978210,
+          "md5": "0e6ed72a77f73add1734b40e5d0a6218"
         }
       ],
       "popularity": 0,
@@ -37656,7 +37749,7 @@
       "name": "LinuxOnVita",
       "summary": "Runs Linux on the PSVITA.",
       "author": "devwithzachary",
-      "version": "v.1.5.0",
+      "version": "v.1.6.0",
       "title_id": "LNXONVITA",
       "description": "Runs Linux on the PSVITA.",
       "requirements": "",
@@ -37668,9 +37761,9 @@
         {
           "format": "vpk",
           "filename": "LinuxOnVita.vpk",
-          "url": "https://github.com/devwithzachary/LinuxOnVita/releases/download/1.5.0/LinuxOnVita.vpk",
-          "size": 24940651,
-          "md5": "8d9d66b665d2f3088eff21d625da32be"
+          "url": "https://github.com/devwithzachary/LinuxOnVita/releases/download/1.6.0/LinuxOnVita.vpk",
+          "size": 26968793,
+          "md5": "dda3b9082aa0bd67bb8bd46ae8482dec"
         }
       ],
       "popularity": 0,
@@ -40576,6 +40669,37 @@
       "updated_at": "2024-03-11"
     },
     {
+      "id": "vitadbtoo-vita:1816",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Mii Maker Vita",
+      "summary": "Mii Maker clone for the PS Vita.",
+      "author": "karaoke112",
+      "version": "v.1.0.0",
+      "title_id": "MIIV00001",
+      "description": "Mii Maker clone for the PS Vita.",
+      "requirements": "- libshacccg.suprx",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f30419e31394ce5c7e9aeecb7ce0b42a8e4ddf98c12fb7ebb3ad7361fab7dee7.png",
+      "screenshots": [],
+      "release_url": "https://github.com/karaoke112/mii-maker-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "mii-maker-vita.vpk",
+          "url": "https://github.com/karaoke112/mii-maker-vita/releases/download/v1.0.0/mii-maker-vita.vpk",
+          "size": 3799234,
+          "md5": "89781546a7105ce56afe342f851ca65b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
+    },
+    {
       "id": "open-shop-channel-wii:mii-renamer",
       "platforms": [
         "wii"
@@ -41874,7 +41998,7 @@
       "name": "Monster Hunter Tri",
       "summary": "Port of Monster Hunter Tri for PSVita.",
       "author": "Grarak",
-      "version": "v.0.3",
+      "version": "v.0.3.1",
       "title_id": "MH3WII001",
       "description": "Port of Monster Hunter Tri for PSVita.",
       "requirements": "- kubridge.skprx\n- CapUnlocker.skprx\n- Game Data Files: Wii",
@@ -41886,9 +42010,9 @@
         {
           "format": "vpk",
           "filename": "mh3-vita.vpk",
-          "url": "https://github.com/Grarak/mh3-wii/releases/download/0.3/mh3-vita.vpk",
-          "size": 19935529,
-          "md5": "2e487a281ea7699b792cac137cee9608"
+          "url": "https://github.com/Grarak/mh3-wii/releases/download/0.3.1/mh3-vita.vpk",
+          "size": 19936277,
+          "md5": "2e63d40e31e47ff4c098bd32af80ea11"
         }
       ],
       "popularity": 0,
@@ -43211,6 +43335,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2019-10-05"
+    },
+    {
+      "id": "vitadbtoo-vita:1819",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Naruto Shippuden: Ultimate Ninja Storm 2",
+      "summary": "Port of Naruto Shippuden: Ultimate Ninja Storm 2 for PSVita.",
+      "author": "Kruvyy",
+      "version": "v.1.0",
+      "title_id": null,
+      "description": "",
+      "requirements": "- libshacccg.suprx\n- Game Data Files: Xbox 360",
+      "license": null,
+      "icon_url": null,
+      "screenshots": [],
+      "release_url": "https://github.com/Kruvyy/naruto-storm2-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "storm2_vita.vpk",
+          "url": "https://github.com/Kruvyy/naruto-storm2-vita/releases/download/storm2vita/storm2_vita.vpk",
+          "size": 18867969,
+          "md5": "d1a982afe5a1a8c39799143e61d5c903"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
     },
     {
       "id": "vitadbtoo-vita:1351",
@@ -52942,7 +53097,7 @@
       "name": "Pokemon Colosseum",
       "summary": "Port of Pokemon Colosseum for PSVita.",
       "author": "Rinnegatamante",
-      "version": "v.1.0",
+      "version": "v.1.1",
       "title_id": "PCOLN0010",
       "description": "Port of Pokemon Colosseum for PSVita.",
       "requirements": "- libshacccg.suprx\n- CapUnlocker.skprx\n- Game Data Files: Gamecube",
@@ -52954,9 +53109,9 @@
         {
           "format": "vpk",
           "filename": "PokemonColosseum.vpk",
-          "url": "https://github.com/Rinnegatamante/colosseum-vita/releases/download/v.1.0/PokemonColosseum.vpk",
-          "size": 4903113,
-          "md5": "7c8125d20c669287aa1eefcd45b95396"
+          "url": "https://github.com/Rinnegatamante/colosseum-vita/releases/download/v.1.1/PokemonColosseum.vpk",
+          "size": 5100366,
+          "md5": "a6c2e29c386ff2a3a66a60fc28503920"
         }
       ],
       "popularity": 0,
@@ -54602,7 +54757,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 15286,
+      "popularity": 15427,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54629,7 +54784,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3609,
+      "popularity": 3638,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54656,7 +54811,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 14552,
+      "popularity": 14657,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54683,7 +54838,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7142,
+      "popularity": 7157,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54710,7 +54865,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 75602,
+      "popularity": 76174,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54737,7 +54892,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 167,
+      "popularity": 186,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -54784,7 +54939,7 @@
       "name": "ps4mount",
       "summary": "Allows for PKG games on USB external devices to mount on jailbroken PS5s without installing on internal storage or PS5 formatted USB storage",
       "author": "",
-      "version": "v0.7.3",
+      "version": "v0.8.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/gasb07/ps4mount",
@@ -54792,15 +54947,15 @@
         {
           "format": "elf",
           "filename": "ps4mount.elf",
-          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.7.3/ps4mount.elf",
-          "sha256": "f107a443aa83196744deeefe748a7f09d8b8b340a30df1b232535b6ee0f15127"
+          "url": "https://github.com/gasb07/ps4mount/releases/download/v0.8.0/ps4mount.elf",
+          "sha256": "2f7d548cdb5c2beba631299fa9f1e5c18cca65c648443f9f36ffab9940a6a5ac"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-06T01:13:28+08:00"
+      "updated_at": "2026-11-14T05:24:31+08:00"
     },
     {
       "id": "ps5-payloads-atlas:fps60.elf",
@@ -57460,7 +57615,7 @@
       "name": "Raging Thunder",
       "summary": "Port of Raging Thunder for PSVita.",
       "author": "MetalSyntax",
-      "version": "v.1.0.1",
+      "version": "v.1.0.2",
       "title_id": "PSVRT0001",
       "description": "Port of Raging Thunder for PSVita.",
       "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
@@ -57472,9 +57627,9 @@
         {
           "format": "vpk",
           "filename": "ragingthunder.vpk",
-          "url": "https://github.com/MetalSyntax/Raging-Thunder-vita/releases/download/v1.0.1/ragingthunder.vpk",
-          "size": 922277,
-          "md5": "0eb79cc5f67109dccb4dba2f878c9c77"
+          "url": "https://github.com/MetalSyntax/Raging-Thunder-vita/releases/download/v1.0.2/ragingthunder.vpk",
+          "size": 922121,
+          "md5": "74d15d33ffa2a6d6e2c1b2c6d3f664a5"
         }
       ],
       "popularity": 0,
@@ -57491,7 +57646,7 @@
       "name": "Raging Thunder 2",
       "summary": "Port of Raging Thunder 2 for PSVita.",
       "author": "MetalSyntax",
-      "version": "v.1.1.1",
+      "version": "v.1.1.2",
       "title_id": "PSVRT0002",
       "description": "Port of Raging Thunder 2 for PSVita.",
       "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
@@ -57503,9 +57658,9 @@
         {
           "format": "vpk",
           "filename": "ragingthunder2.vpk",
-          "url": "https://github.com/MetalSyntax/Raging-Thunder-2-vita/releases/download/v1.1.1/ragingthunder2.vpk",
-          "size": 1169596,
-          "md5": "7f68a9fbb713c3b4b2e67d0b4cf7ff5c"
+          "url": "https://github.com/MetalSyntax/Raging-Thunder-2-vita/releases/download/v1.1.2/ragingthunder2.vpk",
+          "size": 1169550,
+          "md5": "eb8a002206a11d5be26acc2de3d6b5fa"
         }
       ],
       "popularity": 0,
@@ -57583,7 +57738,7 @@
       "name": "Rally Mayhem",
       "summary": "Tiny top-down racing game with 1-5 local players.",
       "author": "rsn8887",
-      "version": "v.1.1.0",
+      "version": "v.1.2.0",
       "title_id": "RLYM00001",
       "description": "Tiny top-down racing game with 1-5 local players.",
       "requirements": "",
@@ -57594,10 +57749,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "RallyMayhem-1.1.0-Vita.vpk",
-          "url": "https://github.com/rsn8887/RallyMayhem/releases/download/v1.1.0/RallyMayhem-1.1.0-Vita.vpk",
-          "size": 1984753,
-          "md5": "c21da9cf00d2c5cdda14e79ecffc97b8"
+          "filename": "RallyMayhem-1.2.0-Vita.vpk",
+          "url": "https://github.com/rsn8887/RallyMayhem/releases/download/v1.2.0/RallyMayhem-1.2.0-Vita.vpk",
+          "size": 1979933,
+          "md5": "d2df2c3ebdf2dc4f94802fb73d5c3315"
         }
       ],
       "popularity": 0,
@@ -57704,6 +57859,37 @@
       "updated_at": "2020-05-07"
     },
     {
+      "id": "vitadbtoo-vita:1817",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "RAP-Vita",
+      "summary": "Port of Raptor: Call of the Shadows for PSVita.",
+      "author": "Paxrisen",
+      "version": "v.1.0",
+      "title_id": "RAPT00001",
+      "description": "Port of Raptor: Call of the Shadows for PSVita.",
+      "requirements": "- Game Data Files: PC",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5a8aa19bdaf1ef5da6a9b7d095beb5f9b6c6f5f3a60e0591ab43ee20fe3f8dc9.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Paxrisen/RAP-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Rap-Vita_v1.0.vpk",
+          "url": "https://github.com/Paxrisen/RAP-Vita/releases/download/RAP-Vita1.0/Rap-Vita_v1.0.vpk",
+          "size": 1036402,
+          "md5": "c5af526713839df42dc45f2dee619801"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
+    },
+    {
       "id": "universal-db:RetroGamer02/raptor-consoles",
       "platforms": [
         "3ds"
@@ -57797,6 +57983,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2018-09-21"
+    },
+    {
+      "id": "vitadbtoo-vita:1813",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Rayman Fiesta Run",
+      "summary": "Port of Rayman Fiesta Run for PSVita.",
+      "author": "MetalSyntax",
+      "version": "v.0.1",
+      "title_id": "PSVRFR001",
+      "description": "Port of Rayman Fiesta Run for PSVita.",
+      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: iOS",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/7ef56ec84e0d2f8bc75728660f6e06023310222cd356033c57f660a174d81d2b.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/Rayman-Fiesta-Run-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "raymanfiesta.vpk",
+          "url": "https://github.com/MetalSyntax/Rayman-Fiesta-Run-vita/releases/download/v0.1/raymanfiesta.vpk",
+          "size": 2009077,
+          "md5": "076c784b0dad8e2d149a08677be3070e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
     },
     {
       "id": "vitadbtoo-vita:1745",
@@ -58022,6 +58239,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-02-25T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-vita:1809",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Real Racing HD",
+      "summary": "Port of Real Racing HD for PSVita.",
+      "author": "MetalSyntax",
+      "version": "v.1.0.0",
+      "title_id": "PSVRRHD01",
+      "description": "Port of Real Racing HD for PSVita.",
+      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: iOS",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/6fe4d125a43ac618773c86c77200cc841e4166c98ac71f5bcf3379b94f057a2a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/Real-Racing-HD-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "realracinghd.vpk",
+          "url": "https://github.com/MetalSyntax/Real-Racing-HD-vita/releases/download/v1.0.0/realracinghd.vpk",
+          "size": 2354768,
+          "md5": "148bdb36807eee03c14658699e585016"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
     },
     {
       "id": "vitadbtoo-vita:689",
@@ -62222,37 +62470,6 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2020-11-26"
-    },
-    {
-      "id": "vitadbtoo-vita:1772",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "Screenshot NoShard",
-      "summary": "Screenshot NoShard for PSVITA.",
-      "author": "devnoname120",
-      "version": "v.1.2.0",
-      "title_id": null,
-      "description": "",
-      "requirements": "",
-      "license": null,
-      "icon_url": null,
-      "screenshots": [],
-      "release_url": "https://github.com/devnoname120/screenshot-noshard/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "screenshot_noshard.suprx",
-          "url": "https://github.com/devnoname120/screenshot-noshard/releases/download/v1.2.0/screenshot_noshard.suprx",
-          "size": 5992,
-          "md5": "77e67f20de02d8a8788556d9d11bef9d"
-        }
-      ],
-      "popularity": 0,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2026-11-11"
     },
     {
       "id": "universal-db:ihaveamac/screenshot-merge",
@@ -67285,7 +67502,7 @@
       "name": "Space Taxi Mayhem",
       "summary": "Multiplayer gravity-based game with 1-5 local players.",
       "author": "rsn8887",
-      "version": "v.1.4.0",
+      "version": "v.1.5.0",
       "title_id": "STXM00001",
       "description": "Multiplayer gravity-based game with 1-5 local players.",
       "requirements": "",
@@ -67296,10 +67513,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "SpaceTaxiMayhem-1.4.0-Vita.vpk",
-          "url": "https://github.com/rsn8887/SpaceTaxiMayhem/releases/download/v1.4.0/SpaceTaxiMayhem-1.4.0-Vita.vpk",
-          "size": 3343862,
-          "md5": "c42c18d19b01d731c69c6c88ac19682d"
+          "filename": "SpaceTaxiMayhem-1.5.0-Vita.vpk",
+          "url": "https://github.com/rsn8887/SpaceTaxiMayhem/releases/download/v1.5.0/SpaceTaxiMayhem-1.5.0-Vita.vpk",
+          "size": 3344646,
+          "md5": "a985874650b610063c7cc39ee4b5bac3"
         }
       ],
       "popularity": 0,
@@ -67861,7 +68078,7 @@
       "name": "Spyro Vita",
       "summary": "Port of Spyro: The Dragon for PSVita.",
       "author": "ShayVD",
-      "version": "v.1.1.0",
+      "version": "v.1.2.0",
       "title_id": "SPYV00001",
       "description": "Port of Spyro: The Dragon for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PS1",
@@ -67873,9 +68090,9 @@
         {
           "format": "vpk",
           "filename": "spyro-vita.vpk",
-          "url": "https://github.com/ShayVD/spyro-vita/releases/download/v1.1.0/spyro-vita.vpk",
-          "size": 3085053,
-          "md5": "a3ab32c9fb317c464ed728a9e069dbbf"
+          "url": "https://github.com/ShayVD/spyro-vita/releases/download/v1.2.0/spyro-vita.vpk",
+          "size": 4160244,
+          "md5": "6177e6de6d950322a4e679383ec2028c"
         }
       ],
       "popularity": 0,
@@ -69059,6 +69276,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2021-12-14T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-vita:1815",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Storage Manager",
+      "summary": "Storage manager for PSVita.",
+      "author": "StaticLift",
+      "version": "v.1.0",
+      "title_id": "STRG00001",
+      "description": "Storage manager for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/279ae7fdd81f8d5901b288ad938ed97377377ff4fca164435678903ce6818b5d.png",
+      "screenshots": [],
+      "release_url": "https://github.com/StaticLift/vita-storage-manager/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VitaStorageManager.vpk",
+          "url": "https://github.com/StaticLift/vita-storage-manager/releases/download/v1.0/VitaStorageManager.vpk",
+          "size": 527273,
+          "md5": "bf4fd0b4c0188248a9c4ef9156a2cd04"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
     },
     {
       "id": "vitadbtoo-vita:1205",
@@ -72579,7 +72827,7 @@
       "name": "Tanks 2027",
       "summary": "Battle City / Tank 1990 recreation port for PSVita.",
       "author": "Ports Collection",
-      "version": "v.1.0",
+      "version": "v.1.3",
       "title_id": "TANK00001",
       "description": "Battle City / Tank 1990 recreation port for PSVita.",
       "requirements": "",
@@ -72590,10 +72838,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Tanks2027vita.vpk",
-          "url": "https://github.com/LokiDSx/Tanks-2027/releases/download/1.0/Tanks2027vita.vpk",
-          "size": 2622911,
-          "md5": "6547a1945c17c8a3cb7bec0ca046bb2c"
+          "filename": "Tanks.vpk",
+          "url": "https://github.com/LokiDSx/Tanks-2027/releases/download/v1.3/Tanks.vpk",
+          "size": 2648461,
+          "md5": "66bee986d34a4debcfee659051fdc0b0"
         }
       ],
       "popularity": 0,
@@ -74326,7 +74574,7 @@
       "name": "THUG2",
       "summary": "Native port of Tony Hawk's Underground 2.",
       "author": "iwannagooutside",
-      "version": "v.1.0.0",
+      "version": "v.1.0.2",
       "title_id": "THUG20001",
       "description": "Native port of Tony Hawk's Underground 2.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: Xbox",
@@ -74338,9 +74586,9 @@
         {
           "format": "vpk",
           "filename": "thug2_vita.vpk",
-          "url": "https://github.com/iwannagooutside/thug2-vita/releases/download/v1.0.0/thug2_vita.vpk",
-          "size": 8188023,
-          "md5": "ed6b881f0c7c7d291642723efec908ca"
+          "url": "https://github.com/iwannagooutside/thug2-vita/releases/download/v1.0.2/thug2_vita.vpk",
+          "size": 8218504,
+          "md5": "c4d147c4cbdcc3743ab278fac872f22c"
         }
       ],
       "popularity": 0,
@@ -74874,7 +75122,7 @@
       "name": "TJAP_3DS",
       "summary": "TJAPlayer for 3DS - Music game of the TJA file.",
       "author": "TogeToge & MarioGames",
-      "version": "v2.4.2",
+      "version": "v2.4.3",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/LuMariGames/TJAP_3DS/main/resource/icon.png",
       "release_url": "https://github.com/LuMariGames/TJAP_3DS/releases",
@@ -74882,20 +75130,20 @@
         {
           "format": "3dsx",
           "filename": "TJAP_3DS.3dsx",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.2/TJAP_3DS.3dsx",
-          "size": 10274416
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.3/TJAP_3DS.3dsx",
+          "size": 10275596
         },
         {
           "format": "cia",
           "filename": "TJAP_3DS.cia",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.2/TJAP_3DS.cia",
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.3/TJAP_3DS.cia",
           "size": 10437568
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-29T01:15:43Z"
+      "updated_at": "2026-11-09T11:35:32Z"
     },
     {
       "id": "vitadbtoo-psp:984",
@@ -74992,7 +75240,7 @@
       "name": "TMNT",
       "summary": "Port of the 2003 PC Teenage Mutant Ninja Turtles game.",
       "author": "ZekLab",
-      "version": "v.0.3",
+      "version": "v.0.5",
       "title_id": "TMNT02003",
       "description": "Port of the 2003 PC Teenage Mutant Ninja Turtles game.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -75004,9 +75252,9 @@
         {
           "format": "vpk",
           "filename": "TMNTVita.vpk",
-          "url": "https://github.com/ZekLab/TMNT-2003-PSVita-Port/releases/download/v0.3/TMNTVita.vpk",
-          "size": 911629,
-          "md5": "7d621749ead0e154ef24958bbc2a6146"
+          "url": "https://github.com/ZekLab/TMNT-2003-PSVita-Port/releases/download/v0.5/TMNTVita.vpk",
+          "size": 926073,
+          "md5": "aef712c3fbefd269036ba85424599a18"
         }
       ],
       "popularity": 0,
@@ -75045,6 +75293,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "vitadbtoo-vita:1807",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "TNTV",
+      "summary": "Native port of The New Tetris for PSVITA and PSTV.",
+      "author": "T64NCollection",
+      "version": "v.1.0",
+      "title_id": "NTET00001",
+      "description": "All eight solo stages run at about 60 FPS, with the Wonders construction, saved progress and original sound restored. Local 2 to 4 player multiplayer works on PSTV.",
+      "requirements": "- Game Data Files: The New Tetris (N64, USA 1.0) ROM in ux0:/data/TNTV/",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/49e7b7c0690a434493ecaa7142fdaa354f50ea96f060f14229700f346fe9c713.png",
+      "screenshots": [],
+      "release_url": "https://github.com/T64NCollection/TNTV/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "TNTV_v1.0.vpk",
+          "url": "https://github.com/T64NCollection/TNTV/releases/download/v1.0/TNTV_v1.0.vpk",
+          "size": 711691,
+          "md5": "5365a09f8a27448318e300e88709dbe0"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
     },
     {
       "id": "vitadbtoo-vita:465",
@@ -75537,7 +75816,7 @@
       "name": "Tougelike",
       "summary": "Night racing roguelike on Japanese mountain roads.",
       "author": "noeljustin",
-      "version": "v0.1.45",
+      "version": "v0.1.53",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/njlent/tougelike-3ds-pub/main/assets/icon.png",
       "release_url": "https://github.com/njlent/tougelike-3ds-pub/releases",
@@ -75545,20 +75824,20 @@
         {
           "format": "3dsx",
           "filename": "tougelike.3dsx",
-          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.45/tougelike.3dsx",
-          "size": 51929356
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.53/tougelike.3dsx",
+          "size": 51659416
         },
         {
           "format": "cia",
           "filename": "tougelike.cia",
-          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.45/tougelike.cia",
-          "size": 52220864
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.53/tougelike.cia",
+          "size": 51946432
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-13T13:54:07Z"
+      "updated_at": "2026-11-14T00:36:50Z"
     },
     {
       "id": "vitadbtoo-vita:1529",
@@ -76490,37 +76769,6 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2026-05-27T18:30:37Z"
-    },
-    {
-      "id": "vitadbtoo-vita:1777",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "Turbo Storage",
-      "summary": "Turbo Storage for PSVITA.",
-      "author": "juanjsebgarcia",
-      "version": "v.0.4.0",
-      "title_id": null,
-      "description": "",
-      "requirements": "",
-      "license": null,
-      "icon_url": null,
-      "screenshots": [],
-      "release_url": "https://github.com/juanjsebgarcia/vita-turbo-storage/releases",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "storageturbo.suprx",
-          "url": "https://github.com/juanjsebgarcia/vita-turbo-storage/releases/download/v0.4.0/storageturbo.suprx",
-          "size": 10651,
-          "md5": "4a49851d0bc313eab8510ae5ba36edbe"
-        }
-      ],
-      "popularity": 0,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2026-11-11"
     },
     {
       "id": "hbas-switch:Turnips",
@@ -82451,7 +82699,7 @@
       "name": "VitaOS",
       "summary": "Modern PS5-style home screen for PSVITA with a games library, media apps and a homebrew store.",
       "author": "mvizensk",
-      "version": "v.1.8.4",
+      "version": "v.1.9.2",
       "title_id": "VITAOS001",
       "description": "Modern PS5-style home screen for PSVITA with a games library, media apps and a homebrew store.",
       "requirements": "- Optional: vitaos_ps.suprx makes the PS button return to VitaOS instead of the standard menu",
@@ -82463,9 +82711,9 @@
         {
           "format": "vpk",
           "filename": "VitaOS.vpk",
-          "url": "https://github.com/hotdog-face/VitaOS/releases/download/v1.8.4/VitaOS.vpk",
-          "size": 5862046,
-          "md5": "a20e40c800ee1bf4daaf90eef96902db"
+          "url": "https://github.com/hotdog-face/VitaOS/releases/download/v1.9.2/VitaOS.vpk",
+          "size": 5897546,
+          "md5": "1b840ce049f20e16b26d84f35ea61d7b"
         }
       ],
       "popularity": 0,
@@ -83827,7 +84075,7 @@
       "name": "VivoTube",
       "summary": "An unofficial YouTube client for the PSVita.",
       "author": "hamburger101",
-      "version": "v.1.3.3",
+      "version": "v.1.3.4",
       "title_id": "VIVO00001",
       "description": "An unofficial YouTube client for the PSVita.",
       "requirements": "",
@@ -83839,9 +84087,9 @@
         {
           "format": "vpk",
           "filename": "VivoTube.vpk",
-          "url": "https://github.com/hamburger101/VivoTube/releases/download/v1.3.3/VivoTube.vpk",
-          "size": 6894084,
-          "md5": "6667dea4784b74e66476e24aad4135e9"
+          "url": "https://github.com/hamburger101/VivoTube/releases/download/v1.3.4/VivoTube.vpk",
+          "size": 6889676,
+          "md5": "3762389b5aff2bf5c5f5d85aae142488"
         }
       ],
       "popularity": 0,
@@ -83953,7 +84201,7 @@
       "name": "Void Trader",
       "summary": "Space trading game for PSVita.",
       "author": "Syncriel",
-      "version": "v.1.5.4",
+      "version": "v.1.5.8",
       "title_id": "VTRD00001",
       "description": "Space trading game for PSVita.",
       "requirements": "- libshacccg.suprx",
@@ -83964,10 +84212,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "voidtrader-v1.5.4.vpk",
-          "url": "https://github.com/Syncriel/void-trader/releases/download/v1.5.4/voidtrader-v1.5.4.vpk",
-          "size": 1580956,
-          "md5": "c964df21cbc729c0f5f5e277f970249a"
+          "filename": "voidtrader-v1.5.8.vpk",
+          "url": "https://github.com/Syncriel/void-trader/releases/download/v1.5.8/voidtrader-v1.5.8.vpk",
+          "size": 1626706,
+          "md5": "03742a4bf4b38836720dd7fde57c67e5"
         }
       ],
       "popularity": 0,
@@ -88211,6 +88459,37 @@
       "updated_at": "2024-09-22T15:00:00+00:00"
     },
     {
+      "id": "vitadbtoo-vita:1818",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "WWF No Mercy",
+      "summary": "Port of WWF: No Mercy for PSVita.",
+      "author": "SeveerJ",
+      "version": "v.1.0",
+      "title_id": "WWFNM0001",
+      "description": "Port of WWF: No Mercy for PSVita.",
+      "requirements": "- libshacccg.suprx\n- Game Data Files: N64",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/dda300910f27ca8e3e18a6c82ce48404c1538aef756a209abbe813e26862cb66.png",
+      "screenshots": [],
+      "release_url": "https://github.com/SeveerJ/WWF-No-Mercy-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "WWF-No-Mercy-vita.vpk",
+          "url": "https://github.com/SeveerJ/WWF-No-Mercy-Vita/releases/download/V1.0/WWF-No-Mercy-vita.vpk",
+          "size": 3252508,
+          "md5": "d322691fdb57ccec556d8ef955443af4"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
+    },
+    {
       "id": "vitadbtoo-vita:1753",
       "platforms": [
         "psvita"
@@ -89438,7 +89717,7 @@
       "name": "ZDoom Vita",
       "summary": "Port of ZDoom for PSVita.",
       "author": "Mr. Azrael",
-      "version": "v.0.12.0",
+      "version": "v.0.13.0",
       "title_id": "ZDVZ00001",
       "description": "Port of ZDoom for PSVita.",
       "requirements": "",
@@ -89449,10 +89728,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "zdoom-vita-v0.12.0.vpk",
-          "url": "https://github.com/MrAzrael1/zdoom-vita/releases/download/v0.12.0/zdoom-vita-v0.12.0.vpk",
-          "size": 30559627,
-          "md5": "f2e1670a0024389d57f8c761ec7f4723"
+          "filename": "zdoom-vita-v0.13.0.vpk",
+          "url": "https://github.com/MrAzrael1/zdoom-vita/releases/download/v0.13.0/zdoom-vita-v0.13.0.vpk",
+          "size": 30690153,
+          "md5": "7bff18a3e11fd05de58dd370d6a80953"
         }
       ],
       "popularity": 0,
@@ -90092,6 +90371,37 @@
       "updated_at": "2026-08-29"
     },
     {
+      "id": "vitadbtoo-vita:1814",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Zenonia 5",
+      "summary": "Port of Zenonia 5 for PSVita.",
+      "author": "MetalSyntax",
+      "version": "v.0.1",
+      "title_id": "PSVZ5I001",
+      "description": "Port of Zenonia 5 for PSVita.",
+      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: iOS",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/28f959b90da292356f9a240ea44c89e0e4e5d99fd0fa50bedfd282d5b85f1196.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/Zenonia5-psvita-port/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "zenonia5ios.vpk",
+          "url": "https://github.com/MetalSyntax/Zenonia5-psvita-port/releases/download/v0.1/zenonia5ios.vpk",
+          "size": 2893346,
+          "md5": "c8ccc4bc4d6a4da076b683d5625deb8e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
+    },
+    {
       "id": "hbas-switch:ZERODROID",
       "platforms": [
         "switch"
@@ -90368,6 +90678,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2019-02-15"
+    },
+    {
+      "id": "vitadbtoo-vita:1829",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Zombiewood",
+      "summary": "Port of Zombiewood for PSVITA.",
+      "author": "krisskash",
+      "version": "v.1.0.0",
+      "title_id": "ZMBW00001",
+      "description": "Port of Zombiewood for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d175b41bc04f98e28015af805d46f9308c175b3b9f834cbe863042ec7fe04450.png",
+      "screenshots": [],
+      "release_url": "https://github.com/krisskash/zombiewood-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "zombiewood-v1.0.0.vpk",
+          "url": "https://github.com/krisskash/zombiewood-vita/releases/download/v1.0.0/zombiewood-v1.0.0.vpk",
+          "size": 897869,
+          "md5": "26cbfafc0d9cf3bacaacfbdddc4e718d"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-13"
     },
     {
       "id": "ps5-payloads-atlas:zsshd-ps5-v0.8.1.elf",
