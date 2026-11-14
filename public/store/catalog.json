@@ -54757,7 +54757,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 15427,
+      "popularity": 15632,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54784,7 +54784,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3638,
+      "popularity": 3646,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54811,7 +54811,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 14657,
+      "popularity": 14818,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54838,7 +54838,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7157,
+      "popularity": 7176,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54865,7 +54865,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 76174,
+      "popularity": 76835,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -54892,7 +54892,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 186,
+      "popularity": 213,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -55348,30 +55348,30 @@
       "updated_at": "2026-10-26T10:34:12+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:patchdl_0.3.12.elf",
+      "id": "ps5-payloads-atlas:patchdl_0.3.13.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-patchdl",
       "summary": "Official updates for your PS5 and PS4 games, from any browser. PatchDL runs on the PS5, finds the newest update for every installed game, downloads it with parallel connections and resume, and installs it on the console. Web UI for phone, laptop and TV, plus a home-screen tile. Runs on firmware 1.00 to 13.60.",
       "author": "",
-      "version": "v0.3.12",
+      "version": "v0.3.13",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/knutwurst/ps5-patchdl",
       "downloads": [
         {
           "format": "elf",
-          "filename": "patchdl_0.3.12.elf",
-          "url": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.12/patchdl_0.3.12.elf",
-          "sha256": "a8aeb6039825188561b7346bb6f0c9244f72d7be1412dc7dd6c2bea0dd3f396a"
+          "filename": "patchdl_0.3.13.elf",
+          "url": "https://github.com/knutwurst/ps5-patchdl/releases/download/v0.3.13/patchdl_0.3.13.elf",
+          "sha256": "257cce632b9ad701094dad3f8c0206ff87ab6b417415a57ebfd558c5ee3b0c50"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-03T04:40:16+08:00"
+      "updated_at": "2026-11-14T20:10:44+08:00"
     },
     {
       "id": "ps5-payloads-atlas:pldmgr_v0.6.3.elf",
@@ -55764,30 +55764,30 @@
       "updated_at": "2026-10-22T00:59:04+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.4.17.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.4.19.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.4.17",
+      "version": "v12.4.19",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.4.17.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.17/ps5upload-12.4.17.elf",
-          "sha256": "f145f543338cab0b5f67946d1b98c4cc2dab1ca6e898f088da41e525fb0c6903"
+          "filename": "ps5upload-12.4.19.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.19/ps5upload-12.4.19.elf",
+          "sha256": "cd3765ab9c643190bb3ca00b40de0dee5a90d6f5f0f1085d0decd056c5d91889"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-14T03:24:31+08:00"
+      "updated_at": "2026-11-14T19:06:20+08:00"
     },
     {
       "id": "vitadbtoo-vita:1187",
@@ -75122,7 +75122,7 @@
       "name": "TJAP_3DS",
       "summary": "TJAPlayer for 3DS - Music game of the TJA file.",
       "author": "TogeToge & MarioGames",
-      "version": "v2.4.3",
+      "version": "v2.4.3A",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/LuMariGames/TJAP_3DS/main/resource/icon.png",
       "release_url": "https://github.com/LuMariGames/TJAP_3DS/releases",
@@ -75130,20 +75130,20 @@
         {
           "format": "3dsx",
           "filename": "TJAP_3DS.3dsx",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.3/TJAP_3DS.3dsx",
-          "size": 10275596
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.3A/TJAP_3DS.3dsx",
+          "size": 10277708
         },
         {
           "format": "cia",
           "filename": "TJAP_3DS.cia",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.3/TJAP_3DS.cia",
-          "size": 10437568
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.3A/TJAP_3DS.cia",
+          "size": 10441664
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-09T11:35:32Z"
+      "updated_at": "2026-11-14T04:50:08Z"
     },
     {
       "id": "vitadbtoo-psp:984",
