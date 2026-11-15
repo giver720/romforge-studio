@@ -59557,30 +59557,30 @@
       "updated_at": "2008-05-10"
     },
     {
-      "id": "ps5-payloads-atlas:hearbridge-1.4.0.elf",
+      "id": "ps5-payloads-atlas:hearbridge-1.4.2.elf",
       "platforms": [
         "ps5"
       ],
       "name": "HearBridge-PS5",
       "summary": "Play PS5 game audio on any Bluetooth headphones or earbuds. Payload for jailbroken PS5",
       "author": "",
-      "version": "v1.4.0",
+      "version": "v1.4.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/x-f1reball-x/hearbridge-ps5",
       "downloads": [
         {
           "format": "elf",
-          "filename": "hearbridge-1.4.0.elf",
-          "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.0/HearBridge-1.4.0.elf",
-          "sha256": "0c78332ac317541da12cb5998d1cab7f5b1b2778b3e835c4213b62278515d186"
+          "filename": "hearbridge-1.4.2.elf",
+          "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.2/HearBridge-1.4.2.elf",
+          "sha256": "565bb15656efad8d5561c2e397eac89002f12955fb2c6b65dc3475017613e434"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-30T22:33:31+08:00"
+      "updated_at": "2026-11-16T01:45:40+08:00"
     },
     {
       "id": "vitadbtoo-psp:2135",
@@ -89713,7 +89713,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-14T19:40:17Z"
+      "updated_at": "2026-11-15T14:40:53Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -106233,7 +106233,7 @@
       "name": "Plus-Vita",
       "summary": "PS Plus cloud gaming client for PSVita.",
       "author": "Calligula87",
-      "version": "v.001",
+      "version": "v.002",
       "title_id": "PLVT00001",
       "description": "PS Plus cloud gaming client for PSVita.",
       "requirements": "",
@@ -106244,10 +106244,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "plus-vita-v001.vpk",
-          "url": "https://github.com/Calligula87/plus-vita/releases/download/v001/plus-vita-v001.vpk",
-          "size": 4037800,
-          "md5": "c53a035fd58f51c10ae3cf4a320cb437"
+          "filename": "plus-vita-v002.vpk",
+          "url": "https://github.com/Calligula87/plus-vita/releases/download/v002/plus-vita-v002.vpk",
+          "size": 4042784,
+          "md5": "38f8f710efaf877ad06f902acfd5e999"
         }
       ],
       "popularity": 0,
@@ -110630,7 +110630,7 @@
       "name": "ProsperoMgr",
       "summary": "All-In-One manager for your PS5!",
       "author": "",
-      "version": "v1.2",
+      "version": "v1.2.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/notmaj0r/prosperomgr",
@@ -110638,15 +110638,15 @@
         {
           "format": "elf",
           "filename": "prosperomgr.elf",
-          "url": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.2/ProsperoMgr.elf",
-          "sha256": "127394cc4f1ac7347fea509e010e80bab7b5ee13d820665474cdc3928d173bce"
+          "url": "https://github.com/notmaj0r/ProsperoMgr/releases/download/v1.2.1/ProsperoMgr.elf",
+          "sha256": "f9240e53ac5f035b36fb6eca2845dd49827eddfb133d1bbb2810b1a025db9c5b"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-09T08:31:51+08:00"
+      "updated_at": "2026-11-15T15:24:29+08:00"
     },
     {
       "id": "vitadbtoo-vita:781",
@@ -111155,7 +111155,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 15861,
+      "popularity": 16233,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111182,7 +111182,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3658,
+      "popularity": 3667,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111209,7 +111209,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 14987,
+      "popularity": 15164,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111236,7 +111236,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7196,
+      "popularity": 7229,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111263,7 +111263,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 77534,
+      "popularity": 78527,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111290,7 +111290,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 250,
+      "popularity": 277,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -112162,30 +112162,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.4.20.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.4.22.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.4.20",
+      "version": "v12.4.22",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.4.20.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.20/ps5upload-12.4.20.elf",
-          "sha256": "23584161eb851eca7185ede538387da8a280cfc84092e0c3dff488e41975cbba"
+          "filename": "ps5upload-12.4.22.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.22/ps5upload-12.4.22.elf",
+          "sha256": "b60d65a9f753233cd1a25f46eb3c3e7de595f251a1b87d8a9deefaf4c2b8cf06"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-15T04:51:11+08:00"
+      "updated_at": "2026-11-15T18:21:02+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -129918,7 +129918,7 @@
       "name": "RAP-Vita",
       "summary": "Port of Raptor: Call of the Shadows for PSVita.",
       "author": "Paxrisen",
-      "version": "v.1.0",
+      "version": "v.1.1",
       "title_id": "RAPT00001",
       "description": "Port of Raptor: Call of the Shadows for PSVita.",
       "requirements": "- Game Data Files: PC",
@@ -129929,10 +129929,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Rap-Vita_v1.0.vpk",
-          "url": "https://github.com/Paxrisen/RAP-Vita/releases/download/RAP-Vita1.0/Rap-Vita_v1.0.vpk",
-          "size": 1036402,
-          "md5": "c5af526713839df42dc45f2dee619801"
+          "filename": "Rap-Vita_v1.1.vpk",
+          "url": "https://github.com/Paxrisen/RAP-Vita/releases/download/RAP-Vita1.1/Rap-Vita_v1.1.vpk",
+          "size": 1040691,
+          "md5": "600cfc1d6b2e97d8239aeceb260932df"
         }
       ],
       "popularity": 0,
@@ -163001,7 +163001,7 @@
       "name": "TNTV",
       "summary": "Native port of The New Tetris for PSVITA and PSTV.",
       "author": "T64NCollection",
-      "version": "v.1.01",
+      "version": "v.1.05",
       "title_id": "NTET00001",
       "description": "All eight solo stages run at about 60 FPS, with the Wonders construction, saved progress and original sound restored. Local 2 to 4 player multiplayer works on PSTV.",
       "requirements": "- Game Data Files: The New Tetris (N64, USA 1.0) ROM in ux0:/data/TNTV/",
@@ -163012,10 +163012,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "TNTV_v1.01.vpk",
-          "url": "https://github.com/T64NCollection/TNTV/releases/download/v1.01/TNTV_v1.01.vpk",
-          "size": 741555,
-          "md5": "db287b5b8567082ee290eb6ba0e0d782"
+          "filename": "TNTV_v1.05.vpk",
+          "url": "https://github.com/T64NCollection/TNTV/releases/download/v1.05/TNTV_v1.05.vpk",
+          "size": 746058,
+          "md5": "6205ea1d606b423f9594280b1bb0cde0"
         }
       ],
       "popularity": 0,
@@ -177086,7 +177086,7 @@
       "name": "Void Trader",
       "summary": "Space trading game for PSVita.",
       "author": "Syncriel",
-      "version": "v.1.6.1",
+      "version": "v.1.6.2",
       "title_id": "VTRD00001",
       "description": "Space trading game for PSVita.",
       "requirements": "- libshacccg.suprx",
@@ -177097,10 +177097,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "voidtrader-v1.6.1.vpk",
-          "url": "https://github.com/Syncriel/void-trader/releases/download/v1.6.1/voidtrader-v1.6.1.vpk",
-          "size": 1652498,
-          "md5": "aeef3eb1a71cf014a02c65f4cf993af3"
+          "filename": "voidtrader-v1.6.2.vpk",
+          "url": "https://github.com/Syncriel/void-trader/releases/download/v1.6.2/voidtrader-v1.6.2.vpk",
+          "size": 1680223,
+          "md5": "001fad1a7ecad929b2e6363da30410a7"
         }
       ],
       "popularity": 0,
