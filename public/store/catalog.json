@@ -58841,6 +58841,37 @@
       "updated_at": "2026-11-11"
     },
     {
+      "id": "vitadbtoo-vita:4811",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Hard Time III",
+      "summary": "Port of Hard Time III for PSVita.",
+      "author": "ValencyLK",
+      "version": "v.1",
+      "title_id": "HDTM00003",
+      "description": "Port of Hard Time III for PSVita.",
+      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9dd4078f75732347de1aa414fe2c9daae44858a0ab8b8c9c71ac85ef4bf4b71b.png",
+      "screenshots": [],
+      "release_url": "https://github.com/ValencyLK/hardtime3-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "hardtime3.vpk",
+          "url": "https://github.com/ValencyLK/hardtime3-vita/releases/download/V1/hardtime3.vpk",
+          "size": 2549612,
+          "md5": "546d647e2a3c2b56a5d56929b85c8546"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-15"
+    },
+    {
       "id": "vitadbtoo-psp:1975",
       "platforms": [
         "psp"
@@ -73408,19 +73439,19 @@
           "format": "3dsx",
           "filename": "isle.3dsx",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.3dsx",
-          "size": 3054772
+          "size": 3056388
         },
         {
           "format": "cia",
           "filename": "isle.cia",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.cia",
-          "size": 2196416
+          "size": 2197440
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-08T17:33:25Z"
+      "updated_at": "2026-11-15T21:19:06Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -79551,6 +79582,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "vitadbtoo-vita:4812",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "maniaVita",
+      "summary": "osu!mania client for PSVita.",
+      "author": "sadports102",
+      "version": "v.1.1.0",
+      "title_id": "MAVT00001",
+      "description": "osu!mania client for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5ac51f86cde28f5e36d314754cb64dabd51c0a1a58cfa20af46441e54478fbc8.png",
+      "screenshots": [],
+      "release_url": "https://github.com/sadports102/mania-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "maniavitav1.1.0.vpk",
+          "url": "https://github.com/sadports102/mania-vita/releases/download/v1.1.0/maniavitav1.1.0.vpk",
+          "size": 4308343,
+          "md5": "d087c2a2a74981dd0dbf2c1c5457ccb0"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-15"
     },
     {
       "id": "vitadbtoo-psp:4160",
@@ -89707,13 +89769,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64894100
+          "size": 64894097
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-15T14:40:53Z"
+      "updated_at": "2026-11-15T22:07:00Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -94433,6 +94495,37 @@
       "updated_at": "2016-05-24T15:23:21Z"
     },
     {
+      "id": "vitadbtoo-vita:4808",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "NovelReader",
+      "summary": "Native reading app for PSVita.",
+      "author": "basitalitech",
+      "version": "v.0.7.0",
+      "title_id": "NVRD00001",
+      "description": "Native reading app for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/de4198f8bc297ab30c5fa437ec7d1dc170d7bebcf17bead938ba73d5465e43b6.png",
+      "screenshots": [],
+      "release_url": "https://github.com/basitalitech/NovelReader/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "NovelReader.vpk",
+          "url": "https://github.com/basitalitech/NovelReader/releases/download/v0.7.0/NovelReader.vpk",
+          "size": 6787843,
+          "md5": "ddd719b2661171ebc8955d0087e37792"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-15"
+    },
+    {
       "id": "vitadbtoo-psp:4435",
       "platforms": [
         "psp"
@@ -97147,7 +97240,7 @@
           "format": "elf",
           "filename": "onionhen.elf",
           "url": "https://github.com/aydencharles/onionHEN/releases/download/nightly/OnionHEN.elf",
-          "sha256": "d0620cc430c10ac2bc7776bd10265742075c7b782b5c8c3fd05cf46e752ed49e"
+          "sha256": "db56838865c42e01bae921c197e4753d9388de4ff2930937be5f3666be5be19d"
         }
       ],
       "source": "PS5 Payloads Atlas",
@@ -97674,6 +97767,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-03-02"
+    },
+    {
+      "id": "vitadbtoo-vita:4809",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Open1602",
+      "summary": "Port of Open1602 for PSVita.",
+      "author": "Colie286",
+      "version": "v.1.11",
+      "title_id": "O1602VITA",
+      "description": "Port of Open1602 for PSVita.",
+      "requirements": "- Game Data Files: PC",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/283fe190e516da76b3b01f6e42f4d878558d6c1dc6bc4b92550c55c4d02e94b3.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Colie286/Open1602-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Open1602-1.11.vpk",
+          "url": "https://github.com/Colie286/Open1602-Vita/releases/download/v1.11/Open1602-1.11.vpk",
+          "size": 7558424,
+          "md5": "aa665f9b0fd9b237e57193365e093054"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-15"
     },
     {
       "id": "hbas-switch:OpenAoK",
@@ -111155,7 +111279,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 16233,
+      "popularity": 16448,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111182,7 +111306,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3667,
+      "popularity": 3674,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111209,7 +111333,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 15164,
+      "popularity": 15285,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111236,7 +111360,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7229,
+      "popularity": 7254,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111263,7 +111387,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 78527,
+      "popularity": 79420,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111290,7 +111414,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 277,
+      "popularity": 290,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -112162,30 +112286,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.4.22.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.4.23.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.4.22",
+      "version": "v12.4.23",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.4.22.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.22/ps5upload-12.4.22.elf",
-          "sha256": "b60d65a9f753233cd1a25f46eb3c3e7de595f251a1b87d8a9deefaf4c2b8cf06"
+          "filename": "ps5upload-12.4.23.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.4.23/ps5upload-12.4.23.elf",
+          "sha256": "ef1a7e246158ce9dbbeb99bf0057f044c45a6a07b713a12a7575d4345147bba3"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-15T18:21:02+08:00"
+      "updated_at": "2026-11-16T03:09:50+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -131039,6 +131163,37 @@
       "updated_at": "2026-05-23"
     },
     {
+      "id": "vitadbtoo-vita:4813",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Red Viper",
+      "summary": "Virtual Boy emulator for PSVita.",
+      "author": "PupueStudios",
+      "version": "v.1.0",
+      "title_id": "RVIPER001",
+      "description": "Virtual Boy emulator for PSVita.",
+      "requirements": "- libshaccg.suprx",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/474d5963316d74b55a9a6e53dbc0bfe48bfcf978ce29f0afdd0638b889633099.png",
+      "screenshots": [],
+      "release_url": "https://github.com/PupueStudios/red-viper-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "red_viper.vpk",
+          "url": "https://github.com/PupueStudios/red-viper-vita/releases/download/v1.0/red_viper.vpk",
+          "size": 4268111,
+          "md5": "350875c325a6701e20ef1c789ec59b98"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-15"
+    },
+    {
       "id": "universal-db:skyfloogle/red-viper",
       "platforms": [
         "3ds"
@@ -141228,6 +141383,37 @@
       "updated_at": "2026-11-11"
     },
     {
+      "id": "vitadbtoo-vita:4814",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Silent Hill 3",
+      "summary": "Experimental port of Silent Hill 3 for PSVita.",
+      "author": "AngeloGalav",
+      "version": "v.0.0.1",
+      "title_id": "SILH00003",
+      "description": "Experimental port of Silent Hill 3 for PSVita.",
+      "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/dada4b8527d51b2f74de352724270c14570e505eaef275a8579d54e3bc265f6f.png",
+      "screenshots": [],
+      "release_url": "https://github.com/AngeloGalav/sh3-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "sh3.vpk",
+          "url": "https://github.com/AngeloGalav/sh3-vita/releases/download/v0.0.1/sh3.vpk",
+          "size": 6797935,
+          "md5": "ab4ffaf06926177bfbdc716f68d673c6"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-15"
+    },
+    {
       "id": "vitadbtoo-vita:1698",
       "platforms": [
         "psvita"
@@ -146683,7 +146869,7 @@
       ],
       "name": "Sonic R",
       "summary": "Port of Sonic R (PC 1998) for PSVITA.",
-      "author": "FreddySP",
+      "author": "PupueStudios",
       "version": "v.2.0",
       "title_id": "SONICR001",
       "description": "Port of Sonic R (PC 1998) for PSVITA.",
@@ -161022,6 +161208,37 @@
       "updated_at": "2006-01-12"
     },
     {
+      "id": "vitadbtoo-vita:4810",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "The Sims",
+      "summary": "Reimplementation of The Sims for PSVita.",
+      "author": "marcocatena",
+      "version": "v.1.1",
+      "title_id": "TSVITA001",
+      "description": "Reimplementation of The Sims for PSVita.",
+      "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/91e2ad2e08e2a7e33e984d7c8eb396f77dbfcc0dbd05dee06d905439c2c6cbff.png",
+      "screenshots": [],
+      "release_url": "https://github.com/marcocatena/TheSimsVita-release/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "TheSimsVita-v1.1.vpk",
+          "url": "https://github.com/marcocatena/TheSimsVita-release/releases/download/v1.1/TheSimsVita-v1.1.vpk",
+          "size": 4517831,
+          "md5": "064c5a9147e64b9c2c684119c67bfbaa"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-15"
+    },
+    {
       "id": "vitadbtoo-psp:4163",
       "platforms": [
         "psp"
@@ -167375,6 +167592,37 @@
       "updated_at": "2007-05-13"
     },
     {
+      "id": "vitadbtoo-vita:4816",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Ultimate Mortal Kombat 3",
+      "summary": "Port of Ultimate Mortal Kombat 3 for PSVita.",
+      "author": "DominicanNY",
+      "version": "v.1.0.0",
+      "title_id": "UMKT00003",
+      "description": "Port of Ultimate Mortal Kombat 3 for PSVita.",
+      "requirements": "- libshacccg.suprx\n- Game Data Files: iOS",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/cb37c1b87a0e93be17320c311b862075a2edec6d579fc857b9e575b9dd5f1fb1.png",
+      "screenshots": [],
+      "release_url": "https://github.com/gmejia11/UMK3-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "UMK3-Vita.vpk",
+          "url": "https://github.com/gmejia11/UMK3-Vita/releases/download/v1.0.0/UMK3-Vita.vpk",
+          "size": 2850191,
+          "md5": "55ce9cd4fb4014df24c0e49ada9db212"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-15"
+    },
+    {
       "id": "vitadbtoo-psp:2585",
       "platforms": [
         "psp"
@@ -173320,6 +173568,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2025-10-07"
+    },
+    {
+      "id": "vitadbtoo-vita:4815",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vita Slim's Editor",
+      "summary": "Save editor for Ratchet & Clank HD Collection.",
+      "author": "myname24",
+      "version": "v.2.0.1",
+      "title_id": "SLMS00001",
+      "description": "Save editor for Ratchet & Clank HD Collection.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/2def6a146fcc353690c4c4015200aa41a36c985454f220ecdc273475782e3a17.png",
+      "screenshots": [],
+      "release_url": "https://github.com/myname24/vita-slims-editor/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vitaslimseditor.vpk",
+          "url": "https://github.com/myname24/vita-slims-editor/releases/download/V2.0.1/vitaslimseditor.vpk",
+          "size": 1522777,
+          "md5": "191d81be039cced136bb057b1e803671"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-15"
     },
     {
       "id": "vitadbtoo-vita:1343",
