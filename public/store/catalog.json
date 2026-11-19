@@ -734,7 +734,7 @@
           "sha256": "8082021738dd9fce8ef6604eb9967649d3da7e79324e6afeeb208ec53e952e2c"
         }
       ],
-      "popularity": 9847,
+      "popularity": 9849,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/2048/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -4050,7 +4050,7 @@
           "sha256": null
         }
       ],
-      "popularity": 33984,
+      "popularity": 33987,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/AAReboot/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -4733,7 +4733,7 @@
           "sha256": "58111d1296a17dca99da23c806166da7459e9003c23da927c8562b49aa6fc08b"
         }
       ],
-      "popularity": 515,
+      "popularity": 516,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/acnh-manager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -6151,7 +6151,7 @@
           "sha256": "d3f7de42e4f144b4520eec39f00c575d247dce00468a4e28586d93f941fc8ce4"
         }
       ],
-      "popularity": 3522,
+      "popularity": 3529,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Akira/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -7178,7 +7178,7 @@
           "sha256": null
         }
       ],
-      "popularity": 99471,
+      "popularity": 99477,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/AmiiboGenerator/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -7211,7 +7211,7 @@
           "sha256": "fa728251470584d35a1f0f5b42502a8bebf57425dbf4942a05338132294940a1"
         }
       ],
-      "popularity": 129372,
+      "popularity": 129400,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Amiigo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -7275,7 +7275,7 @@
           "sha256": null
         }
       ],
-      "popularity": 25201,
+      "popularity": 25202,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Amiiswap/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -11316,7 +11316,7 @@
           "sha256": "4e445e4fbe999eb1541c59a45e4831e55a3696e605fc17762e2c02ec064fcd64"
         }
       ],
-      "popularity": 717,
+      "popularity": 718,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/AuroraChatforSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -14894,7 +14894,7 @@
           "sha256": "eeffc076bdedb4454b7cf5ca3cfce64fae885595d454f404f8db4536ed2dc341"
         }
       ],
-      "popularity": 1219,
+      "popularity": 1228,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/BetterBedrockNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -16333,7 +16333,7 @@
           "sha256": "2ba5538fd348d138879fab02c314affd066c1a97d3ef13dcf8956bc2a82c723b"
         }
       ],
-      "popularity": 1803,
+      "popularity": 1804,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/BlockamokRemix/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19353,7 +19353,7 @@
           "sha256": "6c0b2f8e1d6df18cd9190527819f8a320399ccab48a80496224f3669958d998b"
         }
       ],
-      "popularity": 383,
+      "popularity": 384,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Brewser/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -19684,7 +19684,7 @@
           "sha256": null
         }
       ],
-      "popularity": 194845,
+      "popularity": 194853,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/browsenx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -24555,7 +24555,7 @@
           "sha256": "a0714c655a13f67de0f17c3a4a7112b66d4def2f58b05839b5900823702ad4e1"
         }
       ],
-      "popularity": 310814,
+      "popularity": 310830,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Checkpoint/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -25498,7 +25498,7 @@
           "sha256": null
         }
       ],
-      "popularity": 12393,
+      "popularity": 12394,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Chocolate-Doom-Launcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -26723,7 +26723,7 @@
       "name": "ClassiCube",
       "summary": "Custom Minecraft Classic / ClassiCube client written in C  from scratch (formerly ClassicalSharp in C#)",
       "author": "UnknownShadow200",
-      "version": "1.3.9",
+      "version": "1.4.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/ClassiCube/ClassiCube/master/misc/3ds/icon.png",
       "release_url": "https://www.classicube.net/download/3ds",
@@ -26732,7 +26732,7 @@
           "format": "3dsx",
           "filename": "ClassiCube-3ds.3dsx",
           "url": "https://cdn.classicube.net/client/latest/ClassiCube-3ds.3dsx",
-          "size": 783440
+          "size": 783564
         },
         {
           "format": "cia",
@@ -26744,7 +26744,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-22T01:21:36Z"
+      "updated_at": "2026-11-18T20:52:20Z"
     },
     {
       "id": "open-shop-channel-wii:ClassiCube",
@@ -26804,7 +26804,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6496,
+      "popularity": 6497,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ClawSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -27672,7 +27672,7 @@
           "sha256": null
         }
       ],
-      "popularity": 26895,
+      "popularity": 26911,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ComicNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -27881,6 +27881,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2006-10-21"
+    },
+    {
+      "id": "vitadbtoo-vita:4832",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Conker's Bad Fur Day",
+      "summary": "Conker's Bad Fur Day native PS Vita port",
+      "author": "HenryKun55",
+      "version": "v.1.3.0",
+      "title_id": "CBFD00064",
+      "description": "Conker's Bad Fur Day native PS Vita port",
+      "requirements": "- A PS Vita or PS TV with HENkaku/Ensō and VitaShell.\n- libshacccg.suprx (the runtime shader compiler) in ur0:data/. If you already play other ports you have it. Otherwise, extract it with ShaRKBR33D.\n- The US ROM of Conker's Bad Fur Day",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0dfcb731dec2a8b1db49a4315583089df5ba8ca7d9ea157c42285db5c4877325.png",
+      "screenshots": [],
+      "release_url": "https://github.com/henrykun55/conker-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "conker.vpk",
+          "url": "https://github.com/HenryKun55/conker-vita/releases/download/v1.3.0/conker.vpk",
+          "size": 8592053,
+          "md5": "c140510d03ff655d42bf045bc7959aab"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-psp:2078",
@@ -30452,7 +30483,7 @@
       "name": "CrossCraft Classic",
       "summary": "Multiplatform clone of Minecraft Classic.",
       "author": "Iridescence & MotoLegacy",
-      "version": "v.1.2.1",
+      "version": "v.1.3",
       "title_id": "CCC000110",
       "description": "CrossCraft-Classic is a project that aims to recreate Minecraft Java Edition: Classic without looking at any of the source code of the original application and without using the original copyrighted assets. All knowledge is figured out with an understanding of in-game mechanics and is approximated to be as close as possible to the original.",
       "requirements": "",
@@ -30465,10 +30496,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "848-CrossCraft-Classic.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/848-CrossCraft-Classic.vpk",
-          "size": 1309532,
-          "md5": "0206fba28272f968efc4f1c054252292"
+          "filename": "crosscraft-classic-1.3.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/crosscraft-classic-1.3.vpk",
+          "size": 10018605,
+          "md5": "f48e9fe137543ffbee1c41825f1ea745"
         }
       ],
       "popularity": 10814,
@@ -32187,7 +32218,7 @@
           "sha256": "73c99da3ad683f225c96a9e8ef6f18936e476148d07af02b3cfab2b4053c019f"
         }
       ],
-      "popularity": 1616,
+      "popularity": 1617,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CustomBootScreen/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -32288,7 +32319,7 @@
           "sha256": null
         }
       ],
-      "popularity": 17626,
+      "popularity": 17627,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/CuteManga/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -33849,7 +33880,7 @@
           "sha256": null
         }
       ],
-      "popularity": 31042,
+      "popularity": 31043,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DDLC/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -35605,7 +35636,7 @@
           "sha256": null
         }
       ],
-      "popularity": 11286,
+      "popularity": 11287,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/devilution-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -36172,6 +36203,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "vitadbtoo-vita:4840",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Digital Clock Vita",
+      "summary": "Digital Clock Vita",
+      "author": "theheroGAC",
+      "version": "v.1.01",
+      "title_id": "DIGICLOCK",
+      "description": "Digital Clock Vita",
+      "requirements": "Not specified",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/325c295832c03ba71ed2707c290e9f149187e60ba1a5b517a0a9663e3017f0d2.png",
+      "screenshots": [],
+      "release_url": "https://github.com/theherogac/digital-clock-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "DigitalClockVita.vpk",
+          "url": "https://github.com/theheroGAC/Digital-Clock-Vita/releases/download/1.01/DigitalClockVita.vpk",
+          "size": 208803,
+          "md5": "1df01065d8ced4c5f0eacc3b1de83441"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-psp:3133",
@@ -36824,7 +36886,7 @@
           "sha256": "1d0ba57c630bf56c8ff067b8f9c8af6405f58f25793015d35c8ff26d31e9c18c"
         }
       ],
-      "popularity": 2742,
+      "popularity": 2747,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/DNSmitmChecker/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -41036,7 +41098,7 @@
           "sha256": null
         }
       ],
-      "popularity": 10654,
+      "popularity": 10655,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/eBookReaderSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -41198,7 +41260,7 @@
           "sha256": null
         }
       ],
-      "popularity": 524389,
+      "popularity": 524400,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Edizon/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -42485,7 +42547,7 @@
           "sha256": "d32ef08247c9da06c817519a300d3faba0026eb3759cd8eaaade8b9157294c25"
         }
       ],
-      "popularity": 142,
+      "popularity": 143,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Emulanders/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -43807,7 +43869,7 @@
           "sha256": "2a1b10e87664d507856e4f211ba65ed841d9e11f1daf6347cb74d1ec7b828a7b"
         }
       ],
-      "popularity": 953,
+      "popularity": 954,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/EventRaidInjector/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -44355,7 +44417,7 @@
           "sha256": "72b119d4292652a68577709ddaefe8cca9bdc8c339035be94ccc7a3f53b5f9b7"
         }
       ],
-      "popularity": 30616,
+      "popularity": 30618,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ezRemoteClient/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -46369,7 +46431,7 @@
           "sha256": "46630551bb4b9f58149b64da4e2e62dc799c88854d70624d139e05df9befd391"
         }
       ],
-      "popularity": 10566,
+      "popularity": 10567,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/fheroes2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -46384,7 +46446,7 @@
       "name": "fheroes2",
       "summary": "HoMM II port for PSVITA.",
       "author": "Northfear & fheroes2 Team",
-      "version": "v.1.1.15",
+      "version": "v.1.1.18",
       "title_id": "FHOMM0002",
       "description": "Heroes of Might and Magic II: The Succession Wars is a turn-based strategy video game developed by Jon Van Caneghem through New World Computing and published in 1996 by the 3DO Company. The game is the second installment of the Heroes of Might and Magic series and is typically credited as the breakout game for the series. Heroes II was voted the sixth-best PC game of all time by PC Gamer in May 1997.\nAn expansion pack, The Price of Loyalty, was released in 1997. Later, 3DO bundled Heroes II and its expansion pack in one box, released as Heroes of Might and Magic II Gold in 1998.",
       "requirements": "- Game Data Files: PC in ux0:data/fheroes2",
@@ -46400,10 +46462,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "354-fheroes2.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/354-fheroes2.vpk",
-          "size": 7289959,
-          "md5": "a8091ecc05039bcd7ea9a5444d22fc15"
+          "filename": "fheroes2-1.1.18.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/fheroes2-1.1.18.vpk",
+          "size": 14972179,
+          "md5": "6ac121c7737879b7a0e134812bf6abac"
         },
         {
           "format": "data",
@@ -46701,7 +46763,7 @@
           "sha256": "f8ff336a5a8ccd0677bccffe6a674d12af553b7914810bd1356443d15b684ea2"
         }
       ],
-      "popularity": 1047,
+      "popularity": 1050,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FinalFantasyIV/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -47525,7 +47587,7 @@
           "sha256": "f7ed76eab7fcbf5dc99a162a65e793bb56feb86d79d165390d1ec2b0afbd3a3a"
         }
       ],
-      "popularity": 1686,
+      "popularity": 1687,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FixCheat/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -48117,7 +48179,7 @@
           "sha256": "5294ed61f1270b56482d12aadd0304e4b63542d95ae00f85a93f31825209c5db"
         }
       ],
-      "popularity": 3846,
+      "popularity": 3852,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FlashNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -49059,7 +49121,7 @@
           "sha256": "4e1fa927bd9bc67605573429119558dbdf8acaf684c62150b4b94ab8f713ceb9"
         }
       ],
-      "popularity": 9192,
+      "popularity": 9199,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FNFSwitchFunkin/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -49092,7 +49154,7 @@
           "sha256": "6fe01d51318b05bedc4b85b2ae8736d3a1126fa69a3053e322171fe1f0036a5c"
         }
       ],
-      "popularity": 349,
+      "popularity": 357,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/FNFVSliceNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -50102,7 +50164,7 @@
       "name": "Freegemas",
       "summary": "Port of Freegemas for PSVITA.",
       "author": "sharkwouter",
-      "version": "v.22.02",
+      "version": "v.26.11",
       "title_id": "FGEM00001",
       "description": "A port of Freegemas for PSVITA/PSTV. Freegemas is an open source clone of the well known Bejeweled.",
       "requirements": "",
@@ -50116,10 +50178,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "609-freegemas.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/609-freegemas.vpk",
-          "size": 5516346,
-          "md5": "77460adf62bc93ec5c93d69458b95a52"
+          "filename": "freegemas-26.11.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/freegemas-26.11.vpk",
+          "size": 5431662,
+          "md5": "26cf44a99474b12949bb4aae010fec5b"
         }
       ],
       "popularity": 3727,
@@ -50952,7 +51014,7 @@
           "sha256": null
         }
       ],
-      "popularity": 281562,
+      "popularity": 281565,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ftpd/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -55715,7 +55777,7 @@
           "sha256": "231c9e932bb8e3f90a61c36ae561a40901990947b383ddcc0ee1e5e8cff5e815"
         }
       ],
-      "popularity": 657895,
+      "popularity": 657927,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Goldleaf/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -58439,7 +58501,7 @@
           "sha256": "5f4f0c09ce63f24475057bd1ac69be124429c58146f85bc3a0b330c65bc5df29"
         }
       ],
-      "popularity": 463,
+      "popularity": 467,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/halo-ce-universal/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -59481,7 +59543,7 @@
           "sha256": "6418a45b0b87f96ba35adc9157ff458016c151f6f53153f0b2df8d044e18dd32"
         }
       ],
-      "popularity": 26270,
+      "popularity": 26280,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/hdr-launcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -61767,7 +61829,7 @@
           "sha256": null
         }
       ],
-      "popularity": 386549,
+      "popularity": 386570,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/appstore/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -61929,7 +61991,7 @@
           "sha256": "f2618e1471a6a41b3e880a27d3930cf8164ea7f3afa20466fdc9e6a4e503479a"
         }
       ],
-      "popularity": 306353,
+      "popularity": 306365,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/hbmenu/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -66129,7 +66191,7 @@
           "sha256": "54f66b0b7e903470d611d9dd63f15469c817557ca098c0053e8c4c9ba435ea0b"
         }
       ],
-      "popularity": 3924,
+      "popularity": 3925,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/IRSwitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -66826,7 +66888,7 @@
           "sha256": "30d2c2556d445e7946b766586ad7a2f8bd2edb6d2e7b4111b4e83a1f1a5b22ed"
         }
       ],
-      "popularity": 127,
+      "popularity": 128,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/iwbtgrt/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -66841,10 +66903,10 @@
       "name": "J2meNXX",
       "categories": [],
       "description": "J2ME (Java ME / MIDP 2.0) emulator for Nintendo Switch, written in C with devkitPro + SDL2. Custom Java VM that runs old mobile phone .jar games directly on Switch: 2D/3D (M3G) graphics, MIDI/WAV/MP3 audio, HTTP/HTTPS/socket networking, RMS save data.\n\n",
-      "added_at": "2026-10-08",
+      "added_at": "2026-11-13",
       "summary": "J2ME emulator for Nintendo Switch",
       "author": "Tô Quang Thắng",
-      "version": "0.8.4",
+      "version": "0.8.13",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/ToThangGTVT/j2me-nxx",
@@ -66853,8 +66915,8 @@
           "format": "hbas",
           "filename": "J2MENXX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/J2MENXX/manifest.install",
-          "size": 17654,
-          "sha256": "21e659246f2c11109506dfb7d199923042f6bd09d235330555a2ab1f9d13713d"
+          "size": 17802,
+          "sha256": "162b6cf34a4ee25ee30c91aa09ca7f7792ffaba1df8f1b6c22185acafdf641b1"
         }
       ],
       "popularity": 250,
@@ -66862,7 +66924,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-20"
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-vita:1723",
@@ -68090,7 +68152,7 @@
           "sha256": "c7881a6464d87b223755c8f992578855f5a3a86008267b4f250cbd4a836cf0ce"
         }
       ],
-      "popularity": 244488,
+      "popularity": 244498,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/jksv/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68216,7 +68278,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1585,
+      "popularity": 1586,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/JoyConMouse/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -68249,7 +68311,7 @@
           "sha256": "f4dedb4307329b76d5b8d4d04ff8e57ae43830a678a1fc78ee403cabc9497c77"
         }
       ],
-      "popularity": 1402,
+      "popularity": 1403,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/JoyVibe/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -69366,7 +69428,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4049,
+      "popularity": 4050,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Kartswitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -70312,7 +70374,7 @@
           "sha256": "ff2a7bc983ba98e57f5aec1a1621378b4cd19de0c581088a7871bed635e4273c"
         }
       ],
-      "popularity": 261,
+      "popularity": 265,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/kickNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -72045,7 +72107,7 @@
           "sha256": null
         }
       ],
-      "popularity": 25792,
+      "popularity": 25793,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/laines/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -72804,6 +72866,47 @@
       "updated_at": "2020-06-16"
     },
     {
+      "id": "vitadbtoo-vita:1052",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "LDhewm3 ReARMed",
+      "summary": "Port of Doom 3 for PSVITA.",
+      "author": "Rinnegatamante",
+      "version": "v.0.5",
+      "title_id": "DHEWM3ES2",
+      "description": "Potatoom 3 is a PoC level port of Doom 3, popular FPS made by idSoftware with idTech 4 engine.\nThis port is based over a modified version of dhewm3 that adds basic multithreading support to idTech 4 optimized furtherly to squeeze as much performances as possible.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- Data files in ux0:data/dhewm3",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b771494e66927137564cc2edd305b9d9a3fe510294173019db5217f8bcc20643.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/c07426945ae8946d5de665cee11179871eee3d2c6a87e876a513241bf8e7d73a.png",
+        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/3bbc957b078ea2257757ebed438abcb8ab40504bab216117dd91468c5b805ef8.png",
+        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/e45f4a3d7d6658fe515958b98bc9f11e2a8b14a57c9780eb34b8f86c3f1ffe71.png",
+        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/c37c3ac968777616198fb3072075b7a3d0989f7f379a30298fb6ab430f149147.png"
+      ],
+      "release_url": "https://github.com/Rinnegatamante/d3es-vita",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "1052-dhewm3.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1052-dhewm3.vpk",
+          "size": 9993277,
+          "md5": "273dc81620ca0bdf13ce0ed092da1679"
+        },
+        {
+          "format": "data",
+          "filename": "1052-data-dhewm3.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1052-data-dhewm3.zip"
+        }
+      ],
+      "popularity": 26726,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2023-03-07"
+    },
+    {
       "id": "hbas-switch:ldn_mitm",
       "platforms": [
         "switch"
@@ -72829,7 +72932,7 @@
           "sha256": "60c9646d7f14950e66d4f62eff1220c2a69b8eeccf16b94059c057f18108157a"
         }
       ],
-      "popularity": 40972,
+      "popularity": 40979,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ldn_mitm/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -73413,7 +73516,7 @@
           "sha256": null
         }
       ],
-      "popularity": 17852,
+      "popularity": 17853,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pal/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -73605,7 +73708,7 @@
           "sha256": null
         }
       ],
-      "popularity": 75190,
+      "popularity": 75195,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/lennytube/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -78235,7 +78338,7 @@
           "sha256": "22d3fd6a48cf1e8742bd1db300e8bf438c5b55d6ea0deb5d7659727e278ef946"
         }
       ],
-      "popularity": 1744,
+      "popularity": 1745,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/LunarNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -79221,7 +79324,7 @@
           "sha256": null
         }
       ],
-      "popularity": 16159,
+      "popularity": 16160,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/mame2003/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -79315,7 +79418,7 @@
           "sha256": null
         }
       ],
-      "popularity": 31354,
+      "popularity": 31355,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MAME-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -81154,7 +81257,7 @@
           "sha256": null
         }
       ],
-      "popularity": 19580,
+      "popularity": 19583,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/max_nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -81394,6 +81497,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-12-30"
+    },
+    {
+      "id": "vitadbtoo-vita:4841",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "McDonalds eCDP KeyGen",
+      "summary": "McDonalds eCDP KeyGen",
+      "author": "LiEnby",
+      "version": "v.1.0",
+      "title_id": "ECDP00001",
+      "description": "McDonalds eCDP KeyGen",
+      "requirements": "Not specified",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/695c6f3a43dbf7787ea7bde5514f9a2c1bef2b4b14fec36d1c32565e74e3edb6.png",
+      "screenshots": [],
+      "release_url": "https://github.com/lienby/ecdp-serial-code/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "eCDPKeyGen.vpk",
+          "url": "https://github.com/LiEnby/eCDP-Serial-Code/releases/download/v1.0-vita/eCDPKeyGen.vpk",
+          "size": 1247791,
+          "md5": "81c5f8760c21070599e971346f515c3b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-psp:2057",
@@ -82392,7 +82526,7 @@
           "sha256": "a7a30f699d6f930800c5df9be3a150e0c0eafacfece836f1444c99134850d7c2"
         }
       ],
-      "popularity": 173823,
+      "popularity": 173832,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/melonDS/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -83378,7 +83512,7 @@
           "sha256": "20be0f72699415c2b25036833863ae1c9221be72371511bd186b28ae11214f55"
         }
       ],
-      "popularity": 226304,
+      "popularity": 226313,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/mGBA/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -83640,7 +83774,7 @@
           "sha256": "31846d02605a32e724afa4cc81fd02c33ca51086cb6b946a69b9083d18aa5e62"
         }
       ],
-      "popularity": 312,
+      "popularity": 313,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/microNXSaveSync/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -83997,7 +84131,7 @@
           "sha256": "ecb5ae85c48cf612df9a672b76981caf32787ade96e6ef0e9fd8309a8f126d22"
         }
       ],
-      "popularity": 412,
+      "popularity": 413,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/MiiPortOnline/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -86531,7 +86665,7 @@
           "sha256": null
         }
       ],
-      "popularity": 47431,
+      "popularity": 47433,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/moonlight-nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -86564,7 +86698,7 @@
           "sha256": "a1468c68c5334ed1df69e817706d666ed3bfcee0f2f6e4172e862966bd2a5ba9"
         }
       ],
-      "popularity": 221230,
+      "popularity": 221247,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Moonlight-Switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -88425,6 +88559,37 @@
       "updated_at": "2008-01-20"
     },
     {
+      "id": "vitadbtoo-vita:4839",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "My Shut-In Demon!",
+      "summary": "My Shut-In Demon! Port",
+      "author": "OmegaStator",
+      "version": "v.2.01",
+      "title_id": "RNPYMSID2",
+      "description": "My Shut-In Demon! Port",
+      "requirements": "PC Files from the itch.io version of the game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3016ea0dfb711f03a198b1e3aa40417120a8fea5bb0fc9a7fc316d8236d8be6f.png",
+      "screenshots": [],
+      "release_url": "https://github.com/omegastator/msid-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "my.shut-in.demon.vpk",
+          "url": "https://github.com/OmegaStator/msid-vita/releases/download/2.01/my.shut-in.demon.vpk",
+          "size": 25877410,
+          "md5": "2350fa065164ac6ab35145a34b6ce8d6"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
+    },
+    {
       "id": "vitadbtoo-psp:2098",
       "platforms": [
         "psp"
@@ -89834,7 +89999,7 @@
           "sha256": null
         }
       ],
-      "popularity": 19125,
+      "popularity": 19126,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NaziZombiesPortable/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -90139,6 +90304,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2009-01-01"
+    },
+    {
+      "id": "vitadbtoo-vita:4830",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Need for Speed Underground",
+      "summary": "Need for Speed Underground, on the PS Vita",
+      "author": "NDRWhun",
+      "version": "v.0.9",
+      "title_id": "NFSUG1VTA",
+      "description": "Need for Speed Underground, on the PS Vita",
+      "requirements": "- Need for Speed Underground for PC, US or European, version 1.4 (your own copy)\n- The game's Speed.exe must have the no-DVD patch applied\n- PS Vita with HENkaku / Ensō and VitaShell\n- About 1.5 GB free on the memory card\n- Overclocking is mandatory, for example with PSVshell\n- CapUnlocker is highly recommended",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/6397886405e026a49e498144702f63bf528c1ea703d1ca5c172e25f10d1604f4.png",
+      "screenshots": [],
+      "release_url": "https://github.com/ndrwhun/ug1vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "NFSUG1VITA_0.9_playtest_hotfix2_EU_US.vpk",
+          "url": "https://github.com/NDRWhun/UG1VITA/releases/download/playtest-hotfix-2/NFSUG1VITA_0.9_playtest_hotfix2_EU_US.vpk",
+          "size": 7015952,
+          "md5": "527a436216ddffff4fe6fe315577d8b9"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-vita:1228",
@@ -92396,7 +92592,7 @@
       "name": "NFS Underground 2",
       "summary": "Port of Need for Speed Underground 2 for PSVita.",
       "author": "danos-x5",
-      "version": "v.0.8.2",
+      "version": "v.0.8.3",
       "title_id": "NFSU2VITA",
       "description": "Port of Need for Speed Underground 2 for PSVita.",
       "requirements": "- Game Data Files: PC",
@@ -92408,9 +92604,9 @@
         {
           "format": "vpk",
           "filename": "NFSU2VITA.vpk",
-          "url": "https://github.com/danos-x5/NFSUG2_VITA/releases/download/v0.8.2/NFSU2VITA.vpk",
-          "size": 9778411,
-          "md5": "889ae0199b367000a29a6bb501948914"
+          "url": "https://github.com/danos-x5/NFSUG2_VITA/releases/download/v0.8.3/NFSU2VITA.vpk",
+          "size": 9759628,
+          "md5": "c35509761822f1e5eeb1050ccc26549d"
         }
       ],
       "popularity": 0,
@@ -95283,7 +95479,7 @@
           "sha256": "682f425de5042a02a437b80189991921200b19211eb40c8351ae0303eae0b6ee"
         }
       ],
-      "popularity": 381,
+      "popularity": 382,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXBadApple/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -95347,7 +95543,7 @@
           "sha256": "ce8d5272b59164012d5bc988d41352dd16346ac727a2c0fbfcd47988ce88f368"
         }
       ],
-      "popularity": 13714,
+      "popularity": 13717,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXRemoteLauncher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -95380,7 +95576,7 @@
           "sha256": "0fe36bd298000b40d1b94226256e90ce3226918e5d67f22d70822a7fb3100cd0"
         }
       ],
-      "popularity": 915,
+      "popularity": 917,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXSimpleDownloader/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -95539,7 +95735,7 @@
           "sha256": "396e1acfe62d5116f894b5c92f026a2249c14c54940d76c1d2233834b281d8f8"
         }
       ],
-      "popularity": 19838,
+      "popularity": 19839,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nx-locale-switcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -95638,7 +95834,7 @@
           "sha256": null
         }
       ],
-      "popularity": 258417,
+      "popularity": 258423,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NX-shell/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -95704,7 +95900,7 @@
           "sha256": "b714d4036cbad4d05b9a12ce6702bd7e17c1b7ec54319d237244128850cf77d5"
         }
       ],
-      "popularity": 52565,
+      "popularity": 52567,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NX-Update-Checker/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -95834,7 +96030,7 @@
           "sha256": "d97a1a85ad10c9f46ae4e252cac6093cf7af3dcc5ffa79d403d6c5ebe1782966"
         }
       ],
-      "popularity": 229458,
+      "popularity": 229464,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/gcdumptool/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -95964,7 +96160,7 @@
           "sha256": null
         }
       ],
-      "popularity": 33269,
+      "popularity": 33270,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXGallery/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -95997,7 +96193,7 @@
           "sha256": "24eb895198a2128ab7f48d9f6e01097ee948b29813ef1cdd8fae2bfce23dbc3a"
         }
       ],
-      "popularity": 30270,
+      "popularity": 30271,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switchXBOXcontroller/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -96063,7 +96259,7 @@
           "sha256": "9d9dbc1bc58ed08eeafa88fa67d61632c58195ddd17d0f37526a9d90ce1e1853"
         }
       ],
-      "popularity": 89183,
+      "popularity": 89187,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXMP/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -96129,7 +96325,7 @@
           "sha256": null
         }
       ],
-      "popularity": 15533,
+      "popularity": 15534,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/nxplay/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -96228,7 +96424,7 @@
           "sha256": "f0fde4354c671af83e3ae22631a664559edf63a52ffdac3537aff0c6d807a6cb"
         }
       ],
-      "popularity": 435,
+      "popularity": 436,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXSAND/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -96294,7 +96490,7 @@
           "sha256": "f647983e344e7e8ce35955c2f2154ec8043819063cc78e2c9d5f5161684c16c8"
         }
       ],
-      "popularity": 7652,
+      "popularity": 7653,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/NXShare/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -97215,39 +97411,6 @@
       "updated_at": "2014-12-30"
     },
     {
-      "id": "vitadbtoo-psp:3925",
-      "platforms": [
-        "psp"
-      ],
-      "name": "ONEMenu",
-      "summary": "Homebrew launcher for PSP.",
-      "author": "ONELua Team",
-      "version": "v.1.0",
-      "title_id": null,
-      "description": "",
-      "requirements": "",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/26270069ad820ebb5c62b64a28de51a78b6fd64984ad267529df331c250fd374.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/0d9ad35412f7d30cf97d702b60bbe4dedb11361a2f063349e33b06302338b1ad.png"
-      ],
-      "release_url": "https://archive.org/details/onemenu.-vfinal.-7z",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "ONEMenu.VFinal.zip",
-          "url": "https://archive.org/download/onemenu.-vfinal.-7z/ONEMenu.VFinal.zip",
-          "size": 2627655,
-          "md5": "50ebff1a14c04c733f6e3a5c418af7bb"
-        }
-      ],
-      "popularity": 0,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2017-03-01"
-    },
-    {
       "id": "vitadbtoo-vita:1196",
       "platforms": [
         "psvita"
@@ -97918,7 +98081,7 @@
           "sha256": "d2b3f949ec81af0aafcabd14f8efd77b4ff5c0f5509f5d718893275c1c41513c"
         }
       ],
-      "popularity": 98,
+      "popularity": 99,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenAoK/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -98306,7 +98469,7 @@
           "sha256": "9b60d5d2a43b8ba4ba6eb8bb27ef3cc92e7730344c00783a1e51dcfd3b1a7b98"
         }
       ],
-      "popularity": 709,
+      "popularity": 713,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenHomeNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -98641,7 +98804,7 @@
           "sha256": "5d2b4f853483b7684dc251215a3e1541edb43ac72018b1ebfef272c7931a67cd"
         }
       ],
-      "popularity": 1155,
+      "popularity": 1157,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenNOW/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -99129,7 +99292,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6819,
+      "popularity": 6820,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/OpenTTD/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -100528,6 +100691,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": ""
+    },
+    {
+      "id": "vitadbtoo-vita:4848",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Pac'N-Jump",
+      "summary": "Fan port of Namco's 2011 phone game Pac'N-Jump.",
+      "author": "heyjonanderson",
+      "version": "v.0.9.1",
+      "title_id": "PNJN00001",
+      "description": "Fan port of Namco's 2011 phone game Pac'N-Jump.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f6be0ff5bc2b4fec33bc8d886769e4a4101716b95a22948862e72be9029d953a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/heyjonanderson/pacnjumpnative/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "pac-n-jump-0.9.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/pac-n-jump-0.9.1.vpk",
+          "size": 1187780,
+          "md5": "45fb2491e7fe38f5ef2c2850be85d903"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-vita:1604",
@@ -102837,6 +103031,37 @@
       "updated_at": "2007-05-25"
     },
     {
+      "id": "vitadbtoo-vita:4835",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "PeelGallery",
+      "summary": "PeelGallery is a simple Homebrew application for the PS Vita; it acts as an intuitive visual frontend (gallery) for easily managing and swapping the lock screen wallpapers handled by the Fruitpeel plugin.",
+      "author": "AlecksPV1",
+      "version": "v.1.0",
+      "title_id": "PEELGALLR",
+      "description": "PeelGallery is a simple Homebrew application for the PS Vita; it acts as an intuitive visual frontend (gallery) for easily managing and swapping the lock screen wallpapers handled by the Fruitpeel plugin.",
+      "requirements": "-fruitpeel plugin",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c27ee18820ac047e2c9ac1b123094aed36a452bdfef5f755d213e1f568062a22.png",
+      "screenshots": [],
+      "release_url": "https://github.com/aleckspv1/peelgallery/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "PeelGallery.vpk",
+          "url": "https://github.com/AlecksPV1/PeelGallery/releases/download/v1.0/PeelGallery.vpk",
+          "size": 4295510,
+          "md5": "1f046a738526440ef3bf6601084633ec"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
+    },
+    {
       "id": "vitadbtoo-psp:4341",
       "platforms": [
         "psp"
@@ -104104,7 +104329,7 @@
           "sha256": null
         }
       ],
-      "popularity": 14665,
+      "popularity": 14666,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/picodrive/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -104347,7 +104572,7 @@
       "name": "PictoRelay",
       "summary": "Real online PictoChat between DS, 3DS, PC and Mobile",
       "author": "HollowOwl",
-      "version": "v1.2.19",
+      "version": "v1.2.20",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/ShinMikite/PictoRelay-3DS/main/icon.png",
       "release_url": "https://github.com/ShinMikite/PictoRelay-3DS/releases",
@@ -104355,14 +104580,14 @@
         {
           "format": "cia",
           "filename": "PictoRelay.cia",
-          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.2.19/PictoRelay.cia",
-          "size": 3090368
+          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.2.20/PictoRelay.cia",
+          "size": 3091392
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-17T03:58:48Z"
+      "updated_at": "2026-11-19T04:02:23Z"
     },
     {
       "id": "vitadbtoo-vita:1429",
@@ -105556,7 +105781,7 @@
           "sha256": "db7b0cc05eaf16821741405f685de7404c53fc68c8870ea408076c4115337f94"
         }
       ],
-      "popularity": 10672,
+      "popularity": 10674,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pkDex/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -105701,10 +105926,10 @@
         "utilities"
       ],
       "description": "A local bank system for Pokemon games on Nintendo Switch.\nMove Pokemon between your save files and local bank storage.\n\nFeatures\n- Profile Selection\n- Two-Panel Box Viewer\n- Pick & Place\n- Multi-Select\n- Pokemon Details\n\nBank System\n- Create a new bank (up to 32-character name)\n- Rename an existing bank\n- Delete a bank (with confirmation)\n\nEach bank has the same box capacity as its game family (32 or 40 boxes).\nThe bank list shows the number of occupied slots for each bank.\n\nYou can switch between banks from the main view via the menu, with or without saving first.\n\nBackup System\n- When loading a game save on Switch, an automatic backup is created before any modifications.\n- This is a full copy of the mounted save directory.\n\nSave Integrity\n- SCBlock saves (ZA, SV, SwSh, LA): Decrypted, modified, and re-encrypted. A round-trip verification runs on load to confirm the cycle is lossless.\n- BDSP saves: Flat binary with MD5 checksum, recalculated on every save.\n- All saves are written in-place to preserve ",
-      "added_at": "2026-11-09",
+      "added_at": "2026-11-13",
       "summary": "A local bank system for Pokemon games",
       "author": "Insektaure",
-      "version": "2.3.3",
+      "version": "2.3.4",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/Insektaure/pkHouse",
@@ -105714,15 +105939,15 @@
           "filename": "pkHouseLocalPokeBank.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/pkHouseLocalPokeBank/manifest.install",
           "size": 14197,
-          "sha256": "ad1e86bbb11a72e97088819b04fda9d14c6a80168e1a7cc409c5c1890f0cf682"
+          "sha256": "9b3415fd317e501376f9c8b38d81d358d7dbed0e64eb6cdd4635bf20bd7baa9f"
         }
       ],
-      "popularity": 5170,
+      "popularity": 5174,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pkHouseLocalPokeBank/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-11-12"
+      "updated_at": "2026-11-18"
     },
     {
       "id": "universal-db:Universal-Team/pkmn-chest",
@@ -105781,7 +106006,7 @@
           "sha256": "82ee8a8a60076513010d0f68c588e23bb4df2ec2c1efba985d01e6b00cb60df7"
         }
       ],
-      "popularity": 3443,
+      "popularity": 3447,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/PKSE/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -106235,7 +106460,7 @@
           "sha256": "3298e318ae66d6e9220cb219d750b8deb99ee47b6d457d131b04898ec1f66b1b"
         }
       ],
-      "popularity": 177,
+      "popularity": 178,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/PlayGuard/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -106397,7 +106622,7 @@
           "sha256": "0ef7e311216393862bc8f9af8a7249d5ec93a4e6aed6f90fd50b7f8df0c31b59"
         }
       ],
-      "popularity": 3128,
+      "popularity": 3132,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pleNx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -107036,7 +107261,7 @@
           "sha256": "610c2941b64c231959dc0ad968bbba029b0fc3e3664c06f06c2821c4e4f7cd81"
         }
       ],
-      "popularity": 42456,
+      "popularity": 42460,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pNES/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -109287,47 +109512,6 @@
       "updated_at": "2015-04-22T00:00:00+00:00"
     },
     {
-      "id": "vitadbtoo-vita:1052",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "Potatoom 3",
-      "summary": "Port of Doom 3 for PSVITA.",
-      "author": "Rinnegatamante",
-      "version": "v.0.5",
-      "title_id": "DHEWM3ES2",
-      "description": "Potatoom 3 is a PoC level port of Doom 3, popular FPS made by idSoftware with idTech 4 engine.\nThis port is based over a modified version of dhewm3 that adds basic multithreading support to idTech 4 optimized furtherly to squeeze as much performances as possible.",
-      "requirements": "- libshacccg.suprx in ur0:data\n- Data files in ux0:data/dhewm3",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b771494e66927137564cc2edd305b9d9a3fe510294173019db5217f8bcc20643.png",
-      "screenshots": [
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/c07426945ae8946d5de665cee11179871eee3d2c6a87e876a513241bf8e7d73a.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/3bbc957b078ea2257757ebed438abcb8ab40504bab216117dd91468c5b805ef8.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/e45f4a3d7d6658fe515958b98bc9f11e2a8b14a57c9780eb34b8f86c3f1ffe71.png",
-        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/c37c3ac968777616198fb3072075b7a3d0989f7f379a30298fb6ab430f149147.png"
-      ],
-      "release_url": "https://github.com/Rinnegatamante/d3es-vita",
-      "downloads": [
-        {
-          "format": "vpk",
-          "filename": "1052-dhewm3.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1052-dhewm3.vpk",
-          "size": 9993277,
-          "md5": "273dc81620ca0bdf13ce0ed092da1679"
-        },
-        {
-          "format": "data",
-          "filename": "1052-data-dhewm3.zip",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1052-data-dhewm3.zip"
-        }
-      ],
-      "popularity": 26726,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2023-03-07"
-    },
-    {
       "id": "vitadbtoo-psp:3591",
       "platforms": [
         "psp"
@@ -109767,7 +109951,7 @@
           "sha256": null
         }
       ],
-      "popularity": 50252,
+      "popularity": 50254,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pplay/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -109798,7 +109982,7 @@
           "sha256": "9296552c26d96c61f04d2aaf12f06f867cf59172b3748c1a4a97367c6361903f"
         }
       ],
-      "popularity": 260678,
+      "popularity": 260688,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ppsspp/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -111459,7 +111643,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 17422,
+      "popularity": 17504,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111486,7 +111670,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3714,
+      "popularity": 3717,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111513,7 +111697,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 15750,
+      "popularity": 15807,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111540,7 +111724,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7351,
+      "popularity": 7366,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111567,7 +111751,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 83110,
+      "popularity": 84033,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111594,7 +111778,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 325,
+      "popularity": 332,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -112466,30 +112650,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.8.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.10.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.8",
+      "version": "v12.6.10",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.8.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.8/ps5upload-12.6.8.elf",
-          "sha256": "782508beeac6219df8a75517f02aa114dcfb3fab8d2efb28149770aaf9d87435"
+          "filename": "ps5upload-12.6.10.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.10/ps5upload-12.6.10.elf",
+          "sha256": "81a51ed76ba8b1901fc064620dbe36c77bb458600bfe53f17aa2fce273e7271f"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-18T22:17:38+08:00"
+      "updated_at": "2026-11-19T12:03:42+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -112776,7 +112960,7 @@
           "sha256": "2986e7ed26c8adaa729e9341fe22469fe8e8496b7c8407c40b3e4833d6011391"
         }
       ],
-      "popularity": 98682,
+      "popularity": 98685,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/psnes/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -126985,6 +127169,37 @@
       "updated_at": "2013-01-01"
     },
     {
+      "id": "vitadbtoo-vita:4828",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Psv Cleaner",
+      "summary": "Psv Cleaner",
+      "author": "theheroGAC",
+      "version": "v.1.18",
+      "title_id": "CLEAN0000",
+      "description": "Psv Cleaner",
+      "requirements": "Not specified",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/bb6db10ba1d401c9051ee119bf6230bac1502d874c3a95f7adc920279e2641e4.png",
+      "screenshots": [],
+      "release_url": "https://github.com/theherogac/psv-cleaner/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "PSV_Cleaner.vpk",
+          "url": "https://github.com/theheroGAC/PSV-Cleaner/releases/download/1.18/PSV_Cleaner.vpk",
+          "size": 223678,
+          "md5": "ef8a9660b9ab51b63f9e16ce7ecbb9f5"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
+    },
+    {
       "id": "vitadbtoo-vita:619",
       "platforms": [
         "psvita"
@@ -128183,7 +128398,7 @@
           "sha256": null
         }
       ],
-      "popularity": 14288,
+      "popularity": 14289,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/pynx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -128379,7 +128594,7 @@
           "sha256": null
         }
       ],
-      "popularity": 8660,
+      "popularity": 8664,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Q3ArenaNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -130727,6 +130942,37 @@
       "updated_at": "2006-08-30"
     },
     {
+      "id": "vitadbtoo-vita:4833",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Real Racing 2",
+      "summary": "A RR2 vita port based on android HD version.",
+      "author": "CHUTA7X",
+      "version": "v.1.0.0",
+      "title_id": "RR2VITA01",
+      "description": "A RR2 vita port based on android HD version.",
+      "requirements": "- No Data",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/7a637a45ad915853fd80a9dcfc95a584d2e4523320bca516b57e4144960cbc33.png",
+      "screenshots": [],
+      "release_url": "https://github.com/chuta7x/real-racing-2-vita-port-release/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "RR2Vita_Public_Beta_1.0.0.vpk",
+          "url": "https://github.com/CHUTA7X/Real-Racing-2-Vita-Port-Release/releases/download/VitaPort/RR2Vita_Public_Beta_1.0.0.vpk",
+          "size": 6363044,
+          "md5": "c4a136313e81443e9ef8defa60554c43"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
+    },
+    {
       "id": "vitadbtoo-vita:1809",
       "platforms": [
         "psvita"
@@ -132330,7 +132576,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7117,
+      "popularity": 7119,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/renpy-switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -132430,7 +132676,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7622,
+      "popularity": 7623,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Reset-Parental-Controls-NX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -132978,7 +133224,7 @@
           "sha256": "3860d928db9717d0a41509ba08cc78b0b1240adf5c02e8960b6410ba1d85bea9"
         }
       ],
-      "popularity": 954587,
+      "popularity": 954618,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/RetroNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -133715,7 +133961,7 @@
           "sha256": "31b45d12f9a78ecf505f34f075e58b9e2b4d392df67b95612e2b0037fd5bb4c7"
         }
       ],
-      "popularity": 4149,
+      "popularity": 4151,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/RingRacers/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -137080,7 +137326,7 @@
           "sha256": "0170ad00f07feb6d3cfe0bab9993481857837c2dae140a09545e80b4617f8818"
         }
       ],
-      "popularity": 154298,
+      "popularity": 154334,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SaltyNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -137113,7 +137359,7 @@
           "sha256": "4c012524998f32cc00147698ea1b587019b6bb2116aece30e2b68e13a16e1461"
         }
       ],
-      "popularity": 35526,
+      "popularity": 35531,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SaltyNX-Tool/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -141143,7 +141389,7 @@
           "sha256": "553ce1f749bca0247b211a3ca884430580c5bf5204bac9f24c2c1507b69e2a9c"
         }
       ],
-      "popularity": 3204,
+      "popularity": 3205,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ShoWiFi/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -141601,7 +141847,7 @@
       "name": "Silent Hill 3 (vallfrr)",
       "summary": "Port of Silent Hill 3 for PSVita.",
       "author": "vallfrr",
-      "version": "v.1.0.1",
+      "version": "v.1.0.2",
       "title_id": "SILHIL003",
       "description": "Port of Silent Hill 3 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -141613,9 +141859,9 @@
         {
           "format": "vpk",
           "filename": "sh3vita.vpk",
-          "url": "https://github.com/vallfrr/sh3vita/releases/download/v1.0.1/sh3vita.vpk",
-          "size": 6747705,
-          "md5": "fd0aa5e223c47e1d497c1799778d6931"
+          "url": "https://github.com/vallfrr/sh3vita/releases/download/v1.0.2/sh3vita.vpk",
+          "size": 6757705,
+          "md5": "10b2844362ab857941cbce4226fcc16b"
         }
       ],
       "popularity": 0,
@@ -142364,7 +142610,7 @@
           "sha256": "365f978cb5a867881b677fb629fec3e2480664e266fee12b3c363683e9d22a35"
         }
       ],
-      "popularity": 78428,
+      "popularity": 78432,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SimpleModDownloader/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -142397,7 +142643,7 @@
           "sha256": "ace860afe31286b9ff8569e040bd56d6c948ea094f889b67ab05f43144a527d6"
         }
       ],
-      "popularity": 77061,
+      "popularity": 77066,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SimpleModManager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -145459,7 +145705,7 @@
           "sha256": null
         }
       ],
-      "popularity": 31282,
+      "popularity": 31283,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/snes9x_2010_nx/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -147155,7 +147401,7 @@
           "sha256": "a6d3abece9c3003a7b5c830216c7de0e655a405b34b8fc9ec2efa67417621190"
         }
       ],
-      "popularity": 60219,
+      "popularity": 60227,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sonicroboblast2/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -147491,7 +147737,7 @@
           "sha256": null
         }
       ],
-      "popularity": 43191,
+      "popularity": 43192,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Sonic3-AIR/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -148998,7 +149244,7 @@
           "sha256": "57709d6d272352001cce331d2ea577c056ee6bf442807afb93f6a68c85a66a34"
         }
       ],
-      "popularity": 64504,
+      "popularity": 64561,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sphaira/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -149253,7 +149499,7 @@
           "sha256": "a6fe83b0f8831e9cd5ef95b86a44bb0fa77486d7f8e4e20370b9b89a60e33bc3"
         }
       ],
-      "popularity": 1827,
+      "popularity": 1829,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SpotifySwitchRemote/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -149442,7 +149688,7 @@
           "sha256": "7570d94d7ae2d02c32247a072d4c6b6dafc4afb43b5cf3174a9483888a68daf5"
         }
       ],
-      "popularity": 6272,
+      "popularity": 6273,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SPSV/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -149984,7 +150230,7 @@
           "sha256": "b6790c041750569184d0842dadcfa3d7221adf135f219252c2b8fcccbb5abe73"
         }
       ],
-      "popularity": 21283,
+      "popularity": 21285,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SRB2Kart/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -150114,7 +150360,7 @@
           "sha256": "bef27082d3cafaa70c5c519c7b46713563ca94c3db8f4ca5cb1d028ae73fc57b"
         }
       ],
-      "popularity": 8035,
+      "popularity": 8036,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SSBUModManager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -150468,6 +150714,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-04-29T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-vita:4846",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Star Fox Adventures",
+      "summary": "Port of the Star Fox Adventures decompilation for PSVITA.",
+      "author": "tchisholm20",
+      "version": "v.0.2.0",
+      "title_id": "STFX00001",
+      "description": "Port of the Star Fox Adventures decompilation for PSVITA.",
+      "requirements": "- Game Data Files: your own copy of Star Fox Adventures (GameCube)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9539315115d60be71477373120ca19c98e3e9a511640d07efd02ebe6a5de7124.png",
+      "screenshots": [],
+      "release_url": "https://github.com/tchisholm20/starfox-adventures-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "star-fox-adventures-0.2.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/star-fox-adventures-0.2.0.vpk",
+          "size": 8719901,
+          "md5": "2b02cd3b0c25585ef61971e79c245bfe"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-vita:1386",
@@ -151729,7 +152006,7 @@
           "sha256": "f77edcc278204e23dfe2fd69078f3c6ddcb94eab810a1384336915d11d112d39"
         }
       ],
-      "popularity": 2307,
+      "popularity": 2310,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/StreamFinEX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -152932,6 +153209,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-01-28"
+    },
+    {
+      "id": "vitadbtoo-vita:4831",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Super Mario Galaxy",
+      "summary": "Super Mario Galaxy, running natively on PS Vita. Rear touch Star Bit aiming, touch and tilt controls.",
+      "author": "CBOC-Vita-Lab",
+      "version": "v.2.2.1",
+      "title_id": "SMGV00001",
+      "description": "Super Mario Galaxy, running natively on PS Vita. Rear touch Star Bit aiming, touch and tilt controls.",
+      "requirements": "- ur0:data/libshacccg.suprx\n- You'll need your own copy of the game (Wii, USA, RMGE01).",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/33ee9415e8695b15b025be1f9813025678cfd3b64643f81ea5ab3542caadfe2a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/cboc-vita-lab/galaxy-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Galaxy-Vita.vpk",
+          "url": "https://github.com/CBOC-Vita-Lab/galaxy-vita/releases/download/v2.2.1/Galaxy-Vita.vpk",
+          "size": 8910994,
+          "md5": "1e1237f1154a32914aa649a23a9741d5"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-vita:1750",
@@ -154676,6 +154984,42 @@
       "updated_at": "2026-09-25T00:00:00+00:00"
     },
     {
+      "id": "vitadbtoo-vita:4827",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "SuperTuxKart",
+      "summary": "Port of SuperTuxKart 1.5 for PSVITA.",
+      "author": "edgarlugo",
+      "version": "v.1.01",
+      "title_id": "STKV00001",
+      "description": "Port of SuperTuxKart 1.5 for PSVITA.",
+      "requirements": "- Data files: supertuxkart-data.zip from the vita-1.0 release, extracted to ux0:data/",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/fa64aee8ccaf8534e15972bab496f0a9ce424209573755dc249fbb9a7fde4add.png",
+      "screenshots": [],
+      "release_url": "https://github.com/edgarlugo/stk-code/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "supertuxkart.vpk",
+          "url": "https://github.com/edgarlugo/stk-code/releases/download/vita-1.01/supertuxkart.vpk",
+          "size": 12250864,
+          "md5": "157cfea2ee537f6e6c87bab2b371c602"
+        },
+        {
+          "format": "data",
+          "filename": "supertuxkart-data.zip",
+          "url": "https://github.com/edgarlugo/stk-code/releases/download/vita-1.0/supertuxkart-data.zip"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
+    },
+    {
       "id": "vitadbtoo-psp:4214",
       "platforms": [
         "psp"
@@ -154934,7 +155278,7 @@
           "sha256": null
         }
       ],
-      "popularity": 68309,
+      "popularity": 68316,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Switch_90DNS_Tester/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155000,7 +155344,7 @@
           "sha256": "04389bc485f71ec6ed41201a54bfdaf5290a4e5d52a8930ce3a0adea1003f3d3"
         }
       ],
-      "popularity": 1847,
+      "popularity": 1863,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchFrameTap/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155033,7 +155377,7 @@
           "sha256": null
         }
       ],
-      "popularity": 37965,
+      "popularity": 37966,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchFTPClient/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155066,7 +155410,7 @@
           "sha256": "e7c68b8b2af29ef793742523c341271b5f82954de8a160980fae1009dbea4d3b"
         }
       ],
-      "popularity": 1102,
+      "popularity": 1106,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchHero/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155097,7 +155441,7 @@
           "sha256": "eebbb218d089669627473750766d1d5e9b19286228d31e13c69c90343a4040d7"
         }
       ],
-      "popularity": 19786,
+      "popularity": 19789,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchNotificationLED/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155289,7 +155633,7 @@
           "sha256": null
         }
       ],
-      "popularity": 146238,
+      "popularity": 146246,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switch-cheats-updater/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155320,7 +155664,7 @@
           "sha256": "64cda8ac15e6ab84ca1786715e45897cb8d69ed2cbbec2a0d3d4e99ac1c2cac0"
         }
       ],
-      "popularity": 11085,
+      "popularity": 11090,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switchnewpipe/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155353,7 +155697,7 @@
           "sha256": null
         }
       ],
-      "popularity": 79327,
+      "popularity": 79328,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switch-remote-play/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155386,7 +155730,7 @@
           "sha256": "d0f1ebdf676a84d8d6f907828ffda8cba7aa07293dbd45f3309c3818b2201475"
         }
       ],
-      "popularity": 17354,
+      "popularity": 17357,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/switch-time/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155419,7 +155763,7 @@
           "sha256": "960f5a4a7779af4c4a117470c844f693add294b253aa4c99d74b0d1ab5c5ee6c"
         }
       ],
-      "popularity": 1121,
+      "popularity": 1122,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchCast/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155452,7 +155796,7 @@
           "sha256": "86cbde77940c5a8550b23dd766b67ff8714becb5b8ee57986fb95e1ed2697359"
         }
       ],
-      "popularity": 61368,
+      "popularity": 61388,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/Switchfin/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155618,7 +155962,7 @@
           "sha256": "eb42de191b9320ddb2992fcbe0f0b1fe6e492fad9c3252c080a1b0d87d05d607"
         }
       ],
-      "popularity": 936,
+      "popularity": 939,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchInfoNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155746,7 +156090,7 @@
           "sha256": "00c3128d9323b354a1fbbfa270e8b472eb87da0181912cdec2b5f10560d53cca"
         }
       ],
-      "popularity": 445,
+      "popularity": 449,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchnoteStudio/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -155941,7 +156285,7 @@
           "sha256": "28f1b0badaad2fef16ffc7bdcfdebaad2b18b85d5dc08c82b3528c921acb99e1"
         }
       ],
-      "popularity": 7528,
+      "popularity": 7530,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchWave/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -156166,7 +156510,7 @@
           "sha256": "0eefae05ce08054706389d615afb09cde4120d23f734ab129184ed8bf6207252"
         }
       ],
-      "popularity": 245707,
+      "popularity": 245728,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/sys-clk/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -156230,7 +156574,7 @@
           "sha256": "723ea1b924809b92e9b493be80a7f23b34d61e2f247b5208b993f48d0fe066a7"
         }
       ],
-      "popularity": 79931,
+      "popularity": 79955,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/syscon1x2024/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -156325,7 +156669,7 @@
           "sha256": "dc932e652b893d78c380ba64e75a40df999cdbd4051d80cc0bad33ff998e32cc"
         }
       ],
-      "popularity": 128751,
+      "popularity": 128761,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/SysDVR/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -163913,7 +164257,7 @@
           "sha256": "956e1ea33629dbefbda0607b2c466629f47fa2b57b81f90509b58d5bbcb129f8"
         }
       ],
-      "popularity": 6807,
+      "popularity": 6808,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TomoToolNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -165040,7 +165384,7 @@
           "sha256": "f44eaaab9d94042dd129dc52e0822467193802bbc68bd64e049390cb724045b7"
         }
       ],
-      "popularity": 2272,
+      "popularity": 2277,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TranslateNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -166371,7 +166715,7 @@
           "sha256": "0585d7d66823f9e798b65cb2c0f3ec593a427ac6fcb5b1aa9e6c62fe0299f8ea"
         }
       ],
-      "popularity": 21440,
+      "popularity": 21444,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/TsVitch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -166979,7 +167323,7 @@
           "sha256": "cd2e5fa590d75fb5cb0f09550440cabb2e6c51b8e1b19bb886eb056964695c57"
         }
       ],
-      "popularity": 2193,
+      "popularity": 2197,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/twiNX/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -167791,7 +168135,7 @@
           "sha256": "2918537d01f249ba5f57aee63cedf6f768eacc5f4a4bc00c1b4f8253e38b31ef"
         }
       ],
-      "popularity": 64022,
+      "popularity": 64028,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/uLaunch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -168117,7 +168461,7 @@
           "sha256": "6e9033530662f843c720f76371e22798a4fcfe6bd6b3fbd5c8b9e281e264a89a"
         }
       ],
-      "popularity": 96438,
+      "popularity": 96517,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/UltrahandOverlay/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -175542,6 +175886,37 @@
       "updated_at": "2021-06-07"
     },
     {
+      "id": "vitadbtoo-vita:4845",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "vitaMania!",
+      "summary": "PS Vita osu!mania-style 4K rhythm game",
+      "author": "lolhop",
+      "version": "v.0.1.0a",
+      "title_id": "VTMN00002",
+      "description": "PS Vita osu!mania-style 4K rhythm game",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/96657c18995be99d6f79df80f41615147e754ef9b361ea51367cfd3967c818a4.png",
+      "screenshots": [],
+      "release_url": "https://github.com/lolhop/vitamania/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VitaMania.vpk",
+          "url": "https://github.com/lolhop/vitaMania/releases/download/v0.1.0a/VitaMania.vpk",
+          "size": 1866303,
+          "md5": "d7be270231086d0d4c4d907b787189d2"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
+    },
+    {
       "id": "vitadbtoo-vita:1523",
       "platforms": [
         "psvita"
@@ -176509,6 +176884,37 @@
       "updated_at": "2026-03-15"
     },
     {
+      "id": "vitadbtoo-vita:4836",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vitastremio",
+      "summary": "Native Stremio App for PSVita",
+      "author": "gmorb",
+      "version": "v.1.3",
+      "title_id": "VSTR00001",
+      "description": "Native Stremio App for PSVita",
+      "requirements": "- PC with Python and ffmpeg (Windows, macOS or Linux).\n- Connected to the same home network as the Vita",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/bf4fa101cafa018250bbafecd260aece1628b4c007cd020b15c7ca8aa68b1f18.png",
+      "screenshots": [],
+      "release_url": "https://github.com/gmorb/vitastremio/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vitastremio.vpk",
+          "url": "https://github.com/gmorb/vitastremio/releases/download/v1.3/vitastremio.vpk",
+          "size": 407873,
+          "md5": "c959ca2c9eae91db06b4b4bcbbb1be85"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
+    },
+    {
       "id": "vitadbtoo-vita:129",
       "platforms": [
         "psvita"
@@ -176698,6 +177104,68 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-09-17"
+    },
+    {
+      "id": "vitadbtoo-vita:4837",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VitaTweakBox",
+      "summary": "Some Tweak in one app for PSVita/TV",
+      "author": "BMK-Studio",
+      "version": "v.3.1",
+      "title_id": "VTBX00001",
+      "description": "Some Tweak in one app for PSVita/TV",
+      "requirements": "- No Data",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/81240edd71a1962f5752ce7dc5bf7d507842c8ebe65e38cb67c593ca12c91156.png",
+      "screenshots": [],
+      "release_url": "https://github.com/bmk-studio/vitatweakbox/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VTBX00001-03.10-VitaTweakBox.vpk",
+          "url": "https://github.com/BMK-Studio/VitaTweakBox/releases/download/3.1/VTBX00001-03.10-VitaTweakBox.vpk",
+          "size": 44874303,
+          "md5": "542efa7a1c43f2a5523e382e755978ed"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
+    },
+    {
+      "id": "vitadbtoo-vita:4838",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VitaUSBStream",
+      "summary": "VitaUSBStream Audio & Video over USB allows you to stream both the video and audio from a PS Vita to a computer using a single USB cable.",
+      "author": "BMK-Studio",
+      "version": "v.1.4",
+      "title_id": "VUSC00001",
+      "description": "VitaUSBStream Audio & Video over USB allows you to stream both the video and audio from a PS Vita to a computer using a single USB cable.",
+      "requirements": "- Remove any old configuration lines loading a previous UDCD-UVC audio plugin or audio bridge.",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ac2afcec15fd8a6f1f903291b3ab3403b6a1c40179179b5423aaa0ce54af6ea9.png",
+      "screenshots": [],
+      "release_url": "https://github.com/bmk-studio/vitausbstream/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VUSC00001-01.40-VitaUSBStream.vpk",
+          "url": "https://github.com/BMK-Studio/VitaUSBStream/releases/download/1.4/VUSC00001-01.40-VitaUSBStream.vpk",
+          "size": 763315,
+          "md5": "fdaede03f06bce30c9b2c9e7ced9956d"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-vita:1406",
@@ -179693,6 +180161,37 @@
       "updated_at": "2026-11-11"
     },
     {
+      "id": "vitadbtoo-vita:4844",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Wheel Of The Year",
+      "summary": "Wheel Of The Year",
+      "author": "LiEnby",
+      "version": "v.1.1",
+      "title_id": "WOTY00001",
+      "description": "Wheel Of The Year",
+      "requirements": "Not specified",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c8bc7c0e6913930b8d1bd34216bd3b748cae809ff57750da329f11119cc435b1.png",
+      "screenshots": [],
+      "release_url": "https://github.com/lienby/wheeloftheyeargm/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "WOTY.vpk",
+          "url": "https://github.com/LiEnby/WheelOfTheYearGM/releases/download/v1.1/WOTY.vpk",
+          "size": 5071119,
+          "md5": "1ca6ea8b89827699cae6b97be55b0a75"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
+    },
+    {
       "id": "vitadbtoo-psp:3362",
       "platforms": [
         "psp"
@@ -182603,7 +183102,7 @@
           "sha256": "56141ceaf56507ce883db1974837920e47596475475460ddd62e3878f125c22e"
         }
       ],
-      "popularity": 37820,
+      "popularity": 37821,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/wiliwili/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -183437,6 +183936,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": ""
+    },
+    {
+      "id": "vitadbtoo-vita:4847",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Wonder Boy: The Dragon's Trap",
+      "summary": "Port of Wonder Boy: The Dragon's Trap for PSVITA with an on-device APK/OBB importer.",
+      "author": "Cynostial",
+      "version": "v.0.35-rc1",
+      "title_id": "WBDT00001",
+      "description": "Port of Wonder Boy: The Dragon's Trap for PSVITA with an on-device APK/OBB importer.",
+      "requirements": "- Game Data Files: your own Android APK and OBB of the game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4cb0d50bd34d7a441facd0a36cd6d3f141373f19fe8c8b736fe24596d70cd1aa.png",
+      "screenshots": [],
+      "release_url": "https://github.com/cynostial/wonderboy-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "wonder-boy-the-dragon-s-trap-0.35-rc1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/wonder-boy-the-dragon-s-trap-0.35-rc1.vpk",
+          "size": 10009041,
+          "md5": "ef9d6f185c9c321047cfefc45dd4257a"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-vita:691",
@@ -184638,7 +185168,7 @@
           "sha256": null
         }
       ],
-      "popularity": 13063,
+      "popularity": 13066,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/xash3d-switch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -186062,7 +186592,7 @@
           "sha256": "0abfde65a30b194e2e6ef5af89b3ff999b84bda66df06bbf9b40c6e923e685a0"
         }
       ],
-      "popularity": 3195,
+      "popularity": 3199,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/YamaNXTurkishPatcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -186811,7 +187341,7 @@
           "sha256": "72a8c27a0bfe40ead5bbc1d20240382eafe849709f60a45acd86f6fef9909058"
         }
       ],
-      "popularity": 2607,
+      "popularity": 2629,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/YTBPlayer/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -187301,7 +187831,7 @@
           "sha256": "7b59ba367e85e1374b7d4d3456d6a08273c85958245e9e863dc8e3c339018134"
         }
       ],
-      "popularity": 376,
+      "popularity": 378,
       "manifest_url": "https://switch.cdn.fortheusers.org/packages/ZeldaSaveEditor/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
@@ -188573,6 +189103,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2019-02-15"
+    },
+    {
+      "id": "vitadbtoo-vita:4842",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Zombieville USA 2",
+      "summary": "Zombieville USA 2 PSVita Port",
+      "author": "AJ170",
+      "version": "v.1.01",
+      "title_id": "ZUSA42069",
+      "description": "Zombieville USA 2 PSVita Port",
+      "requirements": "- No Data",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f5de56894bf8566fa82453dd4f9412c9d3428c1bbe86e3ebf9626e1395800636.png",
+      "screenshots": [],
+      "release_url": "https://github.com/aj170/zombievilleusa2-psvita-port/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ZUSA2.vpk",
+          "url": "https://github.com/AJ170/ZombievilleUSA2-PSVita-Port/releases/download/1.01/ZUSA2.vpk",
+          "size": 165927721,
+          "md5": "c9d8af73f87940a4ab89a792f94ba999"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-18"
     },
     {
       "id": "vitadbtoo-vita:1829",
