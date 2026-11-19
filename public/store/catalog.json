@@ -311,7 +311,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2006,
+      "popularity": 2009,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/100_Boxes_Wiiu/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -2769,7 +2769,7 @@
       "name": "3dslibris",
       "summary": "An ebook and manga reader for Nintendo 3DS",
       "author": "Rigle",
-      "version": "v3.2.1",
+      "version": "v3.2.2",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/RigleGit/3dslibris/refs/heads/main/assets/release/icon-32x32.png",
       "release_url": "https://github.com/RigleGit/3dslibris/releases",
@@ -2777,38 +2777,38 @@
         {
           "format": "3dsx",
           "filename": "3dslibris-debug.3dsx",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.1/3dslibris-debug.3dsx",
-          "size": 14735576
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.2/3dslibris-debug.3dsx",
+          "size": 14736156
         },
         {
           "format": "cia",
           "filename": "3dslibris-debug.cia",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.1/3dslibris-debug.cia",
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.2/3dslibris-debug.cia",
           "size": 13452224
         },
         {
           "format": "zip",
           "filename": "3dslibris-sdmc.zip",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.1/3dslibris-sdmc.zip",
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.2/3dslibris-sdmc.zip",
           "size": 5021452
         },
         {
           "format": "3dsx",
           "filename": "3dslibris.3dsx",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.1/3dslibris.3dsx",
-          "size": 14946204
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.2/3dslibris.3dsx",
+          "size": 14946244
         },
         {
           "format": "cia",
           "filename": "3dslibris.cia",
-          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.1/3dslibris.cia",
+          "url": "https://github.com/RigleGit/3dslibris/releases/download/v3.2.2/3dslibris.cia",
           "size": 13652928
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-16T15:00:55Z"
+      "updated_at": "2026-11-19T07:58:17Z"
     },
     {
       "id": "universal-db:s4ammy/3DSLink",
@@ -5827,7 +5827,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1229,
+      "popularity": 1242,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/AirAttack/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -6138,7 +6138,7 @@
       "added_at": "2026-09-09",
       "summary": "GUI for chiaki-ng",
       "author": "xlanor",
-      "version": "0.6.5",
+      "version": "0.7.0",
       "license": "Affero GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/xlanor/akira",
@@ -6148,7 +6148,7 @@
           "filename": "Akira.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/Akira/manifest.install",
           "size": 27035,
-          "sha256": "d3f7de42e4f144b4520eec39f00c575d247dce00468a4e28586d93f941fc8ce4"
+          "sha256": "addb9c32a00ad0ed929de63d800156c68ad71eff7e81ca4557b7fbd90dbaf9e6"
         }
       ],
       "popularity": 3529,
@@ -6156,7 +6156,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-06"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:1944",
@@ -7050,7 +7050,7 @@
           "sha256": null
         }
       ],
-      "popularity": 21255,
+      "popularity": 21314,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/AM64DSPatcher/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -9760,7 +9760,7 @@
           "sha256": null
         }
       ],
-      "popularity": 23738,
+      "popularity": 23860,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/AromaUpdater/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -11347,7 +11347,7 @@
           "sha256": "f857cb417dafaa3d374e854ecd96e193adda097e48907a184ec600b70878e11c"
         }
       ],
-      "popularity": 2285,
+      "popularity": 2381,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/aurorachatforWiiU/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -12335,7 +12335,7 @@
       "name": "Balatro Vita",
       "summary": "Port of Balatro for PSVITA.",
       "author": "Daexxx & jafeth & Alyen91",
-      "version": "v.0.13",
+      "version": "v.0.13.1",
       "title_id": "BALA00001",
       "description": "Port of Balatro for PSVITA. Balatro is a poker-inspired roguelike deck builder all about creating powerful synergies and winning big.",
       "requirements": "- Game Data Files: Steam, patched to game.love with the PC tool, in ux0:app/BALA00001",
@@ -12350,10 +12350,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Balatro.vpk",
-          "url": "https://github.com/Daexxxx/Balatro-Vita/releases/download/v0.13/Balatro.vpk",
+          "filename": "1259-balatro-vita-0.13.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1259-balatro-vita-0.13.1.vpk",
           "size": 5856035,
-          "md5": "7cfda5415fa6d3b817e3b5ce1e6d6bdd"
+          "md5": "8c3df99732c808413cde344934ade9e7"
         }
       ],
       "popularity": 22420,
@@ -16300,7 +16300,7 @@
           "sha256": "e17df7bb5c991a1504b1987dd37c28320100633ca66430eafd20e9a83eaa9fda"
         }
       ],
-      "popularity": 1361,
+      "popularity": 1373,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/BlockamokRemix/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -16756,7 +16756,7 @@
           "sha256": null
         }
       ],
-      "popularity": 157029,
+      "popularity": 157834,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Bloopair-Tiramisu/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -16787,7 +16787,7 @@
           "sha256": null
         }
       ],
-      "popularity": 40246,
+      "popularity": 40326,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Bloopair/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -20830,7 +20830,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3308,
+      "popularity": 3313,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/ButtonTester/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -21285,7 +21285,7 @@
           "sha256": "ae5c3c683d028e2552d29816efd0fb2c27227b425f2ba5cfc7295b96f9fb1b30"
         }
       ],
-      "popularity": 9623,
+      "popularity": 9984,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/CafXplorer/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -21318,7 +21318,7 @@
           "sha256": "990eb285fa400d823c3ca8d3d593774e0b7ebda8b03028a1e02152462f84253f"
         }
       ],
-      "popularity": 5949,
+      "popularity": 6011,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/cafmediaplayer/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -26995,7 +26995,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7218,
+      "popularity": 7224,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/CloseHBL/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -27105,7 +27105,7 @@
       "name": "COD: BOZ Vita",
       "summary": "Port of Call of Duty: Black Ops Zombies for PSVita.",
       "author": "devnoname120",
-      "version": "v.2.02",
+      "version": "v.2.03",
       "title_id": "BOZ000001",
       "description": "Port of Call of Duty: Black Ops Zombies for PSVita.\nCall of Duty: Black Ops Zombies is a mobile game that proposes the popular Zombies mode from Call of Duty: Black Ops.",
       "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/boz",
@@ -27118,10 +27118,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "boz_vita.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/boz_vita.vpk",
-          "size": 1936614,
-          "md5": "3b98f740a9e7c7c5d7d8bb74d7fef11f"
+          "filename": "1410-cod-boz-vita-2.03.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1410-cod-boz-vita-2.03.vpk",
+          "size": 1938843,
+          "md5": "1247cdccce690237aa79a874e7ba7ed7"
         }
       ],
       "popularity": 12469,
@@ -28039,7 +28039,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1658,
+      "popularity": 1671,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Connect4/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -28369,7 +28369,7 @@
           "sha256": null
         }
       ],
-      "popularity": 16305,
+      "popularity": 16332,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/controller-test/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -28402,7 +28402,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2257,
+      "popularity": 2268,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/ConwaysGameofLife/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -30260,7 +30260,7 @@
           "sha256": null
         }
       ],
-      "popularity": 26133,
+      "popularity": 26148,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Crispy-Doom/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -30293,7 +30293,7 @@
           "sha256": "689908a7d5b7878083187e7f33587e16bc84317204923938a2eac674b3949903"
         }
       ],
-      "popularity": 4763,
+      "popularity": 4955,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/CrispyDoomU/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -33660,6 +33660,68 @@
       "updated_at": "2008-09-01"
     },
     {
+      "id": "vitadbtoo-vita:4864",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Daytona USA",
+      "summary": "Port of Daytona USA for PSVita.",
+      "author": "RetroValou",
+      "version": "v.1.0.1",
+      "title_id": "DAYT00093",
+      "description": "Port of a static recompilation of Daytona USA for PSVita.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/7351cbf7b2285da6e1f039254c8e47580572fc872427b41330d1d9e9e5c18c29.png",
+      "screenshots": [],
+      "release_url": "https://archive.org/details/SegaModel2_PSVITA",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "daytona-usa-1.0.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/daytona-usa-1.0.1.vpk",
+          "size": 2893466,
+          "md5": "b310d6b15bd448d7ae20199f78d52397"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
+      "id": "vitadbtoo-vita:4874",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Daytona USA Deluxe",
+      "summary": "Port of Daytona USA Deluxe for PSVita.",
+      "author": "MDashK",
+      "version": "v.1.0",
+      "title_id": "DAYUSADX0",
+      "description": "Daytona USA: Deluxe is a third-person and first-person arcade and racing game in the Daytona series. The game is an updated version of Sega Saturn's Circuit Edition. Compared to the original release, Deluxe features higher framerates and resolutions, as well as better draw distance. Exclusive to this version is a new track, Silver Ocean Causeway.",
+      "requirements": "- Game Data Files: your own original Daytona USA Deluxe CD",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/eb2810f35627fe92f6f4e0e3883d912c023fbe68036d41e4fd5d2ca1324a9497.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MDashK/Daytona-USA-Deluxe-Recomp/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "daytona-usa-deluxe-1.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/daytona-usa-deluxe-1.0.vpk",
+          "size": 1371197,
+          "md5": "83e1231c6d922f4bede935c145667ae8"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-psp:2606",
       "platforms": [
         "psp"
@@ -34017,6 +34079,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2022-01-24"
+    },
+    {
+      "id": "vitadbtoo-vita:4866",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Dead or Alive",
+      "summary": "Port of Dead or Alive for PSVita.",
+      "author": "RetroValou",
+      "version": "v.1.0.1",
+      "title_id": "DOAL00100",
+      "description": "Port of a static recompilation of Dead or Alive for PSVita.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/23a3edca0e1b74def2bf85484bbd4a19f73ff4a83792e3f31862bd58287c630c.png",
+      "screenshots": [],
+      "release_url": "https://archive.org/details/SegaModel2_PSVITA",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "dead-or-alive-1.0.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/dead-or-alive-1.0.1.vpk",
+          "size": 4524874,
+          "md5": "caf3fbc524b95091b9c9ff589b321da3"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "universal-db:classyham/3DS_DeadPixelChecker",
@@ -36486,7 +36579,7 @@
           "sha256": null
         }
       ],
-      "popularity": 17131,
+      "popularity": 17146,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/disc2appWUTPort/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -37405,7 +37498,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2964,
+      "popularity": 2997,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/DonkeyKongish/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -37964,7 +38057,7 @@
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Classic Controller · GameCube Controller · SDHC",
       "author": "Tantric",
-      "version": "2.0",
+      "version": "2.1",
       "title_id": "000100014E4B13B3",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/dosbox-wii/icon.png",
@@ -37974,14 +38067,14 @@
           "format": "zip",
           "filename": "dosbox-wii.zip",
           "url": "https://hbb1.oscwii.org/api/contents/dosbox-wii/dosbox-wii.zip",
-          "size": 2316895
+          "size": 2355090
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-25T00:00:00+00:00"
+      "updated_at": "2026-11-19T15:58:16+00:00"
     },
     {
       "id": "vitadbtoo-psp:2376",
@@ -38387,7 +38480,7 @@
       "name": "Dragon Ball Z: BT3",
       "summary": "Port of Dragon Ball Z: Budokai Tenkaichi 3 for PSVita.",
       "author": "arielxflores",
-      "version": "v.1.2.3",
+      "version": "v.1.2.4",
       "title_id": "BTTD00010",
       "description": "Port of Dragon Ball Z: Budokai Tenkaichi 3 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PS2",
@@ -38399,9 +38492,9 @@
         {
           "format": "vpk",
           "filename": "Tenkaichi3Decomp-Vita.vpk",
-          "url": "https://github.com/arielxflores/Tenkaichi3Decomp-Vita/releases/download/v1.2.3/Tenkaichi3Decomp-Vita.vpk",
-          "size": 6028730,
-          "md5": "9bd53bdca66c05346f7f916ac7a36912"
+          "url": "https://github.com/arielxflores/Tenkaichi3Decomp-Vita/releases/download/v1.2.4/Tenkaichi3Decomp-Vita.vpk",
+          "size": 6032211,
+          "md5": "5954849960fb47e51adc92e3f01d849c"
         }
       ],
       "popularity": 0,
@@ -38657,7 +38750,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4769,
+      "popularity": 4777,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/drc-test/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -39755,7 +39848,7 @@
           "sha256": null
         }
       ],
-      "popularity": 63314,
+      "popularity": 63514,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/dumpling/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -40157,6 +40250,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-10-14"
+    },
+    {
+      "id": "vitadbtoo-vita:4860",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "DX Garden",
+      "summary": "Radio player/explorer for PSVita.",
+      "author": "hiraethclub",
+      "version": "v.0.9.0 beta",
+      "title_id": "DXGA00001",
+      "description": "A radio player and explorer for the PS Vita (homebrew, HENkaku/enso), in the spirit of spinning a globe and listening to what's on air somewhere else.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/45ff8799516e3262aef9054e1e21b7d7d3a1f9b8bd1e67d97fd9c7106de8a4b5.png",
+      "screenshots": [],
+      "release_url": "https://github.com/hiraethclub/DX-Garden/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "dx-garden-0.9.0beta.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/dx-garden-0.9.0beta.vpk",
+          "size": 10689357,
+          "md5": "f1841563c46cc78933b6d828eb26b261"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "hbas-switch:d1x-switch",
@@ -40773,7 +40897,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2620,
+      "popularity": 2632,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/EasyRPG/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -41563,7 +41687,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3432,
+      "popularity": 3485,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/EjectDisc/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -43082,7 +43206,7 @@
           "sha256": null
         }
       ],
-      "popularity": 43840,
+      "popularity": 43881,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/EnvSwap/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -44723,7 +44847,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3483,
+      "popularity": 3490,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Fake-08/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -45881,7 +46005,7 @@
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "Tantric",
-      "version": "4.0.4",
+      "version": "4.0.5",
       "title_id": "000100014E3DC7D1",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/fceugx/icon.png",
@@ -45891,14 +46015,14 @@
           "format": "zip",
           "filename": "fceugx.zip",
           "url": "https://hbb1.oscwii.org/api/contents/fceugx/fceugx.zip",
-          "size": 2849329
+          "size": 2889070
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-03T00:00:00+00:00"
+      "updated_at": "2026-11-19T16:04:07+00:00"
     },
     {
       "id": "open-shop-channel-wii:fceugx-channel-installer",
@@ -47223,7 +47347,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4279,
+      "popularity": 4282,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/fireplace-nx-wiiu/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -47254,7 +47378,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3468,
+      "popularity": 3470,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Fireplace-NXU/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -47746,7 +47870,7 @@
           "sha256": null
         }
       ],
-      "popularity": 21052,
+      "popularity": 21078,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/flappy_bird_3d/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -49906,7 +50030,7 @@
       "name": "Fran Bow - Chapter Three",
       "summary": "Port of Fran Bow - Chapter Three for PSVITA.",
       "author": "hatoving",
-      "version": "v.2.02",
+      "version": "v.2.07",
       "title_id": "FBCH30419",
       "description": "This is a continuation of the second chapter of Fran Bow.\nCredits to m1s3ry, Grossleymoo and Killmonday.",
       "requirements": "- Game Data Files: Android OR PC in ux0:app/FBCH30419/games",
@@ -49921,10 +50045,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "657-FranBowChapter3.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/657-FranBowChapter3.vpk",
-          "size": 2991445,
-          "md5": "69aeec8d53f8a75bbf327b0b71a186f3"
+          "filename": "657-fran-bow-chapter-three-2.07.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/657-fran-bow-chapter-three-2.07.vpk",
+          "size": 2949071,
+          "md5": "e5e11b6b0eb70818cf9c9a87b8ff19b3"
         }
       ],
       "popularity": 1681,
@@ -52527,7 +52651,7 @@
           "sha256": null
         }
       ],
-      "popularity": 9230,
+      "popularity": 9244,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/GamepadTester/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -53241,6 +53365,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2026-07-17T01:07:11Z"
+    },
+    {
+      "id": "vitadbtoo-vita:4875",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "GBS",
+      "summary": "GB/GBC/GBA emulator for PSVita.",
+      "author": "Camzer",
+      "version": "v.1.2.0",
+      "title_id": "GBST00001",
+      "description": "An open-source Game Boy, Game Boy Color and Game Boy Advance emulator for the PS Vita and PS TV, with local multiplayer and real fast-forward!",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4f3bdec18f280b5f76685db1f14f8b7743836f5eebaa67250b55108b5e0fc21c.png",
+      "screenshots": [],
+      "release_url": "https://gitlab.com/camzer/gbs/-/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "gbs-1.2.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/gbs-1.2.0.vpk",
+          "size": 11631311,
+          "md5": "3fede443724ecb78613adb9010bbe44b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "open-shop-channel-wii:gcmm",
@@ -54218,7 +54373,7 @@
       "name": "GH Vita",
       "summary": "Port of Guitar Hero for PSVita.",
       "author": "irxd",
-      "version": "v.0.1.1",
+      "version": "v.0.2.0 alpha",
       "title_id": "GHVT00001",
       "description": "Port of Guitar Hero for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PS2",
@@ -54229,10 +54384,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "ghvita-v0.1.1.vpk",
-          "url": "https://github.com/irxd/guitar-hero-vita/releases/download/v0.1.1/ghvita-v0.1.1.vpk",
-          "size": 4005038,
-          "md5": "d307f4b94313e448e851c3dd0b6878c5"
+          "filename": "4818-gh-vita-0.2.0alpha.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/4818-gh-vita-0.2.0alpha.vpk",
+          "size": 4109056,
+          "md5": "5ba98619eead091cc484bbf99ccc1924"
         }
       ],
       "popularity": 0,
@@ -54852,7 +55007,7 @@
       "name": "GMCA",
       "summary": "Media center client for PSVita.",
       "author": "thcolin",
-      "version": "v.1.4.0",
+      "version": "v.1.5.0",
       "title_id": "GMCA00001",
       "description": "GMCA is one native, controller-first client. Point it at any media center â€” Plex, Jellyfin, Emby or Stremio â€” and run it on any device you left in a drawer: Nintendo Switch, PS Vita or a Raspberry Pi wired to the TV. The interface never changes; only the accent colour and the tabs follow your server.",
       "requirements": "",
@@ -54864,9 +55019,9 @@
         {
           "format": "vpk",
           "filename": "GMCA.vpk",
-          "url": "https://github.com/thcolin/gamepad-media-center-aggregator/releases/download/v1.4.0/GMCA.vpk",
-          "size": 14915386,
-          "md5": "ffd206665f1386031725522338cb3aee"
+          "url": "https://github.com/thcolin/gamepad-media-center-aggregator/releases/download/v1.5.0/GMCA.vpk",
+          "size": 14915966,
+          "md5": "a0d078565f172bc73adf462cdc68421c"
         }
       ],
       "popularity": 1815,
@@ -58485,10 +58640,10 @@
         "games"
       ],
       "description": "NOTE: Halo's game data is not included. Put an Xbox disc image of Halo: Combat Evolved (any version, .iso or .xiso) on the SD card as /switch/halo/halo.iso; the game unpacks its maps folder from it on the first start (about 1.7 GB on the card, a few minutes). Or put the disc's maps folder at /switch/halo/maps yourself.\n\nHalo: Combat Evolved on the Switch, built from the decompilation of the Xbox game: the campaign, split-screen and online multiplayer, Halo Custom Edition maps (in /switch/halo/custom_maps), gyro aiming, and the game's own renderer on deko3d at up to 1080p docked.\n\nSaves go in /switch/halo/save and the settings in /switch/halo/config.toml. The game updates itself from its GitHub releases when a new build is out.",
-      "added_at": "2026-11-10",
+      "added_at": "2026-11-15",
       "summary": "Halo: Combat Evolved, built from the decompilation of the Xbox game. Needs your own disc image.",
       "author": "thelinkin3000",
-      "version": "build-141",
+      "version": "build-143",
       "license": "AGPL-3.0-or-later",
       "icon_url": null,
       "release_url": "https://github.com/thelinkin3000/halo-ce-universal",
@@ -58497,8 +58652,8 @@
           "format": "hbas",
           "filename": "halo-ce-universal.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/halo-ce-universal/manifest.install",
-          "size": 32871,
-          "sha256": "5f4f0c09ce63f24475057bd1ac69be124429c58146f85bc3a0b330c65bc5df29"
+          "size": 35152,
+          "sha256": "f2d638c16f6fe756de65cdf6412a9dc8301ee9eca8acaea73ddd44b495960f7c"
         }
       ],
       "popularity": 467,
@@ -58506,7 +58661,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-11-12"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:2119",
@@ -59342,7 +59497,7 @@
           "sha256": null
         }
       ],
-      "popularity": 348483,
+      "popularity": 348729,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/appstore/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -59681,30 +59836,30 @@
       "updated_at": "2008-05-10"
     },
     {
-      "id": "ps5-payloads-atlas:hearbridge-1.4.2.elf",
+      "id": "ps5-payloads-atlas:hearbridge-1.4.3.elf",
       "platforms": [
         "ps5"
       ],
       "name": "HearBridge-PS5",
       "summary": "Play PS5 game audio on any Bluetooth headphones or earbuds. Payload for jailbroken PS5",
       "author": "",
-      "version": "v1.4.2",
+      "version": "v1.4.3",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/x-f1reball-x/hearbridge-ps5",
       "downloads": [
         {
           "format": "elf",
-          "filename": "hearbridge-1.4.2.elf",
-          "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.2/HearBridge-1.4.2.elf",
-          "sha256": "565bb15656efad8d5561c2e397eac89002f12955fb2c6b65dc3475017613e434"
+          "filename": "hearbridge-1.4.3.elf",
+          "url": "https://github.com/X-F1REBALL-X/HearBridge-PS5/releases/download/v1.4.3/HearBridge-1.4.3.elf",
+          "sha256": "cc3ed39ee208ab76d0da2b3e99596a7037474f6d7238f98452c23130bdc7f379"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-16T01:45:40+08:00"
+      "updated_at": "2026-11-20T03:48:23+08:00"
     },
     {
       "id": "vitadbtoo-psp:2135",
@@ -63781,6 +63936,37 @@
       "updated_at": "2016-08-17"
     },
     {
+      "id": "vitadbtoo-vita:4859",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "IGI",
+      "summary": "Port of Project I.G.I. for PSVita.",
+      "author": "HenryKun55",
+      "version": "v.0.5.0",
+      "title_id": "PIGI00001",
+      "description": "Project I.G.I. (Innerloop, 2000) running natively on the PS Vita / PS TV. This is not an emulator: the original Windows executable was statically recompiled to C and built for the Vita, with Direct3D 7 / DirectSound / DirectInput reimplemented on top of vitaGL and the Vita's own APIs. Hot parts of the game (terrain, meshes, skinning, culling...) have been rewritten by hand for the Vita's CPU.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0cd6d9605e0a033a3b25be85970c4561709253d29b1dec7b8a0bd8858b1e7e0b.png",
+      "screenshots": [],
+      "release_url": "https://github.com/HenryKun55/igi-vita",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "igi-0.5.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/igi-0.5.0.vpk",
+          "size": 6776165,
+          "md5": "1fe31a66fa6a280c438ddd5e42fa3860"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:1749",
       "platforms": [
         "psvita"
@@ -63996,11 +64182,42 @@
       "updated_at": "2007-06-23"
     },
     {
+      "id": "vitadbtoo-vita:4858",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Illusia (MetalSyntax)",
+      "summary": "Port of Gamevil's Illusia for PSVITA.",
+      "author": "MetalSyntax",
+      "version": "v.1.0.1",
+      "title_id": "ILLUSIA01",
+      "description": "Port of Gamevil's Illusia for PSVITA.",
+      "requirements": "- Game Data Files: your own Illusia Android APK",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3d0f2200405e69a679c6104f4ad145d97801042ba3556734091da2f156e6c677.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/ILLUSIA-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "illusia.vpk",
+          "url": "https://github.com/MetalSyntax/ILLUSIA-vita/releases/download/v1.0.1/illusia.vpk",
+          "size": 1355547,
+          "md5": "dfcf3c44ddb5329e21416be1524bed47"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:1546",
       "platforms": [
         "psvita"
       ],
-      "name": "Illusia",
+      "name": "Illusia (withLogic)",
       "summary": "Port of Illusia for PSVITA.",
       "author": "withLogic",
       "version": "v.1.0.0",
@@ -64307,7 +64524,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1784,
+      "popularity": 1786,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Immaterial/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -67729,7 +67946,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1569,
+      "popularity": 1574,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/jezzballu/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -72045,7 +72262,7 @@
           "sha256": null
         }
       ],
-      "popularity": 563,
+      "popularity": 575,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Labyrinth/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -72202,7 +72419,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3564,
+      "popularity": 3566,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/lameIRCU/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -79782,6 +79999,37 @@
       "updated_at": "2006-01-01"
     },
     {
+      "id": "vitadbtoo-vita:4867",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Manx TT Superbike",
+      "summary": "Port of Manx TT Superbike for PSVita.",
+      "author": "RetroValou",
+      "version": "v.1.0.1",
+      "title_id": "MANX00098",
+      "description": "Port of a static recompilation of Manx TT Superbike for PSVita.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/22cac577987da2c635ddd6a6dc0884e17bd6b652c7062febd270be393bab3647.png",
+      "screenshots": [],
+      "release_url": "https://archive.org/details/SegaModel2_PSVITA",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "manx-tt-superbike-1.0.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/manx-tt-superbike-1.0.1.vpk",
+          "size": 3891546,
+          "md5": "eef2d70da24efabe953c624fa2723cf5"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-psp:3113",
       "platforms": [
         "psp"
@@ -82364,7 +82612,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1466,
+      "popularity": 1470,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/MegaZeux/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -84162,7 +84410,7 @@
           "sha256": null
         }
       ],
-      "popularity": 11329,
+      "popularity": 11334,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/UsendMii_Client/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -84700,7 +84948,7 @@
       "name": "Minecraft: Story Mode",
       "summary": "Minecraft: Story Mode Season 1 port.",
       "author": "LeZergan",
-      "version": "v.1.11",
+      "version": "v.1.19",
       "title_id": "MCSM00001",
       "description": "Port of Minecraft: Story Mode Season 1 for PSVITA, based on the Android release. The game data has to be supplied by the user and converted with the MCSM Vita Data Builder available on the release page.",
       "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: Android in ux0:data/mcsm",
@@ -84711,10 +84959,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "MCSM-1.11.vpk",
-          "url": "https://github.com/LeZergan/mcsm-vita/releases/download/v1.11/MCSM-1.11.vpk",
-          "size": 3441189,
-          "md5": "7d7e9baf8423eea3508bce29dd333f1c"
+          "filename": "1450-minecraft-story-mode-1.19.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1450-minecraft-story-mode-1.19.vpk",
+          "size": 3428991,
+          "md5": "a1923f0027f477541a1786561c884eff"
         }
       ],
       "popularity": 0,
@@ -84877,7 +85125,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7227,
+      "popularity": 7233,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Minesweeper_WiiU/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -86295,6 +86543,37 @@
       "updated_at": "2008-05-15"
     },
     {
+      "id": "vitadbtoo-vita:4854",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Monster Hunter 4 Ultimate",
+      "summary": "Azahar derived runner for MH4U.",
+      "author": "SaNch0sE",
+      "version": "v.0.3.2-alpha",
+      "title_id": "MH4UVITA0",
+      "description": "Azahar derived runner for MH4U.",
+      "requirements": "- m4hunative.skprx\n- CapUnlocker.skprx\n- Game Data Files: 3DS",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a62d82db55bced9fa9839162340d7d7b5dd6e7c2318072b0678f8737508e45ea.png",
+      "screenshots": [],
+      "release_url": "https://github.com/SaNch0sE/azahar-vita-mh4u/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "MH4U.vpk",
+          "url": "https://github.com/SaNch0sE/azahar-vita-mh4u/releases/download/0.3.2-alpha/MH4U.vpk",
+          "size": 8704357,
+          "md5": "45f77149b858ed8c305145d5824f43b6"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:1793",
       "platforms": [
         "psvita"
@@ -86632,7 +86911,7 @@
           "sha256": null
         }
       ],
-      "popularity": 38090,
+      "popularity": 38287,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/moonlight-wiiu/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -88056,7 +88335,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4162,
+      "popularity": 4173,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/MultiDRCSpaceDemo/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -89965,13 +90244,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64901600
+          "size": 64901978
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-16T16:57:12Z"
+      "updated_at": "2026-11-19T16:30:40Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -90039,6 +90318,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-02-02"
+    },
+    {
+      "id": "vitadbtoo-vita:4878",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "NBA2K16",
+      "summary": "Port of NBA2K16 for PSVita.",
+      "author": "SpliffCurryBeats",
+      "version": "v.0.2",
+      "title_id": "NBA2K1600",
+      "description": "A port of NBA 2K16 Android v0.0.29 to PS Vita.",
+      "requirements": "- Game Data Files: your own NBA 2K16 Android 0.0.29 ARMv7 APK and matching main OBB",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ebc31be8521be8406a972268da7722c262093b14955a4a07ba8eaf150c899287.png",
+      "screenshots": [],
+      "release_url": "https://gitlab.com/sexcurrybeats/nba2k16-vita/-/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "nba2k16-0.2.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/nba2k16-0.2.vpk",
+          "size": 2842006,
+          "md5": "5e3a8da093349a84676d438ce3f2f587"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:3515",
@@ -92400,10 +92710,10 @@
         "utilities"
       ],
       "description": "NexStatus shows who is online on Nextendo. The home screen lists games with a live player count, and opening a game shows its rooms and the players in them. After you sign in with a QR code, friends are marked in the list. Counts refresh about every 15 seconds while the app is open.\n\nAn Ultrahand overlay shows the same public totals without signing in. Updates can be installed from inside the app.\n\nAI use: Co-written with AI. AI also used for: icon/banner art.",
-      "added_at": "2026-11-10",
+      "added_at": "2026-11-18",
       "summary": "Live Nextendo status and lobbies",
       "author": "ILALEX",
-      "version": "1.1.3",
+      "version": "1.1.11",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/jean-louis1776/nextendo-status",
@@ -92412,8 +92722,8 @@
           "format": "hbas",
           "filename": "NexStatus.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/NexStatus/manifest.install",
-          "size": 19471,
-          "sha256": "e420fcc7118ccceb4cb5f9d3fb250eca96004427e8ede8089c99f9ada954bb01"
+          "size": 20280,
+          "sha256": "00de45706faa81a89fa5720e4f459e7de8c9137aee870b443eaa912afa4de475"
         }
       ],
       "popularity": 0,
@@ -92421,7 +92731,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-11-13"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:2181",
@@ -92497,7 +92807,7 @@
       "name": "NextBot For PSVita",
       "summary": "Clone of Garrys Mod's Nextbot for PSVITA.",
       "author": "SoyKhaler",
-      "version": "v.0.1",
+      "version": "v.0.2",
       "title_id": "GDOT00002",
       "description": "Clone of Garrys Mod's Nextbot for PSVITA.",
       "requirements": "",
@@ -92509,11 +92819,11 @@
       "release_url": "https://soykhaler.itch.io/nextbots-for-psvita",
       "downloads": [
         {
-          "format": "vpk",
-          "filename": "1155-Nextbot4Vita.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1155-Nextbot4Vita.vpk",
-          "size": 25002965,
-          "md5": "da38edb0beefd45e67ecbd89b03f4be8"
+          "format": "zip",
+          "filename": "1155-nextbot-for-psvita-0.2.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1155-nextbot-for-psvita-0.2.zip",
+          "size": 34083842,
+          "md5": "9ad9df6ff4718b724dbc73ff97356acf"
         }
       ],
       "popularity": 13098,
@@ -92554,6 +92864,37 @@
       "updated_at": "2024-06-06T23:17:35Z"
     },
     {
+      "id": "vitadbtoo-vita:4855",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "NFS Carbon",
+      "summary": "Port of Need for Speed Carbon for PSVita.",
+      "author": "Swisha33",
+      "version": "v.0.1.2",
+      "title_id": "NFSCVITA0",
+      "description": "Port of Need for Speed Carbon for PSVita.",
+      "requirements": "- Game Data Files: PC",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f0fcf013660d2325a3f712f312acab125c80155a24093fb4c7e6afcac4c31e51.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Swisha33/NFSCVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "NFSCVita.vpk",
+          "url": "https://github.com/Swisha33/NFSCVita/releases/download/v0.1.2/NFSCVita.vpk",
+          "size": 14384060,
+          "md5": "fda50b12420820d5cd982422e643a950"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:1584",
       "platforms": [
         "psvita"
@@ -92589,7 +92930,7 @@
       "platforms": [
         "psvita"
       ],
-      "name": "NFS Underground 2",
+      "name": "NFS Underground 2 (danos-x5)",
       "summary": "Port of Need for Speed Underground 2 for PSVita.",
       "author": "danos-x5",
       "version": "v.0.8.3",
@@ -92614,6 +92955,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-16"
+    },
+    {
+      "id": "vitadbtoo-vita:4876",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "NFS Underground 2 (PacmanicS)",
+      "summary": "Port of Need for Speed Underground 2 for PSVita.",
+      "author": "PacmanicS",
+      "version": "v.0.1",
+      "title_id": "NFSU2REL1",
+      "description": "Need for Speed Underground 2 is running on PS Vita with the original PC gameplay, cars, tracks, career mode and game files. The original x86 code runs through an ARMv7 recompilation with native Vita graphics and controls. No Remote Play, OpenUG2 or recreated game.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b83dca6a00268914e33cc829c95d1bfd30200188cf96e0deaa64ffb051f461c6.png",
+      "screenshots": [],
+      "release_url": "https://pacmanics.com/ps-vita/nfs-underground-2/",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "nfsu2-0.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/nfsu2-0.1.vpk",
+          "size": 13943807,
+          "md5": "bc7abd134e84783d767209df0dd3ab60"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-vita:1774",
@@ -93375,14 +93747,14 @@
           "format": "zip",
           "filename": "Nintendont.zip",
           "url": "https://hbb1.oscwii.org/api/contents/Nintendont/Nintendont.zip",
-          "size": 1077171
+          "size": 1079816
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2016-12-18T00:00:00+00:00"
+      "updated_at": "2026-11-19T15:27:34+00:00"
     },
     {
       "id": "open-shop-channel-wii:HIDTest",
@@ -94195,7 +94567,7 @@
           "sha256": null
         }
       ],
-      "popularity": 32567,
+      "popularity": 32829,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/NooDS/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -95286,7 +95658,7 @@
           "sha256": null
         }
       ],
-      "popularity": 8458,
+      "popularity": 8476,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/ntrview-wiiu/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -98921,7 +99293,7 @@
       "name": "OpenRCT2Vita",
       "summary": "Port of OpenRCT2 for PSVita.",
       "author": "Paxrisen",
-      "version": "v.1.0",
+      "version": "v.1.0.2",
       "title_id": "ORCV00001",
       "description": "Port of OpenRCT2 for PSVita.",
       "requirements": "- Game Data Files: PC",
@@ -98932,10 +99304,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "OpenRCT2Vita_v1.0.vpk",
-          "url": "https://github.com/Paxrisen/OpenRCT2Vita/releases/download/OpenRCT2Vitav1.0/OpenRCT2Vita_v1.0.vpk",
-          "size": 6528736,
-          "md5": "14c804e2438dae5b652f2fcd3ccbac00"
+          "filename": "4817-openrct2vita-1.0.2.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/4817-openrct2vita-1.0.2.vpk",
+          "size": 6913501,
+          "md5": "8f65fd40f3ae76154996f268b244ae9a"
         }
       ],
       "popularity": 0,
@@ -99011,6 +99383,37 @@
       "updated_at": "2019-04-23"
     },
     {
+      "id": "vitadbtoo-vita:4856",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "OpenSKY",
+      "summary": "Reimplementation of Skyrim Special Edition for PSVita.",
+      "author": "Dingo57701",
+      "version": "v.2",
+      "title_id": "OSKY00001",
+      "description": "Reimplementation of Skyrim Special Edition for PSVita.",
+      "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a8d35a3af84b3abc4fd7dc198ef30dc7c7393aa707b33c3fc2abe18280de52c0.png",
+      "screenshots": [],
+      "release_url": "https://github.com/danderson57702-collab/opensky/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "opensky.vpk",
+          "url": "https://github.com/danderson57702-collab/opensky/releases/download/beta-2/opensky.vpk",
+          "size": 1280017,
+          "md5": "a35c2c8183f165fb047899c9b77a874c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:1448",
       "platforms": [
         "psvita"
@@ -99067,7 +99470,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2907,
+      "popularity": 2915,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Opensupaplex/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -100940,7 +101343,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4980,
+      "popularity": 5016,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/PacManish/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -105398,6 +105801,42 @@
       "updated_at": "2026-10-26T23:20:03Z"
     },
     {
+      "id": "vitadbtoo-vita:4872",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Pixel Dungeon Console Edition",
+      "summary": "Pixel Dungeon port for PSVita.",
+      "author": "xqspx",
+      "version": "v.0.5.0 beta",
+      "title_id": "PXLV00001",
+      "description": "Native C++ port of Pixel Dungeon for PlayStation Vita and PlayStation TV.\nThe project is open source and distributed under GNU GPL v3.0.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b0a7b48b51314d598f1ef2e154395328647aab4bf97191197dc7c14c52bc4a2a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/xqwpx/pixel-dungeon-console-edition/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "pixel-dungeon-console-edition-0.5.0beta.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/pixel-dungeon-console-edition-0.5.0beta.vpk",
+          "size": 4246249,
+          "md5": "6c26bae23f99e12e5a7469a5f10748d6"
+        },
+        {
+          "format": "data",
+          "filename": "4872-data-pixel-dungeon-console-edition.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/4872-data-pixel-dungeon-console-edition.zip"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "hbas-switch:pixel-painter",
       "platforms": [
         "switch"
@@ -105636,7 +106075,7 @@
       "name": "Pizza Tower SAGE 2019",
       "summary": "Port of the Pizza Tower SAGE 2019 demo for PSVITA.",
       "author": "WolffsRoom",
-      "version": "v.0.62",
+      "version": "v.0.64",
       "title_id": "PTSAGE001",
       "description": "Port of the Pizza Tower SAGE 2019 demo for PSVITA.",
       "requirements": "",
@@ -105647,10 +106086,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "PizzaTowerSAGE-v0.62.vpk",
-          "url": "https://github.com/WolffsRoom/PizzaTowerSage2019Vita/releases/download/v0.62/PizzaTowerSAGE-v0.62.vpk",
-          "size": 7940995,
-          "md5": "3991e9901db9de742d22b26bcb0bede7"
+          "filename": "PizzaTowerSAGE-v0.64.vpk",
+          "url": "https://github.com/WolffsRoom/PizzaTowerSage2019Vita/releases/download/v0.64/PizzaTowerSAGE-v0.64.vpk",
+          "size": 7941241,
+          "md5": "78f018427fd83373c77599bc96239756"
         }
       ],
       "popularity": 0,
@@ -107402,6 +107841,37 @@
       "updated_at": "2026-01-01"
     },
     {
+      "id": "vitadbtoo-vita:4877",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Pocket League",
+      "summary": "A Rocket League SideSwipe style game for the PSVita.",
+      "author": "mrprofessorx",
+      "version": "v.1.1.0",
+      "title_id": "SIDESWIPE",
+      "description": "A Rocket League SideSwipe inspired game for the PS Vita.\nGames are first to 10\nFour different bots\nGarage is not currently functional\nThis game is still a work in progress, so there are a couple of bugs.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f9b1521e191b3fc6753dcde5450128b91b7ccbad9f77e6411dc712ec3c430368.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Mr-Professor-X/PocketLeagueSideSwipeVita",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "pocket-league-1.1.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/pocket-league-1.1.0.vpk",
+          "size": 8044598,
+          "md5": "3abc343aafb1bfe735737e9c24824ccc"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:1510",
       "platforms": [
         "psvita"
@@ -108561,7 +109031,7 @@
           "sha256": "d9f1df8e05394d62b6b9b0319408af7762c1ba317727e92a41b2a8fa7a25ac73"
         }
       ],
-      "popularity": 87,
+      "popularity": 109,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/PongU/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -111643,7 +112113,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 17504,
+      "popularity": 17664,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111670,7 +112140,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3717,
+      "popularity": 3733,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111697,7 +112167,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 15807,
+      "popularity": 15966,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111724,7 +112194,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7366,
+      "popularity": 7398,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111751,7 +112221,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 84033,
+      "popularity": 85317,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -111778,7 +112248,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 332,
+      "popularity": 342,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -112416,30 +112886,30 @@
       "updated_at": "2026-11-13T08:27:16+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:tailscale-0.7.3.elf",
+      "id": "ps5-payloads-atlas:tailscale-0.7.5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-tailscale",
       "summary": "Tailscale for jailbroken PS5: reach the console over your tailnet for Remote Play and stream to it with Moonlight/Sunshine (unofficial)",
       "author": "",
-      "version": "v0.7.3",
+      "version": "v0.7.5",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/holdmysocks/ps5-tailscale",
       "downloads": [
         {
           "format": "elf",
-          "filename": "tailscale-0.7.3.elf",
-          "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.3/tailscale-0.7.3.elf",
-          "sha256": "899c9f76994317171ab62a331a229b260e7c93aab68963502d79c861392e5801"
+          "filename": "tailscale-0.7.5.elf",
+          "url": "https://github.com/holdmysocks/ps5-tailscale/releases/download/v0.7.5/tailscale-0.7.5.elf",
+          "sha256": "4a3ee8758115d16875eecc8b89443746097f55362e9fef2fae9c6392814efb5e"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-05T00:05:32+08:00"
+      "updated_at": "2026-11-19T21:00:20+08:00"
     },
     {
       "id": "ps5-payloads-atlas:tailscale-1.0.0.elf",
@@ -112650,30 +113120,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.10.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.12.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.10",
+      "version": "v12.6.12",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.10.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.10/ps5upload-12.6.10.elf",
-          "sha256": "81a51ed76ba8b1901fc064620dbe36c77bb458600bfe53f17aa2fce273e7271f"
+          "filename": "ps5upload-12.6.12.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.12/ps5upload-12.6.12.elf",
+          "sha256": "a92f6919f7090b08fbfa835d3e686564ae9d37078d7c4494f69f75ba93883a0d"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-19T12:03:42+08:00"
+      "updated_at": "2026-11-20T02:37:09+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -130437,7 +130907,7 @@
       "name": "RAP-Vita",
       "summary": "Port of Raptor: Call of the Shadows for PSVita.",
       "author": "Paxrisen",
-      "version": "v.1.2.1",
+      "version": "v.1.2.2",
       "title_id": "RAPT00001",
       "description": "Port of Raptor: Call of the Shadows for PSVita.",
       "requirements": "- Game Data Files: PC",
@@ -130448,10 +130918,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Rap-Vita_v1.2.1.vpk",
-          "url": "https://github.com/Paxrisen/RAP-Vita/releases/download/RAP-Vita1.2.1/Rap-Vita_v1.2.1.vpk",
-          "size": 1139099,
-          "md5": "748c2792cbb56ac69a04bdd0d28540fb"
+          "filename": "1817-rap-vita-1.2.2.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1817-rap-vita-1.2.2.vpk",
+          "size": 1139654,
+          "md5": "4504cc2629300bf227566afd93fc221c"
         }
       ],
       "popularity": 0,
@@ -132104,6 +132574,37 @@
       "updated_at": "2026-04-05T15:10:32Z"
     },
     {
+      "id": "vitadbtoo-vita:4870",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ReiREM",
+      "summary": "Irem arcade emulator (M52 to M107, 196 sets) based on FinalBurn Neo.",
+      "author": "Reyanon",
+      "version": "v.0.1.400",
+      "title_id": "M92A00001",
+      "description": "ReiREM is an emulator for Irem arcade hardware based on the Irem drivers and CPU/sound cores of FinalBurn Neo. It supports ten Irem board families (M52, M57, M58, M62, M63, M72, M75/77, M90/97, M92 and M107) with 196 sets in total, including parents, clones and hacks, such as Ninja Baseball Bat Man, Hook, R-Type, R-Type II, Image Fight, Undercover Cops, In The Hunt, Gunforce, Dream Soccer '94, Vigilante and Kung-Fu Master.\nThe PS Vita version runs the main CPU, the sound CPU with synthesis, and the renderer on three separate cores, with NEON tile drawing, dynamic audio rate control and frame pacing locked to the display refresh. Emulation results are checked against a desktop reference build with per-frame video and audio hashes.\nThe game list is grouped by board, with Playable, All and Favorites filters. Features include save states with ten slots and quick save, DIP switch settings, button remapping with a configurable turbo button, FinalBurn Neo format cheat files, aspect ratio and filter options, user border artwork, and per-game settings.\nROM images are not included. FinalBurn Neo compatible ROM sets are required. ReiREM is distributed under the FinalBurn Neo non-commercial license and is not affiliated with Irem.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/933023bb1d605446efdb1d4f7d4cf5d5d646fe6b4fd1928b0ada7f1b22dd9b34.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Reyanon/reirem/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "reirem-0.1.400.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/reirem-0.1.400.vpk",
+          "size": 1835215,
+          "md5": "ef6b5df4f1eb68b7e3a0166af7e75b56"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-psp:4730",
       "platforms": [
         "psp"
@@ -133006,6 +133507,37 @@
       "updated_at": "2008-01-01"
     },
     {
+      "id": "vitadbtoo-vita:4868",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ReST-V",
+      "summary": "Sega ST-V and System C / C2 arcade emulator.",
+      "author": "Reyanon",
+      "version": "v.0.1.457",
+      "title_id": "RSTV00001",
+      "description": "ReST-V is an arcade emulator for the Sega ST-V (Titan) board, with additional support for the older Sega System C and System C2 boards. The ST-V core is based on Yabause / YabaSanshiro, with ST-V support from Kronos; System C / C2 runs on a separate 68000 based core with a 315-5313 VDP renderer, YM3438 (ymfm), SN76489 and uPD7759 sound.\nThe emulator targets full speed (60 fps) on the PS Vita without frame skipping. The SH-2 CPUs run through a dynamic recompiler for ARMv7, frequently used SGL library routines are replaced with native code, and idle loops are detected automatically. VDP1 sprites and VDP2 background layers are rendered and composited on the GPU through sceGxm, and the SCSP sound DSP is compiled to ARM code.\nThe game list covers 174 sets (117 ST-V, 47 System C2, 10 System C) with board tabs and Playable / All / Favorites filters. Other features include save states (10 slots plus quick save), button mapping with turbo, per-game settings, aspect ratio and filter options, scanlines, and border colors or user-supplied border artwork.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0773596befe8d3b64ba9ecfc701e1782bee5e99fed0667e60c5b3e934cd7f294.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Reyanon/ReST-V/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "rest-v-0.1.457.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/rest-v-0.1.457.vpk",
+          "size": 2031096,
+          "md5": "89e7b8f5b2375ecc4b964307fb57fd57"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:718",
       "platforms": [
         "psvita"
@@ -133070,6 +133602,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-08-14"
+    },
+    {
+      "id": "vitadbtoo-vita:4869",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ReSys12",
+      "summary": "Namco System 12 arcade emulator.",
+      "author": "Reyanon",
+      "version": "v.0.1.222",
+      "title_id": "RSYS00012",
+      "description": "ReSys12 is an emulator for the Namco System 12 arcade board, the PlayStation-based hardware used by Tekken Tag Tournament, Tekken 3, Soul Calibur, Ehrgeiz, Point Blank 2 and other Namco titles from 1997 to 2001.\nThe R3000A CPU, GTE and GPU emulation come from pcsx_rearmed, using its ARMv7 dynamic recompiler, NEON GTE and the gpu_neon software rasterizer. The System 12 board itself (ROM banking, KC0xx protection, ROM DMA, the H8/3002 sub CPU, the C352 sound chip, EEPROM and JVS I/O) is ported from MAME.\nThe main CPU, the GPU rasterizer and the sound run on separate CPU cores. Idle loops of the main CPU and the H8/3002 are skipped, and only the VRAM rows that changed are uploaded to the GPU. Every frame is emulated and drawn; there is no frame skipping.\n52 of the 59 MAME System 12 sets run, including fighting games, gun games (aimed with an analog stick) and driving games (wheel or lever on an analog stick). Games that need the CD-XA board (Um Jammer Lammy NOW!, Quest for Fame, Truck Kyosokyoku) are not supported.\nFeatures include a game list grouped by controller type with Playable / All / Favorites filters, save states with 10 slots and quick save, button remapping with turbo and combo keys, service mode access, aspect ratio and filter options, border artwork, and per-game settings.\nReSys12 is free software under the GNU GPL version 3.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e221b6a2da5c53694f658d1d35aba31fb2209c4fbc5e5e2f925f9edc29e8d005.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Reyanon/ReSys12/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "resys12-0.1.222.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/resys12-0.1.222.vpk",
+          "size": 2077251,
+          "md5": "3cae3aa8f564cecb444687e71472a01f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:4658",
@@ -133193,7 +133756,7 @@
           "sha256": "0efb679f0938fc462d10c664b0a6709dcd9fb7d3452025786d11af3557a24ecc"
         }
       ],
-      "popularity": 279647,
+      "popularity": 280410,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/retroarch/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -133723,6 +134286,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2006-10-05"
+    },
+    {
+      "id": "vitadbtoo-vita:4857",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Ridge Racer Slipstream",
+      "summary": "Port of Ridge Racer Slipstream for PSVita.",
+      "author": "DominicanNY",
+      "version": "v.1.0",
+      "title_id": "RRSS00001",
+      "description": "Port of Ridge Racer Slipstream for PSVita.",
+      "requirements": "- libshacccg.suprx\n- kubridge.skprx\n- Game Data Files: Android",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9946a7c409547a3b50c9dccaab844caf88b742b5d429f10fb0bf8e6005b1bf8c.png",
+      "screenshots": [],
+      "release_url": "https://github.com/gmejia11/ridgeracer_slipstream_vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ridgeracer_slipstream.vpk",
+          "url": "https://github.com/gmejia11/ridgeracer_slipstream_vita/releases/download/v.1.0/ridgeracer_slipstream.vpk",
+          "size": 2306480,
+          "md5": "6cb49952dbfe77c6356569a78e02b7b6"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-vita:988",
@@ -137747,7 +138341,7 @@
       "name": "Save Manager++",
       "summary": "Save manager for PSVita.",
       "author": "rreha & kylon & d3m3vilurr",
-      "version": "v.5.3.0",
+      "version": "v.5.3.1",
       "title_id": "SAVEMGRPP",
       "description": "Save manager for PSVita.",
       "requirements": "",
@@ -137759,9 +138353,9 @@
         {
           "format": "vpk",
           "filename": "vita-savemgrpp.vpk",
-          "url": "https://github.com/rreha/vita-savemgrpp/releases/download/v5.3.0/vita-savemgrpp.vpk",
-          "size": 578225,
-          "md5": "bcec63fe3081c5e7e4bb88e515d7b124"
+          "url": "https://github.com/rreha/vita-savemgrpp/releases/download/v5.3.1/vita-savemgrpp.vpk",
+          "size": 579925,
+          "md5": "e54a2c52c513254a779d091917669fc1"
         }
       ],
       "popularity": 0,
@@ -138051,7 +138645,7 @@
           "sha256": null
         }
       ],
-      "popularity": 18777,
+      "popularity": 18832,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/savemii/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -138084,7 +138678,7 @@
           "sha256": "4845a382e65ec1c0c94eb6f6804595a61ff92293e03c0ec58412d9121a35162f"
         }
       ],
-      "popularity": 15925,
+      "popularity": 16924,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/SaveMiiProcessMod/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -138117,7 +138711,7 @@
           "sha256": null
         }
       ],
-      "popularity": 259362,
+      "popularity": 260106,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/SaveMiiModWUTPort/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -138241,7 +138835,7 @@
           "sha256": null
         }
       ],
-      "popularity": 973,
+      "popularity": 974,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/schismtracker/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -138605,7 +139199,7 @@
           "sha256": "26a4f288b33adcf6deee783e16d05c322afd341d37dd35c02674052a70c8c5c7"
         }
       ],
-      "popularity": 9443,
+      "popularity": 9583,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/ScratchWiiU/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -139112,7 +139706,7 @@
       "name": "ScummVM",
       "summary": "Maniac Mansion Virtual Machine emulator.",
       "author": "ScummVM Team",
-      "version": "v.2026.3.0",
+      "version": "v.2026.4.0",
       "title_id": "VSCU00001",
       "description": "This download is the latest stable release. ScummVM is a program which allows you to run certain classic graphical point-and-click adventure games, provided you already have their data files.\nScummVM supports many adventure games, including LucasArts SCUMM games (such as Monkey Island 1-3, Day of the Tentacle, Sam & Max, ...), many of Sierra's AGI and SCI games (such as King's Quest 1-6, Space Quest 1-5, ...), Discworld 1 and 2, Simon the Sorcerer 1 and 2, Beneath A Steel Sky, Lure of the Temptress, Broken Sword 1 and 2, Flight of the Amazon Queen, Gobliiins 1-3, The Legend of Kyrandia 1-3, many of Humongous Entertainment's children's SCUMM games (including Freddi Fish and Putt Putt games) and many more.",
       "requirements": "",
@@ -139128,10 +139722,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "585-scummvm.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/585-scummvm.vpk",
-          "size": 145275498,
-          "md5": "3e47b022a6bf5d5442b17cbfb68d5289"
+          "filename": "585-scummvm-2026.4.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/585-scummvm-2026.4.0.vpk",
+          "size": 156355385,
+          "md5": "25ea151c1137a0286d93057c0f39ba94"
         }
       ],
       "popularity": 33079,
@@ -139738,6 +140332,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2021-12-22T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-vita:4865",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Sega Rally Championship",
+      "summary": "Port of Sega Rally Championship for PSVita.",
+      "author": "RetroValou",
+      "version": "v.1.0.1",
+      "title_id": "SRAL00094",
+      "description": "Port of a static recompilation of Sega Rally Championship for PSVita.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/fe787f8cf3d8bb340c5a872e51666cb8429a8a8482ccde29f0902b675d448d7a.png",
+      "screenshots": [],
+      "release_url": "https://archive.org/details/SegaModel2_PSVITA",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "sega-rally-championship-1.0.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/sega-rally-championship-1.0.1.vpk",
+          "size": 3364773,
+          "md5": "8f9c2ab63ea4e713d32cd78ddbb853bf"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:3751",
@@ -141358,7 +141983,7 @@
           "sha256": "819d0b6176062ac1889c2a8db3b878915d8ffd06d405128954d6e854d6d7b6e5"
         }
       ],
-      "popularity": 2456,
+      "popularity": 2475,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/ShoWiFi/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -141578,7 +142203,7 @@
           "sha256": null
         }
       ],
-      "popularity": 9865,
+      "popularity": 9880,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/shutdown-hbl/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -141816,7 +142441,7 @@
       "name": "Silent Hill 3 (AngeloGalav)",
       "summary": "Experimental port of Silent Hill 3 for PSVita.",
       "author": "AngeloGalav",
-      "version": "v.0.0.1",
+      "version": "v.0.0.2",
       "title_id": "SILH00003",
       "description": "Experimental port of Silent Hill 3 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -141827,10 +142452,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "sh3.vpk",
-          "url": "https://github.com/AngeloGalav/sh3-vita/releases/download/v0.0.1/sh3.vpk",
-          "size": 6797935,
-          "md5": "ab4ffaf06926177bfbdc716f68d673c6"
+          "filename": "4814-silent-hill-3-angelogalav-0.0.2.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/4814-silent-hill-3-angelogalav-0.0.2.vpk",
+          "size": 6798515,
+          "md5": "097a5e400ad46e3dbe4bfb08c715f90f"
         }
       ],
       "popularity": 0,
@@ -141869,6 +142494,42 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-18"
+    },
+    {
+      "id": "vitadbtoo-vita:4853",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Silent Hill 3 Enhanced Edition",
+      "summary": "Native port of the PC version of Silent Hill 3 for PSVITA, statically recompiled to ARM.",
+      "author": "matfsouza",
+      "version": "v.1.1",
+      "title_id": "SH3EE0001",
+      "description": "Native port of the PC version of Silent Hill 3 for PSVITA, statically recompiled to ARM.",
+      "requirements": "- Game Data Files: your own copy of the Silent Hill 3 PC version, prepared with sh3prep from the release page and placed in ux0:data/sh3/",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/969f74669627464568164a9e8f874d9c529b1f9e3b566578dc039baa3f13ba33.png",
+      "screenshots": [
+        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/f7ccf9985890636a36e67f1aed139b2a4cf68510b10dc02628060f70ce6d0873.png",
+        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/dfd7328f943ce28fca6d1437415be3028f61322f04e99ccd6a6c298422022c38.png",
+        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/11cfea0610239149e3665ffeacf6bc97686cba6d348e4e0ae48791a2d241ca74.png",
+        "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/screenshots/daea516fbd075e229a6674d17dc030c07bf9f2b7cbdfd79a92e41a53cbf28883.png"
+      ],
+      "release_url": "https://github.com/matfsouza/sh3vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "sh3vita.vpk",
+          "url": "https://github.com/matfsouza/sh3vita/releases/download/v1.1/sh3vita.vpk",
+          "size": 7435382,
+          "md5": "0f446e18fccd531b2e226ef42fff6560"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-vita:1698",
@@ -142447,7 +143108,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3636,
+      "popularity": 3640,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Simple_SDL_Snake/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -145471,7 +146132,7 @@
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "Tantric",
-      "version": "5.0.5",
+      "version": "5.0.6",
       "title_id": "000100014E18E199",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/snes9xgx/icon.png",
@@ -145481,14 +146142,14 @@
           "format": "zip",
           "filename": "snes9xgx.zip",
           "url": "https://hbb1.oscwii.org/api/contents/snes9xgx/snes9xgx.zip",
-          "size": 3038952
+          "size": 3082260
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-03T00:00:00+00:00"
+      "updated_at": "2026-11-19T15:41:43+00:00"
     },
     {
       "id": "open-shop-channel-wii:snes9xgx-channel-installer",
@@ -146679,7 +147340,7 @@
       "name": "Sonic 1 Forever",
       "summary": "Sonic 1 Forever port for PSVita.",
       "author": "MDashK",
-      "version": "v.1.0",
+      "version": "v.1.5.1",
       "title_id": "SNCF00001",
       "description": "Sonic 1 Forever port for PSVita.",
       "requirements": "- Game Data Files: Android",
@@ -146690,8 +147351,8 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Sonic1Forever.vpk",
-          "url": "https://github.com/MDashK/TeamForever-v4-1.3-vita/releases/download/v1.0/Sonic1Forever.vpk",
+          "filename": "1681-sonic-1-forever-1.5.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1681-sonic-1-forever-1.5.1.vpk",
           "size": 1929667,
           "md5": "fdd6f20acaf21f9842239b5fee4d9a55"
         }
@@ -149228,10 +149889,10 @@
         "utilities"
       ],
       "description": "A homebrew menu for the switch.\n\nFeatures: \nLaunch homebrew\nFile browser\nAppstore\nCreate / installer forwarders for homebrew\nTheme browser, powered by Themezer\nAnd many more! \n A homebrew menu for the switch.",
-      "added_at": "2026-10-06",
+      "added_at": "2026-11-19",
       "summary": "A hbmenu alternative",
       "author": "iTotalJustice",
-      "version": "1.0.8",
+      "version": "1.1.1",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/ITotalJustice/sphaira",
@@ -149240,8 +149901,8 @@
           "format": "hbas",
           "filename": "sphaira.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/sphaira/manifest.install",
-          "size": 5273,
-          "sha256": "57709d6d272352001cce331d2ea577c056ee6bf442807afb93f6a68c85a66a34"
+          "size": 5519,
+          "sha256": "f98821ac8230f626c00d31ea349f3b05254729ee842bf48a0f035ee6fc0e11ac"
         }
       ],
       "popularity": 64561,
@@ -149249,7 +149910,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-07"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:3311",
@@ -149325,7 +149986,7 @@
       "name": "Spiced Miku Vu",
       "summary": "Hatsune Miku random image viewer.",
       "author": "null & EK720 & SonicMastr",
-      "version": "v.1.6.1",
+      "version": "v.1.8",
       "title_id": "MIKU00039",
       "description": "Application that shows random images of Hatsune Miku from Gelbooru. Allows saving images to album, features a slideshow mode, and supports offline use. Contains optional NSFW content.",
       "requirements": "",
@@ -149341,10 +150002,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "SpicedMikuVU_1.6.1.vpk",
-          "url": "https://github.com/FuzionCD/MikuVU/releases/download/v1.6.1/SpicedMikuVU_1.6.1.vpk",
-          "size": 4450007,
-          "md5": "03d00ad354f7a3ab47a17a47032d89a9"
+          "filename": "1238-spiced-miku-vu-1.8.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1238-spiced-miku-vu-1.8.vpk",
+          "size": 4024378,
+          "md5": "91588d755aa1f8316985859274503f8d"
         }
       ],
       "popularity": 24838,
@@ -150747,6 +151408,37 @@
       "updated_at": "2026-11-18"
     },
     {
+      "id": "vitadbtoo-vita:4871",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Star Fox Enhanced",
+      "summary": "Port of UltraStarFox for PSVita.",
+      "author": "kandowontu2",
+      "version": "v.0.0.8.8.3",
+      "title_id": "SFXE00001",
+      "description": "A native C++/SDL3 port of UltraStarFox, with Original Star Fox and Star Fox EX experiences, high-frame-rate presentation, widescreen support, and optional visual enhancements using Codex AI (5.6 Sol, 6 Astra, 6 Sol).",
+      "requirements": "- Game Data Files: an unmodified retail ROM of Star Fox",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/cbbe014c50cc287569d3b917458e54542b609c2d706979c6a7d3662949ecc687.png",
+      "screenshots": [],
+      "release_url": "https://github.com/kandowontu2/starfox-enhanced/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "star-fox-enhanced-0.0.8.8.3.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/star-fox-enhanced-0.0.8.8.3.vpk",
+          "size": 64493403,
+          "md5": "248fd6165da0fe2e217ab312257f8ceb"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:1386",
       "platforms": [
         "psvita"
@@ -150820,7 +151512,7 @@
       "name": "Star Wars Episode I: The Phantom Menace",
       "summary": "Port of Star Wars Episode I: The Phantom Menace for PSVita.",
       "author": "Bit",
-      "version": "v.2.0",
+      "version": "v.2.1",
       "title_id": "TPMP00001",
       "description": "Port of Star Wars Episode I: The Phantom Menace for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -150831,8 +151523,8 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "StarWarsPhantom.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/StarWarsPhantom.vpk",
+          "filename": "1803-star-wars-episode-i-the-phantom-menace-2.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1803-star-wars-episode-i-the-phantom-menace-2.1.vpk",
           "size": 2954390,
           "md5": "d65ba9c8e3a3479d61aab2ebefccfb56"
         }
@@ -152379,7 +153071,7 @@
           "sha256": "758a8c62ca3a8787ec6d3d3e310b2a4ae03349651d8a87cf743b93da534daf5d"
         }
       ],
-      "popularity": 3361,
+      "popularity": 3379,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/SuDokuL/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -153042,7 +153734,7 @@
       "name": "Super Mario All-Stars Vita",
       "summary": "Port of Super Mario All-Stars + World for PSVita.",
       "author": "Rinnegatamante",
-      "version": "v.1.0",
+      "version": "v.1.1.1",
       "title_id": "ALLSTARSW",
       "description": "Super Mario All-Stars Vita is a port of smw, a reimplementation of Super Mario World with several enhancements with experimental support for Super Mario All-Stars (Super Mario Bros 1 and Super Mario Bros: Lost Levels).\nThis release acts as an improvement of my previous Super Mario World port, bringing fixes (eg. the tunnels bug is fixed), support for SMB1 and SMB:LL, integer scaling option (IntegerScaling in the ini file), and more.",
       "requirements": "- Game Data Files: SNES in ux0:data/smworld",
@@ -153058,10 +153750,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "1280-allstars.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1280-allstars.vpk",
-          "size": 1918789,
-          "md5": "f86781ef293290f9bc86fd7446dd8bee"
+          "filename": "1280-super-mario-all-stars-vita-1.1.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1280-super-mario-all-stars-vita-1.1.1.vpk",
+          "size": 1614179,
+          "md5": "944508be45d83527a9aa57d36174d0ab"
         },
         {
           "format": "data",
@@ -157613,7 +158305,7 @@
           "sha256": null
         }
       ],
-      "popularity": 922,
+      "popularity": 935,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/TankTrap/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -159421,7 +160113,7 @@
           "sha256": null
         }
       ],
-      "popularity": 4953,
+      "popularity": 4960,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/TetrisU/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -162593,7 +163285,7 @@
           "sha256": null
         }
       ],
-      "popularity": 6021,
+      "popularity": 6026,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/TicketCleaner/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -166061,7 +166753,7 @@
           "sha256": "dfb887e10801f16c8268ca03da5b7ae0d16cc48c519ce8ecbeb9237090f66bd1"
         }
       ],
-      "popularity": 6996,
+      "popularity": 7015,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/Trogdor-Reburninated/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -166763,7 +167455,7 @@
       "name": "Tuiza",
       "summary": "3DS emulator for PSVita.",
       "author": "TutuiFC",
-      "version": "v.0.2.5",
+      "version": "v.0.3B",
       "title_id": "AZHR00001",
       "description": "3DS emulator for PSVita.",
       "requirements": "",
@@ -166774,10 +167466,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "TuizaVita-0.2.5.vpk",
-          "url": "https://github.com/TutuiFC/TuizaVita-3ds-emu/releases/download/v0.2.5/TuizaVita-0.2.5.vpk",
-          "size": 5734058,
-          "md5": "a1c5090c0ce656735c13c81ce97bd3d8"
+          "filename": "1682-tuiza-0.3B.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1682-tuiza-0.3B.vpk",
+          "size": 9958126,
+          "md5": "a786c7b15220a0b690496f5dcbda69ee"
         }
       ],
       "popularity": 0,
@@ -167448,7 +168140,7 @@
           "sha256": null
         }
       ],
-      "popularity": 5293,
+      "popularity": 5326,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/TWWHDRandomizer/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -167966,7 +168658,7 @@
           "sha256": null
         }
       ],
-      "popularity": 62913,
+      "popularity": 62962,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/UFDiine/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -168119,10 +168811,10 @@
       "name": "uLaunch",
       "categories": [],
       "description": "Custom, open-source replacement/reimplementation for Nintendo Switch's HOME menu (qlaunch), extending it with amazing, homebrew-oriented functionality!\n\nuLaunch is a very ambitious project, consisting on two custom library applets, a custom system application and a custom system applet, in order to replace the console's HOME menu with a custom, homebrew-oriented one.\n\nThis isn't any kind of HOME menu extension, injection, patch, etc. uLaunch is a complete reimplementation, 100% open-source, which also takes over eShop and Parental control applets and flog system title (all of them are pretty much useless with this reimpl) for its extended functionality.\n\nThe project is licensed as GPLv2.\n\nFor those who are interested in how the UI was done, this project is, like Goldleaf, a good example of how powerful Plutonium libraries can be in order to make beautiful UIs.\n\nFeatures\nList of HOME menu features uLaunch has:\n\nProper launching and foreground management: launch, suspend and close titles and applets\n\nProper general channel handling (some of it might be not implemented): sleep, shutdown, reboot, HOME menu press detection...\n\nSettings:\n\nShow connected WiFi network's name\n\nOpen connection applet in case user wants to change network settings\n\nChange console's language and show active one\n\nChange console's nickname and show current one\n\nUser features:\n\nAllow creating user on the startup menu\n\nShow user's page (in order to edit nickname, icon, friends...)\n\nHomebrew support\n\nLaunching as applets (no need of Album!)\n\nLaunching as applications (no need of any titles to do so!)\n\nCustom basic homebrew menu\n\nOption to add custom NRO accessors to main menu (homebrew or custom items easily accessible, no more need of forwarders!)\n\nUI\n\nThemes (different to official HOME menu themes/NXThemes)\n\nCustom icons, menu assets and graphics (custom images, colors, sizes, positions...), background...\n\nCustom background music and sound effects!\n\nFolders in order to keep your main menu organized!\n\nUsers\n\nPC-like login on startup (select user and use it for everything, log off, register/change/remove password...)\n\nUser password support! (up to 15 characters)\n\nMiscellaneous extras\n\nWeb browsing (via web-applet) directly from the main menu!\n\nConsole screen capturing from PC itself (Windows-only) via USB-C cable and uViewer tool!\n\nDisclaimer\nHomebrew-as-application 'flog' takeover\nuLaunch allows you to launch homebrew as an application, taking advantage of the system's 'flog' built-in application title, which was stubbed but not removed, thus it's content can be overriden via LayeredFS and launched.\n\nSince launching this title should be impossible, it might involve ban risk. uLaunch has this option disabled by default, so enable and use it use it at your own risk. Always make youre you're safe from bans (by using tools like 90DNS) before using uLaunch to avoid any possible risks.",
-      "added_at": "2026-07-24",
+      "added_at": "2026-11-15",
       "summary": " Custom, open-source Home Menu",
       "author": "XorTroll",
-      "version": "1.2.5",
+      "version": "1.2.6",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/XorTroll/uLaunch/releases",
@@ -168131,8 +168823,8 @@
           "format": "hbas",
           "filename": "uLaunch.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/uLaunch/manifest.install",
-          "size": 18686,
-          "sha256": "2918537d01f249ba5f57aee63cedf6f768eacc5f4a4bc00c1b4f8253e38b31ef"
+          "size": 18703,
+          "sha256": "bed18a008935e1e17a041a814e69ba345d8d5fccf4e72c791fe9bd8bbe509b66"
         }
       ],
       "popularity": 64028,
@@ -168140,7 +168832,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-07-31"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:4405",
@@ -170575,7 +171267,7 @@
           "sha256": null
         }
       ],
-      "popularity": 23387,
+      "popularity": 23493,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/USBHide/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -172071,7 +172763,7 @@
           "sha256": null
         }
       ],
-      "popularity": 16015,
+      "popularity": 16041,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/vgedit/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -172402,7 +173094,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2440,
+      "popularity": 2454,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/VideoModeChangerAroma/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -172535,6 +173227,99 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-09-30"
+    },
+    {
+      "id": "vitadbtoo-vita:4861",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Virtua Cop",
+      "summary": "Port of Virtua Cop for PSVita.",
+      "author": "RetroValou",
+      "version": "v.1.0",
+      "title_id": "VCOP00096",
+      "description": "Port of a static recompilation of Virtua Cop for PSVita.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/82c59dce31f47b170f6b63d69ca1591ee4d8aaf0e2c4eeeb353609bd898f38ac.png",
+      "screenshots": [],
+      "release_url": "https://archive.org/details/SegaModel2_PSVITA",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "virtua-cop-1.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/virtua-cop-1.0.vpk",
+          "size": 4012750,
+          "md5": "f95c3406a061ef7f97b1e9402f7275fa"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
+      "id": "vitadbtoo-vita:4862",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Virtua Cop 2",
+      "summary": "Port of Virtua Cop 2 for PSVita.",
+      "author": "RetroValou",
+      "version": "v.1.0",
+      "title_id": "VCOP00097",
+      "description": "Port of a static recompilation of Virtua Cop 2 for PSVita.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b5ac5835b5916c45911c4d229b7088d3c217b7ea779abf237524a805d78afabc.png",
+      "screenshots": [],
+      "release_url": "https://archive.org/details/SegaModel2_PSVITA",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "virtua-cop-2-1.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/virtua-cop-2-1.0.vpk",
+          "size": 4034519,
+          "md5": "3df27ea23677181679cdccdade2caa52"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
+      "id": "vitadbtoo-vita:4863",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Virtua Fighter 2",
+      "summary": "Port of Virtua Fighter 2 for PSVita.",
+      "author": "RetroValou",
+      "version": "v.1.0",
+      "title_id": "VFTR00095",
+      "description": "Port of a static recompilation of Virtua Fighter 2 for PSVita.",
+      "requirements": "- Game Data Files: your own copy of the original game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/192cc97e2e8399bed680086007c2af57eb52f2a511168a1a40804087c18aa334.png",
+      "screenshots": [],
+      "release_url": "https://archive.org/details/SegaModel2_PSVITA",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "virtua-fighter-2-1.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/virtua-fighter-2-1.0.vpk",
+          "size": 3748575,
+          "md5": "698435f5054f9f2c150f98901974cbb5"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:4509",
@@ -172925,7 +173710,7 @@
       ],
       "requirements": "wii · vwii · wii_mini · Wii Remote · Wii Remote · Wii Remote · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
       "author": "Tantric",
-      "version": "3.0.5",
+      "version": "3.0.6",
       "title_id": "000100014E113DA1",
       "license": null,
       "icon_url": "https://hbb1.oscwii.org/api/contents/vbagx/icon.png",
@@ -172935,14 +173720,14 @@
           "format": "zip",
           "filename": "vbagx.zip",
           "url": "https://hbb1.oscwii.org/api/contents/vbagx/vbagx.zip",
-          "size": 3645666
+          "size": 3730453
         }
       ],
       "source": "Open Shop Channel",
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-03T00:00:00+00:00"
+      "updated_at": "2026-11-19T15:46:28+00:00"
     },
     {
       "id": "open-shop-channel-wii:VC_Test",
@@ -173537,7 +174322,7 @@
       "name": "Vita IPTV",
       "summary": "IPTV player for PSVita.",
       "author": "emrhky",
-      "version": "v.1.1.0",
+      "version": "v.1.2.0",
       "title_id": "VIPTV0001",
       "description": "IPTV player for PSVita.",
       "requirements": "",
@@ -173549,9 +174334,9 @@
         {
           "format": "vpk",
           "filename": "VitaIPTV.vpk",
-          "url": "https://github.com/emrhky/VitaIPTV/releases/download/v1.1.0/VitaIPTV.vpk",
-          "size": 1749044,
-          "md5": "c8d0da92d76efeaae38218a259e833ac"
+          "url": "https://github.com/emrhky/VitaIPTV/releases/download/v1.2.0/VitaIPTV.vpk",
+          "size": 1939948,
+          "md5": "2b9f9ecb992e701ebb6d1c6ff40bc554"
         }
       ],
       "popularity": 0,
@@ -176562,6 +177347,37 @@
       "updated_at": "2016-09-13"
     },
     {
+      "id": "vitadbtoo-vita:4873",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VitaScore",
+      "summary": "App that shows football scores.",
+      "author": "diogoasp97",
+      "version": "v.1.0",
+      "title_id": "VSCR00001",
+      "description": "Football scores, tables and squads on the PS Vita. A FlashScore-shaped homebrew app written in C with vita2d.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ca608f17d464677fa902c958ac6cbb5178627718144eac1bb685a4dd02ceb591.png",
+      "screenshots": [],
+      "release_url": "https://github.com/diogoasp97/VitaScore",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vitascore-1.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/vitascore-1.0.vpk",
+          "size": 1087307,
+          "md5": "a471d13066a8142ff04c886ddccda7f3"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:122",
       "platforms": [
         "psvita"
@@ -177749,7 +178565,7 @@
       "name": "vkQuake2",
       "summary": "Port of vkQuake2 for PSVita.",
       "author": "DrDecki",
-      "version": "v.1.1",
+      "version": "v.1.1.1",
       "title_id": "VKQUAKE02",
       "description": "Port of vkQuake2 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -177761,9 +178577,9 @@
         {
           "format": "vpk",
           "filename": "vkquake2.vpk",
-          "url": "https://github.com/DrDecki/vkquake2-vita/releases/download/v1.1/vkquake2.vpk",
-          "size": 2474387,
-          "md5": "11bbf134e1b506198b79dbcb1b7878e2"
+          "url": "https://github.com/DrDecki/vkquake2-vita/releases/download/v1.1.1/vkquake2.vpk",
+          "size": 1957913,
+          "md5": "1a57596706262c00e07c940b883ac5b8"
         }
       ],
       "popularity": 0,
@@ -178735,7 +179551,7 @@
           "sha256": "29e633a4a888ea208f467e9828e6e8f6f6fea27e186aea303c717b47a517cfbf"
         }
       ],
-      "popularity": 94222,
+      "popularity": 95100,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/CompatTitleInstaller/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -178768,7 +179584,7 @@
           "sha256": null
         }
       ],
-      "popularity": 14161,
+      "popularity": 14211,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/vWii_decaffeinator/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -178927,7 +179743,7 @@
           "sha256": "00b9af8cfe197bec2780f682964ea123924d986ebad17de5177c0ba6fda9c59c"
         }
       ],
-      "popularity": 814,
+      "popularity": 1149,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WafelInstaller/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -179502,10 +180318,10 @@
         "games"
       ],
       "description": "A card game based on a well known cooperative board game, with full rules enforcement, to play solo or (ultimately) multiplayer. Defeat villains with your team of heroes\nThese archives do not include resource files (images in particular). Resources will be automatically downloaded when the game starts (and it can take a while), unless you provide a separate \"core.zip\" file with those resources",
-      "added_at": "2026-09-27",
+      "added_at": "2026-11-16",
       "summary": "Solo/Coop card game",
       "author": "Wololo",
-      "version": "1.7.1",
+      "version": "1.9.0",
       "license": "Affero GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/frwololo/warnel-chawpiovs",
@@ -179514,8 +180330,8 @@
           "format": "hbas",
           "filename": "WarnelChawpiovs.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/WarnelChawpiovs/manifest.install",
-          "size": 69501,
-          "sha256": "fe5f11131795ae0916b8b574e7a1a9a9eb908a15675bc219dce141797e6b0146"
+          "size": 75381,
+          "sha256": "8d41894869ce691826dd2d3cc92a57546d1a822dc6f58fcd77348d0b2f00bfea"
         }
       ],
       "popularity": 117,
@@ -179523,7 +180339,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-09-27"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:2440",
@@ -181045,7 +181861,7 @@
           "sha256": "b1efe11aea33ae9f0a61e55fc6f98a0f8ddaacdcb2065a1b12ae62524e325f44"
         }
       ],
-      "popularity": 3236,
+      "popularity": 3486,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WiiUAlbum/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -181078,7 +181894,7 @@
           "sha256": "3ef4112dfa6850a69b29b616760a8c3e912f2dd2a0b4a2363ab9ba278e1803d7"
         }
       ],
-      "popularity": 64,
+      "popularity": 130,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WiiUEnvSelector/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -181109,7 +181925,7 @@
           "sha256": null
         }
       ],
-      "popularity": 25031,
+      "popularity": 25085,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WiiUReboot/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -181140,7 +181956,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2940,
+      "popularity": 2941,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/survey/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -181171,7 +181987,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2289,
+      "popularity": 2292,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/wiiu-vnc/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -182682,7 +183498,7 @@
           "sha256": null
         }
       ],
-      "popularity": 76077,
+      "popularity": 76523,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WiiU-Shell/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -182715,7 +183531,7 @@
           "sha256": null
         }
       ],
-      "popularity": 1205,
+      "popularity": 1217,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WiiUCrashLogDumper/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -182748,7 +183564,7 @@
           "sha256": null
         }
       ],
-      "popularity": 35629,
+      "popularity": 35837,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WiiUIdent/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -182813,7 +183629,7 @@
           "sha256": null
         }
       ],
-      "popularity": 16243,
+      "popularity": 16270,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/WiiUScreenshotManager/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -184503,7 +185319,7 @@
       "name": "WoWVita",
       "summary": "Port of World of Warcraft for PSVita.",
       "author": "Raizhald",
-      "version": "v.0.2.0",
+      "version": "v.0.4.0",
       "title_id": "WOWV00001",
       "description": "Port of World of Warcraft for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -184514,10 +185330,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "WoWVita.vpk",
-          "url": "https://github.com/Raizhald/WoWVita/releases/download/v0.2.0/WoWVita.vpk",
-          "size": 2389502,
-          "md5": "3698fadb0406e48a983b6b4244db92d6"
+          "filename": "1747-wowvita-0.4.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1747-wowvita-0.4.0.vpk",
+          "size": 2573107,
+          "md5": "7029b4f1ff22c91535c4aa8886c91ab8"
         }
       ],
       "popularity": 0,
@@ -184684,7 +185500,7 @@
           "sha256": null
         }
       ],
-      "popularity": 125030,
+      "popularity": 126156,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/wudd/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
@@ -186697,7 +187513,7 @@
           "sha256": null
         }
       ],
-      "popularity": 2466,
+      "popularity": 2475,
       "manifest_url": "https://wiiu.cdn.fortheusers.org/packages/yapesdl/manifest.install",
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/wiiu",
