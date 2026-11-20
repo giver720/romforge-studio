@@ -38074,7 +38074,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-19T15:58:16+00:00"
+      "updated_at": "2026-11-18T00:00:00+00:00"
     },
     {
       "id": "vitadbtoo-psp:2376",
@@ -42331,7 +42331,7 @@
       "name": "elfldr",
       "summary": "An ELF loader for jailbroken PS5s that accepts payloads on port 9021",
       "author": "",
-      "version": "v0.27",
+      "version": "v0.28",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/ps5-payload-dev/elfldr",
@@ -42339,15 +42339,15 @@
         {
           "format": "elf",
           "filename": "elfldr-ps5.elf",
-          "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.27/elfldr-ps5.elf",
-          "sha256": "82f6227610172c98bad6efe68219fc93a10027035991f47eb4b75532d023407d"
+          "url": "https://github.com/ps5-payload-dev/elfldr/releases/download/v0.28/elfldr-ps5.elf",
+          "sha256": "66968bae6159d8fb06125fcd43fb99cf64d6bfdf730c70f37a6f5d056ff63458"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-10-22T01:42:19+08:00"
+      "updated_at": "2026-11-20T06:44:29+08:00"
     },
     {
       "id": "vitadbtoo-psp:4379",
@@ -46022,7 +46022,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-19T16:04:07+00:00"
+      "updated_at": "2026-11-18T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:fceugx-channel-installer",
@@ -48287,10 +48287,10 @@
       "name": "FlashNX",
       "categories": [],
       "description": "Plays .swf games from your SD card, or downloads them on the console: the Import tab opens on Flashpoint Archive shelves (a random studio, random games), searches the whole archive and fetches a game with its cover and companion files. AS1 and AS2 run well, much of AS3 too. Up to four players, and a single Joy-Con held sideways is a whole controller. Controls are remapped per game on a picture of the controller, and each game keeps its own screen mode, rotation, zoom, filter and CPU overclock. Hold R while starting any game from the HOME Menu, then pick FlashNX, or it will not have the memory to run a game. Atmosphère required. Flash emulation by Ruffle (ruffle.rs).",
-      "added_at": "2026-11-10",
+      "added_at": "2026-11-19",
       "summary": "Play your Flash (.swf) games on Switch, powered by Ruffle.",
       "author": "Jonathan8520",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/Jonathan8520/FlashNX",
@@ -48299,8 +48299,8 @@
           "format": "hbas",
           "filename": "FlashNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/FlashNX/manifest.install",
-          "size": 20942,
-          "sha256": "5294ed61f1270b56482d12aadd0304e4b63542d95ae00f85a93f31825209c5db"
+          "size": 20986,
+          "sha256": "dc23f797efd98e8ea3438bb2f8444e2a1c0ae672c779e01bf8921c63790827e9"
         }
       ],
       "popularity": 3852,
@@ -48308,7 +48308,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-11-12"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-vita:1771",
@@ -55000,6 +55000,37 @@
       "updated_at": "2006-02-12"
     },
     {
+      "id": "hbas-switch:pleNx",
+      "platforms": [
+        "switch"
+      ],
+      "name": "GMCA",
+      "categories": [],
+      "description": "GMCA is one native, controller-first client. Point it at any media center — Plex, Jellyfin, Emby or Stremio — and run it on any device you left in a drawer: Nintendo Switch, Nintendo Switch 2 (beta), PS Vita or a Raspberry Pi wired to the TV. The interface never changes; only the accent colour and the tabs follow your server. Also runs on Windows, macOS, Linux and PS4.\n\nGMCA is the multi-backend evolution of pleNx (a native Plex client), itself a fork of Switchfin — the Nintendo Switch Jellyfin client. Existing pleNx installs migrate their data to GMCA automatically on first launch. It is an independent, third-party project, not affiliated with or endorsed by Plex, Jellyfin, Emby or Stremio.",
+      "added_at": "2026-11-19",
+      "summary": "Gamepad Media Center Aggregator",
+      "author": "thcolin",
+      "version": "1.5.0",
+      "license": "Apache v2",
+      "icon_url": null,
+      "release_url": "https://github.com/thcolin/gamepad-media-center-aggregator",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "pleNx.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/pleNx/manifest.install",
+          "size": 30090,
+          "sha256": "83e068aef1c24f6a128345d9981c9adfa9e2b034b08d7e56f15e433cf7d52457"
+        }
+      ],
+      "popularity": 3132,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/pleNx/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:1411",
       "platforms": [
         "psvita"
@@ -56567,6 +56598,38 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2025-10-15"
+    },
+    {
+      "id": "open-shop-channel-wii:GrabMii",
+      "platforms": [
+        "wii"
+      ],
+      "name": "GrabMii",
+      "summary": "A tool to backup, install, and convert Miis.",
+      "description": "A tool to backup your Miis to your sd/usb, import them directly to the Mii channel from the sd/usb, and convert a Wii U and 3DS Mii to a Wii Mii (Gii, i said \"ii\" a lot).",
+      "categories": [
+        "utilities"
+      ],
+      "requirements": "wii · vwii · wii_mini · Wii Remote · GameCube Controller · Classic Controller · SDHC",
+      "author": "DevNull-l1r",
+      "version": "2.0",
+      "title_id": "000100014E89527E",
+      "license": null,
+      "icon_url": "https://hbb1.oscwii.org/api/contents/GrabMii/icon.png",
+      "release_url": null,
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "GrabMii.zip",
+          "url": "https://hbb1.oscwii.org/api/contents/GrabMii/GrabMii.zip",
+          "size": 244127
+        }
+      ],
+      "source": "Open Shop Channel",
+      "source_url": "https://oscwii.org/",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-19T22:28:26+00:00"
     },
     {
       "id": "vitadbtoo-psp:2110",
@@ -91791,10 +91854,10 @@
         "utilities"
       ],
       "description": "Nintendo Switch SaveDate Backup & Restore Tool\n\nSpecial Thanks\n\nEdiZon\nswitch-portlibs-examples",
-      "added_at": "2026-04-16",
+      "added_at": "2026-10-22",
       "summary": "SaveDate Backup & Restore Tool",
       "author": "turtle-insect",
-      "version": "0.0.32",
+      "version": "0.0.33",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/turtle-insect/Neumann/releases",
@@ -91804,7 +91867,7 @@
           "filename": "Neumann.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/Neumann/manifest.install",
           "size": 2350,
-          "sha256": "f655d1089a35907724dc608cd7c45ca900646e5db84e1b645ba32ffe5abd69fe"
+          "sha256": "8202654445dde3beef7809c7b09f0adac361fdf89a178c85c9a0404dbf4206e7"
         }
       ],
       "popularity": 35478,
@@ -91812,7 +91875,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-04-17"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:2077",
@@ -93754,7 +93817,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-19T15:27:34+00:00"
+      "updated_at": "2016-12-18T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:HIDTest",
@@ -99160,10 +99223,10 @@
       "name": "OpenNOW",
       "categories": [],
       "description": "OpenNOW is an independent, community-built GeForce NOW client for Nintendo Switch. Sign in with your NVIDIA account, browse supported games, search and filter the catalog, and launch cloud sessions directly from your console.\n\nFeatures include configurable resolution, bitrate, frame rate, server region and decoder settings; controller, touch and inline-keyboard input; support for up to four controllers; live stream and network statistics; session recovery; and optional HOME Menu shortcuts for individual games.\n\nA GeForce NOW account and stable internet connection are required. Launch through Homebrew Menu using title override/application mode for sufficient memory. OpenNOW is unofficial and is not affiliated with NVIDIA or Nintendo.\n",
-      "added_at": "2026-10-15",
+      "added_at": "2026-10-29",
       "summary": "GeForce NOW for Nintendo Switch.",
       "author": "OpenCloudGaming",
-      "version": "0.0.10",
+      "version": "0.0.12",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/OpenCloudGaming/OpenNOW-Switch",
@@ -99172,8 +99235,8 @@
           "format": "hbas",
           "filename": "OpenNOW.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/OpenNOW/manifest.install",
-          "size": 30325,
-          "sha256": "5d2b4f853483b7684dc251215a3e1541edb43ac72018b1ebfef272c7931a67cd"
+          "size": 30377,
+          "sha256": "6c1b0282c50e6a8f9839fdae7001d8d8daba52ff638a1a17191c160fda62d81c"
         }
       ],
       "popularity": 1157,
@@ -99181,7 +99244,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-16"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-vita:1449",
@@ -103225,10 +103288,10 @@
         "utilities"
       ],
       "description": "Configure the Switch daily play-time limit offline — no phone app, no Nintendo account, no internet. Talks to the system `pctl` service directly so the limit lives on the console.\n\nFeatures:\n- Set one daily limit for all days, or per-day limits (Sun–Sat).\n- Remove the play-time limit entirely.\n- Set / change the parental-controls PIN (via the system passcode applet).\n- Delete all parental controls — your recovery when the PIN has been forgotten.\n- Unlink the Nintendo Switch Parental Controls companion phone app.\n- View status: PIN length, restrictions on/off, play-timer state.\n\nWhen the play timer is currently active, writes first turn parental controls off temporarily (it reads the PIN automatically — no need to remember it) so writing the new limit doesn't destabilise Atmosphère; the new limit takes effect once parental controls re-engage.\n\nHorizon-style graphical UI built on borealis.\n\nRequires CFW (Atmosphère recommended). Tested on fw 22.1.0 / Atmosphère 1.11.1; other versions unverified.",
-      "added_at": "2026-05-13",
+      "added_at": "2026-10-14",
       "summary": "Parental controls without the phone app",
       "author": "Taylor",
-      "version": "3.0.0",
+      "version": "3.1.0",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/tailiang2008/NX-Pctl-Manager",
@@ -103237,8 +103300,8 @@
           "format": "hbas",
           "filename": "PctlManager.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/PctlManager/manifest.install",
-          "size": 8029,
-          "sha256": "88f160c6dacf2b7a38c2564d1ee7b6565f48e212d1e33878017ad627383475cb"
+          "size": 8084,
+          "sha256": "95f9b2e5efe0b064e305369ea00af59bec613a6a07d75ca3ffcd1723b6748c42"
         }
       ],
       "popularity": 266,
@@ -103246,7 +103309,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-05-20"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:4003",
@@ -106365,10 +106428,10 @@
         "utilities"
       ],
       "description": "A local bank system for Pokemon games on Nintendo Switch.\nMove Pokemon between your save files and local bank storage.\n\nFeatures\n- Profile Selection\n- Two-Panel Box Viewer\n- Pick & Place\n- Multi-Select\n- Pokemon Details\n\nBank System\n- Create a new bank (up to 32-character name)\n- Rename an existing bank\n- Delete a bank (with confirmation)\n\nEach bank has the same box capacity as its game family (32 or 40 boxes).\nThe bank list shows the number of occupied slots for each bank.\n\nYou can switch between banks from the main view via the menu, with or without saving first.\n\nBackup System\n- When loading a game save on Switch, an automatic backup is created before any modifications.\n- This is a full copy of the mounted save directory.\n\nSave Integrity\n- SCBlock saves (ZA, SV, SwSh, LA): Decrypted, modified, and re-encrypted. A round-trip verification runs on load to confirm the cycle is lossless.\n- BDSP saves: Flat binary with MD5 checksum, recalculated on every save.\n- All saves are written in-place to preserve ",
-      "added_at": "2026-11-13",
+      "added_at": "2026-11-14",
       "summary": "A local bank system for Pokemon games",
       "author": "Insektaure",
-      "version": "2.3.4",
+      "version": "2.3.5",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/Insektaure/pkHouse",
@@ -106378,7 +106441,7 @@
           "filename": "pkHouseLocalPokeBank.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/pkHouseLocalPokeBank/manifest.install",
           "size": 14197,
-          "sha256": "9b3415fd317e501376f9c8b38d81d358d7dbed0e64eb6cdd4635bf20bd7baa9f"
+          "sha256": "36e8dfe082adcc0229fe310f3a025525b3883ae0359cb1e45441b94a2080df28"
         }
       ],
       "popularity": 5174,
@@ -106386,7 +106449,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-11-18"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "universal-db:Universal-Team/pkmn-chest",
@@ -106429,10 +106492,10 @@
         "utilities"
       ],
       "description": "PKSE (Pokémon Save Editor) is a Pokémon save editor for Nintendo Switch consoles -- no PC or save transfers needed.\n\nSupported games:\n- FireRed/LeafGreen\n- Let's Go, Pikachu!/Eevee!\n- Sword/Shield\n- Brilliant Diamond/Shining Pearl\n- Legends: Arceus\n- Scarlet/Violet\n- Legends: Z-A\n\nFeatures:\n- Edit party and box Pokémon: species, level, IVs/EVs, nature, ability, moves, held item, ball, OT and met data, shininess and gender\n- Trainer info and item pouches, with per-game item and count limits\n- Pokémon creator -- build one from scratch in any supported game's format\n- Legality checker flags illegal values as you edit; it never blocks or alters your data\n- Cross-game bank: deposit from one game, withdraw into another, converted to the destination format with origin preserved\n- HOME-style interface with full touch support\n- On-console save backup and restore with retained history\n\nFree, open source, built using PKHeX as a reference.",
-      "added_at": "2026-10-20",
+      "added_at": "2026-10-31",
       "summary": "Open-source Pokémon save editor",
       "author": "Kiasta",
-      "version": "1.2.1",
+      "version": "1.2.2",
       "license": "Affero GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/kiasta/PKSE",
@@ -106441,8 +106504,8 @@
           "format": "hbas",
           "filename": "PKSE.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/PKSE/manifest.install",
-          "size": 157872,
-          "sha256": "82ee8a8a60076513010d0f68c588e23bb4df2ec2c1efba985d01e6b00cb60df7"
+          "size": 158337,
+          "sha256": "5d1bf6fdd0af10cef842c7cc97caccb19746b80e85358b87f496ade541b62003"
         }
       ],
       "popularity": 3447,
@@ -106450,7 +106513,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-21"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "universal-db:FlagBrew/PKSM",
@@ -106883,10 +106946,10 @@
         "utilities"
       ],
       "description": "PlayGuard sets the Nintendo Switch's own parental controls on the console, offline: no phone app, no Nintendo account. The countdown, the PIN prompt and the suspension at the limit stay the console's own, nothing runs in the background, and the limits stay if PlayGuard is removed.\n\n• Play-time limit: the same every day or one per weekday, saved profiles, extra time or no more play today, a bedtime alarm and a one-switch console lock.\n• Activity: play time per game and per user account, day by day, exported to CSV, JSON, XLSX or PDF.\n• Restrictions and PIN: restriction level, age rating, show or change the PIN, an optional PIN to open PlayGuard.\n• Network clock: set from NTP servers, so the play timer counts right on a console that never reaches Nintendo.\n• Safe: every change is logged and can be undone, settings are backed up to the SD card.\n• Unlinks the phone app on a second-hand console. Every console language, light and dark themes.\n\nPlayGuard carries on Pctl Manager by Taylor, of which it is a fork. It installs to /switch/playguard/ and keeps its files in /config/playguard/.\n\nA recovery sysmodule for a forgotten PIN is a separate, optional download: playguard-rescue.zip on the GitHub releases page.\n\nRequires Atmosphère. Play-time limit on firmware 21.0.0 and later, tested on a console up to 23.0.1; a newer firmware opens read-only until a release supports it.",
-      "added_at": "2026-10-18",
+      "added_at": "2026-10-24",
       "summary": "Offline parental controls & play activity",
       "author": "JigSawFr",
-      "version": "1.2.0",
+      "version": "1.3.0",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/JigSawFr/PlayGuard",
@@ -106895,8 +106958,8 @@
           "format": "hbas",
           "filename": "PlayGuard.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/PlayGuard/manifest.install",
-          "size": 7613,
-          "sha256": "3298e318ae66d6e9220cb219d750b8deb99ee47b6d457d131b04898ec1f66b1b"
+          "size": 10693,
+          "sha256": "80145f8790d8df06051cfe087d14a68c699f0912102a95a3148e177b3c8c208e"
         }
       ],
       "popularity": 178,
@@ -106904,7 +106967,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-24"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:4491",
@@ -107036,37 +107099,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-04-08"
-    },
-    {
-      "id": "hbas-switch:pleNx",
-      "platforms": [
-        "switch"
-      ],
-      "name": "pleNx",
-      "categories": [],
-      "description": "A native Plex client — browse, stream and download from your own Plex server\n\nDetails (description longue) :\npleNx is a native, controller-first Plex client for the Nintendo Switch — a fork of Switchfin (the Jellyfin client) fully migrated to the Plex API, with a redesigned interface.\n\nSign in with your own Plex account via plex.tv/link (4-character code, Plex Home profiles with PIN supported) and browse your own Plex Media Server: home hubs (Continue Watching first), libraries, collections, genres, search, cast and person pages, and your Plex Watchlist (browse, sort, filter, add/remove).\n\nPlayback is powered by MPV: direct play for H.264/H.265/VP9/AV1 with hardware decode (deko3d), and HLS transcode through your own server for everything else. Subtitles (external and embedded), audio track selection, chapters and resume are supported.\n\nOffline downloads in original quality: grab an episode, a full season or a whole show in one tap, with a storage gauge for your SD card — then watch anywhere, even docked on a",
-      "added_at": "2026-07-11",
-      "summary": "A native Plex client — browse, stream an",
-      "author": "thcolin",
-      "version": "1.2.0",
-      "license": "Apache v2",
-      "icon_url": null,
-      "release_url": "https://github.com/thcolin/pleNx",
-      "downloads": [
-        {
-          "format": "hbas",
-          "filename": "pleNx.hbas",
-          "url": "https://switch.cdn.fortheusers.org/packages/pleNx/manifest.install",
-          "size": 27315,
-          "sha256": "0ef7e311216393862bc8f9af8a7249d5ec93a4e6aed6f90fd50b7f8df0c31b59"
-        }
-      ],
-      "popularity": 3132,
-      "manifest_url": "https://switch.cdn.fortheusers.org/packages/pleNx/manifest.install",
-      "source": "Homebrew App Store",
-      "source_url": "https://hb-app.store/switch",
-      "license_url": null,
-      "updated_at": "2026-09-24"
     },
     {
       "id": "ps5-payloads-atlas:plinux5-ng.elf",
@@ -112113,7 +112145,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 17664,
+      "popularity": 17734,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112140,7 +112172,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3733,
+      "popularity": 3739,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112167,7 +112199,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 15966,
+      "popularity": 16036,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112194,7 +112226,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7398,
+      "popularity": 7410,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112221,7 +112253,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 85317,
+      "popularity": 86248,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112248,7 +112280,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 342,
+      "popularity": 356,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -112964,30 +112996,30 @@
       "updated_at": "2026-11-10T21:40:53+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
+      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.8.0.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-webkit-autoloader",
       "summary": "An automated payload loader for exploited PS5 consoles",
       "author": "",
-      "version": "v0.8.0-pre-0850478",
+      "version": "v0.8.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-webkit-autoloader",
       "downloads": [
         {
           "format": "elf",
-          "filename": "webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
-          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0-pre-0850478/webkit-autoloader-installer_v0.8.0-pre-0850478.elf",
-          "sha256": "d5929a1a8aa31ba7c6fd86eb501650b3be11d9f370adaada3d1abd236473356e"
+          "filename": "webkit-autoloader-installer_v0.8.0.elf",
+          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0/webkit-autoloader-installer_v0.8.0.elf",
+          "sha256": "015959f76c48e45df2b331ee2a6b52096afa3c2f9f1cbf9a29e67be699a6455b"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-17T21:39:58+08:00"
+      "updated_at": "2026-11-20T08:25:11+08:00"
     },
     {
       "id": "ps5-payloads-atlas:browser_appcache_remove.elf",
@@ -113120,30 +113152,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.12.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.14.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.12",
+      "version": "v12.6.14",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.12.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.12/ps5upload-12.6.12.elf",
-          "sha256": "a92f6919f7090b08fbfa835d3e686564ae9d37078d7c4494f69f75ba93883a0d"
+          "filename": "ps5upload-12.6.14.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.14/ps5upload-12.6.14.elf",
+          "sha256": "416e5791c488bc92eeb7d573ed7b798183416aae2d42e5212f3a3faf8bbc707f"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-20T02:37:09+08:00"
+      "updated_at": "2026-11-20T11:59:56+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -136997,6 +137029,39 @@
       "updated_at": "2012-09-06"
     },
     {
+      "id": "hbas-switch:RUNE",
+      "platforms": [
+        "switch"
+      ],
+      "name": "RUNE",
+      "categories": [
+        "utilities"
+      ],
+      "description": "RUNE is a native GUI save editor for the Legend of Zelda: Breath of the Wild on Nintendo Switch. Edit rupees, mon, hearts, stamina, equipment, modifiers, items, food, and more - all locally on your device with a familiar user interface.\n\nPlease note: RUNE is currently in early access (alpha), and may contain bugs. \n\nAs with all save editing: modifying your save carries corruption risks. Please back up valuable save files before modifying them. RUNE automatically creates backups on your SD card before every save.\n\nAI use: Human-written.",
+      "added_at": "2026-11-19",
+      "summary": "A GUI save editor for Breath of the Wild",
+      "author": "tderop",
+      "version": "v0.1.0-alpha",
+      "license": "Non-AI PolyForm Noncommercial License 1.0.0",
+      "icon_url": null,
+      "release_url": "https://github.com/tderop/RUNE",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "RUNE.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/RUNE/manifest.install",
+          "size": 21910,
+          "sha256": "7c257ccaeb85536cb2d9db9855c2c0f0b75fe81e1eb6edd6a98421ca6533f3ad"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/RUNE/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-19"
+    },
+    {
       "id": "vitadbtoo-vita:1500",
       "platforms": [
         "psvita"
@@ -139216,10 +139281,10 @@
         "utilities"
       ],
       "description": "A custom Scratch runtime that allows you to run Scratch 3 projects on your Nintendo Switch! This is an official port of the original runtime for the 3DS.\n\nSee the GitHub README for more info on what features are supported.\n\nMouse\n3DS: Glide your finger/stylus on the bottom screen to move the mouse, and tap the bottom screen to click.\nWii U GamePad: You can use the touchscreen on the GamePad.\nWii Remote: You can use the Wii sensor bar to control the mouse.\nOther Controllers: Enter Mouse Mode by holding L. Use the D-pad to move the mouse, and press R to click.",
-      "added_at": "2026-10-07",
+      "added_at": "2026-11-01",
       "summary": "Play Scratch games on your Switch!",
       "author": "NateXS and Grady Link",
-      "version": "1.2.1",
+      "version": "1.3",
       "license": "LGPLv3",
       "icon_url": null,
       "release_url": "https://github.com/ScratchEverywhere/ScratchEverywhere",
@@ -139228,8 +139293,8 @@
           "format": "hbas",
           "filename": "ScratchEverywhere.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/ScratchEverywhere/manifest.install",
-          "size": 23329,
-          "sha256": "c333abdef9af525751459ffcf83955866f83ec4f2d1561da86f994aaf21f3380"
+          "size": 24574,
+          "sha256": "87b9faad1f3e3a9ac3ad9dce76c45689d6775c7db7e845e9c3f1b8e6bfe35a3b"
         }
       ],
       "popularity": 4852,
@@ -139237,7 +139302,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-08"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-vita:1320",
@@ -143028,10 +143093,10 @@
         "utilities"
       ],
       "description": "SimpleModManager + State Alchemist = Simple Mod Alchemist\n\nTwo tools combine to become an ultimate app for fast changing of game mods with improved stability!\n\n---\n\nEach individual game mod must be organized on the SD card as \"/mod_alchemy/[ TITLE ID ]/[ GROUP ]/[ THING MOD REPLACES ]/[ MOD NAME ]/romfs/...\"\nFor example, \"/mod_alchemy/0100152000022000/Characters/Mario/Shrek/romfs/Driver/Mario.szs\"\n\nIt's also always good idea to backup your mods, just to be safe.\n\nSee the GitHub repo readme for much more info!\n\n---\n\nSpecial thanks:\n\n* Nadrino for creating SimpleModManager\n* Natinusala, xfangfang and any other contributors to Borealis\n* SciresM and devkitPro",
-      "added_at": "2026-04-16",
+      "added_at": "2026-10-31",
       "summary": "Fast and stable mod management!",
       "author": "gtiersma",
-      "version": "1.1.1",
+      "version": "1.1.2",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/gtiersma/Simple_Mod_Alchemist",
@@ -143040,8 +143105,8 @@
           "format": "hbas",
           "filename": "SimpleModAlchemist.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SimpleModAlchemist/manifest.install",
-          "size": 9155,
-          "sha256": "90203e05e62f4b6d9b4c8bb442024584816db94a9c9194dfea333d2f0befe1a4"
+          "size": 9225,
+          "sha256": "896b9c1f4414edacc149445aef546e6129d6bc606e8fe5970cb620586706fc12"
         }
       ],
       "popularity": 4800,
@@ -143049,7 +143114,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-04-17"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-psp:2900",
@@ -146149,7 +146214,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-19T15:41:43+00:00"
+      "updated_at": "2026-11-18T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:snes9xgx-channel-installer",
@@ -165437,7 +165502,7 @@
       "name": "Tougelike",
       "summary": "Night racing roguelike on Japanese mountain roads.",
       "author": "noeljustin",
-      "version": "v0.1.57",
+      "version": "v0.1.67",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/njlent/tougelike-3ds-pub/main/assets/icon.png",
       "release_url": "https://github.com/njlent/tougelike-3ds-pub/releases",
@@ -165445,20 +165510,20 @@
         {
           "format": "3dsx",
           "filename": "tougelike.3dsx",
-          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.57/tougelike.3dsx",
-          "size": 52188468
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.67/tougelike.3dsx",
+          "size": 52254800
         },
         {
           "format": "cia",
           "filename": "tougelike.cia",
-          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.57/tougelike.cia",
-          "size": 52421568
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.67/tougelike.cia",
+          "size": 52474816
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-16T17:54:34Z"
+      "updated_at": "2026-11-19T23:09:17Z"
     },
     {
       "id": "vitadbtoo-psp:3062",
@@ -173727,7 +173792,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-19T15:46:28+00:00"
+      "updated_at": "2026-11-18T00:00:00+00:00"
     },
     {
       "id": "open-shop-channel-wii:VC_Test",
@@ -187392,10 +187457,10 @@
         "utilities"
       ],
       "description": "[TR] Switch oyunlarınızı kolayca Türkçeleştirmek için tasarlanmış hepsi bir arada çözüm.\n\n- Online Arşiv: Geniş bir yama listesine anında erişin ve indirin.\n- Otomatik Kurulum: Yamalar doğrudan doğru dizine kurulur.\n- Yama Yönetimi: Cihazınızdaki yüklü yamaları listeleyin ve düzenleyin.\n- Arama Özelliği: Arama kutusu ile istediğiniz oyunu saniyeler içinde bulun.\n- Modern ve Hızlı: Akıcı arayüzü ile en hızlı yama deneyimini yaşayın.\n\nDaha fazla detay için: https://github.com/sertay1/YamaNX\n\n\n[EN] All-in-one solution for translating your Nintendo Switch games.\n\n- Online Archive: Access and download a vast list of patches instantly.\n- Auto Install: Patches are placed directly in the correct directory.\n- Patch Management: List and manage the patches installed on your device.\n- Search Function: Find any game in seconds with the search box.\n- Fast & Modern: Enjoy the fastest patch experience with a sleek UI.\n\nFor more information: https://github.com/sertay1/YamaNX",
-      "added_at": "2026-10-19",
+      "added_at": "2026-10-27",
       "summary": "Easy Turkish game localization",
       "author": "SertAy",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "license": "n/a",
       "icon_url": null,
       "release_url": "https://github.com/sertay1/YamaNX",
@@ -187404,8 +187469,8 @@
           "format": "hbas",
           "filename": "YamaNXTurkishPatcher.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/YamaNXTurkishPatcher/manifest.install",
-          "size": 10687,
-          "sha256": "0abfde65a30b194e2e6ef5af89b3ff999b84bda66df06bbf9b40c6e923e685a0"
+          "size": 11047,
+          "sha256": "615dc14622979e658d6b46543617aad0d1e108d9632bb5ec4969e1faf5a67451"
         }
       ],
       "popularity": 3199,
@@ -187413,7 +187478,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-10-20"
+      "updated_at": "2026-11-19"
     },
     {
       "id": "vitadbtoo-vita:485",
