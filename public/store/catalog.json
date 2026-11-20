@@ -3047,6 +3047,37 @@
       "updated_at": "2011-01-01"
     },
     {
+      "id": "vitadbtoo-vita:4881",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "3SX",
+      "summary": "Native port of the Street Fighter III: 3rd Strike decompilation for PSVITA.",
+      "author": "unclejahjah",
+      "version": "v.ita-v1.0",
+      "title_id": "TSXV00001",
+      "description": "Native port of the Street Fighter III: 3rd Strike decompilation for PSVITA.",
+      "requirements": "- Game Data Files: your own copy of Street Fighter III: 3rd Strike (PS2)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a8b5683190317dce800d36b54b421b99320903664dc6cd9f8478d89513eda694.png",
+      "screenshots": [],
+      "release_url": "https://github.com/unclejahjah/sf3-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "3sx.vpk",
+          "url": "https://github.com/unclejahjah/sf3-vita/releases/download/vita-v1.0/3sx.vpk",
+          "size": 2581637,
+          "md5": "16cd1c0237543eea9ef2c7988f8c6e79"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
+    },
+    {
       "id": "vitadbtoo-psp:3259",
       "platforms": [
         "psp"
@@ -9517,7 +9548,7 @@
       "name": "Area Play Vita Edition",
       "summary": "Game hub for PSVita.",
       "author": "NexArea-Official",
-      "version": "v.1.0",
+      "version": "v.1.1",
       "title_id": "ARPL00001",
       "description": "Game hub for PSVita.",
       "requirements": "",
@@ -9529,9 +9560,9 @@
         {
           "format": "vpk",
           "filename": "AreaPlay.vpk",
-          "url": "https://github.com/NexArea-Official/AreaPlay/releases/download/V1.0/AreaPlay.vpk",
-          "size": 2437177,
-          "md5": "e3eaf802ee53a7a3f3422d4f2ca7f6bf"
+          "url": "https://github.com/NexArea-Official/AreaPlay/releases/download/V1.1/AreaPlay.vpk",
+          "size": 5052436,
+          "md5": "9216e455483bf1495b98f59e768cd1ea"
         }
       ],
       "popularity": 0,
@@ -13427,6 +13458,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2022-03-08T04:56:36Z"
+    },
+    {
+      "id": "vitadbtoo-vita:4882",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Battle for Bikini Bottom",
+      "summary": "Port of SpongeBob SquarePants: Battle for Bikini Bottom for PSVITA, based on the decompilation.",
+      "author": "Rinnegatamante",
+      "version": "v.1.0",
+      "title_id": "BBVT00002",
+      "description": "Port of SpongeBob SquarePants: Battle for Bikini Bottom for PSVITA, based on the decompilation.",
+      "requirements": "- Game Data Files: your own copy of Battle for Bikini Bottom",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5e73fd65332d2c86a5480a3c24fcb1bd6ba774dfecd7437ae3102f9c350cff25.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Rinnegatamante/bfbb-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "bfbb.vpk",
+          "url": "https://github.com/Rinnegatamante/bfbb-vita/releases/download/v.1.0/bfbb.vpk",
+          "size": 4448862,
+          "md5": "e1e1f41a9dd248d9a8c8627fd04ce449"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
     },
     {
       "id": "vitadbtoo-psp:2323",
@@ -31611,6 +31673,37 @@
       "updated_at": "2017-02-08T11:36:20Z"
     },
     {
+      "id": "vitadbtoo-psp:4893",
+      "platforms": [
+        "psp"
+      ],
+      "name": "CTTR Right Stick Camera",
+      "summary": "Right-stick camera patch for Crash Tag Team Racing on PSP.",
+      "author": "unassortednonsense",
+      "version": "v.1.0.0",
+      "title_id": null,
+      "description": "",
+      "requirements": "- Crash Tag Team Racing (PSP)",
+      "license": null,
+      "icon_url": null,
+      "screenshots": [],
+      "release_url": "https://github.com/unassortednonsense/cttr-psp-right-stick-camera/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "CTTR-PSP-Right-Stick-v1.0.0.zip",
+          "url": "https://github.com/unassortednonsense/cttr-psp-right-stick-camera/releases/download/1.0.0/CTTR-PSP-Right-Stick-v1.0.0.zip",
+          "size": 2497,
+          "md5": "5a429cb6f378e39246089e2dd6640ed4"
+        }
+      ],
+      "popularity": null,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": ""
+    },
+    {
       "id": "universal-db:TheHighTide/CubeAdventures",
       "platforms": [
         "3ds"
@@ -34779,6 +34872,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2010-09-02"
+    },
+    {
+      "id": "vitadbtoo-vita:4883",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Delta Squad",
+      "summary": "Port of the Star Wars: Republic Commando decompilation for PSVITA.",
+      "author": "ianfrombailey",
+      "version": "v.release",
+      "title_id": "DLTA00001",
+      "description": "Port of the Star Wars: Republic Commando decompilation for PSVITA.",
+      "requirements": "- Game Data Files: your own copy of Star Wars: Republic Commando (PC)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/13a4510a4741f8e71f20cc0a4b5d4f84da46aae3a9eb6623c5f777028499ae87.png",
+      "screenshots": [],
+      "release_url": "https://github.com/ianfrombailey/deltasquad/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "deltasquad.vpk",
+          "url": "https://github.com/ianfrombailey/deltasquad/releases/download/v.release/deltasquad.vpk",
+          "size": 6642284,
+          "md5": "132ec3a61aa5b6a20f56f50124a347b7"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
     },
     {
       "id": "vitadbtoo-vita:1838",
@@ -38480,7 +38604,7 @@
       "name": "Dragon Ball Z: BT3",
       "summary": "Port of Dragon Ball Z: Budokai Tenkaichi 3 for PSVita.",
       "author": "arielxflores",
-      "version": "v.1.2.4",
+      "version": "v.1.3",
       "title_id": "BTTD00010",
       "description": "Port of Dragon Ball Z: Budokai Tenkaichi 3 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PS2",
@@ -38492,9 +38616,9 @@
         {
           "format": "vpk",
           "filename": "Tenkaichi3Decomp-Vita.vpk",
-          "url": "https://github.com/arielxflores/Tenkaichi3Decomp-Vita/releases/download/v1.2.4/Tenkaichi3Decomp-Vita.vpk",
-          "size": 6032211,
-          "md5": "5954849960fb47e51adc92e3f01d849c"
+          "url": "https://github.com/arielxflores/Tenkaichi3Decomp-Vita/releases/download/v1.3/Tenkaichi3Decomp-Vita.vpk",
+          "size": 6104994,
+          "md5": "c305e839c3f0be120eb9c9ce570892ad"
         }
       ],
       "popularity": 0,
@@ -52892,7 +53016,7 @@
       "name": "garlic-savemgr",
       "summary": "",
       "author": "",
-      "version": "v1.15-beta23",
+      "version": "v2.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://git.etawen.dev/earthonion/garlic-savemgr",
@@ -52900,7 +53024,7 @@
         {
           "format": "elf",
           "filename": "garlic-savemgr.elf",
-          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v1.15-beta23/garlic-savemgr.elf",
+          "url": "https://git.etawen.dev/earthonion/garlic-savemgr/releases/download/v2.0/garlic-savemgr.elf",
           "sha256": null
         }
       ],
@@ -52908,7 +53032,7 @@
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-12T06:19:40+08:00"
+      "updated_at": "2026-11-21T01:29:16+08:00"
     },
     {
       "id": "ps5-payloads-atlas:garlic-worker-ps5.elf",
@@ -54805,6 +54929,37 @@
       "updated_at": "2005-12-27"
     },
     {
+      "id": "vitadbtoo-vita:4886",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Glitch Blocks",
+      "summary": "An 8x8 block-placement puzzle game.",
+      "author": "tobipjuk",
+      "version": "v.1.1",
+      "title_id": "GLCH00004",
+      "description": "An 8x8 block-placement puzzle game.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/fca4725abe4e9ada1e6e708af2c3b18c03e91dac115a8c0372e99074667d102d.png",
+      "screenshots": [],
+      "release_url": "https://github.com/tobipjuk/glitch-blocks/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "GlitchBlocks.vpk",
+          "url": "https://github.com/tobipjuk/glitch-blocks/releases/download/v1.1/GlitchBlocks.vpk",
+          "size": 99358,
+          "md5": "31e2b38e3eae8918fc0fc1ef9bad89ce"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
+    },
+    {
       "id": "vitadbtoo-psp:1009",
       "platforms": [
         "psp"
@@ -55509,6 +55664,38 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2026-10-10T00:36:13Z"
+    },
+    {
+      "id": "open-shop-channel-wii:GodModeWii",
+      "platforms": [
+        "wii"
+      ],
+      "name": "GodModeWii",
+      "summary": "GodMode9-style file manager",
+      "description": "A text-mode, GodMode9-style file manager for the Wii and the Wii U's vWii.\n\nBrowse the SD card, SD Gecko, every USB drive, the NAND, the SEEPROM, the disc drive and your console's keys. Copy, cut, paste and delete between devices, see free space, and edit the NAND only after the Konami code and a brick-risk disclaimer.\n\nWARNING: modifying the NAND can permanently brick your console.",
+      "categories": [
+        "utilities"
+      ],
+      "requirements": "wii · vwii · wii_mini · Wii Remote · Classic Controller · GameCube Controller · USB Keyboard · SDHC",
+      "author": "quatric",
+      "version": "0.15.1",
+      "title_id": "000100014E3174CF",
+      "license": null,
+      "icon_url": "https://hbb1.oscwii.org/api/contents/GodModeWii/icon.png",
+      "release_url": null,
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "GodModeWii.zip",
+          "url": "https://hbb1.oscwii.org/api/contents/GodModeWii/GodModeWii.zip",
+          "size": 3847754
+        }
+      ],
+      "source": "Open Shop Channel",
+      "source_url": "https://oscwii.org/",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-09T00:00:00+00:00"
     },
     {
       "id": "vitadbtoo-psp:2882",
@@ -79266,7 +79453,7 @@
       "name": "Magic Draw",
       "summary": "Super powerful drawing app for 3DS",
       "author": "natsune",
-      "version": "v2.1.0",
+      "version": "v2.2.0",
       "license": "MIT License",
       "icon_url": "https://raw.githubusercontent.com/natsuneco/magic-draw/refs/heads/main/meta/icon.png",
       "release_url": "https://github.com/natsuneco/magic-draw/releases",
@@ -79274,20 +79461,20 @@
         {
           "format": "3dsx",
           "filename": "magic-draw.3dsx",
-          "url": "https://github.com/natsuneco/magic-draw/releases/download/v2.1.0/magic-draw.3dsx",
-          "size": 553752
+          "url": "https://github.com/natsuneco/magic-draw/releases/download/v2.2.0/magic-draw.3dsx",
+          "size": 554704
         },
         {
           "format": "cia",
           "filename": "magic-draw.cia",
-          "url": "https://github.com/natsuneco/magic-draw/releases/download/v2.1.0/magic-draw.cia",
+          "url": "https://github.com/natsuneco/magic-draw/releases/download/v2.2.0/magic-draw.cia",
           "size": 631744
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-07-31T16:46:17Z"
+      "updated_at": "2026-11-20T06:54:13Z"
     },
     {
       "id": "vitadbtoo-psp:4539",
@@ -79974,7 +80161,7 @@
       "name": "Manhunt",
       "summary": "Port of Manhunt and Manhunt 2 for PSVita.",
       "author": "xesf",
-      "version": "v.0.5.1",
+      "version": "v.0.8.0",
       "title_id": "MHRE00001",
       "description": "Port of Manhunt and Manhunt 2 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -79985,10 +80172,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "manhunt-v0.5.1-vita.vpk",
-          "url": "https://github.com/xesf/manhunt-releases/releases/download/v0.5.1/manhunt-v0.5.1-vita.vpk",
-          "size": 1382436,
-          "md5": "688ab1fcd3748da3dbed26a9e8ee9192"
+          "filename": "manhunt-v0.8.0-vita.vpk",
+          "url": "https://github.com/xesf/manhunt-releases/releases/download/v0.8.0/manhunt-v0.8.0-vita.vpk",
+          "size": 1769302,
+          "md5": "1c0d1c8478f74b8eed96ca461a842bd9"
         }
       ],
       "popularity": 0,
@@ -86858,6 +87045,37 @@
       "updated_at": "2016-08-06"
     },
     {
+      "id": "vitadbtoo-vita:4890",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Moonchild",
+      "summary": "Port of Moonchild for PSVITA.",
+      "author": "Knuxfan",
+      "version": "v.1.0",
+      "title_id": "KNFN00001",
+      "description": "Port of Moonchild for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1821f6a8ea7c36b85674beb7a0ea8dc1b76beecafb81232f88d190040654f653.png",
+      "screenshots": [],
+      "release_url": "https://codeberg.org/knfn/moonchild-portable/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "moonchild.vpk",
+          "url": "https://codeberg.org/knfn/moonchild-portable/releases/download/0.0.1/moonchild.vpk",
+          "size": 45274513,
+          "md5": "d2a4fe7de356a17d2027fc190447ab10"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
+    },
+    {
       "id": "vitadbtoo-psp:2524",
       "platforms": [
         "psp"
@@ -93018,6 +93236,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-16"
+    },
+    {
+      "id": "vitadbtoo-vita:4885",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "NFS Underground 2 (elmnt22)",
+      "summary": "Native port of Need for Speed: Underground 2 for PSVITA.",
+      "author": "elmnt22",
+      "version": "v.0.2.0-alpha",
+      "title_id": "NFSU20001",
+      "description": "Native port of Need for Speed: Underground 2 for PSVITA.",
+      "requirements": "- Game Data Files: your own copy of Need for Speed: Underground 2 (PC)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/2b2413286d18e6ce0a7dec84299d0a4fb4b08e8fa7c329b45676ef80aac3d383.png",
+      "screenshots": [],
+      "release_url": "https://github.com/elmnt22/vita-nfsu2/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "NFSU2Vita.vpk",
+          "url": "https://github.com/elmnt22/vita-nfsu2/releases/download/v0.2.0-alpha/NFSU2Vita.vpk",
+          "size": 5146059,
+          "md5": "3076fd65328817f9349f5a65cb6075e3"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
     },
     {
       "id": "vitadbtoo-vita:4876",
@@ -112145,7 +112394,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 17734,
+      "popularity": 17983,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112172,7 +112421,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3739,
+      "popularity": 3753,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112199,7 +112448,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 16036,
+      "popularity": 16189,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112226,7 +112475,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7410,
+      "popularity": 7447,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112253,7 +112502,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 86248,
+      "popularity": 87683,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112280,7 +112529,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 356,
+      "popularity": 365,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -112996,30 +113245,30 @@
       "updated_at": "2026-11-10T21:40:53+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.8.0.elf",
+      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.8.2.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-webkit-autoloader",
       "summary": "An automated payload loader for exploited PS5 consoles",
       "author": "",
-      "version": "v0.8.0",
+      "version": "v0.8.2",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-webkit-autoloader",
       "downloads": [
         {
           "format": "elf",
-          "filename": "webkit-autoloader-installer_v0.8.0.elf",
-          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.0/webkit-autoloader-installer_v0.8.0.elf",
-          "sha256": "015959f76c48e45df2b331ee2a6b52096afa3c2f9f1cbf9a29e67be699a6455b"
+          "filename": "webkit-autoloader-installer_v0.8.2.elf",
+          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.2/webkit-autoloader-installer_v0.8.2.elf",
+          "sha256": "1c415bc124944c85b86a4751006b98010b977f142142d67306d13804899bad54"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-20T08:25:11+08:00"
+      "updated_at": "2026-11-20T19:04:25+08:00"
     },
     {
       "id": "ps5-payloads-atlas:browser_appcache_remove.elf",
@@ -113152,30 +113401,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.14.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.17.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.14",
+      "version": "v12.6.17",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.14.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.14/ps5upload-12.6.14.elf",
-          "sha256": "416e5791c488bc92eeb7d573ed7b798183416aae2d42e5212f3a3faf8bbc707f"
+          "filename": "ps5upload-12.6.17.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.17/ps5upload-12.6.17.elf",
+          "sha256": "2bf4c7ebee49c06e0517040a68f6e6458826bcaca49f435c6151aeb108c65ee4"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-20T11:59:56+08:00"
+      "updated_at": "2026-11-21T03:56:20+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -133546,7 +133795,7 @@
       "name": "ReST-V",
       "summary": "Sega ST-V and System C / C2 arcade emulator.",
       "author": "Reyanon",
-      "version": "v.0.1.457",
+      "version": "v.0.1.635",
       "title_id": "RSTV00001",
       "description": "ReST-V is an arcade emulator for the Sega ST-V (Titan) board, with additional support for the older Sega System C and System C2 boards. The ST-V core is based on Yabause / YabaSanshiro, with ST-V support from Kronos; System C / C2 runs on a separate 68000 based core with a 315-5313 VDP renderer, YM3438 (ymfm), SN76489 and uPD7759 sound.\nThe emulator targets full speed (60 fps) on the PS Vita without frame skipping. The SH-2 CPUs run through a dynamic recompiler for ARMv7, frequently used SGL library routines are replaced with native code, and idle loops are detected automatically. VDP1 sprites and VDP2 background layers are rendered and composited on the GPU through sceGxm, and the SCSP sound DSP is compiled to ARM code.\nThe game list covers 174 sets (117 ST-V, 47 System C2, 10 System C) with board tabs and Playable / All / Favorites filters. Other features include save states (10 slots plus quick save), button mapping with turbo, per-game settings, aspect ratio and filter options, scanlines, and border colors or user-supplied border artwork.",
       "requirements": "",
@@ -133557,10 +133806,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "rest-v-0.1.457.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/rest-v-0.1.457.vpk",
-          "size": 2031096,
-          "md5": "89e7b8f5b2375ecc4b964307fb57fd57"
+          "filename": "rest-v-0.1.635.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/rest-v-0.1.635.vpk",
+          "size": 3231590,
+          "md5": "20de58e16dc37d96f3f0f40dfdaca215"
         }
       ],
       "popularity": 0,
@@ -133643,7 +133892,7 @@
       "name": "ReSys12",
       "summary": "Namco System 12 arcade emulator.",
       "author": "Reyanon",
-      "version": "v.0.1.222",
+      "version": "v.0.1.330",
       "title_id": "RSYS00012",
       "description": "ReSys12 is an emulator for the Namco System 12 arcade board, the PlayStation-based hardware used by Tekken Tag Tournament, Tekken 3, Soul Calibur, Ehrgeiz, Point Blank 2 and other Namco titles from 1997 to 2001.\nThe R3000A CPU, GTE and GPU emulation come from pcsx_rearmed, using its ARMv7 dynamic recompiler, NEON GTE and the gpu_neon software rasterizer. The System 12 board itself (ROM banking, KC0xx protection, ROM DMA, the H8/3002 sub CPU, the C352 sound chip, EEPROM and JVS I/O) is ported from MAME.\nThe main CPU, the GPU rasterizer and the sound run on separate CPU cores. Idle loops of the main CPU and the H8/3002 are skipped, and only the VRAM rows that changed are uploaded to the GPU. Every frame is emulated and drawn; there is no frame skipping.\n52 of the 59 MAME System 12 sets run, including fighting games, gun games (aimed with an analog stick) and driving games (wheel or lever on an analog stick). Games that need the CD-XA board (Um Jammer Lammy NOW!, Quest for Fame, Truck Kyosokyoku) are not supported.\nFeatures include a game list grouped by controller type with Playable / All / Favorites filters, save states with 10 slots and quick save, button remapping with turbo and combo keys, service mode access, aspect ratio and filter options, border artwork, and per-game settings.\nReSys12 is free software under the GNU GPL version 3.",
       "requirements": "",
@@ -133654,10 +133903,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "resys12-0.1.222.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/resys12-0.1.222.vpk",
-          "size": 2077251,
-          "md5": "3cae3aa8f564cecb444687e71472a01f"
+          "filename": "resys12-0.1.330.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/resys12-0.1.330.vpk",
+          "size": 2113749,
+          "md5": "ebd4883314dd4f9e5821e3ba95cf122d"
         }
       ],
       "popularity": 0,
@@ -151094,6 +151343,37 @@
       "updated_at": "2025-07-15"
     },
     {
+      "id": "vitadbtoo-vita:4891",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ssh-vita",
+      "summary": "SSH server for PSVITA.",
+      "author": "ToastedFrog2",
+      "version": "v.1.4.2",
+      "title_id": "VSSH00001",
+      "description": "SSH server for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1626efafde2cdc1109e8f133dfe0bd05690d164b67d40f5f6c1fa7752e3dc0ce.png",
+      "screenshots": [],
+      "release_url": "https://github.com/ToastedFrog2/ssh-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ssh-vita-1.4.2.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/ssh-vita-1.4.2.vpk",
+          "size": 311546,
+          "md5": "9d8d6f1be740340cea86e9fd83cd9efa"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
+    },
+    {
       "id": "vitadbtoo-psp:3949",
       "platforms": [
         "psp"
@@ -167869,6 +168149,37 @@
       "updated_at": "2008-11-07"
     },
     {
+      "id": "vitadbtoo-vita:4889",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Tweaks/Plugins Installer",
+      "summary": "Installs and updates tweaks and plugins on PSVITA.",
+      "author": "chazzarchibald-ops",
+      "version": "v.1.1",
+      "title_id": "TWKS00001",
+      "description": "Installs and updates tweaks and plugins on PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b72476819ec2b96a1b8ccc1c57f728b401f63f71f9bfc2afb9e76509b6ff4677.png",
+      "screenshots": [],
+      "release_url": "https://github.com/chazzarchibald-ops/vita-tweaks-plugins/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "tweaks_installer.vpk",
+          "url": "https://github.com/chazzarchibald-ops/vita-tweaks-plugins/releases/download/v1.1/tweaks_installer.vpk",
+          "size": 447728,
+          "md5": "4dedd8410a61851588f9c78570027de0"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
+    },
+    {
       "id": "vitadbtoo-vita:1650",
       "platforms": [
         "psvita"
@@ -171798,6 +172109,37 @@
       "updated_at": "2026-09-26"
     },
     {
+      "id": "vitadbtoo-vita:4884",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Valdis Story",
+      "summary": "Port of Valdis Story: Abyssal City for PSVITA.",
+      "author": "Botarguirix",
+      "version": "v.0.5.0-alpha",
+      "title_id": "VALDIS001",
+      "description": "Port of Valdis Story: Abyssal City for PSVITA.",
+      "requirements": "- Game Data Files: your own copy of Valdis Story: Abyssal City",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b2190cb560d270a0e224dd3b8ce0c0b615c3d7eac93702e1fc64f93864ae8f9a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Botarguirix/ValdisStoryVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vsvita.vpk",
+          "url": "https://github.com/Botarguirix/ValdisStoryVita/releases/download/v0.5.0-alpha/vsvita.vpk",
+          "size": 1420022,
+          "md5": "7009c7351c1cda3e615334982ddb4e12"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
+    },
+    {
       "id": "vitadbtoo-psp:2151",
       "platforms": [
         "psp"
@@ -173032,6 +173374,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-07-28"
+    },
+    {
+      "id": "vitadbtoo-vita:4888",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vibe",
+      "summary": "Lightweight music player for PSVITA, tuned for the OLED screen.",
+      "author": "disp06",
+      "version": "v.1.0.1",
+      "title_id": "VIBE00001",
+      "description": "Lightweight music player for PSVITA, tuned for the OLED screen.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/6cf582f595d6c9245b0c1d7911630b12e4a24b616cfb8cf514acb5a1e34abd72.png",
+      "screenshots": [],
+      "release_url": "https://github.com/disp06/vibe-ps-vita-music-player/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vibe.vpk",
+          "url": "https://github.com/disp06/vibe-ps-vita-music-player/releases/download/v1.0.1/vibe.vpk",
+          "size": 1285529,
+          "md5": "add94a09dc9b8ac8eddbf3c0ba6b948d"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
     },
     {
       "id": "vitadbtoo-psp:3996",
@@ -175265,6 +175638,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-06-05"
+    },
+    {
+      "id": "vitadbtoo-vita:4887",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vita Vox",
+      "summary": "Offline audiobook player for PSVITA.",
+      "author": "AgiLityOps",
+      "version": "v.00.39",
+      "title_id": "VVOX00001",
+      "description": "Offline audiobook player for PSVITA.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/981986baaa1f90396eb5c901653e70f2120b2349d68280571fe08864bb48a344.png",
+      "screenshots": [],
+      "release_url": "https://github.com/AgiLityOps/VitaVox/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vita_vox_v00.39.vpk",
+          "url": "https://github.com/AgiLityOps/VitaVox/releases/download/v00.39/vita_vox_v00.39.vpk",
+          "size": 1934979,
+          "md5": "4dd898af5b628fc5363febeb46fb8f97"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
     },
     {
       "id": "vitadbtoo-vita:1316",
