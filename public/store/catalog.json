@@ -12401,7 +12401,7 @@
       "name": "Balatro3DS",
       "summary": "A fanmade Balatro clone for the 3DS",
       "author": "Gazpacho",
-      "version": "v2.0.6-base",
+      "version": "v2.0.7-base",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/idkhan/Balatro3DS/refs/heads/main/resources/textures/1x/icon.png",
       "release_url": "https://github.com/idkhan/Balatro3DS/releases",
@@ -12409,20 +12409,20 @@
         {
           "format": "cia",
           "filename": "Balatro.cia",
-          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.6-base/Balatro.cia",
-          "size": 27816896
+          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.7-base/Balatro.cia",
+          "size": 27919296
         },
         {
           "format": "3dsx",
           "filename": "Balatro3DS.3dsx",
-          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.6-base/Balatro3DS.3dsx",
-          "size": 17469929
+          "url": "https://github.com/idkhan/Balatro3DS/releases/download/v2.0.7-base/Balatro3DS.3dsx",
+          "size": 17503349
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-10-24T23:39:29Z"
+      "updated_at": "2026-11-20T21:43:28Z"
     },
     {
       "id": "vitadbtoo-vita:573",
@@ -105287,7 +105287,7 @@
       "name": "PictoRelay",
       "summary": "Real online PictoChat between DS, 3DS, PC and Mobile",
       "author": "HollowOwl",
-      "version": "v1.2.20",
+      "version": "v1.2.21",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/ShinMikite/PictoRelay-3DS/main/icon.png",
       "release_url": "https://github.com/ShinMikite/PictoRelay-3DS/releases",
@@ -105295,14 +105295,14 @@
         {
           "format": "cia",
           "filename": "PictoRelay.cia",
-          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.2.20/PictoRelay.cia",
-          "size": 3091392
+          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.2.21/PictoRelay.cia",
+          "size": 3092928
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-19T04:02:23Z"
+      "updated_at": "2026-11-20T19:31:27Z"
     },
     {
       "id": "vitadbtoo-vita:1429",
@@ -112394,7 +112394,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 17983,
+      "popularity": 18168,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112421,7 +112421,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3753,
+      "popularity": 3759,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112448,7 +112448,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 16189,
+      "popularity": 16277,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112475,7 +112475,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7447,
+      "popularity": 7464,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112502,7 +112502,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 87683,
+      "popularity": 88768,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -112529,7 +112529,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 365,
+      "popularity": 372,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -142817,7 +142817,7 @@
       "name": "Silent Hill 3 Enhanced Edition",
       "summary": "Native port of the PC version of Silent Hill 3 for PSVITA, statically recompiled to ARM.",
       "author": "matfsouza",
-      "version": "v.1.1",
+      "version": "v.1.2",
       "title_id": "SH3EE0001",
       "description": "Native port of the PC version of Silent Hill 3 for PSVITA, statically recompiled to ARM.",
       "requirements": "- Game Data Files: your own copy of the Silent Hill 3 PC version, prepared with sh3prep from the release page and placed in ux0:data/sh3/",
@@ -142834,9 +142834,9 @@
         {
           "format": "vpk",
           "filename": "sh3vita.vpk",
-          "url": "https://github.com/matfsouza/sh3vita/releases/download/v1.1/sh3vita.vpk",
-          "size": 7435382,
-          "md5": "0f446e18fccd531b2e226ef42fff6560"
+          "url": "https://github.com/matfsouza/sh3vita/releases/download/v1.2/sh3vita.vpk",
+          "size": 25500339,
+          "md5": "b71491421d2b141ea330b4419d95d119"
         }
       ],
       "popularity": 0,
@@ -167853,6 +167853,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2026-05-27T18:30:37Z"
+    },
+    {
+      "id": "vitadbtoo-vita:4894",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Turbo GreenVita",
+      "summary": "Native Xbox Cloud Gaming client for PSVITA with hardware H.264 decoding and low-latency streaming, forked from GreenVita.",
+      "author": "PoissMi",
+      "version": "v.0.3.0",
+      "title_id": "TURBOVITA",
+      "description": "Native Xbox Cloud Gaming client for PSVITA with hardware H.264 decoding and low-latency streaming, forked from GreenVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ea02e84bddaca96d7b04b85f5cff3b164e9a9226fda39a3c0e3a16849383dd1b.png",
+      "screenshots": [],
+      "release_url": "https://github.com/PoissMi/turbo-green-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "turbo-green-vita.vpk",
+          "url": "https://github.com/PoissMi/turbo-green-vita/releases/download/v0.3.0/turbo-green-vita.vpk",
+          "size": 14217221,
+          "md5": "99da2dc6a433c3c90137c92ef6f4eb38"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-20"
     },
     {
       "id": "vitadbtoo-psp:2849",
