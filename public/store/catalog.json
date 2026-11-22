@@ -14003,7 +14003,7 @@
           "filename": "Benny.vpk",
           "url": "https://github.com/xqwpx/benny/releases/download/Release/Benny.vpk",
           "size": 43131039,
-          "md5": "b057e4944d90b0d54007ca1d9c96e6d1"
+          "md5": "7be11205092e91db63214a373f64b667"
         }
       ],
       "popularity": 2622,
@@ -26129,7 +26129,7 @@
           "filename": "coffeetalk.vpk",
           "url": "https://github.com/PatnosDD/Coffee-Talk-PS-VITA/releases/download/Release/coffeetalk.vpk",
           "size": 15037090,
-          "md5": "397bc799e77d156823a05deef3824c57"
+          "md5": "15cfc457d6178c500bd2680f3747e1ce"
         }
       ],
       "popularity": 4431,
@@ -28347,7 +28347,7 @@
           "filename": "Cradle.Song.Vita-00.98.vpk",
           "url": "https://github.com/Grimiku/Cradle-Song-Vita/releases/download/Latest/Cradle.Song.Vita-00.98.vpk",
           "size": 127068435,
-          "md5": "8445829cdea61154c8b91dc3ce8e8f6b"
+          "md5": "563932f4cdbeb6851d7dd78e59a65579"
         }
       ],
       "popularity": 2359,
@@ -53860,7 +53860,7 @@
           "filename": "GolfingOverIt.vpk",
           "url": "https://github.com/PatnosDD/Golfing-Over-It-with-Alva-Majo-PS-VITA/releases/download/Release/GolfingOverIt.vpk",
           "size": 13200187,
-          "md5": "063d9382656f22d75162a5c03e781963"
+          "md5": "3e5bdcf897055833a216a13e2bc4af07"
         }
       ],
       "popularity": 1903,
@@ -60894,7 +60894,7 @@
           "filename": "HYPERFIGHT.vpk",
           "url": "https://github.com/anas-halid/HYPERFIGHT-VITA/releases/download/Release/HYPERFIGHT.vpk",
           "size": 27141519,
-          "md5": "3333846b67ff62c18a9bb1349884e929"
+          "md5": "a2df03dea2d50c5a66f6a62a340c234f"
         }
       ],
       "popularity": 4462,
@@ -64875,6 +64875,37 @@
       "updated_at": "2026-09-23"
     },
     {
+      "id": "vitadbtoo-vita:4909",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Jazz² Resurrection",
+      "summary": "Open-source reimplementation of Jazz Jackrabbit 2 for PSVITA.",
+      "author": "deathkiller",
+      "version": "Nightly 2026-11-20 (d125774)",
+      "title_id": "JAZZ20000",
+      "description": "Open-source reimplementation of Jazz Jackrabbit 2 for PSVITA.",
+      "requirements": "- Game Data Files: your own copy of Jazz Jackrabbit 2",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/16ecdd2ef720a20c311dc809707dc1e7a655015fbb825e9c283ba514c3ddcc56.png",
+      "screenshots": [],
+      "release_url": "https://github.com/deathkiller/jazz2-native/actions",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "jazz2-resurrection.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/nightly/jazz2-resurrection.vpk",
+          "size": 8986378,
+          "md5": "2c5b49b514ff88f912cc34a58a558d4f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-22"
+    },
+    {
       "id": "hbas-switch:JC-color-swapper",
       "platforms": [
         "switch"
@@ -66425,7 +66456,7 @@
           "filename": "Juniper.s.Knot-00.99.vpk",
           "url": "https://github.com/Grimiku/Junipers-Knot-Vita/releases/download/Latest/Juniper.s.Knot-00.99.vpk",
           "size": 165025013,
-          "md5": "8445829cdea61154c8b91dc3ce8e8f6b"
+          "md5": "a28c37d41f4b94a1f71b152c4ea6bd41"
         }
       ],
       "popularity": 3809,
@@ -67208,7 +67239,7 @@
           "filename": "KeepInMindRemastered.vpk",
           "url": "https://github.com/PatnosDD/Keep-In-Mind-Remastered-PS-VITA/releases/download/Release/KeepInMindRemastered.vpk",
           "size": 14671688,
-          "md5": "397bc799e77d156823a05deef3824c57"
+          "md5": "e9990692a13a045c8e0c4f0e800de1ff"
         }
       ],
       "popularity": 1364,
@@ -67811,10 +67842,10 @@
         "utilities"
       ],
       "description": "kickNX is an independent Kick client built specifically for the Nintendo Switch. It brings livestream viewing, category discovery, search, and integrated chat interaction to handheld, tabletop, and docked play.",
-      "added_at": "2026-11-03",
+      "added_at": "2026-11-12",
       "summary": "Kick streaming client for Nintendo Switch",
       "author": "j2k",
-      "version": "0.5.1",
+      "version": "0.5.2",
       "license": "GPLv3",
       "icon_url": null,
       "release_url": "https://github.com/j2k-lab/kickNX",
@@ -67823,8 +67854,8 @@
           "format": "hbas",
           "filename": "kickNX.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/kickNX/manifest.install",
-          "size": 35883,
-          "sha256": "ff2a7bc983ba98e57f5aec1a1621378b4cd19de0c581088a7871bed635e4273c"
+          "size": 36023,
+          "sha256": "ef08ab378884aeb9062716bd74b1a48abd6a81705b905fa8378cd542fce5ea50"
         }
       ],
       "popularity": 265,
@@ -67832,7 +67863,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-11-04"
+      "updated_at": "2026-11-21"
     },
     {
       "id": "open-shop-channel-wii:kidspaint",
@@ -70925,8 +70956,8 @@
           "format": "vpk",
           "filename": "isle.vpk",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.vpk",
-          "size": 7110327,
-          "md5": "8fd3a020c3b3a50f55fdedadedabb153"
+          "size": 7199047,
+          "md5": "f30ccdd5c4decf8813f9df36f05c23a5"
         }
       ],
       "popularity": 0,
@@ -81999,7 +82030,7 @@
           "filename": "MiniRetroXMB.vpk",
           "url": "https://github.com/goobercx/MiniRetroXMB-v1.0/releases/download/RELEASE/MiniRetroXMB.vpk",
           "size": 407701,
-          "md5": "1257e5b6df9d7222a6a10c60c082ce93"
+          "md5": "0c07d221aa4dfd763ea7cef7eacab96a"
         }
       ],
       "popularity": 923,
@@ -87031,7 +87062,7 @@
           "filename": "NGDN-01.00.vpk",
           "url": "https://github.com/raidengugga/Neet-Girl-Date-Night-PSVITA/releases/download/Latest/NGDN-01.00.vpk",
           "size": 14511015,
-          "md5": "8445829cdea61154c8b91dc3ce8e8f6b"
+          "md5": "ff9bb70d2785886fd184ace9b78cf296"
         }
       ],
       "popularity": 7875,
@@ -88091,6 +88122,38 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2017-09-03T00:00:00+00:00"
+    },
+    {
+      "id": "open-shop-channel-wii:netsurf",
+      "platforms": [
+        "wii"
+      ],
+      "name": "NetSurf Wii",
+      "summary": "NetSurf 3.12 Dev — Experimental",
+      "description": "Experimental Wii port of the NetSurf web browser using libnsfb, SDL, curl, mbedTLS, and libwupc.",
+      "categories": [
+        "utilities"
+      ],
+      "requirements": "wii · vwii · wii_mini · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · USB Keyboard · SDHC",
+      "author": "quatric",
+      "version": "1.2.0",
+      "title_id": "000100014ED5D2A6",
+      "license": null,
+      "icon_url": "https://hbb1.oscwii.org/api/contents/netsurf/icon.png",
+      "release_url": null,
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "netsurf.zip",
+          "url": "https://hbb1.oscwii.org/api/contents/netsurf/netsurf.zip",
+          "size": 7621511
+        }
+      ],
+      "source": "Open Shop Channel",
+      "source_url": "https://oscwii.org/",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-08T00:00:00+00:00"
     },
     {
       "id": "hbas-switch:Neumann",
@@ -89594,7 +89657,7 @@
           "filename": "NightInTheWoods.vpk",
           "url": "https://github.com/PatnosDD/Night-In-The-Woods-PS-VITA/releases/download/Release/NightInTheWoods.vpk",
           "size": 14910713,
-          "md5": "397bc799e77d156823a05deef3824c57"
+          "md5": "236a4630518a4f1ad91cde9cd029c39e"
         }
       ],
       "popularity": 7335,
@@ -94578,10 +94641,10 @@
         "games"
       ],
       "description": "OpenAoK is an engine for Age of Empires II: The Age of Kings (1999), written from scratch, that plays the game from your own copy of the original CD. The download holds none of the game: you make its data on a computer from your CD and copy the folder to the SD card beside the app, as the guide at zaydme.github.io/openaok/guide/switch says.\n\n- Random maps from the game's own scripts, the computer players' own AI scripts, the campaigns, scenarios and the scenario editor\n- In handheld mode the touch screen plays: tap to click, hold for a right click, two fingers to scroll, pinch to zoom\n- The controller plays as a mouse and the game's hotkeys: left stick moves the pointer, right stick scrolls, A clicks, B right-clicks, X goes to the next idle villager, + opens the game menu\n\nHold R while starting a game so the Homebrew Menu opens with all of the console's memory, which OpenAoK needs. Its files, the game's data, profile and saved games, live in sdmc:/switch/openaok/. Not affiliated with Microsoft.",
-      "added_at": "2026-11-02",
+      "added_at": "2026-11-08",
       "summary": "Age of Empires II: The Age of Kings, from your own CD",
       "author": "Zaydme",
-      "version": "0.6.6",
+      "version": "0.7.0",
       "license": "MIT",
       "icon_url": null,
       "release_url": "https://github.com/Zaydme/openaok",
@@ -94590,8 +94653,8 @@
           "format": "hbas",
           "filename": "OpenAoK.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/OpenAoK/manifest.install",
-          "size": 12828,
-          "sha256": "d2b3f949ec81af0aafcabd14f8efd77b4ff5c0f5509f5d718893275c1c41513c"
+          "size": 12908,
+          "sha256": "bafbeb521da95b8cc2d16f7635a71091054012dd42f9d8c5e80348f4f8792ba0"
         }
       ],
       "popularity": 99,
@@ -94599,7 +94662,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-11-02"
+      "updated_at": "2026-11-21"
     },
     {
       "id": "hbas-switch:OpenArenaNX",
@@ -107691,6 +107754,168 @@
       "updated_at": "2011-02-06"
     },
     {
+      "id": "ps4-store:268181309",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — homebrew.elf",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "homebrew.elf",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/homebrew.elf",
+          "size": 4842768,
+          "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
+        }
+      ],
+      "popularity": 18824,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:238357415",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — PS5_Update_files.zip",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PS5_Update_files.zip",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/PS5_Update_files.zip",
+          "size": 1488211,
+          "sha256": null
+        }
+      ],
+      "popularity": 3784,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:268177439",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2-Legacy.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2-Legacy.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-Legacy.pkg",
+          "size": 24772608,
+          "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
+        }
+      ],
+      "popularity": 16563,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:167233612",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2-PS5.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2-PS5.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-PS5.pkg",
+          "size": 43450368,
+          "sha256": null
+        }
+      ],
+      "popularity": 7526,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:268177642",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg",
+          "size": 24772608,
+          "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
+        }
+      ],
+      "popularity": 91723,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-hen:738334475",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4HEN — hen.bin",
+      "summary": "## What's Changed\n* Add EchoStretch to contributors list by @EchoStretch in https://github.com/Scene-Collective/ps4-hen/pull/77\n\n\n**Full Changelog**: https://github.com/Scene-Collective/ps4-hen/compare/pre-release-main-183...pre-release-main-184",
+      "author": "Scene-Collective",
+      "version": "pre-release-main-184",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/Scene-Collective/ps4-hen/releases/tag/pre-release-main-184",
+      "downloads": [
+        {
+          "format": "bin",
+          "filename": "hen.bin",
+          "url": "https://github.com/Scene-Collective/ps4-hen/releases/download/pre-release-main-184/hen.bin",
+          "size": 501152,
+          "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
+        }
+      ],
+      "popularity": 392,
+      "source": "PS4HEN",
+      "source_url": "https://github.com/Scene-Collective/ps4-hen",
+      "license_url": null,
+      "updated_at": "2026-11-12T06:23:53Z"
+    },
+    {
       "id": "vitadbtoo-vita:560",
       "platforms": [
         "psvita"
@@ -108554,30 +108779,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.17.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.20.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.17",
+      "version": "v12.6.20",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.17.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.17/ps5upload-12.6.17.elf",
-          "sha256": "2bf4c7ebee49c06e0517040a68f6e6458826bcaca49f435c6151aeb108c65ee4"
+          "filename": "ps5upload-12.6.20.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.20/ps5upload-12.6.20.elf",
+          "sha256": "5572fb617974ff87dec40e6a2034e35eac41c94e35f191a079cf79b7162194eb"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-21T03:56:20+08:00"
+      "updated_at": "2026-11-22T14:14:30+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -135044,7 +135269,7 @@
           "filename": "SF1MR.vpk",
           "url": "https://github.com/anas-halid/SF1MR-VITA/releases/download/release/SF1MR.vpk",
           "size": 33517678,
-          "md5": "23a759d11027e3f29b2adf8cd6c87d9f"
+          "md5": "26df822ea92a13ec16f00dbe695acfde"
         }
       ],
       "popularity": 5129,
@@ -178575,7 +178800,7 @@
       "name": "Xash3D-FWGS",
       "summary": "Port of Xash3D-FWGS for PSVITA.",
       "author": "Xash3D-FWGS Team & fgsfds",
-      "version": "v.continuous",
+      "version": "Nightly 2026-11-21",
       "title_id": "XASH10000",
       "description": "Port of Xash3D-FWGS for PSVITA.\nXash3D-FWGS is an open source re-creation of the GoldSrc engine, a modified Quake Engine running Half-Life, Counter Strike and Team Fortress.\n\nNOTE: Data files are slightly different from vitaXash3D. This means both versions can't be installed at the same time.",
       "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: PC in ux0:data/xash3d",
@@ -178588,8 +178813,8 @@
           "format": "zip",
           "filename": "xash3d-fwgs-psvita.7z",
           "url": "https://github.com/FWGS/xash3d-fwgs/releases/download/continuous/xash3d-fwgs-psvita.7z",
-          "size": 33443462,
-          "md5": "3fece0680f712109eafbb9a42d3b2c80"
+          "size": 27847258,
+          "md5": "3f461ed728d1d16126154af49b689066"
         },
         {
           "format": "data",
@@ -183084,18 +183309,5 @@
       "homepage": "https://github.com/Scene-Collective/ps4-hen"
     }
   ],
-  "errors": [
-    {
-      "source": "ps4-goldhen",
-      "error": "HTTP Error 403: rate limit exceeded"
-    },
-    {
-      "source": "ps4-store",
-      "error": "HTTP Error 403: rate limit exceeded"
-    },
-    {
-      "source": "ps4-hen",
-      "error": "HTTP Error 403: rate limit exceeded"
-    }
-  ]
+  "errors": []
 }
