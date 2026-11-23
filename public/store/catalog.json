@@ -4568,6 +4568,39 @@
       "updated_at": "2010-02-16"
     },
     {
+      "id": "hbas-switch:ACNH-Power-Pockets",
+      "platforms": [
+        "switch"
+      ],
+      "name": "ACNH Power Pockets",
+      "categories": [
+        "utilities"
+      ],
+      "description": "Edits the pocket slots (20, 30 or 40, as many as you have unlocked), Bells, Nook Miles and the house loan of the primary resident, directly on the console. Fork of ACNH Save Editor by cbreezy210: the save engine is his, the interface is new.\n\n- Pick an item once, then each press of Y drops it in the next empty slot. Occupied slots are never overwritten.\n- Every change is staged and shown in a Review screen (before > after); nothing is written until you press Apply.\n- Quantities stop at each item's real stack limit; about 10,500 items that never stack are marked 1/slot.\n- 69 built-in favorites, plus your own, managed in the app.\n- Turnips panel: this week's Stalk Market prices, read from the save (read-only).\n- Integrity hashes recomputed and checked before every write; SD backups before every write and a pre-edit backup.\n\nWARNING: this app writes to your save. Back up your save with JKSV or Checkpoint first, and use it offline. Launch it by holding R while starting Animal Crossing (title override), not from the Album.\n\nItem data from NHSE (GPL-3.0), font Varela Round (OFL 1.1).",
+      "added_at": "2026-11-13",
+      "summary": "On-console pocket and Bells editor for Animal Crossing: New Horizons 3.0.x",
+      "author": "chatelp",
+      "version": "1.2.0",
+      "license": "MIT",
+      "icon_url": null,
+      "release_url": "https://github.com/chatelp/ACNH-Power-Pockets",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "ACNH-Power-Pockets.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/ACNH-Power-Pockets/manifest.install",
+          "size": 9087,
+          "sha256": "238dfd4cc6de55fafbfdaa5a0193be3e2530c350d16e70b2485e3297d665bbcc"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/ACNH-Power-Pockets/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-23"
+    },
+    {
       "id": "hbas-switch:acnh-manager",
       "platforms": [
         "switch"
@@ -6423,6 +6456,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2011-05-28"
+    },
+    {
+      "id": "vitadbtoo-vita:4921",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "All is Lost",
+      "summary": "Port of All is Lost for PSVita.",
+      "author": "MemoryHunter",
+      "version": "v.1.0",
+      "title_id": "AILO69420",
+      "description": "PSVita .so loader port of the Android game All is Lost. Extract the assets folder from your APK and copy main.obb and patch.obb to ux0:data/ail/.",
+      "requirements": "- Game Data Files: your own copy of All is Lost (Android)\n- kubridge\n- FdFix",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ab30f6e9afe529bd3a7d944db45afcb09aae276b6f062e2e43ed2b408cbdfa58.png",
+      "screenshots": [],
+      "release_url": "https://github.com/memory-hunter/all-is-lost-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ail.vpk",
+          "url": "https://github.com/memory-hunter/all-is-lost-vita/releases/download/v1.0/ail.vpk",
+          "size": 2386606,
+          "md5": "65a32bed5876de78c60451868286c24c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-23"
     },
     {
       "id": "vitadbtoo-psp:4791",
@@ -15458,6 +15522,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-12-10"
+    },
+    {
+      "id": "vitadbtoo-vita:4918",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Blobby Volley 2",
+      "summary": "Port of Blobby Volley 2 for PSVita.",
+      "author": "Sanya-arbuz",
+      "version": "v.1.0",
+      "title_id": "BLOB00001",
+      "description": "Native port of Blobby Volley 2, the free head-to-head beach volleyball game. All game data is included.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/65fa2c2dc7a0134cd740d8d90a26c010b76dabbd0d5ed08c2759466989441835.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Sanya-arbuz/blobbyvolley2/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "blobby.vpk",
+          "url": "https://github.com/Sanya-arbuz/blobbyvolley2/releases/download/v1.0/blobby.vpk",
+          "size": 3413284,
+          "md5": "0aff511a1cda43c4c0a41f65ea6aef74"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-23"
     },
     {
       "id": "hbas-switch:blobby",
@@ -25632,6 +25727,39 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2024-04-26"
+    },
+    {
+      "id": "hbas-switch:Classof09",
+      "platforms": [
+        "switch"
+      ],
+      "name": "Class of '09",
+      "categories": [
+        "games"
+      ],
+      "description": "A native Nintendo Switch homebrew port of the Class of '09 runtime.\n\nUnofficial fan project. Not affiliated with the game's developers or publishers, Nintendo, or Sony.\n\n*Release does NOT include any retail game assets - users must supply game folder\n\nCopy game folder from retail copy of Class of '09 to sdmc:/switch/class09/assets/ on the switch\n\nFinal folder layout should appear as sdmc:/switch/class09/assets/game/\n\nAI use: Co-written with AI.",
+      "added_at": "2026-11-08",
+      "summary": "homebrew port of Class of '09 runtime",
+      "author": "catsandgats",
+      "version": "1.0.0",
+      "license": "n/a",
+      "icon_url": null,
+      "release_url": "https://github.com/dannyboyjaros/switchclassof09",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "Classof09.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/Classof09/manifest.install",
+          "size": 11022,
+          "sha256": "aa6b1e3f3c8f1a35a8aef3adddaf15a6f7159da96471e4ad45f59801184765e0"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/Classof09/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-23"
     },
     {
       "id": "vitadbtoo-vita:1565",
@@ -37063,7 +37191,7 @@
       "name": "Dragon Ball Z: BT4",
       "summary": "Port of Dragon Ball Z: Budokai Tenkaichi 4 for PSVita.",
       "author": "manumastro & arielxflores",
-      "version": "v.1.4",
+      "version": "v.1.5.1",
       "title_id": "BTFV00010",
       "description": "Port of Dragon Ball Z: Budokai Tenkaichi 4 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PS2",
@@ -37075,9 +37203,9 @@
         {
           "format": "vpk",
           "filename": "BT4-Vita.vpk",
-          "url": "https://github.com/manumastro/DBZ-BT4-Tag-Team-Decomp-Vita/releases/download/v1.4/BT4-Vita.vpk",
-          "size": 9691713,
-          "md5": "308df9e26b7c0e9e19667cf76b848ac7"
+          "url": "https://github.com/manumastro/DBZ-BT4-Tag-Team-Decomp-Vita/releases/download/v1.5.1/BT4-Vita.vpk",
+          "size": 12589859,
+          "md5": "e7b9a4cc6258c4c082ba9042f1e8bfa9"
         }
       ],
       "popularity": 0,
@@ -38986,6 +39114,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-08-29"
+    },
+    {
+      "id": "vitadbtoo-vita:4922",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Earth and Legend",
+      "summary": "Port of Earth And Legend for PSVita.",
+      "author": "theFilthyAnimal",
+      "version": "v.1.0.0",
+      "title_id": "EALG00001",
+      "description": "Port of the Android game Earth And Legend for PSVita. Needs the 3.0.0 APK, prepared with tools/prepare_data.py and copied to ux0:data/earthandlegend/.",
+      "requirements": "- Game Data Files: your own copy of Earth And Legend 3.0.0 (Android)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3f5548621e255386fb28ddf894d68267c51a2fe92000b93388fa61a75d6e7c5a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/theFilthyAnimal/EarthAndLegend-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "earthandlegend.vpk",
+          "url": "https://github.com/theFilthyAnimal/EarthAndLegend-Vita/releases/download/v1.0.0/earthandlegend.vpk",
+          "size": 1043315,
+          "md5": "e213bedba6069f07670a0b07cad3ebf4"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-23"
     },
     {
       "id": "vitadbtoo-psp:2618",
@@ -60173,6 +60332,37 @@
       "updated_at": "2024-02-23"
     },
     {
+      "id": "hbas-switch:Honeydew",
+      "platforms": [
+        "switch"
+      ],
+      "name": "Honeydew",
+      "categories": [],
+      "description": "Honeydew is a Nintendo DS emulator for Switch, based on melonDS (GPL-3.0). Unofficial fork of the latest melonDS core, not made or supported by the melonDS team (formerly named \"melonDS Switch\"). JIT, 2x GPU rendering, no BIOS needed. Auto CPU boost, touch screen via right stick + R3 (TV mode), per-game settings, 4 save state slots. 60 fps in Mario Kart DS, Pokemon, NSMB, Layton, Metroid Prime Hunters. Run hbmenu in app mode (hold R). No games included. Discord: rateur42\n\nAI use: Co-written with AI. AI also used for: description text.",
+      "added_at": "2026-11-20",
+      "summary": "Nintendo DS emulator, based on melonDS",
+      "author": "FrcJules",
+      "version": "0.5.1",
+      "license": "GPLv3",
+      "icon_url": null,
+      "release_url": "https://github.com/FrcJules/honeydew",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "Honeydew.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/Honeydew/manifest.install",
+          "size": 10693,
+          "sha256": "9a0d916ac1969d2112f33263af4a0e508962277949a491b98ee490d81b21bff4"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/Honeydew/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-23"
+    },
+    {
       "id": "vitadbtoo-psp:3923",
       "platforms": [
         "psp"
@@ -70952,19 +71142,19 @@
           "format": "3dsx",
           "filename": "isle.3dsx",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.3dsx",
-          "size": 3056596
+          "size": 3057340
         },
         {
           "format": "cia",
           "filename": "isle.cia",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.cia",
-          "size": 2197952
+          "size": 2198464
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-17T00:16:33Z"
+      "updated_at": "2026-11-23T05:38:19Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -70987,8 +71177,8 @@
           "format": "vpk",
           "filename": "isle.vpk",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.vpk",
-          "size": 7199047,
-          "md5": "f30ccdd5c4decf8813f9df36f05c23a5"
+          "size": 7200335,
+          "md5": "a66ec9bc99244cf255626b4d0c25ea0d"
         }
       ],
       "popularity": 0,
@@ -76803,7 +76993,7 @@
       "name": "Manhunt",
       "summary": "Port of Manhunt and Manhunt 2 for PSVita.",
       "author": "xesf",
-      "version": "v.0.9.0",
+      "version": "v.0.10.0",
       "title_id": "MHRE00001",
       "description": "Port of Manhunt and Manhunt 2 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -76814,10 +77004,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "manhunt-v0.9.0-vita.vpk",
-          "url": "https://github.com/xesf/manhunt-releases/releases/download/v0.9.0/manhunt-v0.9.0-vita.vpk",
-          "size": 1804461,
-          "md5": "1dbade56f96ec0499e3a4cc5239602c9"
+          "filename": "manhunt-v0.10.0-vita.vpk",
+          "url": "https://github.com/xesf/manhunt-releases/releases/download/v0.10.0/manhunt-v0.10.0-vita.vpk",
+          "size": 1815912,
+          "md5": "1612b4409830908b190adc7517816fbd"
         }
       ],
       "popularity": 0,
@@ -77578,7 +77768,7 @@
       "name": "Mario Kart DS",
       "summary": "Native port of the Mario Kart DS decompilation for PSVITA.",
       "author": "PupueStudios",
-      "version": "v.1.0",
+      "version": "v.1.2",
       "title_id": "MKDS00001",
       "description": "Native port of the Mario Kart DS decompilation for PSVITA.",
       "requirements": "- Game Data Files: your own dump of Mario Kart DS (Europe, AMCP)",
@@ -77590,9 +77780,9 @@
         {
           "format": "vpk",
           "filename": "mkds.vpk",
-          "url": "https://github.com/PupueStudios/mkds-vita/releases/download/v1.0/mkds.vpk",
-          "size": 2247025,
-          "md5": "40fb8e7608bf69090ed8e3a88d333ecc"
+          "url": "https://github.com/PupueStudios/mkds-vita/releases/download/v1.2/mkds.vpk",
+          "size": 2288161,
+          "md5": "cc69c0eb9395ad67265ab974e6f74c73"
         }
       ],
       "popularity": 0,
@@ -83168,7 +83358,7 @@
       "name": "Monster Hunter 4 Ultimate",
       "summary": "Azahar derived runner for MH4U.",
       "author": "SaNch0sE",
-      "version": "v.0.3.2-alpha",
+      "version": "v.0.4-beta",
       "title_id": "MH4UVITA0",
       "description": "Azahar derived runner for MH4U.",
       "requirements": "- m4hunative.skprx\n- CapUnlocker.skprx\n- Game Data Files: 3DS",
@@ -83179,10 +83369,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "MH4U.vpk",
-          "url": "https://github.com/SaNch0sE/azahar-vita-mh4u/releases/download/0.3.2-alpha/MH4U.vpk",
-          "size": 8704357,
-          "md5": "45f77149b858ed8c305145d5824f43b6"
+          "filename": "Azahar-MH4U-0.4-beta.vpk",
+          "url": "https://github.com/SaNch0sE/azahar-vita-mh4u/releases/download/0.4-beta/Azahar-MH4U-0.4-beta.vpk",
+          "size": 8445012,
+          "md5": "5bb3dcdc3f9d6d3927b23c5c492306cb"
         }
       ],
       "popularity": 0,
@@ -86673,7 +86863,7 @@
       "name": "Nazi Zombies Portable: Reboot",
       "summary": "3D shooter game for PSP. Created by: Blubswillrule: Coding, Models, GFX, Sounds, Music Ju[s]tice: Maps, Models, GFX Jukki: Coding Biodude: Sounds Dr_Mabuse1981: Sounds Naievil: Coding, NX Maintaining MotoLegacy: Coding, GFX, Music Derped_Crusader: Models, GFX",
       "author": "NZP Team",
-      "version": "Nightly 2026-11-19",
+      "version": "Nightly 2026-11-23",
       "title_id": "NZPO01089",
       "description": "",
       "requirements": "",
@@ -86686,8 +86876,8 @@
           "format": "zip",
           "filename": "nzportable-psp.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-psp.zip",
-          "size": 64756766,
-          "md5": "9e8cb20f483e2c10570101c41cfc6f70"
+          "size": 65086918,
+          "md5": "b791bb67d9ee6774a8431a27d5615e0c"
         }
       ],
       "popularity": 0,
@@ -86713,13 +86903,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 64901978
+          "size": 65232130
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-19T16:30:40Z"
+      "updated_at": "2026-11-23T19:10:40Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -86762,7 +86952,7 @@
       "name": "Nazi Zombies: Portable",
       "summary": "Nazi Zombies: Portable, a fan-made zombies game on a Quake engine, for PSVITA.",
       "author": "NZP Team",
-      "version": "Nightly 2026-11-19",
+      "version": "Nightly 2026-11-23",
       "title_id": "NZZMBSPTB",
       "description": "Nazi Zombies: Portable, a fan-made zombies game on a Quake engine, for PSVITA.",
       "requirements": "- Data files: extract the data archive to ux0:data/",
@@ -89331,6 +89521,37 @@
       "updated_at": "2026-11-19"
     },
     {
+      "id": "vitadbtoo-vita:4919",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "NFS Hot Pursuit 2 (elmnt22)",
+      "summary": "Native port of Need for Speed: Hot Pursuit 2 for PSVita.",
+      "author": "elmnt22",
+      "version": "v.0.1.1-alpha",
+      "title_id": "NFSHP2002",
+      "description": "Native port of Need for Speed: Hot Pursuit 2 (PS2) for PSVita. Copy ZDIR.BIN and ZZDATA.BIN from your disc to ux0:data/NFSHP2/.",
+      "requirements": "- Game Data Files: your own copy of Need for Speed: Hot Pursuit 2 (PS2)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b55017c58a4a73f46e771d3bdb461a1f8a83a24313e5b76cdb28405e7e0ac5eb.png",
+      "screenshots": [],
+      "release_url": "https://github.com/elmnt22/vita-nfshp2/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "NFSHP2.vpk",
+          "url": "https://github.com/elmnt22/vita-nfshp2/releases/download/v0.1.1-alpha/NFSHP2.vpk",
+          "size": 3453887,
+          "md5": "1951e933c571cc6d478b9dc7438949cb"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-23"
+    },
+    {
       "id": "vitadbtoo-vita:1584",
       "platforms": [
         "psvita"
@@ -89400,7 +89621,7 @@
       "name": "NFS Underground 2 (elmnt22)",
       "summary": "Native port of Need for Speed: Underground 2 for PSVITA.",
       "author": "elmnt22",
-      "version": "v.0.2.0-alpha",
+      "version": "v.0.2.1-alpha",
       "title_id": "NFSU20001",
       "description": "Native port of Need for Speed: Underground 2 for PSVITA.",
       "requirements": "- Game Data Files: your own copy of Need for Speed: Underground 2 (PC)",
@@ -89412,9 +89633,9 @@
         {
           "format": "vpk",
           "filename": "NFSU2Vita.vpk",
-          "url": "https://github.com/elmnt22/vita-nfsu2/releases/download/v0.2.0-alpha/NFSU2Vita.vpk",
-          "size": 5146059,
-          "md5": "3076fd65328817f9349f5a65cb6075e3"
+          "url": "https://github.com/elmnt22/vita-nfsu2/releases/download/v0.2.1-alpha/NFSU2Vita.vpk",
+          "size": 5170590,
+          "md5": "4667b84456a8fcb2fd20681606bd6dd8"
         }
       ],
       "popularity": 0,
@@ -101089,7 +101310,7 @@
       "name": "PictoRelay",
       "summary": "Real online PictoChat between DS, 3DS, PC and Mobile",
       "author": "HollowOwl",
-      "version": "v1.3.0",
+      "version": "v1.3.1",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/ShinMikite/PictoRelay-3DS/main/icon.png",
       "release_url": "https://github.com/ShinMikite/PictoRelay-3DS/releases",
@@ -101097,14 +101318,14 @@
         {
           "format": "cia",
           "filename": "PictoRelay.cia",
-          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.3.0/PictoRelay.cia",
-          "size": 3101632
+          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.3.1/PictoRelay.cia",
+          "size": 4444096
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-22T18:08:19Z"
+      "updated_at": "2026-11-23T07:27:42Z"
     },
     {
       "id": "vitadbtoo-vita:1429",
@@ -103922,7 +104143,7 @@
       "name": "Pocket Shelf",
       "summary": "Games launcher for PSVita.",
       "author": "fthdgn",
-      "version": "v.shelf-v0.6.1-beta.2",
+      "version": "v.0.6.1 beta 3",
       "title_id": "POCKTSHLF",
       "description": "Games launcher for PSVita.",
       "requirements": "",
@@ -103933,10 +104154,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "pocket-shelf.vpk",
-          "url": "https://github.com/fthdgn-gh/pocket-shelf/releases/download/shelf-v0.6.1-beta.2/pocket-shelf.vpk",
-          "size": 2625982,
-          "md5": "f4ed76b28a63dca18c1610bba6f6862e"
+          "filename": "1763-pocket-shelf-0.6.1beta3.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1763-pocket-shelf-0.6.1beta3.vpk",
+          "size": 2623836,
+          "md5": "5cd856d92d2f65a0ce0564c220a54a44"
         }
       ],
       "popularity": 0,
@@ -107903,7 +108124,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 19409,
+      "popularity": 19643,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -107930,7 +108151,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3811,
+      "popularity": 3822,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -107957,7 +108178,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 16810,
+      "popularity": 17040,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -107984,7 +108205,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7578,
+      "popularity": 7601,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -108011,7 +108232,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 94491,
+      "popularity": 96176,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -108038,7 +108259,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 408,
+      "popularity": 417,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -108908,30 +109129,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.23.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.25.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.23",
+      "version": "v12.6.25",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.23.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.23/ps5upload-12.6.23.elf",
-          "sha256": "68a4c2135477aa0d2a9f396565c50cac7d672bbc0f158e718986616a14c6b71b"
+          "filename": "ps5upload-12.6.25.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.25/ps5upload-12.6.25.elf",
+          "sha256": "ebf636206c7773a7232801923e321bebafef592c26de611980d9f83c8e8e0343"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-23T08:02:29+08:00"
+      "updated_at": "2026-11-23T21:59:46+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -126646,6 +126867,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2009-01-09"
+    },
+    {
+      "id": "vitadbtoo-vita:4920",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ReBOX",
+      "summary": "Multi arcade board emulator for PSVita.",
+      "author": "Reyanon",
+      "version": "v.0.14.80",
+      "title_id": "RBOX00001",
+      "description": "Arcade board emulator with drivers ported from MAME 0.289, from 8-bit classics up to CPS3, Sega System 32, Cave CV1000 and PGM2. Put non-merged MAME 0.260 romsets in ux0:data/rebox/roms/.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a64d2b15900ec7686cb3b10e2282609a9d020f9d49d88459acebfcdad0b8eada.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Reyanon/ReBOX/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "rebox-v0.14.80.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/rebox-v0.14.80.vpk",
+          "size": 8463957,
+          "md5": "f0fba211a5c78cbfc38ea955f6a43cf0"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-23"
     },
     {
       "id": "vitadbtoo-psp:3990",
@@ -149965,10 +150217,10 @@
         "utilities"
       ],
       "description": "Switch Frame Tap is a sysmodule that streams the game you are playing - picture and sound - to a Windows, Linux or macOS PC, with no capture card and no dock. It reads the game's finished frames and encodes them with the Switch's own H.264 encoder: native 1080p at 60 fps.\n\n- Play a Switch Lite (or any Switch) on a big screen: a USB cable in handheld, or the network (Wi-Fi or the dock's LAN port) to play docked\n- Game audio, also in games that block recording (optional), and recording to MP4 on the PC\n- Native-resolution PNG screenshots on a button combo, also next to the system's Album screenshots\n- Webcam mode: the Switch shows up as a USB camera, for OBS (H.264, 1080p60) or any camera app (uncompressed, 720p)\n- Stream the HOME menu and the console's overlays too: the volume bar, quick settings, power menu and Tesla/Ultrahand menus (optional)\n- Turn the Switch's screen off while you stream\n- This manager app for the settings and to install the optional tools (Ultrahand, SaltyNX, ReverseNX-RT, sys-clk or Horizon OC), plus a Tesla/Ultrahand overlay; it updates itself from GitHub\n\nNeeds Atmosphere (firmware 21 to 23) and a viewer from the GitHub releases page: Windows, Linux, macOS or Android / Android TV. It reads the running game like a debugger; with cheats loaded for a game it reads through Atmosphere's cheat engine, which is slower.",
-      "added_at": "2026-11-11",
+      "added_at": "2026-11-20",
       "summary": "Stream your games to a PC at 1080p60",
       "author": "Papux200",
-      "version": "0.7.22",
+      "version": "0.7.23",
       "license": "GPLv2",
       "icon_url": null,
       "release_url": "https://github.com/TomasUribe/switch-frame-tap",
@@ -149977,8 +150229,8 @@
           "format": "hbas",
           "filename": "SwitchFrameTap.hbas",
           "url": "https://switch.cdn.fortheusers.org/packages/SwitchFrameTap/manifest.install",
-          "size": 10121,
-          "sha256": "04389bc485f71ec6ed41201a54bfdaf5290a4e5d52a8930ce3a0adea1003f3d3"
+          "size": 10122,
+          "sha256": "5bde06574be20258132367771a35079d8a3612e0950f47ac58d4d7b099afbfac"
         }
       ],
       "popularity": 1863,
@@ -149986,7 +150238,7 @@
       "source": "Homebrew App Store",
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
-      "updated_at": "2026-11-12"
+      "updated_at": "2026-11-23"
     },
     {
       "id": "hbas-switch:SwitchFTPClient",
@@ -161116,7 +161368,7 @@
       "name": "Turbo GreenVita",
       "summary": "Native Xbox Cloud Gaming client for PSVITA with hardware H.264 decoding and low-latency streaming, forked from GreenVita.",
       "author": "PoissMi",
-      "version": "v.0.4.1",
+      "version": "v.0.4.2",
       "title_id": "TURBOVITA",
       "description": "Native Xbox Cloud Gaming client for PSVITA with hardware H.264 decoding and low-latency streaming, forked from GreenVita.",
       "requirements": "",
@@ -161128,9 +161380,9 @@
         {
           "format": "vpk",
           "filename": "turbo-green-vita.vpk",
-          "url": "https://github.com/PoissMi/turbo-green-vita/releases/download/v0.4.1/turbo-green-vita.vpk",
-          "size": 14231293,
-          "md5": "362827a395faba392415868a3f544773"
+          "url": "https://github.com/PoissMi/turbo-green-vita/releases/download/v0.4.2/turbo-green-vita.vpk",
+          "size": 14247555,
+          "md5": "550951dfa3fe8fbd3cdb80b0c29e3d71"
         }
       ],
       "popularity": 0,
@@ -169417,6 +169669,37 @@
       "updated_at": "2026-05-16"
     },
     {
+      "id": "vitadbtoo-vita:4923",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VitaDeck",
+      "summary": "Game library and launcher for PSVita.",
+      "author": "josephinoo",
+      "version": "v.0.0.1",
+      "title_id": "VITADECK1",
+      "description": "Fast game launcher and media library manager for PSVita, written in Rust. Downloads cover art automatically.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3d372353f66f623a77ed5e0420b1faa267659fb71e4e97bec789a026560d9c25.png",
+      "screenshots": [],
+      "release_url": "https://github.com/josephinoo/vitaDeck/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vita_deck.vpk",
+          "url": "https://github.com/josephinoo/vitaDeck/releases/download/v0.0.1/vita_deck.vpk",
+          "size": 7637546,
+          "md5": "571056aa08448c1bded4e822fceba742"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-23"
+    },
+    {
       "id": "vitadbtoo-vita:1465",
       "platforms": [
         "psvita"
@@ -170359,7 +170642,7 @@
       "name": "VitaPlane",
       "summary": "Telegram client for PSVita.",
       "author": "ing156",
-      "version": "v.0.39.05",
+      "version": "v.0.40.06",
       "title_id": "VITAGRM01",
       "description": "Telegram client for PSVita.",
       "requirements": "",
@@ -170370,10 +170653,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "VitaPlane-0.39.05.vpk",
-          "url": "https://github.com/ing156/VitaPlane/releases/download/v0.39.05/VitaPlane-0.39.05.vpk",
-          "size": 35738509,
-          "md5": "e1422bcf511c856e346cff8b9c894e38"
+          "filename": "VitaPlane-0.40.06.vpk",
+          "url": "https://github.com/ing156/VitaPlane/releases/download/v0.40.06/VitaPlane-0.40.06.vpk",
+          "size": 41164296,
+          "md5": "cba03859ce40560d01f1c16038c6a874"
         }
       ],
       "popularity": 0,
@@ -170870,7 +171153,7 @@
       "name": "VitaSim",
       "summary": "Port of The Sims 1 Legacy Collection for PSVITA.",
       "author": "Reyanon",
-      "version": "v.0.13.28",
+      "version": "v.0.14.37",
       "title_id": "SIMS00001",
       "description": "Port of The Sims 1 Legacy Collection for PSVITA.",
       "requirements": "- Game Data Files: The Sims 1 Legacy Collection",
@@ -170881,10 +171164,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "VitaSim_v0.13.28.vpk",
-          "url": "https://github.com/Reyanon/VitaSim/releases/download/v0.13.28/VitaSim_v0.13.28.vpk",
-          "size": 2800514,
-          "md5": "fe9be312f03147573c2e9edaea8a5bcd"
+          "filename": "VitaSim_v0.14.37.vpk",
+          "url": "https://github.com/Reyanon/VitaSim/releases/download/v0.14.37/VitaSim_v0.14.37.vpk",
+          "size": 2875169,
+          "md5": "7b4bdfc900d5ad0daba7b1fa6c615e28"
         }
       ],
       "popularity": 0,
@@ -178991,7 +179274,7 @@
       "name": "Xash3D-FWGS",
       "summary": "Port of Xash3D-FWGS for PSVITA.",
       "author": "Xash3D-FWGS Team & fgsfds",
-      "version": "Nightly 2026-11-21",
+      "version": "Nightly 2026-11-22",
       "title_id": "XASH10000",
       "description": "Port of Xash3D-FWGS for PSVITA.\nXash3D-FWGS is an open source re-creation of the GoldSrc engine, a modified Quake Engine running Half-Life, Counter Strike and Team Fortress.\n\nNOTE: Data files are slightly different from vitaXash3D. This means both versions can't be installed at the same time.",
       "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: PC in ux0:data/xash3d",
@@ -179004,8 +179287,8 @@
           "format": "zip",
           "filename": "xash3d-fwgs-psvita.7z",
           "url": "https://github.com/FWGS/xash3d-fwgs/releases/download/continuous/xash3d-fwgs-psvita.7z",
-          "size": 27847258,
-          "md5": "3f461ed728d1d16126154af49b689066"
+          "size": 27899673,
+          "md5": "d5f39bbcdaacb5c9887d6f384724548e"
         },
         {
           "format": "data",
@@ -182210,6 +182493,37 @@
       "updated_at": "2026-08-29"
     },
     {
+      "id": "vitadbtoo-vita:4924",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Zenonia 2 (MetalSyntax)",
+      "summary": "Port of Zenonia 2 for PSVita.",
+      "author": "MetalSyntax",
+      "version": "v.1.40",
+      "title_id": "PSVZ00002",
+      "description": "Port of the Android version of Zenonia 2 for PSVita.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Zenonia 2 (Android) in ux0:data/zenonia2",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/04124d1aff5a6795a0271411f6e1c537486f8e2797f1d503b1c7f71b9bd73a32.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MetalSyntax/Zenonia2-psvita-port/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "zenonia_2.vpk",
+          "url": "https://github.com/MetalSyntax/Zenonia2-psvita-port/releases/download/v1.40/zenonia_2.vpk",
+          "size": 973727,
+          "md5": "cd453581ed73a9f7a2833e89b98b4d7e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-23"
+    },
+    {
       "id": "vitadbtoo-vita:1504",
       "platforms": [
         "psvita"
@@ -182742,6 +183056,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2010-06-24"
+    },
+    {
+      "id": "vitadbtoo-vita:4925",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Zombie Tsunami (rodi)",
+      "summary": "Port of Zombie Tsunami for PSVita.",
+      "author": "rodi",
+      "version": "v.1.0",
+      "title_id": "ZMBT00001",
+      "description": "so-loader port of Zombie Tsunami for PSVita. Needs your own copy of Zombie Tsunami 4.7.3 for Android.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: Zombie Tsunami 4.7.3 (Android) in ux0:data/zombietsunami",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1078c2905152bfb1ff8b237d823c2c0703005cfd8592edf8ccec4837cc476054.png",
+      "screenshots": [],
+      "release_url": "https://github.com/rodingley/zombietsunami_vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "zombie-tsunami-rodi-v1.0.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/zombie-tsunami-rodi-v1.0.vpk",
+          "size": 904923,
+          "md5": "61e8032eeb74de8bb1c6d01e38b8687e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-23"
     },
     {
       "id": "vitadbtoo-vita:1436",
