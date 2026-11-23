@@ -101089,7 +101089,7 @@
       "name": "PictoRelay",
       "summary": "Real online PictoChat between DS, 3DS, PC and Mobile",
       "author": "HollowOwl",
-      "version": "v1.2.22",
+      "version": "v1.3.0",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/ShinMikite/PictoRelay-3DS/main/icon.png",
       "release_url": "https://github.com/ShinMikite/PictoRelay-3DS/releases",
@@ -101097,14 +101097,14 @@
         {
           "format": "cia",
           "filename": "PictoRelay.cia",
-          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.2.22/PictoRelay.cia",
-          "size": 3098048
+          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.3.0/PictoRelay.cia",
+          "size": 3101632
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-22T06:29:44Z"
+      "updated_at": "2026-11-22T18:08:19Z"
     },
     {
       "id": "vitadbtoo-vita:1429",
@@ -107903,7 +107903,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 19243,
+      "popularity": 19409,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -107930,7 +107930,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3803,
+      "popularity": 3811,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -107957,7 +107957,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 16723,
+      "popularity": 16810,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -107984,7 +107984,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7562,
+      "popularity": 7578,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -108011,7 +108011,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 93426,
+      "popularity": 94491,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -108038,7 +108038,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 402,
+      "popularity": 408,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -108752,30 +108752,30 @@
       "updated_at": "2026-11-10T21:40:53+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.8.3.elf",
+      "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.8.4.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-webkit-autoloader",
       "summary": "An automated payload loader for exploited PS5 consoles",
       "author": "",
-      "version": "v0.8.3",
+      "version": "v0.8.4",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/itsplk/ps5-webkit-autoloader",
       "downloads": [
         {
           "format": "elf",
-          "filename": "webkit-autoloader-installer_v0.8.3.elf",
-          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.3/webkit-autoloader-installer_v0.8.3.elf",
-          "sha256": "f4b0dee9af572ea1cb77aaf1e6fc5bf8ef520fc0a0a30753dd94a5cbdc04dd8e"
+          "filename": "webkit-autoloader-installer_v0.8.4.elf",
+          "url": "https://github.com/itsPLK/ps5-webkit-autoloader/releases/download/v0.8.4/webkit-autoloader-installer_v0.8.4.elf",
+          "sha256": "6224b1d4e221b3dcae1f198883ee998f16c824e518112e64189c5d1d376ed8d6"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-21T18:15:21+08:00"
+      "updated_at": "2026-11-23T09:00:21+08:00"
     },
     {
       "id": "ps5-payloads-atlas:browser_appcache_remove.elf",
@@ -108908,30 +108908,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.21.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.23.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.21",
+      "version": "v12.6.23",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.21.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.21/ps5upload-12.6.21.elf",
-          "sha256": "a6766a847adcf9b60011b95fa775ec35b58fd32a2fa5c0259019074366de1aae"
+          "filename": "ps5upload-12.6.23.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.23/ps5upload-12.6.23.elf",
+          "sha256": "68a4c2135477aa0d2a9f396565c50cac7d672bbc0f158e718986616a14c6b71b"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-22T15:06:37+08:00"
+      "updated_at": "2026-11-23T08:02:29+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
