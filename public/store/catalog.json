@@ -5192,6 +5192,37 @@
       "updated_at": "2017-01-28"
     },
     {
+      "id": "vitadbtoo-psp:5067",
+      "platforms": [
+        "psp"
+      ],
+      "name": "aemu",
+      "summary": "PRO Online plugin fork with PPSSPP compatibility.",
+      "author": "Kethen",
+      "version": "v.2026-11-15",
+      "title_id": null,
+      "description": "PRO Online plugin fork with PPSSPP compatibility.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Kethen/aemu/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "aemu_f6bc457e.zip",
+          "url": "https://github.com/Kethen/aemu/releases/download/2026-11-15/aemu_f6bc457e.zip",
+          "size": 2961872,
+          "md5": "2916df04aae8a18fda4163ce628cc1c2"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4701",
       "platforms": [
         "psp"
@@ -9400,6 +9431,68 @@
       "updated_at": "2010-04-04"
     },
     {
+      "id": "vitadbtoo-psp:5058",
+      "platforms": [
+        "psp"
+      ],
+      "name": "ARK-4",
+      "summary": "Custom firmware for PSP and the PSVita ePSP.",
+      "author": "PSP-Archive",
+      "version": "v.42069r206",
+      "title_id": "UCJS10041",
+      "description": "Custom firmware for PSP and the PSVita ePSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/102b5220929375193e38c95cbcc8ecd686621f820238790478210dd18fe62b20.png",
+      "screenshots": [],
+      "release_url": "https://github.com/PSP-Archive/ARK-4/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "ARK4.zip",
+          "url": "https://github.com/PSP-Archive/ARK-4/releases/download/v42069r206/ARK4.zip",
+          "size": 40193265,
+          "md5": "3b7cb655e843d6ed5f794eebeb73665d"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
+      "id": "vitadbtoo-psp:5070",
+      "platforms": [
+        "psp"
+      ],
+      "name": "ARK-5",
+      "summary": "Custom firmware for PSP and the PSVita ePSP.",
+      "author": "PSP-Arkfive",
+      "version": "Nightly 2026-11-24",
+      "title_id": null,
+      "description": "Custom firmware for PSP and the PSVita ePSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/PSP-Arkfive/ARK-5/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "ARK-5.zip",
+          "url": "https://github.com/PSP-Arkfive/ARK-5/releases/download/latest/ARK-5.zip",
+          "size": 345599,
+          "md5": "b5712caa7b107881770d8413864b6f1d"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4797",
       "platforms": [
         "psp"
@@ -11196,6 +11289,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2010-10-15"
+    },
+    {
+      "id": "vitadbtoo-psp:5049",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Auto TV Out",
+      "summary": "Enables TV out automatically.",
+      "author": "ste2425",
+      "version": "v.1.0.1",
+      "title_id": null,
+      "description": "Enables TV out automatically.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/ste2425/Auto-Tv-Out/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "auto_tvout.prx",
+          "url": "https://github.com/ste2425/Auto-Tv-Out/releases/download/v1.0.1/auto_tvout.prx",
+          "size": 3130,
+          "md5": "5258dd3b99322f4b5876e2323dd20666"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:4929",
@@ -13047,6 +13171,37 @@
       "updated_at": "2026-08-07"
     },
     {
+      "id": "vitadbtoo-psp:5062",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Battery Icon",
+      "summary": "Shows a blinking indicator when the battery is low.",
+      "author": "nuxa17",
+      "version": "v.1.1",
+      "title_id": null,
+      "description": "Shows a blinking indicator when the battery is low.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/nuxa17/battery_icon/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "battery_icon1.1.zip",
+          "url": "https://github.com/nuxa17/battery_icon/releases/download/v1.1/battery_icon1.1.zip",
+          "size": 414041,
+          "md5": "9b8b84e444b47cb24787d0cdd33efac3"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:78",
       "platforms": [
         "psvita"
@@ -14543,6 +14698,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2026-10-16"
+    },
+    {
+      "id": "vitadbtoo-psp:5069",
+      "platforms": [
+        "psp"
+      ],
+      "name": "BetterBright",
+      "summary": "Finer control of the display brightness.",
+      "author": "hobbo91",
+      "version": "v.0.93",
+      "title_id": null,
+      "description": "Finer control of the display brightness.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/hobbo91/BetterBright/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "BetterBright_v0.93.zip",
+          "url": "https://github.com/hobbo91/BetterBright/releases/download/v0.93/BetterBright_v0.93.zip",
+          "size": 24048,
+          "md5": "d3d875917a70a55fd737f755ceefad35"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "open-shop-channel-wii:betterpii",
@@ -16285,6 +16471,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-01-01"
+    },
+    {
+      "id": "vitadbtoo-psp:5040",
+      "platforms": [
+        "psp"
+      ],
+      "name": "BloodPSP",
+      "summary": "Port of Blood for PSP.",
+      "author": "RainArcanjo",
+      "version": "v.0.4.0",
+      "title_id": "UCJS10041",
+      "description": "Port of Blood for PSP.",
+      "requirements": "- Game Data Files: your own copy of Blood",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a5d7feb92dca324a6b1c9d50e58f51d9af35db19c41f151eeac6bc868f62522f.png",
+      "screenshots": [],
+      "release_url": "https://github.com/RainArcanjo/BloodPSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "bloodpsp-v0.4.0.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/bloodpsp-v0.4.0.zip",
+          "size": 1129175,
+          "md5": "7aae9915f16c7bec2df57ba326d10a05"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2233",
@@ -21308,6 +21525,68 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-04-06"
+    },
+    {
+      "id": "vitadbtoo-psp:5054",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Camera Patch Lite",
+      "summary": "Right analog stick camera support for PSP games on eCFW.",
+      "author": "Freakler",
+      "version": "v.1.1",
+      "title_id": null,
+      "description": "Right analog stick camera support for PSP games on eCFW.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Freakler/psp-camera_patch_lite/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "camera_patch_lite_1.1.zip",
+          "url": "https://github.com/Freakler/psp-camera_patch_lite/releases/download/v1.1/camera_patch_lite_1.1.zip",
+          "size": 9689,
+          "md5": "2d13a42881c7ff236d01c322ac0ed4e4"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
+      "id": "vitadbtoo-psp:5017",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Camera Patch Lite (PSP Go)",
+      "summary": "Right analog stick camera support for PSP Go, port of Camera Patch Lite.",
+      "author": "rereprep",
+      "version": "v.1.0",
+      "title_id": null,
+      "description": "Right analog stick camera support for PSP Go, port of Camera Patch Lite.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/rereprep/Camera-Patch-Lite-PSP-Go/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "camera_patch_lite_psp_go.prx",
+          "url": "https://github.com/rereprep/Camera-Patch-Lite-PSP-Go/releases/download/v1.0/camera_patch_lite_psp_go.prx",
+          "size": 13838,
+          "md5": "cc136e84f9a7030c2b8dc04cf4d57e2c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "hbas-switch:CamNX",
@@ -30796,6 +31075,37 @@
       "updated_at": ""
     },
     {
+      "id": "vitadbtoo-psp:5064",
+      "platforms": [
+        "psp"
+      ],
+      "name": "CTW Cheat Device",
+      "summary": "Cheat device for GTA: Chinatown Wars.",
+      "author": "daniemun",
+      "version": "v.1.0",
+      "title_id": null,
+      "description": "Cheat device for GTA: Chinatown Wars.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/daniemun/CTW-CheatDevice-Reversed/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "CTW.Cheat.Device.zip",
+          "url": "https://github.com/daniemun/CTW-CheatDevice-Reversed/releases/download/1.0/CTW.Cheat.Device.zip",
+          "size": 5345,
+          "md5": "25c435d3226081bde37a60d163a1d246"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "universal-db:TheHighTide/CubeAdventures",
       "platforms": [
         "3ds"
@@ -37647,6 +37957,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-08-26"
+    },
+    {
+      "id": "vitadbtoo-psp:5071",
+      "platforms": [
+        "psp"
+      ],
+      "name": "DratiniFS",
+      "summary": "exFAT and 1 TB+ SD card support for PSP.",
+      "author": "qberty1337",
+      "version": "v.2.0",
+      "title_id": "UCJS10041",
+      "description": "exFAT and 1 TB+ SD card support for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b647ce109b7c774d6efbc2c1446d650253a2dc411f12c83c210cb3b88e030099.png",
+      "screenshots": [],
+      "release_url": "https://github.com/qberty1337/DratiniFS/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "DratiniFS2.0.zip",
+          "url": "https://github.com/qberty1337/DratiniFS/releases/download/v2.0/DratiniFS2.0.zip",
+          "size": 730644,
+          "md5": "4d52ba0fda842cf7b209ac87f37b5866"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "universal-db:Cruel/DrawAttack",
@@ -50326,6 +50667,37 @@
       "updated_at": "2010-01-03"
     },
     {
+      "id": "vitadbtoo-psp:5060",
+      "platforms": [
+        "psp"
+      ],
+      "name": "FuSa SD",
+      "summary": "Play games on a TV without restrictions.",
+      "author": "andy-man",
+      "version": "v.1.0.50",
+      "title_id": null,
+      "description": "Play games on a TV without restrictions.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/andy-man/psp-fusa-sd/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "FuSa_SD_v1.0.50.zip",
+          "url": "https://github.com/andy-man/psp-fusa-sd/releases/download/FuSa_SD_v1.0.50/FuSa_SD_v1.0.50.zip",
+          "size": 112162,
+          "md5": "c16708e75e2cce69ace93db5665e7e25"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:2991",
       "platforms": [
         "psp"
@@ -50853,6 +51225,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-08-15"
+    },
+    {
+      "id": "vitadbtoo-psp:5066",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Game Categories Lite",
+      "summary": "Folder categories for the XMB game menu.",
+      "author": "codestation",
+      "version": "v.1.6",
+      "title_id": null,
+      "description": "Folder categories for the XMB game menu.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/codestation/gclite/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "categories_lite-1.6.zip",
+          "url": "https://github.com/codestation/gclite/releases/download/1.6/categories_lite-1.6.zip",
+          "size": 97933,
+          "md5": "75ef512aca21be7242cfc1f40fcf86d8"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2906",
@@ -52721,6 +53124,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2009-01-20"
+    },
+    {
+      "id": "vitadbtoo-psp:5015",
+      "platforms": [
+        "psp"
+      ],
+      "name": "GePatch",
+      "summary": "Native resolution patch for several PSP games on Adrenaline.",
+      "author": "TheOfficialFloW",
+      "version": "v.0.2",
+      "title_id": null,
+      "description": "Native resolution patch for several PSP games on Adrenaline.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/TheOfficialFloW/GePatch/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "ge_patch.prx",
+          "url": "https://github.com/TheOfficialFloW/GePatch/releases/download/v0.2/ge_patch.prx",
+          "size": 14350,
+          "md5": "6e783596a33bd54daeb4b2a8730dab3e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "hbas-switch:GerenciadorMIL",
@@ -55807,6 +56241,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2006-07-10"
+    },
+    {
+      "id": "vitadbtoo-psp:5014",
+      "platforms": [
+        "psp"
+      ],
+      "name": "GTA Native Resolution",
+      "summary": "Native resolution patch for the PSP GTA games.",
+      "author": "TheOfficialFloW",
+      "version": "v.0.3",
+      "title_id": null,
+      "description": "Native resolution patch for the PSP GTA games.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/TheOfficialFloW/GTANativeRes/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "gta_native.prx",
+          "url": "https://github.com/TheOfficialFloW/GTANativeRes/releases/download/v0.3/gta_native.prx",
+          "size": 20014,
+          "md5": "8669bbeffe0f0222f84b2992bfeef6c9"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:625",
@@ -63074,6 +63539,31 @@
       "updated_at": "2018-12-31"
     },
     {
+      "id": "universal-db:ewanc26/indigo",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Indigo",
+      "summary": "A native Bluesky client for the Nintendo 3DS.",
+      "author": "Ewan Croft",
+      "version": "v0.17.0",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/ewanc26/indigo/main/assets/icon.png",
+      "release_url": "https://github.com/ewanc26/indigo/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "indigo.3dsx",
+          "url": "https://github.com/ewanc26/indigo/releases/download/v0.17.0/indigo.3dsx",
+          "size": 1692468
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-11-11T12:20:25Z"
+    },
+    {
       "id": "vitadbtoo-psp:2898",
       "platforms": [
         "psp"
@@ -66619,6 +67109,37 @@
       "updated_at": "2010-02-01"
     },
     {
+      "id": "vitadbtoo-psp:5023",
+      "platforms": [
+        "psp"
+      ],
+      "name": "JoyCenterFix",
+      "summary": "Fixes misaligned analog sticks.",
+      "author": "vladimir-cucu",
+      "version": "v.1.1.0",
+      "title_id": null,
+      "description": "Fixes misaligned analog sticks.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/vladimir-cucu/joycenterfix/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "joycenterfix.prx",
+          "url": "https://github.com/vladimir-cucu/joycenterfix/releases/download/v1.1.0/joycenterfix.prx",
+          "size": 3902,
+          "md5": "734de7deb183107bb3ba761c6d9887f4"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "hbas-switch:JoyConMouse",
       "platforms": [
         "switch"
@@ -69701,6 +70222,32 @@
       "updated_at": "2026-11-11"
     },
     {
+      "id": "ps5-payloads-atlas:kraken-mount.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "kraken-mount",
+      "summary": "Minimalist PS5 game mounter supporting PKG, folder dumps, zstd and lz4",
+      "author": "",
+      "version": "v0.3.2",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/quer3q/kraken-mount",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "kraken-mount.elf",
+          "url": "https://github.com/quer3q/kraken-mount/releases/download/v0.3.2/kraken-mount.elf",
+          "sha256": "5b72ea22af0b28dd3522be4a4f10cbec9b5423fbe2e4e8990b45b4d1daeabdde"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-24T17:31:10+08:00"
+    },
+    {
       "id": "vitadbtoo-psp:2785",
       "platforms": [
         "psp"
@@ -70494,6 +71041,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2023-02-07"
+    },
+    {
+      "id": "vitadbtoo-psp:5022",
+      "platforms": [
+        "psp"
+      ],
+      "name": "langPatch",
+      "summary": "Changes the game language without changing the XMB language.",
+      "author": "zSamyMan",
+      "version": "v.0.2",
+      "title_id": null,
+      "description": "Changes the game language without changing the XMB language.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/zSamyMan/langPatch/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "langPatch.prx",
+          "url": "https://github.com/zSamyMan/langPatch/releases/download/v0.2/langPatch.prx",
+          "size": 2738,
+          "md5": "d144af9312a47cf2da8ff657b7940746"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:4978",
@@ -77235,6 +77813,37 @@
       "updated_at": "2026-08-26T17:42:11Z"
     },
     {
+      "id": "vitadbtoo-psp:5041",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Majora's Mask PSP",
+      "summary": "Port of the Majora's Mask decompilation for PSP.",
+      "author": "z2442",
+      "version": "Nightly 2026-11-24",
+      "title_id": "UCJS10041",
+      "description": "Port of the Majora's Mask decompilation for PSP.",
+      "requirements": "- Game Data Files: your own Majora's Mask US ROM",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/z2442/mm-PSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "mm-psp-n64-us.zip",
+          "url": "https://github.com/z2442/mm-PSP/releases/download/latest/mm-psp-n64-us.zip",
+          "size": 3322159,
+          "md5": "249dc32254107ac10366a3f505324126"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4325",
       "platforms": [
         "psp"
@@ -79418,6 +80027,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-12-30"
+    },
+    {
+      "id": "vitadbtoo-psp:5055",
+      "platforms": [
+        "psp"
+      ],
+      "name": "MC-PSP",
+      "summary": "Minecraft-like block game for PSP, continued from Minecraft-PSP.",
+      "author": "IridescentRose",
+      "version": "v.0.5-pre2",
+      "title_id": "UCJS10041",
+      "description": "Minecraft-like block game for PSP, continued from Minecraft-PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/8b15fe257bcff3b0c559ad2cb16f5ca844cfff68d48d31f8ec6315540ac8fec3.png",
+      "screenshots": [],
+      "release_url": "https://github.com/IridescentRose/MC-PSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "0520.zip",
+          "url": "https://github.com/IridescentRose/MC-PSP/releases/download/v0.5-pre2/0520.zip",
+          "size": 5946336,
+          "md5": "88ad879b3117b9f192914e712abe49ed"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:4841",
@@ -83141,6 +83781,37 @@
       "updated_at": "2019-01-22"
     },
     {
+      "id": "vitadbtoo-psp:5020",
+      "platforms": [
+        "psp"
+      ],
+      "name": "MissyHUD",
+      "summary": "Plugin that shows a simple HUD with battery, clock and CPU speed.",
+      "author": "pebeto",
+      "version": "v.0.7",
+      "title_id": null,
+      "description": "Plugin that shows a simple HUD with battery, clock and CPU speed.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/pebeto/missyhud.prx/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "missyhud.prx",
+          "url": "https://github.com/pebeto/missyhud.prx/releases/download/v0.7/missyhud.prx",
+          "size": 17846,
+          "md5": "f5baf2495825ae23b33cab8ac2c779a7"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "hbas-switch:MiSTerCompanionNX",
       "platforms": [
         "switch"
@@ -83878,6 +84549,37 @@
       "updated_at": "2007-01-01"
     },
     {
+      "id": "vitadbtoo-vita:5082",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "mofa-vita",
+      "summary": "Native PSVita engine for Witch on the Holy Night, based on knife.",
+      "author": "ATSPwang618 & DeQxJ00 & SpriteLisen",
+      "version": "v.1.20",
+      "title_id": "KNIF00540",
+      "description": "Native GXM engine for Witch on the Holy Night (Mahoutsukai no Yoru), based on AuroraWright's knife. Reads converted Switch game data from ux0:data/WitchontheHolyNight/assets/.",
+      "requirements": "- Game Data Files: your own copy of Witch on the Holy Night (Switch), converted with prepare-mofa-vita.py",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/43122887407ca74c3137f68a8f0c0e1c4d6957dda0257be93bae152ca2991b07.png",
+      "screenshots": [],
+      "release_url": "https://github.com/ATSPwang618/mofa-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "mofa-vita-1.20.vpk",
+          "url": "https://github.com/ATSPwang618/mofa-vita/releases/download/1.20/mofa-vita-1.20.vpk",
+          "size": 4938904,
+          "md5": "57032226c369a6d6e1428be707456fa7"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1414",
       "platforms": [
         "psvita"
@@ -83943,6 +84645,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2013-01-01"
+    },
+    {
+      "id": "vitadbtoo-psp:5047",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Monk Tower PSP",
+      "summary": "Port of Monk Tower by Maciej Glowka for PSP.",
+      "author": "dadcapgamer",
+      "version": "v.RC2",
+      "title_id": "UCJS10041",
+      "description": "Port of Monk Tower by Maciej Glowka for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9d097ce8e3bafc78133a3daf8c0893d6780dbbbd01031d28504d5ff12731c9b5.png",
+      "screenshots": [],
+      "release_url": "https://github.com/dadcapgamer/monktowerPSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "monktowerPSP-rc2.zip",
+          "url": "https://github.com/dadcapgamer/monktowerPSP/releases/download/rc2/monktowerPSP-rc2.zip",
+          "size": 1100580,
+          "md5": "94fa4e427bf44b02acbe6fa84cf6d4b9"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:4376",
@@ -90132,9 +90865,9 @@
       "release_url": "https://soykhaler.itch.io/nextbots-for-psvita",
       "downloads": [
         {
-          "format": "zip",
-          "filename": "1155-nextbot-for-psvita-0.2.zip",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1155-nextbot-for-psvita-0.2.zip",
+          "format": "vpk",
+          "filename": "1155-nextbot-for-psvita-0.2.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/1155-nextbot-for-psvita-0.2.vpk",
           "size": 34083842,
           "md5": "9ad9df6ff4718b724dbc73ff97356acf"
         }
@@ -91169,6 +91902,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2013-09-19T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-psp:5019",
+      "platforms": [
+        "psp"
+      ],
+      "name": "NIPvP",
+      "summary": "Enables PvP in Naruto Shippuden: Ultimate Ninja Impact.",
+      "author": "cello0314",
+      "version": "v.1.1.1",
+      "title_id": null,
+      "description": "Enables PvP in Naruto Shippuden: Ultimate Ninja Impact.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/cello0314/nipvp/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "nipvp.prx",
+          "url": "https://github.com/cello0314/nipvp/releases/download/1.1.1/nipvp.prx",
+          "size": 11518,
+          "md5": "9bb6a3873d1bb95774f1d82781e26f31"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "universal-db:chishm/nitrohax",
@@ -92483,6 +93247,37 @@
       "updated_at": "2016-05-24T15:23:21Z"
     },
     {
+      "id": "vitadbtoo-psp:5078",
+      "platforms": [
+        "psp"
+      ],
+      "name": "NovaOS",
+      "summary": "Launcher for PSP on ARK-4 and ARK-5.",
+      "author": "gabriele-gessaghi",
+      "version": "v.1.0.0",
+      "title_id": "UCJS10041",
+      "description": "Launcher for PSP on ARK-4 and ARK-5.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9045099b1b608f53bf93509ea416a7b6e7f2a7aea3214f22f0f5aec96e6065bf.png",
+      "screenshots": [],
+      "release_url": "https://github.com/gabriele-gessaghi/NovaOS-releases/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "NovaOS-v1.0.0-ark5.zip",
+          "url": "https://github.com/gabriele-gessaghi/NovaOS-releases/releases/download/v1.0.0/NovaOS-v1.0.0-ark5.zip",
+          "size": 621943,
+          "md5": "2378c81f9a16e0c5bcdf9f4fb2f5accd"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:4808",
       "platforms": [
         "psvita"
@@ -92662,6 +93457,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-01-01"
+    },
+    {
+      "id": "vitadbtoo-psp:5063",
+      "platforms": [
+        "psp"
+      ],
+      "name": "nploader",
+      "summary": "DLC loader for PSP.",
+      "author": "codestation",
+      "version": "v.0.9",
+      "title_id": null,
+      "description": "DLC loader for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/codestation/nploader/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "nploader-0.9.zip",
+          "url": "https://github.com/codestation/nploader/releases/download/v0.9/nploader-0.9.zip",
+          "size": 33927,
+          "md5": "03162eba7ba88b1cd4e970e8452a5006"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "open-shop-channel-wii:nReader",
@@ -94422,6 +95248,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2011-09-06"
+    },
+    {
+      "id": "vitadbtoo-psp:5034",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Ocarina of Time PSP",
+      "summary": "Port of the Ocarina of Time decompilation for PSP.",
+      "author": "z2442",
+      "version": "Nightly 2026-11-24",
+      "title_id": "UCJS10041",
+      "description": "Port of the Ocarina of Time decompilation for PSP.",
+      "requirements": "- Game Data Files: your own Ocarina of Time NTSC 1.0 ROM",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0ff68d915351a430876ec1d6b95326f700ffb48df51e5c249dc7dc3f8f67e13a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/z2442/oot-PSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "oot-psp-ntsc-1.0.zip",
+          "url": "https://github.com/z2442/oot-PSP/releases/download/latest/oot-psp-ntsc-1.0.zip",
+          "size": 2791142,
+          "md5": "568be01a18df2e136963b78e0ab7334f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "universal-db:Michele-3ds/OceanClock",
@@ -102264,6 +103121,37 @@
       "updated_at": "2008-04-17"
     },
     {
+      "id": "vitadbtoo-psp:5038",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Pikachu Volleyball",
+      "summary": "Port of Pikachu Volleyball for PSP.",
+      "author": "athekat",
+      "version": "v.1.0",
+      "title_id": "UCJS10041",
+      "description": "Port of Pikachu Volleyball for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/8091271cc372017f670974ccf5b93106490e61ad07ad605d98e348d562534356.png",
+      "screenshots": [],
+      "release_url": "https://github.com/athekat/Pikachu-Volleyball-PSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "pikachu-volleyball-V1.0.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/pikachu-volleyball-V1.0.zip",
+          "size": 6909344,
+          "md5": "0d860db38b30e90c15eca113d86bcde9"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1695",
       "platforms": [
         "psvita"
@@ -103898,6 +104786,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2011-01-01"
+    },
+    {
+      "id": "vitadbtoo-psp:5076",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Platform Shooter",
+      "summary": "Platformer for PSP with mod packs.",
+      "author": "jmgamer1199",
+      "version": "v.0.6.2-alpha",
+      "title_id": "UCJS10041",
+      "description": "Platformer for PSP with mod packs.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ee423689afa54e284eed99b7b92984add247700081985489c0592dbf73a3e685.png",
+      "screenshots": [],
+      "release_url": "https://github.com/jmgamer1199/platform-shooter/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "platform-shooter-0.6.2-alpha.zip",
+          "url": "https://github.com/jmgamer1199/platform-shooter/releases/download/v0.6.2-alpha/platform-shooter-0.6.2-alpha.zip",
+          "size": 3557029,
+          "md5": "beeef45a9b64e791f61865421aefa21b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:3411",
@@ -106216,6 +107135,68 @@
       "updated_at": "2023-01-18"
     },
     {
+      "id": "vitadbtoo-psp:5045",
+      "platforms": [
+        "psp"
+      ],
+      "name": "POPS Analog",
+      "summary": "Real analog and dual analog input for PS1 games on PSP.",
+      "author": "ste2425",
+      "version": "v.1.2.0",
+      "title_id": null,
+      "description": "Real analog and dual analog input for PS1 games on PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/ste2425/POPS-Analog/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "pops_analog.prx",
+          "url": "https://github.com/ste2425/POPS-Analog/releases/download/v1.2.0/pops_analog.prx",
+          "size": 5510,
+          "md5": "d113c761c7a45268608cde2201c691de"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
+      "id": "vitadbtoo-psp:5028",
+      "platforms": [
+        "psp"
+      ],
+      "name": "POPSAnalog",
+      "summary": "Analog controller mode for PS1 games on PSP Go.",
+      "author": "rereprep",
+      "version": "v.0.2",
+      "title_id": null,
+      "description": "Analog controller mode for PS1 games on PSP Go.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/rereprep/POPSAnalog/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "POPSAnalog.prx",
+          "url": "https://github.com/rereprep/POPSAnalog/releases/download/v0.2/POPSAnalog.prx",
+          "size": 2578,
+          "md5": "47882c2143a004b49423fac40caacc85"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4406",
       "platforms": [
         "psp"
@@ -106245,6 +107226,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": ""
+    },
+    {
+      "id": "vitadbtoo-psp:5074",
+      "platforms": [
+        "psp"
+      ],
+      "name": "POPSDualAnalog",
+      "summary": "Second analog stick support for PS1 games on PSP.",
+      "author": "tojikoumori",
+      "version": "v.1.0",
+      "title_id": null,
+      "description": "Second analog stick support for PS1 games on PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/tojikoumori/POPSDualAnalog-PSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "POPSDualAnalog.zip",
+          "url": "https://github.com/tojikoumori/POPSDualAnalog-PSP/releases/download/v1.0/POPSDualAnalog.zip",
+          "size": 2993,
+          "md5": "c93c379abd2128bfbeca989913b730ac"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:3812",
@@ -107439,30 +108451,30 @@
       "updated_at": "2026-11-11"
     },
     {
-      "id": "ps5-payloads-atlas:prefbar_v0.3.0.elf",
+      "id": "ps5-payloads-atlas:prefbar_v0.3.1.elf",
       "platforms": [
         "ps5"
       ],
       "name": "PrefBar",
       "summary": "PrefBar - Standalone On-Screen Performance Overlay for Jailbroken PS5",
       "author": "",
-      "version": "v0.3.0",
+      "version": "v0.3.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/x1nons/prefbar",
       "downloads": [
         {
           "format": "elf",
-          "filename": "prefbar_v0.3.0.elf",
-          "url": "https://github.com/X1NONs/PrefBar/releases/download/v0.3.0/Prefbar_V0.3.0.elf",
-          "sha256": "e4379590115ef87b2f0310b502321d7da30783536d939bfb1c4c0e511972af30"
+          "filename": "prefbar_v0.3.1.elf",
+          "url": "https://github.com/X1NONs/PrefBar/releases/download/v0.3.1/Prefbar_V0.3.1.elf",
+          "sha256": "b876836d4597e28e519ae6bc80df0eeceefde2e8648491c66d4983a779dff134"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-13T22:20:56+08:00"
+      "updated_at": "2026-11-24T23:02:32+08:00"
     },
     {
       "id": "vitadbtoo-vita:777",
@@ -107841,6 +108853,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2017-08-16"
+    },
+    {
+      "id": "vitadbtoo-psp:5053",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PRO CFW C2B",
+      "summary": "PRO custom firmware for PSP.",
+      "author": "kyleatlast",
+      "version": "PRO-C2B",
+      "title_id": "UCJS10041",
+      "description": "PRO custom firmware for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/6660316454ae9b5c4c6f07076f3c2f60c8052c318a96d043460f927d50b49399.png",
+      "screenshots": [],
+      "release_url": "https://github.com/kyleatlast/procfw/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "pro_c2b.zip",
+          "url": "https://github.com/kyleatlast/procfw/releases/download/PRO-C2B/pro_c2b.zip",
+          "size": 1008536,
+          "md5": "87eaaa73da71f5a7a5a8f61c134bbe59"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2433",
@@ -108887,168 +109930,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2011-02-06"
-    },
-    {
-      "id": "ps4-store:268181309",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — homebrew.elf",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "elf",
-          "filename": "homebrew.elf",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/homebrew.elf",
-          "size": 4842768,
-          "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
-        }
-      ],
-      "popularity": 19696,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:238357415",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — PS5_Update_files.zip",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "zip",
-          "filename": "PS5_Update_files.zip",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/PS5_Update_files.zip",
-          "size": 1488211,
-          "sha256": null
-        }
-      ],
-      "popularity": 3827,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:268177439",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — Store-R2-Legacy.pkg",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "pkg",
-          "filename": "Store-R2-Legacy.pkg",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-Legacy.pkg",
-          "size": 24772608,
-          "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
-        }
-      ],
-      "popularity": 17158,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:167233612",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — Store-R2-PS5.pkg",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "pkg",
-          "filename": "Store-R2-PS5.pkg",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-PS5.pkg",
-          "size": 43450368,
-          "sha256": null
-        }
-      ],
-      "popularity": 7614,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-store:268177642",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4 Homebrew Store — Store-R2.pkg",
-      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
-      "author": "LightningMods",
-      "version": "4.5",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
-      "downloads": [
-        {
-          "format": "pkg",
-          "filename": "Store-R2.pkg",
-          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg",
-          "size": 24772608,
-          "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
-        }
-      ],
-      "popularity": 96796,
-      "source": "PS4 Homebrew Store",
-      "source_url": "https://github.com/LightningMods/PS4-Store",
-      "license_url": null,
-      "updated_at": "2023-05-19T20:41:59Z"
-    },
-    {
-      "id": "ps4-hen:738334475",
-      "platforms": [
-        "ps4"
-      ],
-      "name": "PS4HEN — hen.bin",
-      "summary": "## What's Changed\n* Add EchoStretch to contributors list by @EchoStretch in https://github.com/Scene-Collective/ps4-hen/pull/77\n\n\n**Full Changelog**: https://github.com/Scene-Collective/ps4-hen/compare/pre-release-main-183...pre-release-main-184",
-      "author": "Scene-Collective",
-      "version": "pre-release-main-184",
-      "license": null,
-      "icon_url": null,
-      "release_url": "https://github.com/Scene-Collective/ps4-hen/releases/tag/pre-release-main-184",
-      "downloads": [
-        {
-          "format": "bin",
-          "filename": "hen.bin",
-          "url": "https://github.com/Scene-Collective/ps4-hen/releases/download/pre-release-main-184/hen.bin",
-          "size": 501152,
-          "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
-        }
-      ],
-      "popularity": 424,
-      "source": "PS4HEN",
-      "source_url": "https://github.com/Scene-Collective/ps4-hen",
-      "license_url": null,
-      "updated_at": "2026-11-12T06:23:53Z"
     },
     {
       "id": "vitadbtoo-vita:560",
@@ -110286,6 +111167,37 @@
       "updated_at": "2010-03-04"
     },
     {
+      "id": "vitadbtoo-psp:5025",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSP Achievements System",
+      "summary": "Achievement system for PSP games.",
+      "author": "avetis-dev",
+      "version": "v.2.0.0",
+      "title_id": null,
+      "description": "Achievement system for PSP games.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/avetis-dev/PSPAchievementsSystem/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PSPAchievementsSystem-v2.0.0.zip",
+          "url": "https://github.com/avetis-dev/PSPAchievementsSystem/releases/download/v2.0.0/PSPAchievementsSystem-v2.0.0.zip",
+          "size": 53734,
+          "md5": "252578854040f60e13d655f02df5a9cf"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4455",
       "platforms": [
         "psp"
@@ -110532,6 +111444,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2006-03-08"
+    },
+    {
+      "id": "vitadbtoo-psp:5052",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSP ARK Plugins",
+      "summary": "Plugins for ARK-5 with save states, quick resume and more.",
+      "author": "00KAM1",
+      "version": "v.2026-11-23",
+      "title_id": null,
+      "description": "Plugins for ARK-5 with save states, quick resume and more.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/00KAM1/psp-ark-plugins/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "psp-ark-plugins-2026-11-23.zip",
+          "url": "https://github.com/00KAM1/psp-ark-plugins/releases/download/2026-11-23/psp-ark-plugins-2026-11-23.zip",
+          "size": 9132275,
+          "md5": "8174835576cb3ad8df978923b77a8658"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:4471",
@@ -112580,6 +113523,37 @@
       "updated_at": "2007-11-17"
     },
     {
+      "id": "vitadbtoo-psp:5050",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSP Go BT Controllers",
+      "summary": "Bluetooth controller support for PSP Go.",
+      "author": "z2442",
+      "version": "v.1.0-build.9",
+      "title_id": null,
+      "description": "Bluetooth controller support for PSP Go.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/z2442/pspgobtcontrollers/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "pspgobt-release-v1.0.zip",
+          "url": "https://github.com/z2442/pspgobtcontrollers/releases/download/v1.0-build.9/pspgobt-release-v1.0.zip",
+          "size": 129451,
+          "md5": "1dec1dd484ffea2f9468c7caee102be3"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:2981",
       "platforms": [
         "psp"
@@ -112826,6 +113800,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2009-01-24"
+    },
+    {
+      "id": "vitadbtoo-psp:5042",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSP Hero",
+      "summary": "Guitar Hero style rhythm game for PSP.",
+      "author": "ravsil",
+      "version": "v.1.0",
+      "title_id": "UCJS10041",
+      "description": "Guitar Hero style rhythm game for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d265dec77660b321eaf697a4817a1c3adf2fac3b98b76cfbbb983a330d03d30b.png",
+      "screenshots": [],
+      "release_url": "https://github.com/ravsil/PSP-Hero/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "psp-hero-1.0.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/psp-hero-1.0.zip",
+          "size": 5601255,
+          "md5": "31805874d7c4a6bb2a6c5f08a0f9b47b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:1995",
@@ -115463,6 +116468,37 @@
       "updated_at": "2010-01-01"
     },
     {
+      "id": "vitadbtoo-psp:5036",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSP Stream",
+      "summary": "Streams a PC screen and audio to the PSP over WiFi with button input back.",
+      "author": "k7vinilstorage",
+      "version": "v.1.12",
+      "title_id": "UCJS10041",
+      "description": "Streams a PC screen and audio to the PSP over WiFi with button input back.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/k7vinilstorage/PSP-Stream/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PSPStream-EBOOT.zip",
+          "url": "https://github.com/k7vinilstorage/PSP-Stream/releases/download/v1.12/PSPStream-EBOOT.zip",
+          "size": 397098,
+          "md5": "4e45519990163d2d3adbde77bcb60505"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3221",
       "platforms": [
         "psp"
@@ -116021,6 +117057,68 @@
       "updated_at": "2008-01-23"
     },
     {
+      "id": "vitadbtoo-psp:5043",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSP USB Capture",
+      "summary": "Streams the PSP screen and sound to a PC over USB.",
+      "author": "AfinaLoves",
+      "version": "v.0.9.0",
+      "title_id": null,
+      "description": "Streams the PSP screen and sound to a PC over USB.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/AfinaLoves/psp-usb-capture/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "pspcap.prx",
+          "url": "https://github.com/AfinaLoves/psp-usb-capture/releases/download/v0.9.0/pspcap.prx",
+          "size": 24498,
+          "md5": "159bc3e0c9d9ef766bb49f90951bab01"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
+      "id": "vitadbtoo-psp:5016",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSP UVC",
+      "summary": "Streams the PSP screen over USB as a webcam.",
+      "author": "xerpi",
+      "version": "v.0.2",
+      "title_id": null,
+      "description": "Streams the PSP screen over USB as a webcam.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/xerpi/psp-uvc-usb-video-class/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "uvc.prx",
+          "url": "https://github.com/xerpi/psp-uvc-usb-video-class/releases/download/0.2/uvc.prx",
+          "size": 99278,
+          "md5": "e3b42509d575eb52d1428917371ffc89"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3872",
       "platforms": [
         "psp"
@@ -116050,6 +117148,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-01-23"
+    },
+    {
+      "id": "vitadbtoo-psp:5077",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSP VideoBG",
+      "summary": "Video background for the XMB.",
+      "author": "Wyped",
+      "version": "v.22",
+      "title_id": null,
+      "description": "Video background for the XMB.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Wyped/PSP-VideoBG/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "VideoBG-1.0.0.zip",
+          "url": "https://github.com/Wyped/PSP-VideoBG/releases/download/Build22/VideoBG-1.0.0.zip",
+          "size": 1441128,
+          "md5": "8ba76e7b3fc2cad02a911398cc7ea57e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2414",
@@ -116515,6 +117644,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-02-25"
+    },
+    {
+      "id": "vitadbtoo-psp:5024",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSP-DRP",
+      "summary": "Discord Rich Presence for PSP with a PC companion app.",
+      "author": "qberty1337",
+      "version": "v.0.4.0",
+      "title_id": null,
+      "description": "Discord Rich Presence for PSP with a PC companion app.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/qberty1337/PSP-DRP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "psp-drp-plugin.zip",
+          "url": "https://github.com/qberty1337/PSP-DRP/releases/download/v0.4.0/psp-drp-plugin.zip",
+          "size": 107933,
+          "md5": "981e2b002a26989aa3378fc4c7e34cd5"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:963",
@@ -118809,6 +119969,68 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2006-12-13"
+    },
+    {
+      "id": "vitadbtoo-psp:5044",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSPExp",
+      "summary": "Lets a Linux board run games while the PSP shows them and sends input.",
+      "author": "pleft",
+      "version": "v.1.4.0",
+      "title_id": "UCJS10041",
+      "description": "Lets a Linux board run games while the PSP shows them and sends input.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/17360a6f51070ea44e5774a7b0182d6be3f80ac1f3bf59b8c256c46054c89be1.png",
+      "screenshots": [],
+      "release_url": "https://github.com/pleft/PSPExp/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PSPExp-psp-v1.4.0.zip",
+          "url": "https://github.com/pleft/PSPExp/releases/download/v1.4.0/PSPExp-psp-v1.4.0.zip",
+          "size": 320747,
+          "md5": "d8d767bace900a01ccefd1198a5c3f21"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
+      "id": "vitadbtoo-psp:5029",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PSPFatSave",
+      "summary": "Save tool for PSP.",
+      "author": "Grunwalskii",
+      "version": "v.981",
+      "title_id": null,
+      "description": "Save tool for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Grunwalskii/PSPFatSave-Public/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "pspfatsave-v981.zip",
+          "url": "https://github.com/Grunwalskii/PSPFatSave-Public/releases/download/v981/pspfatsave-v981.zip",
+          "size": 1565374,
+          "md5": "ac1778d46cd10d50ab0d2ef13f09e089"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:3831",
@@ -124174,6 +125396,68 @@
       "updated_at": "2026-11-10"
     },
     {
+      "id": "vitadbtoo-psp:5080",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PTube Native",
+      "summary": "YouTube client for PSP.",
+      "author": "Vilusia",
+      "version": "v.0.6.0",
+      "title_id": "UCJS10041",
+      "description": "YouTube client for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/75523054d4a949d9f208e25f855067180836c5b6dd7063020d6e7d926440decf.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Vilusia/PTube-Native/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PTube-native-build6.zip",
+          "url": "https://github.com/Vilusia/PTube-Native/releases/download/v0.6.0/PTube-native-build6.zip",
+          "size": 1371428,
+          "md5": "671151119c31c2f45e81e3f381b998ea"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
+      "id": "vitadbtoo-psp:5051",
+      "platforms": [
+        "psp"
+      ],
+      "name": "PTwitch Native",
+      "summary": "Twitch client for PSP 3000.",
+      "author": "Vilusia",
+      "version": "v.24",
+      "title_id": "UCJS10041",
+      "description": "Twitch client for PSP 3000.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Vilusia/PTwitch-Native/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PTwitch-native-psp.zip",
+          "url": "https://github.com/Vilusia/PTwitch-Native/releases/download/Build-24/PTwitch-native-psp.zip",
+          "size": 1362286,
+          "md5": "554f9b0bea66fcc86f2770f40c5a6fd0"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3333",
       "platforms": [
         "psp"
@@ -127031,6 +128315,37 @@
       "updated_at": "2018-09-21"
     },
     {
+      "id": "vitadbtoo-psp:5021",
+      "platforms": [
+        "psp"
+      ],
+      "name": "rawgl PSP",
+      "summary": "Port of the Another World engine reimplementation rawgl for PSP.",
+      "author": "internalregister",
+      "version": "v.1.0",
+      "title_id": "UCJS10041",
+      "description": "Port of the Another World engine reimplementation rawgl for PSP.",
+      "requirements": "- Game Data Files: your own copy of Another World",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/internalregister/rawgl_psp/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "rawgl-psp-v1.0.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/rawgl-psp-v1.0.zip",
+          "size": 737047,
+          "md5": "357a54a3f5a2f01032ee41d5a0934922"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1813",
       "platforms": [
         "psvita"
@@ -128918,6 +130233,37 @@
       "updated_at": "2006-01-29"
     },
     {
+      "id": "vitadbtoo-psp:5032",
+      "platforms": [
+        "psp"
+      ],
+      "name": "RemoteJoy Minus",
+      "summary": "RemoteJoy without video capture, for controller input over USB.",
+      "author": "SourceK78",
+      "version": "v.1.7.0",
+      "title_id": null,
+      "description": "RemoteJoy without video capture, for controller input over USB.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/SourceK78/remotejoy-minus/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "remotejoy-minus.prx",
+          "url": "https://github.com/SourceK78/remotejoy-minus/releases/download/v1.7.0/remotejoy-minus.prx",
+          "size": 43570,
+          "md5": "cc80df4f4d9e46d6715bd9b6e8ecff30"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "ps5-payloads-atlas:remoteplay_unlock_offsets.elf",
       "platforms": [
         "ps5"
@@ -130385,6 +131731,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2005-08-22"
+    },
+    {
+      "id": "vitadbtoo-psp:5072",
+      "platforms": [
+        "psp"
+      ],
+      "name": "RIN GB Camera",
+      "summary": "RIN Game Boy emulator fork that feeds the Go!Cam into the Game Boy Camera.",
+      "author": "beckerd",
+      "version": "v.1.4",
+      "title_id": "UCJS10041",
+      "description": "RIN Game Boy emulator fork that feeds the Go!Cam into the Game Boy Camera.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/126d82e6fcd09f73d1bdc2169393636251c057418f1c9ec0dc6b7c55379fde84.png",
+      "screenshots": [],
+      "release_url": "https://github.com/beckerd/psp_rin_gbcam/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "RIN_GBCamera_v1.4.zip",
+          "url": "https://github.com/beckerd/psp_rin_gbcam/releases/download/v1.4/RIN_GBCamera_v1.4.zip",
+          "size": 394975,
+          "md5": "b92c3a899e6704dafc526cf5cd495c41"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:3614",
@@ -134432,6 +135809,37 @@
       "updated_at": "2011-09-12"
     },
     {
+      "id": "vitadbtoo-psp:5073",
+      "platforms": [
+        "psp"
+      ],
+      "name": "SavegameDeemer",
+      "summary": "Decrypts and exports PSP save data.",
+      "author": "Kethen",
+      "version": "v.2024-05-05",
+      "title_id": null,
+      "description": "Decrypts and exports PSP save data.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Kethen/SavegameDeemer/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "SGDeemer_47d1a4b0.zip",
+          "url": "https://github.com/Kethen/SavegameDeemer/releases/download/2024-05-05/SGDeemer_47d1a4b0.zip",
+          "size": 2965,
+          "md5": "ef02296acc646b04c71596a15934b5de"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4146",
       "platforms": [
         "psp"
@@ -136693,6 +138101,37 @@
       "updated_at": "2025-01-07"
     },
     {
+      "id": "vitadbtoo-psp:5068",
+      "platforms": [
+        "psp"
+      ],
+      "name": "SFA3 MAX Widescreen",
+      "summary": "Native 16:9 widescreen patch for Street Fighter Alpha 3 MAX.",
+      "author": "Rickow",
+      "version": "v.1.1.1",
+      "title_id": null,
+      "description": "Native 16:9 widescreen patch for Street Fighter Alpha 3 MAX.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Rickow/Street-Fighter-Alpha-3-MAX-PSP-widescreen/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "sfa3-ws-v1.1.1.zip",
+          "url": "https://github.com/Rickow/Street-Fighter-Alpha-3-MAX-PSP-widescreen/releases/download/v1.1.1/sfa3-ws-v1.1.1.zip",
+          "size": 69669,
+          "md5": "b9a4da9a08d0ce3defc2c9604e37f08e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:2687",
       "platforms": [
         "psp"
@@ -136841,6 +138280,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-11-09T04:02:14+08:00"
+    },
+    {
+      "id": "vitadbtoo-vita:5012",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Shards of Dawn",
+      "summary": "Online isometric RPG with turn-based card battles for PSVita.",
+      "author": "HunterAzar",
+      "version": "v.12.07",
+      "title_id": "ODLS00001",
+      "description": "Free online isometric RPG where every fight is a turn-based card battle. Shares one world with players in the browser.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b11de2e6e519249f82f4d2ea8ac8c7d1c60aacc30531df0d9e63da17d95ab327.png",
+      "screenshots": [],
+      "release_url": "https://hunterazar.itch.io/shards-of-dawn",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "shards-of-dawn.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/shards-of-dawn.vpk",
+          "size": 7957216,
+          "md5": "3dff287300ca1335b3ab60cd9d8e1c5f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "universal-db:dnasdw/SharedFontTool",
@@ -140161,6 +141631,37 @@
       "updated_at": "2025-08-31T20:03:56Z"
     },
     {
+      "id": "vitadbtoo-psp:5061",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Slim Colors",
+      "summary": "Adds Slim colors to the PSP 1000.",
+      "author": "krazynez",
+      "version": "v.2.1",
+      "title_id": "UCJS10041",
+      "description": "Adds Slim colors to the PSP 1000.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/8591e67b4b046f425b0c58b2c9ee531c675501009becefc8456162053f4491f3.png",
+      "screenshots": [],
+      "release_url": "https://github.com/krazynez/slim_colors/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "slim_colors.zip",
+          "url": "https://github.com/krazynez/slim_colors/releases/download/v2.1/slim_colors.zip",
+          "size": 148419,
+          "md5": "baaa44f7cc9381c506c6df1618529120"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3149",
       "platforms": [
         "psp"
@@ -141611,7 +143112,7 @@
       "name": "Snes9x (updated fork)",
       "summary": "SNES9x Port for 3DS / 2DS",
       "author": "bubble2k16 / matbo87 / willjow / Xeddius-Network",
-      "version": "v2.0",
+      "version": "v2.1",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/matbo87/snes9x_3ds/master/resources/icon.png",
       "release_url": "https://github.com/matbo87/snes9x_3ds/releases",
@@ -141619,20 +143120,20 @@
         {
           "format": "3dsx",
           "filename": "snes9x_3ds.3dsx",
-          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v2.0/snes9x_3ds.3dsx",
-          "size": 9848220
+          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v2.1/snes9x_3ds.3dsx",
+          "size": 9848188
         },
         {
           "format": "cia",
           "filename": "snes9x_3ds.cia",
-          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v2.0/snes9x_3ds.cia",
-          "size": 3855296
+          "url": "https://github.com/matbo87/snes9x_3ds/releases/download/v2.1/snes9x_3ds.cia",
+          "size": 3863488
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-09T18:51:22Z"
+      "updated_at": "2026-11-24T15:13:41Z"
     },
     {
       "id": "vitadbtoo-psp:3440",
@@ -143419,6 +144920,37 @@
       "updated_at": "2025-05-08T00:17:23Z"
     },
     {
+      "id": "vitadbtoo-psp:5035",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Sonic Mania PSP",
+      "summary": "Port of the Sonic Mania decompilation for PSP.",
+      "author": "girlyoulookthebest",
+      "version": "v.1.5",
+      "title_id": "UCJS10041",
+      "description": "Port of the Sonic Mania decompilation for PSP.",
+      "requirements": "- Game Data Files: your own copy of Sonic Mania (Data.rsdk)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a3f8bdedc503211b205e8888d2f37f0a6051ce333d408211a575b35e0ba499ae.png",
+      "screenshots": [],
+      "release_url": "https://github.com/girlyoulookthebest/Sonic-Mania-Decompilation/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "sonic-mania-psp-pspperfv1.5.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/sonic-mania-psp-pspperfv1.5.zip",
+          "size": 2081551,
+          "md5": "bf6ab442cd063a3f7882d5366461da9f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:858",
       "platforms": [
         "psvita"
@@ -143484,6 +145016,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-09-26"
+    },
+    {
+      "id": "vitadbtoo-psp:5039",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Sonic R PSP",
+      "summary": "Port of a reimplementation of Sonic R for PSP.",
+      "author": "HiroStuff",
+      "version": "v.1.0",
+      "title_id": "UCJS10041",
+      "description": "Port of a reimplementation of Sonic R for PSP.",
+      "requirements": "- Game Data Files: your own copy of Sonic R (PC)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/658f57f1938c6a4a851d2a8af691a16caf2989569f5ae17136d3a049476e82c2.png",
+      "screenshots": [],
+      "release_url": "https://github.com/HiroStuff/sonic-r-psp-public/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "Sonic.R.PSP.v1.0.zip",
+          "url": "https://github.com/HiroStuff/sonic-r-psp-public/releases/download/v1.0/Sonic.R.PSP.v1.0.zip",
+          "size": 2180271,
+          "md5": "68e86b5fe8d9493a9d704eb907f18cd2"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "universal-db:derrekr/srb2_3ds",
@@ -148259,6 +149822,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "vitadbtoo-psp:5059",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Street Racing PSP",
+      "summary": "Port of the GameMaker 8 example game Street Racing for PSP.",
+      "author": "LiEnby",
+      "version": "v.1.0",
+      "title_id": "STRE00000",
+      "description": "Port of the GameMaker 8 example game Street Racing for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/30d4c511ee664c1dbb58d07638f45f136800fe2489d43e6249d730f6561adde9.png",
+      "screenshots": [],
+      "release_url": "https://github.com/LiEnby/StreetRacingPSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "street.racing-signed.zip",
+          "url": "https://github.com/LiEnby/StreetRacingPSP/releases/download/v1.0/street.racing-signed.zip",
+          "size": 3714311,
+          "md5": "9e1a0a785bce71d9a244f2ad33dd1b23"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:3694",
@@ -155624,6 +157218,37 @@
       "updated_at": "2016-08-23"
     },
     {
+      "id": "universal-db:Faveing2/th06-3ds-native",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "th06-3ds-native",
+      "summary": "A port of GensokyouClub's 東方紅魔郷　～ the Embodiment of Scarlet Devil (1.02h) (Touhou 6) decompilation to the Nintendo 3ds using Citro3d",
+      "author": "Faveing2",
+      "version": "v1.1.0",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/Faveing2/th06-3ds-native/main/icon.png",
+      "release_url": "https://github.com/Faveing2/th06-3ds-native/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "th06-3ds-native.3dsx",
+          "url": "https://github.com/Faveing2/th06-3ds-native/releases/download/v1.1.0/th06-3ds-native.3dsx",
+          "size": 2896492
+        },
+        {
+          "format": "cia",
+          "filename": "th06-3ds-native.cia",
+          "url": "https://github.com/Faveing2/th06-3ds-native/releases/download/v1.1.0/th06-3ds-native.cia",
+          "size": 2415104
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-11-20T07:54:30Z"
+    },
+    {
       "id": "vitadbtoo-psp:2846",
       "platforms": [
         "psp"
@@ -159442,6 +161067,37 @@
       "updated_at": "2008-08-02"
     },
     {
+      "id": "vitadbtoo-psp:5065",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Title Sorter",
+      "summary": "Sorts homebrew on the PSP.",
+      "author": "PsArchive",
+      "version": "v.1.0.0",
+      "title_id": "UCJS10041",
+      "description": "Sorts homebrew on the PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/1f1071b1e48ae32cafb685251833bab93dbbdbbc84a2dac31d4c0e745fc0c95e.png",
+      "screenshots": [],
+      "release_url": "https://github.com/PsArchive/Title_Sorter/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "TITLESORTER.zip",
+          "url": "https://github.com/PsArchive/Title_Sorter/releases/download/v1.0.0/TITLESORTER.zip",
+          "size": 432533,
+          "md5": "3502927b490e1cba50297e6b759b859c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "universal-db:LuMariGames/TJAP_3DS",
       "platforms": [
         "3ds"
@@ -159808,6 +161464,37 @@
       "updated_at": "2007-05-11"
     },
     {
+      "id": "vitadbtoo-psp:5033",
+      "platforms": [
+        "psp"
+      ],
+      "name": "ToadGBA",
+      "summary": "Modernised TempGBA Game Boy Advance emulator for PSP.",
+      "author": "AlfonsoVM",
+      "version": "v.1.0.43",
+      "title_id": "UCJS10041",
+      "description": "Modernised TempGBA Game Boy Advance emulator for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/067e67eda7f57e4c948825779284ccd87352c4c1754868e4e335623658c79247.png",
+      "screenshots": [],
+      "release_url": "https://github.com/AlfonsoVM/ToadGBA/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "toadgba-v1.0.43.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/toadgba-v1.0.43.zip",
+          "size": 5606067,
+          "md5": "7d52dfbbe4d0173946e2ebf960168dfb"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3998",
       "platforms": [
         "psp"
@@ -160157,6 +161844,37 @@
       "updated_at": "2012-09-19T03:33:33+00:00"
     },
     {
+      "id": "vitadbtoo-psp:5013",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Tony Hawk Remastered Controls",
+      "summary": "Dual analog controls for Tony Hawk games on Adrenaline.",
+      "author": "TheOfficialFloW",
+      "version": "v.1.0",
+      "title_id": null,
+      "description": "Dual analog controls for Tony Hawk games on Adrenaline.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/TheOfficialFloW/RemasteredControls/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "tonyhawk_remastered.prx",
+          "url": "https://github.com/TheOfficialFloW/RemasteredControls/releases/download/TonyHawkRemastered/tonyhawk_remastered.prx",
+          "size": 2898,
+          "md5": "23e652961a94b39a4a2e17c31810cfc8"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1721",
       "platforms": [
         "psvita"
@@ -160492,6 +162210,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2026-02-06"
+    },
+    {
+      "id": "vitadbtoo-psp:5018",
+      "platforms": [
+        "psp"
+      ],
+      "name": "TOTP4PSP",
+      "summary": "Two-factor authentication code generator for PSP.",
+      "author": "arcyleung",
+      "version": "v.0.0.1",
+      "title_id": "UCJS10041",
+      "description": "Two-factor authentication code generator for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/arcyleung/TOTP4PSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "totp4psp.zip",
+          "url": "https://github.com/arcyleung/TOTP4PSP/releases/download/v0.0.1/totp4psp.zip",
+          "size": 202252,
+          "md5": "cb7fb5ce15963c3a90cf8cc857bf8508"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "universal-db:LuMariGames/Touch-Keys",
@@ -166606,6 +168355,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2011-09-08"
+    },
+    {
+      "id": "vitadbtoo-psp:5030",
+      "platforms": [
+        "psp"
+      ],
+      "name": "UTUBBU",
+      "summary": "Unofficial YouTube client for PSP.",
+      "author": "XayroWhite",
+      "version": "v.1.0",
+      "title_id": "UCJS10041",
+      "description": "Unofficial YouTube client for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d5e5c3dafce1a4be296e92f10b2b42df432e0a617b2dca0ca48f618da2ffe47c.png",
+      "screenshots": [],
+      "release_url": "https://github.com/XayroWhite/UTUBBU/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "utubbu-UTUBBU.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/utubbu-UTUBBU.zip",
+          "size": 952529,
+          "md5": "0109591fe5a390abb582736f87d160c7"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:1843",
@@ -173775,6 +175555,37 @@
       "updated_at": "2013-12-17"
     },
     {
+      "id": "vitadbtoo-psp:5075",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Viz Tape",
+      "summary": "Animated cassette visualizer for the PSP music player.",
+      "author": "beckerd",
+      "version": "v.1.3",
+      "title_id": null,
+      "description": "Animated cassette visualizer for the PSP music player.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/beckerd/psp_viz_tape/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "viz_tape-v1.3.zip",
+          "url": "https://github.com/beckerd/psp_viz_tape/releases/download/v1.3/viz_tape-v1.3.zip",
+          "size": 45529,
+          "md5": "b6a99d6c3d6fe01863a8cc415ba05531"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4144",
       "platforms": [
         "psp"
@@ -174114,6 +175925,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2015-10-19"
+    },
+    {
+      "id": "vitadbtoo-psp:5037",
+      "platforms": [
+        "psp"
+      ],
+      "name": "vnpsp-RE",
+      "summary": "VNDS visual novel interpreter for PSP.",
+      "author": "Hermes-Digital234",
+      "version": "v.0.0.3",
+      "title_id": "UCJS10041",
+      "description": "VNDS visual novel interpreter for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Hermes-Digital234/vnpsp-RE/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "vnpsp-re-0.0.3.zip",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/vnpsp-re-0.0.3.zip",
+          "size": 1541683,
+          "md5": "8b06f8c938c84e244403bc0ec5aa20b0"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:304",
@@ -174550,6 +176392,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2006-06-02"
+    },
+    {
+      "id": "vitadbtoo-psp:5027",
+      "platforms": [
+        "psp"
+      ],
+      "name": "vshbgmX",
+      "summary": "Plays your own MP3 files as XMB background music.",
+      "author": "farnsworth3010",
+      "version": "v.1.0",
+      "title_id": null,
+      "description": "Plays your own MP3 files as XMB background music.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/farnsworth3010/vshbgmX/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "vshbgmX.prx",
+          "url": "https://github.com/farnsworth3010/vshbgmX/releases/download/1.0/vshbgmX.prx",
+          "size": 12434,
+          "md5": "ca743618b7cd5260095de78a75fe457b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:4481",
@@ -175713,6 +177586,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2012-09-24"
+    },
+    {
+      "id": "vitadbtoo-psp:5026",
+      "platforms": [
+        "psp"
+      ],
+      "name": "wavezbg",
+      "summary": "Custom XMB waves for PSP.",
+      "author": "koutsie",
+      "version": "v.1.0",
+      "title_id": null,
+      "description": "Custom XMB waves for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/koutsie/wavezbg/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "wavezbg.prx",
+          "url": "https://github.com/koutsie/wavezbg/releases/download/MyEYES/wavezbg.prx",
+          "size": 17498,
+          "md5": "04810411baead4521c377b7bf7d3dcbd"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:4975",
@@ -179059,6 +180963,37 @@
       "updated_at": "2019-06-22"
     },
     {
+      "id": "vitadbtoo-psp:5079",
+      "platforms": [
+        "psp"
+      ],
+      "name": "WiliMini",
+      "summary": "Bilibili client for PSP.",
+      "author": "wilimini",
+      "version": "v.2.13",
+      "title_id": "UCJS10041",
+      "description": "Bilibili client for PSP.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0801c0db4281682fa6e7dfc5eadf86d878485e01a383342f7e0e05cb8df450f4.png",
+      "screenshots": [],
+      "release_url": "https://github.com/wilimini/WiliMini/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "WiliMini-v2.13.zip",
+          "url": "https://github.com/wilimini/WiliMini/releases/download/v2.13/WiliMini-v2.13.zip",
+          "size": 13787848,
+          "md5": "cf231d2a333d228333ef6515e9b3e05d"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "hbas-switch:wiliwili",
       "platforms": [
         "switch"
@@ -179805,6 +181740,37 @@
       "updated_at": "2009-05-10"
     },
     {
+      "id": "vitadbtoo-psp:5046",
+      "platforms": [
+        "psp"
+      ],
+      "name": "Wolfenstein RPG PSP",
+      "summary": "Port of Wolfenstein RPG for PSP, based on WolfensteinRPG-RE.",
+      "author": "dadcapgamer",
+      "version": "v.0.1.0",
+      "title_id": "UCJS10041",
+      "description": "Port of Wolfenstein RPG for PSP, based on WolfensteinRPG-RE.",
+      "requirements": "- Game Data Files: your own copy of Wolfenstein RPG",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/fbefd217948e54cd123026214d2e190eb7f7218a824420a3b69e3fdb4525013c.png",
+      "screenshots": [],
+      "release_url": "https://github.com/dadcapgamer/WolfensteinRPG4PSP/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "WolfensteinRPG4PSP-v0.1.0-alpha-PSP.zip",
+          "url": "https://github.com/dadcapgamer/WolfensteinRPG4PSP/releases/download/psp-v0.1.0/WolfensteinRPG4PSP-v0.1.0-alpha-PSP.zip",
+          "size": 1278733,
+          "md5": "4db9be7e466e86f41faa4a53df9602e0"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1268",
       "platforms": [
         "psvita"
@@ -180424,6 +182390,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-01-01"
+    },
+    {
+      "id": "vitadbtoo-psp:5048",
+      "platforms": [
+        "psp"
+      ],
+      "name": "WoWee PSP",
+      "summary": "Port of the WoWee World of Warcraft engine experiment for PSP.",
+      "author": "SandstoneDev",
+      "version": "v.0.2.0",
+      "title_id": "UCJS10041",
+      "description": "Port of the WoWee World of Warcraft engine experiment for PSP.",
+      "requirements": "- Game Data Files: your own World of Warcraft client data",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/SandstoneDev/WoWee-psp-port/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "WoWeePSP-0.2.0.zip",
+          "url": "https://github.com/SandstoneDev/WoWee-psp-port/releases/download/v0.2.0/WoWeePSP-0.2.0.zip",
+          "size": 3850897,
+          "md5": "567333c74fc821552ee4f8e06e52b7f6"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:1747",
@@ -181499,6 +183496,37 @@
       "updated_at": "2008-05-18"
     },
     {
+      "id": "vitadbtoo-psp:5081",
+      "platforms": [
+        "psp"
+      ],
+      "name": "XLT",
+      "summary": "Launcher for ARK custom firmware.",
+      "author": "boubounokefalos",
+      "version": "v.1.3.1",
+      "title_id": "UCJS10041",
+      "description": "Launcher for ARK custom firmware.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a41021338fd5c3b9a3e72526a76ba96097f3c4d4cab0ce85ba037c3c15140af6.png",
+      "screenshots": [],
+      "release_url": "https://github.com/boubounokefalos/xlt/releases",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "XLT-1.3.1.zip",
+          "url": "https://github.com/boubounokefalos/xlt/releases/download/v1.3.1/XLT-1.3.1.zip",
+          "size": 2256094,
+          "md5": "a11447420856856af9f55db69f2ff56f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4458",
       "platforms": [
         "psp"
@@ -181652,6 +183680,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-01-01"
+    },
+    {
+      "id": "vitadbtoo-psp:5031",
+      "platforms": [
+        "psp"
+      ],
+      "name": "XMB Game Cache",
+      "summary": "Faster XMB game menu for large memory cards on ARK-4.",
+      "author": "beckerd",
+      "version": "v.1.8",
+      "title_id": null,
+      "description": "Faster XMB game menu for large memory cards on ARK-4.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/69c8d9a67034bd7c494bf68a82d26dfe065782e0ec9b12dced99e314cd62d851.png",
+      "screenshots": [],
+      "release_url": "https://github.com/beckerd/xmb_gamecache/releases",
+      "downloads": [
+        {
+          "format": "prx",
+          "filename": "xmb_gamecache.prx",
+          "url": "https://github.com/beckerd/xmb_gamecache/releases/download/v1.8/xmb_gamecache.prx",
+          "size": 45306,
+          "md5": "9470e14de147563c941ace019eec43ef"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:4147",
@@ -185777,5 +187836,18 @@
       "homepage": "https://github.com/Scene-Collective/ps4-hen"
     }
   ],
-  "errors": []
+  "errors": [
+    {
+      "source": "ps4-goldhen",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "source": "ps4-store",
+      "error": "HTTP Error 403: rate limit exceeded"
+    },
+    {
+      "source": "ps4-hen",
+      "error": "HTTP Error 403: rate limit exceeded"
+    }
+  ]
 }
