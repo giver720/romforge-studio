@@ -4443,6 +4443,37 @@
       "updated_at": "2008-03-20"
     },
     {
+      "id": "vitadbtoo-vita:4985",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Accessory Mount Plugin",
+      "summary": "Settings plugin and installer for PSVSD accessory port storage.",
+      "author": "RT-Online",
+      "version": "v.0.1.6",
+      "title_id": "RTPSV0002",
+      "description": "Settings plugin and installer for PSVSD accessory port storage.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ba6131b37e4db0e3d36c66c0b1e97f971428bdf38b09bc54278740fec44e81c7.png",
+      "screenshots": [],
+      "release_url": "https://github.com/RT-Online/PSVSD_Accessory-Port-Plugin/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Accessory_Mount_Plugin_0.1.6.vpk",
+          "url": "https://github.com/RT-Online/PSVSD_Accessory-Port-Plugin/releases/download/0.1.6/Accessory_Mount_Plugin_0.1.6.vpk",
+          "size": 182032,
+          "md5": "44301a04ef837a5aab8d089a47d6781c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:28",
       "platforms": [
         "psvita"
@@ -4694,6 +4725,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2011-01-01"
+    },
+    {
+      "id": "vitadbtoo-vita:4976",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Activity Log",
+      "summary": "Shows how long you played each game on PSVita.",
+      "author": "Bioskopie",
+      "version": "v.1.00",
+      "title_id": "ACTLOG3DS",
+      "description": "Shows how long you played each game on PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c5a625e332c1e95f8c9074ba18420426470df0e4946d1b31542d738e19ae712d.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Bioskopie/VitaActivityLog/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VitaActivityLog.vpk",
+          "url": "https://github.com/Bioskopie/VitaActivityLog/releases/download/release/VitaActivityLog.vpk",
+          "size": 378181,
+          "md5": "fcb9e5b97876ba10878004aa1e7d2168"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2767",
@@ -10019,6 +10081,37 @@
       "updated_at": "2020-01-01"
     },
     {
+      "id": "vitadbtoo-vita:4980",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Assassin's Creed Pirates",
+      "summary": "Port of Assassin's Creed Pirates (Android 2.9.1) for PSVita.",
+      "author": "Cynostial",
+      "version": "v.0.81-beta",
+      "title_id": "ACPR00001",
+      "description": "Port of Assassin's Creed Pirates (Android 2.9.1) for PSVita.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: your own APK and OBB of Assassin's Creed Pirates 2.9.1 (Android)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a9edb617acbe4bdf29ebbc88a2d853dc0e33c8a1b6cccd5f2ff1ed8c641805fd.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Cynostial/ac-pirates-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "assassin-s-creed-pirates-v0.81beta.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/assassin-s-creed-pirates-v0.81beta.vpk",
+          "size": 5920926,
+          "md5": "fd4909f3aa8e864e000643ad0c8cb17e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:2582",
       "platforms": [
         "psp"
@@ -11103,6 +11196,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2010-10-15"
+    },
+    {
+      "id": "vitadbtoo-vita:4929",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Autoboot Config",
+      "summary": "Configurator for the AutoBoot plugin.",
+      "author": "DavisDev",
+      "version": "v.1.20",
+      "title_id": "AUTOBOOTC",
+      "description": "Configurator for the AutoBoot plugin.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/00a0dab1a5ce0cb3dab2759582280fe96e11398d4a27c5756b02709463239eb1.png",
+      "screenshots": [],
+      "release_url": "https://github.com/DavisDev/AutobootConf/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "AutobootConf.vpk",
+          "url": "https://github.com/DavisDev/AutobootConf/releases/download/1.20/AutobootConf.vpk",
+          "size": 2649539,
+          "md5": "8c913af001ae593222d85c2ec04f933b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2744",
@@ -14629,6 +14753,37 @@
       "updated_at": "2026-08-30"
     },
     {
+      "id": "vitadbtoo-vita:4938",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "BGFTP",
+      "summary": "FTP server for PSVita that runs in the background.",
+      "author": "GrapheneCt",
+      "version": "v.3.24",
+      "title_id": "GRVA00001",
+      "description": "FTP server for PSVita that runs in the background.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0c4db597a0a90707f30896ec4e4429588f5cc41fe14ffb300a6ec8035d58f1a5.png",
+      "screenshots": [],
+      "release_url": "https://github.com/GrapheneCt/BGFTP/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "BGFTP.vpk",
+          "url": "https://github.com/GrapheneCt/BGFTP/releases/download/v3.24/BGFTP.vpk",
+          "size": 32488,
+          "md5": "5a69f6230be06cd2bd73277c999cda73"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3069",
       "platforms": [
         "psp"
@@ -15291,6 +15446,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2011-03-27"
+    },
+    {
+      "id": "vitadbtoo-vita:4931",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Blackout",
+      "summary": "Lights Out puzzle game for PSVita.",
+      "author": "dragaron",
+      "version": "v.1.01",
+      "title_id": "BLACKOUT0",
+      "description": "Lights Out puzzle game for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c6c51baacc4ace12114dcfd5b3d780356b4dfd24cd8bf173a49be684c8c520a7.png",
+      "screenshots": [],
+      "release_url": "https://github.com/dragaron/Blackout/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Blackout.vpk",
+          "url": "https://github.com/dragaron/Blackout/releases/download/v1.01/Blackout.vpk",
+          "size": 2677284,
+          "md5": "d46c3be623bcbc2a7e4f06bdfbf1904f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "ps5-payloads-atlas:blackwire.elf",
@@ -31813,6 +31999,37 @@
       "updated_at": "2019-10-23"
     },
     {
+      "id": "vitadbtoo-vita:4940",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "DaedalusX64 Vita",
+      "summary": "Nintendo 64 emulator for PSVita, a port of DaedalusX64 through vitaGL.",
+      "author": "Rinnegatamante",
+      "version": "Nightly 2026-11-24",
+      "title_id": "DEDALOX64",
+      "description": "Nintendo 64 emulator for PSVita, a port of DaedalusX64 through vitaGL.",
+      "requirements": "- libshacccg.suprx in ur0:data",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/60c60207d3042086a19c85b629f3d15ff3c94afa50584e54887512477e5cd1dd.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "DaedalusX64.vpk",
+          "url": "https://github.com/Rinnegatamante/DaedalusX64-vitaGL/releases/download/Nightly/DaedalusX64.vpk",
+          "size": 3152182,
+          "md5": "ae06dd38ba00cdacb3902795c0a910c6"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "universal-db:masterfeizz/daedalusx64-3DS",
       "platforms": [
         "3ds"
@@ -32275,6 +32492,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-06-07"
+    },
+    {
+      "id": "vitadbtoo-vita:4984",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Dark Souls (Ds1Vita)",
+      "summary": "Port of Dark Souls for PSVita using the Remastered assets.",
+      "author": "Nep-Darksouls",
+      "version": "v.0.89",
+      "title_id": "DSVV00001",
+      "description": "Port of Dark Souls for PSVita using the Remastered assets.",
+      "requirements": "- Game Data Files: your own copy of Dark Souls: Remastered (Steam)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/bc81d86a9301919bf1b9e5243621889243784aa7e5e02bd966c5c8d255490bce.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Nep-Darksouls/Ds1Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ds1vita-r89.vpk",
+          "url": "https://github.com/Nep-Darksouls/Ds1Vita/releases/download/v0.89/ds1vita-r89.vpk",
+          "size": 1605276,
+          "md5": "10bb7e025a3a6282be8b2e6390897121"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:4367",
@@ -35838,6 +36086,37 @@
       "updated_at": "2005-11-13"
     },
     {
+      "id": "vitadbtoo-vita:4969",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Dodge the Creeps",
+      "summary": "Port of the Godot demo game Dodge the Creeps for PSVita.",
+      "author": "WolffsRoom",
+      "version": "v.0.1.1",
+      "title_id": "GDDC40001",
+      "description": "Port of the Godot demo game Dodge the Creeps for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/4355b50ec29aa15e2f3da80157073398349d14bf352c04699651a4745c3e7dcc.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WolffsRoom/DodgeTheCreeps-PSVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "dodge_the_creeps_vita.vpk",
+          "url": "https://github.com/WolffsRoom/DodgeTheCreeps-PSVita/releases/download/v0.1.1/dodge_the_creeps_vita.vpk",
+          "size": 32332444,
+          "md5": "33ed07dfe74dcb1c9cb6dfd330ab2366"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3012",
       "platforms": [
         "psp"
@@ -38230,6 +38509,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2008-06-23T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-vita:4970",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "DuckTales",
+      "summary": "Port of DuckTales: Remastered (Android) for PSVita.",
+      "author": "technicaljicama",
+      "version": "v.1",
+      "title_id": "DUK000000",
+      "description": "Port of DuckTales: Remastered (Android) for PSVita.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: your own copy of DuckTales: Remastered (Android)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/18746b487153dc1ca3d728ce57b841b6e8faeca65a0900aa46864f73d07642c8.png",
+      "screenshots": [],
+      "release_url": "https://github.com/technicaljicama/duck-psv/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "duck.vpk",
+          "url": "https://github.com/technicaljicama/duck-psv/releases/download/pre1/duck.vpk",
+          "size": 2074505,
+          "md5": "c598c4b401ed01bdedf2432b15ab6ebe"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2980",
@@ -40813,6 +41123,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-02-15"
+    },
+    {
+      "id": "vitadbtoo-vita:4941",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Eleven Music Player",
+      "summary": "Music player for PSVita.",
+      "author": "GrapheneCt",
+      "version": "v.7.10",
+      "title_id": "GRVA00008",
+      "description": "Music player for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e19f4f4fb5c1ea91cf9c11b5d69deeeca9dcdff3224e53e826d5277c0ccaf4b3.png",
+      "screenshots": [],
+      "release_url": "https://github.com/GrapheneCt/ElevenMPV-A/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ElevenMPV-A.vpk",
+          "url": "https://github.com/GrapheneCt/ElevenMPV-A/releases/download/v7.10/ElevenMPV-A.vpk",
+          "size": 1730875,
+          "md5": "b5214a7f719892ba5316a4f76f3dcde3"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:447",
@@ -44337,6 +44678,37 @@
       "updated_at": "2021-05-18T05:59:19Z"
     },
     {
+      "id": "vitadbtoo-vita:4961",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "FBNeo Vita",
+      "summary": "Port of the FinalBurn Neo arcade emulator for PSVita.",
+      "author": "cysin",
+      "version": "v.20260322",
+      "title_id": "FBNV00001",
+      "description": "Port of the FinalBurn Neo arcade emulator for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/6ff8a4f4f7b7c5992f1bceaee7af00bc736942fa8d4e3fa33be6777547f7436c.png",
+      "screenshots": [],
+      "release_url": "https://github.com/cysin/fbneo-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "fbneo-vita.vpk",
+          "url": "https://github.com/cysin/fbneo-vita/releases/download/20260322/fbneo-vita.vpk",
+          "size": 15624211,
+          "md5": "79cc5e56cd01376505e2092a82d0aee7"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4410",
       "platforms": [
         "psp"
@@ -45124,6 +45496,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-08-30"
+    },
+    {
+      "id": "vitadbtoo-vita:4987",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "File Manager (WolffsRoom)",
+      "summary": "File manager for PSVita.",
+      "author": "WolffsRoom",
+      "version": "v.0.30-beta",
+      "title_id": "FILEMGR01",
+      "description": "File manager for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e83fe256033be0cd81528d0e446c9ca115de640438c9965fff2f58c2c7b78591.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WolffsRoom/FileManager/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "FileManager-v0.30-beta.vpk",
+          "url": "https://github.com/WolffsRoom/FileManager/releases/download/v0.30-beta/FileManager-v0.30-beta.vpk",
+          "size": 1876654,
+          "md5": "dbb8810057179fdefc4a226a570a9539"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:943",
@@ -46063,6 +46466,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2026-05-02"
+    },
+    {
+      "id": "vitadbtoo-vita:4928",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Fix User Permissions",
+      "summary": "Fixes broken user file permissions on the memory card.",
+      "author": "endrift",
+      "version": "v.1.0",
+      "title_id": "VFUP00001",
+      "description": "Fixes broken user file permissions on the memory card.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/18746b487153dc1ca3d728ce57b841b6e8faeca65a0900aa46864f73d07642c8.png",
+      "screenshots": [],
+      "release_url": "https://github.com/endrift/vita-fix-permissions/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vita-fix-perms.vpk",
+          "url": "https://github.com/endrift/vita-fix-permissions/releases/download/v1.0/vita-fix-perms.vpk",
+          "size": 37112,
+          "md5": "4850ecf8eb2601a18cb9f37528ad098f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "hbas-switch:FizzBuzz_NX",
@@ -49487,6 +49921,37 @@
       "updated_at": "2026-10-21T20:27:11+08:00"
     },
     {
+      "id": "vitadbtoo-vita:4930",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "FTPzilla Vita",
+      "summary": "FTP client for PSVita.",
+      "author": "DavisDev",
+      "version": "v.0.90",
+      "title_id": "FTPSZILLA",
+      "description": "FTP client for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/eeef48c47fe6c5cfa59af3b6149b23fbaec793f82b5df0aa5995fd97572d760c.png",
+      "screenshots": [],
+      "release_url": "https://github.com/DavisDev/FtpzillaVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "FtpzillaVita.vpk",
+          "url": "https://github.com/DavisDev/FtpzillaVita/releases/download/0.90/FtpzillaVita.vpk",
+          "size": 2117248,
+          "md5": "a8f34bc7a38ed2d0c893d6c95fcdfe44"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3774",
       "platforms": [
         "psp"
@@ -49704,6 +50169,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-01-08"
+    },
+    {
+      "id": "vitadbtoo-vita:4957",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Funky n Frank",
+      "summary": "Twin-stick shooter for PSVita.",
+      "author": "SoulTieGames",
+      "version": "v..00",
+      "title_id": "FUNKNFRAN",
+      "description": "Twin-stick shooter for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/04dc5a1ab2e44bb6aeee7b0bdbceb9bfe04a73eed21c06ec4a0c95860c660e05.png",
+      "screenshots": [],
+      "release_url": "https://github.com/SoulTieGames/FunkynFrank-Vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "FunkynFrank_Vita1.0.VPK",
+          "url": "https://github.com/SoulTieGames/FunkynFrank-Vita/releases/download/psVita/FunkynFrank_Vita1.0.VPK",
+          "size": 39111289,
+          "md5": "6ceb8b34ab6bd78aa6a3162e589669b6"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:1044",
@@ -52756,6 +53252,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2022-03-21"
+    },
+    {
+      "id": "vitadbtoo-vita:4979",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Gish",
+      "summary": "Port of Gish for PSVita.",
+      "author": "AGTS10k",
+      "version": "v.1.6-revibed",
+      "title_id": "GISH00001",
+      "description": "Port of Gish for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b70cc6432184f9845735478632c0b49de4954d981f0fe603f4a150d80b113dfd.png",
+      "screenshots": [],
+      "release_url": "https://github.com/AGTS10k/Gish-vita-revibed/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Gish.vpk",
+          "url": "https://github.com/AGTS10k/Gish-vita-revibed/releases/download/vita-1.6-revibed/Gish.vpk",
+          "size": 3802332,
+          "md5": "0219bfa259e21ead7bd8534b5280bcf1"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "open-shop-channel-wii:gl-117",
@@ -59022,6 +59549,37 @@
       "updated_at": "2026-09-26"
     },
     {
+      "id": "vitadbtoo-vita:4942",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "HEXFlow Launcher",
+      "summary": "3D cover flow launcher for PSVita.",
+      "author": "VitaHEX-Games",
+      "version": "v.0.5",
+      "title_id": "HXFL00001",
+      "description": "3D cover flow launcher for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/86950add7ba6601eec2e834eea64835138b1274d73c1390071c1d7b89af35c88.png",
+      "screenshots": [],
+      "release_url": "https://github.com/VitaHEX-Games/HexFlow-Launcher/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "HEXFlow.Launcher_0.5.VitaHEX.Games.vpk",
+          "url": "https://github.com/VitaHEX-Games/HexFlow-Launcher/releases/download/v0.5/HEXFlow.Launcher_0.5.VitaHEX.Games.vpk",
+          "size": 5261138,
+          "md5": "3d40396d097cc8669d288d9dbd91598a"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:587",
       "platforms": [
         "psvita"
@@ -65103,7 +65661,7 @@
       "name": "Jazz² Resurrection",
       "summary": "Open-source reimplementation of Jazz Jackrabbit 2 for PSVITA.",
       "author": "deathkiller",
-      "version": "Nightly 2026-11-22 (09e2a17)",
+      "version": "Nightly 2026-11-23 (99ece0e)",
       "title_id": "JAZZ20000",
       "description": "Open-source reimplementation of Jazz Jackrabbit 2 for PSVITA.",
       "requirements": "- Game Data Files: your own copy of Jazz Jackrabbit 2",
@@ -65116,8 +65674,8 @@
           "format": "vpk",
           "filename": "jazz2-resurrection.vpk",
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/nightly/jazz2-resurrection.vpk",
-          "size": 9043478,
-          "md5": "516727b31445d6b6c0f661c7972111cb"
+          "size": 9043343,
+          "md5": "0b03a5280e0d8924ec164bd4fb5106e1"
         }
       ],
       "popularity": 0,
@@ -69721,6 +70279,37 @@
       "updated_at": "2017-12-23"
     },
     {
+      "id": "vitadbtoo-vita:4966",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Lagi",
+      "summary": "Native runtime for Panzer Dragoon Saga on PSVita.",
+      "author": "noradninja",
+      "version": "v.0.3.0alpha",
+      "title_id": "LAGI00001",
+      "description": "Native runtime for Panzer Dragoon Saga on PSVita.",
+      "requirements": "- Game Data Files: your own copy of Panzer Dragoon Saga (Saturn)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/78015c900a570a180fcb93c1c197f60d1ac1b27d5b22b69dfca7e7b169525323.png",
+      "screenshots": [],
+      "release_url": "https://github.com/noradninja/Lagi/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Lagi.vpk",
+          "url": "https://github.com/noradninja/Lagi/releases/download/v0.3.0alpha/Lagi.vpk",
+          "size": 1243075,
+          "md5": "f30e2c23ede05e1cf9afe36301c1550b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "hbas-switch:laines",
       "platforms": [
         "switch"
@@ -69905,6 +70494,42 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2023-02-07"
+    },
+    {
+      "id": "vitadbtoo-vita:4978",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Lantern Crossing",
+      "summary": "HD-2D Godot 4 tech demo for PSVita.",
+      "author": "jeeve-javari",
+      "version": "v.0.2.0-beta",
+      "title_id": "LNTCR0004",
+      "description": "HD-2D Godot 4 tech demo for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/dd86501bf16766be7d8f5bf12c60b10845f063b691a4963ffe0ade2d79d38a3d.png",
+      "screenshots": [],
+      "release_url": "https://github.com/jeeve-javari/lantern-crossing-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "LanternCrossing-Vita-Beta.vpk",
+          "url": "https://github.com/jeeve-javari/lantern-crossing-vita/releases/download/v0.2.0-beta/LanternCrossing-Vita-Beta.vpk",
+          "size": 22987778,
+          "md5": "b986df9ed7d1b1fd75af5f8bbb50a4a2"
+        },
+        {
+          "format": "data",
+          "filename": "lanterncrossing4-data.zip",
+          "url": "https://github.com/jeeve-javari/lantern-crossing-vita/releases/download/v0.2.0-beta/lanterncrossing4-data.zip"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:1335",
@@ -71142,7 +71767,7 @@
           "format": "3dsx",
           "filename": "isle.3dsx",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.3dsx",
-          "size": 3057340
+          "size": 3057356
         },
         {
           "format": "cia",
@@ -71154,7 +71779,7 @@
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-23T05:38:19Z"
+      "updated_at": "2026-11-23T23:43:16Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -71177,8 +71802,8 @@
           "format": "vpk",
           "filename": "isle.vpk",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.vpk",
-          "size": 7200335,
-          "md5": "a66ec9bc99244cf255626b4d0c25ea0d"
+          "size": 7199931,
+          "md5": "5ada1e44b2df97cf4ca305a05ac5f11b"
         }
       ],
       "popularity": 0,
@@ -72944,6 +73569,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2022-05-11"
+    },
+    {
+      "id": "vitadbtoo-vita:4936",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "LOLIcon Switch",
+      "summary": "Enables or disables the LOLIcon plugin and restarts the PSVita.",
+      "author": "MERLev",
+      "version": "v.0.01",
+      "title_id": "LVSW00001",
+      "description": "Enables or disables the LOLIcon plugin and restarts the PSVita.",
+      "requirements": "- LOLIcon",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/35dc8df29dd847c7b52d93af68da050b28a14fd3181770f2bd376e6042fde466.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MERLev/LOLIconSwitch/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vita-lolicon-switch.vpk",
+          "url": "https://github.com/MERLev/LOLIconSwitch/releases/download/0.01/vita-lolicon-switch.vpk",
+          "size": 25790,
+          "md5": "8fe842cdf92f12211c4b9e76c404d8d9"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2327",
@@ -88412,6 +89068,37 @@
       "updated_at": "2017-09-03T00:00:00+00:00"
     },
     {
+      "id": "vitadbtoo-vita:4953",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "NetStream",
+      "summary": "Video streaming client for PSVita.",
+      "author": "GrapheneCt",
+      "version": "v.3.35",
+      "title_id": "GRVA00024",
+      "description": "Video streaming client for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5e9d2923c0fd01310605df5d0e356152912ac8cbf6afe8bee60be6ec1b6610ee.png",
+      "screenshots": [],
+      "release_url": "https://github.com/GrapheneCt/NetStream/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "NetStream.vpk",
+          "url": "https://github.com/GrapheneCt/NetStream/releases/download/v3.35/NetStream.vpk",
+          "size": 4279238,
+          "md5": "004ebfcf7f917c46a778472d6f87cf4c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "open-shop-channel-wii:netsurf",
       "platforms": [
         "wii"
@@ -89581,6 +90268,42 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-09-26"
+    },
+    {
+      "id": "vitadbtoo-vita:4973",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "NFS Most Wanted (germanalvarez15)",
+      "summary": "Port of Need for Speed: Most Wanted (PS2) for PSVita.",
+      "author": "germanalvarez15",
+      "version": "v.1.6.2",
+      "title_id": "NFSMWVITA",
+      "description": "Port of Need for Speed: Most Wanted (PS2) for PSVita.",
+      "requirements": "- Game Data Files: your own copy of Need for Speed: Most Wanted (PS2)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9c7fe9f650afd7a64fdbce554b5747c51887480ddef16cac31045f4844d5cce6.png",
+      "screenshots": [],
+      "release_url": "https://github.com/germanalvarez15/nfsmw-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "nfsmw.vpk",
+          "url": "https://github.com/germanalvarez15/nfsmw-vita/releases/download/1.6.2/nfsmw.vpk",
+          "size": 3274720,
+          "md5": "11419012e51015b244d74cdf0cee026e"
+        },
+        {
+          "format": "data",
+          "filename": "assets.zip",
+          "url": "https://github.com/germanalvarez15/nfsmw-vita/releases/download/1.6.2/assets.zip"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:4819",
@@ -95263,6 +95986,68 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-17"
+    },
+    {
+      "id": "vitadbtoo-vita:4974",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "OpenEnroth",
+      "summary": "Port of OpenEnroth, an open engine for Might and Magic 6, 7 and 8, for PSVita.",
+      "author": "gtrias",
+      "version": "v.0.1",
+      "title_id": "OPEN00001",
+      "description": "Port of OpenEnroth, an open engine for Might and Magic 6, 7 and 8, for PSVita.",
+      "requirements": "- Game Data Files: your own copy of Might and Magic VI, VII or VIII",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/af2954fd8f67a4166ba14d9a575f7f86c7433937e0cc0f36b43f4cbfe26bf582.png",
+      "screenshots": [],
+      "release_url": "https://github.com/gtrias/OpenEnroth/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "OpenEnroth.vpk",
+          "url": "https://github.com/gtrias/OpenEnroth/releases/download/vita-v0.1/OpenEnroth.vpk",
+          "size": 8091033,
+          "md5": "29554878576b55f3ce12c64cba80a066"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
+      "id": "vitadbtoo-vita:4943",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "OpenFodder",
+      "summary": "Port of Open Fodder, an open source engine for Cannon Fodder, for PSVita.",
+      "author": "isage",
+      "version": "v.1.6.1",
+      "title_id": "FDDR00001",
+      "description": "Port of Open Fodder, an open source engine for Cannon Fodder, for PSVita.",
+      "requirements": "- Game Data Files: your own copy of Cannon Fodder",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/2ed62f1093fe7fd2de44fb3158c33ab375001d770fe5dfe36427841ac43febee.png",
+      "screenshots": [],
+      "release_url": "https://github.com/isage/openfodder/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "openfodder-1.6.1.vpk",
+          "url": "https://github.com/isage/openfodder/releases/download/1.6.1/openfodder-1.6.1.vpk",
+          "size": 2330946,
+          "md5": "062a96f4f9480be78b4a6812eb4a1462"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:754",
@@ -108124,7 +108909,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 19643,
+      "popularity": 19696,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -108151,7 +108936,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3822,
+      "popularity": 3827,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -108178,7 +108963,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 17040,
+      "popularity": 17158,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -108205,7 +108990,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7601,
+      "popularity": 7614,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -108232,7 +109017,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 96176,
+      "popularity": 96796,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -108259,7 +109044,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 417,
+      "popularity": 424,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -109129,30 +109914,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.25.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.26.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.25",
+      "version": "v12.6.26",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.25.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.25/ps5upload-12.6.25.elf",
-          "sha256": "ebf636206c7773a7232801923e321bebafef592c26de611980d9f83c8e8e0343"
+          "filename": "ps5upload-12.6.26.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.26/ps5upload-12.6.26.elf",
+          "sha256": "19da4e310383d9152cb96f078ae63e4207dec42ac8793a81719505605253eb13"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-23T21:59:46+08:00"
+      "updated_at": "2026-11-24T13:14:52+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -123110,6 +123895,37 @@
       "updated_at": "2026-11-11"
     },
     {
+      "id": "vitadbtoo-vita:4981",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "PSVSD/AM",
+      "summary": "Mounts microSD storage in the PSVita 1000 accessory port.",
+      "author": "RT-Online",
+      "version": "v.1.3.1",
+      "title_id": "RTPSV0001",
+      "description": "Mounts microSD storage in the PSVita 1000 accessory port.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d7159d32bf5b3f326c4d11d0b6be063b16bdf4eb869b45bab8dc8269a17e70fd.png",
+      "screenshots": [],
+      "release_url": "https://github.com/RT-Online/PSVSD-AM/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "PSVSD_AM_1.3.1.vpk",
+          "url": "https://github.com/RT-Online/PSVSD-AM/releases/download/1.3.1/PSVSD_AM_1.3.1.vpk",
+          "size": 1384268,
+          "md5": "8ad08f0c187fba55b16207bdc40b2eae"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:4413",
       "platforms": [
         "psp"
@@ -125344,6 +126160,37 @@
       "updated_at": "2026-10-24"
     },
     {
+      "id": "vitadbtoo-vita:4958",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Rabbid MultiTool",
+      "summary": "Toolbox app for PSVita.",
+      "author": "HarommelRabbid",
+      "version": "v.0.12pre2",
+      "title_id": "RBMT78900",
+      "description": "Toolbox app for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/746e78f96020b1c2f298b8d15120d8c40f375e260ba04367b6a9a5b612079b45.png",
+      "screenshots": [],
+      "release_url": "https://github.com/HarommelRabbid/RabbidMultiToolVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Rabbid.MultiTool.0.12pre2.vpk",
+          "url": "https://github.com/HarommelRabbid/RabbidMultiToolVita/releases/download/0.12pre2/Rabbid.MultiTool.0.12pre2.vpk",
+          "size": 8340011,
+          "md5": "93fb40236ad165ea2e14a2be0f420433"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3463",
       "platforms": [
         "psp"
@@ -126554,6 +127401,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-18"
+    },
+    {
+      "id": "vitadbtoo-vita:4971",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Real Racing 3",
+      "summary": "Port of Real Racing 3 (Android) for PSVita.",
+      "author": "CHUTA7X",
+      "version": "v.3.6.3",
+      "title_id": "RR3VITA01",
+      "description": "Port of Real Racing 3 (Android) for PSVita.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: your own copy of Real Racing 3 (Android)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/26942d6e38fd16776b392fb8002b76c05c678fe4ab4855c78f7531348699f73e.png",
+      "screenshots": [],
+      "release_url": "https://github.com/CHUTA7X/Real-Racing-3-Port-Release/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "RR3_v3.6.3_reemplaza_la_1.4.0.vpk",
+          "url": "https://github.com/CHUTA7X/Real-Racing-3-Port-Release/releases/download/Update3.6.3/RR3_v3.6.3_reemplaza_la_1.4.0.vpk",
+          "size": 8602781,
+          "md5": "99a94bdf6308bb7dcd9e7ce8694d1760"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:1809",
@@ -128190,6 +129068,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2022-05-14"
+    },
+    {
+      "id": "vitadbtoo-vita:4937",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "RepoHub",
+      "summary": "Browse GitHub users, repositories and releases on PSVita.",
+      "author": "robDevs",
+      "version": "v.0.15",
+      "title_id": "REPOHUB01",
+      "description": "Browse GitHub users, repositories and releases on PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/5754fd760a0db60bdb5540050b8f63259987b4e0b251b399e02fbce248d06686.png",
+      "screenshots": [],
+      "release_url": "https://github.com/robDevs/RepoHub/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "RepoHub.vpk",
+          "url": "https://github.com/robDevs/RepoHub/releases/download/v0.15/RepoHub.vpk",
+          "size": 2318041,
+          "md5": "b04b2d1fa9601024aa7dbd4e1f552476"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:3781",
@@ -131594,6 +132503,37 @@
       "updated_at": "2008-12-27"
     },
     {
+      "id": "vitadbtoo-vita:4947",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Ruby Interpreter",
+      "summary": "Port of Ruby 1.8 for PSVita.",
+      "author": "LiEnby",
+      "version": "v.0.1",
+      "title_id": "RUBY00001",
+      "description": "Port of Ruby 1.8 for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/18746b487153dc1ca3d728ce57b841b6e8faeca65a0900aa46864f73d07642c8.png",
+      "screenshots": [],
+      "release_url": "https://github.com/LiEnby/ruby-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ruby.vpk",
+          "url": "https://github.com/LiEnby/ruby-vita/releases/download/0.1/ruby.vpk",
+          "size": 2270492,
+          "md5": "f7f8ea5f5ac8530ad24b8414cd48c8f4"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3240",
       "platforms": [
         "psp"
@@ -131654,6 +132594,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-01-01"
+    },
+    {
+      "id": "vitadbtoo-vita:4963",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "RuffleLoader",
+      "summary": "Flash game launcher and input mapper for Ruffle on PSVita.",
+      "author": "KiddRwxSsj",
+      "version": "v.1.0",
+      "title_id": "RUFFLELDR",
+      "description": "Flash game launcher and input mapper for Ruffle on PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f901ad822adcb758b3164a552ca7a36e588976336abd2beba443c57de32eda9e.png",
+      "screenshots": [],
+      "release_url": "https://github.com/KiddRwxSsj/ruffleloader/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "RuffleLoader.vpk",
+          "url": "https://github.com/KiddRwxSsj/ruffleloader/releases/download/1.0/RuffleLoader.vpk",
+          "size": 2600757,
+          "md5": "fc7b3ed88c0707825cebc26af7659511"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:1630",
@@ -135334,6 +136305,37 @@
       "updated_at": "2011-01-01"
     },
     {
+      "id": "vitadbtoo-vita:4948",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Septerra Core",
+      "summary": "Port of Septerra Core for PSVita.",
+      "author": "isage",
+      "version": "v.1.0",
+      "title_id": "SCLC00001",
+      "description": "Port of Septerra Core for PSVita.",
+      "requirements": "- Game Data Files: your own copy of Septerra Core (PC)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c089c6b71036ca505cdeae4f8f333bd3d73eb052b7b02a9772e163e6f641ffd1.png",
+      "screenshots": [],
+      "release_url": "https://github.com/isage/septerra-core-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "sc.vpk",
+          "url": "https://github.com/isage/septerra-core-vita/releases/download/v1.0/sc.vpk",
+          "size": 3736780,
+          "md5": "b09f0b74778f8a46a3fb450caae4cb95"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1344",
       "platforms": [
         "psvita"
@@ -138004,6 +139006,37 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2026-02-24"
+    },
+    {
+      "id": "vitadbtoo-vita:4959",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "SimpleVPK",
+      "summary": "Download and install homebrew and data files on PSVita, based on easyVPK.",
+      "author": "NFSHubster",
+      "version": "v.1.5",
+      "title_id": "SIMPLEVPK",
+      "description": "Download and install homebrew and data files on PSVita, based on easyVPK.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/406e27491280275ad6959b0566e33512b1551abee4be51864449c1697a24faaa.png",
+      "screenshots": [],
+      "release_url": "https://github.com/NFSHubster/SimpleVPK/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "simplevpk.vpk",
+          "url": "https://github.com/NFSHubster/SimpleVPK/releases/download/v1.5/simplevpk.vpk",
+          "size": 3327376,
+          "md5": "dc385c41829baa5cab1f064461d7a260"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:4086",
@@ -143011,6 +144044,37 @@
       "updated_at": "2023-05-05"
     },
     {
+      "id": "vitadbtoo-vita:4945",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "SoRR",
+      "summary": "Port of the BennuGD engine for Streets of Rage Remake for PSVita.",
+      "author": "isage",
+      "version": "v.1.3",
+      "title_id": "SORR00001",
+      "description": "Port of the BennuGD engine for Streets of Rage Remake for PSVita.",
+      "requirements": "- Game Data Files: your own copy of Streets of Rage Remake",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d3547674935520b59c39b9739199bc44b04ee11736b1969145cee2a284e16ba1.png",
+      "screenshots": [],
+      "release_url": "https://github.com/isage/sorr-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "sorr.vpk",
+          "url": "https://github.com/isage/sorr-vita/releases/download/v1.3/sorr.vpk",
+          "size": 1377886,
+          "md5": "f7fe6aafe7f623f57b929e4f428b95a7"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1321",
       "platforms": [
         "psvita"
@@ -147563,6 +148627,37 @@
       "updated_at": "2019-09-16"
     },
     {
+      "id": "vitadbtoo-vita:4933",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Sudorku",
+      "summary": "Sudoku for PSVita.",
+      "author": "dragaron",
+      "version": "v.1.01",
+      "title_id": "SUDORKU00",
+      "description": "Sudoku for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/00ecbb5af909c6f9477f3cde6e3890756e9a37d234a06f8dfb4613e000a45e9c.png",
+      "screenshots": [],
+      "release_url": "https://github.com/dragaron/Sudorku/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Sudorku.vpk",
+          "url": "https://github.com/dragaron/Sudorku/releases/download/v1.01/Sudorku.vpk",
+          "size": 3246180,
+          "md5": "ab98768d728aefe90760b79d566d4d4f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1026",
       "platforms": [
         "psvita"
@@ -151989,6 +153084,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2009-08-02"
+    },
+    {
+      "id": "vitadbtoo-vita:4962",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Tails Adventure",
+      "summary": "Port of the Tails Adventure reimplementation for PSVita.",
+      "author": "kennyheidi",
+      "version": "v..00",
+      "title_id": "TAIL00003",
+      "description": "Port of the Tails Adventure reimplementation for PSVita.",
+      "requirements": "- Game Data Files: your own Tails Adventure ROM",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/18746b487153dc1ca3d728ce57b841b6e8faeca65a0900aa46864f73d07642c8.png",
+      "screenshots": [],
+      "release_url": "https://github.com/kennyheidi/tails-adventure-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "TailsAdventureSDL.vpk",
+          "url": "https://github.com/kennyheidi/tails-adventure-vita/releases/download/Release/TailsAdventureSDL.vpk",
+          "size": 5141539,
+          "md5": "aaf7b99b7fc758569dd18f47cc485055"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "hbas-switch:Taisei",
@@ -156947,6 +158073,37 @@
       "updated_at": "2008-12-20"
     },
     {
+      "id": "vitadbtoo-vita:4944",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Thread Optimizer",
+      "summary": "Optimizes thread usage of PSVita games.",
+      "author": "GrapheneCt",
+      "version": "v.1.51",
+      "title_id": "GRVA00004",
+      "description": "Optimizes thread usage of PSVita games.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/404794081e4bbfe0e5139d4a8f8194017c838a83d07b8cbcbfa7dbd1696fff74.png",
+      "screenshots": [],
+      "release_url": "https://github.com/GrapheneCt/ThreadOptimizer/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "ThreadOptimizer.vpk",
+          "url": "https://github.com/GrapheneCt/ThreadOptimizer/releases/download/v1.51/ThreadOptimizer.vpk",
+          "size": 533620,
+          "md5": "c676c7d04a6f114c4f3febf86d936226"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-psp:3345",
       "platforms": [
         "psp"
@@ -157784,6 +158941,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2011-05-30"
+    },
+    {
+      "id": "vitadbtoo-vita:4939",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Time Machine",
+      "summary": "Changes the PSVita system time.",
+      "author": "BalisticksMain",
+      "version": "v.1.0",
+      "title_id": "TIMEMACHI",
+      "description": "Changes the PSVita system time.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a379fc8f9c3c1ac2765d1a19fb0445dd3ad730e2df029b9674390e2424d0bcd9.png",
+      "screenshots": [],
+      "release_url": "https://github.com/BalisticksMain/TimeMachine/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "TimeMachine.vpk",
+          "url": "https://github.com/BalisticksMain/TimeMachine/releases/download/v1.0/TimeMachine.vpk",
+          "size": 167096,
+          "md5": "43e198e4c427620e05b14450e175c4e2"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:1991",
@@ -159375,7 +160563,7 @@
       "name": "Tougelike",
       "summary": "Night racing roguelike on Japanese mountain roads.",
       "author": "noeljustin",
-      "version": "v0.1.67",
+      "version": "v0.1.69",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/njlent/tougelike-3ds-pub/main/assets/icon.png",
       "release_url": "https://github.com/njlent/tougelike-3ds-pub/releases",
@@ -159383,20 +160571,20 @@
         {
           "format": "3dsx",
           "filename": "tougelike.3dsx",
-          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.67/tougelike.3dsx",
-          "size": 52254800
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.69/tougelike.3dsx",
+          "size": 52260920
         },
         {
           "format": "cia",
           "filename": "tougelike.cia",
-          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.67/tougelike.cia",
-          "size": 52474816
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.69/tougelike.cia",
+          "size": 52478912
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-19T23:09:17Z"
+      "updated_at": "2026-11-24T01:05:26Z"
     },
     {
       "id": "vitadbtoo-psp:3062",
@@ -160114,6 +161302,37 @@
       "updated_at": "2009-03-10"
     },
     {
+      "id": "vitadbtoo-vita:4968",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "TRAX",
+      "summary": "Music player for PSVita with FLAC, ALAC, AAC, MP3, Opus and ATRAC support.",
+      "author": "traxpsp",
+      "version": "v.1.0.0",
+      "title_id": "TRAX00001",
+      "description": "Music player for PSVita with FLAC, ALAC, AAC, MP3, Opus and ATRAC support.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/f89479b04923be6456dae384ea985af1fb4fedf4e5ca28fc534e487ef167a5a6.png",
+      "screenshots": [],
+      "release_url": "https://github.com/traxpsp/traxpsp/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "TRAX.vpk",
+          "url": "https://github.com/traxpsp/traxpsp/releases/download/1.0.0/TRAX.vpk",
+          "size": 1888949,
+          "md5": "822028024e44a071d8fcc5de0427b062"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:678",
       "platforms": [
         "psvita"
@@ -160348,6 +161567,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-08-09"
+    },
+    {
+      "id": "vitadbtoo-vita:4950",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "TriGL",
+      "summary": "WebGL implementation for the Trilithium browser engine on PSVita.",
+      "author": "GrapheneCt",
+      "version": "v.1.0",
+      "title_id": "GRVA00021",
+      "description": "WebGL implementation for the Trilithium browser engine on PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3dadb19fd7555bf89c2d9e142e06092bef354fc791457a020a89c18c979d334b.png",
+      "screenshots": [],
+      "release_url": "https://github.com/GrapheneCt/TriGL/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "TriGL.vpk",
+          "url": "https://github.com/GrapheneCt/TriGL/releases/download/v1.0/TriGL.vpk",
+          "size": 7609522,
+          "md5": "fdefb857b89ea5e5db27e3cdbe6e88ae"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:3569",
@@ -160921,6 +162171,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-08-13"
+    },
+    {
+      "id": "vitadbtoo-vita:4935",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Trophies Fixer",
+      "summary": "Fixes broken trophy data on PSVita.",
+      "author": "Yoti",
+      "version": "v.1.1",
+      "title_id": "TROPHYFIX",
+      "description": "Fixes broken trophy data on PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/ea92b68e1a5ae9876c29f688268be901ea5d11b3f0202f38e6234d4fd9f2ea9d.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Yoti/psv_trophfix/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "trophies_fixer.vpk",
+          "url": "https://github.com/Yoti/psv_trophfix/releases/download/v1.1/trophies_fixer.vpk",
+          "size": 333418,
+          "md5": "47ea48b253bd928c9a1bc8a4127e0777"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:602",
@@ -162097,6 +163378,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2007-01-19"
+    },
+    {
+      "id": "vitadbtoo-vita:4977",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "TyphoonLLM",
+      "summary": "Local LLM chat on PSVita using LiquidAI LFM2.5-230M.",
+      "author": "daivarsi",
+      "version": "v.03.06",
+      "title_id": "VLMCHAT01",
+      "description": "Local LLM chat on PSVita using LiquidAI LFM2.5-230M.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/fe60202a3cb43e441cd1e265485910a52bc21bfb2208d61759a9693136f6faa5.png",
+      "screenshots": [],
+      "release_url": "https://github.com/daivarsi/TyphoonLLM/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "TyphoonLLM-v03.06-runtime.vpk",
+          "url": "https://github.com/daivarsi/TyphoonLLM/releases/download/v03.06/TyphoonLLM-v03.06-runtime.vpk",
+          "size": 1169023,
+          "md5": "df244b265c06797ca8d06f297c65f0ab"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2460",
@@ -163564,6 +164876,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-07-18"
+    },
+    {
+      "id": "vitadbtoo-vita:4989",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Unciv",
+      "summary": "Port of Unciv, an open source remake of Civilization V, for PSVita.",
+      "author": "JAKLI78",
+      "version": "v.0.1",
+      "title_id": "UNCV00001",
+      "description": "Port of Unciv, an open source remake of Civilization V, for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/32a625ee97facfb61808af8af8b20c479e4e8f6f669f5fb6dd94b60f6758ead7.png",
+      "screenshots": [],
+      "release_url": "https://github.com/JAKLI78/Unciv_ps_vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Unciv_0.1.vpk",
+          "url": "https://github.com/JAKLI78/Unciv_ps_vita/releases/download/0.1/Unciv_0.1.vpk",
+          "size": 78368580,
+          "md5": "9d2b1bcb7578a5391075508acd830c04"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:805",
@@ -166005,6 +167348,37 @@
       "updated_at": "2018-07-20"
     },
     {
+      "id": "vitadbtoo-vita:4951",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VBackup",
+      "summary": "Backup tool for PSVita applications and saves.",
+      "author": "GrapheneCt",
+      "version": "v.1.03",
+      "title_id": "GRVA00020",
+      "description": "Backup tool for PSVita applications and saves.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/0ce7107ba3069e932b08bc5969cd57e9eded042468094e58159bf04e02df6cb9.png",
+      "screenshots": [],
+      "release_url": "https://github.com/GrapheneCt/VBackup/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VBackup.vpk",
+          "url": "https://github.com/GrapheneCt/VBackup/releases/download/v1.03/VBackup.vpk",
+          "size": 314428,
+          "md5": "abc4588f7b23a215b497f31dcdbfc837"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "open-shop-channel-wii:vbcgx",
       "platforms": [
         "wii"
@@ -167587,6 +168961,37 @@
       "updated_at": "2026-11-11"
     },
     {
+      "id": "vitadbtoo-vita:4967",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vita Auto",
+      "summary": "Android Auto and Apple CarPlay app for PSVita.",
+      "author": "Gavwalsh15",
+      "version": "v.0.2.1",
+      "title_id": "VITAUTO01",
+      "description": "Android Auto and Apple CarPlay app for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/716d49073a95ffb4ab446cfb2e98e18b4dce28fc60d0bba153e8ca965ecb24ce.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Gavwalsh15/Vita_Auto/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vita-auto-v0.2.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/vita-auto-v0.2.1.vpk",
+          "size": 720795,
+          "md5": "6edf62fc3b020d3187e234c3291b3e9c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:361",
       "platforms": [
         "psvita"
@@ -167895,6 +169300,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "vitadbtoo-vita:4952",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vita FTDI Term",
+      "summary": "Terminal for FTDI USB serial adapters on PSVita.",
+      "author": "isage",
+      "version": "v.1.0",
+      "title_id": "VFTM00001",
+      "description": "Terminal for FTDI USB serial adapters on PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9923dc8130164c3339bc76acd0fa61b2f7ce88a4ea81c4420246997f8e2ece7a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/isage/vfterm/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vfterm.vpk",
+          "url": "https://github.com/isage/vfterm/releases/download/1.0/vfterm.vpk",
+          "size": 1519442,
+          "md5": "f663a56a29ab7ce010dc23e1e4b6095a"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:379",
@@ -168827,6 +170263,37 @@
       "updated_at": "2020-02-11"
     },
     {
+      "id": "vitadbtoo-vita:4983",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vita Turbo VPN",
+      "summary": "System-wide VPN client for PSVita.",
+      "author": "juanjsebgarcia",
+      "version": "v.0.1.0",
+      "title_id": "VPNT00001",
+      "description": "System-wide VPN client for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b700a26452489375997d5bec42cd7df109387ce322bd2c0a85170e0db838a9db.png",
+      "screenshots": [],
+      "release_url": "https://github.com/juanjsebgarcia/vita-turbo-vpn/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vita-turbo-vpn.vpk",
+          "url": "https://github.com/juanjsebgarcia/vita-turbo-vpn/releases/download/v0.1.0/vita-turbo-vpn.vpk",
+          "size": 1074517,
+          "md5": "1cf4b7badaf5e350f4cc98c0cab8bf65"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1405",
       "platforms": [
         "psvita"
@@ -168887,6 +170354,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-20"
+    },
+    {
+      "id": "vitadbtoo-vita:4965",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vita Weather",
+      "summary": "Weather app for PSVita.",
+      "author": "reallootfury",
+      "version": "v.1.27",
+      "title_id": "VWEA00001",
+      "description": "Weather app for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/35bc78ed195bd0a30ea46118c138351befb30d99bad83a1b07f38a364f5d207a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/reallootfury/vita-weather/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vita-weather.vpk",
+          "url": "https://github.com/reallootfury/vita-weather/releases/download/v1.27/vita-weather.vpk",
+          "size": 14587916,
+          "md5": "22382e4e8a2d151cefddf24ea6c3eb7c"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:1316",
@@ -169600,6 +171098,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2017-11-07"
+    },
+    {
+      "id": "vitadbtoo-vita:4946",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VitaCord: Reboot",
+      "summary": "Discord client for PSVita.",
+      "author": "WeegeeDEVELOPER",
+      "version": "v.1.0.5",
+      "title_id": "WDEV75912",
+      "description": "Discord client for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e1287dd52df0af15b5c30f16c321bb3854d389f0d58daddabe12ad4c75b57266.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WeegeeDEVELOPER/VitaCord-Reboot/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VitaCord_Reboot.vpk",
+          "url": "https://github.com/WeegeeDEVELOPER/VitaCord-Reboot/releases/download/1.0.5/VitaCord_Reboot.vpk",
+          "size": 3945593,
+          "md5": "aefe4555c77051fa9269e639f0b47d16"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:1621",
@@ -170449,6 +171978,37 @@
       "updated_at": "2016-09-09"
     },
     {
+      "id": "vitadbtoo-vita:4982",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VitaMon",
+      "summary": "Wireless hardware monitor for a Windows PC on PSVita.",
+      "author": "MrWhite2312-IS",
+      "version": "v.1.3.0-beta.1",
+      "title_id": "VMON00001",
+      "description": "Wireless hardware monitor for a Windows PC on PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/3d0f65810ff54eb51d12e90d1fc5c60bdbbb816b2bf22cf6d11ec39d5be9de7b.png",
+      "screenshots": [],
+      "release_url": "https://github.com/MrWhite2312-IS/VitaPCMonitor/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VitaMon.vpk",
+          "url": "https://github.com/MrWhite2312-IS/VitaPCMonitor/releases/download/v1.3.0-beta.1/VitaMon.vpk",
+          "size": 98610,
+          "md5": "5010ecc0babeb8a3469f939b5e9c2e7f"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:353",
       "platforms": [
         "psvita"
@@ -170664,6 +172224,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-11"
+    },
+    {
+      "id": "vitadbtoo-vita:4964",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "VitaPlex",
+      "summary": "Plex client for PSVita.",
+      "author": "Breezyslasher",
+      "version": "v.1.3.9",
+      "title_id": "VPLEX0001",
+      "description": "Plex client for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/664eec49ce7c8107c2362b61d9e011e168a162b79912fac97221110c220d413d.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Breezyslasher/Vita_plex/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VitaPlex.Beta-1.3.9.vpk",
+          "url": "https://github.com/Breezyslasher/Vita_plex/releases/download/Beta-1.3.9/VitaPlex.Beta-1.3.9.vpk",
+          "size": 11219570,
+          "md5": "dcb1ecfeca7743184d7e54c3bd850b86"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:152",
@@ -171812,6 +173403,37 @@
       "updated_at": "2026-11-11"
     },
     {
+      "id": "vitadbtoo-vita:4955",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Vitesin",
+      "summary": "Input tester for PSVita.",
+      "author": "isage",
+      "version": "v.1.1",
+      "title_id": "VIT000001",
+      "description": "Input tester for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/72299aef58ffa3c2c6112b22fd351f7072879af759e187023d0d1da8ff764322.png",
+      "screenshots": [],
+      "release_url": "https://github.com/isage/vitesin/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vitesin.vpk",
+          "url": "https://github.com/isage/vitesin/releases/download/v1.1/vitesin.vpk",
+          "size": 628530,
+          "md5": "fec0e7d293faec6fb59b219c85ae3431"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1135",
       "platforms": [
         "psvita"
@@ -171998,6 +173620,37 @@
       "updated_at": "2008-07-07"
     },
     {
+      "id": "vitadbtoo-vita:4956",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ViViD",
+      "summary": "Use the PSVita as a virtual DualShock.",
+      "author": "isage",
+      "version": "v.1.1",
+      "title_id": "VVID00001",
+      "description": "Use the PSVita as a virtual DualShock.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c01e574952c138b1493aaa86877e06cd554ed975dbd1c7e606deecb7437afde9.png",
+      "screenshots": [],
+      "release_url": "https://github.com/isage/vivid/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "vivid.vpk",
+          "url": "https://github.com/isage/vivid/releases/download/v1.1/vivid.vpk",
+          "size": 779354,
+          "md5": "37b25256c892f712e52861ec0af77920"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:1765",
       "platforms": [
         "psvita"
@@ -172058,6 +173711,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2008-04-18"
+    },
+    {
+      "id": "vitadbtoo-vita:4954",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "ViXEn Helper",
+      "summary": "Companion app for the ViXEn controller plugin.",
+      "author": "isage",
+      "version": "v.1.1",
+      "title_id": "VXNH00001",
+      "description": "Companion app for the ViXEn controller plugin.",
+      "requirements": "- vixen.skprx",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9923dc8130164c3339bc76acd0fa61b2f7ce88a4ea81c4420246997f8e2ece7a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/isage/vixen-helper/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "VXHelper.vpk",
+          "url": "https://github.com/isage/vixen-helper/releases/download/v1.1/VXHelper.vpk",
+          "size": 1325355,
+          "md5": "33e67cca57b9e01f22f59855ff59c949"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:3200",
@@ -174029,6 +175713,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2012-09-24"
+    },
+    {
+      "id": "vitadbtoo-vita:4975",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Wayward Souls",
+      "summary": "Port of Wayward Souls (Android) for PSVita with an on-device APK importer.",
+      "author": "Cynostial",
+      "version": "v.0.16-rc1",
+      "title_id": "WAYWARD01",
+      "description": "Port of Wayward Souls (Android) for PSVita with an on-device APK importer.",
+      "requirements": "- Game Data Files: your own copy of Wayward Souls (Android)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/99b350b6f8e98e2e1075b035a8c645ec2ad891d6509098baa0d707e97df1f558.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Cynostial/wayward-souls-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "wayward-souls-v0.16rc1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/wayward-souls-v0.16rc1.vpk",
+          "size": 1480253,
+          "md5": "7db9cfeb3fd646e6f368f42a7f1ee37e"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "open-shop-channel-wii:wcalc",
@@ -178152,6 +179867,37 @@
       "updated_at": ""
     },
     {
+      "id": "vitadbtoo-vita:4986",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Wolff's Store",
+      "summary": "Client for the Wolff's Room homebrew collection.",
+      "author": "WolffsRoom",
+      "version": "v.1.1.3",
+      "title_id": "WFFS00042",
+      "description": "Client for the Wolff's Room homebrew collection.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/904816b7cd2806091d48c2baafa8be02221dc0f1b3c28b066c14c9dbc28a8dac.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WolffsRoom/WolffsStore/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "WolffsStore.vpk",
+          "url": "https://github.com/WolffsRoom/WolffsStore/releases/download/v1.1.3/WolffsStore.vpk",
+          "size": 7962186,
+          "md5": "26076556291cbe6b48f7da01dbc15661"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
       "id": "vitadbtoo-vita:4847",
       "platforms": [
         "psvita"
@@ -179274,7 +181020,7 @@
       "name": "Xash3D-FWGS",
       "summary": "Port of Xash3D-FWGS for PSVITA.",
       "author": "Xash3D-FWGS Team & fgsfds",
-      "version": "Nightly 2026-11-22",
+      "version": "Nightly 2026-11-24",
       "title_id": "XASH10000",
       "description": "Port of Xash3D-FWGS for PSVITA.\nXash3D-FWGS is an open source re-creation of the GoldSrc engine, a modified Quake Engine running Half-Life, Counter Strike and Team Fortress.\n\nNOTE: Data files are slightly different from vitaXash3D. This means both versions can't be installed at the same time.",
       "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: PC in ux0:data/xash3d",
@@ -179287,8 +181033,8 @@
           "format": "zip",
           "filename": "xash3d-fwgs-psvita.7z",
           "url": "https://github.com/FWGS/xash3d-fwgs/releases/download/continuous/xash3d-fwgs-psvita.7z",
-          "size": 27899673,
-          "md5": "d5f39bbcdaacb5c9887d6f384724548e"
+          "size": 27896370,
+          "md5": "05e20460f96328217e23c0ebb45e795c"
         },
         {
           "format": "data",
@@ -179658,6 +181404,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2009-05-10"
+    },
+    {
+      "id": "vitadbtoo-vita:4932",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Xerox",
+      "summary": "Simon memory game for PSVita.",
+      "author": "dragaron",
+      "version": "v.1.01",
+      "title_id": "XEROX0000",
+      "description": "Simon memory game for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c72b0da51ce459508d3158e8ca640e281082d65f52894c7c6e3219f7364ff2cb.png",
+      "screenshots": [],
+      "release_url": "https://github.com/dragaron/Xerox/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Xerox.vpk",
+          "url": "https://github.com/dragaron/Xerox/releases/download/v1.01/Xerox.vpk",
+          "size": 2794750,
+          "md5": "95f8638ea4f22445149bfb6785737aff"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:3973",
@@ -180150,6 +181927,37 @@
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
       "updated_at": "2017-03-10T20:41:13Z"
+    },
+    {
+      "id": "vitadbtoo-vita:4960",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "xsystem35",
+      "summary": "Port of xsystem35, an engine for AliceSoft System 3.x games, for PSVita.",
+      "author": "nunuhara",
+      "version": "v.00.02",
+      "title_id": "NNHR00001",
+      "description": "Port of xsystem35, an engine for AliceSoft System 3.x games, for PSVita.",
+      "requirements": "- Game Data Files: your own copy of a System 3.x game",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/6ecfd391de63c39ee9aabdc85a4aaa24780fef0b7151d6be88431ff40348f5cd.png",
+      "screenshots": [],
+      "release_url": "https://github.com/nunuhara/xsystem35-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "xsystem35.vpk",
+          "url": "https://github.com/nunuhara/xsystem35-vita/releases/download/v00.02/xsystem35.vpk",
+          "size": 9650891,
+          "md5": "82a841d09e205d444125432ade657b7b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2380",
@@ -180646,6 +182454,37 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2010-07-28T00:00:00+00:00"
+    },
+    {
+      "id": "vitadbtoo-vita:4934",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Yakzee",
+      "summary": "Yahtzee dice game for PSVita.",
+      "author": "dragaron",
+      "version": "v.1.00",
+      "title_id": "YAKZEE000",
+      "description": "Yahtzee dice game for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/a185d4b33f9ac565e9189223ae2ed4d15a00effa656a3cecc74e90c85d5027b7.png",
+      "screenshots": [],
+      "release_url": "https://github.com/dragaron/Yakzee/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "Yakzee.vpk",
+          "url": "https://github.com/dragaron/Yakzee/releases/download/v1.00/Yakzee.vpk",
+          "size": 2872597,
+          "md5": "dcac936851a6270d655d813be60be5db"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:2212",
@@ -181364,6 +183203,68 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2006-08-22"
+    },
+    {
+      "id": "vitadbtoo-vita:4988",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "YouTube on Vita",
+      "summary": "Unofficial YouTube client for PSVita.",
+      "author": "WolffsRoom",
+      "version": "v.0.65",
+      "title_id": "YTVCB0001",
+      "description": "Unofficial YouTube client for PSVita.",
+      "requirements": "",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/d189a140a96e7eef67c2639808839d3b660091333585939bfcce49df4053dc4a.png",
+      "screenshots": [],
+      "release_url": "https://github.com/WolffsRoom/YouTubeOnVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "YouTube.vpk",
+          "url": "https://github.com/WolffsRoom/YouTubeOnVita/releases/download/v0.65/YouTube.vpk",
+          "size": 22923055,
+          "md5": "f6b6e614550f637013a2e812537e0a56"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
+    },
+    {
+      "id": "vitadbtoo-vita:4949",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "YoYo Loader",
+      "summary": "Loader for Android games made with GameMaker on PSVita.",
+      "author": "Rinnegatamante",
+      "version": "Nightly 2026-11-24",
+      "title_id": "YYOLOADER",
+      "description": "Loader for Android games made with GameMaker on PSVita.",
+      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: your own GameMaker game APK",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/7d46de503dd83eb4e1947982a56a7b2d81770236f2c77dc51582b95a93c1d1b7.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Rinnegatamante/yoyoloader_vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "YoYoLoader.vpk",
+          "url": "https://github.com/Rinnegatamante/yoyoloader_vita/releases/download/Nightly/YoYoLoader.vpk",
+          "size": 8327746,
+          "md5": "5384e5b17c215aeb594852034e43c3c6"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-psp:4096",
