@@ -9783,7 +9783,7 @@
       "name": "Art3m1sPSV",
       "summary": "Artemis Engine Game Runner for PSVita.",
       "author": "DeQxJ00",
-      "version": "v.1.5.4",
+      "version": "v.1.5.5",
       "title_id": "ART3DIR01",
       "description": "Artemis Engine Game Runner for PSVita.",
       "requirements": "- libshacccg.suprx\n- CapUnlocker.skprx",
@@ -9794,10 +9794,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Art3m1sPSV-v1.5.4.vpk",
-          "url": "https://github.com/DeQxJ00/Art3m1sPSV/releases/download/v1.5.4/Art3m1sPSV-v1.5.4.vpk",
-          "size": 30380875,
-          "md5": "137bb0073a53ff2f75c1c9c3a03a291e"
+          "filename": "Art3m1sPSV-v1.5.5.vpk",
+          "url": "https://github.com/DeQxJ00/Art3m1sPSV/releases/download/v1.5.5/Art3m1sPSV-v1.5.5.vpk",
+          "size": 30723001,
+          "md5": "bfabf512c724c90c1fc954b941eb44b6"
         }
       ],
       "popularity": 0,
@@ -50519,7 +50519,7 @@
       "name": "Funky n Frank",
       "summary": "Twin-stick shooter for PSVita.",
       "author": "SoulTieGames",
-      "version": "v..00",
+      "version": "v.1.0",
       "title_id": "FUNKNFRAN",
       "description": "Twin-stick shooter for PSVita.",
       "requirements": "",
@@ -58089,7 +58089,7 @@
       "name": "HardRPG",
       "summary": "RPG Maker games player for PSVita.",
       "author": "Asukate",
-      "version": "v.0.6.0-alpha",
+      "version": "v.0.6.1-alpha",
       "title_id": "HARDRPG01",
       "description": "RPG Maker games player for PSVita.",
       "requirements": "- libshacccg.suprx",
@@ -58100,10 +58100,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "HardRPG-0.6.0.vpk",
-          "url": "https://github.com/Asukate/mkxp-z-vita/releases/download/v0.6.0-alpha/HardRPG-0.6.0.vpk",
-          "size": 30849928,
-          "md5": "96dcc9589d166b27341c3dc30dfbda7d"
+          "filename": "HardRPG-0.6.1.vpk",
+          "url": "https://github.com/Asukate/mkxp-z-vita/releases/download/v0.6.1-alpha/HardRPG-0.6.1.vpk",
+          "size": 31017402,
+          "md5": "818d23bd85f5dd8f546d3bb9bc0f6949"
         }
       ],
       "popularity": 0,
@@ -72345,19 +72345,19 @@
           "format": "3dsx",
           "filename": "isle.3dsx",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.3dsx",
-          "size": 3057356
+          "size": 3059192
         },
         {
           "format": "cia",
           "filename": "isle.cia",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.cia",
-          "size": 2198464
+          "size": 2200000
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-23T23:43:16Z"
+      "updated_at": "2026-11-24T23:11:01Z"
     },
     {
       "id": "vitadbtoo-vita:1452",
@@ -72380,8 +72380,8 @@
           "format": "vpk",
           "filename": "isle.vpk",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.vpk",
-          "size": 7199931,
-          "md5": "5ada1e44b2df97cf4ca305a05ac5f11b"
+          "size": 7200797,
+          "md5": "249d9e677ee7ca673b74f76c12c69309"
         }
       ],
       "popularity": 0,
@@ -78258,7 +78258,7 @@
       "name": "Manhunt",
       "summary": "Port of Manhunt and Manhunt 2 for PSVita.",
       "author": "xesf",
-      "version": "v.0.10.0",
+      "version": "v.0.10.2",
       "title_id": "MHRE00001",
       "description": "Port of Manhunt and Manhunt 2 for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -78269,10 +78269,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "manhunt-v0.10.0-vita.vpk",
-          "url": "https://github.com/xesf/manhunt-releases/releases/download/v0.10.0/manhunt-v0.10.0-vita.vpk",
-          "size": 1815912,
-          "md5": "1612b4409830908b190adc7517816fbd"
+          "filename": "manhunt-v0.10.2-vita.vpk",
+          "url": "https://github.com/xesf/manhunt-releases/releases/download/v0.10.2/manhunt-v0.10.2-vita.vpk",
+          "size": 1835963,
+          "md5": "f11b01c97c7e804a44f417fddd84d960"
         }
       ],
       "popularity": 0,
@@ -84747,7 +84747,7 @@
       "name": "Monster Hunter 4 Ultimate",
       "summary": "Azahar derived runner for MH4U.",
       "author": "SaNch0sE",
-      "version": "v.0.4-beta",
+      "version": "v.0.4.3-beta",
       "title_id": "MH4UVITA0",
       "description": "Azahar derived runner for MH4U.",
       "requirements": "- m4hunative.skprx\n- CapUnlocker.skprx\n- Game Data Files: 3DS",
@@ -84758,10 +84758,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Azahar-MH4U-0.4-beta.vpk",
-          "url": "https://github.com/SaNch0sE/azahar-vita-mh4u/releases/download/0.4-beta/Azahar-MH4U-0.4-beta.vpk",
-          "size": 8445012,
-          "md5": "5bb3dcdc3f9d6d3927b23c5c492306cb"
+          "filename": "Azahar-MH4U-0.4.3-beta.vpk",
+          "url": "https://github.com/SaNch0sE/azahar-vita-mh4u/releases/download/0.4.3-beta/Azahar-MH4U-0.4.3-beta.vpk",
+          "size": 8446081,
+          "md5": "296423fc1ddfd2005d532c6366e9f441"
         }
       ],
       "popularity": 0,
@@ -90917,7 +90917,7 @@
       "name": "NFS Carbon",
       "summary": "Port of Need for Speed Carbon for PSVita.",
       "author": "Swisha33",
-      "version": "v.0.1.5",
+      "version": "v.0.1.7",
       "title_id": "NFSCVITA0",
       "description": "Port of Need for Speed Carbon for PSVita.",
       "requirements": "- Game Data Files: PC",
@@ -90929,9 +90929,9 @@
         {
           "format": "vpk",
           "filename": "NFSCVita.vpk",
-          "url": "https://github.com/Swisha33/NFSCVita/releases/download/v0.1.5/NFSCVita.vpk",
-          "size": 14470046,
-          "md5": "7eb9a2db871960617caa903a4352b81e"
+          "url": "https://github.com/Swisha33/NFSCVita/releases/download/v0.1.7/NFSCVita.vpk",
+          "size": 15130705,
+          "md5": "146b2c9b424d3bba8f78eed25e21b2b6"
         }
       ],
       "popularity": 0,
@@ -101871,7 +101871,7 @@
       "name": "PES 6",
       "summary": "Port of Pro Evolution Soccer 6 for PSVITA.",
       "author": "germanalvarez15",
-      "version": "v.0.0.4-beta",
+      "version": "v.0.0.6-beta",
       "title_id": "PESV00006",
       "description": "Port of Pro Evolution Soccer 6 for PSVITA.",
       "requirements": "- Game Data Files: your own legal copy of the game as an ISO file",
@@ -101883,9 +101883,9 @@
         {
           "format": "vpk",
           "filename": "pes6vita.vpk",
-          "url": "https://github.com/germanalvarez15/pes6-vita/releases/download/0.0.4-beta/pes6vita.vpk",
-          "size": 27255200,
-          "md5": "3aa0f38d31d0bc3456c932cc502e03fd"
+          "url": "https://github.com/germanalvarez15/pes6-vita/releases/download/0.0.6-beta/pes6vita.vpk",
+          "size": 27264658,
+          "md5": "fba87e9b3cc405f2bb7509f0357b0fea"
         }
       ],
       "popularity": 0,
@@ -102952,7 +102952,7 @@
       "name": "PictoRelay",
       "summary": "Real online PictoChat between DS, 3DS, PC and Mobile",
       "author": "HollowOwl",
-      "version": "v1.3.1",
+      "version": "v1.4.1",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/ShinMikite/PictoRelay-3DS/main/icon.png",
       "release_url": "https://github.com/ShinMikite/PictoRelay-3DS/releases",
@@ -102960,14 +102960,14 @@
         {
           "format": "cia",
           "filename": "PictoRelay.cia",
-          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.3.1/PictoRelay.cia",
-          "size": 4444096
+          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.4.1/PictoRelay.cia",
+          "size": 6772672
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-23T07:27:42Z"
+      "updated_at": "2026-11-25T01:17:42Z"
     },
     {
       "id": "vitadbtoo-vita:1429",
@@ -109932,6 +109932,168 @@
       "updated_at": "2011-02-06"
     },
     {
+      "id": "ps4-store:268181309",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — homebrew.elf",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "homebrew.elf",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/homebrew.elf",
+          "size": 4842768,
+          "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
+        }
+      ],
+      "popularity": 19964,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:238357415",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — PS5_Update_files.zip",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "PS5_Update_files.zip",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/PS5_Update_files.zip",
+          "size": 1488211,
+          "sha256": null
+        }
+      ],
+      "popularity": 3839,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:268177439",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2-Legacy.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2-Legacy.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-Legacy.pkg",
+          "size": 24772608,
+          "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
+        }
+      ],
+      "popularity": 17471,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:167233612",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2-PS5.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2-PS5.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2-PS5.pkg",
+          "size": 43450368,
+          "sha256": null
+        }
+      ],
+      "popularity": 7662,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-store:268177642",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4 Homebrew Store — Store-R2.pkg",
+      "summary": "Change log\r\n\r\n- Implemented C++\r\n- App will now check for database updates in the background automatically every 5 mins\r\n- Added the Updates section (BETA)\r\n- Added an Update thread (DB and App updates)\r\n- Added Icon pre-loading on startup (setting)\r\n- Added the ability to upload crash logs after crashing\r\n- Improved overall responsiveness\r\n- Improved the Search feature to not be case sensitive \r\n- Improved readability and memory safety \r\n- Improved background texture/icon loading\r\n- Bug fixes\r\n================= Changed Settings =============\r\n**Before**: Change Freetype  (font) Path | **After**: Pre-Load Icons on Startup\r\n\r\nHOT FIX 5/20/2023\r\n\r\n- Fixed Store categories for other langs",
+      "author": "LightningMods",
+      "version": "4.5",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/LightningMods/PS4-Store/releases/tag/4.5",
+      "downloads": [
+        {
+          "format": "pkg",
+          "filename": "Store-R2.pkg",
+          "url": "https://github.com/LightningMods/PS4-Store/releases/download/4.5/Store-R2.pkg",
+          "size": 24772608,
+          "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
+        }
+      ],
+      "popularity": 98820,
+      "source": "PS4 Homebrew Store",
+      "source_url": "https://github.com/LightningMods/PS4-Store",
+      "license_url": null,
+      "updated_at": "2023-05-19T20:41:59Z"
+    },
+    {
+      "id": "ps4-hen:738334475",
+      "platforms": [
+        "ps4"
+      ],
+      "name": "PS4HEN — hen.bin",
+      "summary": "## What's Changed\n* Add EchoStretch to contributors list by @EchoStretch in https://github.com/Scene-Collective/ps4-hen/pull/77\n\n\n**Full Changelog**: https://github.com/Scene-Collective/ps4-hen/compare/pre-release-main-183...pre-release-main-184",
+      "author": "Scene-Collective",
+      "version": "pre-release-main-184",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/Scene-Collective/ps4-hen/releases/tag/pre-release-main-184",
+      "downloads": [
+        {
+          "format": "bin",
+          "filename": "hen.bin",
+          "url": "https://github.com/Scene-Collective/ps4-hen/releases/download/pre-release-main-184/hen.bin",
+          "size": 501152,
+          "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
+        }
+      ],
+      "popularity": 432,
+      "source": "PS4HEN",
+      "source_url": "https://github.com/Scene-Collective/ps4-hen",
+      "license_url": null,
+      "updated_at": "2026-11-12T06:23:53Z"
+    },
+    {
       "id": "vitadbtoo-vita:560",
       "platforms": [
         "psvita"
@@ -110795,30 +110957,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.26.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.28.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.26",
+      "version": "v12.6.28",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.26.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.26/ps5upload-12.6.26.elf",
-          "sha256": "19da4e310383d9152cb96f078ae63e4207dec42ac8793a81719505605253eb13"
+          "filename": "ps5upload-12.6.28.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.28/ps5upload-12.6.28.elf",
+          "sha256": "fdc16ff34b0aaa217df2445c502d28f2ec8f624da17ab46622e547845ec52521"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-24T13:14:52+08:00"
+      "updated_at": "2026-11-25T15:40:59+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -129069,7 +129231,7 @@
       "name": "ReBOX",
       "summary": "Multi arcade board emulator for PSVita.",
       "author": "Reyanon",
-      "version": "v.0.14.80",
+      "version": "v.0.15.1",
       "title_id": "RBOX00001",
       "description": "Arcade board emulator with drivers ported from MAME 0.289, from 8-bit classics up to CPS3, Sega System 32, Cave CV1000 and PGM2. Put non-merged MAME 0.260 romsets in ux0:data/rebox/roms/.",
       "requirements": "",
@@ -129080,10 +129242,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "rebox-v0.14.80.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/rebox-v0.14.80.vpk",
-          "size": 8463957,
-          "md5": "f0fba211a5c78cbfc38ea955f6a43cf0"
+          "filename": "rebox-0.15.1.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/rebox-0.15.1.vpk",
+          "size": 8506117,
+          "md5": "5f21da376baa9f9d1bd77bbdb855646f"
         }
       ],
       "popularity": 0,
@@ -148646,7 +148808,7 @@
       "name": "StarCraft",
       "summary": "StarCraft v1.16.1 on PSVITA through an x86-to-ARM dynamic recompiler.",
       "author": "KP77C",
-      "version": "v.",
+      "version": "v.1.0",
       "title_id": "SCVITA001",
       "description": "StarCraft v1.16.1 on PSVITA through an x86-to-ARM dynamic recompiler.",
       "requirements": "- Game Data Files: your own legal copy of StarCraft and Brood War (PC)",
@@ -153349,6 +153511,39 @@
       "updated_at": "2026-08-14"
     },
     {
+      "id": "hbas-switch:SwitchDeck",
+      "platforms": [
+        "switch"
+      ],
+      "name": "SwitchDeck",
+      "categories": [
+        "utilities"
+      ],
+      "description": "Turn your Nintendo Switch into a touchscreen control panel for Macro Deck. Open the deck you built on your PC, trigger macros, adjust volume, and control Spotify playback from your Switch. Keep an eye on clocks, timers, weather, and CPU, GPU, and RAM usage with widgets.\n\nRequires Macro Deck running on a PC on the same local network.\n\nAI use: AI-generated, not reviewed line by line. AI also used for: icon/banner art, description text.",
+      "added_at": "2026-11-21",
+      "summary": "Turn your Switch into a Stream Deck",
+      "author": "SertAy",
+      "version": "1.0.0",
+      "license": "All Rights Reserved",
+      "icon_url": null,
+      "release_url": "https://github.com/sertay1/switchdeck",
+      "downloads": [
+        {
+          "format": "hbas",
+          "filename": "SwitchDeck.hbas",
+          "url": "https://switch.cdn.fortheusers.org/packages/SwitchDeck/manifest.install",
+          "size": 11643,
+          "sha256": "da420ea12a081798ee1c09123867d54a801484ab6900019763c978e7567ac3fe"
+        }
+      ],
+      "popularity": 0,
+      "manifest_url": "https://switch.cdn.fortheusers.org/packages/SwitchDeck/manifest.install",
+      "source": "Homebrew App Store",
+      "source_url": "https://hb-app.store/switch",
+      "license_url": null,
+      "updated_at": "2026-11-25"
+    },
+    {
       "id": "hbas-switch:Switchfin",
       "platforms": [
         "switch"
@@ -153963,7 +154158,7 @@
       "name": "Syncthing",
       "summary": "Syncthing file synchronization for PSVITA.",
       "author": "GeoffreyMetais",
-      "version": "v.0.1.0",
+      "version": "v.0.2.0",
       "title_id": "SYNCTHING",
       "description": "Syncthing file synchronization for PSVITA.",
       "requirements": "",
@@ -153975,9 +154170,9 @@
         {
           "format": "vpk",
           "filename": "SYNCTHING.vpk",
-          "url": "https://github.com/GeoffreyMetais/syncthing-vita/releases/download/v0.1.0/SYNCTHING.vpk",
-          "size": 1312266,
-          "md5": "e113dd303867db512fae64f01698e130"
+          "url": "https://github.com/GeoffreyMetais/syncthing-vita/releases/download/v0.2.0/SYNCTHING.vpk",
+          "size": 1444248,
+          "md5": "d458042ea4987b5a8bd08f2e21929e4f"
         }
       ],
       "popularity": 0,
@@ -154687,7 +154882,7 @@
       "name": "Tails Adventure",
       "summary": "Port of the Tails Adventure reimplementation for PSVita.",
       "author": "kennyheidi",
-      "version": "v..00",
+      "version": "v.1.0",
       "title_id": "TAIL00003",
       "description": "Port of the Tails Adventure reimplementation for PSVita.",
       "requirements": "- Game Data Files: your own Tails Adventure ROM",
@@ -159215,7 +159410,7 @@
       "name": "The Sims",
       "summary": "Reimplementation of The Sims for PSVita.",
       "author": "marcocatena",
-      "version": "v.1.2",
+      "version": "v.1.2.1",
       "title_id": "TSVITA001",
       "description": "Reimplementation of The Sims for PSVita.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -159226,10 +159421,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "TheSimsVita-v1.2.vpk",
-          "url": "https://github.com/marcocatena/TheSimsVita-release/releases/download/v1.2/TheSimsVita-v1.2.vpk",
-          "size": 5006776,
-          "md5": "598b9041ad2823525ad0a4d769aaa299"
+          "filename": "TheSimsVita-v1.2.1.vpk",
+          "url": "https://github.com/marcocatena/TheSimsVita-release/releases/download/v1.2.1/TheSimsVita-v1.2.1.vpk",
+          "size": 5041417,
+          "md5": "e5e5f47630d9e1a16ab4e441ad25fbad"
         }
       ],
       "popularity": 0,
@@ -168607,7 +168802,7 @@
       "name": "Valdis Story",
       "summary": "Port of Valdis Story: Abyssal City for PSVITA.",
       "author": "Botarguirix",
-      "version": "v.0.7.0-alpha",
+      "version": "v.0.8.0-alpha",
       "title_id": "VALDIS001",
       "description": "Port of Valdis Story: Abyssal City for PSVITA.",
       "requirements": "- Game Data Files: your own copy of Valdis Story: Abyssal City",
@@ -168619,9 +168814,9 @@
         {
           "format": "vpk",
           "filename": "vsvita.vpk",
-          "url": "https://github.com/Botarguirix/ValdisStoryVita/releases/download/v0.7.0-alpha/vsvita.vpk",
-          "size": 1622138,
-          "md5": "06d636fe7ae87c7588b1314aa248d68e"
+          "url": "https://github.com/Botarguirix/ValdisStoryVita/releases/download/v0.8.0-alpha/vsvita.vpk",
+          "size": 1653039,
+          "md5": "a1db18e5500db89283dce9a3890819b7"
         }
       ],
       "popularity": 0,
@@ -173202,7 +173397,7 @@
       "name": "VitaForge",
       "summary": "Homebrew store client.",
       "author": "josephinoo",
-      "version": "v.0.1.13",
+      "version": "v.0.1.14",
       "title_id": "VITAFORGE",
       "description": "Client for browsing and installing PSVITA homebrew, written in Rust with SDL2. Reads its catalogue from VitaHomebrewDB.",
       "requirements": "",
@@ -173214,9 +173409,9 @@
         {
           "format": "vpk",
           "filename": "vitaforge.vpk",
-          "url": "https://github.com/josephinoo/vitaForge/releases/download/v0.1.13/vitaforge.vpk",
-          "size": 6201848,
-          "md5": "ec949ade1431e1022bb8a6638a05df59"
+          "url": "https://github.com/josephinoo/vitaForge/releases/download/v0.1.14/vitaforge.vpk",
+          "size": 6274545,
+          "md5": "0c14431e2a594c1c27b0814d58692575"
         }
       ],
       "popularity": 0,
@@ -174524,7 +174719,7 @@
       "name": "VitaSim",
       "summary": "Port of The Sims 1 Legacy Collection for PSVITA.",
       "author": "Reyanon",
-      "version": "v.0.14.37",
+      "version": "v.0.16.4",
       "title_id": "SIMS00001",
       "description": "Port of The Sims 1 Legacy Collection for PSVITA.",
       "requirements": "- Game Data Files: The Sims 1 Legacy Collection",
@@ -174535,10 +174730,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "VitaSim_v0.14.37.vpk",
-          "url": "https://github.com/Reyanon/VitaSim/releases/download/v0.14.37/VitaSim_v0.14.37.vpk",
-          "size": 2875169,
-          "md5": "7b4bdfc900d5ad0daba7b1fa6c615e28"
+          "filename": "VitaSim_v0.16.4.vpk",
+          "url": "https://github.com/Reyanon/VitaSim/releases/download/v0.16.4/VitaSim_v0.16.4.vpk",
+          "size": 3238114,
+          "md5": "a0f7187a3bc3e5dfdb2c98a5693098e4"
         }
       ],
       "popularity": 0,
@@ -180970,7 +181165,7 @@
       "name": "WiliMini",
       "summary": "Bilibili client for PSP.",
       "author": "wilimini",
-      "version": "v.2.13",
+      "version": "v.2.14",
       "title_id": "UCJS10041",
       "description": "Bilibili client for PSP.",
       "requirements": "",
@@ -180981,10 +181176,10 @@
       "downloads": [
         {
           "format": "zip",
-          "filename": "WiliMini-v2.13.zip",
-          "url": "https://github.com/wilimini/WiliMini/releases/download/v2.13/WiliMini-v2.13.zip",
-          "size": 13787848,
-          "md5": "cf231d2a333d228333ef6515e9b3e05d"
+          "filename": "WiliMini-v2.14.zip",
+          "url": "https://github.com/wilimini/WiliMini/releases/download/v2.14/WiliMini-v2.14.zip",
+          "size": 13862384,
+          "md5": "a4cc5f0e53bfb2acbc6086a743204c97"
         }
       ],
       "popularity": 0,
@@ -181840,7 +182035,7 @@
       "name": "Wolff's Store",
       "summary": "Client for the Wolff's Room homebrew collection.",
       "author": "WolffsRoom",
-      "version": "v.1.1.3",
+      "version": "v.1.1.4",
       "title_id": "WFFS00042",
       "description": "Client for the Wolff's Room homebrew collection.",
       "requirements": "",
@@ -181852,9 +182047,9 @@
         {
           "format": "vpk",
           "filename": "WolffsStore.vpk",
-          "url": "https://github.com/WolffsRoom/WolffsStore/releases/download/v1.1.3/WolffsStore.vpk",
-          "size": 7962186,
-          "md5": "26076556291cbe6b48f7da01dbc15661"
+          "url": "https://github.com/WolffsRoom/WolffsStore/releases/download/v1.1.4/WolffsStore.vpk",
+          "size": 7972179,
+          "md5": "f5f7ddb7b3fad7584a57ebcf98877604"
         }
       ],
       "popularity": 0,
@@ -187836,18 +188031,5 @@
       "homepage": "https://github.com/Scene-Collective/ps4-hen"
     }
   ],
-  "errors": [
-    {
-      "source": "ps4-goldhen",
-      "error": "HTTP Error 403: rate limit exceeded"
-    },
-    {
-      "source": "ps4-store",
-      "error": "HTTP Error 403: rate limit exceeded"
-    },
-    {
-      "source": "ps4-hen",
-      "error": "HTTP Error 403: rate limit exceeded"
-    }
-  ]
+  "errors": []
 }
