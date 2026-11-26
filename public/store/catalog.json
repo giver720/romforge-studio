@@ -9469,7 +9469,7 @@
       "name": "ARK-5",
       "summary": "Custom firmware for PSP and the PSVita ePSP.",
       "author": "PSP-Arkfive",
-      "version": "Nightly 2026-11-24",
+      "version": "Nightly 2026-11-25",
       "title_id": null,
       "description": "Custom firmware for PSP and the PSVita ePSP.",
       "requirements": "",
@@ -9482,8 +9482,8 @@
           "format": "zip",
           "filename": "ARK-5.zip",
           "url": "https://github.com/PSP-Arkfive/ARK-5/releases/download/latest/ARK-5.zip",
-          "size": 345599,
-          "md5": "b5712caa7b107881770d8413864b6f1d"
+          "size": 347801,
+          "md5": "342c3e5fddc7638c9342c07fd6f4f307"
         }
       ],
       "popularity": 0,
@@ -11205,7 +11205,7 @@
       "name": "aurorachat-3ds",
       "summary": "Aurorachat 3DS Client",
       "author": "Startendo",
-      "version": "v7.1-r1",
+      "version": "v7.1",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/Unitendo/aurorachat-3ds/main/meta/icon.png",
       "release_url": "https://github.com/Unitendo/aurorachat-3ds/releases",
@@ -11213,20 +11213,20 @@
         {
           "format": "3dsx",
           "filename": "aurorachat.3dsx",
-          "url": "https://github.com/Unitendo/aurorachat-3ds/releases/download/v7.1-r1/aurorachat.3dsx",
-          "size": 201816
+          "url": "https://github.com/Unitendo/aurorachat-3ds/releases/download/v7.1/aurorachat.3dsx",
+          "size": 199380
         },
         {
           "format": "cia",
           "filename": "aurorachat.cia",
-          "url": "https://github.com/Unitendo/aurorachat-3ds/releases/download/v7.1-r1/aurorachat.cia",
-          "size": 485312
+          "url": "https://github.com/Unitendo/aurorachat-3ds/releases/download/v7.1/aurorachat.cia",
+          "size": 533952
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-11T19:21:03Z"
+      "updated_at": "2026-08-30T21:07:42Z"
     },
     {
       "id": "universal-db:TeamAuroraOS/AuroraOS-Installer",
@@ -46783,21 +46783,21 @@
       "name": "Five Nights at Freddy's",
       "summary": "Port of Five Nights at Freddy's for PSVITA. A data tool is on the release page.",
       "author": "noxgp",
-      "version": "v.0.1.0-beta.3",
+      "version": "v.1.0.4",
       "title_id": "FNAFSCN01",
       "description": "Port of Five Nights at Freddy's for PSVITA. A data tool is on the release page.",
       "requirements": "- Game Data Files: your own FNaF 1 Android APK",
       "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c3f9b7e67154b63c66af52a34cdb95ecb8a2a0b72f77ee0cf83e3be5a9b4ff0e.png",
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/18746b487153dc1ca3d728ce57b841b6e8faeca65a0900aa46864f73d07642c8.png",
       "screenshots": [],
       "release_url": "https://github.com/noxgp/fnaf1-ps-vita/releases",
       "downloads": [
         {
-          "format": "vpk",
-          "filename": "FNAF1-Vita-v0.1.0-beta.3.vpk",
-          "url": "https://github.com/noxgp/fnaf1-ps-vita/releases/download/v0.1.0-beta.3/FNAF1-Vita-v0.1.0-beta.3.vpk",
-          "size": 470946,
-          "md5": "a13667ab247e46faf17d8ce1a8ceba45"
+          "format": "zip",
+          "filename": "v1.0.4",
+          "url": "https://github.com/noxgp/fnaf1-ps-vita/releases/tag/v1.0.4",
+          "size": 145252,
+          "md5": "f44dba77a8199d86cba2c0bb066bf090"
         }
       ],
       "popularity": 0,
@@ -46836,6 +46836,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2021-02-22"
+    },
+    {
+      "id": "vitadbtoo-vita:5098",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Five Nights at Freddy's 2",
+      "summary": "Unofficial PS Vita port of FNaF 2 (Android 2.0.6)",
+      "author": "noxgp",
+      "version": "v.1.0",
+      "title_id": "FNAF20002",
+      "description": "An unofficial PS Vita port of Five Nights at Freddy's 2 (Android version 2.0.6).\nIt is not an emulator or a transpiler. It is a Clickteam Fusion runtime written from scratch in C. It loads the original game data from the Android APK and runs the game's events, animations, movements and collisions the way the official runtime does. Rendering uses vita2d on the GPU, and audio goes through a custom mixer.",
+      "requirements": "- Game Data Files: Android",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/b599b8cc9ebc76ad2e1cbdf4012ce37a5e083654abbee4fbe3fb787a9dcd2c83.png",
+      "screenshots": [],
+      "release_url": "https://github.com/noxgp/fnaf2_ps_vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "FNaF2_Vita_V1.0.vpk",
+          "url": "https://github.com/noxgp/fnaf2_ps_vita/releases/download/v1.0/FNaF2_Vita_V1.0.vpk",
+          "size": 988725,
+          "md5": "2b695903fdf0c82bf17750982de874d0"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-25"
     },
     {
       "id": "hbas-switch:FixCheat",
@@ -54588,6 +54619,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2010-04-23"
+    },
+    {
+      "id": "vitadbtoo-vita:5097",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "God of War: Betrayal",
+      "summary": "God of War: Betrayal for PS Vita. Native port of the 2007 J2ME phone game: 640x360 at 25 FPS (30 FPS option in settings), gamepad controls, Russian/Ukrainian localization. Credits: PC port - samioan, PSP port - Akrgood, PS Vita port - Loki D.S. (phc.lokilab.ru).",
+      "author": "LokiDSx",
+      "version": "v.1.0.0",
+      "title_id": "GOWB00001",
+      "description": "A native PlayStation Vita port of the 2007 J2ME game God of War: Betrayal. It runs the translated C++ game logic - no Java emulator is involved. Renders with vita2d and mixes audio through.\nRequirements:",
+      "requirements": "- Game Data Files: Movile",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/46070b0e0e7ad3b85461f1c87b657a3ae0bd7dcbbce268aaed46f4e0a5550bb9.png",
+      "screenshots": [],
+      "release_url": "https://github.com/LokiDSx/GoW-Betrayal-PSVita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "gow_betrayal.vpk",
+          "url": "https://github.com/LokiDSx/GoW-Betrayal-PSVita/releases/download/v1.0.0/gow_betrayal.vpk",
+          "size": 685637,
+          "md5": "69fde82bd663a2702fabf9845206823b"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-25"
     },
     {
       "id": "universal-db:d0k3/GodMode9",
@@ -70311,7 +70373,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-25T21:18:40+00:00"
+      "updated_at": "2026-11-23T12:38:48+00:00"
     },
     {
       "id": "open-shop-channel-wii:KoreanKii",
@@ -72597,8 +72659,8 @@
           "format": "vpk",
           "filename": "isle.vpk",
           "url": "https://github.com/isledecomp/isle-portable/releases/download/continuous/isle.vpk",
-          "size": 7200797,
-          "md5": "249d9e677ee7ca673b74f76c12c69309"
+          "size": 7200726,
+          "md5": "ec9f58e7e094c58fc9199336d95f1b82"
         }
       ],
       "popularity": 0,
@@ -91263,9 +91325,9 @@
       "name": "NFS Underground 2 (danos-x5)",
       "summary": "Port of Need for Speed Underground 2 for PSVita.",
       "author": "danos-x5",
-      "version": "v.0.8.5",
+      "version": "v.0.9.0",
       "title_id": "NFSU2VITA",
-      "description": "Port of Need for Speed Underground 2 for PSVita.",
+      "description": "A fan project that enables you to play your own PC copy of Need For Speed Underground 2 (Version 1.2) on your PS VITA. This is not the game files for Need For Speed Underground 2. You must provide your own legally obtained copy of the game. This project provides a compatibility layer along with performance optimisations to allow the PC version of the game to run on a PS VITA system.\nThis is not a decompilation or rewrite of the game. The game's own code is translated to C++ ahead of time from your copy of SPEED2.EXE, and the gameplay itself (physics, AI, career, saves) is left as it is.",
       "requirements": "- Game Data Files: PC",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/e296ec540ee0cb69268b26222b630a068bd3a999369e1bbfa8923d2541085a5d.png",
@@ -91275,9 +91337,9 @@
         {
           "format": "vpk",
           "filename": "NFSU2VITA.vpk",
-          "url": "https://github.com/danos-x5/NFSUG2_VITA/releases/download/v0.8.5/NFSU2VITA.vpk",
-          "size": 10405723,
-          "md5": "378bb44b51c25449ae69f6b1cfccb702"
+          "url": "https://github.com/danos-x5/NFSUG2_VITA/releases/download/v0.9.0/NFSU2VITA.vpk",
+          "size": 11972573,
+          "md5": "e3adbaea987a128f336807725f8b15d7"
         }
       ],
       "popularity": 0,
@@ -97679,9 +97741,9 @@
       "name": "OpenRCT2Vita",
       "summary": "Port of OpenRCT2 for PSVita.",
       "author": "Paxrisen",
-      "version": "v.1.0.2",
+      "version": "v.1.0.3",
       "title_id": "ORCV00001",
-      "description": "Port of OpenRCT2 for PSVita.",
+      "description": "OpenRCT2Vita is a new port built on a modern OpenRCT2 version instead of the old OpenRCT2-CE code base. The focus is on performance, Vita-friendly controls and a few Vita-exclusive extras.",
       "requirements": "- Game Data Files: PC",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/9ae1639352be0e0b98ef3b32bf61a815ad88ae8f00c5f11c38fae3804ddab2e7.png",
@@ -97690,10 +97752,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "4817-openrct2vita-1.0.2.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/4817-openrct2vita-1.0.2.vpk",
-          "size": 6913501,
-          "md5": "8f65fd40f3ae76154996f268b244ae9a"
+          "filename": "OpenRCT2Vita_v1.0.3.vpk",
+          "url": "https://github.com/Paxrisen/OpenRCT2Vita/releases/download/OpenRCT2Vitav.1.0.3/OpenRCT2Vita_v1.0.3.vpk",
+          "size": 6914914,
+          "md5": "5df3fd5c4795beb0e73834d7352d219b"
         }
       ],
       "popularity": 0,
@@ -103231,7 +103293,7 @@
       "name": "PictoRelay",
       "summary": "Real online PictoChat between DS, 3DS, PC and Mobile",
       "author": "HollowOwl",
-      "version": "v1.4.2",
+      "version": "v1.4.3",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/ShinMikite/PictoRelay-3DS/main/icon.png",
       "release_url": "https://github.com/ShinMikite/PictoRelay-3DS/releases",
@@ -103239,14 +103301,14 @@
         {
           "format": "cia",
           "filename": "PictoRelay.cia",
-          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.4.2/PictoRelay.cia",
-          "size": 6775744
+          "url": "https://github.com/ShinMikite/PictoRelay-3DS/releases/download/v1.4.3/PictoRelay.cia",
+          "size": 6780352
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-25T08:05:13Z"
+      "updated_at": "2026-11-25T23:51:55Z"
     },
     {
       "id": "vitadbtoo-vita:1429",
@@ -110231,7 +110293,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 20016,
+      "popularity": 20042,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110258,7 +110320,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3851,
+      "popularity": 3858,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110285,7 +110347,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 17643,
+      "popularity": 17744,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110312,7 +110374,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7677,
+      "popularity": 7689,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110339,7 +110401,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 100614,
+      "popularity": 101726,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110366,7 +110428,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 439,
+      "popularity": 443,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -111236,30 +111298,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.30.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.31.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.30",
+      "version": "v12.6.31",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.30.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.30/ps5upload-12.6.30.elf",
-          "sha256": "722badeb0943b624660a6614a403cfba46ed28094701ab3a49655037d5a8e6a9"
+          "filename": "ps5upload-12.6.31.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.31/ps5upload-12.6.31.elf",
+          "sha256": "57bc3a0df33226c7f37c9d870aa21ec549dedb2414c09e8c47e647d14f125e45"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-25T22:51:01+08:00"
+      "updated_at": "2026-11-26T12:37:05+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -129157,37 +129219,6 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-18"
-    },
-    {
-      "id": "vitadbtoo-vita:4971",
-      "platforms": [
-        "psvita"
-      ],
-      "name": "Real Racing 3",
-      "summary": "Port of Real Racing 3 (Android) for PSVita.",
-      "author": "CHUTA7X",
-      "version": "v.3.6.3",
-      "title_id": "RR3VITA01",
-      "description": "Port of Real Racing 3 (Android) for PSVita.",
-      "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- fd_fix.skprx in ur0:tai\n- Game Data Files: your own copy of Real Racing 3 (Android)",
-      "license": null,
-      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/26942d6e38fd16776b392fb8002b76c05c678fe4ab4855c78f7531348699f73e.png",
-      "screenshots": [],
-      "release_url": "https://github.com/CHUTA7X/Real-Racing-3-Port-Release/releases",
-      "downloads": [
-        {
-          "format": "vpk",
-          "filename": "RR3_v3.6.3_reemplaza_la_1.4.0.vpk",
-          "url": "https://github.com/CHUTA7X/Real-Racing-3-Port-Release/releases/download/Update3.6.3/RR3_v3.6.3_reemplaza_la_1.4.0.vpk",
-          "size": 8602781,
-          "md5": "99a94bdf6308bb7dcd9e7ce8694d1760"
-        }
-      ],
-      "popularity": 0,
-      "source": "VitaDBtoo",
-      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
-      "license_url": null,
-      "updated_at": "2026-11-24"
     },
     {
       "id": "vitadbtoo-vita:1809",
@@ -153045,7 +153076,7 @@
       "source_url": "https://oscwii.org/",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-25T21:12:25+00:00"
+      "updated_at": "2026-11-24T00:00:00+00:00"
     },
     {
       "id": "vitadbtoo-vita:4827",
@@ -161610,7 +161641,7 @@
       "name": "TJAP_3DS",
       "summary": "TJAPlayer for 3DS - Music game of the TJA file.",
       "author": "TogeToge & MarioGames",
-      "version": "v2.4.4",
+      "version": "v2.4.4A",
       "license": null,
       "icon_url": "https://raw.githubusercontent.com/LuMariGames/TJAP_3DS/main/resource/icon.png",
       "release_url": "https://github.com/LuMariGames/TJAP_3DS/releases",
@@ -161618,20 +161649,20 @@
         {
           "format": "3dsx",
           "filename": "TJAP_3DS.3dsx",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.4/TJAP_3DS.3dsx",
-          "size": 10263440
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.4A/TJAP_3DS.3dsx",
+          "size": 10263608
         },
         {
           "format": "cia",
           "filename": "TJAP_3DS.cia",
-          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.4/TJAP_3DS.cia",
+          "url": "https://github.com/LuMariGames/TJAP_3DS/releases/download/v2.4.4A/TJAP_3DS.cia",
           "size": 10433472
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-16T05:35:45Z"
+      "updated_at": "2026-11-21T04:46:19Z"
     },
     {
       "id": "vitadbtoo-psp:984",
@@ -162817,7 +162848,7 @@
       "name": "Tougelike",
       "summary": "Night racing roguelike on Japanese mountain roads.",
       "author": "noeljustin",
-      "version": "v0.1.69",
+      "version": "v0.1.72",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/njlent/tougelike-3ds-pub/main/assets/icon.png",
       "release_url": "https://github.com/njlent/tougelike-3ds-pub/releases",
@@ -162825,20 +162856,20 @@
         {
           "format": "3dsx",
           "filename": "tougelike.3dsx",
-          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.69/tougelike.3dsx",
-          "size": 52260920
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.72/tougelike.3dsx",
+          "size": 52621268
         },
         {
           "format": "cia",
           "filename": "tougelike.cia",
-          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.69/tougelike.cia",
-          "size": 52478912
+          "url": "https://github.com/njlent/tougelike-3ds-pub/releases/download/v0.1.72/tougelike.cia",
+          "size": 52769728
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-24T01:05:26Z"
+      "updated_at": "2026-11-25T23:19:09Z"
     },
     {
       "id": "vitadbtoo-psp:3062",
