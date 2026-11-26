@@ -2043,6 +2043,37 @@
       "updated_at": "2026-07-04T15:30:26Z"
     },
     {
+      "id": "universal-db:BolgarMaxym97/3ds-recorder",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "3DS Recorder",
+      "summary": "Record games, the HOME Menu and apps on your 3DS",
+      "author": "Max Bolhar",
+      "version": "v1.7.0",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/BolgarMaxym97/3ds-recorder/main/app/assets/icon.png",
+      "release_url": "https://github.com/BolgarMaxym97/3ds-recorder/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "3ds-recorder.3dsx",
+          "url": "https://github.com/BolgarMaxym97/3ds-recorder/releases/download/v1.7.0/3ds-recorder.3dsx",
+          "size": 8619624
+        },
+        {
+          "format": "cia",
+          "filename": "3ds-recorder.cia",
+          "url": "https://github.com/BolgarMaxym97/3ds-recorder/releases/download/v1.7.0/3ds-recorder.cia",
+          "size": 8397760
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-11-23T20:23:14Z"
+    },
+    {
       "id": "universal-db:memeToasty/3ds_sorting",
       "platforms": [
         "3ds"
@@ -12712,6 +12743,37 @@
       "updated_at": "2026-10-16T21:18:06Z"
     },
     {
+      "id": "universal-db:oneup03/BanjoRecomp3D",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Banjo: Recompiled 3D",
+      "summary": "3DS Port of Banjo-Kazooie made using rt64-3ds",
+      "author": "oneup03",
+      "version": "rolling",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/oneup03/BanjoRecomp3D/main/platform/3ds/icon.png",
+      "release_url": "https://github.com/oneup03/BanjoRecomp3D/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "BanjoRecomp.3dsx",
+          "url": "https://github.com/oneup03/BanjoRecomp3D/releases/download/rolling/BanjoRecomp.3dsx",
+          "size": 11756856
+        },
+        {
+          "format": "cia",
+          "filename": "BanjoRecompiled3D-3ds.cia",
+          "url": "https://github.com/oneup03/BanjoRecomp3D/releases/download/rolling/BanjoRecompiled3D-3ds.cia",
+          "size": 7482304
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-11-25T22:05:32Z"
+    },
+    {
       "id": "vitadbtoo-psp:3663",
       "platforms": [
         "psp"
@@ -15508,6 +15570,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2009-05-01"
+    },
+    {
+      "id": "vitadbtoo-vita:5099",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "Black Ops Zombies",
+      "summary": "Port of the Call of Duty: Black Ops zombies mode. Game files are converted on your PC from your own copy.",
+      "author": "Voyd282",
+      "version": "v.1.00",
+      "title_id": "BOZM00001",
+      "description": "Port of the Call of Duty: Black Ops zombies mode. Game files are converted on your PC from your own copy.",
+      "requirements": "Own copy of Call of Duty: Black Ops for PC (English)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/56fa2809b977755228852dcc88f21a298fd906f7d33599414e09437fdabd5473.png",
+      "screenshots": [],
+      "release_url": "https://github.com/Voyd282/bo1-zombies-vita/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "bo1zombies.vpk",
+          "url": "https://github.com/Voyd282/bo1-zombies-vita/releases/download/Release/bo1zombies.vpk",
+          "size": 8687892,
+          "md5": "97d89853d1b7a896f3ef5da680ce429a"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-26"
     },
     {
       "id": "vitadbtoo-psp:3181",
@@ -19437,6 +19530,32 @@
       "source_url": "https://hb-app.store/switch",
       "license_url": null,
       "updated_at": "2021-04-25"
+    },
+    {
+      "id": "ps5-payloads-atlas:browserps5.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "BrowserPS5",
+      "summary": "A real, full web browser for the PS5: a port of current WebKit with the JavaScript JIT, drawn on the console's GPU and driven with the DualSense.",
+      "author": "",
+      "version": "v1.0.0-rc17",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/ramalhoboss/browserps5",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "browserps5.elf",
+          "url": "https://github.com/ramalhoboss/BrowserPS5/releases/download/v1.0.0-rc17/BrowserPS5.elf",
+          "sha256": "61a5cb6848dcb3c145c22e24a1433b66801d7770b8331f00b25a2fea3f80a575"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-19T04:21:40+08:00"
     },
     {
       "id": "vitadbtoo-psp:4274",
@@ -26279,7 +26398,7 @@
           "format": "3dsx",
           "filename": "ClassiCube-3ds.3dsx",
           "url": "https://cdn.classicube.net/client/latest/ClassiCube-3ds.3dsx",
-          "size": 783564
+          "size": 783452
         },
         {
           "format": "cia",
@@ -28209,7 +28328,7 @@
       "name": "Cosmo Enhanced",
       "summary": "Enhanced port of Cosmo's Cosmic Adventure for PSVITA.",
       "author": "GITitdoneboi",
-      "version": "v.0.5.0",
+      "version": "v.0.5.1",
       "title_id": "CSMO00001",
       "description": "Enhanced port of Cosmo's Cosmic Adventure for PSVITA.",
       "requirements": "- Game Data Files: your own game files of Cosmo's Cosmic Adventure",
@@ -28220,10 +28339,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "cosmo-v0.5.0-vita.vpk",
-          "url": "https://github.com/GITitdoneboi/enhanced-cosmo/releases/download/v0.5.0/cosmo-v0.5.0-vita.vpk",
-          "size": 25937998,
-          "md5": "1c0437434e366698259bfac5714166ea"
+          "filename": "cosmo-v0.5.1-vita.vpk",
+          "url": "https://github.com/GITitdoneboi/enhanced-cosmo/releases/download/v0.5.1/cosmo-v0.5.1-vita.vpk",
+          "size": 26386208,
+          "md5": "e952738939f16bd7c2250f5b8f7d813e"
         }
       ],
       "popularity": 0,
@@ -33021,6 +33140,32 @@
       "updated_at": "2006-01-26"
     },
     {
+      "id": "ps5-payloads-atlas:davinci-core-v1.0.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "davinci-core",
+      "summary": "DAVVINCI-CORE-PS5-payload",
+      "author": "",
+      "version": "v1.0.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/b4ckd0orl/davinci-core",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "davinci-core-v1.0.elf",
+          "url": "https://github.com/B4ckd0orl/davinci-core/releases/download/v1.0.0/Davinci-Core-v1.0.elf",
+          "sha256": "af874418fefbde9ba7269566e05f71309c7d6273511a07f57eac11a1a174fa99"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-21T09:41:38+08:00"
+    },
+    {
       "id": "vitadbtoo-psp:3017",
       "platforms": [
         "psp"
@@ -36828,6 +36973,37 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2020-01-01"
+    },
+    {
+      "id": "universal-db:oneup03/Donkey-Kong-64-3D",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Donkey Kong 64 3D",
+      "summary": "3DS Port of Donkey Kong 64 made using rt64-3ds",
+      "author": "oneup03",
+      "version": "rolling",
+      "license": "GNU General Public License v3.0",
+      "icon_url": "https://raw.githubusercontent.com/oneup03/Donkey-Kong-64-3D/main/platform/3ds/icon.png",
+      "release_url": "https://github.com/oneup03/Donkey-Kong-64-3D/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "DK64.3dsx",
+          "url": "https://github.com/oneup03/Donkey-Kong-64-3D/releases/download/rolling/DK64.3dsx",
+          "size": 8947272
+        },
+        {
+          "format": "cia",
+          "filename": "DK64Recompiled3D-3ds.cia",
+          "url": "https://github.com/oneup03/Donkey-Kong-64-3D/releases/download/rolling/DK64Recompiled3D-3ds.cia",
+          "size": 5862336
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-11-25T21:22:59Z"
     },
     {
       "id": "open-shop-channel-wii:dkjunior",
@@ -56201,7 +56377,7 @@
       "name": "GreenVita (xconsole)",
       "summary": "Xbox Cloud Gaming and Xbox remote play for PSVita, continued fork of GreenVita.",
       "author": "joaopedr00000",
-      "version": "v.0.3.1",
+      "version": "v.0.3.3",
       "title_id": "GREENVITA",
       "description": "Xbox Cloud Gaming and Xbox remote play for PSVita, continued fork of GreenVita.",
       "requirements": "",
@@ -56213,9 +56389,9 @@
         {
           "format": "vpk",
           "filename": "green-vita.vpk",
-          "url": "https://github.com/joaopedr00000/green-vita-xconsole/releases/download/v0.3.1/green-vita.vpk",
-          "size": 14282368,
-          "md5": "7d65be35579fdff3b0ed708a48337ec3"
+          "url": "https://github.com/joaopedr00000/green-vita-xconsole/releases/download/v0.3.3/green-vita.vpk",
+          "size": 14504974,
+          "md5": "fa6cb2812e6df080ca3f872f93c23d87"
         }
       ],
       "popularity": 0,
@@ -70508,7 +70684,7 @@
       "name": "kraken-mount",
       "summary": "Minimalist PS5 game mounter supporting PKG, folder dumps, zstd and lz4",
       "author": "",
-      "version": "v0.4.0",
+      "version": "v0.4.1",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/quer3q/kraken-mount",
@@ -70516,15 +70692,15 @@
         {
           "format": "elf",
           "filename": "kraken-mount.elf",
-          "url": "https://github.com/quer3q/kraken-mount/releases/download/v0.4.0/kraken-mount.elf",
-          "sha256": "6c778613b796039230f6690a16e4c04a76069a6b7b6c8030e292f54e904cc401"
+          "url": "https://github.com/quer3q/kraken-mount/releases/download/v0.4.1/kraken-mount.elf",
+          "sha256": "88d39545728f4202421616a299467545afe7f9b295b636f7bd49b1f2fe1aad1d"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-25T18:21:29+08:00"
+      "updated_at": "2026-11-27T05:01:15+08:00"
     },
     {
       "id": "vitadbtoo-psp:2785",
@@ -79312,7 +79488,7 @@
       "name": "Mario Kart DS",
       "summary": "Native port of the Mario Kart DS decompilation for PSVITA.",
       "author": "PupueStudios",
-      "version": "v.1.2",
+      "version": "v.1.3",
       "title_id": "MKDS00001",
       "description": "Native port of the Mario Kart DS decompilation for PSVITA.",
       "requirements": "- Game Data Files: your own dump of Mario Kart DS (Europe, AMCP)",
@@ -79324,9 +79500,9 @@
         {
           "format": "vpk",
           "filename": "mkds.vpk",
-          "url": "https://github.com/PupueStudios/mkds-vita/releases/download/v1.2/mkds.vpk",
-          "size": 2288161,
-          "md5": "cc69c0eb9395ad67265ab974e6f74c73"
+          "url": "https://github.com/PupueStudios/mkds-vita/releases/download/v1.3/mkds.vpk",
+          "size": 2290308,
+          "md5": "28a9872b375c3eb5b24a81a68445b141"
         }
       ],
       "popularity": 0,
@@ -82428,6 +82604,37 @@
       "updated_at": "2005-10-16"
     },
     {
+      "id": "vitadbtoo-vita:5100",
+      "platforms": [
+        "psvita"
+      ],
+      "name": "MGS Mobile",
+      "summary": "Port of Metal Gear Solid Mobile (N-Gage). Requires your own copy of the game.",
+      "author": "LeithSilver",
+      "version": "v.0.1",
+      "title_id": "MGSM00001",
+      "description": "Port of Metal Gear Solid Mobile (N-Gage). Requires your own copy of the game.",
+      "requirements": "Own copy of Metal Gear Solid Mobile (N-Gage)",
+      "license": null,
+      "icon_url": "https://raw.githubusercontent.com/DrDecki/VitaDBtoo-db/main/icons/c66a2cc2225d0e3b52aa609de5a94899d5a18a73f256ce3970a6881bd9591367.png",
+      "screenshots": [],
+      "release_url": "https://github.com/LeithSilver/mgsm/releases",
+      "downloads": [
+        {
+          "format": "vpk",
+          "filename": "MGS_Mobile_0.1_PSVita.vpk",
+          "url": "https://github.com/LeithSilver/mgsm/releases/download/v0.1/MGS_Mobile_0.1_PSVita.vpk",
+          "size": 1781329,
+          "md5": "2ad4aad3051c60bb446533c8981e102d"
+        }
+      ],
+      "popularity": 0,
+      "source": "VitaDBtoo",
+      "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
+      "license_url": null,
+      "updated_at": "2026-11-26"
+    },
+    {
       "id": "vitadbtoo-psp:3857",
       "platforms": [
         "psp"
@@ -85026,7 +85233,7 @@
       "name": "Monster Hunter 4 Ultimate",
       "summary": "Azahar derived runner for MH4U.",
       "author": "SaNch0sE",
-      "version": "v.0.4.5-beta",
+      "version": "v.0.4.6-beta",
       "title_id": "MH4UVITA0",
       "description": "Azahar derived runner for MH4U.",
       "requirements": "- m4hunative.skprx\n- CapUnlocker.skprx\n- Game Data Files: 3DS",
@@ -85037,10 +85244,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "Azahar-MH4U-0.4.5-beta.vpk",
-          "url": "https://github.com/SaNch0sE/azahar-vita-mh4u/releases/download/0.4.5-beta/Azahar-MH4U-0.4.5-beta.vpk",
-          "size": 8462391,
-          "md5": "9d60951b24cdf749d91e67e79be5b9da"
+          "filename": "Azahar-MH4U-0.4.6-beta.vpk",
+          "url": "https://github.com/SaNch0sE/azahar-vita-mh4u/releases/download/0.4.6-beta/Azahar-MH4U-0.4.6-beta.vpk",
+          "size": 8453171,
+          "md5": "4a1605c93d91d2dbaa39c71d3f76b743"
         }
       ],
       "popularity": 0,
@@ -88531,7 +88738,7 @@
       "name": "Nazi Zombies Portable: Reboot",
       "summary": "3D shooter game for PSP. Created by: Blubswillrule: Coding, Models, GFX, Sounds, Music Ju[s]tice: Maps, Models, GFX Jukki: Coding Biodude: Sounds Dr_Mabuse1981: Sounds Naievil: Coding, NX Maintaining MotoLegacy: Coding, GFX, Music Derped_Crusader: Models, GFX",
       "author": "NZP Team",
-      "version": "Nightly 2026-11-23",
+      "version": "Nightly 2026-11-26",
       "title_id": "NZPO01089",
       "description": "",
       "requirements": "",
@@ -88544,8 +88751,8 @@
           "format": "zip",
           "filename": "nzportable-psp.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-psp.zip",
-          "size": 65086918,
-          "md5": "b791bb67d9ee6774a8431a27d5615e0c"
+          "size": 65095684,
+          "md5": "009b30a10da5d8a8a7d3cd9a2e3d968d"
         }
       ],
       "popularity": 0,
@@ -88571,13 +88778,13 @@
           "format": "zip",
           "filename": "nzportable-3ds.zip",
           "url": "https://github.com/nzp-team/nzportable/releases/download/nightly/nzportable-3ds.zip",
-          "size": 65232130
+          "size": 65240896
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-23T19:10:40Z"
+      "updated_at": "2026-11-26T17:41:15Z"
     },
     {
       "id": "hbas-switch:NaziZombiesPortable",
@@ -88620,7 +88827,7 @@
       "name": "Nazi Zombies: Portable",
       "summary": "Nazi Zombies: Portable, a fan-made zombies game on a Quake engine, for PSVITA.",
       "author": "NZP Team",
-      "version": "Nightly 2026-11-23",
+      "version": "Nightly 2026-11-26",
       "title_id": "NZZMBSPTB",
       "description": "Nazi Zombies: Portable, a fan-made zombies game on a Quake engine, for PSVITA.",
       "requirements": "- Data files: extract the data archive to ux0:data/",
@@ -91227,7 +91434,7 @@
       "name": "NFS Hot Pursuit 2 (elmnt22)",
       "summary": "Native port of Need for Speed: Hot Pursuit 2 for PSVita.",
       "author": "elmnt22",
-      "version": "v.0.1.1-alpha",
+      "version": "v.0.1.2-alpha",
       "title_id": "NFSHP2002",
       "description": "Native port of Need for Speed: Hot Pursuit 2 (PS2) for PSVita. Copy ZDIR.BIN and ZZDATA.BIN from your disc to ux0:data/NFSHP2/.",
       "requirements": "- Game Data Files: your own copy of Need for Speed: Hot Pursuit 2 (PS2)",
@@ -91239,9 +91446,9 @@
         {
           "format": "vpk",
           "filename": "NFSHP2.vpk",
-          "url": "https://github.com/elmnt22/vita-nfshp2/releases/download/v0.1.1-alpha/NFSHP2.vpk",
-          "size": 3453887,
-          "md5": "1951e933c571cc6d478b9dc7438949cb"
+          "url": "https://github.com/elmnt22/vita-nfshp2/releases/download/v0.1.2-alpha/NFSHP2.vpk",
+          "size": 4258410,
+          "md5": "a2792fab66bb83c53db8d5b45830a2dd"
         }
       ],
       "popularity": 0,
@@ -93526,6 +93733,32 @@
       "updated_at": "2016-05-24T15:23:21Z"
     },
     {
+      "id": "ps5-payloads-atlas:noupdate.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "NoUpdate",
+      "summary": "",
+      "author": "",
+      "version": "v1.0.0",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/zerodayofficial/noupdate",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "noupdate.elf",
+          "url": "https://github.com/zerodayofficial/NoUpdate/releases/download/v1.0.0/NoUpdate.elf",
+          "sha256": "ff2443663899210b5a8aebf1fcac6c953d266f2ae10f2b8521866dce7df9d3cd"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-21T19:36:25+08:00"
+    },
+    {
       "id": "vitadbtoo-psp:5078",
       "platforms": [
         "psp"
@@ -95536,7 +95769,7 @@
       "name": "Ocarina of Time PSP",
       "summary": "Port of the Ocarina of Time decompilation for PSP.",
       "author": "z2442",
-      "version": "Nightly 2026-11-24",
+      "version": "Nightly 2026-11-26",
       "title_id": "UCJS10041",
       "description": "Port of the Ocarina of Time decompilation for PSP.",
       "requirements": "- Game Data Files: your own Ocarina of Time NTSC 1.0 ROM",
@@ -95549,8 +95782,8 @@
           "format": "zip",
           "filename": "oot-psp-ntsc-1.0.zip",
           "url": "https://github.com/z2442/oot-PSP/releases/download/latest/oot-psp-ntsc-1.0.zip",
-          "size": 2791142,
-          "md5": "568be01a18df2e136963b78e0ab7334f"
+          "size": 2793033,
+          "md5": "ee18d975daf37d4bbf5245f74c7bb66d"
         }
       ],
       "popularity": 0,
@@ -97641,7 +97874,7 @@
       "name": "OpenNow Vita",
       "summary": "Nvidia GeForce Now client for PSVita.",
       "author": "josephinoo",
-      "version": "v.0.3.3",
+      "version": "v.0.3.5",
       "title_id": "OPENNOWV0",
       "description": "A native homebrew GeForce NOW client for the PlayStation Vita.",
       "requirements": "",
@@ -97653,9 +97886,9 @@
         {
           "format": "vpk",
           "filename": "opennow-vita.vpk",
-          "url": "https://github.com/OpenCloudGaming/OpenNOW-vita/releases/download/v0.3.3/opennow-vita.vpk",
-          "size": 9439097,
-          "md5": "f1cafbc38b503db55b2e04e6b41b2284"
+          "url": "https://github.com/OpenCloudGaming/OpenNOW-vita/releases/download/v0.3.5/opennow-vita.vpk",
+          "size": 9459807,
+          "md5": "a5330b4a74505aba988e063a22f0bfb4"
         }
       ],
       "popularity": 405,
@@ -104312,6 +104545,37 @@
       "updated_at": "2007-10-14"
     },
     {
+      "id": "universal-db:dodosiiii/Pixelnaute",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Pixelnaute",
+      "summary": "C’est un navigateur pour la New Nintendo 3DS, pour le moment.",
+      "author": "dodosiiii",
+      "version": "v0.7",
+      "license": "Pixelnaute Attribution License (custom)",
+      "icon_url": "https://raw.githubusercontent.com/dodosiiii/Pixelnaute/main/assets/icon.png",
+      "release_url": "https://github.com/dodosiiii/Pixelnaute/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "N3DSWeb.3dsx",
+          "url": "https://github.com/dodosiiii/Pixelnaute/releases/download/v0.7/N3DSWeb.3dsx",
+          "size": 4082640
+        },
+        {
+          "format": "cia",
+          "filename": "N3DSWeb.cia",
+          "url": "https://github.com/dodosiiii/Pixelnaute/releases/download/v0.7/N3DSWeb.cia",
+          "size": 3408832
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-10-24T08:56:18Z"
+    },
+    {
       "id": "vitadbtoo-psp:4464",
       "platforms": [
         "psp"
@@ -110293,7 +110557,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 20042,
+      "popularity": 20077,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110320,7 +110584,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3858,
+      "popularity": 3866,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110347,7 +110611,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 17744,
+      "popularity": 17924,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110374,7 +110638,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7689,
+      "popularity": 7717,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110401,7 +110665,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 101726,
+      "popularity": 103383,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110428,7 +110692,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 443,
+      "popularity": 454,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -110622,30 +110886,30 @@
       "updated_at": "2026-08-24T22:44:14+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5-dump-forge-0.5.7-ps5.elf",
+      "id": "ps5-payloads-atlas:ps5-dump-forge-0.6.0-ps5.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-dump-forge",
       "summary": "A toolkit for working with PS5 game dumps. Cross-platform - including the PS5 itself.",
       "author": "",
-      "version": "v0.5.7",
+      "version": "v0.6.0",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/quer3q/ps5-dump-forge",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5-dump-forge-0.5.7-ps5.elf",
-          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.5.7/ps5-dump-forge-0.5.7-ps5.elf",
-          "sha256": "83a7e82a9070a671953d96e4acfc909697505281e4a023a2c6411316c2c1ce6c"
+          "filename": "ps5-dump-forge-0.6.0-ps5.elf",
+          "url": "https://github.com/quer3q/ps5-dump-forge/releases/download/v0.6.0/ps5-dump-forge-0.6.0-ps5.elf",
+          "sha256": "420265c626d517ed433ecf360092dc28e1061fd0ac29346de488c41cde3ac0d2"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-23T01:12:11+08:00"
+      "updated_at": "2026-11-27T00:25:55+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-exporter.elf",
@@ -111116,30 +111380,30 @@
       "updated_at": "2026-10-10T01:12:13+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:web-file-mgr-v1.14.elf",
+      "id": "ps5-payloads-atlas:web-file-mgr-v1.15.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-web-file-manager",
       "summary": "A file manager for PS5 with a web UI.",
       "author": "",
-      "version": "v1.14",
+      "version": "v1.15",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/owendswang/ps5-web-file-manager",
       "downloads": [
         {
           "format": "elf",
-          "filename": "web-file-mgr-v1.14.elf",
-          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.14/web-file-mgr-v1.14.elf",
-          "sha256": "8493c0bd11d77f9cce4b6c93564ffcae7185a5b530ecf856a768519c2514e231"
+          "filename": "web-file-mgr-v1.15.elf",
+          "url": "https://github.com/owendswang/ps5-web-file-manager/releases/download/v1.15/web-file-mgr-v1.15.elf",
+          "sha256": "a3527dff53bfc783b4321ae42a8a691944f8d7ac4246c2a3c46ea31b6dc1d4ff"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-10T21:40:53+08:00"
+      "updated_at": "2026-11-26T22:19:41+08:00"
     },
     {
       "id": "ps5-payloads-atlas:webkit-autoloader-installer_v0.8.4.elf",
@@ -111298,30 +111562,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.31.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.33.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.31",
+      "version": "v12.6.33",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.31.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.31/ps5upload-12.6.31.elf",
-          "sha256": "57bc3a0df33226c7f37c9d870aa21ec549dedb2414c09e8c47e647d14f125e45"
+          "filename": "ps5upload-12.6.33.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.33/ps5upload-12.6.33.elf",
+          "sha256": "2ad3f7ae4d4b5a05346e4eb22ef80df397dbf4165f2c9b9cd5a2565f73cfa539"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-26T12:37:05+08:00"
+      "updated_at": "2026-11-27T04:19:57+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -129541,7 +129805,7 @@
       "name": "ReBOX",
       "summary": "Multi arcade board emulator for PSVita.",
       "author": "Reyanon",
-      "version": "v.0.15.38",
+      "version": "v.0.16.69",
       "title_id": "RBOX00001",
       "description": "Arcade board emulator with drivers ported from MAME 0.289, from 8-bit classics up to CPS3, Sega System 32, Cave CV1000 and PGM2. Put non-merged MAME 0.260 romsets in ux0:data/rebox/roms/.",
       "requirements": "",
@@ -129552,10 +129816,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "rebox-0.15.38.vpk",
-          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/rebox-0.15.38.vpk",
-          "size": 8530135,
-          "md5": "6ea19829d76dcc6a4a894ffd70da9f81"
+          "filename": "rebox-0.16.69.vpk",
+          "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/mirror/rebox-0.16.69.vpk",
+          "size": 9285912,
+          "md5": "773cda78223cba8c7f898e384f8665a1"
         }
       ],
       "popularity": 0,
@@ -133311,52 +133575,34 @@
       "name": "Roku-Remote-3DS",
       "summary": "A personal Nintendo 3DS homebrew remote for a Roku device on your home network.",
       "author": "nohsaidnottoplay-blip",
-      "version": "Roku-Remote-3DS-v1.3.0",
+      "version": "Roku-Remote-3DS-v1.4.0",
       "license": "Other",
       "icon_url": "https://raw.githubusercontent.com/nohsaidnottoplay-blip/Roku-Remote-3DS/refs/heads/main/icon.png",
       "release_url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases",
       "downloads": [
         {
           "format": "zip",
-          "filename": "3ds.zip",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/3ds.zip",
-          "size": 221396
-        },
-        {
-          "format": "zip",
-          "filename": "EXTRA.zip",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/EXTRA.zip",
-          "size": 8281
+          "filename": "Extras-v1.4.zip",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.4.0/Extras-v1.4.zip",
+          "size": 14608865
         },
         {
           "format": "3dsx",
-          "filename": "RokuRemote3DS-v1.3.3dsx",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/RokuRemote3DS-v1.3.3dsx",
-          "size": 406436
+          "filename": "RokuRemote3DS-v1.4.3dsx",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.4.0/RokuRemote3DS-v1.4.3dsx",
+          "size": 1590760
         },
         {
           "format": "cia",
-          "filename": "RokuRemote3DS-v1.3.cia",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/RokuRemote3DS-v1.3.cia",
-          "size": 540608
-        },
-        {
-          "format": "zip",
-          "filename": "source-project-v1.3.zip",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/source-project-v1.3.zip",
-          "size": 12364275
-        },
-        {
-          "format": "zip",
-          "filename": "validation-v1.3.zip",
-          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.3.0/validation-v1.3.zip",
-          "size": 2440
+          "filename": "RokuRemote3DS-v1.4.cia",
+          "url": "https://github.com/nohsaidnottoplay-blip/Roku-Remote-3DS/releases/download/Roku-Remote-3DS-v1.4.0/RokuRemote3DS-v1.4.cia",
+          "size": 1275840
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-12T18:27:43Z"
+      "updated_at": "2026-11-26T12:30:10Z"
     },
     {
       "id": "vitadbtoo-psp:2929",
@@ -150334,7 +150580,7 @@
       "name": "STSPSVITA",
       "summary": "Play Slay the Spire on PS Vita",
       "author": "mmrmagno",
-      "version": "v.1.0.0",
+      "version": "v.1.0.1",
       "title_id": "STSV00001",
       "description": "Slay the Spire is a deck-building roguelike by Mega Crit in which the player climbs a tower of randomly generated floors and builds a deck along the way. STSPSVITA is an unofficial port of the PC version (V2.3.4). All four acts and all four characters are playable. Saves, unlocks and stats can be imported from the PC version to the Vita. Mods are not supported.",
       "requirements": "- libshacccg.suprx\n- Game Data Files: PC",
@@ -150346,9 +150592,9 @@
         {
           "format": "vpk",
           "filename": "STSPSVITA.vpk",
-          "url": "https://github.com/mmrmagno/stspsvita/releases/download/v1.0.0/STSPSVITA.vpk",
-          "size": 97498,
-          "md5": "5afe22b941f4a86fa7c03e3ef0c9705d"
+          "url": "https://github.com/mmrmagno/stspsvita/releases/download/v1.0.1/STSPSVITA.vpk",
+          "size": 415899,
+          "md5": "69c994d48a2fed32bb9b5768ee54e2c2"
         }
       ],
       "popularity": 0,
@@ -153113,6 +153359,31 @@
       "source_url": "https://github.com/DrDecki/VitaDBtoo-db",
       "license_url": null,
       "updated_at": "2026-11-18"
+    },
+    {
+      "id": "universal-db:Misakii-P/supra-mayro-bross-3ds",
+      "platforms": [
+        "3ds"
+      ],
+      "name": "Supra Mayro Bross 3DS",
+      "summary": "resceu princes from bigger gumba (Supra Mayro Bross: Legend of the Lost Kingdom remake for the Nintendo 3DS)",
+      "author": "MisakiP_",
+      "version": "v1.0.0",
+      "license": "MIT License",
+      "icon_url": "https://raw.githubusercontent.com/Misakii-P/supra-mayro-bross-3ds/refs/heads/main/icon.png",
+      "release_url": "https://github.com/Misakii-P/supra-mayro-bross-3ds/releases",
+      "downloads": [
+        {
+          "format": "3dsx",
+          "filename": "mayro.3dsx",
+          "url": "https://github.com/Misakii-P/supra-mayro-bross-3ds/releases/download/v1.0.0/mayro.3dsx",
+          "size": 1515440
+        }
+      ],
+      "source": "Universal-DB",
+      "source_url": "https://db.universal-team.net/",
+      "license_url": null,
+      "updated_at": "2026-10-17T19:32:17Z"
     },
     {
       "id": "vitadbtoo-psp:4214",
@@ -169143,7 +169414,7 @@
       "name": "Valdis Story",
       "summary": "Port of Valdis Story: Abyssal City for PSVITA.",
       "author": "Botarguirix",
-      "version": "v.0.9.2-alpha",
+      "version": "v.0.9.3",
       "title_id": "VALDIS001",
       "description": "Port of Valdis Story: Abyssal City for PSVITA.",
       "requirements": "- Game Data Files: your own copy of Valdis Story: Abyssal City",
@@ -169155,9 +169426,9 @@
         {
           "format": "vpk",
           "filename": "vsvita.vpk",
-          "url": "https://github.com/Botarguirix/ValdisStoryVita/releases/download/v0.9.2-alpha/vsvita.vpk",
-          "size": 2156074,
-          "md5": "d337427cfb3f1e1aaa5c5aadb4be09f2"
+          "url": "https://github.com/Botarguirix/ValdisStoryVita/releases/download/v0.9.3/vsvita.vpk",
+          "size": 2173535,
+          "md5": "76ec50819c3816a238d700e02e864729"
         }
       ],
       "popularity": 0,
@@ -175060,7 +175331,7 @@
       "name": "VitaSim",
       "summary": "Port of The Sims 1 Legacy Collection for PSVITA.",
       "author": "Reyanon",
-      "version": "v.0.16.4",
+      "version": "v.0.16.73",
       "title_id": "SIMS00001",
       "description": "Port of The Sims 1 Legacy Collection for PSVITA.",
       "requirements": "- Game Data Files: The Sims 1 Legacy Collection",
@@ -175071,10 +175342,10 @@
       "downloads": [
         {
           "format": "vpk",
-          "filename": "VitaSim_v0.16.4.vpk",
-          "url": "https://github.com/Reyanon/VitaSim/releases/download/v0.16.4/VitaSim_v0.16.4.vpk",
-          "size": 3238114,
-          "md5": "a0f7187a3bc3e5dfdb2c98a5693098e4"
+          "filename": "VitaSim_v0.16.73.vpk",
+          "url": "https://github.com/Reyanon/VitaSim/releases/download/v0.16.73/VitaSim_v0.16.73.vpk",
+          "size": 3375450,
+          "md5": "6a004109796379805923d53a904c926e"
         }
       ],
       "popularity": 0,
