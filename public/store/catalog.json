@@ -19152,6 +19152,32 @@
       "updated_at": "2026-06-01T16:22:31Z"
     },
     {
+      "id": "ps5-payloads-atlas:breeze.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "Breeze",
+      "summary": "Custom fan curve for the PS5: a payload with a web panel and a home screen app. Live CPU and GPU temps, 24-hour history and presets.",
+      "author": "",
+      "version": "v1.9.1",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/miladrtx/breeze",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "breeze.elf",
+          "url": "https://github.com/MiladRTX/Breeze/releases/download/v1.9.1/breeze.elf",
+          "sha256": "7f6720795036c51025ddaef5692f62cda3988c67c7c338e3b617b9c98d36cff3"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-10-27T04:01:07+08:00"
+    },
+    {
       "id": "vitadbtoo-psp:2722",
       "platforms": [
         "psp"
@@ -66606,7 +66632,7 @@
       "name": "Jazz² Resurrection",
       "summary": "Open-source reimplementation of Jazz Jackrabbit 2 for PSVITA.",
       "author": "deathkiller",
-      "version": "Nightly 2026-11-23 (99ece0e)",
+      "version": "Nightly 2026-11-27 (20156b5)",
       "title_id": "JAZZ20000",
       "description": "Open-source reimplementation of Jazz Jackrabbit 2 for PSVITA.",
       "requirements": "- Game Data Files: your own copy of Jazz Jackrabbit 2",
@@ -66619,8 +66645,8 @@
           "format": "vpk",
           "filename": "jazz2-resurrection.vpk",
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/nightly/jazz2-resurrection.vpk",
-          "size": 9043343,
-          "md5": "0b03a5280e0d8924ec164bd4fb5106e1"
+          "size": 9047319,
+          "md5": "17726b2256e6ec3b299112eca0e71f3c"
         }
       ],
       "popularity": 0,
@@ -95782,8 +95808,8 @@
           "format": "zip",
           "filename": "oot-psp-ntsc-1.0.zip",
           "url": "https://github.com/z2442/oot-PSP/releases/download/latest/oot-psp-ntsc-1.0.zip",
-          "size": 2793033,
-          "md5": "ee18d975daf37d4bbf5245f74c7bb66d"
+          "size": 2804497,
+          "md5": "872a370a3f34fd2a554ce038706b7fdf"
         }
       ],
       "popularity": 0,
@@ -110557,7 +110583,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 20077,
+      "popularity": 20111,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110584,7 +110610,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3866,
+      "popularity": 3877,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110611,7 +110637,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 17924,
+      "popularity": 18041,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110638,7 +110664,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7717,
+      "popularity": 7735,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110665,7 +110691,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 103383,
+      "popularity": 104469,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110692,7 +110718,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 454,
+      "popularity": 460,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -110988,6 +111014,32 @@
       "license_url": null,
       "popularity": null,
       "updated_at": "2026-06-19T20:34:09+08:00"
+    },
+    {
+      "id": "ps5-payloads-atlas:gtavi.unlockfps_v1.14.elf",
+      "platforms": [
+        "ps5"
+      ],
+      "name": "ps5-fpsunlocker-gta6",
+      "summary": "Unlock FPS on Grand Theft Auto VI for jailbroken PS5",
+      "author": "",
+      "version": "v1.14",
+      "license": null,
+      "icon_url": null,
+      "release_url": "https://github.com/hsgod/ps5-fpsunlocker-gta6",
+      "downloads": [
+        {
+          "format": "elf",
+          "filename": "gtavi.unlockfps_v1.14.elf",
+          "url": "https://github.com/HSgod/ps5-fpsunlocker-gta6/releases/download/v1.14/GTAVI.UnlockFPS_v1.14.elf",
+          "sha256": "9d7b726369407cd1ca1030dfc4bd705d01f27ebf0bf564a7d100c1599db14904"
+        }
+      ],
+      "source": "PS5 Payloads Atlas",
+      "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-27T00:33:27+08:00"
     },
     {
       "id": "ps5-payloads-atlas:game-compressor.elf",
@@ -111562,30 +111614,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.33.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.38.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.33",
+      "version": "v12.6.38",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.33.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.33/ps5upload-12.6.33.elf",
-          "sha256": "2ad3f7ae4d4b5a05346e4eb22ef80df397dbf4165f2c9b9cd5a2565f73cfa539"
+          "filename": "ps5upload-12.6.38.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.38/ps5upload-12.6.38.elf",
+          "sha256": "da4ec888e0c1d2d4e43f97d71b0ebdca7fdf7aa08a2b019a4a142db709f6dbda"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-27T04:19:57+08:00"
+      "updated_at": "2026-11-27T13:10:02+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
