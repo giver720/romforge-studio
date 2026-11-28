@@ -6954,6 +6954,38 @@
       "updated_at": "2012-01-01"
     },
     {
+      "id": "open-shop-channel-wii:am2r",
+      "platforms": [
+        "wii"
+      ],
+      "name": "AM2R GX",
+      "summary": "AM2R 1.5.5 on Wii!",
+      "description": "\nAM2R GX — AM2R 1.5.5 (Community Update) on the Wii, built on the Butterscotch engine with native GX. Bring your own AM2R 1.1 zip; the first boot builds 1.5.5 from it. Hold HOME, or X + B + Start on a GameCube controller, to quit.\n\nFree software under the AGPL-3.0: see LICENSE.txt and NOTICE.txt.\n\nNot affiliated with Nintendo, YoYo Games, DoctorM64, or the AM2R Community Developers.\n  ",
+      "categories": [
+        "games"
+      ],
+      "requirements": "wii · vwii · wii_mini · Wii Remote · Nunchuk · Classic Controller · GameCube Controller · SDHC",
+      "author": "cmyksoda",
+      "version": "1.3.2",
+      "title_id": "000100014E7B61B2",
+      "license": null,
+      "icon_url": "https://hbb1.oscwii.org/api/contents/am2r/icon.png",
+      "release_url": null,
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "am2r.zip",
+          "url": "https://hbb1.oscwii.org/api/contents/am2r/am2r.zip",
+          "size": 54209053
+        }
+      ],
+      "source": "Open Shop Channel",
+      "source_url": "https://oscwii.org/",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-24T00:00:00+00:00"
+    },
+    {
       "id": "hbas-wiiu:AM64DSPatcher",
       "platforms": [
         "wiiu"
@@ -26424,7 +26456,7 @@
           "format": "3dsx",
           "filename": "ClassiCube-3ds.3dsx",
           "url": "https://cdn.classicube.net/client/latest/ClassiCube-3ds.3dsx",
-          "size": 783452
+          "size": 783328
         },
         {
           "format": "cia",
@@ -48515,6 +48547,38 @@
       "updated_at": "2021-05-13"
     },
     {
+      "id": "open-shop-channel-wii:Fnaf3Wii",
+      "platforms": [
+        "wii"
+      ],
+      "name": "FNaF 3 Wii",
+      "summary": "A Five Nights at Freddy's 3 Demake for the Nintendo Wii!",
+      "description": "Experience and uncover the horrors of Fazbear Frights on your Nintendo Wii! PLEASE READ \"Requirements.txt\" TO BE ABLE TO PLAY THE GAME!!!!\n",
+      "categories": [
+        "games"
+      ],
+      "requirements": "wii · vwii · Wii Remote",
+      "author": "BlocksumoGuys",
+      "version": "Beta 1.1.0",
+      "title_id": "000100014ED76D27",
+      "license": null,
+      "icon_url": "https://hbb1.oscwii.org/api/contents/Fnaf3Wii/icon.png",
+      "release_url": null,
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "Fnaf3Wii.zip",
+          "url": "https://hbb1.oscwii.org/api/contents/Fnaf3Wii/Fnaf3Wii.zip",
+          "size": 1605264
+        }
+      ],
+      "source": "Open Shop Channel",
+      "source_url": "https://oscwii.org/",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-05-20T00:00:00+00:00"
+    },
+    {
       "id": "vitadbtoo-psp:1913",
       "platforms": [
         "psp"
@@ -64095,7 +64159,7 @@
       "name": "Indigo",
       "summary": "A native Bluesky client for the Nintendo 3DS.",
       "author": "Ewan Croft",
-      "version": "v0.17.0",
+      "version": "v0.18.1",
       "license": "GNU General Public License v3.0",
       "icon_url": "https://raw.githubusercontent.com/ewanc26/indigo/main/assets/icon.png",
       "release_url": "https://github.com/ewanc26/indigo/releases",
@@ -64103,14 +64167,14 @@
         {
           "format": "3dsx",
           "filename": "indigo.3dsx",
-          "url": "https://github.com/ewanc26/indigo/releases/download/v0.17.0/indigo.3dsx",
-          "size": 1692468
+          "url": "https://github.com/ewanc26/indigo/releases/download/v0.18.1/indigo.3dsx",
+          "size": 1696404
         }
       ],
       "source": "Universal-DB",
       "source_url": "https://db.universal-team.net/",
       "license_url": null,
-      "updated_at": "2026-11-11T12:20:25Z"
+      "updated_at": "2026-11-28T00:27:29Z"
     },
     {
       "id": "vitadbtoo-psp:2898",
@@ -66700,7 +66764,7 @@
       "name": "Jazz² Resurrection",
       "summary": "Open-source reimplementation of Jazz Jackrabbit 2 for PSVITA.",
       "author": "deathkiller",
-      "version": "Nightly 2026-11-27 (4bda538)",
+      "version": "Nightly 2026-11-27 (ad2a9c6)",
       "title_id": "JAZZ20000",
       "description": "Open-source reimplementation of Jazz Jackrabbit 2 for PSVITA.",
       "requirements": "- Game Data Files: your own copy of Jazz Jackrabbit 2",
@@ -66713,8 +66777,8 @@
           "format": "vpk",
           "filename": "jazz2-resurrection.vpk",
           "url": "https://github.com/DrDecki/VitaHomebrewDB/releases/download/nightly/jazz2-resurrection.vpk",
-          "size": 9047390,
-          "md5": "871fd9830d47038d069cb87db3348ca4"
+          "size": 9047459,
+          "md5": "af30e2b87e3c9722ddea400ff134b1ec"
         }
       ],
       "popularity": 0,
@@ -110651,7 +110715,7 @@
           "sha256": "a8fbf87de81b3e37ab6d23e15d5190dfc54facb4b8ed5be157ed3404592b2d9d"
         }
       ],
-      "popularity": 20152,
+      "popularity": 20177,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110678,7 +110742,7 @@
           "sha256": null
         }
       ],
-      "popularity": 3892,
+      "popularity": 3901,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110705,7 +110769,7 @@
           "sha256": "7f02e3dc9fcc665727f7f835cb487c60fa83eec33eb6ffb60eab08cf025b9627"
         }
       ],
-      "popularity": 18210,
+      "popularity": 18334,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110732,7 +110796,7 @@
           "sha256": null
         }
       ],
-      "popularity": 7755,
+      "popularity": 7769,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110759,7 +110823,7 @@
           "sha256": "7eab6de7d8542e0ce9b00656b42932ae7dd3d682d0008625ebd082fc996f32bc"
         }
       ],
-      "popularity": 106367,
+      "popularity": 107681,
       "source": "PS4 Homebrew Store",
       "source_url": "https://github.com/LightningMods/PS4-Store",
       "license_url": null,
@@ -110786,7 +110850,7 @@
           "sha256": "44af7f94709355bc5c7b9cef78e83d83583d04be6b151d5f4eec683d4163fffb"
         }
       ],
-      "popularity": 470,
+      "popularity": 474,
       "source": "PS4HEN",
       "source_url": "https://github.com/Scene-Collective/ps4-hen",
       "license_url": null,
@@ -110980,30 +111044,30 @@
       "updated_at": "2026-08-24T22:44:14+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:disk-space-analyzer-v1.0.0-beta4.elf",
+      "id": "ps5-payloads-atlas:disk-space-analyzer-v1.0.0-beta7.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5-disk-space-analyzer",
       "summary": "Disk Space Analyzer for PS5",
       "author": "",
-      "version": "v1.0.0-beta4",
+      "version": "v1.0.0-beta7",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/igorwojda/ps5-disk-space-analyzer",
       "downloads": [
         {
           "format": "elf",
-          "filename": "disk-space-analyzer-v1.0.0-beta4.elf",
-          "url": "https://github.com/igorwojda/ps5-disk-space-analyzer/releases/download/v1.0.0-beta4/disk-space-analyzer-v1.0.0-beta4.elf",
-          "sha256": "1b017bfee8d1e70d49a61910f421d918cd8694a2ed12ff4b466a46659a1dcaa1"
+          "filename": "disk-space-analyzer-v1.0.0-beta7.elf",
+          "url": "https://github.com/igorwojda/ps5-disk-space-analyzer/releases/download/v1.0.0-beta7/disk-space-analyzer-v1.0.0-beta7.elf",
+          "sha256": "521885ec48dd331f93af62570b087974e1dafe44a01b1de9459daf3e736971b9"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-28T04:30:29+08:00"
+      "updated_at": "2026-11-28T06:49:46+08:00"
     },
     {
       "id": "ps5-payloads-atlas:ps5-dump-forge-0.6.0-ps5.elf",
@@ -111708,30 +111772,30 @@
       "updated_at": "2026-11-15T08:18:47+08:00"
     },
     {
-      "id": "ps5-payloads-atlas:ps5upload-12.6.43.elf",
+      "id": "ps5-payloads-atlas:ps5upload-12.6.46.elf",
       "platforms": [
         "ps5"
       ],
       "name": "ps5upload",
       "summary": "Send games, apps and homebrew to a jailbroken PS5, and manage the console from your computer, phone or browser.",
       "author": "",
-      "version": "v12.6.43",
+      "version": "v12.6.46",
       "license": null,
       "icon_url": null,
       "release_url": "https://github.com/phantomptr/ps5upload",
       "downloads": [
         {
           "format": "elf",
-          "filename": "ps5upload-12.6.43.elf",
-          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.43/ps5upload-12.6.43.elf",
-          "sha256": "8b8bfc0fcdf74e92a6a0c1eb934ead27b94a4cb75f0ff09658a3b7d1cc599a7f"
+          "filename": "ps5upload-12.6.46.elf",
+          "url": "https://github.com/phantomptr/ps5upload/releases/download/v12.6.46/ps5upload-12.6.46.elf",
+          "sha256": "d762e1e3c65f36ed2d1cacce129a612c4777755684560b600a1e216dd445813a"
         }
       ],
       "source": "PS5 Payloads Atlas",
       "source_url": "https://github.com/lucaszhongsj/ps5-payloads-atlas",
       "license_url": null,
       "popularity": null,
-      "updated_at": "2026-11-28T04:49:48+08:00"
+      "updated_at": "2026-11-28T12:42:04+08:00"
     },
     {
       "id": "vitadbtoo-psp:3637",
@@ -165931,6 +165995,38 @@
       "updated_at": "2026-08-04"
     },
     {
+      "id": "open-shop-channel-wii:TwitchWii",
+      "platforms": [
+        "wii"
+      ],
+      "name": "TwitchWii",
+      "summary": "Unofficial Twitch client for the Nintendo Wii",
+      "description": "Watch Twitch live streams and videos on your Wii. Browse a live home grid and a category catalog, search for channels, open a channel page, play recent VODs, and use live chat (read anonymously, or write when signed in).\n\nSign in with a QR code (Twitch Device Code Grant). The session is saved on SD, or on USB if no SD is present, and can be refreshed or signed out from Settings. Follow and Subscribe open a QR code to the official Twitch page on your phone; the Wii does not make payments or change follows by itself. VODs play from the beginning; there is no seek or resume. 4:3 and 16:9 are supported.\n\nThe interface is available in English, Spanish, French, German, Italian, Dutch, Portuguese (Brazil), Japanese, Simplified and Traditional Chinese, and Korean. It is picked from the console language and can be changed in Settings; the choice is saved on SD or USB.\n\nAn optional companion server (server/twitchwii_server.py) can run on a PC on your network. Enter its IP in Settings to use HTTP proxy or transcoded playback. Without a server, the Wii talks to Twitch over HTTPS for thumbnails, avatars, box art, banners, public VODs, and chat.\n\nControls: Wii Remote pointer and buttons, including the D-Pad. A Classic Controller, a GameCube controller, and a USB keyboard are also supported.\n\nThis is an unofficial fan project, not affiliated with or endorsed by Twitch Interactive, Inc. or Nintendo. Intro music: Claude Debussy, Reverie, performed by David Hernando Vitores (CC BY-SA 4.0, Wikimedia Commons). CJK glyph subset from Noto Sans CJK (SIL OFL 1.1). Licensed under GPL-3.0.",
+      "categories": [
+        "multimedia"
+      ],
+      "requirements": "wii · Wii Remote · Classic Controller · GameCube Controller · USB Keyboard · SDHC",
+      "author": "tobais200",
+      "version": "1.1",
+      "title_id": "000100014E371748",
+      "license": null,
+      "icon_url": "https://hbb1.oscwii.org/api/contents/TwitchWii/icon.png",
+      "release_url": null,
+      "downloads": [
+        {
+          "format": "zip",
+          "filename": "TwitchWii.zip",
+          "url": "https://hbb1.oscwii.org/api/contents/TwitchWii/TwitchWii.zip",
+          "size": 3525024
+        }
+      ],
+      "source": "Open Shop Channel",
+      "source_url": "https://oscwii.org/",
+      "license_url": null,
+      "popularity": null,
+      "updated_at": "2026-11-26T00:00:00+00:00"
+    },
+    {
       "id": "universal-db:MechanicalDragon0687/TWLFix-CFW",
       "platforms": [
         "3ds"
@@ -184001,7 +184097,7 @@
       "name": "Xash3D-FWGS",
       "summary": "Port of Xash3D-FWGS for PSVITA.",
       "author": "Xash3D-FWGS Team & fgsfdsfgs",
-      "version": "Nightly 2026-11-24",
+      "version": "Nightly 2026-11-27",
       "title_id": "XASH10000",
       "description": "Port of Xash3D-FWGS for PSVITA.\nXash3D-FWGS is an open source re-creation of the GoldSrc engine, a modified Quake Engine running Half-Life, Counter Strike and Team Fortress.\n\nNOTE: Data files are slightly different from vitaXash3D. This means both versions can't be installed at the same time.",
       "requirements": "- libshacccg.suprx in ur0:data\n- kubridge.skprx in ur0:tai\n- Game Data Files: PC in ux0:data/xash3d",
@@ -184014,8 +184110,8 @@
           "format": "zip",
           "filename": "xash3d-fwgs-psvita.7z",
           "url": "https://github.com/FWGS/xash3d-fwgs/releases/download/continuous/xash3d-fwgs-psvita.7z",
-          "size": 27896370,
-          "md5": "05e20460f96328217e23c0ebb45e795c"
+          "size": 27896426,
+          "md5": "e931b77a74f4932516bb351a16660b63"
         },
         {
           "format": "data",
